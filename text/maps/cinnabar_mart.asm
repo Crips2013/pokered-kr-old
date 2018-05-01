@@ -1,10 +1,10 @@
 _CinnabarMartText2::
-	text "Don't they have X"
-	line "ATTACK? It's good"
-	cont "for battles!"
+	text $0A,$63,$03,$DF,$06,$4A,$7F,$09,$F4,$07,$66,$01,$01,$7F,$06,$F8,$02,$D9,$01,$4D,$0B,$67; RAW DATA : 	text "플러스 파워가 없다고?"
+	line $04,$E8,$09,$E2,$07,$01,$7F,$09,$7B,$7F,$03,$15,$07,$62,$07,$9C,$7F,$03,$28,$02,$D9,$01,$88,$0B,$66; RAW DATA : 	line "배틀에 큰 도움이 된다구!"
 	done
 
 _CinnabarMartText3::
-	text "It never hurts to"
-	line "have extra items!"
+	text $07,$09,$05,$30,$07,$97,$7F,$06,$C6,$07,$9C,$09,$AB,$07,$8B,$7F,$01,$01,$08,$26,$01,$4D,$7F,$07,$A6,$06,$EE,$05,$DD; RAW DATA : 	text "여분의 아이템을 가지고 있어서"
+	line $02,$3A,$05,$AC,$01,$27,$7F,$06,$F8,$08,$26,$0B,$66; RAW DATA : 	line "나쁠건 없지!"
 	done
+

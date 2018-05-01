@@ -1,8 +1,7 @@
 _DiglettsCaveEntRoute11Text1::
-	text "What a surprise!"
-	line "DIGLETTs dug this"
-	cont "long tunnel!"
-
-	para "It goes right to"
-	line "VIRIDIAN CITY!"
+	text $02,$8E,$03,$C8,$08,$26,$7F,$06,$CA,$06,$C6,$0B,$67; RAW DATA : 	text "놀랍지 않아?"
+	line $03,$60,$01,$A7,$02,$D9,$01,$01,$7F,$07,$9C,$7F,$01,$B4,$09,$9D,$02,$6E,$07,$8B,$7F,$04,$48,$03,$49,$06,$FA,$06,$EE,$0B,$66; RAW DATA : 	line "디그다가 이 긴터널을 만들었어!"
+	
+	para $02,$F6,$05,$30,$07,$01,$7F,$05,$C3,$03,$FF,$06,$63,$09,$EC,$03,$FE,$7F,$04,$D9,$03,$FE; RAW DATA : 	para "덕분에 상록시티로 바로"
+	line $01,$05,$7F,$06,$26,$7F,$07,$A6,$01,$34,$7F,$03,$27,$06,$FA,$06,$EE,$0B,$66; RAW DATA : 	line "갈 수 있게 되었어!"
 	done

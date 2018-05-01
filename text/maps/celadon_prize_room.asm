@@ -1,12 +1,9 @@
 _CeladonPrizeRoomText1::
-	text "I sure do fancy"
-	line "that PORYGON!"
-
-	para "But, it's hard to"
-	line "win at slots!"
+	text $0A,$2A,$04,$3E,$01,$4F,$07,$8B,$7F,$01,$01,$08,$26,$01,$4D,$7F,$06,$6D,$06,$FA,$02,$C2,$03,$05,$0B,$6A,$0B,$6A; RAW DATA : 	text "폴리곤을 가지고 싶었는데……"
+	line $06,$4D,$04,$04,$04,$73,$06,$65,$07,$8A,$7F,$06,$EE,$03,$F6,$01,$B2,$04,$48,$7F,$0A,$6F,$01,$88,$02,$3A,$0B,$66; RAW DATA : 	line "슬롯머신은 어렵기만 하구나!"
 	done
 
 _CeladonPrizeRoomText2::
-	text "I had a major"
-	line "haul today!"
+	text $07,$20,$02,$C3,$7F,$08,$0F,$07,$44,$0A,$71,$7F,$06,$E0,$06,$03,$07,$9C; RAW DATA : 	text "오늘 중요한 약속이"
+	line $07,$A6,$06,$FA,$02,$C2,$03,$05,$0B,$66; RAW DATA : 	line "있었는데!"
 	done
