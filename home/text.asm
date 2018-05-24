@@ -117,7 +117,7 @@ HangulCheck::
 	push af
 	callba PrintHangul
 	pop af
-	ld [H_LOADEDROMBANK],a
+	call BankswitchCommon
 	jr .Done
 .NotHangul
 	ld [hli], a
