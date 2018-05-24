@@ -2103,3 +2103,6 @@ INCBIN "hangul/font32.fnt"
 
 SECTION "HangulFont33",ROMX,BANK[$33]
 INCBIN "hangul/font33.fnt"
+
+SECTION "HangulOutputCode",ROMX,BANK[$34]
+INCLUDE "hangul/PrintHangul.asm"

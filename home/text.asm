@@ -110,8 +110,18 @@ endm
 	dict $5F, Char5F ; dex
 	dict $59, Char59 ; TARGET
 	dict $5A, Char5A ; USER
-
+HangulCheck::
+	cp $0C
+	jr nc,.NotHangul
+	ld a,[H_LOADEDROMBANK]
+	push af
+	callba PrintHangul
+	pop af
+	ld [H_LOADEDROMBANK],a
+	jr .Done
+.NotHangul
 	ld [hli], a
+.Done
 	call PrintLetterDelay
 PlaceNextChar_inc::
 	inc de
