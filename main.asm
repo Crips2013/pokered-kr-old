@@ -12,7 +12,10 @@ PICS_4 EQU $C
 PICS_5 EQU $D
 
 INCLUDE "home.asm"
-
+BuildTime:
+INCLUDE "BuildTime.asm"
+BuildNumber:
+INCLUDE "BuildNumber.asm"
 
 SECTION "bank1",ROMX,BANK[$1]
 
