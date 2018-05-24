@@ -2088,3 +2088,15 @@ INCLUDE "engine/evolution.asm"
 INCLUDE "engine/overworld/elevator.asm"
 
 INCLUDE "engine/items/tm_prices.asm"
+
+SECTION "HangulFont30",ROMX,BANK[$30]
+INCBIN "hangul/font30.fnt"
+
+SECTION "HangulFont31",ROMX,BANK[$31]
+INCBIN "hangul/font31.fnt"
+
+SECTION "HangulFont32",ROMX,BANK[$32]
+INCBIN "hangul/font32.fnt"
+
+SECTION "HangulFont33",ROMX,BANK[$33]
+INCBIN "hangul/font33.fnt"
