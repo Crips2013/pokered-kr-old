@@ -1,17 +1,19 @@
-# Pokémon Red and Blue
+# Open Source Pokémon Red/Blue Korean Translation Project
 
-This is a disassembly of Pokémon Red and Blue.
+This is Open Source Pokémon Red/Blue Korean Translation Project
 
-It builds the following roms:
-
-* Pokemon Red (UE) [S][!].gb  `md5: 3d45c1ee9abd5738df46d2bdda8b57dc`
-* Pokemon Blue (UE) [S][!].gb `md5: 50927e843568814f7ed45ec4f944bd8b`
+This is based on pret's disassembly of [**Pokémon Red/Blue**][pokered] and [**Pokémon Yellow Korean Fan Translation**][pokeyellowkr] which I participated in as a programmer.
 
 To set up the repository, see [**INSTALL.md**](INSTALL.md).
 
+## Credits
+- 009342 : Main code
+- All of [Pokémon Yellow Korean Fan Translation][pokeyellowkr]'s staff
 
 ## See also
 
+* [**Pokémon Yellow Korean Fan Translation**][pokeyellowkr]
+* Disassembly of [**Pokémon Red/Blue**][pokered]
 * Disassembly of [**Pokémon Yellow**][pokeyellow]
 * Disassembly of [**Pokémon Gold**][pokegold]
 * Disassembly of [**Pokémon Crystal**][pokecrystal]
@@ -20,9 +22,9 @@ To set up the repository, see [**INSTALL.md**](INSTALL.md).
 * Disassembly of [**Pokémon Ruby**][pokeruby]
 * Disassembly of [**Pokémon Fire Red**][pokefirered]
 * Disassembly of [**Pokémon Emerald**][pokeemerald]
-* Discord: [**pret**][Discord]
-* irc: **irc.freenode.net** [**#pret**][irc]
 
+[pokeyellowkr]: https://github.com/Wintiger0222/pokeyellowkr 
+[pokered]: https://github.com/pret/pokered
 [pokeyellow]: https://github.com/pret/pokeyellow
 [pokegold]: https://github.com/pret/pokegold
 [pokecrystal]: https://github.com/pret/pokecrystal
@@ -31,5 +33,3 @@ To set up the repository, see [**INSTALL.md**](INSTALL.md).
 [pokeruby]: https://github.com/pret/pokeruby
 [pokefirered]: https://github.com/pret/pokefirered
 [pokeemerald]: https://github.com/pret/pokeemerald
-[Discord]: https://discord.gg/cJxDDVP
-[irc]: https://kiwiirc.com/client/irc.freenode.net/?#pret

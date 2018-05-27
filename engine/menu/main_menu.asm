@@ -54,8 +54,12 @@ MainMenu:
 	coord hl,$00,$0F
 	ld de, BuildNumber
 	call PlaceString
-	;Build Time
+	;Build Date
 	coord hl,$00,$10
+	ld de, BuildDate
+	call PlaceString
+	;Build Time
+	coord hl,$00,$11
 	ld de, BuildTime
 	call PlaceString
 	;Done
