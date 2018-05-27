@@ -50,6 +50,15 @@ MainMenu:
 	ld de, NewGameText
 	call PlaceString
 .next2
+	;Build Number
+	coord hl,$00,$0F
+	ld de, BuildNumber
+	call PlaceString
+	;Build Time
+	coord hl,$00,$10
+	ld de, BuildTime
+	call PlaceString
+	;Done
 	ld hl, wd730
 	res 6, [hl]
 	call UpdateSprites
