@@ -5,22 +5,17 @@ _CeladonMart4Text2::
 	done
 
 _CeladonMart4Text3::
-	text "I heard something"
-	line "useful."
+	text $07,$7F,$07,$4B,$0A,$71,$7F,$07,$D4,$05,$18,$04,$36,$7F,$03,$49,$06,$FA,$06,$EE,$0B,$66; RAW DATA : 	text "유용한 정보를 들었어!"
 
-	para "You can run from"
-	line "wild #MON by"
-	cont "distracting them"
-	cont "with a # DOLL!"
+	para $02,$77,$01,$01,$7F,$06,$DF,$05,$CD,$07,$97,$7F,$0A,$27,$09,$2F,$04,$93,$0A,$71,$09,$A7,$05,$DD; RAW DATA : 	para "네가 야생의 포켓몬한테서"
+	line $02,$DE,$06,$C6,$02,$3A,$03,$F1,$04,$89,$7F,$06,$63,$05,$E1,$07,$8B,$7F,$02,$28,$04,$89,$7F,$03,$25,$0B,$66; RAW DATA : 	line "달아나려면 시선을 끌면 돼!"
+	cont $07,$9C,$7F,$05,$AF,$05,$AF,$7F,$07,$9E,$0A,$9C,$07,$88,$03,$FE,$0B,$66; RAW DATA : 	cont "이 삐삐 인형으로!"
 	done
 
 _CeladonMart4Text4::
-	text "Express yourself"
-	line "with gifts!"
+	text $FA,$08,$FE,$7F,$0B,$6A,$0B,$6A,$7F,$08,$28,$06,$69,$07,$8B,$7F,$05,$18,$02,$4B,$07,$AA,$0B,$66; RAW DATA : 	text "4층 …… 진심을 보내자!"
+	line $7F,$7F,$07,$2D,$07,$9C,$08,$1E,$04,$67,$74,$01,$B2,$0A,$61,$09,$DE,$7F,$06,$23,$0B,$66; RAW DATA : 	line "  와이즈맨·기프트 숍!"
 
-	para "4F: WISEMAN GIFTS"
-
-	para "Evolution Special!"
-	line "Element STONEs on"
-	cont "sale now!"
+	para $09,$DF,$05,$10,$0A,$71,$7F,$08,$28,$0A,$AD,$0B,$66,$7F,$08,$28,$0A,$AD,$07,$97,$7F,$03,$19,$0B,$66; RAW DATA : 	para "특별한 진화! 진화의 돌!"
+	line $08,$26,$01,$AD,$7F,$05,$EC,$07,$9F,$08,$0F,$07,$A4,$02,$CF,$02,$D9,$0B,$66; RAW DATA : 	line "지금 세일중입니다!"
 	done

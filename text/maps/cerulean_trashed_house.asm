@@ -1,36 +1,29 @@
 _CeruleanTrashedText_1d6ab::
-	text "Those miserable"
-	line "ROCKETs!"
+	text $04,$98,$03,$28,$7F,$03,$FE,$09,$2F,$02,$DC,$02,$90,$03,$49,$0B,$66; RAW DATA : 	text "못된 로켓단놈들!"
+	
+	para $01,$A7,$02,$90,$03,$49,$07,$9C; RAW DATA : 	para "그놈들이"
+	line $07,$CA,$08,$26,$04,$35,$7F,$08,$2E,$7F,$07,$EB,$7F,$05,$21,$0B,$66; RAW DATA : 	line "저지른 짓 좀 봐!"
 
-	para "Look what they"
-	line "did here!"
+	para $01,$A7,$02,$90,$03,$49,$07,$9C,$7F,$01,$88,$04,$7B,$09,$F4,$01,$B2,$01,$01,$7F,$03,$49,$06,$EE,$07,$A6,$02,$C2; RAW DATA : 	para "그놈들이 구멍파기가 들어있는"
+	line $01,$B2,$06,$2A,$04,$73,$06,$65,$07,$8B,$7F,$0A,$C9,$08,$C4,$01,$0C,$06,$EE,$0B,$66; RAW DATA : 	line "기술머신을 훔쳐갔어!"
 
-	para "They stole a TM"
-	line "for teaching"
-	cont "#MON how to"
-	cont "DIG holes!"
-
-	para "That cost me a"
-	line "bundle, it did!"
+	para $01,$A7,$01,$25,$7F,$08,$28,$08,$35,$7F,$05,$61,$06,$71,$01,$27,$03,$05,$0B,$66; RAW DATA : 	para "그거 진짜 비싼건데!"
 	done
 
 _CeruleanTrashedText_1d6b0::
-	text "I figure what's"
-	line "lost is lost!"
+	text $01,$A7,$03,$D1,$0B,$66; RAW DATA : 	text "그래!"
+	line $06,$F8,$06,$EE,$08,$28,$01,$27,$7F,$06,$F8,$06,$EE,$08,$28,$01,$25,$08,$26,$0B,$66; RAW DATA : 	line "없어진건 없어진거지!"
 
-	para "I decided to teach"
-	line "DIGLETT how to"
-	cont "DIG without a TM!"
+	para $03,$60,$01,$A7,$02,$D9,$07,$01,$01,$34,$7F,$01,$B2,$06,$2A,$04,$73,$06,$65,$06,$F8,$07,$9C; RAW DATA : 	para "디그다에게 기술머신없이"
+	line $01,$88,$04,$7B,$09,$F4,$01,$B2,$04,$36,$7F,$01,$01,$04,$33,$09,$01,$01,$B2,$03,$FE,$7F,$01,$41,$06,$69,$0A,$7F,$06,$EE,$0B,$66; RAW DATA : 	line "구멍파기를 가르치기로 결심했어!"
 	done
 
 _CeruleanHouseTrashedText2::
-	text "TEAM ROCKET must"
-	line "be trying to DIG"
-	cont "their way into no"
-	cont "good!"
+	text $03,$FE,$09,$2F,$02,$DC,$7F,$02,$80,$05,$DE,$03,$49,$0B,$66; RAW DATA : 	text "로켓단 녀석들!"
+	line $05,$30,$04,$8D,$7F,$07,$9C,$05,$C3,$0A,$71,$7F,$08,$2E,$07,$8B,$7F,$0A,$6F,$03,$F1,$01,$4D; RAW DATA : 	line "분명 이상한 짓을 하려고"
+	cont $01,$88,$04,$7B,$09,$F4,$01,$B2,$04,$36,$7F,$0A,$C9,$08,$C4,$01,$03,$01,$34,$7F,$05,$30,$04,$8D,$0A,$78,$0B,$66; RAW DATA : 	cont "구멍파기를 훔쳐간게 분명해!"
 	done
 
 _CeruleanHouseTrashedText3::
-	text "TEAM ROCKET left"
-	line "a way out!"
+	text $03,$FE,$09,$2F,$02,$DC,$07,$9C,$7F,$01,$88,$04,$7B,$07,$8B,$7F,$02,$4B,$02,$99,$02,$D9,$0B,$66; RAW DATA : 	text "로켓단이 구멍을 내놨다!"
 	done

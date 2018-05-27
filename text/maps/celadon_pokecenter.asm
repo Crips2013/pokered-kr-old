@@ -1,12 +1,9 @@
 _CeladonPokecenterText2::
-	text "# FLUTE awakens"
-	line "#MON with a"
-	cont "sound that only"
-	cont "they can hear!"
+	text $0A,$27,$09,$2F,$04,$93,$7F,$0A,$67,$04,$3E,$02,$C2,$7F,$0A,$27,$09,$2F,$04,$93,$07,$01,$01,$34,$04,$48; RAW DATA : 	text "포켓몬 피리는 포켓몬에게만"
+	line $03,$49,$04,$3E,$02,$C2,$7F,$06,$02,$04,$3E,$03,$FE,$7F,$01,$CA,$07,$4F,$7F,$06,$26,$7F,$07,$A6,$08,$26,$0B,$66; RAW DATA : 	line "들리는 소리로 깨울 수 있지!"
 	done
 
 _CeladonPokecenterText3::
-	text "I rode uphill on"
-	line "CYCLING ROAD from"
-	cont "FUCHSIA!"
+	text $07,$0C,$05,$30,$0A,$AB,$06,$63,$09,$EC,$05,$2E,$09,$9D; RAW DATA : 	text "연분홍시티부터"
+	line $07,$AA,$07,$CC,$01,$25,$04,$36,$7F,$09,$88,$01,$4D,$7F,$07,$34,$06,$EE,$0B,$66; RAW DATA : 	line "자전거를 타고 왔어!"
 	done

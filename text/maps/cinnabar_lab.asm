@@ -1,29 +1,27 @@
 _Lab1Text1::
-	text "We study #MON"
-	line "extensively here."
+	text $07,$4C,$04,$3E,$02,$C2,$7F,$07,$09,$01,$B2,$05,$DD; RAW DATA : 	text "우리는 여기서"
+	line $0A,$27,$09,$2F,$04,$93,$07,$8B,$7F,$07,$0C,$01,$88,$0A,$6F,$01,$4D,$7F,$07,$A6,$06,$EE; RAW DATA : 	line "포켓몬을 연구하고 있어"
 
-	para "People often bring"
-	line "us rare #MON"
-	cont "for examination."
+	para $05,$B7,$03,$C7,$03,$49,$07,$9C,$7F,$07,$0C,$01,$88,$07,$4B,$07,$88,$03,$FE; RAW DATA : 	para "사람들이 연구용으로"
+	line $07,$AA,$08,$06,$7F,$0A,$F1,$01,$9D,$0A,$71,$7F,$0A,$27,$09,$2F,$04,$93,$07,$8B,$7F,$01,$01,$07,$DE,$02,$D9,$7F,$08,$10; RAW DATA : 	line "자주 희귀한 포켓몬을 가져다 줘"
 	done
 
 _Lab1Text2::
-	text "A photo of the"
-	line "LAB's founder,"
-	cont "DR.FUJI!"
+	text $07,$0C,$01,$88,$06,$02,$07,$97,$7F,$08,$A2,$04,$43,$07,$AA; RAW DATA : 	text "연구소의 창립자"
+	line $03,$4E,$02,$3A,$04,$AB,$7F,$0A,$72,$06,$C6,$04,$F6,$08,$26,$07,$97,$7F,$05,$B7,$08,$28,$07,$9C,$02,$D9; RAW DATA : 	line "등나무 할아버지의 사진이다"
 	done
 
 _Lab1Text3::
-	text "#MON LAB"
-	line "Meeting Room"
+	text $0A,$27,$09,$2F,$04,$93,$7F,$07,$0C,$01,$88,$06,$02; RAW DATA : 	text "포켓몬 연구소"
+	line $0A,$B8,$07,$97,$06,$67; RAW DATA : 	line "회의실"
 	done
 
 _Lab1Text4::
-	text "#MON LAB"
-	line "R-and-D Room"
+	text $0A,$27,$09,$2F,$04,$93,$7F,$07,$0C,$01,$88,$06,$02; RAW DATA : 	text "포켓몬 연구소"
+	line $01,$13,$04,$DF,$06,$67; RAW DATA : 	line "개발실"
 	done
 
 _Lab1Text5::
-	text "#MON LAB"
-	line "Testing Room"
+	text $0A,$27,$09,$2F,$04,$93,$7F,$07,$0C,$01,$88,$06,$02; RAW DATA : 	text "포켓몬 연구소"
+	line $06,$67,$0A,$88,$06,$67; RAW DATA : 	line "실험실"
 	done

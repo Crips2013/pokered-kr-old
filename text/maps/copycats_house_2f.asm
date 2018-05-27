@@ -1,96 +1,106 @@
 _CopycatsHouse2FText_5ccd4::
-	text "<PLAYER>: Hi! Do"
-	line "you like #MON?"
+	text $52, $0B,$62,$06,$C8,$02,$87,$0B,$66; RAW DATA : 	text $52, "『안녕!"
+	line $0A,$27,$09,$2F,$04,$93,$7F,$07,$F1,$06,$C6,$0A,$78,$0B,$67; RAW DATA : 	line "포켓몬 좋아해?"
 
-	para "<PLAYER>: Uh no, I"
-	line "just asked you."
+	para $52, $0B,$62,$07,$90,$0B,$67; RAW DATA : 	para $52, "『응?"
+	line $02,$6A,$0A,$71,$09,$A7,$7F,$04,$B0,$06,$EE,$05,$23,$07,$AD,$06,$C6; RAW DATA : 	line "너한테 물어봤잖아"
 
-	para "<PLAYER>: Huh?"
-	line "You're strange!"
+	para $52, $0B,$62,$0A,$6F,$06,$C6,$0B,$67; RAW DATA : 	para $52, "『하아?"
+	line $02,$6A,$7F,$08,$9C,$7F,$07,$9C,$05,$C3,$0A,$6F,$02,$D9,$0B,$66; RAW DATA : 	line "너 참 이상하다!"
 
-	para "COPYCAT: Hmm?"
-	line "Quit mimicking?"
 
-	para "But, that's my"
-	line "favorite hobby!"
+	para $0A,$E4,$02,$4B,$02,$4B,$01,$B2,$06,$C6,$01,$01,$06,$BE,$0B,$62,$07,$90,$0B,$67; RAW DATA : 	para "흉내내기아가씨『응?"
+	line $01,$A7,$04,$48,$7F,$03,$6B,$03,$C3,$0A,$6F,$03,$C3,$01,$4D,$0B,$67; RAW DATA : 	line "그만 따라하라고?"
+
+	para $01,$A7,$09,$01,$04,$48,$7F,$07,$9C,$01,$34,$7F,$02,$4B,$7F,$08,$EB,$04,$CC,$07,$9E,$01,$29,$0B,$66; RAW DATA : 	para "그치만 이게 내 취미인걸!"
 	prompt
+
+
 
 _TM31PreReceiveText::
-	text "Oh wow!"
-	line "A # DOLL!"
+	text $07,$4C,$07,$2D,$0B,$66; RAW DATA : 	text "우와!"
+	line $05,$AF,$05,$AF,$7F,$07,$9E,$0A,$9C,$07,$9C,$02,$D9,$0B,$66; RAW DATA : 	line "삐삐 인형이다!"
 
-	para "For me?"
-	line "Thank you!"
+	para $02,$3A,$7F,$08,$06,$02,$C2,$01,$25,$06,$DF,$0B,$67; RAW DATA : 	para "나 주는거야?"
+	line $01,$4D,$04,$46,$07,$66,$0B,$66; RAW DATA : 	line "고마워!"
 
-	para "You can have"
-	line "this, then!"
+	para $01,$A7,$03,$E3,$7F,$02,$6A,$03,$15,$7F,$07,$9C,$01,$25,$7F,$01,$01,$07,$DE,$0B,$66; RAW DATA : 	para "그럼 너도 이거 가져!"
 	prompt
 
+
+
 _ReceivedTM31Text::
-	text "<PLAYER> received"
-	line "@"
+	text $52, $02,$C2,$0B,$64,$07,$8A,$0B,$65; RAW DATA : 	text $52, "는(은)"
+	line $50; RAW DATA : 	line "@"
 	TX_RAM wcf4b
-	text "!@@"
+	text $04,$36,$0B,$64,$07,$8B,$0B,$65,$7F,$06,$F2,$06,$FA,$02,$D9,$0B,$66,$50,$50; RAW DATA : 	text "를(을) 얻었다!@@"
 
 _TM31ExplanationText1::
 	db $0
-	para "TM31 contains my"
-	line "favorite, MIMIC!"
+	para $01,$B2,$06,$2A,$04,$73,$06,$65,$7F,$F9,$F7,$07,$8A,$7F,$02,$4B,$01,$01,$7F,$01,$01,$07,$B5; RAW DATA : 	para "기술머신 31은 내가 가장"
+	line $07,$F1,$06,$C6,$0A,$6F,$02,$C2,$7F,$0A,$E4,$02,$4B,$02,$4B,$01,$B2,$0B,$66; RAW DATA : 	line "좋아하는 흉내내기!"
 
-	para "Use it on a good"
-	line "#MON!@@"
+
+
+	para $06,$EE,$07,$4F,$04,$41,$04,$48,$0A,$71,$7F,$0A,$27,$09,$2F,$04,$93,$07,$01,$01,$34; RAW DATA : 	para "어울릴만한 포켓몬에게"
+	line $05,$B7,$07,$4B,$0A,$78,$05,$21,$0B,$66,$50,$50; RAW DATA : 	line "사용해봐!@@"
+
+
 
 _TM31ExplanationText2::
-	text "<PLAYER>: Hi!"
-	line "Thanks for TM31!"
+	text $52, $0B,$62,$06,$C8,$02,$87,$0B,$66; RAW DATA : 	text $52, "『안녕!"
+	line $01,$B2,$06,$2A,$04,$73,$06,$65,$7F,$F9,$F7,$7F,$01,$4D,$04,$46,$07,$6C,$06,$EE,$0B,$66; RAW DATA : 	line "기술머신 31 고마웠어!"
 
-	para "<PLAYER>: Pardon?"
 
-	para "<PLAYER>: Is it"
-	line "that fun to mimic"
-	cont "my every move?"
+	para $52, $0B,$62,$07,$90,$0B,$67; RAW DATA : 	para $52, "『응?"
 
-	para "COPYCAT: You bet!"
-	line "It's a scream!"
+	para $52, $0B,$62,$02,$4B,$7F,$0A,$80,$03,$1F,$7F,$0A,$6F,$02,$3A,$0A,$6F,$02,$3A; RAW DATA : 	para $52, "『내 행동 하나하나"
+	line $0A,$E4,$02,$4B,$02,$4B,$01,$4D,$02,$D9,$02,$CF,$04,$89,$7F,$07,$B7,$04,$D5,$06,$EE,$0B,$67; RAW DATA : 	line "흉내내고다니면 재밌어?"
+
+
+	para $0A,$E4,$02,$4B,$02,$4B,$01,$B2,$06,$C6,$01,$01,$06,$BE,$0B,$62,$02,$E7,$07,$0C,$0A,$6F,$08,$26,$0B,$66; RAW DATA : 	para "흉내내기아가씨『당연하지!"
+	line $08,$35,$04,$44,$0A,$6F,$02,$D9,$01,$88,$0B,$66; RAW DATA : 	line "짜릿하다구!"
 	done
 
 _TM31NoRoomText::
-	text "Don't you want"
-	line "this?@@"
+	text $0A,$A4,$06,$63,$7F,$0A,$6A,$07,$44,$06,$F8,$02,$C2,$01,$25,$06,$DF,$0B,$67,$50,$50; RAW DATA : 	text "혹시 필요없는거야?@@"
 
 _CopycatsHouse2FText2::
-	text "DODUO: Giiih!"
+	text $03,$2E,$03,$2E,$0B,$62,$03,$2E,$03,$2E,$03,$2E,$0B,$66; RAW DATA : 	text "두두『두두두!"
 
-	para "MIRROR MIRROR ON"
-	line "THE WALL, WHO IS"
-	cont "THE FAIREST ONE"
-	cont "OF ALL?"
+	para $0B,$6A,$0B,$6A,$7F,$01,$25,$07,$4F,$06,$C6,$7F,$01,$25,$07,$4F,$06,$C6,$0B,$66; RAW DATA : 	para "…… 거울아 거울아!"
+	line $05,$EC,$01,$48,$07,$01,$05,$DD,$7F,$07,$D6,$07,$9F,$7F,$07,$19,$05,$AB; RAW DATA : 	line "세계에서 제일 예쁜"
+	cont $07,$09,$07,$AA,$06,$C6,$07,$9C,$02,$C2,$7F,$02,$A9,$01,$88,$0B,$67; RAW DATA : 	cont "여자아이는 누구?"
 	done
 
 _CopycatsHouse2FText3::
-	text "This is a rare"
-	line "#MON! Huh?"
-	cont "It's only a doll!"
+	text $07,$9C,$01,$2D,$07,$8A,$7F,$0A,$F1,$01,$9D,$0A,$71,$7F,$0A,$27,$09,$2F,$04,$93,$0B,$66,$0B,$67; RAW DATA : 	text "이것은 희귀한 포켓몬!?"
+	line $0B,$6A,$0B,$6A,$7F,$06,$F3,$03,$C3,$04,$3E,$0B,$67,$7F,$07,$9E,$0A,$9C,$07,$9C,$07,$14,$01,$8A; RAW DATA : 	line "…… 얼라리? 인형이였군"
 	done
 
 _CopycatsHouse2FText6::
-	text "A game with MARIO"
-	line "wearing a bucket"
-	cont "on his head!"
+	text $04,$73,$04,$3E,$07,$01,$7F,$06,$E7,$03,$1F,$07,$9C,$04,$36,$7F,$06,$B4; RAW DATA : 	text "머리에 양동이를 쓴"
+	line $04,$46,$04,$3E,$07,$20,$01,$01,$7F,$06,$C8,$02,$C2,$7F,$01,$34,$07,$A3,$07,$9C,$02,$D9,$0B,$66; RAW DATA : 	line "마리오가 안는 게임이다!"
 	done
 
 _CopycatsHouse2FText_5cd17::
-	text "..."
+	text $0B,$6A,$0B,$6A; RAW DATA : 	text "……"
 
-	para "My Secrets!"
+	para $02,$4B,$7F,$05,$61,$04,$D0,$03,$49,$0B,$66; RAW DATA : 	para "내 비밀들!"
 
-	para "Skill: Mimicry!"
-	line "Hobby: Collecting"
-	cont "dolls!"
-	cont "Favorite #MON:"
-	cont "CLEFAIRY!"
+
+	para $01,$B2,$06,$2A,$7F,$0B,$6A,$0B,$6A,$7F,$0A,$E4,$02,$4B,$02,$4B,$01,$B2,$0B,$66; RAW DATA : 	para "기술 …… 흉내내기!"
+	line $08,$EB,$04,$CC,$7F,$0B,$6A,$0B,$6A,$7F,$07,$9E,$0A,$9C,$7F,$04,$90,$07,$88,$01,$B2,$0B,$66; RAW DATA : 	line "취미 …… 인형 모으기!"
+	cont $07,$F1,$06,$C6,$0A,$6F,$02,$C2,$7F,$0A,$27,$09,$2F,$04,$93,$7F,$0B,$6A,$0B,$6A,$7F,$05,$AF,$05,$AF,$0B,$66; RAW DATA : 	cont "좋아하는 포켓몬 …… 삐삐!"
 	done
+
+
+
+
 
 _CopycatsHouse2FText_5cd1c::
-	text "Huh? Can't see!"
+	text $06,$EE,$03,$C3,$0B,$67,$7F,$06,$C8,$05,$18,$07,$09,$0B,$66; RAW DATA : 	text "어라? 안보여!"
 	done
+
+
+

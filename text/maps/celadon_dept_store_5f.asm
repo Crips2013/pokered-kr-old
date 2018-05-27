@@ -1,28 +1,27 @@
 _CeladonMart5Text1::
-	text "#MON ability"
-	line "enhancers can be"
-	cont "bought only here."
+	text $0A,$27,$09,$2F,$04,$93,$07,$97,$7F,$02,$C9,$03,$F2,$09,$01,$02,$C2; RAW DATA : 	text "포켓몬의 능력치는"
+	line $07,$15,$06,$E7,$07,$D6,$03,$FE,$7F,$02,$28,$06,$EE,$07,$23,$04,$41,$06,$26,$7F,$07,$A6,$01,$4D; RAW DATA : 	line "영양제로 끌어올릴수 있고"
+	cont $07,$09,$01,$B2,$05,$DD,$04,$48,$7F,$01,$88,$04,$65,$7F,$0A,$72,$7F,$06,$26,$7F,$07,$A6,$06,$EE,$0B,$66; RAW DATA : 	cont "여기서만 구매 할 수 있어!"
 
-	para "Use CALCIUM to"
-	line "increase SPECIAL"
-	cont "abilities."
+	para $09,$DF,$06,$26,$04,$36,$7F,$05,$C3,$06,$62,$06,$63,$09,$80,$02,$C2; RAW DATA : 	para "특수를 상승시키는"
+	line $04,$3E,$05,$18,$0A,$63,$03,$C3,$05,$63,$0B,$66; RAW DATA : 	line "리보플라빈!"
 
-	para "Use CARBOS to"
-	line "increase SPEED."
+	para $06,$4A,$0A,$67,$03,$45,$04,$36,$7F,$05,$C3,$06,$62,$06,$63,$09,$80,$02,$C2; RAW DATA : 	para "스피드를 상승시키는"
+	line $06,$CB,$09,$0E,$03,$FE,$07,$9C,$03,$45,$0B,$66; RAW DATA : 	line "알칼로이드!"
 	done
 
 _CeladonMart5Text2::
-	text "I'm here for"
-	line "#MON ability"
-	cont "enhancers."
+	text $02,$4B,$01,$01,$7F,$07,$09,$01,$B2,$7F,$07,$22,$7F,$07,$9C,$07,$7F,$02,$C2; RAW DATA : 	text "내가 여기 온 이유는"
+	line $0A,$27,$09,$2F,$04,$93,$7F,$02,$C9,$03,$F2,$09,$01,$04,$36; RAW DATA : 	line "포켓몬 능력치를"
+	cont $05,$C3,$06,$62,$06,$63,$09,$80,$01,$B2,$7F,$07,$77,$0A,$78,$05,$DD,$03,$C5,$02,$D9; RAW DATA : 	cont "상승시키기 위해서란다"
 
-	para "PROTEIN increases"
-	line "ATTACK power."
+	para $01,$68,$01,$3D,$03,$F2,$07,$8B,$7F,$05,$C3,$06,$62,$06,$63,$09,$80,$02,$C2; RAW DATA : 	para "공격력을 상승시키는"
+	line $09,$88,$07,$4C,$04,$40,$0B,$66; RAW DATA : 	line "타우린!"
 
-	para "IRON increases"
-	line "DEFENSE!"
+	para $04,$E6,$06,$EE,$03,$F2,$07,$8B,$7F,$05,$C3,$06,$62,$06,$63,$09,$80,$02,$C2; RAW DATA : 	para "방어력을 상승시키는"
+	line $05,$B7,$0A,$27,$02,$D1,$0B,$66; RAW DATA : 	line "사포닌!"
 	done
 
 _CeladonMart5Text5::
-	text "5F: DRUG STORE"
+	text $FB,$08,$FE,$7F,$0B,$6A,$0B,$6A,$7F,$06,$E0,$0A,$40,$74,$06,$4A,$09,$B4,$06,$EE; RAW DATA : 	text "5층 …… 약품·스토어"
 	done

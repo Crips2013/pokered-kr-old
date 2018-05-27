@@ -1,21 +1,25 @@
 _CinnabarPokecenterText2::
-	text "You can cancel"
-	line "evolution."
+	text $08,$28,$0A,$AD,$02,$C2,$7F,$08,$EB,$06,$02,$0A,$6F,$02,$C2,$01,$34; RAW DATA : 	text "진화는 취소하는게"
+	line $01,$01,$02,$C9,$0A,$6F,$02,$DC,$02,$D9; RAW DATA : 	line "가능하단다"
 
-	para "When a #MON is"
-	line "evolving, you can"
-	cont "stop it and leave"
-	cont "it the way it is."
+	para $0A,$27,$09,$2F,$04,$93,$07,$9C,$7F,$08,$28,$0A,$AD,$08,$0F,$07,$9F,$7F,$03,$77,$7F,$04,$78,$08,$DF,$04,$89; RAW DATA : 	para "포켓몬이 진화중일 때 멈추면"
+	line $07,$68,$03,$D1,$7F,$04,$90,$06,$60,$7F,$01,$A7,$02,$EB,$03,$FE,$7F,$02,$96,$03,$31,$06,$26,$07,$A6,$08,$26; RAW DATA : 	line "원래 모습 그대로 놔둘수있지"
 	done
+
+ 
 
 _CinnabarPokecenterText3::
-	text "Do you have any"
-	line "friends?"
+	text $09,$03,$01,$88,$02,$C2,$7F,$04,$49,$07,$9C,$7F,$07,$A6,$02,$CF,$0B,$67; RAW DATA : 	text "친구는 많이 있니?"
 
-	para "#MON you get"
-	line "in trades grow"
-	cont "very quickly."
 
-	para "I think it's"
-	line "worth a try!"
+
+	para $01,$83,$0A,$AF,$07,$88,$03,$FE,$7F,$06,$F2,$07,$8A,$7F,$0A,$27,$09,$2F,$04,$93,$07,$8A; RAW DATA : 	para "교환으로 얻은 포켓몬은"
+	line $05,$71,$04,$3E,$7F,$05,$EA,$07,$B5,$0A,$71,$02,$DC,$02,$D9; RAW DATA : 	line "빨리 성장한단다"
+
+
+
+	para $02,$4B,$7F,$05,$CD,$01,$02,$07,$03,$7F,$06,$63,$03,$15,$0A,$72,$7F,$01,$01,$09,$01,$02,$C2; RAW DATA : 	para "내 생각엔 시도할 가치는"
+	line $07,$A6,$02,$C2,$01,$2D,$7F,$01,$10,$01,$88,$02,$3A,$0B,$66; RAW DATA : 	line "있는것 같구나!"
 	done
+
+
