@@ -141,7 +141,7 @@ _FightingDojoEndBattleText4::
 _FightingDojoAfterBattleText4::
 	text $05,$EC,$01,$48,$04,$36,$7F,$02,$71,$02,$3A,$03,$45,$02,$C2,$7F,$07,$9F,$04,$29,$7F,$09,$F4,$07,$9C,$09,$9D,$03,$49,$07,$9C; RAW DATA : 	text "세계를 넘나드는 일류 파이터들이"
 	line $07,$09,$01,$B2,$05,$DD,$7F,$06,$26,$03,$F3,$07,$8B,$7F,$0A,$6F,$08,$26; RAW DATA : 	line "여기서 수련을 하지"
-	Done
+	done
 
  
 

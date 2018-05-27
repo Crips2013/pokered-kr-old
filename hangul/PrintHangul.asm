@@ -15,6 +15,7 @@ PrintHangul:
 	jr nz,.AlreadyExist
 	jr .NotFound
 .AlreadyExist
+	sla a
 	add a,$80
 	ld [hl],a
 	inc a
