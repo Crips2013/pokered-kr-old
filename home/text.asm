@@ -113,10 +113,18 @@ endm
 HangulCheck::
 	cp $0C
 	jr nc,.NotHangul
+	ld b,a
+	inc de
+	ld a,[de]
+	ld c,a
+	push de
 	ld a,[H_LOADEDROMBANK]
 	push af
-	callba PrintHangul
+	ld a,BANK(PrintHangul)
+	call BankswitchCommon
+	call PrintHangul
 	pop af
+	pop de
 	call BankswitchCommon
 	jr .Done
 .NotHangul
