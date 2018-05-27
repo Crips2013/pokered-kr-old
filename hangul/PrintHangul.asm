@@ -23,10 +23,7 @@ PrintHangul:
 	ld [hli],a
 	ret
 .NotFound ;based on http://cafe.naver.com/hansicgu/66
-		push hl
-		ld hl,vHangulCounter
-		call ReadVRAM
-		pop hl
+	call FindAvailableTiles
 	sla a
 		push hl
 		ld hl,vUploadedTile
@@ -102,16 +99,6 @@ PrintHangul:
 	rl b
 	dec a
 	jr nz,.loop2
-	
-	ld a,c
-	ld [H_VBCOPYDOUBLESRC],a
-	ld a,b
-	ld [H_VBCOPYDOUBLESRC+1],a
-	ld a,$02
-	ld [H_VBCOPYDOUBLESIZE],a
-	
-	
-	
 		push bc
 		
 			push hl
@@ -167,6 +154,55 @@ FindUploadedTile: ;VRAM : 8DC0~8DFF, bc : Hangul 2bytes, return a : TileNumber
 .NotFound
 	pop hl
 	ld a,$FF
+	ret
+	
+FindAvailableTiles:
+	push hl
+	ld hl,vHangulCounter
+	call ReadVRAM
+	pop hl
+.loop
+	push af
+	sla a
+	add a,$80
+	call FindTileMap
+	and a
+	jr z,.Done
+	pop af
+	inc a
+	cp a,$20
+	jr c,.Pass
+	ld a,$00
+.Pass
+	jr .loop
+.Done
+	pop af
+	ret
+	
+FindTileMap:
+	push bc
+	push hl
+	ld hl,wTileMap
+	ld c,SCREEN_HEIGHT
+.loop
+	ld b,SCREEN_WIDTH
+.loop2
+	cp a,[hl]
+	jr z,.Found
+	inc hl
+	dec b
+	jr nz,.loop2
+	dec c
+	jr nz,.loop
+	pop hl
+	pop bc
+.NotFound
+	ld a,$00
+	ret
+.Found
+	pop hl
+	pop bc
+	ld a,$01
 	ret
 	
 ReadVRAM: ;hl : VRAM Address, return : a
