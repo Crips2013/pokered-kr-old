@@ -1,4 +1,4 @@
-# Open Source Pokémon Red/Blue Korean Translation Project
+# Open Source Pokémon Red/Blue Korean Translation Project.
 
 This is Open Source Pokémon Red/Blue Korean Translation Project
 
