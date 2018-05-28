@@ -12,6 +12,8 @@ PICS_4 EQU $C
 PICS_5 EQU $D
 
 INCLUDE "home.asm"
+BuildDate:
+INCLUDE "BuildDate.asm"
 BuildTime:
 INCLUDE "BuildTime.asm"
 BuildNumber:
