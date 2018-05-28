@@ -1,6 +1,6 @@
-# Open Source Pokémon Red/Blue Korean Translation Project.
+# Open Source Pokémon Red/Blue Korean Translation Project
 
-This is Open Source Pokémon Red/Blue Korean Translation Project
+This is Open Source Pokémon Red/Blue Korean Translation Project.
 
 This is based on pret's disassembly of [**Pokémon Red/Blue**][pokered] and [**Pokémon Yellow Korean Fan Translation**][pokeyellowkr] which I participated in as a programmer.
 
