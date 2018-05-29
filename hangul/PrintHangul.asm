@@ -205,46 +205,58 @@ FindTileMap:
 	ld a,$01
 	ret
 	
-ReadVRAM: ;hl : VRAM Address, return : a
+ReadVRAM:
 	;if LCD is off
 	ld a,[rLCDC]
 	bit rLCDC_ENABLE,a
-	jr z,.ReadMemory
-.LCDOn
-	;if LCD is on
+	jr z,.ReadMemoryDirectly
+.CheckHBlank
 	ld a,[rSTAT]
 	and a,%00000011
 	cp a,$00
-	jr z,.LCDOn 
-.WaitForHBlank
-	ld a,[rSTAT]
-	and a,%00000011
-	cp a,$00
-	jr nz,.WaitForHBlank 
-	;Wait For H-Blank Period
+	jr nz,.CheckHBlank
 .ReadMemory
+	ld a,[hl]
+.DoubleCheckHBlank
+	push af
+	ld a,[rSTAT]
+	and a,%00000011
+	cp a,$00
+	jr nz,.ReRead
+	pop af
+	ret
+.ReRead
+	pop af
+	jr .CheckHBlank
+.ReadMemoryDirectly
 	ld a,[hl]
 	ret
 	
-WriteVRAM: ;hl : VRAM Address, a : Value
+WriteVRAM:
 	;if LCD is off
 	push af
 	ld a,[rLCDC]
 	bit rLCDC_ENABLE,a
-	jr z,.WriteMemory
-.LCDOn
-	;if LCD is on
+	jr z,.WriteMemoryDirectly
+.CheckHBlank
 	ld a,[rSTAT]
 	and a,%00000011
 	cp a,$00
-	jr z,.LCDOn 
-.WaitForHBlank
-	ld a,[rSTAT]
-	and a,%00000011
-	cp a,$00
-	jr nz,.WaitForHBlank 
-	;Wait For H-Blank Period
+	jr nz,.CheckHBlank
 .WriteMemory
+	pop af
+	ld [hl],a
+	push af
+.DoubleCheckHBlank
+	ld a,[rSTAT]
+	and a,%00000011
+	cp a,$00
+	jr nz,.ReWrite
+	pop af
+	ret
+.ReWrite
+	jr .CheckHBlank
+.WriteMemoryDirectly
 	pop af
 	ld [hl],a
 	ret
