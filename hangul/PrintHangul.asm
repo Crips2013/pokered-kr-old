@@ -117,7 +117,7 @@ PrintHangul:
 	
 	ld b,a
 	ld c,$2
-	call CopyVideoDataDouble
+	call HBlankCopyDouble
 	pop hl
 	ret
 	
