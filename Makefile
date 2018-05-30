@@ -1,5 +1,5 @@
+BuildCounter = cmd //c "tools\BuildCounter.bat"
 MD5 := md5sum -c
-
 pokered_obj := audio_red.o main_red.o text_red.o wram_red.o
 pokeblue_obj := audio_blue.o main_blue.o text_blue.o wram_blue.o
 
@@ -39,10 +39,12 @@ endif
 
 %_red.o: dep = $(shell tools/scan_includes $(@D)/$*.asm)
 $(pokered_obj): %_red.o: %.asm $$(dep)
+	$(BuildCounter)
 	rgbasm -D _RED -h -o $@ $*.asm
 
 %_blue.o: dep = $(shell tools/scan_includes $(@D)/$*.asm)
 $(pokeblue_obj): %_blue.o: %.asm $$(dep)
+	$(BuildCounter)
 	rgbasm -D _BLUE -h -o $@ $*.asm
 
 pokered_opt  = -jsv -k 01 -l 0x33 -m 0x13 -p 0 -r 03 -t "POKEMON RED"
@@ -51,7 +53,7 @@ pokeblue_opt = -jsv -k 01 -l 0x33 -m 0x13 -p 0 -r 03 -t "POKEMON BLUE"
 %.gbc: $$(%_obj)
 	rgblink -d -n $*.sym -l pokered.link -o $@ $^
 	rgbfix $($*_opt) $@
-	sort $*.sym -o $*.sym
+	#sort $*.sym -o $*.sym : Error!
 
 gfx/blue/intro_purin_1.2bpp: rgbgfx += -h
 gfx/blue/intro_purin_2.2bpp: rgbgfx += -h
@@ -71,7 +73,7 @@ gfx/tilesets/%.2bpp: tools/gfx += --trim-whitespace
 	$(if $(tools/gfx),\
 		tools/gfx $(tools/gfx) -o $@ $@)
 %.1bpp: %.png
-	rgbgfx -d1 $(rgbgfx)-o  $@ $<
+	rgbgfx -d1 $(rgbgfx) -o $@ $<
 	$(if $(tools/gfx),\
 		tools/gfx $(tools/gfx) -d1 -o $@ $@)
 %.pic:  %.2bpp

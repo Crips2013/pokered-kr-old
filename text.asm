@@ -22,149 +22,156 @@ INCLUDE "hram.asm"
 SECTION "Text 1", ROMX, BANK[TEXT_1]
 
 _CardKeySuccessText1::
-	text "Bingo!@@"
+	text $03,$69,$03,$1F,$0B,$66,$50,$50; RAW DATA : 	text "딩동!@@"
 
 _CardKeySuccessText2::
 	text ""
-	line "The CARD KEY"
-	cont "opened the door!"
+	line $09,$0B,$03,$45,$09,$80,$03,$FE; RAW DATA : 	line "카드키로"
+	cont $04,$AE,$07,$8B,$7F,$07,$0D,$06,$FA,$02,$D9,$0B,$66; RAW DATA : 	cont "문을 열었다!"
 	done
 
 _CardKeyFailText::
-	text "Darn! It needs a"
-	line "CARD KEY!"
+	text $07,$9C,$03,$E1,$0B,$66; RAW DATA : 	text "이런!"
+	line $09,$0B,$03,$45,$09,$80,$01,$01,$7F,$0A,$6A,$07,$44,$0A,$71,$01,$2D,$7F,$01,$10,$02,$D9,$0B,$66; RAW DATA : 	line "카드키가 필요한것 같다!"
 	done
 
 _TrainerNameText::
 	TX_RAM wcd6d
-	text ": @@"
+	text $0B,$62,$50,$50; RAW DATA : 	text $0B,$62,"@@"
 
 _NoNibbleText::
-	text "Not even a nibble!"
+	text $06,$C6,$04,$AB,$01,$2D,$03,$15,$7F,$07,$B2,$0A,$F7,$08,$26,$7F,$06,$CA,$02,$C2,$02,$D9,$0B,$66; RAW DATA : 	text "아무것도 잡히지 않는다!";낚시관련 시스템 문장
 	prompt
 
 _NothingHereText::
-	text "Looks like there's"
-	line "nothing here."
+	text $07,$9C,$01,$67,$07,$01,$02,$C2,$7F,$06,$C6,$04,$AB,$01,$2D,$03,$15; RAW DATA : 	text "이곳에는 아무것도"
+	line $06,$F8,$02,$C2,$7F,$01,$2D,$7F,$01,$10,$02,$D9; RAW DATA : 	line "없는 것 같다"
 	prompt
 
+
 _ItsABiteText::
-	text "Oh!"
-	line "It's a bite!"
+	text $06,$EE,$0B,$66; RAW DATA : 	text "어!"
+	line $04,$BA,$01,$01,$7F,$04,$B0,$06,$FA,$02,$D9,$0B,$66; RAW DATA : 	line "뭔가 물었다!"
 	prompt
 
 _ExclamationText::
-	text "!"
+	text $0B,$66; RAW DATA : 	text "!"
 	done
 
 _GroundRoseText::
-	text "Ground rose up"
-	line "somewhere!"
+	text $06,$EE,$03,$60,$05,$E1,$01,$01; RAW DATA : 	text "어디선가"
+	line $08,$26,$04,$89,$07,$9C,$7F,$06,$0A,$06,$C6,$07,$23,$03,$CA,$02,$D9,$0B,$66; RAW DATA : 	line "지면이 솟아올랐다!"
 	done
 
 _BoulderText::
-	text "This requires"
-	line "STRENGTH to move!"
+	;text $93,$A7,$A8,$B2,$7F,$B1,$A4,$B0,$B4,$A8,$B1,$A4,$B2; RAW DATA : 	;text "This requires"
+	;line $92,$93,$91,$84,$8D,$86,$93,$87,$7F,$B3,$AE,$7F,$AC,$AE,$B5,$A4,$0B,$66; RAW DATA : 	;line "STRENGTH to move!"
+	text $09,$1F,$02,$D9,$03,$C5,$7F,$04,$D9,$07,$77,$08,$26,$04,$48,$0B,$6A,$0B,$6A
+	line $0A,$27,$09,$2F,$04,$93,$07,$97,$7F,$01,$B2,$06,$2A,$03,$FE,$7F,$04,$D0,$7F,$06,$26,$7F,$07,$A6,$07,$8B,$08,$26,$03,$15,$0B,$67
+	;text $09,$1F,$02,$D9,$03,$C5,$7F,$04,$D9,$07,$77,$08,$26,$04,$48,$0B,$6A,$0B,$6A; RAW DATA : 	;text "커다란 바위지만……"
+	;line $0A,$27,$09,$2F,$04,$93,$07,$97,$7F,$01,$B2,$06,$2A,$03,$FE,$7F,$04,$D0,$7F,$06,$26,$7F,$07,$A6,$07,$8B,$08,$26,$03,$15,$0B,$67; RAW DATA : 	;line "포켓몬의 기술로 밀 수 있을지도?"
 	done
 
 _MartSignText::
-	text "All your item"
-	line "needs fulfilled!"
-	cont "#MON MART"
+	text $0A,$27,$09,$2F,$04,$93,$7F,$05,$C3,$0A,$40,$07,$9C,$03,$C3,$04,$89
+	line $0A,$61,$03,$EB,$03,$49,$04,$3E,$06,$23
+	;text $0A,$27,$09,$2F,$04,$93,$7F,$05,$C3,$0A,$40,$07,$9C,$03,$C3,$04,$89; RAW DATA : 	;text "포켓몬 상품이라면"
+	;line $0A,$61,$03,$EB,$03,$49,$04,$3E,$06,$23; RAW DATA : 	;line "프렌들리숍"
 	done
 
 _PokeCenterSignText::
-	text "Heal Your #MON!"
-	line "#MON CENTER"
+	;text $0A,$27,$09,$2F,$04,$93,$07,$97,$7F,$08,$BC,$03,$F2,$0A,$B8,$05,$19,$0B,$66; RAW DATA : 	;text "포켓몬의 체력회복!"
+	;line $0A,$27,$09,$2F,$04,$93,$7F,$05,$EE,$09,$9D; RAW DATA : 	;line "포켓몬 센터"
+		text $0A,$27,$09,$2F,$04,$93,$07,$97,$7F,$08,$BC,$03,$F2,$0A,$B8,$05,$19,$0B,$66
+	line $0A,$27,$09,$2F,$04,$93,$7F,$05,$EE,$09,$9D
 	done
 
 _FoundItemText::
-	text "<PLAYER> found"
-	line "@"
+	text $52,$02,$C2,$0B,$64,$07,$8A,$0B,$65; RAW DATA : 	text $52,$02,$C2,$0B,$64,$07,$8A,$0B,$65; RAW DATA : 	text $52,$02,$C2,$0B,$64,$07,$8A,$0B,$65; RAW DATA : 	text $52,"는(은)"
+	line $50; RAW DATA : 	line $50; RAW DATA : 	line $50; RAW DATA : 	line "@"
 	TX_RAM wcf4b
-	text "!@@"
+	text $04,$36,$0B,$64,$07,$8B,$0B,$65; RAW DATA : 	text $04,$36,$0B,$64,$07,$8B,$0B,$65; RAW DATA : 	text $04,$36,$0B,$64,$07,$8B,$0B,$65; RAW DATA : 	text "를(을)"
+	cont $04,$DF,$01,$3F,$0A,$7F,$02,$D9,$0B,$66,$50,$50; RAW DATA : 	cont $04,$DF,$01,$3F,$0A,$7F,$02,$D9,$0B,$66,$50,$50; RAW DATA : 	cont $04,$DF,$01,$3F,$0A,$7F,$02,$D9,$0B,$66,$50,$50; RAW DATA : 	cont "발견했다!@@"
 
 _NoMoreRoomForItemText::
-	text "No more room for"
-	line "items!"
+	text $07,$9C,$7F,$07,$9C,$05,$C3,$07,$8A,$7F,$03,$49,$7F,$06,$26; RAW DATA : 	text "이 이상은 들 수"
+	line $06,$F8,$06,$EE,$0B,$66; RAW DATA : 	line "없어!"
 	done
-
+;수정해야됨
 _OaksAideHiText::
-	text "Hi! Remember me?"
-	line "I'm PROF.OAK's"
-	cont "AIDE!"
+	text $06,$C8,$02,$87,$0A,$6F,$05,$EC,$07,$44,$0B,$66,$7F,$01,$B2,$06,$EF,$0A,$6F,$06,$63,$02,$3A,$07,$44,$0B,$67; RAW DATA : 	text "안녕하세요! 기억하시나요?"
+	line $07,$CC,$7F,$07,$20,$04,$DA,$05,$B7,$02,$D4,$07,$97,$7F,$07,$E6,$06,$26,$07,$19,$07,$44,$0B,$66; RAW DATA : 	line "전 오박사님의 조수예요!"
 
-	para "If you caught @"
+	para $0A,$96,$07,$B7,$7F,$50; RAW DATA : 	para "현재 @"
 	TX_NUM hOaksAideRequirement, 1, 3
-	text ""
-	line "kinds of #MON,"
-	cont "I'm supposed to"
-	cont "give you an"
-	cont "@"
+	text $07,$EE,$04,$29,$07,$97; RAW DATA : 	text "종류의"
+	line $0A,$27,$09,$2F,$04,$93,$07,$8B,$7F,$07,$B2,$07,$88,$05,$FC,$02,$77,$07,$44; RAW DATA : 	line "포켓몬을 잡으셨네요"
+	cont $01,$A7,$03,$E1,$7F,$02,$E7,$06,$65,$07,$01,$01,$34,$0B,$66; RAW DATA : 	cont "그런 당신에게!"
+	cont $07,$D6,$01,$01,$7F,$08,$09,$7F,$04,$B0,$01,$27,$07,$8A,$0B,$66; RAW DATA : 	cont "제가 줄 물건은!"
+	cont $50; RAW DATA : 	cont "@"
 	TX_RAM wOaksAideRewardItemName
-	text "!"
+	text $07,$A4,$02,$CF,$02,$D9,$0B,$66; RAW DATA : 	text "입니다!"
 
-	para "So, <PLAYER>! Have"
-	line "you caught at"
-	cont "least @"
+	para $52,$01,$8A,$0B,$66; RAW DATA : 	para $52,"군!"
+	line $07,$9C,$07,$D6,$7F,$02,$E7,$06,$65,$07,$9C,$7F,$07,$B2,$06,$C6,$06,$DF,$7F,$0A,$72,$7F,$0A,$27,$09,$2F,$04,$93,$07,$8A; RAW DATA : 	line "이제 당신이 잡아야 할 포켓몬은"
+	cont $50; RAW DATA : 	cont "@"
 	TX_NUM hOaksAideRequirement, 1, 3
-	text " kinds of"
-	cont "#MON?"
+	text $07,$EE,$04,$29,$02,$77,$07,$44,$0B,$66; RAW DATA : 	text "종류네요!""
 	done
 
 _OaksAideUhOhText::
-	text "Let's see..."
-	line "Uh-oh! You have"
-	cont "caught only @"
+	text $06,$EE,$03,$60,$05,$18,$07,$AA,$0B,$6A,$0B,$6A; RAW DATA : 	text "어디보자……"
+	line $07,$20,$0A,$A3,$03,$C3,$0B,$66; RAW DATA : 	line "오호라!"
+	cont $02,$E7,$06,$65,$7F,$07,$B2,$07,$8A,$01,$27,$7F,$50; RAW DATA : 	cont "당신 잡은건 @"
 	TX_NUM hOaksAideNumMonsOwned, 1, 3
-	text ""
-	cont "kinds of #MON!"
+	text $07,$EE,$04,$29,$07,$97; RAW DATA : 	text "종류의"
+	cont $0A,$27,$09,$2F,$04,$93,$07,$9C,$01,$8A,$07,$44,$0B,$66; RAW DATA : 	line "포켓몬이군요!"
 
-	para "You need @"
+	para $07,$D6,$01,$01,$7F,$04,$B0,$01,$27,$07,$8B,$7F,$08,$06,$01,$B2,$7F,$07,$77,$0A,$78,$05,$DD,$02,$C2; RAW DATA : 	para "제가 물건을 주기 위해서는"
+	line $50; RAW DATA : 	line "@"
 	TX_NUM hOaksAideRequirement, 1, 3
-	text " kinds"
-	line "if you want the"
-	cont "@"
+	text $07,$EE,$04,$29,$07,$97,$7F,$0A,$27,$09,$2F,$04,$93,$07,$9C; RAW DATA : 	text "종류의 포켓몬이"
+	cont $02,$F5,$7F,$0A,$6A,$07,$44,$0A,$72,$01,$25,$7F,$01,$10,$02,$77,$07,$44; RAW DATA : 	cont "더 필요할거 같네요"
+	cont $01,$A7,$03,$DF,$04,$89,$7F,$07,$D6,$01,$01; RAW DATA : 	cont "그러면 제가"
+	cont $50; RAW DATA : 	cont "@"
 	TX_RAM wOaksAideRewardItemName
-	text "."
+	text $04,$36,$0B,$64,$07,$8B,$0B,$65,$7F,$03,$45,$04,$3E,$08,$02; RAW DATA : 	text "를(을) 드리죠"
 	done
 
 _OaksAideComeBackText::
-	text "Oh. I see."
+	text $02,$77,$7F,$06,$CB,$01,$3A,$06,$60,$02,$CF,$02,$D9; RAW DATA : 	text "네 알겠습니다"
 
-	para "When you get @"
+	para $50; RAW DATA : 	para "@"
 	TX_NUM hOaksAideRequirement, 1, 3
-	text ""
-	line "kinds, come back"
-	cont "for @"
+	text $07,$EE,$04,$29,$07,$8B,$7F,$03,$15,$01,$08,$07,$01,$7F,$08,$A4,$07,$4C,$04,$89; RAW DATA : 	text "종류을 도감에 채우면"
+	line $02,$D9,$06,$63,$7F,$07,$2D,$05,$DD; RAW DATA : 	line "다시 와서"
+	cont $50; RAW DATA : 	cont "@"
 	TX_RAM wOaksAideRewardItemName
-	text "."
+	text $04,$36,$0B,$64,$07,$8B,$0B,$65,$7F,$04,$DE,$06,$C6,$01,$01,$05,$EC,$07,$44; RAW DATA : 	text "를(을) 받아가세요"
 	done
 
 _OaksAideHereYouGoText::
-	text "Great! You have"
-	line "caught @"
+	text $02,$8E,$03,$C3,$07,$66,$0B,$66; RAW DATA : 	text "놀라워!"
+	line $50; RAW DATA : 	line "@"
 	TX_NUM hOaksAideNumMonsOwned, 1, 3
-	text " kinds "
-	cont "of #MON!"
-	cont "Congratulations!"
+	text $07,$EE,$04,$29,$07,$97,$7F,$0A,$27,$09,$2F,$04,$93,$07,$8B,$7F,$07,$B2,$07,$88,$05,$FC,$01,$8A,$07,$44,$0B,$66; RAW DATA : 	text "종류의 포켓몬을 잡으셨군요!"
+	cont $08,$E0,$0A,$6F,$0A,$78,$07,$44,$0B,$66; RAW DATA : 	cont "축하해요!"
 
-	para "Here you go!"
+	para $07,$9C,$01,$29,$7F,$04,$DE,$07,$88,$05,$EC,$07,$44,$0B,$66; RAW DATA : 	para "이걸 받으세요!"
 	prompt
 
 _OaksAideGotItemText::
-	text "<PLAYER> got the"
-	line "@"
+	text $52, $07,$8A,$0B,$64,$02,$C2,$0B,$65; RAW DATA : 	text $52, "은(는)"
+	line $50; RAW DATA : 	line "@"
 	TX_RAM wOaksAideRewardItemName
-	text "!@@"
+	text $04,$36,$0B,$64,$07,$8B,$0B,$65,$7F,$04,$DE,$06,$D2,$02,$D9,$0B,$66,$50,$50; RAW DATA : 	text "를(을) 받았다!@@"
 
 _OaksAideNoRoomText::
-	text "Oh! I see you"
-	line "don't have any"
-	cont "room for the"
-	cont "@"
+	text $06,$C6,$07,$9C,$01,$4D,$0B,$66; RAW DATA : 	text "아이고!"
+	line $01,$A7,$7F,$07,$9C,$05,$C3,$07,$8A,$7F,$08,$26,$02,$D2,$06,$26,$7F,$06,$F8,$06,$EE,$05,$DD; RAW DATA : 	line "그 이상은 지닐수 없어서"
+	cont $50; RAW DATA : 	cont "@"
 	TX_RAM wOaksAideRewardItemName
-	text "."
+	text $04,$36,$0B,$64,$07,$8B,$0B,$65,$7F,$04,$98,$7F,$04,$DE,$01,$3A,$02,$C2,$03,$05,$07,$44; RAW DATA : 	text "를(을) 못 받겠는데요"
 	done
 
 INCLUDE "text/maps/viridian_forest.asm"
@@ -230,940 +237,901 @@ INCLUDE "text/maps/rock_tunnel_b2f_2.asm"
 INCLUDE "text/maps/seafoam_islands_b4f.asm"
 
 _AIBattleWithdrawText::
+	;TX_RAM wTrainerName
+	;text $02,$C2,$0B,$64,$07,$8A,$0B,$65; RAW DATA : 	;text "는(은)"
+	;line $50; RAW DATA : 	;line "@"
+	;TX_RAM wEnemyMonNick
+	;text $04,$36,$0B,$64,$07,$8B,$0B,$65; RAW DATA : 	;text "를(을)"
+	;cont $08,$97,$03,$FA,$03,$FE,$7F,$01,$D8,$02,$62,$02,$D9; RAW DATA : 	;cont "차례로 꺼냈다"
+	;prompt
 	TX_RAM wTrainerName
-	text " with-"
-	line "drew @"
+	text $02,$C2,$0B,$64,$07,$8A,$0B,$65
+	line $50
 	TX_RAM wEnemyMonNick
-	text "!"
+	text $04,$36,$0B,$64,$07,$8B,$0B,$65
+	cont $08,$97,$03,$FA,$03,$FE,$7F,$01,$D8,$02,$62,$02,$D9
 	prompt
 
 _AIBattleUseItemText::
 	TX_RAM wTrainerName
-	text ""
-	line "used @"
-	TX_RAM wcd6d
-	text ""
-	cont "on @"
+	text $02,$C2,$0B,$64,$07,$8A,$0B,$65; RAW DATA : 	text $02,$C2,$0B,$64,$07,$8A,$0B,$65; RAW DATA : 	text $02,$C2,$0B,$64,$07,$8A,$0B,$65; RAW DATA : 	text "는(은)"
+	line $50; RAW DATA : 	line $50; RAW DATA : 	line $50; RAW DATA : 	line "@"
 	TX_RAM wEnemyMonNick
-	text "!"
+	text $07,$01,$01,$34; RAW DATA : 	text $07,$01,$01,$34; RAW DATA : 	text $07,$01,$01,$34; RAW DATA : 	text "에게"
+	
+	para $50; RAW DATA : 	para $50; RAW DATA : 	para $50; RAW DATA : 	para "@"
+	TX_RAM wcd6d
+	text $04,$36,$0B,$64,$07,$8B,$0B,$65; RAW DATA : 	text $04,$36,$0B,$64,$07,$8B,$0B,$65; RAW DATA : 	text $04,$36,$0B,$64,$07,$8B,$0B,$65; RAW DATA : 	text "를(을)"
+	line $05,$B7,$07,$4B,$0A,$7F,$02,$D9,$0B,$66; RAW DATA : 	line $05,$B7,$07,$4B,$0A,$7F,$02,$D9,$0B,$66; RAW DATA : 	line $05,$B7,$07,$4B,$0A,$7F,$02,$D9,$0B,$66; RAW DATA : 	line "사용했다!"
 	prompt
 
 _TradeWentToText::
 	TX_RAM wcf4b
-	text " went"
-	line "to @"
+	text $02,$C2,$0B,$64,$07,$8A,$0B,$65,$7F,$04,$AB,$05,$B7,$0A,$F7; RAW DATA : 	text "는(은) 무사히"
+	line $50; RAW DATA : 	line "@"
 	TX_RAM wGrassRate
-	text "."
+	text $07,$01,$01,$34,$7F,$04,$63,$01,$3C,$07,$E3,$06,$60,$02,$CF,$02,$D9; RAW DATA : 	text "에게 맡겨졌습니다"
 	done
 
 _TradeForText::
-	text "For <PLAYER>'s"
-	line "@"
+	text $52,$0B,$64,$07,$9C,$0B,$65,$01,$01; RAW DATA : 	text $52,"(이)가"
+	line $50; RAW DATA : 	line "@"
 	TX_RAM wcf4b
-	text ","
+	text $04,$36,$0B,$64,$07,$8B,$0B,$65,$7F,$05,$18,$02,$4B,$02,$C2,$7F,$02,$EB,$06,$65; RAW DATA : 	text "를(을) 보내는 대신"
 	done
 
 _TradeSendsText::
 	TX_RAM wGrassRate
-	text " sends"
-	line "@"
+	text $02,$C2,$0B,$64,$07,$8A,$0B,$65; RAW DATA : 	text "는(은)"
+	line $50; RAW DATA : 	line "@"
 	TX_RAM wcd6d
-	text "."
+	text $04,$36,$0B,$64,$07,$8B,$0B,$65,$7F,$08,$0D,$02,$CF,$02,$D9; RAW DATA : 	text "를(을) 줍니다"
 	done
 
 _TradeWavesFarewellText::
 	TX_RAM wGrassRate
-	text " waves"
-	line "farewell as"
+	text $07,$9C,$0B,$64,$01,$01,$0B,$65; RAW DATA : 	text "이(가)"
+	line $05,$DE,$05,$10,$07,$97,$7F,$07,$D4,$07,$8B,$7F,$06,$C6,$06,$3C,$07,$66,$0A,$6F,$04,$87; RAW DATA : 	line "석별의 정을 아쉬워하며"
 	done
 
 _TradeTransferredText::
 	TX_RAM wcd6d
-	text " is"
-	line "transferred."
+	text $04,$36,$0B,$64,$07,$8B,$0B,$65; RAW DATA : 	text "를(을)"
+	line $05,$18,$02,$60,$02,$CF,$02,$D9; RAW DATA : 	line "보냅니다"
 	done
 
 _TradeTakeCareText::
-	text "Take good care of"
-	line "@"
+	text $50; RAW DATA : 	text "@"
 	TX_RAM wcd6d
-	text "."
+	text $04,$36,$0B,$64,$07,$8B,$0B,$65; RAW DATA : 	text "를(을)"
+	line $01,$9D,$07,$09,$07,$66,$0A,$78,$7F,$08,$06,$05,$EC,$07,$44; RAW DATA : 	line "귀여워해 주세요"
 	done
 
 _TradeWillTradeText::
+	text $07,$9C,$07,$D6,$05,$2E,$09,$9D; RAW DATA : 	text "이제부터"
+	line $50; RAW DATA : 	line "@"
 	TX_RAM wGrassRate
-	text " will"
-	line "trade @"
+	text $07,$97,$7F,$50; RAW DATA : 	text "의 @";" will";"trade @"
 	TX_RAM wcd6d
-	text ""
+	text $01,$6A,$0B,$64,$07,$2D,$0B,$65; RAW DATA : 	text "과(와)"
 	done
 
 _TradeforText::
-	text "for <PLAYER>'s"
-	line "@"
+	text $52, $07,$97,$7F,$50; RAW DATA : 	text $52, "의 @"
 	TX_RAM wcf4b
-	text "."
+	text $04,$36,$0B,$64,$07,$8B,$0B,$65; RAW DATA : 	text "를(을)"
+	line $01,$83,$0A,$AF,$0A,$75,$02,$CF,$02,$D9,$0B,$66; RAW DATA : 	line "교환합니다!"
 	done
 
 _PlaySlotMachineText::
-	text "A slot machine!"
-	line "Want to play?"
+	text $06,$4D,$04,$04,$04,$73,$06,$65,$07,$9C,$02,$D9,$0B,$66; RAW DATA : 	text $06,$4D,$04,$04,$04,$73,$06,$65,$07,$9C,$02,$D9,$0B,$66; RAW DATA : 	text $06,$4D,$04,$04,$04,$73,$06,$65,$07,$9C,$02,$D9,$0B,$66; RAW DATA : 	text "슬롯머신이다!"
+	line $0A,$71,$04,$F8,$7F,$0A,$78,$05,$1C,$01,$BE,$0B,$67; RAW DATA : 	line $0A,$71,$04,$F8,$7F,$0A,$78,$05,$1C,$01,$BE,$0B,$67; RAW DATA : 	line $0A,$71,$04,$F8,$7F,$0A,$78,$05,$1C,$01,$BE,$0B,$67; RAW DATA : 	line "한번 해볼까?"
 	done
 
+
 _OutOfCoinsSlotMachineText::
-	text "Darn!"
-	line "Ran out of coins!"
+	text $03,$1F,$07,$CC,$07,$9C; RAW DATA : 	text $03,$1F,$07,$CC,$07,$9C; RAW DATA : 	text $03,$1F,$07,$CC,$07,$9C; RAW DATA : 	text "동전이"
+	line $02,$D9,$7F,$03,$83,$06,$EE,$07,$DE,$04,$F6,$03,$F8,$02,$D9,$0B,$6A,$0B,$6A; RAW DATA : 	line $02,$D9,$7F,$03,$83,$06,$EE,$07,$DE,$04,$F6,$03,$F8,$02,$D9,$0B,$6A,$0B,$6A; RAW DATA : 	line $02,$D9,$7F,$03,$83,$06,$EE,$07,$DE,$04,$F6,$03,$F8,$02,$D9,$0B,$6A,$0B,$6A; RAW DATA : 	line "다 떨어져버렸다……"
 	done
 
 _BetHowManySlotMachineText::
-	text "Bet how many"
-	line "coins?"
+	text $03,$1F,$07,$CC,$07,$8B; RAW DATA : 	text $03,$1F,$07,$CC,$07,$8B; RAW DATA : 	text $03,$1F,$07,$CC,$07,$8B; RAW DATA : 	text "동전을"
+	line $04,$8E,$7F,$01,$13,$7F,$01,$29,$01,$3A,$06,$60,$02,$CF,$01,$BE,$0B,$67; RAW DATA : 	line $04,$8E,$7F,$01,$13,$7F,$01,$29,$01,$3A,$06,$60,$02,$CF,$01,$BE,$0B,$67; RAW DATA : 	line $04,$8E,$7F,$01,$13,$7F,$01,$29,$01,$3A,$06,$60,$02,$CF,$01,$BE,$0B,$67; RAW DATA : 	line "몇 개 걸겠습니까?"
 	done
 
 _StartSlotMachineText::
-	text "Start!"
+	text $06,$4A,$09,$88,$09,$DE,$0B,$66; RAW DATA : 	text $06,$4A,$09,$88,$09,$DE,$0B,$66; RAW DATA : 	text $06,$4A,$09,$88,$09,$DE,$0B,$66; RAW DATA : 	text "스타트!"
 	done
 
 _NotEnoughCoinsSlotMachineText::
-	text "Not enough"
-	line "coins!"
+	text $03,$1F,$07,$CC,$07,$9C,$7F,$05,$2E,$07,$E7,$0A,$75,$02,$CF,$02,$D9,$0B,$66; RAW DATA : 	text $03,$1F,$07,$CC,$07,$9C,$7F,$05,$2E,$07,$E7,$0A,$75,$02,$CF,$02,$D9,$0B,$66; RAW DATA : 	text $03,$1F,$07,$CC,$07,$9C,$7F,$05,$2E,$07,$E7,$0A,$75,$02,$CF,$02,$D9,$0B,$66; RAW DATA : 	text "동전이 부족합니다!"
 	prompt
 
 _OneMoreGoSlotMachineText::
-	text "One more "
-	line "go?"
+	text $02,$D9,$06,$63,$0A,$71,$04,$F8; RAW DATA : 	text $02,$D9,$06,$63,$0A,$71,$04,$F8; RAW DATA : 	text $02,$D9,$06,$63,$0A,$71,$04,$F8; RAW DATA : 	text "다시한번"
+	line $0A,$6F,$01,$3A,$06,$60,$02,$CF,$01,$BE,$0B,$67; RAW DATA : 	line $0A,$6F,$01,$3A,$06,$60,$02,$CF,$01,$BE,$0B,$67; RAW DATA : 	line $0A,$6F,$01,$3A,$06,$60,$02,$CF,$01,$BE,$0B,$67; RAW DATA : 	line "하겠습니까?"
 	done
 
 _LinedUpText::
-	text " lined up!"
-	line "Scored @"
+	text $7F,$0B,$64,$07,$9C,$0B,$65,$01,$01,$7F,$04,$90,$07,$14,$02,$D9,$0B,$66; RAW DATA : 	text $7F,$0B,$64,$07,$9C,$0B,$65,$01,$01,$7F,$04,$90,$07,$14,$02,$D9,$0B,$66; RAW DATA : 	text $7F,$0B,$64,$07,$9C,$0B,$65,$01,$01,$7F,$04,$90,$07,$14,$02,$D9,$0B,$66; RAW DATA : 	text " (이)가 모였다!"
+	line $03,$1F,$07,$CC,$7F,$50; RAW DATA : 	line $03,$1F,$07,$CC,$7F,$50; RAW DATA : 	line $03,$1F,$07,$CC,$7F,$50; RAW DATA : 	line "동전 @"
 	TX_RAM wcf4b
-	text " coins!"
+	text $01,$13,$7F,$0A,$AE,$05,$18,$0B,$66; RAW DATA : 	text $01,$13,$7F,$0A,$AE,$05,$18,$0B,$66; RAW DATA : 	text $01,$13,$7F,$0A,$AE,$05,$18,$0B,$66; RAW DATA : 	text "개 확보!"
 	done
 
 _NotThisTimeText::
-	text "Not this time!"
+	text $01,$FE,$0B,$68; RAW DATA : 	text $01,$FE,$0B,$68; RAW DATA : 	text $01,$FE,$0B,$68; RAW DATA : 	text "꽝-"
 	prompt
 
 _YeahText::
-	text "Yeah!@@"
+	text $06,$C6,$06,$6E,$0B,$66,$50,$50; RAW DATA : 	text $06,$C6,$06,$6E,$0B,$66,$50,$50; RAW DATA : 	text $06,$C6,$06,$6E,$0B,$66,$50,$50; RAW DATA : 	text "아싸!@@"
 
+	;Yeah!@@
 _DexSeenOwnedText::
-	text "#DEX   Seen:@"
+	text $04,$DF,$01,$3F,$0A,$71,$7F,$0A,$27,$09,$2F,$04,$93,$7F,$50; RAW DATA : 	text "발견한 포켓몬 @"
 	TX_NUM wDexRatingNumMonsSeen, 1, 3
 	text ""
-	line "         Owned:@"
+	line $07,$B2,$07,$8A,$7F,$0A,$27,$09,$2F,$04,$93,$7F,$50; RAW DATA : 	line "잡은 포켓몬 @"
 	TX_NUM wDexRatingNumMonsOwned, 1, 3
-	db "@"
+	db $50; RAW DATA : 	db "@"
 
 _DexRatingText::
-	text "#DEX Rating", $6d
+	text $0A,$27,$09,$2F,$04,$93,$7F,$03,$15,$01,$08,$07,$97; RAW DATA : 	text "포켓몬 도감의"
+	line $0A,$96,$07,$B7,$7F,$07,$2F,$05,$EA,$03,$15; RAW DATA : 	line "현재 완성도"
+	db	$6d
 	done
-
+;검수해야됨
 _GymStatueText1::
 	TX_RAM wGymCityName
-	text ""
-	line "#MON GYM"
-	cont "LEADER: @"
+	text $7F,$0A,$27,$09,$2F,$04,$93,$7F,$08,$BC,$07,$80,$01,$6C; RAW DATA : 	text "포켓몬 체육관"
+	line $01,$6C,$07,$B5,$7F,$50; RAW DATA : 	line "관장 @"
 	TX_RAM wGymLeaderName
 	text ""
 
-	para "WINNING TRAINERS:"
-	line "<RIVAL>"
+	para $07,$9C,$01,$B4,$7F,$09,$DE,$03,$E9,$07,$9C,$02,$6A; RAW DATA : 	para "이긴 트레이너"
+	line $53
 	done
 
 _GymStatueText2::
 	TX_RAM wGymCityName
-	text ""
-	line "#MON GYM"
-	cont "LEADER: @"
+	text $7F,$0A,$27,$09,$2F,$04,$93,$7F,$08,$BC,$07,$80,$01,$6C; RAW DATA : 	text "포켓몬 체육관"
+	line $01,$6C,$07,$B5,$7F,$50; RAW DATA : 	line "관장 @"
 	TX_RAM wGymLeaderName
 	text ""
 
-	para "WINNING TRAINERS:"
-	line "<RIVAL>"
-	cont "<PLAYER>"
+	para $07,$9C,$01,$B4,$7F,$09,$DE,$03,$E9,$07,$9C,$02,$6A; RAW DATA : 	para "이긴 트레이너"
+	line $53
+	cont $52
 	done
 
 _ViridianCityPokecenterGuyText::
-	text "#MON CENTERs"
-	line "heal your tired,"
-	cont "hurt or fainted"
-	cont "#MON!"
+	text $0A,$27,$09,$2F,$04,$93,$05,$EE,$09,$9D,$02,$C2; RAW DATA : 	text "포켓몬센터는"
+	line $08,$26,$09,$01,$01,$4D,$7F,$02,$D9,$09,$01,$01,$4D,$7F,$01,$B2,$07,$CD,$0A,$71; RAW DATA : 	line "지치고 다치고 기절한"
+	cont $0A,$27,$09,$2F,$04,$93,$07,$8B,$7F,$09,$01,$04,$11,$0A,$78,$08,$10,$0B,$66; RAW DATA : 	cont "포켓몬을 치료해줘!"
 	done
 
 _PewterCityPokecenterGuyText::
-	text "Yawn!"
+	text $0A,$E5,$06,$C6,$06,$CF,$0B,$66; RAW DATA : 	text "흐아암!"
 
-	para "When JIGGLYPUFF"
-	line "sings, #MON"
-	cont "get drowsy..."
+	para $0A,$3A,$04,$40,$07,$9C,$7F,$02,$8B,$03,$D1,$0A,$6F,$04,$89; RAW DATA : 	para "푸린이 노래하면"
+	line $0A,$27,$09,$2F,$04,$93,$07,$8A,$7F,$07,$B1,$03,$49,$01,$34,$7F,$03,$25,$0B,$6A,$0B,$6A; RAW DATA : 	line "포켓몬은 잠들게 돼……"
+	cont $0B,$6A,$0B,$6A; RAW DATA : 	cont "……"
 
-	para "...Me too..."
-	line "Snore..."
+	para $0B,$6A,$0B,$6A,$02,$3A,$7F,$07,$0A,$06,$63,$0B,$6A,$0B,$6A; RAW DATA : 	para "……나 역시……"
+	line $03,$45,$04,$33,$03,$E7,$0B,$6A,$0B,$6A; RAW DATA : 	line "드르렁……"
 	done
 
 _CeruleanPokecenterGuyText::
-	text "BILL has lots of"
-	line "#MON!"
+	text $07,$9C,$06,$26,$07,$B7,$02,$C2,$7F,$04,$49,$07,$8A,$7F,$0A,$27,$09,$2F,$04,$93,$07,$8B; RAW DATA : 	text "이수재는 많은 포켓몬을"
+	line $01,$01,$08,$26,$01,$4D,$7F,$07,$A6,$06,$EE; RAW DATA : 	line "가지고 있어"
 
-	para "He collects rare"
-	line "ones too!"
-	done
+	para $0A,$F1,$01,$9D,$7F,$0A,$27,$09,$2F,$04,$93,$03,$15; RAW DATA : 	para "희귀 포켓몬도"
+	line $06,$26,$08,$2D,$0A,$6F,$01,$4D,$7F,$07,$A6,$08,$26,$0B,$66; RAW DATA : 	line "수집하고 있지!"
+	done 
 
 _LavenderPokecenterGuyText::
-	text "CUBONEs wear"
-	line "skulls, right?"
+	text $09,$91,$01,$88,$04,$3E,$01,$01,$7F,$0A,$78,$01,$61; RAW DATA : 	text "탕구리가 해골"
+	line $03,$3A,$08,$2D,$06,$EE,$7F,$06,$B2,$02,$C2,$01,$25,$7F,$06,$CB,$08,$26,$7F,$01,$A7,$09,$01,$0B,$67; RAW DATA : 	line "뒤집어 쓰는거 알지 그치?"
 
-	para "People will pay a"
-	line "lot for one!"
+	para $07,$9C,$01,$29,$03,$FE,$7F,$02,$EB,$01,$01,$04,$36,$7F,$09,$01,$04,$36; RAW DATA : 	para "이걸로 대가를 치를"
+	line $05,$B7,$03,$C7,$03,$49,$07,$9C,$7F,$07,$A6,$08,$26,$0B,$66; RAW DATA : 	line "사람들이 있지!"
 	done
 
 _MtMoonPokecenterBenchGuyText::
-	text "If you have too"
-	line "many #MON, you"
-	cont "should store them"
-	cont "via PC!"
+	text $03,$05,$04,$3E,$01,$4D,$7F,$07,$A6,$02,$C2,$7F,$0A,$27,$09,$2F,$04,$93,$07,$9C; RAW DATA : 	text "데리고 있는 포켓몬이"
+	line $02,$6A,$04,$AB,$7F,$04,$49,$07,$88,$04,$89; RAW DATA : 	line "너무 많으면"
+	cont $09,$24,$0A,$4B,$09,$9D,$07,$01,$7F,$05,$18,$01,$6C,$0A,$78,$05,$21,$0B,$66; RAW DATA : 	cont "컴퓨터에 보관해봐!"
 	done
 
 _RockTunnelPokecenterGuyText::
-	text "I heard that"
-	line "GHOSTs haunt"
-	cont "LAVENDER TOWN!"
+	text $05,$18,$03,$C3,$09,$88,$07,$4E,$07,$01,$7F,$07,$7F,$03,$F9,$07,$9C; RAW DATA : 	text "보라타운에 유령이"
+	line $02,$3A,$07,$22,$02,$D9,$01,$4D,$7F,$03,$49,$06,$FA,$06,$EE,$0B,$66; RAW DATA : 	line "나온다고 들었어!"
 	done
 
 _UnusedBenchGuyText1::
-	text "I wish I could"
-	line "catch #MON."
+	text $0A,$27,$09,$2F,$04,$93,$7F,$07,$B2,$07,$8B,$06,$26,$7F,$07,$A6,$07,$88,$04,$89; RAW DATA : 	text "포켓몬 잡을수 있으면"
+	line $02,$F5,$02,$C2,$7F,$06,$02,$07,$68,$07,$9C,$7F,$06,$F8,$01,$3A,$06,$EE; RAW DATA : 	line "더는 소원이 없겠어"
 	done
 
 _UnusedBenchGuyText2::
-	text "I'm tired from"
-	line "all the fun..."
+	text $06,$65,$02,$3A,$01,$34,$7F,$02,$8E,$02,$D9,$01,$01; RAW DATA : 	text "신나게 놀다가"
+	line $08,$28,$7F,$02,$D9,$7F,$05,$6C,$07,$E3,$06,$EE,$0B,$6A,$0B,$6A; RAW DATA : 	line "진 다 빠졌어……"
 	done
 
 _UnusedBenchGuyText3::
-	text "SILPH's manager"
-	line "is hiding in the"
-	cont "SAFARI ZONE."
+	text $06,$67,$0A,$61,$7F,$08,$06,$06,$64,$0A,$B8,$05,$B7,$7F,$04,$65,$02,$CF,$07,$CA,$01,$01; RAW DATA : 	text "실프 주식회사 매니저가"
+	line $05,$B7,$09,$F4,$04,$3E,$07,$E8,$07,$01,$7F,$06,$2B,$06,$FA,$02,$D9,$08,$26; RAW DATA : 	line "사파리존에 숨었다지"
 	done
 
 _VermilionPokecenterGuyText::
-	text "It is true that a"
-	line "higher level"
-	cont "#MON will be"
-	cont "more powerful..."
+	text $0A,$27,$09,$2F,$04,$93,$07,$97,$7F,$03,$E9,$05,$07,$07,$9C,$7F,$02,$94,$07,$8B,$06,$26,$03,$FF; RAW DATA : 	text "포켓몬의 레벨이 높을수록"
+	line $02,$F5,$7F,$01,$0D,$0A,$71,$01,$27,$7F,$05,$B7,$06,$67,$07,$9C,$06,$DF,$0B,$6A,$0B,$6A; RAW DATA : 	line "더 강한건 사실이야……"
 
-	para "But, all #MON"
-	line "will have weak"
-	cont "points against"
-	cont "specific types."
+	para $0A,$6F,$08,$26,$04,$48,$7F,$04,$90,$03,$47,$7F,$0A,$27,$09,$2F,$04,$93,$07,$01,$01,$35; RAW DATA : 	para "하지만 모든 포켓몬에겐"
+	line $04,$DD,$03,$45,$06,$63,$7F,$09,$88,$07,$A4,$05,$10,$03,$FE,$7F,$06,$E0,$07,$D1,$07,$9C,$7F,$07,$A6,$06,$EE,$0B,$66; RAW DATA : 	line "반드시 타입별로 약점이 있어!"
 
-	para "So, there is no"
-	line "universally"
-	cont "strong #MON."
+	para $08,$1F,$0B,$66; RAW DATA : 	para "즉!"
+	line $04,$AB,$07,$CB,$7F,$0A,$27,$09,$2F,$04,$93,$7F,$01,$10,$07,$8A,$01,$27,$7F,$06,$F8,$06,$EE,$0B,$66; RAW DATA : 	line "무적 포켓몬 같은건 없어!"
 	done
 
 _CeladonCityPokecenterGuyText::
-	text "If I had a BIKE,"
-	line "I would go to"
-	cont "CYCLING ROAD!"
+	text $07,$AA,$07,$CC,$01,$25,$01,$01,$7F,$05,$CD,$01,$B2,$04,$89,$0B,$6B; RAW DATA : 	text "자전거가 생기면,"
+	line $07,$AA,$07,$CC,$01,$25,$7F,$03,$15,$03,$FE,$07,$01,$7F,$01,$05,$09,$A7,$06,$DF,$0B,$66; RAW DATA : 	line "자전거 도로에 갈테야!"
 	done
 
 _FuchsiaCityPokecenterGuyText::
-	text "If you're studying "
-	line "#MON, visit"
-	cont "the SAFARI ZONE."
+	text $0A,$27,$09,$2F,$04,$93,$07,$01,$7F,$02,$EB,$0A,$78,$05,$DD,$7F,$06,$CB,$01,$4D,$06,$6D,$07,$88,$04,$89; RAW DATA : 	text "포켓몬에 대해서 알고싶으면"
+	line $05,$B7,$09,$F4,$04,$3E,$07,$E8,$07,$01,$7F,$01,$01,$05,$18,$03,$F5; RAW DATA : 	line "사파리존에 가보렴"
 
-	para "It has all sorts"
-	line "of rare #MON."
+	para $07,$22,$01,$0E,$7F,$0A,$F1,$01,$9D,$7F,$0A,$27,$09,$2F,$04,$93,$03,$49,$07,$9C,$7F,$07,$A6,$02,$DC,$02,$D9; RAW DATA : 	para "온갖 희귀 포켓몬들이 있단다"
 	done
 
 _CinnabarPokecenterGuyText::
-	text "#MON can still"
-	line "learn techniques"
-	cont "after canceling"
-	cont "evolution."
+	text $0A,$27,$09,$2F,$04,$93,$07,$8A; RAW DATA : 	text "포켓몬은"
+	line $08,$28,$0A,$AD,$04,$36,$7F,$0A,$6F,$08,$26,$7F,$06,$CA,$06,$C6,$03,$15; RAW DATA : 	line "진화를 하지 않아도"
+	cont $01,$B2,$06,$2A,$07,$8B,$7F,$04,$E8,$07,$4C,$02,$C2,$01,$34,$7F,$01,$01,$02,$C9,$0A,$6F,$02,$DC,$02,$D9; RAW DATA : 	cont "기술을 배우는게 가능하단다"
 
-	para "Evolution can wait"
-	line "until new moves"
-	cont "have been learned."
+	para $08,$1F,$7F,$05,$C5,$03,$FE,$07,$4E,$7F,$01,$B2,$06,$2A,$07,$8B,$7F,$04,$E8,$07,$4F,$03,$77,$01,$BE,$08,$26; RAW DATA : 	para "즉 새로운 기술을 배울때까지"
+	line $08,$28,$0A,$AD,$04,$36,$7F,$04,$CC,$04,$1A,$06,$26,$03,$15,$7F,$07,$A6,$08,$26; RAW DATA : 	line "진화를 미룰수도 있지"
 	done
 
 _SaffronCityPokecenterGuyText1::
-	text "It would be great"
-	line "if the ELITE FOUR"
-	cont "came and stomped"
-	cont "TEAM ROCKET!"
+	text $05,$B7,$08,$B5,$07,$35,$07,$9C,$7F,$07,$2D,$05,$DD; RAW DATA : 	text "사천왕이 와서"
+	line $03,$FE,$09,$2F,$02,$DC,$7F,$02,$80,$05,$DE,$03,$49,$7F,$08,$2E,$04,$E2,$06,$C6,$08,$06,$04,$89; RAW DATA : 	line "로켓단 녀석들 짓밟아주면"
+	cont $09,$BB,$09,$48,$0A,$72,$09,$A9,$03,$05,$7F,$04,$4B,$07,$9C,$06,$DF,$0B,$66; RAW DATA : 	cont "통쾌할텐데 말이야!"
 	done
 
 _SaffronCityPokecenterGuyText2::
-	text "TEAM ROCKET took"
-	line "off! We can go"
-	cont "out safely again!"
-	cont "That's great!"
+	text $03,$FE,$09,$2F,$02,$DC,$07,$9C,$7F,$04,$B0,$03,$DF,$02,$45,$06,$EE,$0B,$66; RAW DATA : 	text "로켓단이 물러났어!"
+	line $07,$CC,$08,$B3,$03,$E3,$7F,$02,$D9,$06,$63,$7F,$07,$E6,$07,$4B,$0A,$F7; RAW DATA : 	line "전처럼 다시 조용히"
+	cont $08,$26,$02,$4E,$06,$26,$7F,$07,$A6,$02,$D9,$01,$4D,$0B,$66,$0B,$66; RAW DATA : 	cont "지낼수 있다고!!"
+	para $04,$48,$05,$EC,$0B,$66; RAW DATA : 	para "만세!"
 	done
 
 _CeladonCityHotelText::
-	text "My sis brought me"
-	line "on this vacation!"
+	text $02,$A9,$02,$3A,$01,$01,$7F,$07,$9C,$04,$F8,$7F,$0A,$DE,$01,$01,$07,$01; RAW DATA : 	text "누나가 이번 휴가에"
+	line $02,$28,$01,$4D,$7F,$07,$2D,$04,$F6,$03,$F8,$06,$EE,$0B,$66; RAW DATA : 	line "끌고 와버렸어!"
 	done
 
 _BookcaseText::
-	text "Crammed full of"
-	line "#MON books!"
+	text $0A,$27,$09,$29,$04,$93,$7F,$08,$A5,$03,$49,$03,$FE; RAW DATA : 	text "포케몬 책들로"
+	line $05,$79,$01,$4E,$0A,$6F,$01,$34,$7F,$04,$DA,$0A,$94,$07,$A6,$02,$D9,$0B,$66; RAW DATA : 	line "빼곡하게 박혀있다!"
 	done
 
 _NewBicycleText::
-	text "A shiny new"
-	line "BICYCLE!"
+	text $04,$DD,$08,$36,$04,$DD,$08,$36,$0A,$71; RAW DATA : 	text "반짝반짝한"
+	line $05,$C5,$7F,$07,$AA,$07,$CC,$01,$25,$0B,$66; RAW DATA : 	line "새 자전거!"
 	done
 
 _PushStartText::
-	text "Push START to"
-	line "open the MENU!"
+	text $06,$4A,$09,$88,$09,$DE,$7F,$04,$F6,$09,$E0,$07,$8B,$7F,$02,$A9,$04,$33,$07,$AA,$0B,$66; RAW DATA : 	text $06,$4A,$09,$88,$09,$DE,$7F,$04,$F6,$09,$E0,$07,$8B,$7F,$02,$A9,$04,$33,$07,$AA,$0B,$66; RAW DATA : 	text $06,$4A,$09,$88,$09,$DE,$7F,$04,$F6,$09,$E0,$07,$8B,$7F,$02,$A9,$04,$33,$07,$AA,$0B,$66; RAW DATA : 	text "스타트 버튼을 누르자!"
+	line $02,$A9,$04,$33,$04,$89,$7F,$04,$7E,$02,$BA,$01,$01,$7F,$03,$B1,$02,$D9; RAW DATA : 	line $02,$A9,$04,$33,$04,$89,$7F,$04,$7E,$02,$BA,$01,$01,$7F,$03,$B1,$02,$D9; RAW DATA : 	line $02,$A9,$04,$33,$04,$89,$7F,$04,$7E,$02,$BA,$01,$01,$7F,$03,$B1,$02,$D9; RAW DATA : 	line "누르면 메뉴가 뜬다"
 	done
 
 _SaveOptionText::
-	text "The SAVE option is"
-	line "on the MENU"
-	cont "screen."
+	text $05,$EC,$07,$9C,$05,$4A,$04,$36,$7F,$0A,$74,$07,$01,$02,$C2,$7F,$0A,$27,$09,$2F,$04,$93,$7F,$03,$E9,$0A,$27,$09,$DE; RAW DATA : 	text $05,$EC,$07,$9C,$05,$4A,$04,$36,$7F,$0A,$74,$07,$01,$02,$C2,$7F,$0A,$27,$09,$2F,$04,$93,$7F,$03,$E9,$0A,$27,$09,$DE; RAW DATA : 	text $05,$EC,$07,$9C,$05,$4A,$04,$36,$7F,$0A,$74,$07,$01,$02,$C2,$7F,$0A,$27,$09,$2F,$04,$93,$7F,$03,$E9,$0A,$27,$09,$DE; RAW DATA : 	text "세이브를 함에는 포켓몬 레포트"
+	line $07,$AA,$08,$06,$7F,$06,$B2,$04,$89,$7F,$07,$F1,$02,$D9; RAW DATA : 	line $07,$AA,$08,$06,$7F,$06,$B2,$04,$89,$7F,$07,$F1,$02,$D9; RAW DATA : 	line $07,$AA,$08,$06,$7F,$06,$B2,$04,$89,$7F,$07,$F1,$02,$D9; RAW DATA : 	line "자주 쓰면 좋다"
 	done
 
 _StrengthsAndWeaknessesText::
-	text "All #MON types"
-	line "have strong and"
-	cont "weak points"
-	cont "against others."
+	text $04,$90,$03,$47,$7F,$09,$88,$07,$A4,$03,$49,$07,$8A; RAW DATA : 	text "모든 타입들은"
+	line $01,$0D,$07,$D1,$05,$A3,$04,$48,$7F,$06,$C6,$02,$CF,$03,$C3; RAW DATA : 	line "강점뿐만 아니라"
+	cont $02,$D9,$04,$35,$7F,$09,$88,$07,$A4,$07,$01,$7F,$02,$EB,$0A,$71; RAW DATA : 	cont "다른 타입에 대한"
+	cont $06,$E0,$07,$D1,$07,$9C,$7F,$07,$A6,$06,$60,$02,$CF,$02,$D9; RAW DATA : 	cont "약점이 있습니다"
 	done
-
+;사파리존, 좀 번역 확인해야 되는데
 _TimesUpText::
-	text "PA: Ding-dong!"
+	text $06,$C8,$02,$4B,$04,$E6,$06,$0B,$0B,$62,$03,$69,$03,$1F,$0B,$66; RAW DATA : 	text "안내방송『딩동!"
 
-	para "Time's up!"
+	para $06,$63,$01,$03,$07,$9C,$7F,$02,$D9,$7F,$03,$26,$06,$60,$02,$CF,$02,$D9,$0B,$66; RAW DATA : 	para "시간이 다 됐습니다!"
 	prompt
 
 _GameOverText::
-	text "PA: Your SAFARI"
-	line "GAME is over!"
+	text $06,$C8,$02,$4B,$04,$E6,$06,$0B,$0B,$62,$05,$B7,$09,$F4,$04,$3E,$7F,$01,$34,$07,$A3,$07,$9C; RAW DATA : 	text "안내방송『사파리 게임이"
+	line $07,$EE,$04,$11,$03,$26,$06,$60,$02,$CF,$02,$D9,$0B,$66; RAW DATA : 	line "종료됐습니다!"
 	done
 
 _CinnabarGymQuizIntroText::
-	text "#MON Quiz!"
+	text $0A,$27,$09,$2F,$04,$93,$7F,$09,$6B,$08,$1E,$0B,$66; RAW DATA : 	text "포켓몬 퀴즈!"
 
-	para "Get it right and"
-	line "the door opens to"
-	cont "the next room!"
+	para $04,$AE,$07,$D6,$04,$36,$7F,$04,$62,$08,$DF,$04,$89,$7F,$02,$D9,$07,$8D,$04,$E6,$07,$88,$03,$FE; RAW DATA : 	para "문제를 맞추면 다음방으로"
+	line $01,$01,$02,$C2,$7F,$04,$AE,$07,$9C,$7F,$07,$0D,$04,$43,$02,$CF,$02,$D9,$0B,$66; RAW DATA : 	line "가는 문이 열립니다!"
 
-	para "Get it wrong and"
-	line "face a trainer!"
+	para $09,$E2,$04,$3E,$04,$89; RAW DATA : 	para "틀리면"
+	line $09,$DE,$03,$E9,$07,$9C,$02,$6A,$07,$2D,$7F,$04,$46,$08,$06,$09,$08,$02,$CF,$02,$D9,$0B,$66; RAW DATA : 	line "트레이너와 마주칩니다!"
 
-	para "If you want to"
-	line "conserve your"
-	cont "#MON for the"
-	cont "GYM LEADER..."
+	para $08,$BC,$07,$80,$01,$6C,$7F,$01,$6C,$07,$B5,$07,$8B,$7F,$02,$EB,$05,$61,$0A,$78,$05,$DD; RAW DATA : 	para "체육관 관장을 대비해서"
+	line $0A,$27,$09,$2F,$04,$93,$07,$8B,$7F,$06,$C6,$02,$32,$01,$4D,$7F,$06,$6D,$02,$D9,$04,$89,$0B,$6A,$0B,$6A; RAW DATA : 	line "포켓몬을 아끼고 싶다면……"
 
-	para "Then get it right!"
-	line "Here we go!"
-	prompt
+	para $07,$AF,$7F,$04,$62,$08,$E7,$05,$DD,$7F,$01,$01,$04,$89,$7F,$03,$2B,$02,$CF,$02,$D9,$0B,$66; RAW DATA : 	para "잘 맞춰서 가면 됩니다!"
+	line $07,$9C,$07,$D6,$7F,$01,$01,$05,$1C,$01,$BE,$07,$44,$0B,$66; RAW DATA : 	line "이제 가볼까요!"
+	para ""
+	done
 
 _CinnabarQuizQuestionsText1::
-	text "CATERPIE evolves"
-	line "into BUTTERFREE?"
+	text $09,$13,$09,$9D,$0A,$67,$07,$97,$7F,$08,$D6,$07,$EE,$08,$28,$0A,$AD,$02,$C2; RAW DATA : text "캐터피의 최종진화는"
+	line $04,$F6,$09,$9D,$0A,$63,$07,$9F,$01,$BE,$07,$44,$0B,$67; RAW DATA : line "버터플일까요?"
+
 	done
 
 _CinnabarQuizQuestionsText2::
-	text "There are 9"
-	line "certified #MON"
-	cont "LEAGUE BADGEs?"
+	text $0A,$27,$09,$2F,$04,$93,$7F,$04,$3E,$01,$A7,$07,$01,$7F,$07,$9E,$08,$25,$03,$28,$7F,$04,$E8,$08,$26,$02,$C2; RAW DATA : 	text "포켓몬 리그에 인증된 배지는"
+	line $FF,$01,$13,$07,$9F,$01,$BE,$07,$44,$0B,$67; RAW DATA : 	line "9개일까요?"
 	done
 
 _CinnabarQuizQuestionsText3::
-	text "POLIWAG evolves 3"
-	line "times?"
+	text $04,$DF,$08,$AC,$07,$9C,$01,$01,$7F,$08,$28,$0A,$AD,$0A,$6F,$02,$C2,$01,$27; RAW DATA : 	text "발챙이가 진화하는건"
+	line $F9,$07,$EE,$04,$29,$7F,$07,$9F,$01,$BE,$07,$44,$0B,$67; RAW DATA : 	line "3종류 일까요?"
 	done
 
 _CinnabarQuizQuestionsText4::
-	text "Are thunder moves"
-	line "effective against"
-	cont "ground element-"
-	cont "type #MON?"
+	text $01,$68,$01,$3D,$01,$B2,$06,$2A,$07,$9E,$7F,$04,$F8,$01,$13,$02,$C2,$7F,$03,$75,$09,$88,$07,$A4; RAW DATA : 	text "공격기술인 번개는 땅타입"
+	line $0A,$27,$09,$2F,$04,$93,$07,$01,$01,$34,$7F,$0A,$BF,$01,$6A,$01,$01,$7F,$07,$A6,$07,$8B,$01,$BE,$07,$44,$0B,$67; RAW DATA : 	line "포켓몬에게 효과가 있을까요?"
 	done
 
 _CinnabarQuizQuestionsText5::
-	text "#MON of the"
-	line "same kind and"
-	cont "level are not"
-	cont "identical?"
+	text $0A,$27,$09,$2F,$04,$93,$7F,$07,$EE,$04,$29,$07,$2D,$7F,$03,$E9,$05,$07,$07,$9C,$7F,$01,$10,$06,$C6,$03,$15; RAW DATA : text "포켓몬 종류와 레벨이 같아도"
+	line $0A,$FB,$07,$8A,$7F,$02,$D9,$04,$36,$01,$BE,$07,$44,$0B,$67; RAW DATA : line "힘은 다를까요?"
+
 	done
 
 _CinnabarQuizQuestionsText6::
-	text "TM28 contains"
-	line "TOMBSTONER?"
+	text $01,$B2,$06,$2A,$04,$73,$06,$65,$F8,$FE,$07,$01,$7F,$07,$A6,$02,$C2,$7F,$01,$B2,$06,$2A,$07,$8A; RAW DATA : 	text "기술머신28에 있는 기술은"
+	line $09,$C9,$06,$4A,$09,$B4,$02,$6A,$7F,$07,$9E,$01,$01,$07,$44,$0B,$67; RAW DATA : 	line "툼스토너 인가요?"
 	done
 
 _CinnabarGymQuizCorrectText::
-	text "You're absolutely"
-	line "correct!"
+	text $02,$A9,$01,$01,$7F,$04,$B9,$03,$C3,$0A,$78,$03,$15; RAW DATA : 	text "누가 뭐라해도"
+	line $07,$D4,$02,$E4,$07,$A4,$02,$CF,$02,$D9,$0B,$66; RAW DATA : 	line "정답입니다!"
 
-	para "Go on through!@@"
+	para $07,$9C,$08,$6A,$07,$88,$03,$FE,$0B,$66,$50,$50; RAW DATA : 	para "이쪽으로!@@"
 
 _CinnabarGymQuizIncorrectText::
-	text "Sorry! Bad call!"
+	text $07,$FB,$06,$0B,$0A,$75,$02,$CF,$02,$D9,$0B,$66; RAW DATA : 	text "죄송합니다!"
+	line $07,$20,$02,$E4,$07,$A4,$02,$CF,$02,$D9,$0B,$66; RAW DATA : 	line "오답입니다!"
 	prompt
 
 _MagazinesText::
-	text "#MON magazines!"
+	text $0A,$27,$09,$2F,$04,$93,$7F,$07,$B2,$08,$26,$03,$49,$0B,$66; RAW DATA : 	text "포켓몬 잡지들!"
 
-	para "#MON notebooks!"
+	para $0A,$27,$09,$2F,$04,$93,$7F,$02,$8B,$09,$DE,$05,$2F,$03,$49,$0B,$66; RAW DATA : 	para "포켓몬 노트북들!"
 
-	para "#MON graphs!"
+	para $0A,$27,$09,$2F,$04,$93,$7F,$03,$15,$0A,$35,$03,$49,$0B,$66; RAW DATA : 	para "포켓몬 도표들!"
 	done
 
 _BillsHouseMonitorText::
-	text "TELEPORTER is"
-	line "displayed on the"
-	cont "PC monitor."
+	text $09,$24,$0A,$4B,$09,$9D,$7F,$04,$90,$02,$CF,$09,$9D,$07,$01; RAW DATA : 	text "컴퓨터 모니터에"
+	line $07,$CC,$06,$0B,$07,$B5,$09,$01,$01,$01,$7F,$09,$31,$07,$DE,$07,$A6,$02,$D9; RAW DATA : 	line "전송장치가 켜져있다"
 	done
 
 _BillsHouseInitiatedText::
-	text "<PLAYER> initiated"
-	line "TELEPORTER's Cell"
-	cont "Separator!@@"
+	text $52, $02,$C2,$0B,$64,$07,$8A,$0B,$65; RAW DATA : 	text $52, "는(은)"
+	line $07,$CC,$06,$0B,$07,$B5,$09,$01,$07,$97,$7F,$05,$EC,$0A,$27,$7F,$05,$30,$04,$3E,$01,$B2,$04,$36; RAW DATA : 	line "전송장치의 세포 분리기를"
+	cont $07,$AB,$03,$1F,$06,$63,$09,$37,$02,$D9,$0B,$66,$50,$50; RAW DATA : 	cont "작동시켰다!@@"
 
 _BillsHousePokemonListText1::
-	text "BILL's favorite"
-	line "#MON list!"
+	text $07,$9C,$06,$26,$07,$B7,$01,$01,$7F,$07,$F1,$06,$C6,$0A,$6F,$02,$C2; RAW DATA : 	text "이수재가 좋아하는"
+	line $0A,$27,$09,$2F,$04,$93,$7F,$04,$3E,$06,$4A,$09,$DE,$0B,$66; RAW DATA : 	line "포켓몬 리스트!"
 	prompt
 
 _BillsHousePokemonListText2::
-	text "Which #MON do"
-	line "you want to see?"
+	text $06,$EE,$03,$82,$7F,$0A,$27,$09,$2F,$04,$93,$07,$8B; RAW DATA : 	text "어떤 포켓몬을"
+	line $05,$18,$06,$63,$01,$3A,$06,$60,$02,$CF,$01,$BE,$0B,$67; RAW DATA : 	line "보시겠습니까?"
 	done
 
 _OakLabEmailText::
-	text "There's an e-mail"
-	line "message here!"
+	text $07,$9C,$04,$7E,$07,$9F,$7F,$04,$7E,$06,$63,$08,$26,$01,$01; RAW DATA : 	text "이메일 메시지가"
+	line $07,$A6,$02,$D9,$0B,$66; RAW DATA : 	line "있다!"
 
-	para "..."
+	para $0B,$6A,$0B,$6A,$7F,$0B,$6A,$0B,$6A,$7F,$0B,$6A,$0B,$6A; RAW DATA : 	para "…… …… ……"
 
-	para "Calling all"
-	line "#MON trainers!"
+	para $04,$90,$03,$47,$7F,$0A,$27,$09,$2F,$04,$93,$7F,$09,$DE,$03,$E9,$07,$9C,$02,$6A,$03,$49,$07,$97,$7F,$06,$02,$04,$8D,$0B,$66; RAW DATA : 	para "모든 포켓몬 트레이너들의 소명!"
+	;calling이 소명이긴 한데 문맥상 소망으로 선택했습니다. 
 
-	para "The elite trainers"
-	line "of #MON LEAGUE"
-	cont "are ready to take"
-	cont "on all comers!"
+	para $0A,$27,$09,$2F,$04,$93,$7F,$04,$3E,$01,$A7,$07,$97,$7F,$07,$04,$04,$3E,$09,$DE,$7F,$09,$DE,$03,$E9,$07,$9C,$02,$6A,$03,$49,$07,$8A; RAW DATA : 	para "포켓몬 리그의 엘리트 트레이너들은"
+	line $06,$EE,$03,$82,$7F,$03,$15,$07,$CC,$07,$AA,$03,$47,$08,$26,$7F,$01,$B2,$02,$D9,$04,$3E,$01,$4D,$7F,$07,$A6,$02,$D9,$0B,$66; RAW DATA : line "어떤 도전자든지 기다리고 있다!"
 
-	para "Bring your best"
-	line "#MON and see"
-	cont "how you rate as a"
-	cont "trainer!"
 
-	para "#MON LEAGUE HQ"
-	line "INDIGO PLATEAU"
 
-	para "PS: PROF.OAK,"
-	line "please visit us!"
-	cont "..."
+	para $08,$D6,$07,$D4,$07,$19,$7F,$0A,$27,$09,$2F,$04,$93,$07,$8B,$7F,$03,$05,$03,$F1,$01,$01,$05,$DD; RAW DATA : 	para "최정예 포켓몬을 데려가서"
+	line $09,$DE,$03,$E9,$07,$9C,$02,$6A,$03,$FE,$06,$81,$7F,$06,$EE,$03,$8B,$01,$34,$7F,$01,$02,$05,$EA,$0A,$72,$08,$26,$7F,$05,$1C,$01,$2D,$0B,$66; RAW DATA : 	line "트레이너로써 어떻게 각성할지 볼것!"
+
+
+	para $0A,$27,$09,$2F,$04,$93,$7F,$04,$3E,$01,$A7; RAW DATA : 	para "포켓몬 리그"
+	line $05,$DE,$07,$15,$01,$4D,$07,$68; RAW DATA : 	line "석영고원"
+
+	para $08,$DF,$06,$65,$7F,$07,$4C,$04,$3E,$0A,$71,$09,$A7,$7F,$07,$EB,$7F,$03,$49,$04,$41,$01,$2D,$0B,$66; RAW DATA : 	para "추신 우리한테 좀 들릴것!"
+	line $07,$20,$04,$DA,$05,$B7,$07,$01,$01,$34,$0B,$6A,$0B,$6A; RAW DATA : line "오박사에게……"
 	done
 
 _GameCornerCoinCaseText::
-	text "A COIN CASE is"
-	line "required!"
+	text $03,$1F,$07,$CC,$09,$29,$07,$9C,$06,$4A,$01,$01; RAW DATA : 	text "동전케이스가"
+	line $0A,$6A,$07,$44,$0A,$75,$02,$CF,$02,$D9,$0B,$66; RAW DATA : 	line "필요합니다!"
 	done
 
 _GameCornerNoCoinsText::
-	text "You don't have"
-	line "any coins!"
+	text $03,$1F,$07,$CC,$07,$9C; RAW DATA : 	text "동전이"
+	line $0A,$6F,$02,$3A,$03,$15,$7F,$06,$F8,$06,$60,$02,$CF,$02,$D9,$0B,$66; RAW DATA : 	line "하나도 없습니다!"
 	done
 
 _GameCornerOutOfOrderText::
-	text "OUT OF ORDER"
-	line "This is broken."
+	text $0A,$71,$07,$D4,$01,$01,$08,$AD; RAW DATA : 	text "한정가챠"
+	line $07,$9C,$01,$27,$7F,$04,$61,$01,$01,$07,$E3,$02,$D9; RAW DATA : 	line "이건 망가졌다"
 	done
 
 _GameCornerOutToLunchText::
-	text "OUT TO LUNCH"
-	line "This is reserved."
+	text $07,$D1,$06,$69,$06,$64,$05,$B7,$7F,$08,$0F,$07,$9C,$07,$19,$07,$44; RAW DATA : 	text "점심식사 중이예요"
+	line $07,$9C,$7F,$07,$AA,$04,$3E,$02,$C2,$7F,$07,$19,$06,$E0,$07,$9C,$7F,$03,$27,$06,$FA,$02,$D9; RAW DATA : 	line "이 자리는 예약이 되었다"
 	done
 
 _GameCornerSomeonesKeysText::
-	text "Someone's keys!"
-	line "They'll be back."
+	text $02,$A9,$01,$8A,$01,$01,$07,$97,$7F,$07,$0D,$06,$18,$02,$D9,$0B,$66; RAW DATA : 	text "누군가의 열쇠다!"
+	line $01,$60,$7F,$03,$19,$06,$C6,$07,$23,$01,$2D,$7F,$01,$10,$02,$D9; RAW DATA : 	line "곧 돌아올것 같다"
 	done
 
 _JustAMomentText::
-	text "Just a moment."
+	text $07,$B1,$06,$63,$04,$48,$07,$44; RAW DATA : 	text "잠시만요"
 	done
 
 TMNotebookText::
-	text "It's a pamphlet"
-	line "on TMs."
+	text $01,$B2,$06,$2A,$04,$73,$06,$65; RAW DATA : 	text "기술머신"
+	line $09,$FA,$0A,$63,$03,$EF,$07,$A4,$02,$CF,$02,$D9; RAW DATA : 	line "팜플렛입니다"
 
-	para "..."
+	para $0B,$6A,$0B,$6A,$7F,$0B,$6A,$0B,$6A,$7F,$0B,$6A,$0B,$6A,$7F,$0B,$6A,$0B,$6A; RAW DATA : 	para "…… …… …… ……"
 
-	para "There are 50 TMs"
-	line "in all."
+	para $01,$B2,$06,$2A,$04,$73,$06,$65,$07,$8A,$7F,$04,$90,$03,$2E; RAW DATA : 	para "기술머신은 모두"
+	line $FB,$F6,$07,$EE,$07,$9C,$7F,$07,$A6,$06,$60,$02,$CF,$02,$D9; RAW DATA : 	line "50종이 있습니다"
 
-	para "There are also 5"
-	line "HMs that can be"
-	cont "used repeatedly."
+	para $FB,$01,$13,$07,$97,$7F,$05,$61,$07,$CC,$04,$73,$06,$65,$03,$49,$07,$8A; RAW DATA : 	para "5개의 비전머신들은"
+	line $04,$8E,$04,$F8,$07,$9C,$01,$4D,$7F,$05,$B7,$07,$4B,$07,$9C,$7F,$01,$01,$02,$C9,$0A,$75,$02,$CF,$02,$D9; RAW DATA : 	line "몇번이고 사용이 가능합니다"
 
-	para "SILPH CO.@@"
+	para $06,$67,$0A,$61,$08,$06,$06,$64,$0A,$B8,$05,$B7,$50,$50; RAW DATA : 	para "실프주식회사@@"
 
 _TurnPageText::
-	text "Turn the page?"
+	text $0A,$14,$07,$9C,$08,$26,$04,$36,$7F,$02,$71,$01,$B2,$01,$3A,$06,$60,$02,$CF,$01,$BE,$0B,$67; RAW DATA : 	text "페이지를 넘기겠습니까?"
 	done
 
 _ViridianSchoolNotebookText5::
-	text "GIRL: Hey! Don't"
-	line "look at my notes!@@"
+	text $06,$02,$02,$80,$0B,$62,$01,$25,$01,$B2,$7F,$02,$6A,$0B,$66; RAW DATA : 	text "소녀『거기 너!"
+	line $02,$4B,$7F,$02,$8B,$09,$DE,$7F,$05,$18,$04,$89,$7F,$06,$C8,$7F,$03,$25,$0B,$66,$50,$50; RAW DATA : 	line "내 노트 보면 안 돼!@@"
 
 _ViridianSchoolNotebookText1::
-	text "Looked at the"
-	line "notebook!"
+	text $02,$8B,$09,$DE,$04,$36; RAW DATA : 	text "노트를"
+	line $03,$49,$07,$09,$02,$D9,$7F,$05,$18,$06,$D2,$02,$D9,$0B,$66; RAW DATA : 	line "들여다 보았다!"
 
-	para "First page..."
+	para $0B,$6A,$0B,$6A,$08,$B9,$04,$F8,$08,$40,$7F,$0A,$14,$07,$9C,$08,$26; RAW DATA : 	para "……첫번째 페이지"
 
-	para "# BALLs are"
-	line "used to catch"
-	cont "#MON."
+	para $04,$93,$06,$4A,$09,$9D,$05,$1C,$07,$8A; RAW DATA : 	para "몬스터볼은"
+	line $0A,$27,$09,$2F,$04,$93,$07,$8B,$7F,$07,$B2,$07,$8B,$03,$77,$7F,$06,$B4,$02,$D9; RAW DATA : 	line "포켓몬을 잡을때 쓴다"
 
-	para "Up to 6 #MON"
-	line "can be carried."
+	para $08,$D6,$02,$EB,$7F,$FC,$04,$46,$04,$3E,$01,$BE,$08,$26; RAW DATA : 	para "최대 6마리까지"
+	line $03,$05,$04,$3E,$01,$4D,$7F,$02,$D9,$02,$D2,$06,$26,$7F,$07,$A6,$02,$D9; RAW DATA : 	line "데리고 다닐수 있다"
 
-	para "People who raise"
-	line "and make #MON"
-	cont "fight are called"
-	cont "#MON trainers."
+	para $0A,$27,$09,$2F,$04,$93,$07,$8B,$7F,$09,$80,$07,$4C,$04,$87,$7F,$06,$6E,$07,$4C,$02,$C2; RAW DATA : 	para "포켓몬을 키우며 싸우는"
+	line $05,$B7,$03,$C7,$03,$49,$07,$8A,$7F,$0A,$27,$09,$2F,$04,$93,$7F,$09,$DE,$03,$E9,$07,$9C,$02,$6A,$03,$C3,$7F,$0A,$71,$02,$D9; RAW DATA : 	line "사람들은 포켓몬 트레이너라 한다"
 	prompt
 
 _ViridianSchoolNotebookText2::
-	text "Second page..."
+	text $0B,$6A,$0B,$6A,$03,$2E,$04,$F8,$08,$40,$7F,$0A,$14,$07,$9C,$08,$26; RAW DATA : 	text "……두번째 페이지"
 
-	para "A healthy #MON"
-	line "may be hard to"
-	cont "catch, so weaken"
-	cont "it first!"
+	para $06,$7F,$06,$7F,$0A,$71,$7F,$0A,$27,$09,$2F,$04,$93,$07,$8A,$7F,$07,$B2,$01,$B2,$7F,$06,$EE,$03,$F1,$07,$4C,$02,$CF; RAW DATA : 	para "쌩쌩한 포켓몬은 잡기 어려우니"
+	line $04,$75,$07,$CA,$7F,$0A,$FB,$07,$8B,$7F,$05,$79,$03,$2E,$06,$EE,$06,$DF,$7F,$0A,$71,$02,$D9,$0B,$66; RAW DATA : 	line "먼저 힘을 빼두어야 한다!"
 
-	para "Poison, burns and"
-	line "other damage are"
-	cont "effective!"
+	para $03,$16,$7F,$0A,$AD,$05,$C3,$7F,$01,$A7,$04,$3E,$01,$4D,$7F,$01,$A7,$7F,$07,$3C,$07,$97; RAW DATA : 	para "독 화상 그리고 그 외의"
+	line $03,$05,$04,$CC,$08,$26,$03,$49,$07,$9C,$7F,$0A,$BF,$01,$6A,$07,$CB,$07,$9C,$02,$D9,$0B,$66; RAW DATA : 	line "데미지들이 효과적이다!"
 	prompt
 
 _ViridianSchoolNotebookText3::
-	text "Third page..."
+	text $0B,$6A,$0B,$6A,$05,$EC,$04,$F8,$08,$40,$7F,$0A,$14,$07,$9C,$08,$26; RAW DATA : 	text "……세번째 페이지"
 
-	para "#MON trainers"
-	line "seek others to"
-	cont "engage in #MON"
-	cont "fights."
+	para $0A,$27,$09,$2F,$04,$93,$7F,$09,$DE,$03,$E9,$07,$9C,$02,$6A,$03,$49,$07,$8A; RAW DATA : 	para "포켓몬 트레이너들은"
+	line $0A,$27,$09,$2F,$04,$93,$04,$E8,$09,$E2,$07,$8B,$7F,$0A,$6F,$03,$F1,$01,$4D; RAW DATA : 	line "포켓몬배틀을 하려고"
+	cont $02,$D9,$04,$35,$7F,$09,$DE,$03,$E9,$07,$9C,$02,$6A,$03,$49,$07,$8B,$7F,$08,$A3,$02,$C2,$02,$D9; RAW DATA : 	cont "다른 트레이너들을 찾는다"
 
-	para "Battles are"
-	line "constantly fought"
-	cont "at #MON GYMs."
+	para $0A,$27,$09,$2F,$04,$93,$7F,$08,$BC,$07,$80,$01,$6C,$07,$01,$05,$DD,$02,$C2; RAW DATA : 	para "포켓몬 체육관에서는"
+	line $04,$E8,$09,$E2,$07,$9C,$7F,$02,$27,$07,$9C,$08,$2A,$7F,$06,$CA,$02,$C2,$02,$D9; RAW DATA : 	line "배틀이 끊이질 않는다"
 	prompt
 
 _ViridianSchoolNotebookText4::
-	text "Fourth page..."
+	text $0B,$6A,$0B,$6A,$02,$77,$04,$F8,$08,$40,$7F,$0A,$14,$07,$9C,$08,$26; RAW DATA : 	text "……네번째 페이지"
 
-	para "The goal for"
-	line "#MON trainers"
-	cont "is to beat the "
-	cont "top 8 #MON"
-	cont "GYM LEADERs."
+	para $0A,$27,$09,$2F,$04,$93,$7F,$09,$DE,$03,$E9,$07,$9C,$02,$6A,$03,$49,$07,$97,$7F,$04,$91,$0A,$35,$02,$C2; RAW DATA : 	para "포켓몬 트레이너들의 목표는"
+	line $FE,$04,$8D,$07,$97,$7F,$08,$BC,$07,$80,$01,$6C,$01,$6C,$07,$B5,$03,$49,$07,$8B,$7F,$07,$9C,$01,$B2,$02,$C2,$01,$2D,$0B,$66; RAW DATA : 	line "8명의 체육관관장들을 이기는것!"
 
-	para "Do so to earn the"
-	line "right to face..."
+	para $07,$9C,$01,$29,$7F,$09,$BB,$0A,$78; RAW DATA : 	para "이걸 통해"
+	line $06,$F2,$01,$34,$03,$27,$02,$C2,$7F,$07,$AA,$01,$3D,$07,$8A,$0B,$6A,$0B,$6A; RAW DATA : 	line "얻게되는 자격은……"
 
-	para "The ELITE FOUR of"
-	line "#MON LEAGUE!"
+	para $0A,$27,$09,$2F,$04,$93,$7F,$04,$3E,$01,$A7; RAW DATA : 	para "포켓몬 리그"
+	line $05,$B7,$08,$B5,$07,$35,$01,$6A,$07,$97,$7F,$02,$EB,$04,$89,$0B,$66; RAW DATA : 	line "사천왕과의 대면!"
 	prompt
 
 _EnemiesOnEverySideText::
-	text "Enemies on every"
-	line "side!"
+	text $07,$CB,$07,$8A,$7F,$01,$67,$01,$67,$07,$01; RAW DATA : 	text "적은 곳곳에"
+	line $07,$A6,$02,$D9,$0B,$66; RAW DATA : 	line "있다!"
 	done
 
 _WhatGoesAroundComesAroundText::
-	text "What goes around"
-	line "comes around!"
+	text $05,$A1,$04,$40,$04,$48,$09,$7D; RAW DATA : 	text "뿌린만큼"
+	line $01,$25,$03,$2E,$01,$B2,$7F,$04,$46,$03,$F3,$0B,$66; RAW DATA : 	line "거두기 마련!"
 	done
 
 _FightingDojoText::
-	text "FIGHTING DOJO"
+	text $01,$3D,$09,$C5,$7F,$03,$15,$07,$B5; RAW DATA : 	text "격투 도장"
 	done
 
 _IndigoPlateauHQText::
-	text "INDIGO PLATEAU"
-	line "#MON LEAGUE HQ"
+	text $05,$DE,$07,$15,$01,$4D,$07,$68; RAW DATA : 	text "석영고원"
+	line $0A,$27,$09,$2F,$04,$93,$7F,$04,$3E,$01,$A7; RAW DATA : 	line "포켓몬 리그"
 	done
 
 _RedBedroomSNESText::
-	text "<PLAYER> is"
-	line "playing the SNES!"
-	cont "...Okay!"
-	cont "It's time to go!"
+	text $52, $02,$C2,$0B,$64,$07,$8A,$0B,$65
+	line $0A,$96,$02,$EB,$7F,$06,$44,$0A,$0B,$09,$24,$05,$18,$07,$9C,$04,$36,$7F,$0A,$6F,$01,$4D,$7F,$07,$A6,$02,$D9,$0B,$66
+	cont $0B,$6A,$0B,$6A,$7F,$0B,$6A,$0B,$6A,$7F,$07,$F1,$06,$C6,$0B,$66
+	cont $07,$9C,$07,$D6,$7F,$06,$4D,$06,$4D,$7F,$02,$3A,$01,$01,$05,$1C,$01,$BE,$0B,$66
+	;text $02,$C2,$0B,$64,$07,$8A,$0B,$65; RAW DATA : 	;text "는(은)"
+	;line $0A,$96,$02,$EB,$7F,$06,$44,$0A,$0B,$09,$24,$05,$18,$07,$9C,$04,$36,$7F,$0A,$6F,$01,$4D,$7F,$07,$A6,$02,$D9,$0B,$66; RAW DATA : 	;line "현대 슈퍼컴보이를 하고 있다!"
+	;cont $0B,$6A,$0B,$6A,$7F,$0B,$6A,$0B,$6A,$7F,$07,$F1,$06,$C6,$0B,$66; RAW DATA : 	;cont "…… …… 좋아!"
+	;cont $07,$9C,$07,$D6,$7F,$06,$4D,$06,$4D,$7F,$02,$3A,$01,$01,$05,$1C,$01,$BE,$0B,$66; RAW DATA : 	;cont "이제 슬슬 나가볼까!"
+	
 	done
 
 _Route15UpstairsBinocularsText::
-	text "Looked into the"
-	line "binoculars..."
+	text $06,$76,$06,$C8,$01,$46,$07,$8B; RAW DATA : 	text "쌍안경을"
+	line $03,$49,$07,$09,$02,$D9,$05,$18,$06,$D2,$02,$D9,$0B,$66; RAW DATA : 	line "들여다보았다!"
 
-	para "A large, shining"
-	line "bird is flying"
-	cont "toward the sea."
+	para $04,$D9,$02,$E5,$01,$01,$08,$6A,$07,$88,$03,$FE,$7F,$09,$79,$01,$4D,$7F,$05,$6B,$02,$3A,$02,$C2,$7F,$05,$C5,$01,$01; RAW DATA : 	para "바닷가쪽으로 크고 빛나는 새가"
+	line $02,$3F,$06,$C6,$01,$01,$01,$4D,$7F,$07,$A6,$02,$D9; RAW DATA : 	line "날아가고 있다"
 	done
 
 _AerodactylFossilText::
-	text "AERODACTYL Fossil"
-	line "A primitive and"
-	cont "rare #MON."
+	text $0A,$61,$09,$A7,$03,$C3,$7F,$0A,$AD,$05,$DE; RAW DATA : 	text "프테라 화석"
+	line $07,$68,$06,$63,$06,$63,$02,$EB,$07,$97,$7F,$0A,$F1,$01,$9D,$7F,$0A,$27,$09,$2F,$04,$93; RAW DATA : 	line "원시시대의 희귀 포켓몬"
 	done
 
 _KabutopsFossilText::
-	text "KABUTOPS Fossil"
-	line "A primitive and"
-	cont "rare #MON."
+	text $09,$C5,$09,$4D,$0A,$3A,$06,$4A,$7F,$0A,$AD,$05,$DE; RAW DATA : 	text "투쿠푸스 화석"
+	line $07,$68,$06,$63,$06,$63,$02,$EB,$07,$97,$7F,$0A,$F1,$01,$9D,$7F,$0A,$27,$09,$2F,$04,$93; RAW DATA : 	line "원시시대의 희귀 포켓몬"
 	done
 
 _LinkCableHelpText1::
-	text "TRAINER TIPS"
-
-	para "Using a Game Link"
-	line "Cable"
+	text $0B,$6A,$0B,$6A,$03,$46,$07,$9C,$7F,$03,$27,$02,$C2,$7F,$01,$34,$06,$63,$09,$F7,$0B,$66; RAW DATA : 	text "……득이 되는 게시판!"
+	para $09,$BB,$06,$65,$7F,$09,$29,$07,$9C,$05,$4D,$07,$8B,$7F,$07,$9C,$07,$4B,$0A,$6F,$05,$EC,$07,$44,$0B,$66; RAW DATA : 	para "통신 케이블을 이용하세요!"
+	
+	;para $94,$B2,$A8,$AD,$A6,$7F,$A0,$7F,$86,$A0,$AC,$A4,$7F,$8B,$A8,$AD,$AA; RAW DATA : 	;para "Using a Game Link"
+	;line $82,$A0,$A1,$AB,$A4; RAW DATA : 	;line "Cable"
 	prompt
 
 _LinkCableHelpText2::
-	text "Which heading do"
-	line "you want to read?"
+	text $06,$EE,$02,$C0,$7F,$0A,$77,$04,$91,$07,$8B; RAW DATA : 	text "어느 항목을"
+	line $07,$A0,$07,$88,$06,$63,$01,$3A,$06,$60,$02,$CF,$01,$BE,$0B,$67; RAW DATA : 	line "읽으시겠습니까?"
 	done
 
 _LinkCableInfoText1::
-	text "When you have"
-	line "linked your GAME"
-	cont "BOY with another"
-	cont "GAME BOY, talk to"
-	cont "the attendant on"
-	cont "the right in any"
-	cont "#MON CENTER."
+	text $01,$34,$07,$A3,$05,$18,$07,$9C,$04,$36,$7F; RAW DATA : 	text "게임보이를 "
+	line $02,$D9,$04,$35,$7F,$01,$34,$07,$A3,$05,$18,$07,$9C,$07,$2D,$7F,$07,$0C,$01,$41,$0A,$71,$7F,$0A,$C4,$07,$01; RAW DATA : 	line "다른 게임보이와 연결한 후에"
+	cont $0A,$27,$09,$2F,$04,$93,$7F,$05,$EE,$09,$9D,$07,$97,$7F,$06,$C8,$02,$4B,$07,$68,$07,$01,$01,$34; RAW DATA : 	cont "포켓몬 센터의 안내원에게"
+	cont $04,$4B,$07,$8B,$01,$25,$05,$EC,$07,$44,$0B,$66; RAW DATA : 	cont "말을거세요!"
 	prompt
 
 _LinkCableInfoText2::
-	text "COLOSSEUM lets"
-	line "you play against"
-	cont "a friend."
+	text $09,$3D,$03,$FE,$05,$EC,$07,$62,$07,$01,$05,$DD; RAW DATA : 	text "콜로세움에서"
+	line $09,$03,$01,$88,$07,$2D,$7F,$0A,$74,$01,$E2,$7F,$08,$21,$01,$3C,$07,$44,$0B,$66; RAW DATA : 	line "친구와 함께 즐겨요!"
 	prompt
 
 _LinkCableInfoText3::
-	text "TRADE CENTER is"
-	line "used for trading"
-	cont "#MON."
+	text $01,$83,$0A,$AF,$05,$EE,$09,$9D,$07,$01,$05,$DD; RAW DATA : 	text "교환센터에서"
+	line $0A,$27,$09,$2F,$04,$93,$07,$8B,$7F,$01,$83,$0A,$AF,$0A,$78,$07,$44,$0B,$66; RAW DATA : 	line "포켓몬을 교환해요!"
 	prompt
 
 _ViridianSchoolBlackboardText1::
-	text "The blackboard"
-	line "describes #MON"
-	cont "STATUS changes"
-	cont "during battles."
+	text $09,$05,$09,$F7,$07,$01,$7F,$05,$C3,$09,$92,$07,$9C,$05,$C3,$07,$01,$7F,$02,$EB,$0A,$71; RAW DATA : 	text "칠판에 상태이상에 대한"
+	line $05,$E3,$04,$8D,$07,$9C,$7F,$06,$B2,$07,$09,$07,$DE,$7F,$07,$A6,$02,$D9,$0B,$66; RAW DATA : 	line "설명이 쓰여져 있다!"
 	prompt
 
 _ViridianSchoolBlackboardText2::
-	text "Which heading do"
-	line "you want to read?"
+	text $06,$EE,$02,$C0,$7F,$0A,$77,$04,$91,$07,$8B; RAW DATA : 	text "어느 항목을"
+	line $07,$A0,$07,$8B,$01,$BE,$0B,$67; RAW DATA : 	line "읽을까?"
 	done
-
+;검수필요
 _ViridianBlackboardSleepText::
-	text "A #MON can't"
-	line "attack if it's"
-	cont "asleep!"
+	text $07,$B1,$03,$47,$7F,$05,$C3,$09,$92,$07,$9E,$7F,$0A,$27,$09,$2F,$04,$93,$07,$8A; RAW DATA : 	text "잠든 상태인 포켓몬은"
+	line $01,$68,$01,$3D,$7F,$0A,$72,$7F,$06,$26,$01,$01,$7F,$06,$F8,$06,$60,$02,$CF,$02,$D9,$0B,$66; RAW DATA : 	line "공격 할 수가 없습니다!"
 
-	para "#MON will stay"
-	line "asleep even after"
-	cont "battles."
+	para $04,$E8,$09,$E2,$0A,$C4,$07,$01,$03,$15,$7F,$0A,$27,$09,$2F,$04,$93,$07,$8A; RAW DATA : 	para "배틀후에도 포켓몬은"
+	line $01,$48,$06,$03,$7F,$07,$AA,$01,$34,$03,$2B,$02,$CF,$02,$D9,$0B,$66; RAW DATA : 	line "계속 자게됩니다!"
 
-	para "Use AWAKENING to"
-	line "wake them up!"
+	para $07,$B1,$01,$CA,$02,$C2,$06,$E0,$07,$88,$03,$FE; RAW DATA : 	para "잠깨는약으로"
+	line $01,$CA,$07,$4C,$05,$EC,$07,$44,$0B,$66; RAW DATA : 	line "깨우세요!"
 	prompt
 
 _ViridianBlackboardPoisonText::
-	text "When poisoned, a"
-	line "#MON's health"
-	cont "steadily drops."
+	text $03,$16,$07,$01,$7F,$01,$29,$04,$40,$7F,$0A,$27,$09,$2F,$04,$93,$07,$97; RAW DATA : 	text "독에 걸린 포켓몬의"
+	line $08,$BC,$03,$F2,$07,$8A,$7F,$01,$48,$06,$03,$7F,$03,$83,$06,$EE,$08,$2D,$02,$CF,$02,$D9,$0B,$66; RAW DATA : 	line "체력은 계속 떨어집니다!"
 
-	para "Poison lingers"
-	line "after battles."
+	para $03,$16,$7F,$05,$C3,$09,$92,$02,$C2,$7F,$04,$E8,$09,$E2,$0A,$C4,$07,$01,$03,$15; RAW DATA : 	para "독 상태는 배틀후에도"
+	line $07,$9C,$06,$EE,$08,$2D,$02,$CF,$02,$D9; RAW DATA : 	line "이어집니다"
 
-	para "Use an ANTIDOTE"
-	line "to cure poison!"
+	para $0A,$78,$03,$16,$07,$D6,$03,$FE; RAW DATA : 	para "해독제로"
+	line $03,$16,$07,$8B,$7F,$09,$01,$04,$11,$0A,$6F,$05,$EC,$07,$44,$0B,$66; RAW DATA : 	line "독을 치료하세요!"
 	prompt
 
 _ViridianBlackboardPrlzText::
-	text "Paralysis could"
-	line "make #MON"
-	cont "moves misfire!"
+	text $04,$46,$05,$61,$7F,$05,$C3,$09,$92,$07,$9E,$7F,$0A,$27,$09,$2F,$04,$93,$07,$8A,$7F,$04,$96,$07,$9C,$7F,$07,$CA,$03,$F1,$05,$DD; RAW DATA : 	text "마비 상태인 포켓몬은 몸이 저려서"
+	line $04,$98,$7F,$07,$62,$08,$27,$07,$9C,$01,$B2,$03,$15,$7F,$0A,$75,$02,$CF,$02,$D9,$0B,$66; RAW DATA : 	line "못 움직이기도 합니다!"
 
-	para "Paralysis remains"
-	line "after battles."
+	para $04,$46,$05,$61,$7F,$05,$C3,$09,$92,$02,$C2; RAW DATA : 	para "마비 상태는"
+	line $04,$E8,$09,$E2,$0A,$C4,$07,$01,$03,$15,$7F,$07,$7F,$08,$26,$03,$2B,$02,$CF,$02,$D9; RAW DATA : 	line "배틀후에도 유지됩니다"
 
-	para "Use PARLYZ HEAL"
-	line "for treatment!"
+	para $04,$46,$05,$61,$09,$01,$04,$11,$07,$D6,$03,$FE; RAW DATA : 	para "마비치료제로"
+	line $09,$01,$04,$11,$0A,$6F,$05,$EC,$07,$44,$0B,$66; RAW DATA : 	line "치료하세요!"
 	prompt
 
 _ViridianBlackboardBurnText::
-	text "A burn reduces"
-	line "power and speed."
-	cont "It also causes"
-	cont "ongoing damage."
+	text $0A,$AD,$05,$C3,$7F,$05,$C3,$09,$92,$01,$01,$7F,$03,$27,$04,$89; RAW DATA : 	text "화상 상태가 되면"
+	line $0A,$FB,$01,$6A,$7F,$06,$4A,$0A,$67,$03,$45,$01,$01,$7F,$03,$83,$06,$EE,$08,$26,$01,$4D; RAW DATA : 	line "힘과 스피드가 떨어지고"
+	cont $08,$26,$06,$03,$07,$CB,$07,$88,$03,$FE,$7F,$03,$05,$04,$CC,$08,$26,$01,$01; RAW DATA : 	cont "지속적으로 데미지가"
+	cont $04,$DF,$05,$CD,$0A,$75,$02,$CF,$02,$D9; RAW DATA : 	cont "발생합니다"
 
-	para "Burns remain"
-	line "after battles."
+	para $0A,$AD,$05,$C3,$7F,$05,$C3,$09,$92,$02,$C2; RAW DATA : 	para "화상 상태는"
+	line $04,$E8,$09,$E2,$0A,$C4,$07,$01,$03,$15,$7F,$07,$7F,$08,$26,$03,$2B,$02,$CF,$02,$D9; RAW DATA : 	line "배틀후에도 유지됩니다"
 
-	para "Use BURN HEAL to"
-	line "cure a burn!"
+	para $0A,$AD,$05,$C3,$09,$01,$04,$11,$07,$D6,$03,$FE; RAW DATA : 	para "화상치료제로"
+	line $09,$01,$04,$11,$0A,$6F,$05,$EC,$07,$44,$0B,$66; RAW DATA : 	line "치료하세요!"
 	prompt
 
 _ViridianBlackboardFrozenText::
-	text "If frozen, a"
-	line "#MON becomes"
-	cont "totally immobile!"
+	text $01,$08,$07,$CC,$7F,$05,$C3,$09,$92,$07,$9E,$7F,$0A,$27,$09,$2F,$04,$93,$07,$8A; RAW DATA : text "감전 상태인 포켓몬은"
+	line $01,$F4,$07,$AB,$7F,$0A,$72,$7F,$06,$26,$7F,$06,$F8,$06,$60,$02,$CF,$02,$D9,$0B,$66; RAW DATA : 	line "꼼작 할 수 없습니다!"
 
-	para "It stays frozen"
-	line "even after the"
-	cont "battle ends."
+	para $04,$E8,$09,$E2,$07,$9C,$7F,$02,$31,$02,$3D,$0A,$C4,$07,$01,$03,$15; RAW DATA : 	para "배틀이 끝난후에도"
+	line $06,$F3,$07,$8D,$7F,$05,$C3,$09,$92,$02,$C2,$7F,$08,$26,$06,$03,$03,$2B,$02,$CF,$02,$D9; RAW DATA : 	line "얼음 상태는 지속됩니다"
 
-	para "Use ICE HEAL to"
-	line "thaw out #MON!"
+	para $06,$F3,$07,$8D,$05,$C3,$09,$92,$09,$01,$04,$11,$07,$D6,$03,$FE; RAW DATA : 	para "얼음상태치료제로"
+	line $09,$01,$04,$11,$0A,$6F,$05,$EC,$07,$44,$0B,$66; RAW DATA : 	line "치료하세요!"
 	prompt
 
 _VermilionGymTrashText::
-	text "Nope, there's"
-	line "only trash here."
+	text $06,$C6,$04,$AB,$01,$2D,$03,$15,$7F,$06,$F8,$02,$D9,$0B,$66; RAW DATA : 	text "아무것도 없다!"
+	line $01,$A7,$02,$69,$7F,$06,$B2,$03,$E9,$01,$B2,$04,$48,$7F,$07,$A6,$02,$D9; RAW DATA : 	line "그냥 쓰레기만 있다"
 	done
 
 _VermilionGymTrashSuccessText1::
-	text "Hey! There's a"
-	line "switch under the"
-	cont "trash!"
-	cont "Turn it on!"
+	text $06,$E6,$0A,$A3,$0B,$66; RAW DATA : 	text "얏호!"
+	line $06,$B2,$03,$E9,$01,$B2,$09,$BB,$7F,$04,$D9,$02,$DA,$07,$01,$7F,$06,$4A,$07,$77,$09,$01,$01,$01,$7F,$07,$A6,$02,$D9,$0B,$66; RAW DATA : 	line "쓰레기통 바닥에 스위치가 있다!"
+	cont $06,$4A,$07,$77,$09,$01,$04,$36,$7F,$09,$80,$07,$AA,$0B,$66; RAW DATA : 	cont "스위치를 키자!"
 
-	para "The 1st electric"
-	line "lock opened!@@"
+	para $F7,$04,$F8,$08,$40,$7F,$07,$CC,$07,$AA,$07,$AA,$04,$B0,$06,$18,$01,$01; RAW DATA : 	para "1번째 전자자물쇠가"
+	line $0A,$3E,$03,$F8,$02,$D9,$0B,$66,$50,$50; RAW DATA : 	line "풀렸다!@@"
 
 _VermilionGymTrashSuccessText2::
-	text "Hey! There's"
-	line "another switch"
-	cont "under the trash!"
-	cont "Turn it on!"
+	text $06,$E6,$0A,$A3,$0B,$66; RAW DATA : 	text "얏호!"
+	line $06,$B2,$03,$E9,$01,$B2,$09,$BB,$7F,$04,$D9,$02,$DA,$07,$01,$7F,$06,$4A,$07,$77,$09,$01,$01,$01,$7F,$07,$A6,$02,$D9,$0B,$66; RAW DATA : 	line "쓰레기통 바닥에 스위치가 있다!"
+	cont $06,$4A,$07,$77,$09,$01,$04,$36,$7F,$09,$80,$07,$AA,$0B,$66; RAW DATA : 	cont "스위치를 키자!"
 	prompt
 
 _VermilionGymTrashSuccessText3::
-	text "The 2nd electric"
-	line "lock opened!"
+	text $F8,$04,$F8,$08,$40,$7F,$07,$CC,$07,$AA,$07,$AA,$04,$B0,$06,$18,$01,$01; RAW DATA : 	text "2번째 전자자물쇠가"
+	line $0A,$3E,$03,$F8,$02,$D9,$0B,$66; RAW DATA : 	line "풀렸다!"
 
-	para "The motorized door"
-	line "opened!@@"
+	para $07,$AA,$03,$1F,$04,$AE,$07,$9C,$7F,$07,$0D,$03,$F8,$02,$D9,$0B,$66,$50,$50; RAW DATA : 	para "자동문이 열렸다!@@"
 
 _VermilionGymTrashFailText::
-	text "Nope! There's"
-	line "only trash here."
-	cont "Hey! The electric"
-	cont "locks were reset!@@"
+	text $06,$C6,$04,$AB,$01,$2D,$03,$15,$7F,$06,$F8,$02,$D9,$0B,$66; RAW DATA : 	text "아무것도 없다!"
+	line $01,$A7,$02,$69,$7F,$06,$B2,$03,$E9,$01,$B2,$04,$48,$7F,$07,$A6,$02,$D9; RAW DATA : 	line "그냥 쓰레기만 있다"
+	cont $07,$CC,$07,$AA,$07,$AA,$04,$B0,$06,$18,$01,$01,$7F,$04,$3E,$05,$F2,$03,$26,$02,$D9,$0B,$66,$50,$50; RAW DATA : 	cont "전자자물쇠가 리셋됐다!@@"
 
 _FoundHiddenItemText::
-	text "<PLAYER> found"
-	line "@"
+	text $52, $02,$C2,$0B,$64,$07,$8A,$0B,$65; RAW DATA : 	text $52, "는(은)"
+	line $50; RAW DATA : 	line "@"
 	TX_RAM wcd6d
-	text "!@@"
+	text $07,$8B,$0B,$64,$04,$36,$0B,$65,$7F,$04,$DF,$01,$3F,$0A,$7F,$02,$D9,$0B,$66,$50,$50; RAW DATA : 	text "을(를) 발견했다!@@"
 
 _HiddenItemBagFullText::
-	text "But, <PLAYER> has"
-	line "no more room for"
-	cont "other items!"
+	text $0A,$6F,$08,$26,$04,$48,$7F; RAW DATA : 	text "하지만 "
+	db $52, $02,$C2,$0B,$64,$07,$8A,$0B,$65; RAW DATA : 	db $52, "는(은)"
+	line $02,$F5,$7F,$07,$9C,$05,$C3,$07,$8A,$7F,$03,$49,$7F,$06,$26,$7F,$06,$F8,$06,$EE,$0B,$66; RAW DATA : 	line "더 이상은 들 수 없어!"
 	done
 
 _FoundHiddenCoinsText::
-	text "<PLAYER> found"
-	line "@"
+	text $52, $02,$C2,$0B,$64,$07,$8A,$0B,$65; RAW DATA : 	text $52, "는(은)"
+	line $50; RAW DATA : 	line "@"
 	TX_BCD hCoins, 2 | LEADING_ZEROES | LEFT_ALIGN
-	text " coins!@@"
+	text $01,$13,$07,$97,$7F,$03,$1F,$07,$CC,$07,$8B,$7F,$04,$DF,$01,$3F,$0A,$7F,$02,$D9,$0B,$66,$50,$50; RAW DATA : 	text "개의 동전을 발견했다!@@"
 
 _FoundHiddenCoins2Text::
-	text "<PLAYER> found"
-	line "@"
+	text $52, $02,$C2,$0B,$64,$07,$8A,$0B,$65; RAW DATA : 	text $52, "는(은)"
+	line $50; RAW DATA : 	line "@"
 	TX_BCD hCoins, 2 | LEADING_ZEROES | LEFT_ALIGN
-	text " coins!@@"
+	text $01,$13,$07,$97,$7F,$03,$1F,$07,$CC,$07,$8B,$7F,$04,$DF,$01,$3F,$0A,$7F,$02,$D9,$0B,$66,$50,$50; RAW DATA : 	text "개의 동전을 발견했다!@@"
 
 _DroppedHiddenCoinsText::
 	text ""
-	para "Oops! Dropped"
-	line "some coins!"
+	para $06,$C6,$07,$9C,$01,$4D,$0B,$66; RAW DATA : 	para "아이고!"
+	line $03,$1F,$07,$CC,$07,$9C,$7F,$03,$83,$06,$EE,$07,$DE,$07,$A6,$02,$D9,$0B,$66; RAW DATA : 	line "동전이 떨어져있다!"
 	done
 
 _IndigoPlateauStatuesText1::
-	text "INDIGO PLATEAU"
+	text $07,$9C,$01,$67,$07,$8A,$7F,$05,$DE,$07,$15,$01,$4D,$07,$68; RAW DATA : 	text "이곳은 석영고원"
 	prompt
 
 _IndigoPlateauStatuesText2::
-	text "The ultimate goal"
-	line "of trainers!"
-	cont "#MON LEAGUE HQ"
+	text $07,$9C,$01,$67,$02,$C2,$7F,$0A,$27,$09,$2F,$04,$93,$7F,$04,$3E,$01,$A7; RAW DATA : 	text "이곳는 포켓몬 리그"
+	line $09,$DE,$03,$E9,$07,$9C,$02,$6A,$03,$49,$07,$97,$7F,$08,$D6,$07,$EE,$04,$91,$0A,$35; RAW DATA : 	line "트레이너들의 최종목표"
 	done
 
 _IndigoPlateauStatuesText3::
-	text "The highest"
-	line "#MON authority"
-	cont "#MON LEAGUE HQ"
+	text $07,$9C,$01,$67,$07,$8A,$7F,$0A,$27,$09,$2F,$04,$93,$7F,$04,$3E,$01,$A7; RAW DATA : 	text "이곳은 포켓몬 리그"
+	line $08,$D6,$01,$4D,$07,$97,$7F,$0A,$27,$09,$2F,$04,$93,$7F,$01,$97,$07,$77,$07,$AA; RAW DATA : 	line "최고의 포켓몬 권위자"
 	done
 
 _PokemonBooksText::
-	text "Crammed full of"
-	line "#MON books!"
+	text $0A,$27,$09,$2F,$04,$93,$7F,$08,$A5,$03,$49,$03,$FE; RAW DATA : 	text "포켓몬 책들로"
+	line $05,$79,$01,$4E,$0A,$6F,$01,$34,$7F,$08,$A4,$07,$66,$07,$DE,$7F,$07,$A6,$02,$D9,$0B,$66; RAW DATA : 	line "빼곡하게 채워져 있다!"
 	done
 
 _DiglettSculptureText::
-	text "It's a sculpture"
-	line "of DIGLETT."
+	text $03,$60,$01,$A7,$02,$3A,$7F,$07,$E6,$01,$02,$05,$C3,$07,$9C,$02,$D9; RAW DATA : 	text "디그나 조각상이다"
 	done
 
 _ElevatorText::
-	text "This is an"
-	line "elevator."
+	text $07,$04,$04,$3E,$05,$03,$07,$9C,$09,$9D,$02,$D9; RAW DATA : 	text "엘리베이터다"
 	done
 
 _TownMapText::
-	text "A TOWN MAP.@@"
+	text $09,$88,$07,$4E,$04,$6A,$07,$9C,$02,$D9,$50,$50; RAW DATA : 	text "타운맵이다@@"
 
 _PokemonStuffText::
-	text "Wow! Tons of"
-	line "#MON stuff!"
+	text $07,$4C,$07,$2D,$0B,$66,$7F,$06,$F6,$08,$BB,$02,$3D; RAW DATA : 	text "우와! 엄청난"
+	line $0A,$27,$09,$2F,$04,$93,$7F,$05,$C3,$0A,$40,$03,$49,$07,$9C,$02,$D9,$0B,$66; RAW DATA : 	line "포켓몬 상품들이다!"
 	done
 
 _OutOfSafariBallsText::
-	text "PA: Ding-dong!"
+	text $06,$C8,$02,$4B,$04,$E6,$06,$0B,$0B,$62,$03,$69,$0B,$68,$03,$1F,$0B,$66; RAW DATA : 	text "안내방송『딩-동!"
 
-	para "You are out of"
-	line "SAFARI BALLs!"
+	para $05,$B7,$09,$F4,$04,$3E,$05,$1C,$07,$8B; RAW DATA : 	para "사파리볼을"
+	line $02,$D9,$7F,$06,$B2,$05,$FC,$06,$60,$02,$CF,$02,$D9,$0B,$66; RAW DATA : 	line "다 쓰셨습니다!"
 	prompt
 
 _WildRanText::
-	text "Wild @"
+	text $06,$DF,$05,$CD,$07,$97,$7F,$50; RAW DATA : 	text "야생의 @"
 	TX_RAM wEnemyMonNick
-	text ""
-	line "ran!"
+	text $02,$C2,$0B,$64,$07,$8A,$0B,$65; RAW DATA : 	text "는(은)"
+	line $03,$15,$04,$61,$08,$C6,$02,$D9,$0B,$66; RAW DATA : 	line "도망쳤다!"
 	prompt
 
 _EnemyRanText::
-	text "Enemy @"
+	text $07,$CB,$07,$97,$7F,$50; RAW DATA : 	text "적의 @"
 	TX_RAM wEnemyMonNick
-	text ""
-	line "ran!"
+	text $02,$C2,$0B,$64,$07,$8A,$0B,$65; RAW DATA : 	text "는(은)"
+	line $03,$15,$04,$61,$08,$C6,$02,$D9,$0B,$66; RAW DATA : 	line "도망쳤다!"
 	prompt
 
 _HurtByPoisonText::
-	text "<USER>'s"
-	line "hurt by poison!"
+	text $5A, $02,$C2,$0B,$64,$07,$8A,$0B,$65; RAW DATA : 	text $5A, "는(은)"
+	line $03,$16,$07,$97,$7F,$03,$05,$04,$CC,$08,$26,$04,$36,$7F,$07,$A4,$01,$4D,$7F,$07,$A6,$02,$D9,$0B,$66; RAW DATA : 	line "독의 데미지를 입고 있다!"
 	prompt
 
 _HurtByBurnText::
-	text "<USER>'s"
-	line "hurt by the burn!"
+	text $5A, $02,$C2,$0B,$64,$07,$8A,$0B,$65; RAW DATA : 	text $5A, "는(은)"
+	line $0A,$AD,$05,$C3,$07,$97,$7F,$03,$05,$04,$CC,$08,$26,$04,$36,$7F,$07,$A4,$06,$FA,$02,$D9,$0B,$66; RAW DATA : 	line "화상의 데미지를 입었다!"
 	prompt
 
 _HurtByLeechSeedText::
-	text "LEECH SEED saps"
-	line "<USER>!"
+	text $01,$B2,$05,$CD,$04,$91,$07,$9C,$7F; RAW DATA : 	text "기생목이 "
+	db $5A, $07,$97; RAW DATA : 	db $5A, "의"
+	line $08,$BC,$03,$F2,$07,$8B,$7F,$05,$79,$06,$D1,$06,$D2,$02,$D9,$0B,$66; RAW DATA : 	line "체력을 빼앗았다!"
 	prompt
 
 _EnemyMonFaintedText::
-	text "Enemy @"
+	text $07,$CB,$07,$97,$7F,$50
 	TX_RAM wEnemyMonNick
-	text ""
-	line "fainted!"
+	text $02,$C2,$0B,$64,$07,$8A,$0B,$65
+	line $06,$B2,$03,$DF,$07,$E3,$02,$D9,$0B,$66
 	prompt
 
 _MoneyForWinningText::
-	text "<PLAYER> got ¥@"
+	text $52, $02,$C2,$0B,$64,$07,$8A,$0B,$65,$7F,$05,$C3,$01,$AD,$07,$88,$03,$FE; RAW DATA : 	text $52, "는(은) 상금으로"
+	line $50; RAW DATA : 	line "@"
 	TX_BCD wAmountMoneyWon, 3 | LEADING_ZEROES | LEFT_ALIGN
-	text ""
-	line "for winning!"
+	text $07,$68,$7F,$06,$05,$07,$01,$7F,$02,$76,$06,$FA,$02,$D9,$0B,$66; RAW DATA : 	text "원 손에 넣었다!"
 	prompt
 
 _TrainerDefeatedText::
-	text "<PLAYER> defeated"
-	line "@"
+	text $52, $02,$C2,$0B,$64,$07,$8A,$0B,$65; RAW DATA : 	text $52, "는(은)"
+	line $50; RAW DATA : 	line "@"
 	TX_RAM wTrainerName
-	text "!"
+	text $07,$2D,$0B,$64,$01,$6A,$0B,$65,$07,$97,$7F,$06,$62,$05,$2E,$07,$01,$05,$DD; RAW DATA : 	text "와(과)의"
+	cont $07,$9C,$01,$45,$02,$D9,$0B,$66 ; RAW DATA : cont "승부에서 이겼다!"
 	prompt
 
 _PlayerMonFaintedText::
 	TX_RAM wBattleMonNick
-	text ""
-	line "fainted!"
+	text $02,$C2,$0B,$64,$07,$8A,$0B,$65; RAW DATA : 	text "는(은)"
+	line $06,$B2,$03,$DF,$07,$E3,$02,$D9,$0B,$66; RAW DATA : 	line "쓰러졌다!"
 	prompt
 
 _UseNextMonText::
-	text "Use next #MON?"
+	text $02,$D9,$07,$8D,$7F,$0A,$27,$09,$2F,$04,$93,$07,$8B,$7F,$05,$B7,$07,$4B,$0A,$6F,$01,$3A,$06,$60,$02,$CF,$01,$BE,$0B,$67; RAW DATA : 	text "다음 포켓몬을 사용하겠습니까?"
 	done
 
 _Sony1WinText::
-	text "<RIVAL>: Yeah! Am"
-	line "I great or what?"
+	text $53,$0B,$62,$03,$26,$06,$EE,$0B,$66; RAW DATA : 	text $53,"『됐어!"
+	line $07,$F1,$07,$8A,$7F,$0A,$27,$09,$2F,$04,$93,$07,$8B,$7F,$01,$61,$03,$CA,$02,$3A,$05,$18,$01,$8A,$0B,$66; RAW DATA : 	line "좋은 포켓몬을 골랐나보군!"
 	prompt
 
 _PlayerBlackedOutText2::
-	text "<PLAYER> is out of"
-	line "useable #MON!"
+	text $52, $07,$97,$7F,$01,$47,$07,$01,$02,$C2; RAW DATA : 	text $52, "의 곁에는"
+	line $06,$6E,$07,$4F,$7F,$06,$26,$7F,$07,$A6,$02,$C2,$7F,$0A,$27,$09,$2F,$04,$93,$07,$9C,$7F,$06,$F8,$02,$D9,$0B,$66; RAW DATA : 	line "싸울 수 있는 포켓몬이 없다!"
 
-	para "<PLAYER> blacked"
-	line "out!"
+	para $52, $02,$C2,$0B,$64,$07,$8A,$0B,$65; RAW DATA : 	para $52, "는(은)"
+	line $02,$AB,$06,$D5,$07,$9C,$7F,$01,$C4,$01,$C4,$0A,$78,$07,$E3,$02,$D9,$0B,$66; RAW DATA : 	line "눈앞이 깜깜해졌다!"
 	prompt
 
 _LinkBattleLostText::
-	text "<PLAYER> lost to"
-	line "@"
+	text $52,$02,$C2,$0B,$64,$07,$8A,$0B,$65; RAW DATA : 	text $52,"는(은)"
+	line $50; RAW DATA : 	line "@"
 	TX_RAM wTrainerName
-	text "!"
+	text $07,$2D,$0B,$64,$01,$6A,$0B,$65,$07,$97,$7F,$06,$62,$05,$2E,$07,$01,$05,$DD,$7F,$07,$E3,$02,$D9,$0B,$66,$0B,$66; RAW DATA : 	text "와(과)의 승부에서 졌다!!"
 	prompt
-
+;확인필요
 _TrainerAboutToUseText::
 	TX_RAM wTrainerName
-	text " is"
-	line "about to use"
-	cont"@"
+	text $02,$C2,$0B,$64,$07,$8A,$0B,$65; RAW DATA : 	text "는(은)"
+	line $50; RAW DATA : 	line "@"
 	TX_RAM wEnemyMonNick
-	text "!"
+	text $04,$36,$0B,$64,$07,$8B,$0B,$65; RAW DATA : 	text "를(을)"
+	cont $01,$D8,$02,$4B,$03,$F1,$7F,$0A,$6F,$01,$4D,$07,$A6,$02,$D9; RAW DATA : 	cont "꺼내려 하고있다"
 
-	para "Will <PLAYER>"
-	line "change #MON?"
+	para $52, $0B,$64,$07,$9C,$0B,$65,$03,$15,$7F,$0A,$27,$09,$2F,$04,$93,$07,$8B; RAW DATA : 	para $52, "(이)도 포켓몬을"
+	line $04,$D9,$02,$09,$01,$3A,$06,$60,$02,$CF,$01,$BE,$0B,$67; RAW DATA : 	line "바꾸겠습니까?"
 	done
 
 _TrainerSentOutText::
 	TX_RAM wTrainerName
-	text " sent"
-	line "out @"
+	text $02,$C2,$0B,$64,$07,$8A,$0B,$65; RAW DATA : 	text "는(은)"
+	line $50; RAW DATA : 	line "@"
 	TX_RAM wEnemyMonNick
-	text "!"
+	text $04,$36,$0B,$64,$07,$8B,$0B,$65; RAW DATA : 	text "를(을)"
+	cont $08,$97,$03,$FA,$03,$FE,$7F,$01,$D8,$02,$62,$02,$D9; RAW DATA : 	cont "차례로 꺼냈다"
 	done
 
 _NoWillText::
-	text "There's no will"
-	line "to fight!"
+	text $06,$6E,$07,$4F,$7F,$01,$B2,$03,$F2,$07,$9C,$7F,$06,$F8,$02,$D9,$0B,$66; RAW DATA : 	text "싸울 기력이 없다!"
 	prompt
 
 _CantEscapeText::
-	text "Can't escape!"
+	text $03,$15,$04,$61,$09,$05,$7F,$06,$26,$01,$01,$7F,$06,$F8,$02,$D9,$0B,$66; RAW DATA : 	text "도망칠 수가 없다!"
 	prompt
-
+;오타 수정
 _NoRunningText::
-	text "No! There's no"
-	line "running from a"
-	cont "trainer battle!"
+	text $06,$C8,$7F,$03,$25,$0B,$66; RAW DATA : 	text "안 돼!"
+	line $06,$62,$05,$2E,$03,$15,$08,$0F,$07,$01; RAW DATA : 	line "승부도중에"
+	cont $05,$C3,$02,$EB,$07,$01,$01,$34,$7F,$03,$4E,$07,$8B,$7F,$05,$18,$07,$9F,$7F,$06,$26,$7F,$06,$F8,$06,$EE,$0B,$66; RAW DATA : 	cont "상대에게 등을 보일 수 없어!"
 	prompt
 
 _GotAwayText::
-	text "Got away safely!"
+	text $05,$EA,$01,$68,$07,$CB,$07,$88,$03,$FE,$7F,$03,$15,$04,$61,$08,$C6,$02,$D9,$0B,$66; RAW DATA : 	text "성공적으로 도망쳤다!"
 	prompt
 
 _ItemsCantBeUsedHereText::
