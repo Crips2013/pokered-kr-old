@@ -152,8 +152,7 @@ LoadDestinationWarpPosition::
 	ld a, [H_LOADEDROMBANK]
 	push af
 	ld a, [wPredefParentBank]
-	ld [H_LOADEDROMBANK], a
-	ld [MBC1RomBank], a
+	call BankswitchCommon
 	ld a, b
 	add a
 	add a
@@ -164,8 +163,7 @@ LoadDestinationWarpPosition::
 	ld de, wCurrentTileBlockMapViewPointer
 	call CopyData
 	pop af
-	ld [H_LOADEDROMBANK], a
-	ld [MBC1RomBank], a
+	call BankswitchCommon
 	ret
 
 
@@ -296,16 +294,14 @@ LoadFrontSpriteByMonIndex::
 	ld a, [H_LOADEDROMBANK]
 	push af
 	ld a, Bank(CopyUncompressedPicToHL)
-	ld [H_LOADEDROMBANK], a
-	ld [MBC1RomBank], a
+	call BankswitchCommon
 	xor a
 	ld [hStartTileID], a
 	call CopyUncompressedPicToHL
 	xor a
 	ld [wSpriteFlipped], a
 	pop af
-	ld [H_LOADEDROMBANK], a
-	ld [MBC1RomBank], a
+	call BankswitchCommon
 	ret
 
 
@@ -499,13 +495,11 @@ PrintStatusConditionNotFainted:
 	ld a, [H_LOADEDROMBANK]
 	push af
 	ld a, BANK(PrintStatusAilment)
-	ld [H_LOADEDROMBANK], a
-	ld [MBC1RomBank], a
+	call BankswitchCommon
 	call PrintStatusAilment ; print status condition
 	pop bc
 	ld a, b
-	ld [H_LOADEDROMBANK], a
-	ld [MBC1RomBank], a
+	call BankswitchCommon
 	ret
 
 ; function to print pokemon level, leaving off the ":L" if the level is at least 100
@@ -556,8 +550,7 @@ GetMonHeader::
 	ld a, [H_LOADEDROMBANK]
 	push af
 	ld a, BANK(BaseStats)
-	ld [H_LOADEDROMBANK], a
-	ld [MBC1RomBank], a
+	call BankswitchCommon
 	push bc
 	push de
 	push hl
@@ -611,8 +604,7 @@ GetMonHeader::
 	pop de
 	pop bc
 	pop af
-	ld [H_LOADEDROMBANK], a
-	ld [MBC1RomBank], a
+	call BankswitchCommon
 	ret
 
 ; copy party pokemon's name to wcd6d
@@ -929,12 +921,10 @@ UpdateSprites::
 	ld a, [H_LOADEDROMBANK]
 	push af
 	ld a, Bank(_UpdateSprites)
-	ld [H_LOADEDROMBANK], a
-	ld [MBC1RomBank], a
+	call BankswitchCommon
 	call _UpdateSprites
 	pop af
-	ld [H_LOADEDROMBANK], a
-	ld [MBC1RomBank], a
+	call BankswitchCommon
 	ret
 
 INCLUDE "data/mart_inventories.asm"
@@ -2937,7 +2927,11 @@ HasEnoughCoins::
 	ld c, 2
 	jp StringCmp
 
-
+BankswitchCommon:: ;코드 절약을 위해 추가
+	ld [H_LOADEDROMBANK], a 
+	ld [MBC1RomBank], a
+	ret
+	
 BankswitchHome::
 ; switches to bank # in a
 ; Only use this when in the home bank!
@@ -2945,15 +2939,13 @@ BankswitchHome::
 	ld a, [H_LOADEDROMBANK]
 	ld [wBankswitchHomeSavedROMBank], a
 	ld a, [wBankswitchHomeTemp]
-	ld [H_LOADEDROMBANK], a
-	ld [MBC1RomBank], a
+	call BankswitchCommon
 	ret
 
 BankswitchBack::
 ; returns from BankswitchHome
 	ld a, [wBankswitchHomeSavedROMBank]
-	ld [H_LOADEDROMBANK], a
-	ld [MBC1RomBank], a
+	call BankswitchCommon
 	ret
 
 Bankswitch::
@@ -2962,16 +2954,14 @@ Bankswitch::
 	ld a, [H_LOADEDROMBANK]
 	push af
 	ld a, b
-	ld [H_LOADEDROMBANK], a
-	ld [MBC1RomBank], a
+	call BankswitchCommon
 	ld bc, .Return
 	push bc
 	jp hl
 .Return
 	pop bc
 	ld a, b
-	ld [H_LOADEDROMBANK], a
-	ld [MBC1RomBank], a
+	call BankswitchCommon
 	ret
 
 ; displays yes/no choice
@@ -3268,8 +3258,7 @@ GetName::
 .otherEntries
 	;2-7 = OTHER ENTRIES
 	ld a, [wPredefBank]
-	ld [H_LOADEDROMBANK], a
-	ld [MBC1RomBank], a
+	call BankswitchCommon
 	ld a, [wNameListType]    ;VariousNames' entryID
 	dec a
 	add a
@@ -3316,8 +3305,7 @@ GetName::
 	pop bc
 	pop hl
 	pop af
-	ld [H_LOADEDROMBANK], a
-	ld [MBC1RomBank], a
+	call BankswitchCommon
 	ret
 
 GetItemPrice::
@@ -3331,8 +3319,7 @@ GetItemPrice::
 	jr nz, .ok
 	ld a, $f ; hardcoded Bank
 .ok
-	ld [H_LOADEDROMBANK], a
-	ld [MBC1RomBank], a
+	call BankswitchCommon
 	ld hl, wItemPrices
 	ld a, [hli]
 	ld h, [hl]
@@ -3355,14 +3342,12 @@ GetItemPrice::
 	jr .done
 .getTMPrice
 	ld a, Bank(GetMachinePrice)
-	ld [H_LOADEDROMBANK], a
-	ld [MBC1RomBank], a
+	call BankswitchCommon
 	call GetMachinePrice
 .done
 	ld de, hItemPrice
 	pop af
-	ld [H_LOADEDROMBANK], a
-	ld [MBC1RomBank], a
+	call BankswitchCommon
 	ret
 
 ; copies a string from [de] to [wcf4b]
@@ -3506,12 +3491,10 @@ Divide::
 	ld a, [H_LOADEDROMBANK]
 	push af
 	ld a, Bank(_Divide)
-	ld [H_LOADEDROMBANK], a
-	ld [MBC1RomBank], a
+	call BankswitchCommon
 	call _Divide
 	pop af
-	ld [H_LOADEDROMBANK], a
-	ld [MBC1RomBank], a
+	call BankswitchCommon
 	pop bc
 	pop de
 	pop hl
@@ -3799,26 +3782,22 @@ AddEnemyMonToPlayerParty::
 	ld a, [H_LOADEDROMBANK]
 	push af
 	ld a, BANK(_AddEnemyMonToPlayerParty)
-	ld [H_LOADEDROMBANK], a
-	ld [MBC1RomBank], a
+	call BankswitchCommon
 	call _AddEnemyMonToPlayerParty
 	pop bc
 	ld a, b
-	ld [H_LOADEDROMBANK], a
-	ld [MBC1RomBank], a
+	call BankswitchCommon
 	ret
 
 MoveMon::
 	ld a, [H_LOADEDROMBANK]
 	push af
 	ld a, BANK(_MoveMon)
-	ld [H_LOADEDROMBANK], a
-	ld [MBC1RomBank], a
+	call BankswitchCommon
 	call _MoveMon
 	pop bc
 	ld a, b
-	ld [H_LOADEDROMBANK], a
-	ld [MBC1RomBank], a
+	call BankswitchCommon
 	ret
 
 ; skips a text entries, each of size NAME_LENGTH (like trainer name, OT name, rival name, ...)
