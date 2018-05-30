@@ -342,11 +342,11 @@ SpecialEnterMap:
 	jp EnterMap
 
 ContinueText:
-	db "CONTINUE", $4e
+	db $04,$90,$0A,$88,$07,$8B,$7F,$01,$48,$06,$03,$0A,$6F,$02,$D9,$4e; RAW DATA : 	db "모험을 계속하다", $4e
 
 NewGameText:
-	db   "NEW GAME"
-	next "OPTION@"
+	db   $05,$C5,$03,$FE,$07,$4E,$7F,$04,$90,$0A,$88,$07,$8B,$7F,$06,$63,$07,$AB,$0A,$6F,$02,$D9; RAW DATA : 	db   "새로운 모험을 시작하다"
+	next $05,$E3,$07,$D4,$07,$8B,$7F,$04,$D9,$02,$09,$02,$D9,$50; RAW DATA : 	next "설정을 바꾸다@"
 
 CableClubOptionsText:
 	db   "TRADE CENTER"
