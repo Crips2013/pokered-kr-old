@@ -8,7 +8,11 @@ db GROUND ; species type 1
 db GROUND ; species type 2
 db 90 ; catch rate
 db 163 ; base exp yield
-INCBIN "pic/bmon/sandslash.pic",0,1 ; 66, sprite dimensions
+IF DEF(_BLUE)
+INCBIN  "pic/bmon/sandslash.pic",0,1 ; 66, sprite dimensions
+ELSE
+INCBIN "pic/rgmon/sandslash.pic",0,1 ; 66, sprite dimensions
+ENDC
 dw SandslashPicFront
 dw SandslashPicBack
 ; attacks known at lvl 0

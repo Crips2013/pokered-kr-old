@@ -8,7 +8,11 @@ db ELECTRIC ; species type 1
 db ELECTRIC ; species type 2
 db 45 ; catch rate
 db 156 ; base exp yield
-INCBIN "pic/bmon/electabuzz.pic",0,1 ; 66, sprite dimensions
+IF DEF(_BLUE)
+INCBIN  "pic/bmon/electabuzz.pic",0,1 ; 66, sprite dimensions
+ELSE
+INCBIN "pic/rgmon/electabuzz.pic",0,1 ; 66, sprite dimensions
+ENDC
 dw ElectabuzzPicFront
 dw ElectabuzzPicBack
 ; attacks known at lvl 0

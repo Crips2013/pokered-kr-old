@@ -8,7 +8,11 @@ db GROUND ; species type 1
 db ROCK ; species type 2
 db 120 ; catch rate
 db 135 ; base exp yield
-INCBIN "pic/bmon/rhyhorn.pic",0,1 ; 77, sprite dimensions
+IF DEF(_BLUE)
+INCBIN  "pic/bmon/rhyhorn.pic",0,1 ; 77, sprite dimensions
+ELSE
+INCBIN "pic/rgmon/rhyhorn.pic",0,1 ; 77, sprite dimensions
+ENDC
 dw RhyhornPicFront
 dw RhyhornPicBack
 ; attacks known at lvl 0

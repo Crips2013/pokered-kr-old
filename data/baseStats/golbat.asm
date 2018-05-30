@@ -8,7 +8,11 @@ db POISON ; species type 1
 db FLYING ; species type 2
 db 90 ; catch rate
 db 171 ; base exp yield
-INCBIN "pic/bmon/golbat.pic",0,1 ; 77, sprite dimensions
+IF DEF(_BLUE)
+INCBIN  "pic/bmon/golbat.pic",0,1 ; 77, sprite dimensions
+ELSE
+INCBIN "pic/rgmon/golbat.pic",0,1 ; 77, sprite dimensions
+ENDC
 dw GolbatPicFront
 dw GolbatPicBack
 ; attacks known at lvl 0

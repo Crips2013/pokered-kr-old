@@ -8,7 +8,11 @@ db ELECTRIC ; species type 1
 db ELECTRIC ; species type 2
 db 190 ; catch rate
 db 82 ; base exp yield
-INCBIN "pic/bmon/pikachu.pic",0,1 ; 55, sprite dimensions
+IF DEF(_BLUE)
+INCBIN  "pic/bmon/pikachu.pic",0,1 ; 55, sprite dimensions
+ELSE
+INCBIN "pic/rgmon/pikachu.pic",0,1 ; 55, sprite dimensions
+ENDC
 dw PikachuPicFront
 dw PikachuPicBack
 ; attacks known at lvl 0

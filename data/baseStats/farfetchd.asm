@@ -8,7 +8,11 @@ db NORMAL ; species type 1
 db FLYING ; species type 2
 db 45 ; catch rate
 db 94 ; base exp yield
-INCBIN "pic/bmon/farfetchd.pic",0,1 ; 66, sprite dimensions
+IF DEF(_BLUE)
+INCBIN  "pic/bmon/farfetchd.pic",0,1 ; 66, sprite dimensions
+ELSE
+INCBIN "pic/rgmon/farfetchd.pic",0,1 ; 66, sprite dimensions
+ENDC
 dw FarfetchdPicFront
 dw FarfetchdPicBack
 ; attacks known at lvl 0

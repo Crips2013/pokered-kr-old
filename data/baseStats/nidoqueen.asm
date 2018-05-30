@@ -8,7 +8,11 @@ db POISON ; species type 1
 db GROUND ; species type 2
 db 45 ; catch rate
 db 194 ; base exp yield
-INCBIN "pic/bmon/nidoqueen.pic",0,1 ; 77, sprite dimensions
+IF DEF(_BLUE)
+INCBIN  "pic/bmon/nidoqueen.pic",0,1 ; 77, sprite dimensions
+ELSE
+INCBIN "pic/rgmon/nidoqueen.pic",0,1 ; 77, sprite dimensions
+ENDC
 dw NidoqueenPicFront
 dw NidoqueenPicBack
 ; attacks known at lvl 0

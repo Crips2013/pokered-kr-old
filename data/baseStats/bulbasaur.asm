@@ -9,7 +9,11 @@ db GRASS ; species type 1
 db POISON ; species type 2
 db 45 ; catch rate
 db 64 ; base exp yield
-INCBIN "pic/bmon/bulbasaur.pic",0,1 ; 55, sprite dimensions
+IF DEF(_BLUE)
+INCBIN  "pic/bmon/bulbasaur.pic",0,1 ; 55, sprite dimensions
+ELSE
+INCBIN "pic/rgmon/bulbasaur.pic",0,1 ; 55, sprite dimensions
+ENDC
 dw BulbasaurPicFront
 dw BulbasaurPicBack
 ; attacks known at lvl 0

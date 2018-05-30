@@ -8,7 +8,11 @@ db ROCK ; species type 1
 db WATER ; species type 2
 db 45 ; catch rate
 db 119 ; base exp yield
-INCBIN "pic/bmon/kabuto.pic",0,1 ; 55, sprite dimensions
+IF DEF(_BLUE)
+INCBIN  "pic/bmon/kabuto.pic",0,1 ; 55, sprite dimensions
+ELSE
+INCBIN "pic/rgmon/kabuto.pic",0,1 ; 55, sprite dimensions
+ENDC
 dw KabutoPicFront
 dw KabutoPicBack
 ; attacks known at lvl 0

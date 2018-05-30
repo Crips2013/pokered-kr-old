@@ -8,7 +8,11 @@ db WATER ; species type 1
 db PSYCHIC ; species type 2
 db 75 ; catch rate
 db 164 ; base exp yield
-INCBIN "pic/bmon/slowbro.pic",0,1 ; 77, sprite dimensions
+IF DEF(_BLUE)
+INCBIN  "pic/bmon/slowbro.pic",0,1 ; 77, sprite dimensions
+ELSE
+INCBIN "pic/rgmon/slowbro.pic",0,1 ; 77, sprite dimensions
+ENDC
 dw SlowbroPicFront
 dw SlowbroPicBack
 ; attacks known at lvl 0

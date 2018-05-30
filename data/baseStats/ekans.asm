@@ -8,7 +8,11 @@ db POISON ; species type 1
 db POISON ; species type 2
 db 255 ; catch rate
 db 62 ; base exp yield
-INCBIN "pic/bmon/ekans.pic",0,1 ; 55, sprite dimensions
+IF DEF(_BLUE)
+INCBIN  "pic/bmon/ekans.pic",0,1 ; 55, sprite dimensions
+ELSE
+INCBIN "pic/rgmon/ekans.pic",0,1 ; 55, sprite dimensions
+ENDC
 dw EkansPicFront
 dw EkansPicBack
 ; attacks known at lvl 0

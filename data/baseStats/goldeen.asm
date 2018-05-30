@@ -8,7 +8,11 @@ db WATER ; species type 1
 db WATER ; species type 2
 db 225 ; catch rate
 db 111 ; base exp yield
-INCBIN "pic/bmon/goldeen.pic",0,1 ; 66, sprite dimensions
+IF DEF(_BLUE)
+INCBIN  "pic/bmon/goldeen.pic",0,1 ; 66, sprite dimensions
+ELSE
+INCBIN "pic/rgmon/goldeen.pic",0,1 ; 66, sprite dimensions
+ENDC
 dw GoldeenPicFront
 dw GoldeenPicBack
 ; attacks known at lvl 0

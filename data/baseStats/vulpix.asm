@@ -8,7 +8,11 @@ db FIRE ; species type 1
 db FIRE ; species type 2
 db 190 ; catch rate
 db 63 ; base exp yield
-INCBIN "pic/bmon/vulpix.pic",0,1 ; 66, sprite dimensions
+IF DEF(_BLUE)
+INCBIN  "pic/bmon/vulpix.pic",0,1 ; 66, sprite dimensions
+ELSE
+INCBIN "pic/rgmon/vulpix.pic",0,1 ; 66, sprite dimensions
+ENDC
 dw VulpixPicFront
 dw VulpixPicBack
 ; attacks known at lvl 0

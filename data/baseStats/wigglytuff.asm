@@ -8,7 +8,11 @@ db NORMAL ; species type 1
 db NORMAL ; species type 2
 db 50 ; catch rate
 db 109 ; base exp yield
-INCBIN "pic/bmon/wigglytuff.pic",0,1 ; 66, sprite dimensions
+IF DEF(_BLUE)
+INCBIN  "pic/bmon/wigglytuff.pic",0,1 ; 66, sprite dimensions
+ELSE
+INCBIN "pic/rgmon/wigglytuff.pic",0,1 ; 66, sprite dimensions
+ENDC
 dw WigglytuffPicFront
 dw WigglytuffPicBack
 ; attacks known at lvl 0

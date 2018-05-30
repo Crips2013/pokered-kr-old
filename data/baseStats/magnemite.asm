@@ -8,7 +8,11 @@ db ELECTRIC ; species type 1
 db ELECTRIC ; species type 2
 db 190 ; catch rate
 db 89 ; base exp yield
-INCBIN "pic/bmon/magnemite.pic",0,1 ; 55, sprite dimensions
+IF DEF(_BLUE)
+INCBIN  "pic/bmon/magnemite.pic",0,1 ; 55, sprite dimensions
+ELSE
+INCBIN "pic/rgmon/magnemite.pic",0,1 ; 55, sprite dimensions
+ENDC
 dw MagnemitePicFront
 dw MagnemitePicBack
 ; attacks known at lvl 0

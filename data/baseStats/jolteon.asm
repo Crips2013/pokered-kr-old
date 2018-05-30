@@ -8,7 +8,11 @@ db ELECTRIC ; species type 1
 db ELECTRIC ; species type 2
 db 45 ; catch rate
 db 197 ; base exp yield
-INCBIN "pic/bmon/jolteon.pic",0,1 ; 66, sprite dimensions
+IF DEF(_BLUE)
+INCBIN  "pic/bmon/jolteon.pic",0,1 ; 66, sprite dimensions
+ELSE
+INCBIN "pic/rgmon/jolteon.pic",0,1 ; 66, sprite dimensions
+ENDC
 dw JolteonPicFront
 dw JolteonPicBack
 ; attacks known at lvl 0

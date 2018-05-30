@@ -8,7 +8,11 @@ db WATER ; species type 1
 db WATER ; species type 2
 db 75 ; catch rate
 db 155 ; base exp yield
-INCBIN "pic/bmon/seadra.pic",0,1 ; 66, sprite dimensions
+IF DEF(_BLUE)
+INCBIN  "pic/bmon/seadra.pic",0,1 ; 66, sprite dimensions
+ELSE
+INCBIN "pic/rgmon/seadra.pic",0,1 ; 66, sprite dimensions
+ENDC
 dw SeadraPicFront
 dw SeadraPicBack
 ; attacks known at lvl 0

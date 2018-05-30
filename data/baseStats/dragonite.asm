@@ -8,7 +8,11 @@ db DRAGON ; species type 1
 db FLYING ; species type 2
 db 45 ; catch rate
 db 218 ; base exp yield
-INCBIN "pic/bmon/dragonite.pic",0,1 ; 77, sprite dimensions
+IF DEF(_BLUE)
+INCBIN  "pic/bmon/dragonite.pic",0,1 ; 77, sprite dimensions
+ELSE
+INCBIN "pic/rgmon/dragonite.pic",0,1 ; 77, sprite dimensions
+ENDC
 dw DragonitePicFront
 dw DragonitePicBack
 ; attacks known at lvl 0

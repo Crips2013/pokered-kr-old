@@ -8,7 +8,11 @@ db FIRE ; species type 1
 db FLYING ; species type 2
 db 3 ; catch rate
 db 217 ; base exp yield
-INCBIN "pic/bmon/moltres.pic",0,1 ; 77, sprite dimensions
+IF DEF(_BLUE)
+INCBIN  "pic/bmon/moltres.pic",0,1 ; 77, sprite dimensions
+ELSE
+INCBIN "pic/rgmon/moltres.pic",0,1 ; 77, sprite dimensions
+ENDC
 dw MoltresPicFront
 dw MoltresPicBack
 ; attacks known at lvl 0

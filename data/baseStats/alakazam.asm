@@ -8,7 +8,11 @@ db PSYCHIC ; species type 1
 db PSYCHIC ; species type 2
 db 50 ; catch rate
 db 186 ; base exp yield
-INCBIN "pic/bmon/alakazam.pic",0,1 ; 77, sprite dimensions
+IF DEF(_BLUE)
+INCBIN  "pic/bmon/alakazam.pic",0,1 ; 77, sprite dimensions
+ELSE
+INCBIN "pic/rgmon/alakazam.pic",0,1 ; 77, sprite dimensions
+ENDC
 dw AlakazamPicFront
 dw AlakazamPicBack
 ; attacks known at lvl 0

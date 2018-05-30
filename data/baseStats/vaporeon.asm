@@ -8,7 +8,11 @@ db WATER ; species type 1
 db WATER ; species type 2
 db 45 ; catch rate
 db 196 ; base exp yield
+IF DEF(_BLUE)
 INCBIN "pic/bmon/vaporeon.pic",0,1 ; 66, sprite dimensions
+ELSE
+INCBIN "pic/rgmon/vaporeon.pic",0,1 ; 66, sprite dimensions
+ENDC
 dw VaporeonPicFront
 dw VaporeonPicBack
 ; attacks known at lvl 0
