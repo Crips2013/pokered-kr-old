@@ -1,25 +1,27 @@
 _FuchsiaHouse1Text1::
-	text $05,$B7,$09,$F4,$04,$3E,$07,$E8,$07,$97,$7F,$01,$6C,$04,$3E,$07,$9E,$07,$8A; RAW DATA : 	text "사파리존의 관리인은"
-	line $01,$A7,$7F,$07,$0C,$05,$EC,$07,$01,$03,$15,$7F,$05,$32,$01,$88,$0A,$6F,$01,$4D; RAW DATA : 	line "그 연세에도 불구하고"
-	cont $07,$D4,$04,$4B,$7F,$07,$D4,$07,$D4,$0A,$78,$0B,$66; RAW DATA : 	cont "정말 정정해!"
+	text "SAFARI ZONE's"
+	line "WARDEN is old,"
+	cont "but still active!"
 
-	para $07,$9C,$05,$71,$07,$9C,$7F,$04,$99,$03,$75; RAW DATA : 	para "이빨이 몽땅"
-	line $05,$6C,$08,$26,$01,$B4,$7F,$0A,$7F,$08,$26,$04,$48; RAW DATA : 	line "빠지긴 했지만"
+	para "All his teeth are"
+	line "false, though."
 	done
 
 _FuchsiaHouse1Text2::
-	text $0A,$EC,$0B,$67,$7F,$07,$AA,$02,$77; RAW DATA : 	text "흠? 자네"
-	line $07,$9C,$06,$26,$07,$B7,$04,$36,$7F,$04,$48,$02,$3D,$07,$CB,$07,$9C,$7F,$07,$A6,$02,$C2,$01,$35,$01,$01,$0B,$67; RAW DATA : 	line "이수재를 만난적이 있는겐가?"
+	text "Hmm? You've met"
+	line "BILL?"
 
-	para $01,$22,$02,$C2,$7F,$02,$4B,$7F,$06,$05,$07,$AA,$03,$C3,$02,$77,$0B,$66; RAW DATA : 	para "걔는 내 손자라네!"
+	para "He's my grandson!"
 
-	para $06,$F0,$07,$D6,$02,$3A,$7F,$06,$26,$08,$2D,$0A,$6F,$02,$C2,$01,$29,$7F,$07,$F1,$06,$C6,$0A,$78,$05,$DD; RAW DATA : 	para "언제나 수집하는걸 좋아해서"
-	line $01,$A7,$03,$E2,$03,$77,$02,$C2,$7F,$07,$D4,$04,$4B,$7F,$06,$C6,$07,$9C,$01,$10,$08,$26,$0B,$66; RAW DATA : 	line "그럴때는 정말 아이같지!"
+	para "He always liked"
+	line "collecting things"
+	cont "even as a child!"
 	done
 
 _FuchsiaHouse1Text3::
-	text $07,$9C,$06,$26,$07,$B7,$02,$C2,$7F,$07,$AA,$06,$65,$07,$97; RAW DATA : 	text "이수재는 자신의"
-	line $0A,$27,$09,$2F,$04,$93,$07,$8B,$7F,$09,$24,$0A,$4B,$09,$9D,$07,$01,$7F,$06,$77,$06,$C6,$03,$2E,$08,$26,$0B,$66; RAW DATA : 	line "포켓몬을 컴퓨터에 쌓아두지!"
+	text "BILL files his"
+	line "own #MON data"
+	cont "on his PC!"
 
-	para $01,$A7,$7F,$06,$D6,$01,$01,$7F,$02,$6A,$0A,$71,$09,$A7,$7F,$05,$18,$07,$09,$08,$11,$02,$CF,$0B,$67; RAW DATA : 	para "그 애가 너한테 보여줬니?"
+	para "Did he show you?"
 	done

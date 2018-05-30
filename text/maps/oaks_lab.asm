@@ -2,29 +2,56 @@ _OaksLabGaryText1::
 	text "<RIVAL>: Yo"
 	line "<PLAYER>! Gramps"
 	cont "isn't around!"
+IF DEF(_YELLOW)
+	para "I ran here 'cos"
+	line "he said he had a"
+	cont "#MON for me."
+ENDC
 	done
 
 _OaksLabText40::
+IF DEF(_YELLOW)
+	text "<RIVAL>: Humph!"
+	line "I'll get a better"
+	cont "#MON than you!"	
+ELSE
 	text "<RIVAL>: Heh, I"
 	line "don't need to be"
 	cont "greedy like you!"
 
 	para "Go ahead and"
 	line "choose, <PLAYER>!"
+ENDC
 	done
 
 _OaksLabText41::
+IF DEF(_YELLOW)
+	text "<RIVAL>: Heh, my"	
+ELSE
 	text "<RIVAL>: My"
+ENDC
 	line "#MON looks a"
 	cont "lot stronger."
 	done
 
 _OaksLabText39::
+IF DEF(_YELLOW)
+	text "That's a #"
+	line "BALL. There's a"
+	cont "#MON inside!"
+ELSE
 	text "Those are #"
 	line "BALLs. They"
 	cont "contain #MON!"
+ENDC
+	done
+IF DEF(_YELLOW)
+_OaksLabPikachuText::
+	text "OAK: Go ahead,"
+	line "it's yours!"
 	done
 
+ELSE
 _OaksLabCharmanderText::
 	text "So! You want the"
 	line "fire #MON,"
@@ -64,19 +91,30 @@ _OaksLabText_1d2f0::
 	line "which #MON do"
 	cont "you want?"
 	done
-
+ENDC
 _OaksLabText_1d2f5::
 	text "OAK: If a wild"
 	line "#MON appears,"
 	cont "your #MON can"
 	cont "fight against it!"
+IF DEF(_YELLOW)
+	para "Afterward, go on"
+	line "to the next town."
+ENDC
 	done
 
 _OaksLabText_1d2fa::
+IF DEF(_YELLOW)
+	text "OAK: You should"
+	line "talk to it and"
+	cont "see how it feels."
+ELSE
 	text "OAK: <PLAYER>,"
 	line "raise your young"
 	cont "#MON by making"
 	cont "it fight!"
+
+ENDC
 	done
 
 _OaksLabDeliverParcelText1::
@@ -103,7 +141,15 @@ _OaksLabDeliverParcelText2::
 	para "Ah! This is the"
 	line "custom # BALL"
 	cont "I ordered!"
+IF DEF(_YELLOW)
+	cont "Thanks, <PLAYER>!"
+
+	para "By the way, I must"
+	line "ask you to do"
+	cont "something for me."	
+ELSE
 	cont "Thank you!"
+ENDC
 	done
 
 _OaksLabAroundWorldText::
@@ -131,10 +177,18 @@ _OaksLabGivePokeballsText2::
 	para "When a wild"
 	line "#MON appears,"
 	cont "it's fair game."
-
+IF DEF(_YELLOW)
+	para "Just like I showed"
+	line "you, throw a #"
+	cont "BALL at it and try"
+	cont "to catch it!"
+ELSE
 	para "Just throw a #"
 	line "BALL at it and try"
 	line "to catch it!"
+
+ENDC
+
 
 	para "This won't always"
 	line "work, though."
@@ -188,6 +242,28 @@ _OaksLabRivalWaitingText::
 	done
 
 _OaksLabChooseMonText::
+IF DEF(_YELLOW)
+	text "OAK: Hmm? <RIVAL>?"
+	line "Why are you here"
+	cont "already?"
+
+	para "I said for you to"
+	line "come by later..."
+
+	para "Ah, whatever!"
+	line "Just wait there."
+
+	para "Look, <PLAYER>! Do"
+	line "you see that ball"
+	cont "on the table?"
+
+	para "It's called a #"
+	line "BALL. It holds a"
+	cont "#MON inside."
+
+	para "You may have it!"
+	line "Go on, take it!"
+ELSE
 	text "OAK: <RIVAL>?"
 	line "Let me think..."
 
@@ -214,6 +290,7 @@ _OaksLabChooseMonText::
 	cont "but you can have"
 	cont "one! Choose!"
 	done
+ENDC
 
 _OaksLabRivalInterjectionText::
 	text "<RIVAL>: Hey!"
@@ -222,15 +299,71 @@ _OaksLabRivalInterjectionText::
 	done
 
 _OaksLabBePatientText::
+IF DEF(_YELLOW)
+	text "OAK: Be patient,"
+	line "<RIVAL>, I'll give"
+	cont "you one later."
+ELSE
 	text "OAK: Be patient!"
 	line "<RIVAL>, you can"
 	cont "have one too!"
+ENDC
+	done
+IF DEF(_YELLOW)
+_OaksLabRivalTakesText1::
+	text "<RIVAL>: No way!"
+	line "<PLAYER>, I want"
+	cont "this #MON!"
+	prompt
+
+_OaksLabRivalTakesText2::
+	text "<RIVAL> snatched"
+	line "the #MON!@@"
+
+_OaksLabRivalTakesText3::
+	text "OAK: <RIVAL>! What"
+	line "are you doing?"
+	prompt
+
+_OaksLabRivalTakesText4::
+	text "<RIVAL>: Gramps, I"
+	line "want this one!"
+	prompt
+
+_OaksLabRivalTakesText5::
+	text "OAK: But, I... Oh,"
+	line "all right then."
+	cont "That #MON is"
+	cont "yours."
+
+	para "I was going to"
+	line "give you one"
+	cont "anyway..."
+
+	para "<PLAYER>, come over"
+	line "here."
 	done
 
-_OaksLabLeavingText::
-	text "OAK: Hey! Don't go"
-	line "away yet!"
-	done
+_OaksLabOakGivesText::
+	text "OAK: <PLAYER>, this"
+	line "is the #MON I"
+	cont "caught earlier."
+
+	para "You can have it."
+	line "I caught it in"
+	cont "the wild and it's"
+	cont "not tame yet."
+	prompt
+
+_OaksLabReceivedText::
+	text "<PLAYER> received"
+	line "a @"
+	TX_RAM wcd6d
+	text "!@@"
+	
+ELSE
+
+
 
 _OaksLabRivalPickingMonText::
 	text "<RIVAL>: I'll take"
@@ -242,6 +375,11 @@ _OaksLabRivalReceivedMonText::
 	line "a @"
 	TX_RAM wcd6d
 	text "!@@"
+ENDC
+_OaksLabLeavingText::
+	text "OAK: Hey! Don't go"
+	line "away yet!"
+	done
 
 _OaksLabRivalChallengeText::
 	text "<RIVAL>: Wait"
@@ -275,19 +413,63 @@ _OaksLabRivalToughenUpText::
 	line "Smell you later!"
 	done
 
+IF DEF(_YELLOW)
+_OaksLabPikachuDislikesPokeballsText1::
+	text "OAK: What?"
+	done
+
+_OaksLabPikachuDislikesPokeballsText2::
+	text "OAK: Would you"
+	line "look at that!"
+
+	para "It's odd, but it"
+	line "appears that your"
+	cont "PIKACHU dislikes"
+	cont "# BALLs."
+
+	para "You should just"
+	line "keep it with you."
+
+	para "That should make"
+	line "it happy!"
+
+	para "You can talk to it"
+	line "and see how it"
+	cont "feels about you."
+	done
+
+
+
+ENDC
 _OaksLabText21::
 	text "<RIVAL>: Gramps!"
 	done
 
 _OaksLabText22::
+IF DEF(_YELLOW)
+	text "<RIVAL>: Gramps,"
+	line "my #MON has"
+	cont "grown stronger!"
+	cont "Check it out!"	
+ELSE
 	text "<RIVAL>: What did"
 	line "you call me for?"
+ENDC
 	done
 
 _OaksLabText23::
+IF DEF(_YELLOW)
+	text "OAK: Ah, <RIVAL>,"
+	line "good timing!"
+
+	para "I needed to ask"
+	line "both of you to do"
+	cont "something for me."	
+ELSE
 	text "OAK: Oh right! I"
 	line "have a request"
 	cont "of you two."
+ENDC
 	done
 
 _OaksLabText24::
@@ -356,6 +538,11 @@ _OaksLabText27::
 _OaksLabText_1d405::
 	text "I study #MON as"
 	line "PROF.OAK's AIDE."
+
+IF DEF(_YELLOW)
+	done
+	
+ELSE
 	done
 
 _OaksLabText_441cc::
@@ -475,3 +662,5 @@ _OaksLabText_4424c::
 	line "entirely complete!"
 	cont "Congratulations!"
 	done
+
+ENDC

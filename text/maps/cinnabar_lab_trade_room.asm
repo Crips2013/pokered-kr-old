@@ -1,11 +1,9 @@
 _Lab2Text1::
-	text $02,$DE,$04,$62,$07,$9C,$05,$BA,$07,$01,$05,$DD; RAW DATA : 	text "달맞이산에서"
-	line $07,$9C,$7F,$01,$7B,$05,$C3,$0A,$71,$7F,$0A,$AD,$05,$DE,$07,$8B,$7F,$08,$A3,$06,$D2,$06,$EE,$0B,$66; RAW DATA : 	line "이 괴상한 화석을 찾았어!"
+	text "I found this very"
+	line "strange fossil in"
+	cont "MT.MOON!"
 
- 
-
-	para $05,$E1,$05,$B7,$06,$63,$02,$EB,$07,$97,$7F,$01,$82,$07,$B5,$0A,$F7; RAW DATA : 	para "선사시대의 굉장히"
-	line $0A,$F1,$01,$9D,$0A,$71,$7F,$0A,$27,$09,$2F,$04,$93,$07,$9C,$7F,$05,$30,$04,$8D,$0A,$78,$0B,$66; RAW DATA : 	line "희귀한 포켓몬이 분명해!"
+	para "I think it's a"
+	line "rare, prehistoric"
+	cont "#MON!"
 	done
-
- 

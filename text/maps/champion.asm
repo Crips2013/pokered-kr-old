@@ -1,130 +1,146 @@
 _GaryChampionIntroText::
-	text $53, $0B,$62,$06,$EE,$07,$9C,$0B,$66; RAW DATA : 	text $53, "『어이!"
+	text "<RIVAL>: Hey!"
 
-	para $02,$6E,$7F,$07,$9C,$03,$E8,$01,$34,$7F,$05,$18,$02,$C2,$7F,$06,$28,$01,$03,$07,$8B; RAW DATA : 	para "널 이렇게 보는 순간을"
-	line $01,$B2,$02,$D9,$04,$3E,$01,$4D,$7F,$07,$A6,$06,$FA,$06,$EE,$7F; RAW DATA : 	line "기다리고 있었어 "
-	db $52, $0B,$66; RAW DATA : 	db $52, "!"
+	para "I was looking"
+	line "forward to seeing"
+	cont "you, <PLAYER>!"
 
-	para $02,$4B,$7F,$03,$C3,$07,$9C,$04,$FA,$07,$9C,$03,$C3,$04,$89,$7F,$07,$0A,$06,$63; RAW DATA : 	para "내 라이벌이라면 역시"
-	line $01,$48,$06,$03,$7F,$05,$EA,$07,$B5,$0A,$6F,$04,$87; RAW DATA : 	line "계속 성장하며"
-	cont $02,$3A,$04,$36,$7F,$07,$AA,$01,$A8,$06,$63,$09,$31,$08,$06,$02,$C2,$7F,$04,$FD,$07,$9C,$08,$26,$0B,$66; RAW DATA : 	cont "나를 자극시켜주는 법이지!"
+	para "My rival should"
+	line "be strong to keep"
+	cont "me sharp!"
 
-	para $03,$15,$01,$08,$07,$8B,$7F,$07,$2F,$05,$EA,$0A,$6F,$04,$89,$05,$DD; RAW DATA : 	para "도감을 완성하면서"
-	line $01,$0D,$0A,$71,$7F,$0A,$27,$09,$2F,$04,$93,$07,$8A,$7F,$07,$CC,$05,$2E,$7F,$08,$A3,$06,$C6,$05,$23,$06,$EE,$0B,$66; RAW DATA : 	line "강한 포켓몬은 전부 찾아봤어!"
+	para "While working on"
+	line "#DEX, I looked"
+	cont "all over for"
+	cont "powerful #MON!"
 
-	para $01,$34,$02,$D9,$01,$01,$7F,$04,$90,$03,$47,$7F,$09,$88,$07,$A4,$07,$97,$7F,$0A,$27,$09,$2F,$04,$93,$07,$8B; RAW DATA : 	para "게다가 모든 타입의 포켓몬을"
-	line $07,$9C,$01,$B6,$7F,$06,$26,$7F,$07,$A6,$02,$C2,$7F,$09,$F0,$03,$15,$7F,$02,$09,$03,$F1,$02,$62,$06,$EE,$0B,$66; RAW DATA : 	line "이길 수 있는 팀도 꾸려냈어!"
+	para "Not only that, I"
+	line "assembled teams"
+	cont "that would beat"
+	cont "any #MON type!"
 
-	para $01,$A7,$04,$3E,$01,$4D,$0B,$66; RAW DATA : 	para "그리고!"
+	para "And now!"
 
-	para $08,$26,$01,$AD,$7F,$02,$3D; RAW DATA : 	para "지금 난"
-	line $0A,$27,$09,$2F,$04,$93,$7F,$04,$3E,$01,$A7,$7F,$08,$A8,$0A,$67,$06,$F0,$07,$9C,$06,$DF,$0B,$66; RAW DATA : 	line "포켓몬 리그 챔피언이야!"
+	para "I'm the #MON"
+	line "LEAGUE champion!"
 
-	para $52, $0B,$66; RAW DATA : 	para $52, "!"
-	line $07,$9C,$01,$34,$7F,$04,$AB,$06,$4C,$04,$4B,$07,$9E,$08,$26,$7F,$06,$CB,$06,$C6,$0B,$67; RAW DATA : 	line "이게 무슨말인지 알아?"
+	para "<PLAYER>! Do you"
+	line "know what that"
+	cont "means?"
 
-	para $04,$4B,$0A,$78,$08,$09,$01,$34,$0B,$66; RAW DATA : 	para "말해줄게!"
+	para "I'll tell you!"
 
-	para $02,$4B,$01,$01,$7F,$05,$EC,$05,$C3,$07,$01,$05,$DD,$7F,$01,$01,$07,$B5,$7F,$01,$0D,$0A,$71; RAW DATA : 	para "내가 세상에서 가장 강한"
-	line $09,$DE,$03,$E9,$07,$9C,$02,$6A,$03,$C5,$7F,$06,$02,$04,$3E,$08,$26,$0B,$66; RAW DATA : 	line "트레이너란 소리지!"
+	para "I am the most"
+	line "powerful trainer"
+	cont "in the world!"
 	done
 
 _GaryDefeatedText::
-	text $04,$4B,$03,$15,$7F,$06,$C8,$03,$25,$0B,$66; RAW DATA : 	text "말도 안돼!"
-	line $02,$4B,$7F,$08,$D6,$01,$0D,$07,$97,$7F,$09,$F0,$07,$8B,$7F,$06,$B2,$03,$DF,$09,$DE,$04,$3E,$02,$D9,$02,$CF,$0B,$66; RAW DATA : 	line "내 최강의 팀을 쓰러트리다니!"
-	
-	para $02,$4B,$01,$01,$7F,$08,$A8,$0A,$67,$06,$F0,$07,$9C,$7F,$03,$27,$01,$B2,$7F,$07,$77,$0A,$78; RAW DATA : 	para "내가 챔피언이 되기 위해"
-	line $06,$F3,$04,$46,$02,$3A,$7F,$02,$8B,$03,$F2,$0A,$7F,$02,$C2,$08,$26,$7F,$06,$CB,$06,$C6,$0B,$67; RAW DATA : 	line "얼마나 노력했는지 알아?"
+	text "NO!"
+	line "That can't be!"
+	cont "You beat my best!"
 
-	para $01,$A7,$03,$E1,$03,$05,$7F,$04,$FA,$06,$81,$7F,$04,$B0,$03,$DF,$02,$3A,$06,$DF,$7F,$0A,$71,$02,$D9,$01,$4D,$0B,$67; RAW DATA : 	para "그런데 벌써 물러나야 한다고?"
-	line $07,$9C,$01,$27,$7F,$05,$32,$01,$68,$0A,$22,$0A,$78,$0B,$66; RAW DATA : 	line "이건 불공평해!"
+	para "After all that"
+	line "work to become"
+	cont "LEAGUE champ?"
+
+	para "My reign is over"
+	line "already?"
+	cont "It's not fair!"
 	prompt
 
 _GaryVictoryText::
-	text $0A,$6F,$0A,$6F,$0A,$6F,$0B,$66; RAW DATA : 	text "하하하!"
-	line $02,$4B,$01,$01,$7F,$07,$9C,$01,$45,$02,$D9,$0B,$66,$7F,$02,$4B,$01,$01,$7F,$07,$9C,$01,$45,$02,$D9,$0B,$66; RAW DATA : 	line "내가 이겼다! 내가 이겼다!"
+	text "Hahaha!"
+	line "I won, I won!"
 
-	para $07,$0A,$06,$63,$7F,$02,$6A,$0A,$71,$09,$A9,$7F,$02,$6A,$04,$AB,$7F,$04,$F6,$01,$25,$07,$6C,$02,$3A,$05,$18,$02,$77,$0B,$66; RAW DATA : 	para "역시 너한텐 너무 버거웠나보네!"
-	line $52, $0B,$66; RAW DATA : 	line $52, "!"
+	para "I'm too good for"
+	line "you, <PLAYER>!"
 
-	para $0A,$27,$09,$2F,$04,$93,$7F,$08,$B5,$07,$B7,$07,$9E,$7F,$07,$9C,$04,$96,$07,$8B; RAW DATA : 	para "포켓몬 천재인 이몸을"
-	line $01,$25,$07,$97,$7F,$07,$9C,$01,$B6,$05,$87,$7F,$0A,$6F,$02,$D9,$02,$CF,$7F,$09,$0A,$08,$99,$0A,$78,$08,$06,$08,$26,$0B,$66; RAW DATA : 	line "거의 이길뻔 하다니 칭찬해주지!"
+	para "You did well to"
+	line "even reach me,"
+	cont "<RIVAL>, the"
+	cont "#MON genius!"
 
-	para $06,$63,$03,$15,$02,$C2,$7F,$07,$F1,$06,$D2,$06,$EE,$7F,$0A,$00,$04,$E8,$07,$AA,$0B,$66; RAW DATA : 	para "시도는 좋았어 패배자!"
-	line $0A,$6F,$0A,$6F,$0A,$6F,$0B,$66; RAW DATA : 	line "하하하!"
+	para "Nice try, loser!"
+	line "Hahaha!"
 	prompt
 
 _GaryText_76103::
-	text $06,$EE,$08,$40,$05,$DD,$0B,$67; RAW DATA : 	text "어째서?"
-	line $06,$EE,$08,$40,$05,$DD,$7F,$08,$28,$01,$25,$06,$DF,$0B,$67; RAW DATA : 	line "어째서 진거야?"
+	text "Why?"
+	line "Why did I lose?"
 
-	para $0A,$27,$09,$2F,$04,$93,$07,$8B,$7F,$09,$80,$07,$4C,$02,$C2,$03,$05; RAW DATA : 	para "포켓몬을 키우는데"
-	line $06,$67,$06,$26,$02,$C2,$7F,$06,$F8,$06,$FA,$07,$8B,$09,$A9,$03,$05,$0B,$6A,$0B,$6A; RAW DATA : 	line "실수는 없었을텐데……"
+	para "I never made any"
+	line "mistakes raising"
+	cont "my #MON..."
 
-	para $07,$88,$06,$C6,$06,$C6,$06,$C7,$0B,$66,$0B,$66; RAW DATA : 	para "으아아악!!"
-	line $02,$6A,$01,$01,$7F,$05,$C5,$7F,$0A,$27,$09,$2F,$04,$93,$7F,$08,$A8,$0A,$67,$06,$F0,$07,$9C,$06,$DF,$0B,$66; RAW DATA : 	line "너가 새 포켓몬 챔피언이야!"
+	para "Darn it! You're"
+	line "the new #MON"
+	cont "LEAGUE champion!"
 
-
-	para $02,$3A,$02,$C2,$7F,$07,$9E,$07,$D4,$0A,$6F,$01,$B2,$7F,$06,$68,$08,$26,$04,$48,$0B,$6A,$0B,$6A; RAW DATA : 	para "나는 인정하기 싫지만……"
+	para "Although I don't"
+	line "like to admit it."
 	done
 
 _GaryText2::
-	text $07,$20,$04,$DA,$05,$B7,$0B,$62; RAW DATA : 	text "오박사『"
-	db $52, $01,$8A,$0B,$66; RAW DATA : 	db $52, "군!"
+	text "OAK: <PLAYER>!"
 	done
 
-
 _GaryText_76120::
-	text $07,$20,$04,$DA,$05,$B7,$0B,$62,$01,$A7,$03,$D1,$7F,$02,$77,$01,$01,$7F,$07,$9C,$01,$45,$01,$88,$02,$3A,$0B,$66; RAW DATA : 	text "오박사『그래 네가 이겼구나!"
-	line $08,$E0,$0A,$6F,$0A,$71,$02,$D9,$0B,$66; RAW DATA : 	line "축하한다!"
-	cont $07,$9C,$07,$D8,$7F,$02,$77,$01,$01,$7F,$05,$C5,$7F,$0A,$27,$09,$2F,$04,$93; RAW DATA : 	cont "이젠 네가 새 포켓몬"
-	cont $08,$A8,$0A,$67,$06,$F0,$07,$9C,$03,$C5,$02,$D9,$0B,$66; RAW DATA : 	cont "챔피언이란다!"
+	text "OAK: So, you won!"
+	line "Congratulations!"
+	cont "You're the new"
+	cont "#MON LEAGUE"
+	cont "champion!"
 
-	para $50; RAW DATA : 	para "@"
+	para "You've grown up so"
+	line "much since you"
+	cont "first left with"
+	cont "@"
 	TX_RAM wcd6d
-	text $04,$36,$0B,$64,$07,$8B,$0B,$65,$7F,$03,$05,$04,$3E,$01,$4D; RAW DATA : 	text "를(을) 데리고"
-	line $07,$09,$0A,$80,$07,$8B,$7F,$03,$80,$02,$45,$07,$8B,$7F,$03,$77,$07,$2D,$02,$C2; RAW DATA : 	line "여행을 떠났을 때와는"
-	cont $04,$94,$03,$C3,$05,$18,$01,$34,$7F,$05,$EA,$07,$B5,$0A,$7F,$01,$88,$02,$3A,$0B,$66; RAW DATA : 	cont "몰라보게 성장했구나!"
+	text "!"
 
-	para $52, $01,$8A,$7F,$07,$9C,$07,$D6,$7F,$02,$6A,$03,$15; RAW DATA : 	para $52, "군 이제 너도"
-	line $06,$EE,$07,$13,$0A,$71,$7F,$09,$DE,$03,$E9,$07,$9C,$02,$6A,$02,$D9,$0B,$66; RAW DATA : 	line "어엿한 트레이너다!"
+	para "<PLAYER>, you have"
+	line "come of age!"
 	done
 
 _GaryText_76125::
-	text $07,$20,$04,$DA,$05,$B7,$0B,$62; RAW DATA : 	text "오박사『"
-	db $53, $0B,$66; RAW DATA : 	db $53, "!"
-	line $02,$6A,$07,$01,$01,$35,$7F,$06,$67,$04,$61,$0A,$7F,$01,$88,$02,$3A,$0B,$66; RAW DATA : 	line "너에겐 실망했구나!"
+	text "OAK: <RIVAL>! I'm"
+	line "disappointed!"
 
-	para $05,$B7,$08,$B5,$07,$35,$07,$8B,$7F,$07,$9C,$01,$45,$02,$D9,$02,$C2,$7F,$06,$02,$06,$64,$07,$8B; RAW DATA : 	para "사천왕을 이겼다는 소식을"
-	line $03,$48,$01,$4D,$7F,$02,$DE,$03,$F1,$07,$34,$01,$25,$02,$C3,$0B,$66; RAW DATA : 	line "듣고 달려왔거늘!"
+	para "I came when I"
+	line "heard you beat"
+	cont "the ELITE FOUR!"
 
+	para "But, when I got"
+	line "here, you had"
+	cont "already lost!"
 
-	para $03,$15,$08,$98,$0A,$7F,$02,$F5,$02,$CF,$7F,$04,$FA,$06,$81; RAW DATA : 	para "도착했더니 벌써"
-	line $08,$A8,$0A,$67,$06,$F0,$07,$01,$05,$DD,$7F,$04,$B0,$03,$DF,$02,$3D,$02,$D9,$02,$CF,$0B,$66; RAW DATA : 	line "챔피언에서 물러난다니!"
+	para "<RIVAL>! Do you"
+	line "understand why"
+	cont "you lost?"
 
-	para $53, $0B,$66; RAW DATA : 	para $53, "!"
-	line $02,$77,$01,$01,$7F,$08,$28,$7F,$07,$9C,$07,$7F,$04,$36,$7F,$06,$CB,$01,$3A,$02,$CF,$0B,$67; RAW DATA : 	line "네가 진 이유를 알겠니?"
+	para "You have forgotten"
+	line "to treat your"
+	cont "#MON with"
+	cont "trust and love!"
 
-	para $01,$A7,$01,$27,$7F,$02,$77,$01,$01,$7F,$0A,$27,$09,$2F,$04,$93,$07,$8B; RAW DATA : 	para "그건 네가 포켓몬을"
-	line $04,$CF,$07,$8D,$01,$6A,$7F,$05,$B7,$03,$CB,$07,$88,$03,$FE,$7F,$02,$D9,$04,$17,$02,$C2,$7F,$01,$29; RAW DATA : 	line "믿음과 사랑으로 다루는 걸"
-	cont $07,$A8,$06,$EE,$04,$F6,$03,$F8,$01,$B2,$7F,$03,$77,$04,$AE,$07,$9C,$03,$C5,$02,$D9,$0B,$66; RAW DATA : 	cont "잊어버렸기 때문이란다!"
-
-	para $01,$A7,$01,$2D,$7F,$06,$F8,$07,$9C,$02,$C2; RAW DATA : 	para "그것 없이는"
-	line $02,$D9,$06,$63,$02,$C2,$7F,$08,$A8,$0A,$67,$06,$F0,$07,$9C,$7F,$03,$29,$7F,$06,$26,$7F,$06,$F8,$07,$8B,$01,$25,$02,$D9,$0B,$66; RAW DATA : 	line "다시는 챔피언이 될 수 없을거다!"
+	para "Without them, you"
+	line "will never become"
+	cont "a champ again!"
 	done
 
 _GaryText_7612a::
-	text $07,$20,$04,$DA,$05,$B7,$0B,$62; RAW DATA : 	text "오박사『"
-	db $52, $01,$8A,$0B,$66; RAW DATA : 	db $52, "군!"
+	text "OAK: <PLAYER>!"
 
-	para $02,$6A,$02,$C2,$7F,$02,$77,$7F,$06,$62,$04,$3E,$01,$01; RAW DATA : 	para "너는 네 승리가"
-	line $02,$6A,$7F,$0A,$A5,$07,$AA,$05,$DD,$7F,$07,$9C,$04,$19,$7F,$01,$2D,$07,$9C; RAW DATA : 	line "너 혼자서 이룬 것이"
-	cont $06,$C6,$02,$CF,$03,$C3,$02,$C2,$7F,$01,$29,$7F,$07,$AF,$7F,$06,$CB,$01,$4D,$7F,$07,$A6,$02,$C2,$01,$2D; RAW DATA : 	cont "아니라는 걸 잘 알고 있는것"
-	cont $01,$10,$01,$88,$02,$3A,$0B,$66; RAW DATA : 	cont "같구나!"
+	para "You understand"
+	line "that your victory"
+	cont "was not just your"
+	cont "own doing!"
 
-	para $02,$6A,$07,$2D,$7F,$02,$77,$7F,$0A,$27,$09,$2F,$04,$93,$07,$9C; RAW DATA : 	para "너와 네 포켓몬이"
-	line $07,$9C,$04,$19,$7F,$07,$7F,$02,$EB,$01,$08,$07,$8A,$7F,$06,$F6,$08,$BB,$7F,$03,$05,$02,$DC,$0A,$78,$0B,$66; RAW DATA : 	line "이룬 유대감은 엄청 데단해!"
+	para "The bond you share"
+	line "with your #MON"
+	cont "is marvelous!"
 
-	para $52, $0B,$66; RAW DATA : 	para $52, "!"
-	line $03,$6B,$03,$C3,$07,$20,$03,$F1,$04,$AB,$02,$3A,$0B,$66; RAW DATA : 	line "따라오려무나!"
+	para "<PLAYER>!"
+	line "Come with me!"
 	done

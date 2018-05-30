@@ -1,17 +1,19 @@
 _CeruleanMartText2::
-	text $04,$FA,$03,$E9,$0A,$B8,$0A,$67,$06,$4A,$0A,$61,$03,$E9,$07,$9C,$03,$FE; RAW DATA : 	text "벌레회피스프레이로"
-	line $04,$FA,$03,$E9,$07,$2D,$7F,$06,$E0,$0A,$71,$0A,$27,$09,$2F,$04,$93,$03,$49,$07,$8B; RAW DATA : 	line "벌레와 약한포켓몬들을"
-	cont $0A,$67,$0A,$72,$7F,$06,$26,$7F,$07,$A6,$06,$EE; RAW DATA : 	cont "피할 수 있어"
+	text "Use REPEL to keep"
+	line "bugs and weak"
+	cont "#MON away."
 
-	para $01,$01,$07,$B5,$7F,$01,$0D,$0A,$71,$7F,$0A,$27,$09,$2F,$04,$93,$07,$8B; RAW DATA : 	para "가장 강한 포켓몬을"
-	line $07,$D6,$07,$9F,$7F,$07,$77,$07,$01,$7F,$05,$EC,$07,$66,$03,$2E,$02,$C2,$01,$34; RAW DATA : 	line "제일 위에 세워두는게"
-	cont $07,$D6,$07,$9F,$7F,$0A,$BF,$01,$6A,$01,$01,$7F,$07,$F1,$08,$26,$0B,$66; RAW DATA : 	cont "제일 효과가 좋지!"
-	done  
-
-_CeruleanMartText3::
-	text $07,$9C,$05,$C3,$0A,$71,$7F,$05,$B7,$09,$91,$07,$9C,$03,$C3,$01,$4D,$7F,$03,$49,$06,$EE,$05,$23,$02,$CF,$0B,$67; RAW DATA : 	text "이상한 사탕이라고 들어봤니?"
-
-	para $01,$A7,$01,$29,$7F,$05,$B7,$07,$4B,$0A,$6F,$04,$89,$7F,$0A,$27,$09,$2F,$04,$93,$07,$97,$7F,$03,$E9,$05,$07,$07,$8B; RAW DATA : 	para "그걸 사용하면 포켓몬의 레벨을"
-	line $07,$23,$04,$41,$7F,$06,$26,$7F,$07,$A6,$02,$D9,$02,$C2,$7F,$01,$2D,$7F,$01,$10,$06,$C6,$0B,$66; RAW DATA : 	line "올릴 수 있다는 것 같아!"
+	para "Put your strongest"
+	line "#MON at the"
+	cont "top of the list"
+	cont "for best results!"
 	done
 
+_CeruleanMartText3::
+	text "Have you seen any"
+	line "RARE CANDY?"
+
+	para "It's supposed to"
+	line "make #MON go"
+	cont "up one level!"
+	done

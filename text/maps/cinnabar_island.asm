@@ -1,30 +1,37 @@
 _CinnabarIslandText8::
-	text $07,$0D,$06,$18,$01,$01,$7F,$07,$B1,$01,$3C,$07,$A6,$02,$D9,$0B,$6A,$0B,$6A; RAW DATA : 	text "열쇠가 잠겨있다……"
+	text "The door is"
+	line "locked..."
 	done
 
 _CinnabarIslandText1::
-	text $0A,$AB,$03,$F3,$7F,$08,$BC,$07,$80,$01,$6C,$07,$97,$7F,$01,$0D,$07,$0C,$07,$8A,$7F,$07,$09,$01,$B2,$05,$DD; RAW DATA : 	text "홍련 체육관의 강연은 여기서"
-	line $04,$8E,$06,$6A,$02,$82,$07,$9C,$02,$3A,$7F,$05,$BC,$01,$4D,$07,$A6,$02,$C2,$7F,$01,$7B,$08,$35,$06,$DF; RAW DATA : 	line "몇십년이나 살고있는 괴짜야"
+	text "CINNABAR GYM's"
+	line "BLAINE is an odd"
+	cont "man who has lived"
+	cont "here for decades."
 	done
 
 _CinnabarIslandText2::
-	text $01,$6A,$0A,$70,$07,$AA,$03,$49,$07,$9C,$7F,$05,$32,$09,$88,$04,$F6,$04,$40,$7F,$01,$27,$04,$B0,$07,$01,$05,$DD; RAW DATA : 	text "과학자들이 불타버린 건물에서"
-	line $06,$67,$0A,$88,$07,$8B,$7F,$0A,$6F,$01,$4D,$07,$A6,$06,$EE; RAW DATA : 	line "실험을 하고있어"
+	text "Scientists conduct"
+	line "experiments in"
+	cont "the burned out"
+	cont "building."
 	done
 
-
 _CinnabarIslandText3::
-	text $07,$9C,$01,$67,$07,$8A,$7F,$0A,$AB,$03,$F3,$04,$46,$07,$8B; RAW DATA : 	text "이곳은 홍련마을"
-	line $0A,$AB,$03,$F3,$07,$8A,$7F,$05,$71,$01,$0D,$01,$6A,$7F,$07,$D4,$07,$0D,$07,$97,$7F,$05,$C6,$01,$C2; RAW DATA : 	line "홍련은 빨강과 정열의 색깔"
+	text "CINNABAR ISLAND"
+	line "The Fiery Town of"
+	cont "Burning Desire"
 	done
 
 _CinnabarIslandText6::
-	text $07,$9C,$01,$67,$07,$8A,$7F,$0A,$27,$09,$2F,$04,$93,$7F,$07,$0C,$01,$88,$06,$02; RAW DATA : 	text "이곳은 포켓몬 연구소"
+	text "#MON LAB"
 	done
 
 _CinnabarIslandText7::
-	text $0A,$AB,$03,$F3,$04,$46,$07,$8B,$7F,$0A,$27,$09,$2F,$04,$93,$7F,$08,$BC,$07,$80,$01,$6C; RAW DATA : 	text "홍련마을 포켓몬 체육관"
-	line $01,$6C,$07,$B5,$7F,$01,$0D,$07,$0C; RAW DATA : 	line "관장 강연"
-	
-	cont $03,$AF,$01,$25,$07,$4E,$7F,$07,$D4,$06,$65,$07,$97,$7F,$09,$6B,$08,$1E,$7F,$04,$46,$06,$4A,$09,$9D,$0B,$66; RAW DATA : 	cont "뜨거운 정신의 퀴즈 마스터!"
+	text "CINNABAR ISLAND"
+	line "#MON GYM"
+	cont "LEADER: BLAINE"
+
+	para "The Hot-Headed"
+	line "Quiz Master!"
 	done

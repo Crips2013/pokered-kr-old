@@ -1,3 +1,43 @@
+IF DEF(_YELLOW)
+_MtMoonJessieJamesText1::
+	text "Stop right there!@@"
+
+_MtMoonJessieJamesText2::
+	text "That fossil is"
+	line "TEAM ROCKET's!"
+
+	para "Surrender now, or "
+	line "prepare to fight!"
+	done
+
+_MtMoonJessieJamesText3::
+	text "A"
+	line "brat beat us?"
+	prompt
+
+_MtMoonJessieJamesText4::
+	text "TEAM ROCKET, blast"
+	line "off at the speed"
+	cont "of light!@@"
+ELSE
+_MtMoon3BattleText2::
+	text "TEAM ROCKET will"
+	line "find the fossils,"
+	cont "revive and sell"
+	cont "them for cash!"
+	done
+
+_MtMoon3EndBattleText2::
+	text "Urgh!"
+	line "Now I'm mad!"
+	prompt
+
+_MtMoon3AfterBattleText2::
+	text "You made me mad!"
+	line "TEAM ROCKET will"
+	cont "blacklist you!"
+	done
+ENDC
 _MtMoon3Text_49f24::
 	text "You want the"
 	line "DOME FOSSIL?"
@@ -52,23 +92,6 @@ _MtMoon3Text_49f99::
 	text "All right. Then"
 	line "this is mine!@@"
 
-_MtMoon3BattleText2::
-	text "TEAM ROCKET will"
-	line "find the fossils,"
-	cont "revive and sell"
-	cont "them for cash!"
-	done
-
-_MtMoon3EndBattleText2::
-	text "Urgh!"
-	line "Now I'm mad!"
-	prompt
-
-_MtMoon3AfterBattleText2::
-	text "You made me mad!"
-	line "TEAM ROCKET will"
-	cont "blacklist you!"
-	done
 
 _MtMoon3BattleText3::
 	text "We, TEAM ROCKET,"

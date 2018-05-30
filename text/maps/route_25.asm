@@ -56,8 +56,13 @@ _Route25BattleText4::
 	done
 
 _Route25EndBattleText4::
+IF DEF(_YELLOW)
+	text "I'm in"
+	line "a slump!"
+ELSE
 	text "I was in"
 	line "bad condition!"
+ENDC
 	prompt
 
 _Route25AfterBattleText4::

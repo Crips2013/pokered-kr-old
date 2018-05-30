@@ -1,21 +1,21 @@
 _CeladonHotelText1::
-	text $0A,$27,$09,$2F,$04,$93,$0B,$67; RAW DATA : 	text "포켓몬?"
-	
-	para $07,$09,$01,$B4,$7F,$05,$B7,$03,$C7,$07,$8B,$7F,$07,$77,$0A,$71; RAW DATA : 	para "여긴 사람을 위한"
-	line $0A,$A3,$09,$AA,$07,$A4,$02,$CF,$02,$D9; RAW DATA : 	line "호텔입니다"
+	text "#MON? No, this"
+	line "is a hotel for"
+	cont "people."
 
-	para $0A,$96,$07,$B7,$7F,$05,$63,$7F,$01,$14,$06,$67,$07,$9C,$7F,$06,$F8,$06,$60,$02,$CF,$02,$D9; RAW DATA : 	para "현재 빈 객실이 없습니다"
+	para "We're full up."
 	done
 
 _CeladonHotelText2::
-	text $0A,$DE,$01,$01,$03,$FE,$7F,$02,$42,$03,$1F,$05,$CD,$07,$9C,$03,$CB; RAW DATA : 	text "휴가로 남동생이랑"
-	line $02,$42,$07,$AA,$09,$03,$01,$88,$0A,$6F,$01,$4D,$7F,$07,$34,$06,$EE; RAW DATA : 	line "남자친구하고 왔어"
+	text "I'm on vacation"
+	line "with my brother"
+	cont "and boy friend."
 
-	para $04,$AB,$08,$26,$01,$13,$06,$63,$09,$EC,$02,$C2,$7F,$07,$D4,$04,$4B,$07,$9C,$08,$26; RAW DATA : 	para "무지개시티는 정말이지"
-	line $06,$C6,$04,$37,$02,$D9,$07,$4E,$7F,$03,$15,$06,$63,$06,$DF,$0B,$66; RAW DATA : 	line "아름다운 도시야!"
+	para "CELADON is such a"
+	line "pretty city!"
 	done
 
 _CeladonHotelText3::
-	text $06,$C6,$02,$CF,$7F,$07,$36; RAW DATA : 	text "아니 왜"
-	line $03,$1F,$05,$CD,$01,$BE,$08,$26,$7F,$03,$05,$03,$F1,$07,$22,$01,$25,$08,$26,$0B,$67; RAW DATA : 	line "동생까지 데려온거지?"
+	text "Why did she bring"
+	line "her brother?"
 	done

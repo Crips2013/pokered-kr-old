@@ -1,90 +1,100 @@
 _TM18PreReceiveText::
-	text $07,$20,$7F,$06,$C8,$02,$87,$0B,$66,$7F,$02,$4B,$01,$01,$7F,$04,$46,$09,$07,$02,$4B; RAW DATA : 	text "오 안녕! 내가 마침내"
-	line $0A,$27,$09,$2F,$04,$93,$06,$4A,$09,$9D,$7F,$07,$03,$03,$69,$07,$8B,$7F,$05,$23,$02,$DC,$02,$D9,$0B,$66; RAW DATA : 	line "포켓몬스터 엔딩을 봤단다!"
+	text "Oh, hi! I finally"
+	line "finished #MON!"
 
-	para $06,$C6,$08,$27,$7F,$06,$C8,$7F,$0A,$78,$05,$23,$02,$CF,$0B,$67; RAW DATA : 	para "아직 안 해봤니?"
-	line $07,$9C,$01,$34,$7F,$01,$FF,$02,$3A,$7F,$07,$B7,$04,$CC,$07,$A6,$02,$DC,$02,$D9,$0B,$66; RAW DATA : 	line "이게 꽤나 재미있단다!"
+	para "Not done yet?"
+	line "This might be"
+	cont "useful!"
 	prompt
 
 _ReceivedTM18Text::
-	text $52, $02,$C2,$0B,$64,$07,$8A,$0B,$65; RAW DATA : 	text $52, "는(은)"
-	line $50; RAW DATA : 	line "@"
+	text "<PLAYER> received"
+	line "@"
 	TX_RAM wcf4b
-	text $04,$36,$0B,$64,$07,$8B,$0B,$65; RAW DATA : 	text "를(을)"
-	cont $06,$F2,$06,$FA,$02,$D9,$0B,$66,$50,$50; RAW DATA : 	cont "얻었다!@@"
+	text "!@@"
 
 _TM18ExplanationText::
-	text $01,$B2,$06,$2A,$04,$73,$06,$65,$F7,$FE,$07,$8A,$7F,$09,$0B,$07,$4E,$09,$9D,$0B,$66; RAW DATA : 	text "기술머신18은 카운터!"
-	
-	para $07,$9C,$01,$34,$7F,$02,$4B,$09,$80,$08,$26,$7F,$06,$CA,$02,$C2,$02,$D9,$04,$89; RAW DATA : 	para "이게 내키지 않는다면"
-	line $07,$CC,$07,$CB,$07,$88,$03,$FE,$7F,$02,$77,$7F,$07,$97,$05,$B7,$07,$01,$7F,$04,$63,$01,$B2,$04,$46,$0B,$66; RAW DATA : 	line "전적으로 네 의사에 맡기마!"
+	text "TM18 is COUNTER!"
+	line "Not like the one"
+	cont "I'm leaning on,"
+	cont "mind you!"
 	done
 
 _TM18NoRoomText::
-	text $01,$01,$04,$E6,$07,$9C,$7F,$01,$01,$03,$46,$08,$A1,$01,$88,$02,$3A,$0B,$66; RAW DATA : 	text "가방이 가득찼구나!"
+	text "Your pack is full"
+	line "of items!"
 	done
 
 _CeladonMart3Text2::
-	text $0A,$27,$0A,$B9,$0A,$71,$7F,$0A,$27,$09,$2F,$04,$93,$07,$8A,$7F,$88,$83,$7F,$04,$F8,$0A,$A3,$07,$2D; RAW DATA : 	text "포획한 포켓몬은 ID 번호와"
-	line $06,$EE,$04,$F6,$07,$9C,$7F,$09,$DE,$03,$E9,$07,$9C,$02,$6A,$7F,$07,$9C,$04,$37,$07,$9C,$7F,$03,$4E,$03,$FF,$03,$25; RAW DATA : 	line "어버이 트레이너 이름이 등록돼"
-	
-	para $08,$D6,$08,$CA,$03,$FE,$7F,$0A,$27,$0A,$B9,$0A,$71; RAW DATA : 	para "최초로 포획한"
-	line $09,$DE,$03,$E9,$07,$9C,$02,$6A,$07,$97,$7F,$07,$9C,$04,$37,$07,$88,$03,$FE,$0B,$66; RAW DATA : 	line "트레이너의 이름으로!"
+	text "Captured #MON"
+	line "are registered"
+	cont "with an ID No."
+	cont "and OT, the name"
+	cont "of the Original"
+	cont "Trainer that"
+	cont "caught it!"
 	done
 
 _CeladonMart3Text3::
-	text $06,$65,$02,$3D,$02,$D9,$0B,$66; RAW DATA : 	text "신난다!"
+	text "All right!"
 
-	para $09,$03,$01,$88,$0A,$6F,$01,$4D,$7F,$02,$4B,$7F,$03,$05,$01,$88,$04,$3E,$04,$36; RAW DATA : 	para "친구하고 내 데구리를"
-	line $09,$1B,$09,$0B,$03,$FE,$7F,$01,$83,$0A,$AF,$0A,$7F,$06,$EE,$0B,$66; RAW DATA : 	line "캥카로 교환했어!"
+	para "My buddy's going"
+	line "to trade me his"
+	cont "KANGASKHAN for my"
+	cont "GRAVELER!"
 	done
 
 _CeladonMart3Text4::
-	text $06,$EE,$05,$DD,$07,$2D,$7F,$03,$05,$01,$88,$04,$3E,$0B,$66; RAW DATA : 	text "어서와 데구리!"
+	text "Come on GRAVELER!"
 
-	para $02,$3D,$7F,$03,$05,$01,$88,$04,$3E,$01,$01,$7F,$07,$F1,$06,$C6,$0B,$66; RAW DATA : 	para "난 데구리가 좋아!"
-	line $01,$22,$03,$49,$07,$8B,$7F,$04,$90,$07,$88,$01,$4D,$7F,$07,$A6,$06,$EE,$0B,$66; RAW DATA : 	line "걔들을 모으고 있어!"
+	para "I love GRAVELER!"
+	line "I collect them!"
 
-	para $0B,$6A,$0B,$6A,$06,$D3,$0B,$68,$0B,$67; RAW DATA : 	para "……앙-?"
+	para "Huh?"
 
-	para $07,$CC,$06,$0B,$03,$27,$06,$EE,$7F,$07,$22,$7F,$03,$05,$01,$88,$04,$3E,$01,$01; RAW DATA : 	para "전송되어 온 데구리가"
-	line $02,$D9,$04,$35,$7F,$0A,$27,$09,$2F,$04,$93,$07,$88,$03,$FE,$0B,$66,$0B,$67; RAW DATA : 	line "다른 포켓몬으로!?"
+	para "GRAVELER turned"
+	line "into a different"
+	cont "#MON!"
 	done
 
 _CeladonMart3Text5::
-	text $01,$83,$0A,$AF,$07,$88,$03,$FE,$7F,$06,$F2,$07,$8A,$7F,$0A,$27,$09,$2F,$04,$93,$07,$8A; RAW DATA : 	text "교환으로 얻은 포켓몬은"
-	line $88,$83,$7F,$04,$F8,$0A,$A3,$03,$FE,$7F,$01,$88,$05,$30,$0A,$72,$06,$26,$7F,$07,$A6,$06,$EE,$0B,$66; RAW DATA : 	line "ID 번호로 구분할수 있어!"
+	text "You can identify"
+	line "#MON you got"
+	cont "in trades by"
+	cont "their ID Numbers!"
 	done
 
 _CeladonMart3Text6::
-	text $0A,$96,$02,$EB,$7F,$06,$44,$0A,$0B,$09,$24,$05,$18,$07,$9C,$02,$D9,$0B,$66; RAW DATA : 	text "현대 슈퍼컴보이다!"
+	text "It's an SNES!"
 	done
 
 _CeladonMart3Text7::
-	text $06,$CB,$0A,$67,$08,$26,$7F,$01,$34,$07,$A3,$0B,$66; RAW DATA : 	text "알피지 게임!"
-	line $07,$CA,$05,$B7,$03,$C7,$03,$49,$7F,$08,$CB,$04,$DA,$0A,$78,$05,$18,$07,$9E,$02,$D9,$0B,$66; RAW DATA : 	line "저사람들 촉박해보인다!"
+	text "An RPG! There's"
+	line "no time for that!"
 	done
 
 _CeladonMart3Text9::
-	text $06,$4A,$0A,$27,$08,$F7,$7F,$01,$34,$07,$A3,$0B,$66; RAW DATA : 	text "스포츠 게임!"
-	line $06,$C6,$04,$F6,$08,$26,$01,$01,$7F,$07,$F1,$06,$C6,$0A,$6F,$01,$3A,$06,$EE,$0B,$66; RAW DATA : 	line "아버지가 좋아하겠어!"
+	text "A sports game!"
+	line "Dad'll like that!"
 	done
 
 _CeladonMart3Text11::
-	text $0A,$0B,$08,$21,$7F,$01,$34,$07,$A3,$0B,$66; RAW DATA : 	text "퍼즐 게임!"
-	line $08,$0F,$03,$16,$05,$EA,$07,$9C,$7F,$07,$A6,$06,$EE,$05,$18,$07,$9E,$02,$D9,$0B,$66; RAW DATA : 	line "중독성이 있어보인다!"
+	text "A puzzle game!"
+	line "Looks addictive!"
 	done
 
 _CeladonMart3Text13::
-	text $01,$3D,$09,$C5,$7F,$01,$34,$07,$A3,$0B,$66; RAW DATA : 	text "격투 게임!"
-	line $04,$DA,$03,$F2,$07,$A6,$06,$EE,$7F,$05,$18,$07,$9E,$02,$D9,$0B,$66; RAW DATA : 	line "박력있어 보인다!"
+	text "A fighting game!"
+	line "Looks tough!"
 	done
 
 _CeladonMart3Text14::
-	text $F9,$08,$FE,$7F,$0B,$6A,$0B,$6A,$7F,$09,$EC,$05,$61,$01,$34,$07,$A3,$74,$06,$23; RAW DATA : 	text "3층 …… 티비게임·숍"
+	text "3F: TV GAME SHOP"
 	done
 
 _CeladonMart3Text15::
-	text $0A,$27,$09,$2F,$04,$93,$06,$4A,$09,$9D,$7F,$03,$E9,$03,$45,$74,$01,$A7,$04,$40,$0B,$66; RAW DATA : 	text "포켓몬스터 레드·그린!"
-	line $0A,$A3,$0A,$22,$09,$F7,$04,$65,$08,$0F,$0B,$66; RAW DATA : 	line "호평판매중!"
+	text "Red and Blue!"
+	line "Both are #MON!"
 	done
+
+

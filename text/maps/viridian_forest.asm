@@ -61,6 +61,42 @@ _ViridianFrstAfterBattleText3::
 	line "the stuff I"
 	cont "dropped!"
 	done
+IF DEF(_YELLOW)
+_ViridianForestBattleTextPikaGirl::
+	text "Hi, do you have a"
+	line "PIKACHU?"
+	done
+
+_ViridianForestEndBattleTextPikaGirl::
+	text "Oh no,"
+	line "really?"
+	prompt
+
+_ViridianForestAfterBattleTextPikaGirl::
+	text "I looked forever,"
+	line "but I never found"
+	cont "a PIKACHU here!"
+	done
+
+_ViridianForestBattleTextSamurai::
+	text "I'm gonna be the"
+	line "best. You just"
+	cont "can't beat me!"
+	done
+
+_ViridianForestEndBattleTextSamurai::
+	text "After"
+	line "all I did..."
+	prompt
+
+_ViridianForestAfterBattleTextSamurai::
+	text "A METAPOD is cool"
+	line "because its"
+	cont "attack is its"
+	cont "defense!"
+	done	
+
+ENDC
 
 _ViridianForestText8::
 	text "I ran out of #"

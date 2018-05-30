@@ -1,8 +1,9 @@
 _DiglettsCaveRoute2Text1::
-	text $03,$19,$05,$BA,$7F,$09,$9D,$02,$6E,$07,$01,$7F,$01,$0C,$06,$FA,$02,$C2,$03,$05; RAW DATA : 	text "돌산 터널에 갔었는데"
-	line $02,$6A,$04,$AB,$7F,$06,$EE,$03,$33,$01,$4D,$7F,$04,$AB,$05,$DD,$07,$6C,$06,$EE,$0B,$6A,$0B,$6A; RAW DATA : 	line "너무 어둡고 무서웠어……"
+	text "I went to ROCK"
+	line "TUNNEL, but it's"
+	cont "dark and scary."
 
-	para $0A,$63,$03,$D1,$06,$63,$04,$36,$7F,$04,$E8,$07,$4E,$7F,$0A,$27,$09,$2F,$04,$93,$07,$9C; RAW DATA : 	para "플래시를 배운 포켓몬이"
-	line $04,$E0,$0A,$94,$04,$48,$7F,$08,$08,$02,$D9,$04,$89,$0B,$6A,$0B,$6A; RAW DATA : 	line "밝혀만 준다면……"
+	para "If a #MON's"
+	line "FLASH could light"
+	cont "it up..."
 	done
-

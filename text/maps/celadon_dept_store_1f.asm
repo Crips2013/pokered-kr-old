@@ -1,20 +1,31 @@
 _CeladonMart1Text1::
-	text $06,$EE,$05,$DD,$07,$20,$05,$EC,$07,$44,$0B,$66; RAW DATA : 	text "어서오세요!"
-	line $04,$AB,$08,$26,$01,$13,$7F,$04,$E9,$0A,$AD,$07,$D1,$07,$01,$7F,$07,$AF,$7F,$07,$20,$05,$FC,$06,$60,$02,$CF,$02,$D9,$0B,$66; RAW DATA : 	line "무지개 백화점에 잘 오셨습니다!"
+	text "Hello! Welcome to"
+	line "CELADON DEPT."
+	cont "STORE."
 
-	para $01,$02,$7F,$0A,$63,$03,$FE,$06,$EE,$07,$97,$7F,$06,$C8,$02,$4B,$02,$C2; RAW DATA : 	para "각 플로어의 안내는"
-	line $07,$20,$04,$35,$08,$6A,$07,$97,$7F,$01,$34,$06,$63,$09,$F7,$07,$8B,$7F,$05,$21,$7F,$08,$06,$05,$EC,$07,$44; RAW DATA : 	line "오른쪽의 게시판을 봐 주세요"
+	para "The board on the"
+	line "right describes"
+	cont "the store layout."
 	done
 
 _CeladonMart1Text2::
-	text $F7,$08,$FE,$7F,$0B,$6A,$0B,$6A,$7F,$05,$DD,$05,$61,$06,$4A,$74,$09,$0B,$07,$4E,$09,$9D; RAW DATA : 	text "1층 …… 서비스·카운터"
-	line $F8,$08,$FE,$7F,$0B,$6A,$0B,$6A,$7F,$09,$DE,$03,$E9,$07,$9C,$02,$6A,$08,$1E,$74,$06,$23; RAW DATA : 	line "2층 …… 트레이너즈·숍"
-	cont $F9,$08,$FE,$7F,$0B,$6A,$0B,$6A,$7F,$09,$EC,$05,$61,$01,$34,$07,$A3,$74,$06,$23; RAW DATA : 	cont "3층 …… 티비게임·숍"
-	cont $FA,$08,$FE,$7F,$0B,$6A,$0B,$6A,$7F,$07,$2D,$07,$9C,$08,$1E,$04,$67,$74,$01,$B2,$0A,$61,$09,$DE; RAW DATA : 	cont "4층 …… 와이즈맨·기프트"
-	cont $FB,$08,$FE,$7F,$0B,$6A,$0B,$6A,$7F,$06,$E0,$0A,$40,$74,$06,$4A,$09,$B4,$06,$EE; RAW DATA : 	cont "5층 …… 약품·스토어"
-	cont $FC,$08,$FE,$7F,$0B,$6A,$0B,$6A,$7F,$07,$AA,$03,$1F,$09,$F7,$04,$65,$01,$B2; RAW DATA : 	cont "6층 …… 자동판매기"
+	text "1F: SERVICE"
+	line "    COUNTER"
+
+	para "2F: TRAINER'S"
+	line "    MARKET"
+
+	para "3F: TV GAME SHOP"
+
+	para "4F: WISEMAN GIFTS"
+
+	para "5F: DRUG STORE"
+
+	para "ROOFTOP SQUARE:"
+	line "VENDING MACHINES"
 	done
 
 _CeladonMart1Text3::
-	text $F7,$08,$FE,$7F,$0B,$6A,$0B,$6A,$7F,$05,$DD,$05,$61,$06,$4A,$74,$09,$0B,$07,$4E,$09,$9D; RAW DATA : 	text "1층 …… 서비스·카운터"
+	text "1F: SERVICE"
+	line "    COUNTER"
 	done

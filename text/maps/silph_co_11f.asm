@@ -94,6 +94,10 @@ _SilphCo10Text_62335::
 
 	para "I must go, but I"
 	line "shall return!"
+IF DEF(_YELLOW)
+	done
+	
+ELSE
 	done
 
 _SilphCo11BattleText1::
@@ -111,6 +115,9 @@ _SilphCo11AfterBattleText1::
 	line "see my BOSS?"
 	done
 
+ENDC
+
+
 _SilphCo11BattleText2::
 	text "Halt! Do you have"
 	line "an appointment"
@@ -126,9 +133,16 @@ _SilphCo11AfterBattleText2::
 	text "Watch your step,"
 	line "my BOSS likes his"
 	cont "#MON tough!"
+IF DEF(_YELLOW)
+	done
+	
+ELSE
 	done
 
 _SilphCo10Text_6237b::
 	text "The monitor has"
 	line "#MON on it!"
 	done
+
+ENDC
+

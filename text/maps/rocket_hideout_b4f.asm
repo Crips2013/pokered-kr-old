@@ -1,31 +1,27 @@
-_RocketHideout4Text_4557a::
-	text "So! I must say, I"
-	line "am impressed you"
-	cont "got here!"
+IF DEF(_YELLOW)
+_RocketHideoutJessieJamesText1::
+	text "Not another step,"
+	line "brat!@@"
+
+_RocketHideoutJessieJamesText2::
+	text "How dare you"
+	line "humiliate us at"
+	cont "MT.MOON!"
+
+	para "It's payback time,"
+	line "you brat!"
 	done
 
-_RocketHideout4Text_4557f::
-	text "WHAT!"
-	line "This cannot be!"
+_RocketHideoutJessieJamesText3::
+	text "Such"
+	line "a dreadful twerp!"
 	prompt
 
-_RocketHideout4Text_45584::
-	text "I see that you"
-	line "raise #MON"
-	cont "with utmost care."
-
-	para "A child like you"
-	line "would never"
-	cont "understand what I"
-	cont "hope to achieve."
-
-	para "I shall step"
-	line "aside this time!"
-
-	para "I hope we meet"
-	line "again..."
-	done
-
+_RocketHideoutJessieJamesText4::
+	text "Looks like TEAM"
+	line "ROCKET's blasting"
+	cont "off again!@@"
+ELSE
 _RocketHideout4BattleText2::
 	text "I know you! You"
 	line "ruined our plans"
@@ -56,6 +52,37 @@ _RocketHideout4EndBattleText3::
 _RocketHide4AfterBattleText3::
 	text "BOSS! I'm sorry I"
 	line "failed you!"
+	done
+
+
+ENDC
+
+_RocketHideout4Text_4557a::
+	text "So! I must say, I"
+	line "am impressed you"
+	cont "got here!"
+	done
+
+_RocketHideout4Text_4557f::
+	text "WHAT!"
+	line "This cannot be!"
+	prompt
+
+_RocketHideout4Text_45584::
+	text "I see that you"
+	line "raise #MON"
+	cont "with utmost care."
+
+	para "A child like you"
+	line "would never"
+	cont "understand what I"
+	cont "hope to achieve."
+
+	para "I shall step"
+	line "aside this time!"
+
+	para "I hope we meet"
+	line "again..."
 	done
 
 _RocketHideout4BattleText4::

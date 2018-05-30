@@ -1,14 +1,35 @@
 PikachuFanText::
 	text "Won't you admire"
+IF DEF(_YELLOW)
+	line "my CLEFAIRY's"
+ELSE
 	line "my PIKACHU's"
+ENDC
 	cont "adorable tail?"
 	done
 
 PikachuFanBetterText::
+IF DEF(_YELLOW)
+	text "Humph! My CLEFAIRY"
+ELSE
 	text "Humph! My PIKACHU"
+ENDC
 	line "is twice as cute"
 	cont "as that one!"
 	done
+
+
+IF DEF(_YELLOW)
+PikachuFanPrintText::
+	text "Our CHAIRMAN's new"
+	line "hobby is taking"
+	cont "#MON photos."
+
+	para "He gave me a nice"
+	line "PRINT of my cute"
+	cont "CLEFAIRY."
+	done
+ENDC
 
 SeelFanText::
 	text "I just love my"
@@ -25,9 +46,22 @@ SeelFanBetterText::
 	line "more attractive!"
 	done
 
+IF DEF(_YELLOW)
+	SeelFanPrintText::
+	text "I'm going to hook"
+	line "up the cable to"
+	cont "get a photo PRINT"
+	cont "of my SEEL!"
+	done
+ENDC
 FanClubPikachuText::
+IF DEF(_YELLOW)
+	text "CLEFAIRY: Pippii!"
+ELSE
+
 	text "PIKACHU: Chu!"
 	line "Pikachu!"
+ENDC
 	done
 
 FanClubSeelText::
@@ -38,17 +72,28 @@ FanClubMeetChairText::
 	text "I chair the"
 	line "#MON Fan Club!"
 
+IF DEF(_YELLOW)
+	para "I have more than"
+	line "100 #MON. I"
+	cont "love them all!"	
+ELSE
 	para "I have collected"
 	line "over 100 #MON!"
+
+ENDC
 
 	para "I'm very fussy"
 	line "when it comes to"
 	cont "#MON!"
 
 	para "So..."
-
+IF DEF(_YELLOW)
+	para "Did you come to"
+	line "hear me brag"
+ELSE
 	para "Did you come"
 	line "visit to hear"
+ENDC
 	cont "about my #MON?"
 	done
 
@@ -69,7 +114,12 @@ FanClubChairStoryText::
 	cont "love it!"
 
 	para "Hug it...when..."
+IF DEF(_YELLOW)
+	line "sleeping...warm"	
+ELSE
 	cont "sleeping...warm"
+ENDC
+
 	cont "and cuddly..."
 	cont "spectacular..."
 	cont "ravishing..."
@@ -124,7 +174,43 @@ FanClubBagFullText::
 	text "Make room for"
 	line "this!"
 	done
+IF DEF(_YELLOW)
+FanClubChairPrintText1::
+	text "Hi there, <PLAYER>!"
+	line "Have you seen my"
+	cont "#MON photos?"
 
+	para "I have them framed"
+	line "up on that wall."
+
+	para "Ah, I know!"
+
+	para "Would you like me"
+	line "to take a photo"
+	cont "of your #MON?"
+	done
+
+FanClubChairPrintText2::
+	text "No? That's really"
+	line "disappointing."
+	done
+
+FanClubChairPrintText3::
+	text "OK, I'm done."
+	done
+
+FanClubChairPrintText4::
+	text "Maybe we won't"
+	line "PRINT this now."
+	done
+
+_FanClubText6::
+	text "Our CHAIRMAN is"
+	line "very vocal about"
+	cont "#MON."
+	done
+	
+ELSE
 _FanClubText6::
 	text "Our Chairman is"
 	line "very vocal about"
@@ -141,3 +227,4 @@ _FanClubText8::
 	text "If someone brags,"
 	line "brag right back!"
 	done
+ENDC

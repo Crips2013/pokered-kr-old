@@ -1,144 +1,162 @@
 _CeladonCityText1::
+IF DEF(_YELLOW)
+	text "I got my KOFFING"
+	line "from my friend!"
+
+	para "We get along now,"
+	line "because I was"
+	cont "very nice to it!"
+ELSE
 	text "I got my KOFFING"
 	line "in CINNABAR!"
 
 	para "It's nice, but it"
 	line "breathes poison"
 	cont "when it's angry!"
+
+ENDC
 	done
 
 _CeladonCityText2::
-	text $07,$88,$0A,$6F,$0A,$6F,$0B,$66,$7F,$07,$09,$01,$B2,$7F,$08,$BC,$07,$80,$01,$6C,$07,$8A,$7F,$07,$F1,$01,$88,$02,$3A,$0B,$66; RAW DATA : 	text "으하하! 여기 체육관은 좋구나!"
-	line $07,$09,$07,$AA,$06,$C6,$07,$9C,$03,$49,$04,$48,$7F,$07,$A6,$06,$EE,$05,$DD,$0B,$66; RAW DATA : 	line "여자아이들만 있어서!"
+	text "Heheh! This GYM"
+	line "is great! It's"
+	cont "full of women!"
 	done
 
 _CeladonCityText3::
-	text $07,$9C,$7F,$01,$34,$07,$A3,$09,$3A,$02,$6A,$02,$C2; RAW DATA : 	text "이 게임코너는"
-	line $07,$4C,$04,$3E,$7F,$03,$15,$06,$63,$7F,$07,$9C,$04,$CC,$08,$26,$07,$97,$7F,$01,$88,$04,$7B,$07,$9C,$06,$DF,$0B,$66; RAW DATA : 	line "우리 도시 이미지의 구멍이야!"
+	text "The GAME CORNER"
+	line "is bad for our"
+	cont "city's image!"
 	done
 
 _CeladonCityText4::
-	text $07,$88,$07,$88,$07,$89,$0B,$68; RAW DATA : 	text "으으윽-"
-	line $02,$3D,$7F,$07,$09,$01,$B2,$07,$01,$7F,$07,$CC,$05,$2E,$7F,$03,$77,$03,$F1,$02,$76,$06,$FA,$06,$EE,$0B,$66; RAW DATA : 	line "난 여기에 전부 때려넣었어!"
+	text "Moan! I blew it"
+	line "all at the slots!"
 
-	para $06,$C8,$02,$D9,$01,$4D,$7F,$06,$CB,$06,$C6; RAW DATA : 	para "안다고 알아"
-	line $09,$3A,$07,$9E,$03,$49,$07,$8B,$7F,$01,$46,$0A,$40,$07,$88,$03,$FE; RAW DATA : 	line "코인들을 경품으로"
-	cont $01,$83,$0A,$AF,$0A,$72,$01,$29,$7F,$01,$A7,$03,$D8,$06,$EE,$0B,$66; RAW DATA : 	cont "교환할걸 그랬어!"
+	para "I knew I should"
+	line "have cashed in my"
+	cont "coins for prizes!"
 	done
 
 _TM41PreText::
-	text $06,$C8,$02,$87,$0A,$71,$01,$01,$0B,$66; RAW DATA : 	text "안녕한가!"
+	text "Hello, there!"
 
-	para $07,$AA,$02,$77,$04,$36,$7F,$08,$26,$09,$31,$05,$23,$02,$C2,$03,$05; RAW DATA : 	para "자네를 지켜봤는데"
-	line $02,$EB,$0A,$AD,$0A,$72,$7F,$01,$B2,$0A,$B8,$01,$01,$7F,$06,$F8,$02,$F5,$01,$8A; RAW DATA : 	line "대화할 기회가 없더군"
+	para "I've seen you,"
+	line "but I never had a"
+	cont "chance to talk!"
 
-	para $07,$9C,$01,$67,$07,$01,$7F,$03,$49,$04,$40; RAW DATA : 	para "이곳에 들린"
-	line $05,$E1,$04,$B0,$07,$9F,$05,$EC,$0B,$66; RAW DATA : 	line "선물일세!"
+	para "Here's a gift for"
+	line "dropping by!"
 	prompt
 
 _ReceivedTM41Text::
-	text $52, $07,$8A,$0B,$64,$02,$C2,$0B,$65; RAW DATA : 	text $52, "은(는)"
-	line $50; RAW DATA : 	line "@"
+	text "<PLAYER> received"
+	line "@"
 	TX_RAM wcf4b
-	text $07,$8B,$0B,$64,$04,$36,$0B,$65; RAW DATA : 	text "을(를)"
-	cont $06,$F2,$06,$FA,$02,$D9,$0B,$66,$50,$50; RAW DATA : 	cont "얻었다!@@"
-	
+	text "!@@"
+
 _TM41ExplanationText::
-	text $01,$B2,$06,$2A,$04,$73,$06,$65,$FA,$F7,$07,$8A; RAW DATA : 	text "기술머신41은"
-	line $06,$CB,$02,$4A,$01,$B2,$0B,$66; RAW DATA : 	line "알낳기!"
+	text "TM41 teaches"
+	line "SOFTBOILED!"
 
-	para $07,$20,$08,$27,$7F,$0A,$71,$07,$EE,$04,$29,$07,$97,$7F,$0A,$27,$09,$2F,$04,$93,$07,$01,$01,$34,$04,$48; RAW DATA : 	para "오직 한종류의 포켓몬에게만"
-	line $05,$B7,$07,$4B,$0A,$72,$06,$26,$7F,$07,$A6,$08,$26,$0B,$66; RAW DATA : 	line "사용할수 있지!"
+	para "Only one #MON"
+	line "can use it!"
 
-	para $01,$A7,$7F,$0A,$27,$09,$2F,$04,$93,$07,$8A; RAW DATA : 	para "그 포켓몬은"
-	line $03,$E0,$09,$80,$03,$C5,$02,$D9,$0B,$66; RAW DATA : 	line "럭키란다!"
+	para "That #MON is"
+	line "CHANSEY!"
 	done
 
 _TM41NoRoomText::
-	text $06,$EE,$07,$9C,$7F,$06,$EE,$07,$9C; RAW DATA : 	text "어이 어이"
-	line $01,$01,$04,$E6,$07,$9C,$7F,$01,$01,$03,$46,$7F,$08,$A1,$07,$AD,$06,$C6,$0B,$66; RAW DATA : 	line "가방이 가득 찼잖아!"
+	text "Oh, your pack is"
+	line "full of items!"
 	done
 
 _CeladonCityText6::
-	text $07,$9C,$02,$80,$05,$DE,$07,$8A,$7F,$02,$3A,$07,$97,$7F,$09,$F4,$09,$DE,$02,$6A; RAW DATA : 	text "이녀석은 나의 파트너"
-	line $01,$0D,$08,$AC,$07,$9C,$0B,$66; RAW DATA : 	line "강챙이!"
+	text "This is my trusted"
+	line "pal, POLIWRATH!"
 
-	para $04,$B0,$07,$97,$7F,$03,$19,$07,$8B,$7F,$06,$81,$05,$DD; RAW DATA : 	para "물의 돌을 써서"
-	line $06,$26,$04,$2A,$08,$AC,$07,$9C,$07,$01,$05,$DD,$7F,$08,$28,$0A,$AD,$06,$63,$09,$37,$08,$26,$0B,$66; RAW DATA : 	line "수륙챙이에서 진화시켰지!"
+	para "It evolved from"
+	line "POLIWHIRL when I"
+	cont "used WATER STONE!"
 	done
 
 _CeladonCityText7::
-	text $01,$0D,$08,$AC,$07,$9C,$0B,$62,$01,$0D,$08,$AC,$7F,$01,$0D,$08,$AC,$0B,$66,$50,$50; RAW DATA : 	text "강챙이『강챙 강챙!@@"
+	text "POLIWRATH: Ribi"
+	line "ribit!@@"
 
 _CeladonCityText8::
-	text $04,$BB,$7F,$01,$A7,$03,$E8,$01,$34,$7F,$05,$6E,$0A,$F7; RAW DATA : 	text "뭘 그렇게 빤히"
-	line $08,$C4,$02,$D9,$05,$21,$0B,$67; RAW DATA : 	line "쳐다봐?"
+	text "What are you"
+	line "staring at?"
 	done
 
 _CeladonCityText9::
-	text $03,$FE,$09,$2F,$02,$DC,$07,$97,$7F,$0A,$80,$08,$97,$01,$B6,$07,$01,$05,$DD; RAW DATA : 	text "로켓단의 행차길에서"
-	line $07,$CA,$04,$3E,$01,$01,$0B,$66; RAW DATA : 	line "저리가!"
+	text "Keep out of TEAM"
+	line "ROCKET's way!"
 	done
 
 _CeladonCityText10::
-	text $0B,$6A,$0B,$6A,$7F,$03,$46,$07,$9C,$7F,$03,$27,$02,$C2,$7F,$01,$34,$06,$63,$09,$F7; RAW DATA : 	text "…… 득이 되는 게시판"
+	text "TRAINER TIPS"
 
-	para $07,$AF,$0B,$68,$04,$62,$0A,$F7,$01,$B2,$02,$C2; RAW DATA : 	para "잘-맞히기는"
-	line $01,$B2,$06,$2A,$07,$97,$7F,$04,$8D,$08,$0F,$04,$2C,$07,$8B,$7F,$02,$94,$07,$09,$08,$08,$02,$D9,$0B,$66; RAW DATA : 	line "기술의 명중률을 높여준다!"
-	
-	para $09,$79,$04,$3E,$09,$EC,$09,$23,$09,$1F,$09,$9D,$02,$C2; RAW DATA : 	para "크리티컬커터는"
-	line $01,$AE,$06,$02,$04,$36,$7F,$04,$62,$08,$E2,$7F,$0A,$AE,$04,$2C,$07,$8B,$7F,$02,$94,$07,$09,$08,$08,$02,$D9,$0B,$66; RAW DATA : 	line "급소를 맞출 확률을 높여준다!"
+	para "X ACCURACY boosts"
+	line "the accuracy of"
+	cont "techniques!"
 
-	para $03,$15,$01,$88,$07,$97,$7F,$06,$1E,$0A,$6E,$08,$B5,$01,$89; RAW DATA : 	para "도구의 쇼핑천국"
-	line $04,$AB,$08,$26,$01,$13,$7F,$04,$E9,$0A,$AD,$07,$D1,$07,$88,$03,$FE,$7F,$07,$20,$05,$EC,$07,$44,$0B,$66; RAW DATA : 	line "무지개 백화점으로 오세요!"
+	para "DIRE HIT jacks up"
+	line "the likelihood of"
+	cont "critical hits!"
+
+	para "Get your items at"
+	line "CELADON DEPT."
+	cont "STORE!"
 	done
 
-	
 _CeladonCityText11::
-	;금은참조
-	text $07,$9C,$01,$67,$07,$8A,$7F,$04,$AB,$08,$26,$01,$13,$06,$63,$09,$EC; RAW DATA : 	text "이곳은 무지개시티"
-	line $04,$AB,$08,$26,$01,$13,$02,$C2,$7F,$08,$D1,$08,$B5,$07,$0C,$05,$C6,$7F,$02,$0E,$07,$97,$7F,$05,$C6,$01,$C2; RAW DATA : 	line "무지개는 총천연색 꿈의 색깔"
+	text "CELADON CITY"
+	line "The City of"
+	cont "Rainbow Dreams"
 	done
 
 _CeladonCityText13::
-	text $04,$AB,$08,$26,$01,$13,$7F,$06,$63,$09,$EC,$7F,$0A,$27,$09,$2F,$04,$93,$7F,$08,$BC,$07,$80,$01,$6C; RAW DATA : 	text "무지개 시티 포켓몬 체육관"
-	line $01,$6C,$07,$B5,$7F,$04,$CE,$0A,$AD; RAW DATA : 	line "관장 민화"
-	cont $07,$AA,$07,$0C,$07,$8B,$7F,$05,$B7,$03,$CB,$0A,$6F,$02,$C2,$7F,$06,$C6,$01,$01,$06,$BE; RAW DATA : 	cont "자연을 사랑하는 아가씨"
+	text "CELADON CITY"
+	line "#MON GYM"
+	cont "LEADER: ERIKA"
+
+	para "The Nature Loving"
+	line "Princess!"
 	done
 
 _CeladonCityText14::
-	;금은참조
-	text $04,$AB,$08,$26,$01,$13,$7F,$04,$67,$05,$F7; RAW DATA : 	text "무지개 맨션"
+	text "CELADON MANSION"
 	done
 
 _CeladonCityText15::
-	;금은참조
-	text $07,$68,$0A,$6F,$02,$C2,$7F,$01,$2D,$07,$8A,$7F,$01,$F0,$7F,$07,$A6,$06,$60,$02,$CF,$02,$D9,$0B,$66; RAW DATA : 	text "원하는 것은 꼭 있습니다!"
-	line $04,$AB,$08,$26,$01,$13,$7F,$04,$E9,$0A,$AD,$07,$D1; RAW DATA : 	line "무지개 백화점"
+	text "Find what you"
+	line "need at CELADON"
+	cont "DEPT. STORE!"
 	done
 
 _CeladonCityText16::
-	;금은참조
-	text $0B,$6A,$0B,$6A,$7F,$03,$46,$07,$9C,$7F,$03,$27,$02,$C2,$7F,$01,$34,$06,$63,$09,$F7; RAW DATA : 	text "…… 득이 되는 게시판"
+	text "TRAINER TIPS"
 
-	para $07,$9C,$0A,$15,$09,$DE,$7F,$01,$01,$03,$45,$02,$C2; RAW DATA : 	para "이펙트 가드는"
-	line $0A,$AD,$07,$10,$07,$9C,$03,$CB,$7F,$04,$B0,$7F,$07,$CC,$01,$B2,$03,$4E,$07,$97; RAW DATA : 	line "화염이랑 물 전기등의"
-	
-	para $09,$DF,$06,$26,$7F,$01,$68,$01,$3D,$07,$88,$03,$FE,$05,$2E,$09,$9D; RAW DATA : 	para "특수 공격으로부터"
-	line $0A,$27,$09,$2F,$04,$93,$07,$8B,$7F,$08,$26,$09,$31,$08,$08,$02,$D9,$0B,$66; RAW DATA : 	line "포켓몬을 지켜준다!"
-	
-	para $03,$15,$01,$88,$07,$97,$7F,$06,$1E,$0A,$6E,$08,$B5,$01,$89; RAW DATA : 	para "도구의 쇼핑천국"
-	line $04,$AB,$08,$26,$01,$13,$7F,$04,$E9,$0A,$AD,$07,$D1,$07,$88,$03,$FE,$7F,$07,$20,$05,$EC,$07,$44,$0B,$66; RAW DATA : 	line "무지개 백화점으로 오세요!"
+	para "GUARD SPEC."
+	line "protects #MON"
+	cont "against SPECIAL"
+	cont "attacks such as"
+	cont "fire and water!"
+
+	para "Get your items at"
+	line "CELADON DEPT."
+	cont "STORE!"
 	done
 
 _CeladonCityText17::
-	text $09,$3A,$07,$9E,$07,$8B,$7F,$01,$46,$0A,$40,$07,$88,$03,$FE,$7F,$01,$83,$0A,$AF,$0A,$6F,$05,$EC,$07,$44; RAW DATA : 	text "코인을 경품으로 교환하세요"
-	line $01,$46,$0A,$40,$7F,$01,$83,$0A,$AF,$06,$02; RAW DATA : 	line "경품 교환소"
+	text "Coins exchanged"
+	line "for prizes!"
+	cont "PRIZE EXCHANGE"
 	done
 
 _CeladonCityText18::
-	;금은참조
-	text $07,$9C,$01,$67,$07,$8A,$7F,$04,$90,$03,$2E,$07,$97,$7F,$02,$8E,$07,$9C,$07,$B5,$06,$02; RAW DATA : 	text "이곳은 모두의 놀이장소"
-	line $03,$FE,$09,$2F,$7F,$01,$34,$07,$A3,$09,$3A,$02,$6A; RAW DATA : 	line "로켓 게임코너"
+	text "ROCKET GAME CORNER"
+	line "The playground"
+	cont "for grown-ups!"
 	done
-

@@ -1,16 +1,20 @@
 _CopycatsHouse1FText1::
-	text $02,$4B,$7F,$03,$6E,$07,$8A,$7F,$02,$6A,$04,$AB,$7F,$07,$AA,$01,$B2,$08,$0F,$06,$69,$07,$CB,$07,$9C,$06,$DF; RAW DATA : 	text "내 딸은 너무 자기중심적이야"
-	line $09,$03,$01,$88,$03,$15,$7F,$06,$F3,$04,$46,$7F,$06,$F8,$02,$DC,$02,$D9; RAW DATA : 	line "친구도 얼마 없단다"
+	text "My daughter is so"
+	line "self-centered."
+	cont "She only has a"
+	cont "few friends."
 	done
 
 _CopycatsHouse1FText2::
-	text $0B,$6A,$0B,$6A,$7F,$01,$4F,$03,$C5,$0A,$71,$7F,$01,$2D,$07,$8A,$7F,$03,$6E,$06,$D6,$01,$01; RAW DATA : 	text "…… 곤란한 것은 딸애가"
-	line $05,$B7,$03,$C7,$03,$49,$07,$97,$7F,$0A,$E4,$02,$4B,$04,$36,$7F,$02,$4B,$02,$C2,$7F,$01,$2D,$07,$9C,$08,$26,$0B,$66; RAW DATA : 	line "사람들의 흉내를 내는 것이지!"
+	text "My daughter likes"
+	line "to mimic people."
 
-	para $0A,$6F,$04,$17,$07,$EE,$07,$9F,$7F,$05,$B7,$03,$C7,$03,$49,$07,$8B,$7F,$02,$8E,$03,$F1,$05,$DD; RAW DATA : 	para "하루종일 사람들을 놀려서"
-	line $01,$A9,$08,$B3,$07,$01,$05,$DD,$02,$C2; RAW DATA : 	line "근처에서는"
-	cont $0A,$E4,$02,$4B,$02,$4B,$01,$B2,$7F,$06,$C6,$01,$01,$06,$BE,$03,$C3,$01,$4D,$7F,$05,$32,$03,$F1,$08,$28,$02,$DC,$02,$D9,$0B,$66; RAW DATA : 	cont "흉내내기 아가씨라고 불려진단다!"
-	done 
+	para "Her mimicry has"
+	line "earned her the"
+	cont "nickname COPYCAT"
+	cont "around here!"
+	done
 
 _CopycatsHouse1FText3::
-	text $03,$E0,$09,$80,$0B,$62,$03,$E0,$09,$80,$0B,$66,$50,$50; RAW DATA : 	text "럭키『럭키!@@"
+	text "CHANSEY: Chaan!"
+	line "Sii!@@"
