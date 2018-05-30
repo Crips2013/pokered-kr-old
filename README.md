@@ -2,17 +2,15 @@
 
 This is Open Source Pokémon Red/Blue Korean Translation Project.
 
-This is based on pret's disassembly of [**Pokémon Red/Blue**][pokered] and [**Pokémon Yellow Korean Fan Translation**][pokeyellowkr] which I participated in as a programmer.
+This is based on pret's disassembly of [**Pokémon Red/Blue**][pokered].
 
 To set up the repository, see [**INSTALL.md**](INSTALL.md).
 
 ## Credits
 - 009342 : Main code
-- All of [Pokémon Yellow Korean Fan Translation][pokeyellowkr]'s staff
 
 ## See also
 
-* [**Pokémon Yellow Korean Fan Translation**][pokeyellowkr]
 * Disassembly of [**Pokémon Red/Blue**][pokered]
 * Disassembly of [**Pokémon Yellow**][pokeyellow]
 * Disassembly of [**Pokémon Gold**][pokegold]
