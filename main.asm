@@ -19,6 +19,8 @@ INCLUDE "BuildTime.asm"
 BuildNumber:
 INCLUDE "BuildNumber.asm"
 
+INCLUDE "hangul/code/HBlankCopy.asm"
+
 SECTION "bank1",ROMX,BANK[$1]
 
 INCLUDE "data/facing.asm"
@@ -2095,16 +2097,16 @@ INCLUDE "engine/overworld/elevator.asm"
 INCLUDE "engine/items/tm_prices.asm"
 
 SECTION "HangulFont30",ROMX[$5000],BANK[$30]
-INCBIN "hangul/font30.fnt"
+INCBIN "hangul/font/font30.fnt"
 
 SECTION "HangulFont31",ROMX,BANK[$31]
-INCBIN "hangul/font31.fnt"
+INCBIN "hangul/font/font31.fnt"
 
 SECTION "HangulFont32",ROMX,BANK[$32]
-INCBIN "hangul/font32.fnt"
+INCBIN "hangul/font/font32.fnt"
 
 SECTION "HangulFont33",ROMX,BANK[$33]
-INCBIN "hangul/font33.fnt"
+INCBIN "hangul/font/font33.fnt"
 
 SECTION "HangulOutputCode",ROMX,BANK[$34]
-INCLUDE "hangul/PrintHangul.asm"
+INCLUDE "hangul/code/PrintHangul.asm"
