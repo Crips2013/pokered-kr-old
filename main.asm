@@ -19,6 +19,8 @@ INCLUDE "BuildTime.asm"
 BuildNumber:
 INCLUDE "BuildNumber.asm"
 
+INCLUDE "hangul/code/HBlankCopy.asm"
+
 SECTION "bank1",ROMX,BANK[$1]
 
 INCLUDE "data/facing.asm"
