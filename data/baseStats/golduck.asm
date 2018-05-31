@@ -10,7 +10,11 @@ db 75 ; catch rate
 db 174 ; base exp yield
 IF DEF(_BLUE)
 INCBIN  "pic/bmon/golduck.pic",0,1 ; 77, sprite dimensions
-ELSE
+ENDC
+IF DEF(_RED)
+INCBIN "pic/rgmon/golduck.pic",0,1 ; 77, sprite dimensions
+ENDC
+IF DEF(_GREEN)
 INCBIN "pic/rgmon/golduck.pic",0,1 ; 77, sprite dimensions
 ENDC
 dw GolduckPicFront

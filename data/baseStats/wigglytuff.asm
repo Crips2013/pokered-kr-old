@@ -10,7 +10,11 @@ db 50 ; catch rate
 db 109 ; base exp yield
 IF DEF(_BLUE)
 INCBIN  "pic/bmon/wigglytuff.pic",0,1 ; 66, sprite dimensions
-ELSE
+ENDC
+IF DEF(_RED)
+INCBIN "pic/rgmon/wigglytuff.pic",0,1 ; 66, sprite dimensions
+ENDC
+IF DEF(_GREEN)
 INCBIN "pic/rgmon/wigglytuff.pic",0,1 ; 66, sprite dimensions
 ENDC
 dw WigglytuffPicFront

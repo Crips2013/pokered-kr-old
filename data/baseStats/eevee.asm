@@ -10,7 +10,11 @@ db 45 ; catch rate
 db 92 ; base exp yield
 IF DEF(_BLUE)
 INCBIN  "pic/bmon/eevee.pic",0,1 ; 55, sprite dimensions
-ELSE
+ENDC
+IF DEF(_RED)
+INCBIN "pic/rgmon/eevee.pic",0,1 ; 55, sprite dimensions
+ENDC
+IF DEF(_GREEN)
 INCBIN "pic/rgmon/eevee.pic",0,1 ; 55, sprite dimensions
 ENDC
 dw EeveePicFront

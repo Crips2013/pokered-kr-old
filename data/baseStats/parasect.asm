@@ -10,7 +10,11 @@ db 75 ; catch rate
 db 128 ; base exp yield
 IF DEF(_BLUE)
 INCBIN  "pic/bmon/parasect.pic",0,1 ; 77, sprite dimensions
-ELSE
+ENDC
+IF DEF(_RED)
+INCBIN "pic/rgmon/parasect.pic",0,1 ; 77, sprite dimensions
+ENDC
+IF DEF(_GREEN)
 INCBIN "pic/rgmon/parasect.pic",0,1 ; 77, sprite dimensions
 ENDC
 dw ParasectPicFront

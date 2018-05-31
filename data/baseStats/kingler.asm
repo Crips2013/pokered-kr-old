@@ -10,7 +10,11 @@ db 60 ; catch rate
 db 206 ; base exp yield
 IF DEF(_BLUE)
 INCBIN  "pic/bmon/kingler.pic",0,1 ; 77, sprite dimensions
-ELSE
+ENDC
+IF DEF(_RED)
+INCBIN "pic/rgmon/kingler.pic",0,1 ; 77, sprite dimensions
+ENDC
+IF DEF(_GREEN)
 INCBIN "pic/rgmon/kingler.pic",0,1 ; 77, sprite dimensions
 ENDC
 dw KinglerPicFront

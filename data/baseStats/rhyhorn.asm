@@ -10,7 +10,11 @@ db 120 ; catch rate
 db 135 ; base exp yield
 IF DEF(_BLUE)
 INCBIN  "pic/bmon/rhyhorn.pic",0,1 ; 77, sprite dimensions
-ELSE
+ENDC
+IF DEF(_RED)
+INCBIN "pic/rgmon/rhyhorn.pic",0,1 ; 77, sprite dimensions
+ENDC
+IF DEF(_GREEN)
 INCBIN "pic/rgmon/rhyhorn.pic",0,1 ; 77, sprite dimensions
 ENDC
 dw RhyhornPicFront

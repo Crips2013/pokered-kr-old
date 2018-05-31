@@ -10,7 +10,11 @@ db 225 ; catch rate
 db 106 ; base exp yield
 IF DEF(_BLUE)
 INCBIN  "pic/bmon/staryu.pic",0,1 ; 66, sprite dimensions
-ELSE
+ENDC
+IF DEF(_RED)
+INCBIN "pic/rgmon/staryu.pic",0,1 ; 66, sprite dimensions
+ENDC
+IF DEF(_GREEN)
 INCBIN "pic/rgmon/staryu.pic",0,1 ; 66, sprite dimensions
 ENDC
 dw StaryuPicFront

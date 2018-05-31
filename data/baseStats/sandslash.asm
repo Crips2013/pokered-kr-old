@@ -10,7 +10,11 @@ db 90 ; catch rate
 db 163 ; base exp yield
 IF DEF(_BLUE)
 INCBIN  "pic/bmon/sandslash.pic",0,1 ; 66, sprite dimensions
-ELSE
+ENDC
+IF DEF(_RED)
+INCBIN "pic/rgmon/sandslash.pic",0,1 ; 66, sprite dimensions
+ENDC
+IF DEF(_GREEN)
 INCBIN "pic/rgmon/sandslash.pic",0,1 ; 66, sprite dimensions
 ENDC
 dw SandslashPicFront

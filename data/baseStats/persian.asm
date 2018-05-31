@@ -10,7 +10,11 @@ db 90 ; catch rate
 db 148 ; base exp yield
 IF DEF(_BLUE)
 INCBIN  "pic/bmon/persian.pic",0,1 ; 77, sprite dimensions
-ELSE
+ENDC
+IF DEF(_RED)
+INCBIN "pic/rgmon/persian.pic",0,1 ; 77, sprite dimensions
+ENDC
+IF DEF(_GREEN)
 INCBIN "pic/rgmon/persian.pic",0,1 ; 77, sprite dimensions
 ENDC
 dw PersianPicFront

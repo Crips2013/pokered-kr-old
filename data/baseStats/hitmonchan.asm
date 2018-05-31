@@ -10,7 +10,11 @@ db 45 ; catch rate
 db 140 ; base exp yield
 IF DEF(_BLUE)
 INCBIN  "pic/bmon/hitmonchan.pic",0,1 ; 66, sprite dimensions
-ELSE
+ENDC
+IF DEF(_RED)
+INCBIN "pic/rgmon/hitmonchan.pic",0,1 ; 66, sprite dimensions
+ENDC
+IF DEF(_GREEN)
 INCBIN "pic/rgmon/hitmonchan.pic",0,1 ; 66, sprite dimensions
 ENDC
 dw HitmonchanPicFront

@@ -10,7 +10,11 @@ db 3 ; catch rate
 db 220 ; base exp yield
 IF DEF(_BLUE)
 INCBIN  "pic/bmon/mewtwo.pic",0,1 ; 77, sprite dimensions
-ELSE
+ENDC
+IF DEF(_RED)
+INCBIN "pic/rgmon/mewtwo.pic",0,1 ; 77, sprite dimensions
+ENDC
+IF DEF(_GREEN)
 INCBIN "pic/rgmon/mewtwo.pic",0,1 ; 77, sprite dimensions
 ENDC
 dw MewtwoPicFront

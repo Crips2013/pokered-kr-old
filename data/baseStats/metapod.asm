@@ -10,7 +10,11 @@ db 120 ; catch rate
 db 72 ; base exp yield
 IF DEF(_BLUE)
 INCBIN  "pic/bmon/metapod.pic",0,1 ; 55, sprite dimensions
-ELSE
+ENDC
+IF DEF(_RED)
+INCBIN "pic/rgmon/metapod.pic",0,1 ; 55, sprite dimensions
+ENDC
+IF DEF(_GREEN)
 INCBIN "pic/rgmon/metapod.pic",0,1 ; 55, sprite dimensions
 ENDC
 dw MetapodPicFront

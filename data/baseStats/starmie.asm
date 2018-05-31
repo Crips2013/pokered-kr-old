@@ -10,7 +10,11 @@ db 60 ; catch rate
 db 207 ; base exp yield
 IF DEF(_BLUE)
 INCBIN  "pic/bmon/starmie.pic",0,1 ; 66, sprite dimensions
-ELSE
+ENDC
+IF DEF(_RED)
+INCBIN "pic/rgmon/starmie.pic",0,1 ; 66, sprite dimensions
+ENDC
+IF DEF(_GREEN)
 INCBIN "pic/rgmon/starmie.pic",0,1 ; 66, sprite dimensions
 ENDC
 dw StarmiePicFront

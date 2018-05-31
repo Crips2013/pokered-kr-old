@@ -10,7 +10,11 @@ db 45 ; catch rate
 db 158 ; base exp yield
 IF DEF(_BLUE)
 INCBIN  "pic/bmon/dodrio.pic",0,1 ; 77, sprite dimensions
-ELSE
+ENDC
+IF DEF(_RED)
+INCBIN "pic/rgmon/dodrio.pic",0,1 ; 77, sprite dimensions
+ENDC
+IF DEF(_GREEN)
 INCBIN "pic/rgmon/dodrio.pic",0,1 ; 77, sprite dimensions
 ENDC
 dw DodrioPicFront

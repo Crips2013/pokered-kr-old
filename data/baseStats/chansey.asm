@@ -10,7 +10,11 @@ db 30 ; catch rate
 db 255 ; base exp yield
 IF DEF(_BLUE)
 INCBIN  "pic/bmon/chansey.pic",0,1 ; 66, sprite dimensions
-ELSE
+ENDC
+IF DEF(_RED)
+INCBIN "pic/rgmon/chansey.pic",0,1 ; 66, sprite dimensions
+ENDC
+IF DEF(_GREEN)
 INCBIN "pic/rgmon/chansey.pic",0,1 ; 66, sprite dimensions
 ENDC
 dw ChanseyPicFront

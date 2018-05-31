@@ -10,7 +10,11 @@ db 35 ; catch rate
 db 61 ; base exp yield
 IF DEF(_BLUE)
 INCBIN  "pic/bmon/ditto.pic",0,1 ; 55, sprite dimensions
-ELSE
+ENDC
+IF DEF(_RED)
+INCBIN "pic/rgmon/ditto.pic",0,1 ; 55, sprite dimensions
+ENDC
+IF DEF(_GREEN)
 INCBIN "pic/rgmon/ditto.pic",0,1 ; 55, sprite dimensions
 ENDC
 dw DittoPicFront

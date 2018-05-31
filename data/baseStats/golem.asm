@@ -10,7 +10,11 @@ db 45 ; catch rate
 db 177 ; base exp yield
 IF DEF(_BLUE)
 INCBIN  "pic/bmon/golem.pic",0,1 ; 66, sprite dimensions
-ELSE
+ENDC
+IF DEF(_RED)
+INCBIN "pic/rgmon/golem.pic",0,1 ; 66, sprite dimensions
+ENDC
+IF DEF(_GREEN)
 INCBIN "pic/rgmon/golem.pic",0,1 ; 66, sprite dimensions
 ENDC
 dw GolemPicFront

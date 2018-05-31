@@ -10,7 +10,11 @@ db 255 ; catch rate
 db 20 ; base exp yield
 IF DEF(_BLUE)
 INCBIN  "pic/bmon/magikarp.pic",0,1 ; 66, sprite dimensions
-ELSE
+ENDC
+IF DEF(_RED)
+INCBIN "pic/rgmon/magikarp.pic",0,1 ; 66, sprite dimensions
+ENDC
+IF DEF(_GREEN)
 INCBIN "pic/rgmon/magikarp.pic",0,1 ; 66, sprite dimensions
 ENDC
 dw MagikarpPicFront

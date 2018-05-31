@@ -10,7 +10,11 @@ db 225 ; catch rate
 db 115 ; base exp yield
 IF DEF(_BLUE)
 INCBIN  "pic/bmon/krabby.pic",0,1 ; 55, sprite dimensions
-ELSE
+ENDC
+IF DEF(_RED)
+INCBIN "pic/rgmon/krabby.pic",0,1 ; 55, sprite dimensions
+ENDC
+IF DEF(_GREEN)
 INCBIN "pic/rgmon/krabby.pic",0,1 ; 55, sprite dimensions
 ENDC
 dw KrabbyPicFront

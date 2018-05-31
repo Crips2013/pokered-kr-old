@@ -10,7 +10,11 @@ db 255 ; catch rate
 db 77 ; base exp yield
 IF DEF(_BLUE)
 INCBIN  "pic/bmon/poliwag.pic",0,1 ; 55, sprite dimensions
-ELSE
+ENDC
+IF DEF(_RED)
+INCBIN "pic/rgmon/poliwag.pic",0,1 ; 55, sprite dimensions
+ENDC
+IF DEF(_GREEN)
 INCBIN "pic/rgmon/poliwag.pic",0,1 ; 55, sprite dimensions
 ENDC
 dw PoliwagPicFront

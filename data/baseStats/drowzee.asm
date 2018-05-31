@@ -10,7 +10,11 @@ db 190 ; catch rate
 db 102 ; base exp yield
 IF DEF(_BLUE)
 INCBIN  "pic/bmon/drowzee.pic",0,1 ; 66, sprite dimensions
-ELSE
+ENDC
+IF DEF(_RED)
+INCBIN "pic/rgmon/drowzee.pic",0,1 ; 66, sprite dimensions
+ENDC
+IF DEF(_GREEN)
 INCBIN "pic/rgmon/drowzee.pic",0,1 ; 66, sprite dimensions
 ENDC
 dw DrowzeePicFront

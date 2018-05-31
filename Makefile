@@ -1,26 +1,28 @@
 MD5 := md5sum -c
 
 pokered_obj := audio_red.o main_red.o text_red.o wram_red.o
+pokegreen_obj := audio_green.o main_green.o text_green.o wram_green.o
 pokeblue_obj := audio_blue.o main_blue.o text_blue.o wram_blue.o
 
 .SUFFIXES:
 .SECONDEXPANSION:
 .PRECIOUS:
 .SECONDARY:
-.PHONY: all clean red blue compare tools
+.PHONY: all clean red blue green compare tools
 
-roms := pokered.gbc pokeblue.gbc
+roms := pokered.gbc pokeblue.gbc pokegreen.gbc
 
 all: $(roms)
 red: pokered.gbc
 blue: pokeblue.gbc
+green: pokegreen.gbc
 
 # For contributors to make sure a change didn't affect the contents of the rom.
-compare: red blue
+compare: red blue green
 	@$(MD5) roms.md5
 
 clean:
-	rm -f $(roms) $(pokered_obj) $(pokeblue_obj) $(roms:.gbc=.sym)
+	rm -f $(roms) $(pokered_obj) $(pokegreen_obj) $(pokeblue_obj) $(roms:.gbc=.sym)
 	find . \( -iname '*.1bpp' -o -iname '*.2bpp' -o -iname '*.pic' \) -exec rm {} +
 	$(MAKE) clean -C tools/
 
@@ -45,8 +47,13 @@ $(pokered_obj): %_red.o: %.asm $$(dep)
 $(pokeblue_obj): %_blue.o: %.asm $$(dep)
 	rgbasm -D _BLUE -h -o $@ $*.asm
 
+%_blue.o: dep = $(shell tools/scan_includes $(@D)/$*.asm)
+$(pokegreen_obj): %_green.o: %.asm $$(dep)
+	rgbasm -D _GREEN -h -o $@ $*.asm
+
 pokered_opt  = -jsv -k 01 -l 0x33 -m 0x13 -p 0 -r 03 -t "POKEMON RED"
 pokeblue_opt = -jsv -k 01 -l 0x33 -m 0x13 -p 0 -r 03 -t "POKEMON BLUE"
+pokegreen_opt = -jsv -k 01 -l 0x33 -m 0x13 -p 0 -r 03 -t "POKEMONGREEN"
 
 %.gbc: $$(%_obj)
 	rgblink -d -n $*.sym -l pokered.link -o $@ $^

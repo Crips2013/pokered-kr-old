@@ -10,7 +10,11 @@ db 190 ; catch rate
 db 89 ; base exp yield
 IF DEF(_BLUE)
 INCBIN  "pic/bmon/magnemite.pic",0,1 ; 55, sprite dimensions
-ELSE
+ENDC
+IF DEF(_RED)
+INCBIN "pic/rgmon/magnemite.pic",0,1 ; 55, sprite dimensions
+ENDC
+IF DEF(_GREEN)
 INCBIN "pic/rgmon/magnemite.pic",0,1 ; 55, sprite dimensions
 ENDC
 dw MagnemitePicFront

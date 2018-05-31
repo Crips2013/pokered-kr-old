@@ -10,7 +10,11 @@ db 255 ; catch rate
 db 78 ; base exp yield
 IF DEF(_BLUE)
 INCBIN  "pic/bmon/oddish.pic",0,1 ; 55, sprite dimensions
-ELSE
+ENDC
+IF DEF(_RED)
+INCBIN "pic/rgmon/oddish.pic",0,1 ; 55, sprite dimensions
+ENDC
+IF DEF(_GREEN)
 INCBIN "pic/rgmon/oddish.pic",0,1 ; 55, sprite dimensions
 ENDC
 dw OddishPicFront

@@ -10,7 +10,11 @@ db 45 ; catch rate
 db 137 ; base exp yield
 IF DEF(_BLUE)
 INCBIN  "pic/bmon/jynx.pic",0,1 ; 66, sprite dimensions
-ELSE
+ENDC
+IF DEF(_RED)
+INCBIN "pic/rgmon/jynx.pic",0,1 ; 66, sprite dimensions
+ENDC
+IF DEF(_GREEN)
 INCBIN "pic/rgmon/jynx.pic",0,1 ; 66, sprite dimensions
 ENDC
 dw JynxPicFront
