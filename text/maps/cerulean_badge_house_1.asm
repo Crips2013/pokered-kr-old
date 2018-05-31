@@ -1,68 +1,59 @@
 _CeruleanHouse2Text_74e77::
-	text "#MON BADGEs"
-	line "are owned only by"
-	cont "skilled trainers."
+	text $0A,$27,$09,$2F,$04,$93,$7F,$04,$E8,$08,$26,$02,$C2,$7F,$07,$20,$08,$27; RAW DATA : 	text "포켓몬 배지는 오직"
+	line $06,$27,$03,$F3,$03,$28,$7F,$09,$DE,$03,$E9,$07,$9C,$02,$6A,$04,$48,$7F,$01,$01,$08,$2A,$06,$26,$7F,$07,$A6,$02,$DC,$02,$D9; RAW DATA : 	line "숙련된 트레이너만 가질수 있단다"
+	
+	para $02,$6A,$02,$C2,$7F,$0A,$27,$09,$2F,$04,$93,$7F,$04,$E8,$08,$26,$04,$36; RAW DATA : 	para "너는 포켓몬 배지를"
+	line $01,$01,$08,$26,$01,$4D,$7F,$07,$A6,$02,$C2,$01,$25,$7F,$01,$10,$01,$88,$02,$3A; RAW DATA : 	line "가지고 있는거 같구나"
 
-	para "I see you have"
-	line "at least one."
-
-	para "Those BADGEs have"
-	line "amazing secrets!"
+	para $04,$E8,$08,$26,$03,$49,$07,$8A,$7F,$07,$CC,$05,$2E; RAW DATA : 	para "배지들은 전부"
+	line $06,$F6,$08,$BB,$02,$3D,$7F,$05,$61,$04,$D0,$07,$9C,$7F,$07,$A6,$02,$DC,$02,$D9,$0B,$66; RAW DATA : 	line "엄청난 비밀이 있단다!"
 	prompt
 
 _CeruleanHouse2Text_74e7c::
-	text "Now then..."
+	text $01,$A7,$03,$DF,$04,$89,$0B,$6A,$0B,$6A; RAW DATA : 	text "그러면……"
 
-	para "Which of the 8"
-	line "BADGEs should I"
-	cont "describe?"
+	para $FE,$01,$13,$07,$97,$7F,$04,$E8,$08,$26,$08,$0F,$07,$01,$05,$DD; RAW DATA : 	para "8개의 배지중에서"
+	line $06,$EE,$03,$82,$7F,$01,$2D,$07,$97,$7F,$05,$E3,$04,$8D,$07,$8B,$7F,$03,$48,$01,$4D,$06,$6D,$02,$CF,$0B,$67; RAW DATA : 	line "어떤 것의 설명을 듣고싶니?"
 	done
 
 _CeruleanHouse2Text_74e81::
-	text "Come visit me any-"
-	line "time you wish."
+	text $02,$3A,$08,$0F,$07,$01,$7F,$03,$97,$7F,$07,$20,$03,$F5; RAW DATA : 	text "나중에 또 오렴"
 	done
 
 _CeruleanHouse2Text_74e96::
-	text "The ATTACK of all"
-	line "#MON increases"
-	cont "a little bit."
+	text $04,$90,$03,$47,$7F,$0A,$27,$09,$2F,$04,$93,$07,$97,$7F,$01,$68,$01,$3D,$03,$F2,$07,$9C; RAW DATA : 	text "모든 포켓몬의 공격력이"
+	line $07,$E6,$01,$AD,$7F,$05,$C3,$06,$62,$0A,$71,$02,$DC,$02,$D9; RAW DATA : 	line "조금 상승한단다"
 
-	para "It also lets you"
-	line "use FLASH any-"
-	cont "time you desire."
+	para $03,$97,$7F,$0A,$63,$03,$D1,$06,$63,$04,$36,$7F,$06,$F0,$07,$D6,$03,$47,$08,$26; RAW DATA : 	para "또 플래시를 언제든지"
+	line $05,$B7,$07,$4B,$01,$01,$02,$C9,$0A,$6F,$08,$26,$0B,$66; RAW DATA : 	line "사용가능하지!"
 	prompt
 
 _CeruleanHouse2Text_74e9b::
-	text "#MON up to L30"
-	line "will obey you."
+	text $03,$E9,$05,$07,$7F,$F9,$F6,$01,$BE,$08,$26,$07,$97,$7F,$0A,$27,$09,$2F,$04,$93,$07,$9C; RAW DATA : 	text "레벨 30까지의 포켓몬이"
+	line $02,$6A,$04,$36,$7F,$03,$6B,$04,$36,$7F,$01,$2D,$07,$9C,$03,$C5,$02,$D9; RAW DATA : 	line "너를 따를 것이란다"
 
-	para "Any higher, they"
-	line "become unruly!"
+	para $04,$48,$06,$E0,$7F,$01,$A7,$05,$18,$02,$D9,$7F,$02,$94,$07,$88,$04,$89; RAW DATA : 	para "만약 그보다 높으면"
+	line $02,$6A,$04,$36,$7F,$06,$C8,$03,$6B,$04,$36,$7F,$01,$2D,$07,$9C,$06,$DF,$0B,$66; RAW DATA : 	line "너를 안따를 것이야!"
 
-	para "It also lets you"
-	line "use CUT outside"
-	cont "of battle."
+	para $03,$97,$7F,$0A,$3E,$05,$03,$01,$B2,$04,$36,$7F,$06,$F0,$07,$D6,$03,$47,$08,$26; RAW DATA : 	para "또 풀베기를 언제든지"
+	line $05,$B7,$07,$4B,$01,$01,$02,$C9,$0A,$6F,$08,$26,$0B,$66; RAW DATA : 	line "사용가능하지!"
 	prompt
 
 _CeruleanHouse2Text_74ea0::
-	text "The SPEED of all"
-	line "#MON increases"
-	cont "a little bit."
+	text $04,$90,$03,$47,$7F,$0A,$27,$09,$2F,$04,$93,$07,$97,$7F,$06,$4A,$0A,$67,$03,$45,$01,$01; RAW DATA : 	text "모든 포켓몬의 스피드가"
+	line $07,$E6,$01,$AD,$7F,$05,$C3,$06,$62,$0A,$71,$02,$DC,$02,$D9; RAW DATA : 	line "조금 상승한단다"
 
-	para "It also lets you"
-	line "use FLY outside"
-	cont "of battle."
+	para $03,$97,$7F,$01,$68,$08,$0F,$02,$3F,$01,$B2,$04,$36,$7F,$06,$F0,$07,$D6,$03,$47,$08,$26; RAW DATA : 	para "또 공중날기를 언제든지"
+	line $05,$B7,$07,$4B,$01,$01,$02,$C9,$0A,$6F,$08,$26,$0B,$66; RAW DATA : 	line "사용가능하지!"
 	prompt
 
 _CeruleanHouse2Text_74ea5::
-	text "#MON up to L50"
-	line "will obey you."
+	text $03,$E9,$05,$07,$7F,$FB,$F6,$01,$BE,$08,$26,$07,$97,$7F,$0A,$27,$09,$2F,$04,$93,$07,$9C; RAW DATA : 	text "레벨 50까지의 포켓몬이"
+	line $02,$6A,$04,$36,$7F,$03,$6B,$04,$36,$7F,$01,$2D,$07,$9C,$03,$C5,$02,$D9; RAW DATA : 	line "너를 따를 것이란다"
 
-	para "Any higher, they"
-	line "become unruly!"
+	para $04,$48,$06,$E0,$7F,$01,$A7,$05,$18,$02,$D9,$7F,$02,$94,$07,$88,$04,$89; RAW DATA : 	para "만약 그보다 높으면"
+	line $02,$6A,$04,$36,$7F,$06,$C8,$03,$6B,$04,$36,$7F,$01,$2D,$07,$9C,$06,$DF,$0B,$66; RAW DATA : 	line "너를 안따를 것이야!"
 
-	para "It also lets you"
-	line "use STRENGTH out-"
-	cont "side of battle."
+	para $03,$97,$7F,$01,$7B,$03,$F2,$07,$8B,$7F,$06,$F0,$07,$D6,$03,$47,$08,$26; RAW DATA : 	para "또 괴력을 언제든지"
+	line $05,$B7,$07,$4B,$01,$01,$02,$C9,$0A,$6F,$08,$26,$0B,$66; RAW DATA : 	line "사용가능하지!"
 	prompt
