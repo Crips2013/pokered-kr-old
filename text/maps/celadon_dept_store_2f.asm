@@ -1,22 +1,18 @@
 _CeladonMart2Text3::
-	text "SUPER REPEL keeps"
-	line "weak #MON at"
-	cont "bay..."
+	text $06,$67,$04,$F6,$7F,$06,$4A,$0A,$61,$03,$E9,$07,$9C,$02,$C2; RAW DATA : 	text "실버 스프레이는"
+	line $06,$E0,$0A,$71,$7F,$0A,$27,$09,$2F,$04,$93,$07,$9C; RAW DATA : 	line "약한 포켓몬이"
+	cont $02,$3A,$09,$88,$02,$3A,$08,$26,$7F,$06,$CA,$01,$34,$7F,$0A,$6F,$08,$26,$0B,$6A,$0B,$6A; RAW DATA : 	cont "나타나지 않게 하지……"
 
-	para "Hmm, it's a more"
-	line "powerful REPEL!"
+	para $0A,$EC,$7F,$07,$9C,$01,$27,$7F,$06,$E0,$0A,$BF,$01,$01; RAW DATA : 	para "흠 이건 약효가"
+	line $02,$F5,$7F,$06,$8B,$7F,$06,$4A,$0A,$61,$03,$E9,$07,$9C,$02,$D9,$0B,$66; RAW DATA : 	line "더 쎈 스프레이다!"
 	done
 
 _CeladonMart2Text4::
-	text "For long outings,"
-	line "you should buy"
-	cont "REVIVE."
+	text $04,$DB,$07,$01,$7F,$07,$B5,$06,$63,$01,$03,$7F,$0A,$B0,$03,$1F,$0A,$6F,$03,$F1,$04,$89,$7F,$06,$C6,$04,$AB,$03,$D1,$03,$15; RAW DATA : 	text "밖에 장시간 활동하려면 아무래도"
+	line $01,$B2,$03,$F2,$07,$97,$7F,$07,$E6,$01,$02,$07,$8B,$7F,$05,$B7,$02,$C2,$01,$34,$7F,$07,$F1,$01,$3A,$06,$EE; RAW DATA : 	line "기력의 조각을 사는게 좋겠어"
 	done
 
 _CeladonMart2Text5::
-	text "Top Grade Items"
-	line "for Trainers!"
-
-	para "2F: TRAINER'S"
-	line "    MARKET"
+	text $09,$DE,$03,$E9,$07,$9C,$02,$6A,$7F,$07,$4B,$0A,$40,$07,$9C,$7F,$01,$01,$03,$46,$0A,$6F,$02,$D9,$0B,$66; RAW DATA : 	text "트레이너 용품이 가득하다!"
+	line $F8,$08,$FE,$7F,$0B,$6A,$0B,$6A,$7F,$09,$DE,$03,$E9,$07,$9C,$02,$6A,$08,$1E,$74,$06,$23; RAW DATA : 	line "2층 …… 트레이너즈·숍"
 	done
