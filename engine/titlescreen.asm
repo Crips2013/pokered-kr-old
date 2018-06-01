@@ -389,7 +389,11 @@ INCLUDE "data/title_mons.asm"
 
 ; prints version text (red, blue)
 PrintGameVersionOnTitleScreen:
+IF DEF(_GREEN)
+	coord hl, 6, 8
+ELSE
 	coord hl, 7, 8
+ENDC
 	ld de, VersionOnTitleScreenText
 	jp PlaceString
 
@@ -399,7 +403,7 @@ IF DEF(_RED)
 	db $60,$61,$7F,$65,$66,$67,$68,$69,"@" ; "Red Version"
 ENDC
 IF DEF(_GREEN)
-	db $62,$63,$64,$65,$66,$67,$68,$69,"@" ; "Red Version"
+	db $62,$63,$64,$7F,$65,$66,$67,$68,$69,"@" ; "Green Version"
 ENDC
 IF DEF(_BLUE)
 	db $61,$62,$63,$64,$65,$66,$67,$68,"@" ; "Blue Version"
