@@ -342,12 +342,10 @@ SpecialEnterMap:
 	jp EnterMap
 
 ContinueText:
-	db "CONTINUE", $4e
-
+	db $04,$90,$0A,$88,$07,$8B,$7F,$01,$48,$06,$03,$0A,$6F,$02,$D9,$4e
 NewGameText:
-	db   "NEW GAME"
-	next "OPTION@"
-
+	db $05,$C5,$03,$FE,$07,$4E,$7F,$04,$90,$0A,$88,$07,$8B,$7F,$06,$63,$07,$AB,$0A,$6F,$02,$D9
+	next $05,$E3,$07,$D4,$07,$8B,$7F,$04,$D9,$02,$09,$02,$D9,"@"
 CableClubOptionsText:
 	db   "TRADE CENTER"
 	next "COLOSSEUM"
@@ -356,21 +354,21 @@ CableClubOptionsText:
 DisplayContinueGameInfo:
 	xor a
 	ld [H_AUTOBGTRANSFERENABLED], a
-	coord hl, 4, 7
+	coord hl, 6, 8
 	ld b, 8
-	ld c, 14
+	ld c, 12
 	call TextBoxBorder
-	coord hl, 5, 9
+	coord hl, 7, 10
 	ld de, SaveScreenInfoText
 	call PlaceString
-	coord hl, 12, 9
+	coord hl, 11, 10
 	ld de, wPlayerName
 	call PlaceString
-	coord hl, 17, 11
+	coord hl, 15, 12
 	call PrintNumBadges
-	coord hl, 16, 13
+	coord hl, 14, 14
 	call PrintNumOwnedMons
-	coord hl, 13, 15
+	coord hl, 13, 16
 	call PrintPlayTime
 	ld a, 1
 	ld [H_AUTOBGTRANSFERENABLED], a
@@ -380,21 +378,20 @@ DisplayContinueGameInfo:
 PrintSaveScreenText:
 	xor a
 	ld [H_AUTOBGTRANSFERENABLED], a
-	coord hl, 4, 0
-	ld b, $8
-	ld c, $e
+	coord hl, 6, 0
+	lb bc, 8, 12
 	call TextBoxBorder
 	call LoadTextBoxTilePatterns
 	call UpdateSprites
-	coord hl, 5, 2
+	coord hl, 7, 2
 	ld de, SaveScreenInfoText
 	call PlaceString
-	coord hl, 12, 2
+	coord hl, 11, 2
 	ld de, wPlayerName
 	call PlaceString
-	coord hl, 17, 4
+	coord hl, 15, 4
 	call PrintNumBadges
-	coord hl, 16, 6
+	coord hl, 14, 6
 	call PrintNumOwnedMons
 	coord hl, 13, 8
 	call PrintPlayTime
@@ -434,10 +431,10 @@ PrintPlayTime:
 	jp PrintNumber
 
 SaveScreenInfoText:
-	db   "PLAYER"
-	next "BADGES    "
-	next "#DEX    "
-	next "TIME@"
+	db   $08,$06,$07,$9E,$01,$68
+	next $01,$01,$08,$26,$01,$4D,$07,$A6,$02,$C2,$7F,$04,$E8,$08,$26,$7F,$7F,$7F,$01,$13
+	next $0A,$27,$09,$2F,$04,$93,$7F,$03,$15,$01,$08,$7F,$7F,$7F,$7F,$04,$46,$04,$3E
+	next $0A,$63,$03,$E9,$07,$9C,$7F,$06,$63,$01,$03,$50
 
 DisplayOptionMenu:
 	coord hl, 0, 0

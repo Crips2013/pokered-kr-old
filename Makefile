@@ -18,7 +18,7 @@ blue: pokeblue.gbc
 green: pokegreen.gbc
 
 # For contributors to make sure a change didn't affect the contents of the rom.
-compare: red blue green
+compare: red green blue
 	@$(MD5) roms.md5
 
 clean:
@@ -47,7 +47,7 @@ $(pokered_obj): %_red.o: %.asm $$(dep)
 $(pokeblue_obj): %_blue.o: %.asm $$(dep)
 	rgbasm -D _BLUE -h -o $@ $*.asm
 
-%_blue.o: dep = $(shell tools/scan_includes $(@D)/$*.asm)
+%_green.o: dep = $(shell tools/scan_includes $(@D)/$*.asm)
 $(pokegreen_obj): %_green.o: %.asm $$(dep)
 	rgbasm -D _GREEN -h -o $@ $*.asm
 
@@ -63,9 +63,12 @@ pokegreen_opt = -jsv -k 01 -l 0x33 -m 0x13 -p 0 -r 03 -t "POKEMONGREEN"
 gfx/blue/intro_purin_1.2bpp: rgbgfx += -h
 gfx/blue/intro_purin_2.2bpp: rgbgfx += -h
 gfx/blue/intro_purin_3.2bpp: rgbgfx += -h
-gfx/red/intro_nido_1.2bpp: rgbgfx += -h
-gfx/red/intro_nido_2.2bpp: rgbgfx += -h
-gfx/red/intro_nido_3.2bpp: rgbgfx += -h
+gfx/red/intro_nido_1.6x6.2bpp: rgbgfx += -h
+gfx/red/intro_nido_2.6x6.2bpp: rgbgfx += -h
+gfx/red/intro_nido_3.6x6.2bpp: rgbgfx += -h
+gfx/green/intro_omstar_1.2bpp: rgbgfx += -h
+gfx/green/intro_omstar_2.2bpp: rgbgfx += -h
+gfx/green/intro_omstar_3.2bpp: rgbgfx += -h
 
 gfx/game_boy.2bpp: tools/gfx += --remove-duplicates
 gfx/theend.2bpp: tools/gfx += --interleave --png=$<
