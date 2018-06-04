@@ -1,3 +1,4 @@
+BuildCounter = cmd //c "tools\BuildCounter.bat"
 MD5 := md5sum -c
 
 pokered_obj := audio_red.o main_red.o text_red.o wram_red.o
@@ -41,14 +42,17 @@ endif
 
 %_red.o: dep = $(shell tools/scan_includes $(@D)/$*.asm)
 $(pokered_obj): %_red.o: %.asm $$(dep)
+	$(BuildCounter)
 	rgbasm -D _RED -h -o $@ $*.asm
 
 %_blue.o: dep = $(shell tools/scan_includes $(@D)/$*.asm)
 $(pokeblue_obj): %_blue.o: %.asm $$(dep)
+	$(BuildCounter)
 	rgbasm -D _BLUE -h -o $@ $*.asm
 
 %_green.o: dep = $(shell tools/scan_includes $(@D)/$*.asm)
 $(pokegreen_obj): %_green.o: %.asm $$(dep)
+	$(BuildCounter)
 	rgbasm -D _GREEN -h -o $@ $*.asm
 
 pokered_opt  = -jsv -k 01 -l 0x33 -m 0x13 -p 0 -r 03 -t "POKEMON RED"
@@ -58,7 +62,6 @@ pokegreen_opt = -jsv -k 01 -l 0x33 -m 0x13 -p 0 -r 03 -t "POKEMONGREEN"
 %.gbc: $$(%_obj)
 	rgblink -d -n $*.sym -l pokered.link -o $@ $^
 	rgbfix $($*_opt) $@
-	sort $*.sym -o $*.sym
 
 gfx/blue/intro_purin_1.2bpp: rgbgfx += -h
 gfx/blue/intro_purin_2.2bpp: rgbgfx += -h
