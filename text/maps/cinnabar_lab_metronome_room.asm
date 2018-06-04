@@ -1,63 +1,63 @@
 _TM35PreReceiveText::
-	text $0A,$D7,$0B,$68,$0A,$D7,$0B,$68,$0A,$D7,$0B,$66; RAW DATA : 	text "휙-휙-휙!"
-	line $07,$9C,$7F,$04,$7A,$08,$28,$7F,$01,$B2,$06,$2A,$04,$73,$06,$65,$07,$8B,$7F,$05,$18,$03,$C3,$01,$88,$0B,$66; RAW DATA : 	line "이 멋진 기술머신을 보라구!"
+	text "Tch-tch-tch!"
+	line "I made a cool TM!"
 
- 
-
-	para $07,$D4,$04,$4B,$7F,$02,$31,$02,$4B,$08,$06,$01,$34,$7F,$07,$B7,$04,$D5,$07,$8B,$01,$25,$06,$DF,$0B,$66; RAW DATA : 	para "정말 끝내주게 재밌을거야!"
+	para "It can cause all"
+	line "kinds of fun!"
 	prompt
 
-
-
 _ReceivedTM35Text::
-	text $52, $02,$C2,$0B,$64,$07,$8A,$0B,$65; RAW DATA : 	text $52, "는(은)"
-	line $50; RAW DATA : 	line "@"
+	text "<PLAYER> received "
+	line "@"
 	TX_RAM wcf4b
-	text $04,$36,$0B,$64,$07,$8B,$0B,$65,$7F,$06,$F2,$06,$FA,$02,$D9,$0B,$66,$50,$50; RAW DATA : 	text "를(을) 얻었다!@@"
+	text "!@@"
 
 _TM35ExplanationText::
-	text $0A,$D7,$0B,$68,$0A,$D7,$0B,$68,$0A,$D7,$0B,$66; RAW DATA : 	text "휙-휙-휙!"
-	line $01,$A7,$01,$27,$7F,$06,$05,$01,$01,$03,$C4,$7F,$0A,$E7,$03,$49,$01,$B2,$0B,$66; RAW DATA : 	line "그건 손가락 흔들기!"
+	text "Tch-tch-tch!"
+	line "That's the sound"
+	cont "of a METRONOME!"
 
- 
-
-	para $0A,$27,$09,$2F,$04,$93,$07,$9C,$7F,$07,$AA,$06,$65,$03,$15,$7F,$04,$90,$04,$33,$02,$C2; RAW DATA : 	para "포켓몬이 자신도 모르는"
-	line $01,$B2,$06,$2A,$07,$8B,$7F,$05,$B7,$07,$4B,$0A,$6F,$01,$34,$7F,$0A,$6F,$08,$26,$0B,$66; RAW DATA : 	line "기술을 사용하게 하지!"
+	para "It tweaks your"
+	line "#MON's brain"
+	cont "into using moves"
+	cont "it doesn't know!"
 	done
 
 _TM35NoRoomText::
-	text $01,$01,$04,$E6,$07,$9C,$7F,$07,$B2,$03,$1F,$05,$B7,$02,$CF,$03,$FE; RAW DATA : 	text "가방이 잡동사니로"
-	line $01,$01,$03,$46,$0A,$78,$0B,$66; RAW DATA : 	line "가득해!"
+	text "Your pack is"
+	line "crammed full!"
 	done
 
 _Lab3Text2::
-	text $07,$9C,$05,$4A,$07,$9C,$02,$C2,$7F,$05,$EC,$07,$EE,$04,$29,$07,$97,$7F,$0A,$27,$09,$2F,$04,$93,$08,$0F; RAW DATA : 	text "이브이는 세종류의 포켓몬중"
-	line $0A,$71,$07,$EE,$07,$88,$03,$FE,$7F,$08,$28,$0A,$AD,$0A,$72,$06,$26,$07,$A6,$06,$EE; RAW DATA : 	line "한종으로 진화할수있어"
+	text "EEVEE can evolve"
+	line "into 1 of 3 kinds"
+	cont "of #MON."
 	done
 
- 
-
 _Lab3Text3::
-	text $09,$24,$0A,$4B,$09,$9D,$07,$01; RAW DATA : 	text "컴퓨터에"
-	line $07,$CC,$07,$AA,$04,$7E,$07,$9F,$07,$9C,$7F,$07,$2D,$7F,$07,$A6,$02,$D9,$0B,$66; RAW DATA : 	line "전자메일이 와 있다!"
+	text "There's an e-mail"
+	line "message!"
 
-	para $0B,$6A,$0B,$6A,$7F,$0B,$6A,$0B,$6A,$7F,$0B,$6A,$0B,$6A; RAW DATA : 	para "…… …… ……"
+	para "..."
 
-	para $05,$EC,$04,$46,$04,$3E,$07,$97,$7F,$07,$CC,$05,$E3,$07,$97,$7F,$05,$C5,$7F,$0A,$27,$09,$2F,$04,$93; RAW DATA : 	para "세마리의 전설의 새 포켓몬"
-	line $0A,$61,$04,$3E,$07,$DE,$7F,$06,$83,$02,$F5,$7F,$09,$F4,$07,$9C,$06,$EE; RAW DATA : 	line "프리져 썬더 파이어"
+	para "The 3 legendary"
+	line "bird #MON are"
+	cont "ARTICUNO, ZAPDOS"
+	cont "and MOLTRES."
 
-	para $01,$A7,$03,$49,$07,$97,$7F,$05,$DD,$06,$64,$08,$26,$02,$C2,$7F,$05,$32,$04,$8D; RAW DATA : 	para "그들의 서식지는 불명"
+	para "Their whereabouts"
+	line "are unknown."
 
-	para $07,$4C,$04,$3E,$02,$C2,$7F,$05,$4D,$04,$17,$06,$63,$09,$EC,$7F,$01,$A9,$08,$B3,$07,$97; RAW DATA : 	para "우리는 블루시티 근처의"
-	line $03,$1F,$01,$8C,$07,$8B,$7F,$09,$8D,$05,$C6,$0A,$72,$7F,$01,$48,$0A,$B9,$07,$A4,$02,$CF,$02,$D9; RAW DATA : 	line "동굴을 탐색할 계획입니다"
+	para "We plan to explore"
+	line "the cavern close"
+	cont "to CERULEAN."
 
-	para $0B,$6A,$0B,$6A,$0A,$27,$09,$2F,$04,$93,$7F,$07,$0C,$01,$88,$09,$F0,$07,$88,$03,$FE,$05,$2E,$09,$9D; RAW DATA : 	para "……포켓몬 연구팀으로부터"
+	para "From: #MON"
+	line "RESEARCH TEAM"
 
-	para $0B,$6A,$0B,$6A,$7F,$0B,$6A,$0B,$6A,$7F,$0B,$6A,$0B,$6A; RAW DATA : 	para "…… …… ……"
+	para "..."
 	done
 
 _Lab3Text5::
-	text $0A,$A3,$04,$DA,$7F,$09,$F4,$07,$9C,$0A,$61,$07,$9C,$02,$D9,$0B,$66; RAW DATA : 	text "호박 파이프이다!"
+	text "An amber pipe!"
 	done
-
-

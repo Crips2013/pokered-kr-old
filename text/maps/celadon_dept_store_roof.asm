@@ -52,10 +52,14 @@ _CeladonMartRoofText_4850f::
 	para $50; RAW DATA : 	para "@"
 	TX_RAM wcf4b
 	text $07,$01,$02,$C2,$7F,$06,$4A,$09,$B6,$05,$CE,$07,$66,$01,$01; RAW DATA : 	text "에는 스톤샤워가"
-	line $03,$49,$06,$EE,$07,$A6,$06,$EE,$0B,$66; RAW DATA : 	line "들어있어!"
-
+	line $03,$49,$06,$EE,$07,$A6,$06,$EE,$0B,$66,$50,$50; RAW DATA : 	line "들어있어!"
+IF DEF(_YELLOW)
+	db"@@"	
+ELSE
 	para "It can spook the"
 	line "target sometimes!@@"
+ENDC
+
 	
 _CeladonMartRoofText_48515::
 	text $07,$9C,$06,$DF,$0B,$66; RAW DATA : 	text "이야!"

@@ -8,7 +8,15 @@ db DRAGON ; species type 1
 db DRAGON ; species type 2
 db 45 ; catch rate
 db 67 ; base exp yield
-INCBIN "pic/bmon/dratini.pic",0,1 ; 55, sprite dimensions
+IF DEF(_BLUE)
+INCBIN  "pic/bmon/dratini.pic",0,1 ; 55, sprite dimensions
+ENDC
+IF DEF(_RED)
+INCBIN "pic/rgmon/dratini.pic",0,1 ; 55, sprite dimensions
+ENDC
+IF DEF(_GREEN)
+INCBIN "pic/rgmon/dratini.pic",0,1 ; 55, sprite dimensions
+ENDC
 dw DratiniPicFront
 dw DratiniPicBack
 ; attacks known at lvl 0

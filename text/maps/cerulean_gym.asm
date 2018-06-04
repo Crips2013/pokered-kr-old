@@ -1,7 +1,10 @@
 _CeruleanGymText_5c7be::
 	text $06,$C8,$02,$87,$0B,$66; RAW DATA : 	text "안녕!"
 	line $07,$4C,$04,$3E,$7F,$05,$DD,$03,$FE,$7F,$08,$B3,$07,$8D,$05,$18,$08,$26,$0B,$67; RAW DATA : 	line "우리 서로 처음보지?"
-
+IF DEF(_YELLOW)
+	para $02,$6A,$02,$C2,$7F,$0A,$27,$09,$2F,$04,$93,$7F,$07,$CC,$03,$DB,$07,$8B; RAW DATA : 	para "너는 포켓몬 전략을"
+	line $06,$EE,$03,$81,$01,$34,$7F,$08,$3E,$02,$CF,$0B,$67; RAW DATA : 	line "어떡게 짰니?"	
+ELSE
 	para "Trainers who want"
 	line "to turn pro have"
 	cont "to have a policy"
@@ -10,12 +13,19 @@ _CeruleanGymText_5c7be::
 	para "What is your"
 	line "approach when you"
 	cont "catch #MON?"
-
+ENDC
 	para $02,$4B,$7F,$04,$E6,$09,$07,$07,$8A; RAW DATA : 	para "내 방침은"
 	line $04,$B0,$09,$88,$07,$A4,$7F,$0A,$27,$09,$2F,$04,$93,$01,$6A,$7F,$0A,$74,$01,$E2,$0A,$6F,$02,$C2; RAW DATA : 	line "물타입 포켓몬과 함께하는"
 	cont $07,$CC,$03,$F2,$7F,$01,$68,$01,$3D,$07,$9C,$06,$DF,$0B,$66; RAW DATA : 	cont "전력 공격이야!"
-	done
 
+IF DEF(_YELLOW)
+	para $05,$EC,$01,$48,$7F,$07,$D6,$07,$9F,$07,$97,$7F,$04,$CC,$02,$80,$7F,$07,$9C,$06,$4D,$07,$9C,$01,$01; RAW DATA : 	para "세계 제일의 미녀 이슬이가"
+	line $07,$20,$02,$C3,$7F,$02,$77,$7F,$05,$C3,$02,$EB,$03,$C3,$01,$88,$0B,$66; RAW DATA : 	line "오늘 네 상대라구!"
+
+	para $08,$08,$05,$61,$03,$26,$02,$CF; RAW DATA : 	para "준비됐니"
+	line $01,$9D,$07,$10,$03,$35,$07,$9C,$06,$DF,$0B,$67; RAW DATA : 	line "귀염둥이야?"
+ENDC
+	done
 _CeruleanGymText_5c7c3::
 	text $01,$B2,$06,$2A,$04,$73,$06,$65,$F7,$F7,$7F,$06,$C8,$07,$01,$02,$C2; RAW DATA : 	text "기술머신11 안에는"
 	line $01,$25,$0A,$40,$01,$74,$05,$E1,$07,$9C,$7F,$03,$49,$06,$EE,$07,$A6,$06,$EE,$0B,$66; RAW DATA : 	line "거품광선이 들어있어!"
@@ -37,6 +47,7 @@ _CeruleanGymText_5c7c8::
 	para $01,$A7,$04,$3E,$01,$4D,$7F,$07,$9C,$7F,$01,$B2,$06,$2A,$04,$73,$06,$65,$03,$15,$7F,$08,$09,$01,$34,$0B,$66; RAW DATA : 	para "그리고 이 기술머신도 줄게!"
 	done
 
+
 _ReceivedTM11Text::
 	text $52, $02,$C2,$0B,$64,$07,$8A,$0B,$65; RAW DATA : 	text $52, "는(은)"
 	line $01,$B2,$06,$2A,$04,$73,$06,$65,$F7,$F7,$04,$36,$0B,$64,$07,$8B,$0B,$65; RAW DATA : 	line "기술머신11를(을)"
@@ -45,11 +56,15 @@ _ReceivedTM11Text::
 _CeruleanGymText_5c7d3::
 	text $01,$01,$04,$E6,$07,$8B,$7F,$05,$61,$07,$4C,$01,$4D,$7F,$02,$D9,$06,$63,$07,$20,$03,$F5,$0B,$66; RAW DATA : 	text "가방을 비우고 다시오렴!"
 	done
-
+	
 _CeruleanGymText_5c7d8::
+IF DEF(_YELLOW)
+	text $04,$4B,$03,$15,$7F,$06,$C8,$03,$25,$0B,$66; RAW DATA : 	text "말도 안돼!"
+	line $02,$4B,$01,$01,$7F,$07,$E3,$02,$DC,$04,$4B,$07,$9C,$06,$DF,$0B,$67; RAW DATA : 	line "내가 졌단말이야?"
+ELSE
 	text "Wow!"
 	line "You're too much!"
-
+ENDC
 	para $07,$F1,$06,$C6,$0B,$66; RAW DATA : 	para "좋아!"
 
 	para $02,$6D,$7F,$02,$3F,$7F,$07,$9C,$01,$45,$02,$D9,$02,$C2,$7F,$08,$25,$0A,$35,$07,$9E; RAW DATA : 	para "넌 날 이겼다는 증표인"
@@ -63,7 +78,6 @@ _CeruleanGymBattleText1::
 	para $07,$9C,$06,$4D,$07,$9C,$02,$D4,$07,$9C,$7F,$02,$3A,$05,$E3,$7F,$0A,$6A,$07,$44,$03,$15,$7F,$06,$F8,$06,$EE,$0B,$66; RAW DATA : 	para "이슬이님이 나설 필요도 없어!"
 	done
 
-	
 _CeruleanGymEndBattleText1::
 	text $02,$6A,$7F,$07,$D4,$04,$4B; RAW DATA : 	text "너 정말"
 	line $02,$EB,$02,$DC,$0A,$6F,$01,$88,$02,$3A,$0B,$66; RAW DATA : 	line "대단하구나!"
@@ -118,4 +132,3 @@ _CeruleanGymText_5c82f::
 	line $01,$FF,$02,$3A,$7F,$07,$F1,$07,$8A,$7F,$09,$3E,$05,$61,$01,$01; RAW DATA : 	line "꽤나 좋은 콤비가"
 	cont $03,$29,$06,$26,$07,$A6,$07,$8B,$7F,$01,$2D,$7F,$01,$10,$07,$8A,$03,$05,$0B,$66; RAW DATA : 	cont "될수있을 것 같은데!"
 	done
-

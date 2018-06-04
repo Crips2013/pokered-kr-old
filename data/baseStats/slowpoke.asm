@@ -8,7 +8,15 @@ db WATER ; species type 1
 db PSYCHIC ; species type 2
 db 190 ; catch rate
 db 99 ; base exp yield
-INCBIN "pic/bmon/slowpoke.pic",0,1 ; 55, sprite dimensions
+IF DEF(_BLUE)
+INCBIN  "pic/bmon/slowpoke.pic",0,1 ; 55, sprite dimensions
+ENDC
+IF DEF(_RED)
+INCBIN "pic/rgmon/slowpoke.pic",0,1 ; 55, sprite dimensions
+ENDC
+IF DEF(_GREEN)
+INCBIN "pic/rgmon/slowpoke.pic",0,1 ; 55, sprite dimensions
+ENDC
 dw SlowpokePicFront
 dw SlowpokePicBack
 ; attacks known at lvl 0

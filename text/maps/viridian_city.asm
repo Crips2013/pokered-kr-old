@@ -1,3 +1,65 @@
+_ViridianCityText_19219::
+	text "First, you need"
+	line "to weaken the"
+	cont "target #MON."
+	done
+
+_ViridianCityText_1920a::
+	text "Ahh, I've had my"
+	line "coffee now and I"
+	cont "feel great!"
+
+	para "Sure you can go"
+	line "through!"
+
+IF DEF(_YELLOW)
+	para "I'm sorry I was"
+	line "so rude to you!"
+
+	para "I see you're using"
+	line "a #DEX."
+
+	para "I'll show you how"
+	line "to catch #MON"
+	cont "as my apology."
+	done
+	
+ELSE
+	para "Are you in a"
+	line "hurry?"
+	done
+ENDC
+
+_ViridianCityText_1920f::
+	text "I see you're using"
+	line "a #DEX."
+
+	para "When you catch a"
+	line "#MON, #DEX"
+	cont "is automatically"
+	cont "updated."
+
+	para "What? Don't you"
+	line "know how to catch"
+	cont "#MON?"
+
+	para "I'll show you"
+	line "how to then."
+	done
+IF DEF(_YELLOW)
+_OldManTextAfterBattle::
+	text "That didn't work!"
+	line "I must be losing"
+	cont "my touch."
+
+	para "I've run out of"
+	line "# BALLs too."
+
+	para "I have to get some"
+	line "at #MON MART."
+	done
+ENDC
+
 _ViridianCityText1::
 	text "Those # BALLs"
 	line "at your waist!"
@@ -97,45 +159,31 @@ _TM42NoRoomText::
 	line "stuff already."
 	done
 
-_ViridianCityText_1920a::
-	text "Ahh, I've had my"
-	line "coffee now and I"
-	cont "feel great!"
-
-	para "Sure you can go"
-	line "through!"
-
-	para "Are you in a"
-	line "hurry?"
+IF DEF(_YELLOW)
+_OldManAgainText1::
+	text "Hmm? You want me"
+	line "to show you how"
+	cont "to catch #MON"
+	cont "again?"
 	done
 
-_ViridianCityText_1920f::
-	text "I see you're using"
-	line "a #DEX."
-
-	para "When you catch a"
-	line "#MON, #DEX"
-	cont "is automatically"
-	cont "updated."
-
-	para "What? Don't you"
-	line "know how to catch"
-	cont "#MON?"
-
-	para "I'll show you"
-	line "how to then."
+_OldManAgainText2::
+	text "Dandy! Watch what"
+	line "I do closely now!"
 	done
 
+_OldManAgainText3::
+	text "Oh... I'm not good"
+	line "enough for you."
+	done
+
+ELSE
 _ViridianCityText_19214::
 	text "Time is money..."
 	line "Go along then."
 	done
 
-_ViridianCityText_19219::
-	text "First, you need"
-	line "to weaken the"
-	cont "target #MON."
-	done
+ENDC
 
 _ViridianCityText8::
 	text "VIRIDIAN CITY "

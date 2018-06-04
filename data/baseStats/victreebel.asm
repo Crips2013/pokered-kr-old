@@ -8,7 +8,15 @@ db GRASS ; species type 1
 db POISON ; species type 2
 db 45 ; catch rate
 db 191 ; base exp yield
-INCBIN "pic/bmon/victreebel.pic",0,1 ; 77, sprite dimensions
+IF DEF(_BLUE)
+INCBIN "pic/bmon/victreebel.pic",0,1 ; 77, sprite dimensions	
+ENDC
+IF DEF(_RED)
+INCBIN "pic/rgmon/victreebel.pic",0,1 ; 77, sprite dimensions	
+ENDC
+IF DEF(_GREEN)
+INCBIN "pic/rgmon/victreebel.pic",0,1 ; 77, sprite dimensions	
+ENDC
 dw VictreebelPicFront
 dw VictreebelPicBack
 ; attacks known at lvl 0

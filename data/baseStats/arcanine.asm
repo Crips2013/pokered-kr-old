@@ -8,7 +8,15 @@ db FIRE ; species type 1
 db FIRE ; species type 2
 db 75 ; catch rate
 db 213 ; base exp yield
-INCBIN "pic/bmon/arcanine.pic",0,1 ; 77, sprite dimensions
+IF DEF(_BLUE)
+INCBIN  "pic/bmon/arcanine.pic",0,1 ; 77, sprite dimensions
+ENDC
+IF DEF(_RED)
+INCBIN "pic/rgmon/arcanine.pic",0,1 ; 77, sprite dimensions
+ENDC
+IF DEF(_GREEN)
+INCBIN "pic/rgmon/arcanine.pic",0,1 ; 77, sprite dimensions
+ENDC
 dw ArcaninePicFront
 dw ArcaninePicBack
 ; attacks known at lvl 0

@@ -21,11 +21,16 @@ _AgathaBeforeBattleText::
 	line $08,$28,$06,$26,$04,$36,$0B,$66; RAW DATA : 	line "진수를!"
 	done
 	
+
 _AgathaEndBattleText::
+IF DEF(_YELLOW)
 	text $07,$20,$0B,$68,$0A,$A3,$7F,$04,$BA,$01,$01; RAW DATA : 	text "오-호 뭔가"
+ELSE
+	text "Oh ho!"
+ENDC
 	line $05,$18,$09,$BB,$02,$4B,$01,$B2,$01,$01,$7F,$06,$C6,$02,$CF,$01,$88,$02,$3A,$7F,$01,$EF,$04,$46,$06,$DF; RAW DATA : 	line "보통내기가 아니구나 꼬마야"
 	prompt
-	
+
 _AgathaAfterBattleText::
 	text $02,$77,$01,$01,$7F,$07,$9C,$01,$45,$02,$DC,$02,$D9; RAW DATA : 	text "네가 이겼단다"
 	

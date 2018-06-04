@@ -18,7 +18,20 @@ ViridianMartParcelQuestText::
 
 	para "<PLAYER> got"
 	line "OAK's PARCEL!@@"
+IF DEF(_YELLOW)
+_ViridianMartText2::
+	text "This shop sells a"
+	line "lot of PARLYZ"
+	cont "HEALs."
+	done
 
+_ViridianMartText3::
+	text "The shop finally"
+	line "has some POTIONs"
+	cont "in stock."
+	done
+	
+ELSE
 _ViridianMartText2::
 	text "This shop sells"
 	line "many ANTIDOTEs."
@@ -28,3 +41,6 @@ _ViridianMartText3::
 	text "No! POTIONs are"
 	line "all sold out."
 	done
+
+ENDC
+

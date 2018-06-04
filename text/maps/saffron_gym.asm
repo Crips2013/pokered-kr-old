@@ -131,9 +131,14 @@ _SaffronGymEndBattleText2::
 
 _SaffronGymAfterBattleText2::
 	text "Psychic #MON"
+IF DEF(_YELLOW)
+	text "Psychic #MON"
+	line "fear only bugs!"
+ELSE
 	line "fear only ghosts"
 	cont "and bugs!"
 	done
+ENDC
 
 _SaffronGymBattleText3::
 	text "#MON take on"

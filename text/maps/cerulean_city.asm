@@ -103,7 +103,60 @@ _CeruleanCityText5::
 	text $0A,$27,$09,$2F,$04,$93,$7F,$03,$15,$01,$08,$07,$8B,$7F,$04,$48,$03,$47,$02,$D9,$01,$4D,$0B,$67; RAW DATA : 	text "포켓몬 도감을 만든다고?"
 	line $01,$A7,$01,$25,$7F,$02,$EB,$02,$DC,$0A,$71,$03,$05,$0B,$66; RAW DATA : 	line "그거 대단한데!"
 	done
+IF DEF(_YELLOW)
+_CeruleanCityText6::
+	text $07,$09,$01,$B2,$7F,$07,$9C,$7F,$05,$B7,$03,$C7,$03,$49,$07,$8A; RAW DATA : 	text "여기 이 사람들은"
+	line $05,$63,$08,$2D,$09,$A0,$07,$9C,$04,$36,$7F,$02,$E7,$0A,$7F,$02,$DC,$02,$D9; RAW DATA : 	line "빈집털이를 당했단다"
 
+	para $07,$4C,$04,$3E,$02,$C2,$7F,$07,$9C,$7F,$05,$B7,$01,$27,$07,$97,$7F,$04,$E8,$0A,$C4,$07,$01,$02,$C2; RAW DATA : 	para "우리는 이 사건의 배후에는"
+	line $03,$FE,$09,$2F,$02,$DC,$07,$9C,$7F,$07,$A6,$02,$D9,$01,$4D,$7F,$0A,$AE,$06,$65,$0A,$78; RAW DATA : 	line "로켓단이 있다고 확신해"
+
+	para $03,$FE,$09,$2F,$02,$DC,$7F,$03,$77,$04,$AE,$07,$01; RAW DATA : 	para "로켓단 때문에"
+	line $01,$46,$08,$9B,$03,$49,$03,$15,$7F,$01,$61,$04,$73,$04,$3E,$7F,$06,$82,$02,$C2,$02,$D9,$02,$CF,$01,$BE,$0B,$66; RAW DATA : 	line "경찰들도 골머리 썩는다니까!"
+	done
+
+ 
+
+_CeruleanCityText_19730::
+	text $07,$AA,$7F,$05,$35,$05,$1C,$0B,$66; RAW DATA : 	text "자 붐볼!"
+	line $07,$10,$03,$1F,$03,$F2,$07,$8B,$7F,$04,$DF,$0A,$D6,$0A,$78,$03,$C3,$0B,$66; RAW DATA : 	line "염동력을 발휘해라!"
+	cont $05,$35,$05,$1C,$0B,$66; RAW DATA : 	cont "붐볼!"
+	cont $07,$D6,$04,$DF,$7F,$08,$2D,$08,$0F,$7F,$07,$EB,$7F,$0A,$78,$0B,$66; RAW DATA : 	cont "제발 집중 좀 해!"
+	done
+
+_CeruleanCityText_19735::
+	text $05,$35,$05,$1C,$0B,$66,$7F,$04,$96,$09,$BB,$04,$DA,$09,$01,$01,$B2,$0B,$66; RAW DATA : 	text "붐볼! 몸통박치기!"
+	line $06,$C6,$02,$CF,$06,$DF,$0B,$66,$7F,$03,$97,$7F,$06,$67,$06,$26,$0A,$7F,$07,$AD,$06,$C6,$0B,$66; RAW DATA : 	line "아니야! 또 실수했잖아!"
+	done
+
+_CeruleanCityText_1973a::
+	text $05,$35,$05,$1C,$0B,$66,$7F,$06,$4A,$0A,$67,$03,$45,$7F,$06,$4A,$09,$88,$0B,$66; RAW DATA : 	text "붐볼! 스피드 스타!"
+	line $06,$C6,$02,$CF,$0B,$66,$7F,$06,$C6,$02,$CF,$03,$C3,$02,$CF,$01,$BE,$0B,$66; RAW DATA : 	line "아니! 아니라니까!"
+
+	para $0A,$27,$09,$2F,$04,$93,$07,$8B,$7F,$0A,$C6,$03,$F3,$06,$63,$09,$80,$02,$C2,$01,$27; RAW DATA : 	para "포켓몬을 훈련시키는건"
+	line $06,$EE,$03,$F1,$07,$66,$0B,$66; RAW DATA : 	line "어려워!"
+
+	para $02,$77,$7F,$0A,$27,$09,$2F,$04,$93,$07,$9C,$7F,$02,$6E,$7F,$06,$F3,$04,$46,$02,$3A; RAW DATA : 	para "네 포켓몬이 널 얼마나"
+	line $07,$AF,$7F,$03,$6B,$04,$36,$08,$26,$02,$C2,$7F,$02,$6A,$07,$97; RAW DATA : 	line "잘 따를지는 너의"
+	cont $09,$DE,$03,$E9,$07,$9C,$02,$6A,$03,$FE,$05,$DD,$07,$97,$7F,$02,$C9,$03,$F2,$07,$01,$7F,$02,$DE,$03,$F1,$07,$A6,$06,$EE,$0B,$66; RAW DATA : 	cont "트레이너로서의 능력에 달려있어!"
+	done
+
+_CeruleanCityText_1976f::
+	text $05,$35,$05,$1C,$07,$8A,$7F,$07,$E9,$01,$4D,$07,$A6,$02,$D9,$0B,$6A,$0B,$6A; RAW DATA : 	text "붐볼은 졸고있다……"
+	done
+
+_CeruleanCityText_19774::
+	text $05,$35,$05,$1C,$07,$8A,$7F,$01,$8C,$03,$DF,$02,$D9,$02,$CF,$01,$4D,$07,$A6,$02,$D9,$0B,$6A,$0B,$6A; RAW DATA : 	text "붐볼은 굴러다니고있다……"
+	done
+
+_CeruleanCityText_19779::
+	text $05,$35,$05,$1C,$07,$8A,$7F,$03,$3A,$03,$19,$06,$D2,$02,$D9,$0B,$6A,$0B,$6A; RAW DATA : 	text "붐볼은 뒤돌았다……"
+	done
+
+_CeruleanCityText_1977e::
+	text $05,$35,$05,$1C,$07,$8A,$7F,$08,$06,$05,$0F,$07,$8B,$7F,$04,$AB,$06,$63,$0A,$6F,$01,$4D,$07,$A6,$02,$D9,$0B,$6A,$0B,$6A; RAW DATA : 	text "붐볼은 주변을 무시하고있다……"
+	done
+ELSE
 _CeruleanCityText6::
 	text "The people here"
 	line "were robbed."
@@ -163,6 +216,7 @@ _CeruleanCityText_1977e::
 	text "SLOWBRO"
 	line "ignored orders..."
 	done
+ENDC
 
 _CeruleanCityText9::
 	text $02,$3D,$7F,$05,$71,$01,$03,$7F,$07,$AA,$07,$CC,$01,$25,$01,$01,$7F,$01,$0E,$01,$4D,$06,$6D,$06,$EE,$0B,$66; RAW DATA : 	text "난 빨간 자전거가 갖고싶어!"
@@ -205,4 +259,4 @@ _CeruleanCityText17::
 	text $05,$4D,$04,$17,$06,$63,$09,$EC,$7F,$0A,$27,$09,$2F,$04,$93,$7F,$08,$BC,$07,$80,$01,$6C; RAW DATA : 	text "블루시티 포켓몬 체육관"
 	line $01,$6C,$07,$B5,$7F,$07,$9C,$06,$4D; RAW DATA : 	line "관장 이슬"
 	cont $04,$4B,$01,$6D,$03,$DE,$07,$9C,$7F,$07,$9E,$06,$EE; RAW DATA : 	cont "말괄량이 인어"
-	done
+		done

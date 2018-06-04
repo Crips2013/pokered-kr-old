@@ -30,13 +30,21 @@ _DaisyUseMapText::
 	done
 
 _BluesHouseText2::
+IF DEF(_YELLOW)
+	text $02,$6A,$07,$2D,$7F,$0A,$74,$01,$E2,$0A,$71,$7F,$06,$63,$01,$03,$07,$9C,$7F,$04,$49,$07,$8A; RAW DATA : 	text "너와 함께한 시간이 많은"
+	line $0A,$27,$09,$2F,$04,$93,$07,$9F,$06,$26,$03,$FF,$7F,$02,$F5,$07,$4D,$7F,$09,$03,$04,$D0,$0A,$78,$07,$DE; RAW DATA : 	line "포켓몬일수록 더욱 친밀해져"
+	done
+ELSE
 	text "#MON are living"
 	line "things! If they"
 	cont "get tired, give"
 	cont "them a rest!"
 	done
+ENDC
+
 
 _BluesHouseText3::
 	text $09,$7B,$7F,$08,$26,$03,$15,$02,$D9; RAW DATA : 	text "큰 지도다"
 	line $01,$82,$07,$B5,$0A,$F7,$7F,$07,$7F,$07,$4B,$0A,$72,$01,$2D,$7F,$01,$10,$02,$D9; RAW DATA : 	line "굉장히 유용할것 같다"
 	done
+

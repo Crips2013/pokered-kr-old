@@ -8,7 +8,15 @@ db POISON ; species type 1
 db POISON ; species type 2
 db 235 ; catch rate
 db 59 ; base exp yield
-INCBIN "pic/bmon/nidoranf.pic",0,1 ; 55, sprite dimensions
+IF DEF(_BLUE)
+INCBIN  "pic/bmon/nidoranf.pic",0,1 ; 55, sprite dimensions
+ENDC
+IF DEF(_RED)
+INCBIN "pic/rgmon/nidoranf.pic",0,1 ; 55, sprite dimensions
+ENDC
+IF DEF(_GREEN)
+INCBIN "pic/rgmon/nidoranf.pic",0,1 ; 55, sprite dimensions
+ENDC
 dw NidoranFPicFront
 dw NidoranFPicBack
 ; attacks known at lvl 0

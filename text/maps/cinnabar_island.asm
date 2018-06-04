@@ -5,12 +5,12 @@ _CinnabarIslandText8::
 _CinnabarIslandText1::
 	text $0A,$AB,$03,$F3,$7F,$08,$BC,$07,$80,$01,$6C,$07,$97,$7F,$01,$0D,$07,$0C,$07,$8A,$7F,$07,$09,$01,$B2,$05,$DD; RAW DATA : 	text "홍련 체육관의 강연은 여기서"
 	line $04,$8E,$06,$6A,$02,$82,$07,$9C,$02,$3A,$7F,$05,$BC,$01,$4D,$07,$A6,$02,$C2,$7F,$01,$7B,$08,$35,$06,$DF; RAW DATA : 	line "몇십년이나 살고있는 괴짜야"
-	done
+	Done
 
 _CinnabarIslandText2::
 	text $01,$6A,$0A,$70,$07,$AA,$03,$49,$07,$9C,$7F,$05,$32,$09,$88,$04,$F6,$04,$40,$7F,$01,$27,$04,$B0,$07,$01,$05,$DD; RAW DATA : 	text "과학자들이 불타버린 건물에서"
 	line $06,$67,$0A,$88,$07,$8B,$7F,$0A,$6F,$01,$4D,$07,$A6,$06,$EE; RAW DATA : 	line "실험을 하고있어"
-	done
+	Done
 
 
 _CinnabarIslandText3::

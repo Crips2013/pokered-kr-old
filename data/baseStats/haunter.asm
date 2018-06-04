@@ -8,7 +8,15 @@ db GHOST ; species type 1
 db POISON ; species type 2
 db 90 ; catch rate
 db 126 ; base exp yield
-INCBIN "pic/bmon/haunter.pic",0,1 ; 66, sprite dimensions
+IF DEF(_BLUE)
+INCBIN  "pic/bmon/haunter.pic",0,1 ; 66, sprite dimensions
+ENDC
+IF DEF(_RED)
+INCBIN "pic/rgmon/haunter.pic",0,1 ; 66, sprite dimensions
+ENDC
+IF DEF(_GREEN)
+INCBIN "pic/rgmon/haunter.pic",0,1 ; 66, sprite dimensions
+ENDC
 dw HaunterPicFront
 dw HaunterPicBack
 ; attacks known at lvl 0

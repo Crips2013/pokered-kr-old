@@ -1,7 +1,18 @@
 _CeladonMart4Text2::
+IF DEF(_YELLOW)
+	text $02,$8B,$03,$CB,$06,$63,$09,$EC,$07,$01,$7F,$07,$A6,$02,$C2,$7F,$06,$C6,$01,$01,$06,$BE,$07,$01,$01,$34,$7F,$08,$09; RAW DATA : 	text "노랑시티에 있는 아가씨에게 줄"
+	line $05,$E1,$04,$B0,$07,$8B,$7F,$01,$4D,$04,$33,$01,$4D,$7F,$07,$A6,$06,$EE,$0B,$66; RAW DATA : 	line "선물을 고르고 있어!"
+
+	para $05,$AF,$05,$AF,$7F,$07,$9E,$0A,$9C,$0B,$66,$7F,$07,$9C,$01,$25,$04,$89,$7F,$03,$29,$01,$25,$06,$DF,$0B,$66; RAW DATA : 	para "삐삐 인형! 이거면 될거야!"
+	line $07,$9C,$01,$34,$7F,$07,$44,$08,$22,$7F,$07,$7F,$0A,$80,$07,$9C,$06,$DF,$0B,$66; RAW DATA : 	line "이게 요즘 유행이야!"
+ELSE
 	text "I'm getting a"
 	line "# DOLL for my"
 	cont "girl friend!"
+
+ENDC
+
+
 	done
 
 _CeladonMart4Text3::

@@ -66,7 +66,7 @@ _GaryText_76103::
 
 
 	para $02,$3A,$02,$C2,$7F,$07,$9E,$07,$D4,$0A,$6F,$01,$B2,$7F,$06,$68,$08,$26,$04,$48,$0B,$6A,$0B,$6A; RAW DATA : 	para "나는 인정하기 싫지만……"
-	done
+	Done
 
 _GaryText2::
 	text $07,$20,$04,$DA,$05,$B7,$0B,$62; RAW DATA : 	text "오박사『"

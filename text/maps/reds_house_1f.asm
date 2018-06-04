@@ -10,9 +10,21 @@ _MomWakeUpText::
 	done
 
 _MomHealText1::
+IF DEF(_YELLOW)
+	text "MOM: <PLAYER>, if"
+	line "you drive your"
+	cont "#MON too hard,"
+	cont "they'll dislike"
+	cont "you."
+
+	para "You should take a"
+	line "rest."
+ELSE
 	text "MOM: <PLAYER>!"
 	line "You should take a"
 	cont "quick rest."
+
+ENDC
 	prompt
 
 _MomHealText2::

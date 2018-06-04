@@ -8,7 +8,15 @@ db NORMAL ; species type 1
 db NORMAL ; species type 2
 db 45 ; catch rate
 db 130 ; base exp yield
-INCBIN "pic/bmon/porygon.pic",0,1 ; 66, sprite dimensions
+IF DEF(_BLUE)
+INCBIN  "pic/bmon/porygon.pic",0,1 ; 66, sprite dimensions
+ENDC
+IF DEF(_RED)
+INCBIN "pic/rgmon/porygon.pic",0,1 ; 66, sprite dimensions
+ENDC
+IF DEF(_GREEN)
+INCBIN "pic/rgmon/porygon.pic",0,1 ; 66, sprite dimensions
+ENDC
 dw PorygonPicFront
 dw PorygonPicBack
 ; attacks known at lvl 0

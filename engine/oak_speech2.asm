@@ -161,21 +161,22 @@ OakSpeechSlidePicCommon:
 
 DisplayIntroNameTextBox:
 	push de
-	coord hl, 0, 0
+	coord hl, 0, 1
 	ld b, $a
 	ld c, $9
 	call TextBoxBorder
-	coord hl, 3, 0
+	coord hl, 3, 1
 	ld de, .namestring
 	call PlaceString
 	pop de
-	coord hl, 2, 2
+	coord hl, 2, 3
 	call PlaceString
 	call UpdateSprites
 	xor a
 	ld [wCurrentMenuItem], a
 	ld [wLastMenuItem], a
 	inc a
+	;inc a
 	ld [wTopMenuItemX], a
 	ld [wMenuWatchedKeys], a ; A_BUTTON
 	inc a
@@ -185,40 +186,61 @@ DisplayIntroNameTextBox:
 	jp HandleMenuInput
 
 .namestring
-	db "NAME@"
+	db $07,$9C,$04,$37,$7F,$0A,$C4,$05,$18,$50
 
 IF DEF(_RED)
 DefaultNamesPlayer:
-	db   "NEW NAME"
+	db   $06,$4A,$06,$4A,$03,$FE,$7F,$01,$41,$07,$D4,$0A,$6F,$02,$D9
 	next "RED"
-	next "ASH"
-	next "JACK"
-	db   "@"
+	next $08,$26,$07,$4C
+	next $04,$8D,$05,$DE
+	next $07,$79,$03,$15,$09,$88,$07,$9C,$01,$25; RAW DATA : 	next "윈도타이거"
+	db   $50
 
 DefaultNamesRival:
-	db   "NEW NAME"
-	next "BLUE"
-	next "GARY"
-	next "JOHN"
-	db   "@"
+	db   $06,$4A,$06,$4A,$03,$FE,$7F,$01,$41,$07,$D4,$0A,$6F,$02,$D9
+	next $01,$A7,$04,$40
+	next $04,$D9,$03,$C7
+	next $04,$AE,$0A,$AF
+	next $02,$9A,$06,$BE; RAW DATA : 	next "뇌씨"
+	db   $50
 ENDC
 
 IF DEF(_BLUE)
 DefaultNamesPlayer:
-	db   "NEW NAME"
+	db   $06,$4A,$06,$4A,$03,$FE,$7F,$01,$41,$07,$D4,$0A,$6F,$02,$D9
 	next "BLUE"
-	next "GARY"
-	next "JOHN"
-	db   "@"
+	next $08,$26,$07,$4C
+	next $04,$8D,$05,$DE
+	next $07,$79,$03,$15,$09,$88,$07,$9C,$01,$25; RAW DATA : 	next "윈도타이거"
+	db   $50
 
 DefaultNamesRival:
-	db   "NEW NAME"
-	next "RED"
-	next "ASH"
-	next "JACK"
-	db   "@"
+	db   $06,$4A,$06,$4A,$03,$FE,$7F,$01,$41,$07,$D4,$0A,$6F,$02,$D9
+	next $01,$A7,$04,$40
+	next $04,$D9,$03,$C7
+	next $04,$AE,$0A,$AF
+	next $02,$9A,$06,$BE; RAW DATA : 	next "뇌씨"
+	db   $50
 ENDC
 
+IF DEF(_GREEN)
+DefaultNamesPlayer:
+	db   $06,$4A,$06,$4A,$03,$FE,$7F,$01,$41,$07,$D4,$0A,$6F,$02,$D9
+	next $01,$A7,$04,$40
+	next $04,$D9,$03,$C7
+	next $04,$AE,$0A,$AF
+	next $02,$9A,$06,$BE; RAW DATA : 	next "뇌씨"
+	db   $50
+
+DefaultNamesRival:
+	db   $06,$4A,$06,$4A,$03,$FE,$7F,$01,$41,$07,$D4,$0A,$6F,$02,$D9
+	next "red"
+	next $08,$26,$07,$4C
+	next $04,$8D,$05,$DE
+	next $07,$79,$03,$15,$09,$88,$07,$9C,$01,$25; RAW DATA : 	next "윈도타이거"
+	db   $50
+ENDC
 GetDefaultName:
 ; a = name index
 ; hl = name list
@@ -245,27 +267,45 @@ GetDefaultName:
 
 IF DEF(_RED)
 DefaultNamesPlayerList:
-	db "NEW NAME@"
-	db "RED@"
-	db "ASH@"
-	db "JACK@"
+	db   $06,$4A,$06,$4A,$03,$FE,$7F,$01,$41,$07,$D4,$0A,$6F,$02,$D9
+	db $50,  "RED"
+	db $50,  $08,$26,$07,$4C
+	db $50,  $04,$8D,$05,$DE
+	db $50,  $07,$79,$03,$15,$09,$88,$07,$9C,$01,$25; RAW DATA : 	db $50,  "윈도타이거"
 DefaultNamesRivalList:
-	db "NEW NAME@"
-	db "BLUE@"
-	db "GARY@"
-	db "JOHN@"
+	db   $06,$4A,$06,$4A,$03,$FE,$7F,$01,$41,$07,$D4,$0A,$6F,$02,$D9
+	db $50,  $01,$A7,$04,$40
+	db $50,  $04,$D9,$03,$C7
+	db $50,  $04,$AE,$0A,$AF
+	db $50,  $02,$9A,$06,$BE; RAW DATA : 	db $50,  "뇌씨"
 ENDC
 IF DEF(_BLUE)
 DefaultNamesPlayerList:
-	db "NEW NAME@"
-	db "BLUE@"
-	db "GARY@"
-	db "JOHN@"
+	db   $06,$4A,$06,$4A,$03,$FE,$7F,$01,$41,$07,$D4,$0A,$6F,$02,$D9
+	db $50,  "BLUE"
+	db $50,  $08,$26,$07,$4C
+	db $50,  $04,$8D,$05,$DE
+	db $50,  $07,$79,$03,$15,$09,$88,$07,$9C,$01,$25; RAW DATA : 	db $50,  "윈도타이거"
 DefaultNamesRivalList:
-	db "NEW NAME@"
-	db "RED@"
-	db "ASH@"
-	db "JACK@"
+	db   $06,$4A,$06,$4A,$03,$FE,$7F,$01,$41,$07,$D4,$0A,$6F,$02,$D9
+	db $50,  $01,$A7,$04,$40
+	db $50,  $04,$D9,$03,$C7
+	db $50,  $04,$AE,$0A,$AF
+	db $50,  $02,$9A,$06,$BE; RAW DATA : 	db $50,  "뇌씨"
+ENDC
+IF DEF(_GREEN)
+DefaultNamesPlayerList:
+	db   $06,$4A,$06,$4A,$03,$FE,$7F,$01,$41,$07,$D4,$0A,$6F,$02,$D9
+	db $50,  $01,$A7,$04,$40
+	db $50,  $04,$D9,$03,$C7
+	db $50,  $04,$AE,$0A,$AF
+	db $50,  $02,$9A,$06,$BE; RAW DATA : 	db $50,  "뇌씨"
+DefaultNamesRivalList:
+	db   $06,$4A,$06,$4A,$03,$FE,$7F,$01,$41,$07,$D4,$0A,$6F,$02,$D9
+	db $50,  "red"
+	db $50,  $08,$26,$07,$4C
+	db $50,  $04,$8D,$05,$DE
+	db $50,  $07,$79,$03,$15,$09,$88,$07,$9C,$01,$25; RAW DATA : 	db $50,  "윈도타이거"
 ENDC
 
 TextTerminator_6b20:

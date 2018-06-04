@@ -79,7 +79,14 @@ _SilphCo7Text_51e4b::
 	done
 
 _SilphCo7BattleText1::
+
+IF DEF(_YELLOW)
+	text "Aha! I smell a"
+	
+ELSE
 	text "Oh ho! I smell a"
+
+ENDC
 	line "little rat!"
 	done
 

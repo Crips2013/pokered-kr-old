@@ -8,7 +8,15 @@ db WATER ; species type 1
 db WATER ; species type 2
 db 190 ; catch rate
 db 97 ; base exp yield
-INCBIN "pic/bmon/shellder.pic",0,1 ; 55, sprite dimensions
+IF DEF(_BLUE)
+INCBIN  "pic/bmon/shellder.pic",0,1 ; 55, sprite dimensions
+ENDC
+IF DEF(_RED)
+INCBIN "pic/rgmon/shellder.pic",0,1 ; 55, sprite dimensions
+ENDC
+IF DEF(_GREEN)
+INCBIN "pic/rgmon/shellder.pic",0,1 ; 55, sprite dimensions
+ENDC
 dw ShellderPicFront
 dw ShellderPicBack
 ; attacks known at lvl 0

@@ -1,4 +1,9 @@
-
+IF DEF(_YELLOW)
+_BillsHouseDontLeaveText::
+	text $06,$EE,$06,$F9,$0B,$68; RAW DATA : 	text "어엇-"
+	line $01,$01,$08,$26,$04,$46,$7F,$01,$B2,$02,$D9,$03,$F1,$0B,$68,$0B,$66; RAW DATA : 	line "가지마 기다려-!"
+	done
+ENDC
 _BillsHouseText_1e865::
 	text $09,$79,$0A,$EC; RAW DATA : 	text "크흠"
 	line $02,$3A,$02,$C2,$7F,$0A,$27,$09,$2F,$04,$93,$0B,$6A,$0B,$6A; RAW DATA : 	line "나는 포켓몬……"

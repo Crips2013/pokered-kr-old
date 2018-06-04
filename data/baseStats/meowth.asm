@@ -8,7 +8,15 @@ db NORMAL ; species type 1
 db NORMAL ; species type 2
 db 255 ; catch rate
 db 69 ; base exp yield
-INCBIN "pic/bmon/meowth.pic",0,1 ; 55, sprite dimensions
+IF DEF(_BLUE)
+INCBIN  "pic/bmon/meowth.pic",0,1 ; 55, sprite dimensions
+ENDC
+IF DEF(_RED)
+INCBIN "pic/rgmon/meowth.pic",0,1 ; 55, sprite dimensions
+ENDC
+IF DEF(_GREEN)
+INCBIN "pic/rgmon/meowth.pic",0,1 ; 55, sprite dimensions
+ENDC
 dw MeowthPicFront
 dw MeowthPicBack
 ; attacks known at lvl 0

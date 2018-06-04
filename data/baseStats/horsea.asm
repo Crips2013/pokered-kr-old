@@ -8,7 +8,15 @@ db WATER ; species type 1
 db WATER ; species type 2
 db 225 ; catch rate
 db 83 ; base exp yield
-INCBIN "pic/bmon/horsea.pic",0,1 ; 55, sprite dimensions
+IF DEF(_BLUE)
+INCBIN  "pic/bmon/horsea.pic",0,1 ; 55, sprite dimensions
+ENDC
+IF DEF(_RED)
+INCBIN "pic/rgmon/horsea.pic",0,1 ; 55, sprite dimensions
+ENDC
+IF DEF(_GREEN)
+INCBIN "pic/rgmon/horsea.pic",0,1 ; 55, sprite dimensions
+ENDC
 dw HorseaPicFront
 dw HorseaPicBack
 ; attacks known at lvl 0

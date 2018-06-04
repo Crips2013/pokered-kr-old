@@ -8,7 +8,15 @@ db BUG ; species type 1
 db POISON ; species type 2
 db 190 ; catch rate
 db 75 ; base exp yield
+IF DEF(_BLUE)
 INCBIN "pic/bmon/venonat.pic",0,1 ; 55, sprite dimensions
+ENDC
+IF DEF(_RED)
+INCBIN "pic/rgmon/venonat.pic",0,1 ; 55, sprite dimensions
+ENDC
+IF DEF(_GREEN)
+INCBIN "pic/rgmon/venonat.pic",0,1 ; 55, sprite dimensions
+ENDC
 dw VenonatPicFront
 dw VenonatPicBack
 ; attacks known at lvl 0

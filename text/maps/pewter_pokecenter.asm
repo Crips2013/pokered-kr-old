@@ -7,7 +7,20 @@ _PewterPokecenterText2::
 
 	para "Scram!"
 	done
+IF DEF(_YELLOW)
+_PewterPokecenterText3::
+	text "#MON CENTERS"
+	line "are wonderful!"
 
+	para "They heal #MON"
+	line "completely."
+
+	para "Even conditions"
+	line "like sleep, burn,"
+	cont "poison and others"
+	cont "are cured."
+	done
+ENDC
 _PewterJigglypuffText::
 	text "JIGGLYPUFF: Puu"
 	line "pupuu!"

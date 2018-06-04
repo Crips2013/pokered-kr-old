@@ -8,7 +8,15 @@ db WATER ; species type 1
 db WATER ; species type 2
 db 225 ; catch rate
 db 106 ; base exp yield
-INCBIN "pic/bmon/staryu.pic",0,1 ; 66, sprite dimensions
+IF DEF(_BLUE)
+INCBIN  "pic/bmon/staryu.pic",0,1 ; 66, sprite dimensions
+ENDC
+IF DEF(_RED)
+INCBIN "pic/rgmon/staryu.pic",0,1 ; 66, sprite dimensions
+ENDC
+IF DEF(_GREEN)
+INCBIN "pic/rgmon/staryu.pic",0,1 ; 66, sprite dimensions
+ENDC
 dw StaryuPicFront
 dw StaryuPicBack
 ; attacks known at lvl 0

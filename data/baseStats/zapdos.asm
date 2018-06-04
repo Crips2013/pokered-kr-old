@@ -8,7 +8,15 @@ db ELECTRIC ; species type 1
 db FLYING ; species type 2
 db 3 ; catch rate
 db 216 ; base exp yield
-INCBIN "pic/bmon/zapdos.pic",0,1 ; 77, sprite dimensions
+IF DEF(_BLUE)
+INCBIN  "pic/bmon/zapdos.pic",0,1 ; 77, sprite dimensions
+ENDC
+IF DEF(_RED)
+INCBIN "pic/rgmon/zapdos.pic",0,1 ; 77, sprite dimensions
+ENDC
+IF DEF(_GREEN)
+INCBIN "pic/rgmon/zapdos.pic",0,1 ; 77, sprite dimensions
+ENDC
 dw ZapdosPicFront
 dw ZapdosPicBack
 ; attacks known at lvl 0

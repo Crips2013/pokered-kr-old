@@ -8,7 +8,15 @@ db ELECTRIC ; species type 1
 db ELECTRIC ; species type 2
 db 190 ; catch rate
 db 103 ; base exp yield
-INCBIN "pic/bmon/voltorb.pic",0,1 ; 55, sprite dimensions
+IF DEF(_BLUE)
+INCBIN  "pic/bmon/voltorb.pic",0,1 ; 55, sprite dimensions
+ENDC
+IF DEF(_RED)
+INCBIN "pic/rgmon/voltorb.pic",0,1 ; 55, sprite dimensions
+ENDC
+IF DEF(_GREEN)
+INCBIN "pic/rgmon/voltorb.pic",0,1 ; 55, sprite dimensions
+ENDC
 dw VoltorbPicFront
 dw VoltorbPicBack
 ; attacks known at lvl 0

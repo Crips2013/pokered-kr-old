@@ -8,7 +8,15 @@ db WATER ; species type 1
 db WATER ; species type 2
 db 255 ; catch rate
 db 20 ; base exp yield
-INCBIN "pic/bmon/magikarp.pic",0,1 ; 66, sprite dimensions
+IF DEF(_BLUE)
+INCBIN  "pic/bmon/magikarp.pic",0,1 ; 66, sprite dimensions
+ENDC
+IF DEF(_RED)
+INCBIN "pic/rgmon/magikarp.pic",0,1 ; 66, sprite dimensions
+ENDC
+IF DEF(_GREEN)
+INCBIN "pic/rgmon/magikarp.pic",0,1 ; 66, sprite dimensions
+ENDC
 dw MagikarpPicFront
 dw MagikarpPicBack
 ; attacks known at lvl 0
