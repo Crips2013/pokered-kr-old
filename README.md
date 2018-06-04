@@ -10,6 +10,13 @@ To set up the repository, see [**INSTALL.md**](INSTALL.md).
 - 009342 : Main code
 - All of [Pokémon Yellow Korean Fan Translation][pokeyellowkr]'s staff
 
+## Open Source License
+Some of the code in this repository uses open source.
+
+https://github.com/009342/Pokemon-Hangul-Code
+
+For more information about open source license, see : https://github.com/009342/Pokemon-Hangul-Code/blob/master/LICENSE
+
 ## See also
 
 * [**Pokémon Yellow Korean Fan Translation**][pokeyellowkr]
