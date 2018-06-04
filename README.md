@@ -1,4 +1,4 @@
-# Open Source Pokémon Red/Blue Korean Translation Project
+# Open Source Pokémon Red/~~Green~~/Blue Korean Translation Project
 
 This is Open Source Pokémon Red/Blue Korean Translation Project.
 
@@ -19,6 +19,7 @@ For more information about open source license, see : https://github.com/009342/
 
 ## See also
 
+* [**Open Source Pokémon Crystal Korean Translation Project**][pokecrystalkr]
 * [**Pokémon Yellow Korean Fan Translation**][pokeyellowkr]
 * Disassembly of [**Pokémon Red/Blue**][pokered]
 * Disassembly of [**Pokémon Yellow**][pokeyellow]
@@ -31,6 +32,7 @@ For more information about open source license, see : https://github.com/009342/
 * Disassembly of [**Pokémon Emerald**][pokeemerald]
 
 [pokeyellowkr]: https://github.com/Wintiger0222/pokeyellowkr 
+[pokecrystalkr]: https://github.com/Wintiger0222/pokecrystalkr 
 [pokered]: https://github.com/pret/pokered
 [pokeyellow]: https://github.com/pret/pokeyellow
 [pokegold]: https://github.com/pret/pokegold
