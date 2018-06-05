@@ -1135,713 +1135,709 @@ _GotAwayText::
 	prompt
 
 _ItemsCantBeUsedHereText::
-	text "Items can't be"
-	line "used here."
+	text $07,$09,$01,$B2,$05,$DD,$02,$C2,$7F,$03,$15,$01,$88,$04,$36; RAW DATA : 	text "여기서는 도구를"
+	line $05,$B7,$07,$4B,$0A,$72,$7F,$06,$26,$7F,$06,$F8,$06,$60,$02,$CF,$02,$D9; RAW DATA : 	line "사용할 수 없습니다"
 	prompt
 
 _AlreadyOutText::
 	TX_RAM wBattleMonNick
-	text " is"
-	line "already out!"
+	text $02,$C2,$0B,$64,$07,$8A,$0B,$65; RAW DATA : 	text "는(은)"
+	line $07,$9C,$04,$CC,$7F,$02,$3A,$01,$01,$7F,$07,$A6,$06,$60,$02,$CF,$02,$D9; RAW DATA : 	line "이미 나가 있습니다"
 	prompt
 
 _MoveNoPPText::
-	text "No PP left for"
-	line "this move!"
+	text $01,$B2,$06,$2A,$07,$97,$7F,$02,$42,$07,$8A,$7F,$0A,$27,$07,$9E,$09,$DE,$01,$01,$7F,$06,$F8,$02,$D9,$0B,$66; RAW DATA : 	text "기술의 남은 포인트가 없다!"
 	prompt
 
 _MoveDisabledText::
-	text "The move is"
-	line "disabled!"
+	text $01,$B2,$06,$2A,$07,$8B,$7F,$05,$20,$07,$9E,$7F,$02,$E7,$0A,$78,$07,$A6,$02,$D9,$0B,$66; RAW DATA : 	text "기술을 봉인 당해있다!"
 	prompt
 
 _NoMovesLeftText::
 	TX_RAM wBattleMonNick
-	text " has no"
-	line "moves left!"
+	text $02,$C2,$0B,$64,$07,$8A,$0B,$65; RAW DATA : 	text "는(은)"
+	line $02,$4E,$7F,$06,$26,$7F,$07,$A6,$02,$C2,$7F,$01,$B2,$06,$2A,$07,$9C,$7F,$06,$F8,$02,$D9,$0B,$66; RAW DATA : 	line "낼 수 있는 기술이 없다!"
 	done
 
 _MultiHitText::
-	text "Hit the enemy"
-	line "@"
-	TX_NUM wPlayerNumHits,1,1
-	text " times!"
+	text $07,$CB,$07,$8B,$7F,$50; RAW DATA : 	text "적을 @"
+	TX_NUM wPlayerNumHits, 1, 1
+	text $0A,$B8,$7F,$04,$62,$0A,$9B,$02,$D9,$0B,$66; RAW DATA : 	text "회 맞혔다!"
 	prompt
 
 _ScaredText::
 	TX_RAM wBattleMonNick
-	text " is too"
-	line "scared to move!"
+	text $02,$C2,$0B,$64,$07,$8A,$0B,$65,$7F,$02,$6A,$04,$AB,$7F,$01,$2C,$04,$74,$06,$EE,$05,$DD; RAW DATA : 	text "는(은) 너무 겁먹어서"
+	line $07,$62,$08,$27,$07,$9F,$7F,$06,$26,$7F,$06,$F8,$02,$D9,$0B,$66; RAW DATA : 	line "움직일 수 없다!"
 	prompt
 
 _GetOutText::
-	text "GHOST: Get out..."
-	line "Get out..."
+	text $07,$7F,$03,$F9,$0B,$62,$07,$09,$01,$B2,$05,$DD,$7F,$02,$3A,$01,$01,$0B,$6A,$0B,$6A; RAW DATA : 	text "유령『여기서 나가……"
+	line $06,$82,$7F,$01,$D8,$07,$DE,$0B,$6A,$0B,$6A; RAW DATA : 	line "썩 꺼져……"
 	prompt
 
 _FastAsleepText::
-	text "<USER>"
-	line "is fast asleep!"
+	text $5A, $02,$C2,$0B,$64,$07,$8A,$0B,$65; RAW DATA : 	text $5A, "는(은)"
+	line $09,$60,$09,$60,$7F,$07,$AA,$01,$4D,$7F,$07,$A6,$02,$D9; RAW DATA : 	line "쿨쿨 자고 있다"
 	prompt
 
 _WokeUpText::
-	text "<USER>"
-	line "woke up!"
+	text $5A, $02,$C2,$0B,$64,$07,$8A,$0B,$65; RAW DATA : 	text $5A, "는(은)"
+	line $02,$AB,$07,$8B,$7F,$03,$89,$02,$D9,$0B,$66; RAW DATA : 	line "눈을 떴다!"
 	prompt
 
 _IsFrozenText::
-	text "<USER>"
-	line "is frozen solid!"
+	text $5A, $02,$C2,$0B,$64,$07,$8A,$0B,$65; RAW DATA : 	text $5A, "는(은)"
+	line $06,$F3,$06,$EE,$04,$F6,$03,$F1,$05,$DD,$7F,$07,$62,$08,$27,$07,$9F,$7F,$06,$26,$7F,$06,$F8,$02,$D9,$0B,$66,$0B,$66; RAW DATA : 	line "얼어버려서 움직일 수 없다!!"
 	prompt
 
 _FullyParalyzedText::
-	text "<USER>'s"
-	line "fully paralyzed!"
+	text $5A, $02,$C2,$0B,$64,$07,$8A,$0B,$65; RAW DATA : 	text $5A, "는(은)"
+	line $04,$46,$05,$61,$03,$27,$06,$FA,$02,$D9,$0B,$66; RAW DATA : 	line "마비되었다!"
 	prompt
 
 _FlinchedText::
-	text "<USER>"
-	line "flinched!"
+	text $5A, $02,$C2,$0B,$64,$07,$8A,$0B,$65; RAW DATA : 	text $5A, "는(은)"
+	line $01,$B2,$01,$01,$7F,$08,$07,$06,$FA,$02,$D9; RAW DATA : 	line "기가 죽었다"
 	prompt
 
 _MustRechargeText::
-	text "<USER>"
-	line "must recharge!"
+	text $01,$68,$01,$3D,$07,$97,$7F,$04,$DD,$03,$1F,$07,$88,$03,$FE; RAW DATA : 	text "공격의 반동으로"
+	line $5A,$02,$C2,$0B,$64,$07,$8A,$0B,$65,$7F,$01,$F4,$08,$36,$04,$98,$0A,$71,$02,$D9; RAW DATA : 	line $5A,"는(은) 꼼짝못한다";파괴광선같은 1턴쉬기 기술류로 확인
 	prompt
 
 _DisabledNoMoreText::
-	text "<USER>'s"
-	line "disabled no more!"
+	text $5A,$07,$97; RAW DATA : 	text $5A,"의"
+	line $05,$B7,$06,$4D,$04,$AD,$01,$B2,$01,$01,$7F,$0A,$3E,$03,$F8,$02,$D9,$0B,$66; RAW DATA : 	line "사슬묶기가 풀렸다!"
 	prompt
 
 _IsConfusedText::
-	text "<USER>"
-	line "is confused!"
+	text $5A, $02,$C2,$0B,$64,$07,$8A,$0B,$65; RAW DATA : 	text $5A, "는(은)"
+	line $0A,$A5,$03,$C5,$07,$01,$7F,$05,$6C,$07,$DE,$07,$A6,$02,$D9,$0B,$66; RAW DATA : 	line "혼란에 빠져있다!"
 	prompt
 
 _HurtItselfText::
-	text "It hurt itself in"
-	line "its confusion!"
+	text $07,$15,$04,$AE,$03,$15,$7F,$04,$90,$04,$33,$01,$4D; RAW DATA : 	text "영문도 모르고"
+	line $07,$AA,$06,$65,$07,$8B,$7F,$01,$68,$01,$3D,$0A,$7F,$02,$D9,$0B,$66; RAW DATA : 	line "자신을 공격했다!"
 	prompt
 
 _ConfusedNoMoreText::
-	text "<USER>'s"
-	line "confused no more!"
+	text $5A, $02,$C2,$0B,$64,$07,$8A,$0B,$65; RAW DATA : 	text $5A, "는(은)"
+	line $0A,$A5,$03,$C5,$07,$9C,$7F,$0A,$3E,$03,$F8,$02,$D9,$0B,$66; RAW DATA : 	line "혼란이 풀렸다!"
 	prompt
-
+;검수필요
 _SavingEnergyText::
-	text "<USER>"
-	line "is saving energy!"
+	text $5A, $02,$C2,$0B,$64,$07,$8A,$0B,$65; RAW DATA : 	text $5A, "는(은)"
+	line $0A,$FB,$07,$8B,$7F,$04,$90,$06,$D2,$02,$D9,$0B,$66; RAW DATA : 	line "힘을 모았다!"
 	prompt
 
 _UnleashedEnergyText::
-	text "<USER>"
-	line "unleashed energy!"
+	text $5A, $02,$C2,$0B,$64,$07,$8A,$0B,$65; RAW DATA : 	text $5A, "는(은)"
+	line $0A,$FB,$07,$8B,$7F,$04,$E6,$08,$E2,$0A,$7F,$02,$D9,$0B,$66; RAW DATA : 	line "힘을 방출했다!"
 	prompt
 
 _ThrashingAboutText::
-	text "<USER>'s"
-	line "thrashing about!"
+	text $5A, $02,$C2,$0B,$64,$07,$8A,$0B,$65; RAW DATA : 	text $5A, "는(은)"
+	line $02,$3D,$03,$1F,$07,$9C,$7F,$02,$3A,$01,$4D,$7F,$07,$A6,$02,$D9,$0B,$66; RAW DATA : 	line "난동이 나고 있다!"
 	done
 
 _AttackContinuesText::
-	text "<USER>'s"
-	line "attack continues!"
+	text $5A,$07,$97; RAW DATA : 	text $5A,"의"
+	line $03,$05,$04,$CC,$08,$26,$04,$36,$7F,$04,$DE,$01,$4D,$07,$A6,$02,$D9; RAW DATA : 	line "데미지를 받고있다";김밥말이같은 조이기 기술
 	done
 
 _CantMoveText::
-	text "<USER>"
-	line "can't move!"
+	text $5A, $02,$C2,$0B,$64,$07,$8A,$0B,$65; RAW DATA : 	text $5A, "는(은)"
+	line $07,$62,$08,$27,$07,$9F,$7F,$06,$26,$7F,$06,$F8,$02,$D9,$0B,$66; RAW DATA : 	line "움직일 수 없다!"
 	prompt
 
 _MoveIsDisabledText::
-	text "<USER>'s"
-	line "@"
+	text $5A,$07,$97; RAW DATA : 	text $5A,"의"
+	line $50; RAW DATA : 	line "@"
 	TX_RAM wcd6d
-	text " is"
-	cont "disabled!"
+	text $02,$C2,$0B,$64,$07,$8A,$0B,$65; RAW DATA : 	text "는(은)"
+	cont $05,$B7,$07,$4B,$0A,$72,$7F,$06,$26,$7F,$06,$F8,$02,$D9,$0B,$66; RAW DATA : 	cont "사용할 수 없다!"
 	prompt
 
 _MonName1Text::
-	text "<USER>@@"
+	text $5A,$50,$50;"<USER>@@"
 
 _Used1Text::
-	text ""
-	line "used @@"
+	text "",$07,$97
+	line $50,$50; RAW DATA : 	line "@@"
 
 _Used2Text::
-	text ""
-	line "used @@"
+	text "",$07,$97
+	line $50,$50; RAW DATA : 	line "@@"
+	;text ""
+	;line $B4,$B2,$A4,$A3,$7F,$50,$50; RAW DATA : 	;line "used @@"
+
 
 _InsteadText::
-	text "instead,"
-	cont "@@"
+	text $02,$EB,$06,$65,$07,$01,$7F; RAW DATA : 	text "대신에 "
+	cont $50,$50; RAW DATA : 	cont "@@"
 
 _CF4BText::
 	TX_RAM wcf4b
-	text "@"
+	text $50; RAW DATA : 	text "@"
 
 _ExclamationPoint1Text::
-	text "!"
+	text $0B,$66; RAW DATA : 	text "!"
 	done
 
 _ExclamationPoint2Text::
-	text "!"
+	text $0B,$66; RAW DATA : 	text "!"
 	done
 
 _ExclamationPoint3Text::
-	text "!"
+	text $0B,$66; RAW DATA : 	text "!"
 	done
 
 _ExclamationPoint4Text::
-	text "!"
+	text $0B,$66; RAW DATA : 	text "!"
 	done
 
 _ExclamationPoint5Text::
-	text "!"
+	text $0B,$66; RAW DATA : 	text "!"
 	done
 
 _AttackMissedText::
-	text "<USER>'s"
-	line "attack missed!"
+	text $5A, $07,$97
+	line $01,$68,$01,$3D,$07,$8A,$7F,$05,$68,$02,$3A,$01,$0C,$02,$D9,$0B,$66
 	prompt
-
+	;<USER>의"
+	;공격은 빗나갔다!"
 _KeptGoingAndCrashedText::
-	text "<USER>"
-	line "kept going and"
-	cont "crashed!"
+	text $5A,$03,$15; RAW DATA : 	text $5A,"도"
+	line $06,$E0,$01,$03,$07,$97,$7F,$03,$05,$04,$CC,$08,$26,$04,$36,$7F,$07,$A4,$06,$FA,$02,$D9; RAW DATA : 	line "약간의 데미지를 입었다"
+	cont $0B,$66; RAW DATA : 	cont "!"
 	prompt
 
 _UnaffectedText::
-	text "<TARGET>'s"
-	line "unaffected!"
+	text $59,$07,$01,$01,$34,$02,$C2; RAW DATA : 	text $59,"에게는"
+	line $0A,$BF,$01,$6A,$01,$01,$7F,$06,$F8,$02,$C2,$7F,$03,$4D,$7F,$0A,$6F,$02,$D9,$0B,$6A,$0B,$6A; RAW DATA : 	line "효과가 없는 듯 하다……"
 	prompt
 
 _DoesntAffectMonText::
-	text "It doesn't affect"
-	line "<TARGET>!"
+	text $59,$07,$01,$01,$34,$02,$C2; RAW DATA : 	text $59,"에게는"
+	line $07,$CC,$0A,$94,$7F,$0A,$BF,$01,$6A,$01,$01,$7F,$06,$F8,$02,$D9,$0B,$66; RAW DATA : 	line "전혀 효과가 없다!"
 	prompt
 
 _CriticalHitText::
-	text "Critical hit!"
+	text $01,$AE,$06,$02,$07,$01,$7F,$04,$62,$06,$D2,$02,$D9,$0B,$66
+	;급소에 맞았다!
 	prompt
 
 _OHKOText::
-	text "One-hit KO!"
+	text $07,$9F,$01,$3D,$0A,$6A,$05,$BC,$0B,$66
+	;일격필살!
 	prompt
 
 _LoafingAroundText::
 	TX_RAM wBattleMonNick
-	text " is"
-	line "loafing around."
+	text $02,$C2,$0B,$64,$07,$8A,$0B,$65; RAW DATA : 	text "는(은)"
+	line $01,$34,$07,$88,$04,$37,$07,$8B,$7F,$0A,$67,$07,$4C,$01,$4D,$7F,$07,$A6,$02,$D9; RAW DATA : 	line "게으름을 피우고 있다"
 	prompt
 
 _BeganToNapText::
 	TX_RAM wBattleMonNick
-	text " began"
-	line "to nap!"
+	text $02,$C2,$0B,$64,$07,$8A,$0B,$65; RAW DATA : 	text "는(은)"
+	line $02,$47,$07,$B1,$07,$AA,$01,$B2,$7F,$06,$63,$07,$AB,$0A,$7F,$02,$D9,$0B,$66; RAW DATA : 	line "낮잠자기 시작했다!"
 	prompt
 
 _WontObeyText::
 	TX_RAM wBattleMonNick
-	text " won't"
-	line "obey!"
+	text $02,$C2,$0B,$64,$07,$8A,$0B,$65; RAW DATA : 	text "는(은)"
+	line $04,$4B,$07,$8B,$7F,$03,$48,$08,$26,$7F,$06,$CA,$02,$C2,$02,$D9,$0B,$66; RAW DATA : 	line "말을 듣지 않는다!"
 	prompt
 
 _TurnedAwayText::
 	TX_RAM wBattleMonNick
-	text " turned"
-	line "away!"
+	text $7F,$02,$C2,$0B,$64,$07,$8A,$0B,$65; RAW DATA : 	text " 는(은)"
+	line $07,$3C,$04,$89,$0A,$7F,$02,$D9; RAW DATA : 	line "외면했다"
 	prompt
 
 _IgnoredOrdersText::
 	TX_RAM wBattleMonNick
-	text ""
-	line "ignored orders!"
+	text $02,$C2,$0B,$64,$07,$8A,$0B,$65
+	line $04,$8D,$03,$F9,$07,$8B,$7F,$04,$AB,$06,$63,$0A,$7F,$02,$D9,$0B,$66
+	;text $02,$C2,$0B,$64,$07,$8A,$0B,$65; RAW DATA : 	;text "는(은)"
+	;line $04,$8D,$03,$F9,$07,$8B,$7F,$04,$AB,$06,$63,$0A,$7F,$02,$D9,$0B,$66; RAW DATA : 	;line "명령을 무시했다!"
 	prompt
-
+;검수필요
 _SubstituteTookDamageText::
-	text "The SUBSTITUTE"
-	line "took damage for"
-	cont "<TARGET>!"
+	text $52, $04,$36,$0B,$64,$07,$8B,$0B,$65,$7F,$02,$EB,$06,$65,$0A,$78,$05,$DD; RAW DATA : 	text $52, "를(을) 대신해서"
+	line $05,$30,$06,$65,$07,$9C,$7F,$01,$68,$01,$3D,$07,$8B,$7F,$04,$DE,$06,$D2,$02,$D9,$0B,$66; RAW DATA : 	line "분신이 공격을 받았다!"
 	prompt
 
 _SubstituteBrokeText::
-	text "<TARGET>'s"
-	line "SUBSTITUTE broke!"
+	text $52,$07,$97,$7F,$05,$30,$06,$65,$07,$8A; RAW DATA : 	text $52,"의 분신은"
+	line $05,$B7,$03,$C3,$07,$DE,$04,$F6,$03,$F8,$02,$D9,$0B,$6A,$0B,$6A; RAW DATA : 	line "사라져버렸다……"
 	prompt
 
 _BuildingRageText::
-	text "<USER>'s"
-	line "RAGE is building!"
+	text $5A,$07,$97,$7F,$05,$30,$02,$8B,$07,$97; RAW DATA : 	text $5A,"의 분노의"
+	line $05,$1C,$09,$EC,$08,$26,$01,$01,$7F,$07,$23,$03,$C3,$01,$03,$02,$D9,$0B,$66; RAW DATA : 	line "볼티지가 올라간다!"
 	prompt
 
 _MirrorMoveFailedText::
-	text "The MIRROR MOVE"
-	next "failed!"
+	text $01,$A7,$03,$DF,$02,$3A,$7F,$03,$6B,$03,$C3,$0A,$6F,$01,$B2,$02,$C2; RAW DATA : 	text "그러나 따라하기는"
+	next $06,$67,$0A,$00,$03,$FE,$7F,$02,$31,$02,$45,$02,$D9,$0B,$66; RAW DATA : 	next "실패로 끝났다!"
 	prompt
 
 _HitXTimesText::
-	text "Hit @"
+	text $50; RAW DATA : 	text "@"
 	TX_NUM wEnemyNumHits, 1, 1
-	text " times!"
+	text $0A,$B8,$7F,$04,$62,$06,$D2,$02,$D9,$0B,$66; RAW DATA : 	text "회 맞았다!"
 	prompt
+
 
 _GainedText::
 	TX_RAM wcd6d
-	text " gained"
-	line "@@"
-
+	text $02,$C2,$0B,$64,$07,$8A,$0B,$65
+	line $50,$50; RAW DATA : 	line "@@"
+	;는(은)
+	;원문은 gained이며 아래의 경험치를 얻었다와 연결되는 문장입니다
+	;영어와 한국어의 어법차이때문에 다른곳에서 문제가 발생할수 있기에 원문을 적어둡니다
 _WithExpAllText::
-	text "with EXP.ALL,"
-	cont "@@"
+	text $0A,$70,$06,$60,$07,$B5,$09,$01,$04,$36,$7F,$09,$BB,$0A,$78; RAW DATA : 	text "학습장치를 통해"
+	cont $50,$50; RAW DATA : 	cont "@@"
 
 _BoostedText::
-	text "a boosted"
-	cont "@@"
+	text $08,$DF,$01,$01,$03,$28; RAW DATA : 	text "추가된"
+	cont $50,$50; RAW DATA : 	cont "@@"
 
 _ExpPointsText::
 	TX_NUM wExpAmountGained, 2, 4
-	text " EXP. Points!"
+	text $7F,$01,$46,$0A,$88,$09,$01,$04,$36,$7F,$06,$F2,$06,$FA,$02,$D9,$0B,$66
+	;경험치를 얻었다!
 	prompt
 
 _GrewLevelText::
 	TX_RAM wcd6d
-	text " grew"
-	line "to level @"
+	text $07,$97,$7F,$03,$E9,$05,$07,$07,$9C
+	; 의 레벨이
+	line $50; RAW DATA : 	line "@"
 	TX_NUM wCurEnemyLVL, 1, 3
-	text "!@@"
+	text $0B,$64,$07,$88,$0B,$65,$03,$FE,$7F,$03,$27,$06,$FA,$02,$D9,$0B,$66,$50,$50
+	;(으)로 되었다!
 
 _WildMonAppearedText::
-	text "Wild @"
+	text $06,$D1,$0B,$66,$7F,$06,$DF,$05,$CD,$07,$97
+	line $50; RAW DATA : 	line "@"
 	TX_RAM wEnemyMonNick
-	text ""
-	line "appeared!"
+	text $0B,$64,$07,$9C,$0B,$65,$01,$01
+	cont $09,$D2,$06,$EE,$02,$3A,$07,$34,$02,$D9,$0B,$66
 	prompt
 
 _HookedMonAttackedText::
-	text "The hooked"
-	line "@"
+	text $02,$3C,$06,$C6,$07,$23,$04,$40
+	line $50
 	TX_RAM wEnemyMonNick
-	text ""
-	cont "attacked!"
+	text $0B,$64,$07,$9C,$0B,$65,$01,$01
+	cont $02,$FD,$05,$0D,$03,$49,$06,$FA,$02,$D9,$0B,$66
 	prompt
 
 _EnemyAppearedText::
 	TX_RAM wEnemyMonNick
-	text ""
-	line "appeared!"
+	text $0B,$64,$07,$9C,$0B,$65,$01,$01; RAW DATA : 	text "(이)가"
+	line $09,$D2,$06,$EE,$02,$3A,$07,$34,$02,$D9,$0B,$66; RAW DATA : 	line "튀어나왔다!"
 	prompt
 
 _TrainerWantsToFightText::
 	TX_RAM wTrainerName
-	text " wants"
-	line "to fight!"
+	text $0B,$64,$07,$9C,$0B,$65,$01,$01; RAW DATA : 	text "(이)가"
+	line $06,$62,$05,$2E,$04,$36,$7F,$01,$29,$06,$EE,$07,$34,$02,$D9,$0B,$66; RAW DATA : 	line "승부를 걸어왔다!"
 	prompt
 
 _UnveiledGhostText::
-	text "SILPH SCOPE"
-	line "unveiled the"
-	cont "GHOST's identity!"
+	text $06,$67,$0A,$61,$06,$4A,$09,$3A,$0A,$61,$03,$FE,$7F,$07,$7F,$03,$F9,$07,$97; RAW DATA : 	text "실프스코프로 유령의"
+	line $07,$D4,$08,$BC,$04,$36,$7F,$01,$03,$09,$F4,$0A,$7F,$02,$D9,$0B,$66; RAW DATA : 	line "정체를 간파했다!"
 	prompt
 
 _GhostCantBeIDdText::
-	text "Darn! The GHOST"
-	line "can't be ID'd!"
+	text $07,$9C,$03,$E2,$06,$26,$01,$01,$0B,$66,$7F,$07,$7F,$03,$F9,$07,$97; RAW DATA : 	text "이럴수가! 유령의"
+	line $07,$D4,$08,$BC,$04,$36,$7F,$06,$CB,$7F,$06,$26,$7F,$06,$F8,$02,$D9,$0B,$66; RAW DATA : 	line "정체를 알 수 없다!"
 	prompt
 
 _GoText::
-	text "Go! @@"
+	text $01,$01,$03,$C9,$0B,$66,$7F,$50,$50
 
 _DoItText::
-	text "Do it! @@"
+	text $02,$3A,$01,$01,$03,$C9,$0B,$66,$7F,$50,$50
 
 _GetmText::
-	text "Get'm! @@"
+	text $0A,$FB,$02,$4B,$03,$C3,$0B,$66,$7F,$50,$50
 
 _EnemysWeakText::
-	text "The enemy's weak!"
-	line "Get'm! @@"
+	text $05,$C3,$02,$EB,$01,$01,$7F,$06,$E0,$0A,$78,$07,$DE,$7F,$07,$A6,$02,$D9,$0B,$66
+	line $08,$99,$06,$4A,$02,$E5,$0B,$66,$7F,$50,$50
 
 _PlayerMon1Text::
 	TX_RAM wBattleMonNick
-	text "!"
+	text $0B,$66; RAW DATA : 	text "!"
 	done
 
 _PlayerMon2Text::
 	TX_RAM wBattleMonNick
-	text " @@"
+	text $7F,$50,$50; RAW DATA : 	text " @@"
 
 _EnoughText::
-	text "enough!@@"
+	text $07,$9C,$07,$D8,$7F,$03,$26,$06,$EE,$0B,$66,$50,$50
 
 _OKExclamationText::
-	text "OK!@@"
+	text $07,$F1,$06,$C6,$0B,$66,$50,$50
 
 _GoodText::
-	text "good!@@"
+	text $07,$AF,$7F,$06,$6E,$07,$6C,$02,$D9,$0B,$66,$50,$50
 
 _ComeBackText::
 	text ""
-	line "Come back!"
+	line $03,$19,$06,$C6,$07,$2D,$0B,$66
 	done
-
+	
 _SuperEffectiveText::
-	text "It's super"
-	line "effective!"
+	text $0A,$BF,$01,$6A,$02,$C2,$7F,$03,$A9,$06,$EE,$02,$45,$02,$D9,$0B,$66
 	prompt
-
+	;효과는 굉장했다!
 _NotVeryEffectiveText::
-	text "It's not very"
-	line "effective..."
+	text $59,$07,$01,$01,$34,$02,$C2
+	line $0A,$BF,$01,$6A,$01,$01,$7F,$06,$F8,$02,$C2,$7F,$03,$4D,$7F,$0A,$6F,$02,$D9,$0B,$6A
 	prompt
-
+	;<TARGET>에게
+	;효과가 없다…
+;원문에는 TARGET이 없음 확인필요?
 _SafariZoneEatingText::
-	text "Wild @"
+	text $06,$DF,$05,$CD,$07,$97,$7F,$50
+	;야생의 
 	TX_RAM wEnemyMonNick
-	db $0
-	line "is eating!"
+	text $02,$C2,$0B,$64,$07,$8A,$0B,$65
+	line $04,$74,$07,$9C,$04,$36,$7F,$04,$74,$01,$4D,$7F,$07,$A6,$02,$D9,$0B,$66
 	prompt
-
+	;는(은)
+	;먹이를 먹고 있다!
 _SafariZoneAngryText::
-	text "Wild @"
+	text $06,$DF,$05,$CD,$07,$97,$7F,$50
 	TX_RAM wEnemyMonNick
-	db $0
-	line "is angry!"
+	text $02,$C2,$0B,$64,$07,$8A,$0B,$65
+	line $0A,$AD,$01,$01,$7F,$02,$3A,$07,$A6,$02,$D9,$0B,$66
 	prompt
+	;는(은)
+    ;화가 나있다!
 
 ; money related
 _PickUpPayDayMoneyText::
-	text "<PLAYER> picked up"
-	line "¥@"
+	text $52,$02,$C2,$0B,$64,$07,$8A,$0B,$65; RAW DATA : 	text $52,"는(은)"
+	line $50; RAW DATA : 	line "@"
 	TX_BCD wTotalPayDayMoney, 3 | LEADING_ZEROES | LEFT_ALIGN
-	text "!"
+	text $07,$68,$7F,$08,$06,$07,$6C,$02,$D9,$0B,$66; RAW DATA : 	text "원 주웠다!"
 	prompt
 
 _ClearSaveDataText::
-	text "Clear all saved"
-	line "data?"
+	text $04,$90,$03,$47,$7F,$05,$EC,$07,$9C,$05,$4A,$7F,$03,$05,$07,$9C,$09,$9D,$7F,$07,$15,$07,$0A,$07,$8B; RAW DATA : 	text $04,$90,$03,$47,$7F,$05,$EC,$07,$9C,$05,$4A,$7F,$03,$05,$07,$9C,$09,$9D,$7F,$07,$15,$07,$0A,$07,$8B; RAW DATA : 	text $04,$90,$03,$47,$7F,$05,$EC,$07,$9C,$05,$4A,$7F,$03,$05,$07,$9C,$09,$9D,$7F,$07,$15,$07,$0A,$07,$8B; RAW DATA : 	text "모든 세이브 데이터 영역을"
+	line $08,$26,$07,$4C,$01,$3A,$06,$60,$02,$CF,$01,$BE,$0B,$67; RAW DATA : 	line $08,$26,$07,$4C,$01,$3A,$06,$60,$02,$CF,$01,$BE,$0B,$67; RAW DATA : 	line $08,$26,$07,$4C,$01,$3A,$06,$60,$02,$CF,$01,$BE,$0B,$67; RAW DATA : 	line "지우겠습니까?"
 	done
 
 _WhichFloorText::
-	text "Which floor do"
-	line "you want? "
+	text $04,$8E,$7F,$08,$FE,$07,$88,$03,$FE; RAW DATA : 	text "몇 층으로"
+	line $01,$01,$06,$63,$01,$3A,$06,$60,$02,$CF,$01,$BE,$0B,$67; RAW DATA : 	line "가시겠습니까?"
 	done
 
 _PartyMenuNormalText::
-	text "Choose a #MON."
+	text $0A,$27,$09,$2F,$04,$93,$07,$8B,$7F,$01,$61,$03,$C3,$7F,$08,$06,$06,$6A,$06,$63,$07,$20; RAW DATA : 	text $0A,$27,$09,$2F,$04,$93,$07,$8B,$7F,$01,$61,$03,$C3,$7F,$08,$06,$06,$6A,$06,$63,$07,$20; RAW DATA : 	text $0A,$27,$09,$2F,$04,$93,$07,$8B,$7F,$01,$61,$03,$C3,$7F,$08,$06,$06,$6A,$06,$63,$07,$20; RAW DATA : 	text "포켓몬을 골라 주십시오"
 	done
 
 _PartyMenuItemUseText::
-	text "Use item on which"
-	line "#MON?"
+	text $06,$EE,$02,$C0,$7F,$0A,$27,$09,$2F,$04,$93,$07,$01,$7F,$05,$B7,$07,$4B,$0A,$6F,$01,$3A,$06,$60,$02,$CF,$01,$BE,$0B,$67; RAW DATA : 	text $06,$EE,$02,$C0,$7F,$0A,$27,$09,$2F,$04,$93,$07,$01,$7F,$05,$B7,$07,$4B,$0A,$6F,$01,$3A,$06,$60,$02,$CF,$01,$BE,$0B,$67; RAW DATA : 	text $06,$EE,$02,$C0,$7F,$0A,$27,$09,$2F,$04,$93,$07,$01,$7F,$05,$B7,$07,$4B,$0A,$6F,$01,$3A,$06,$60,$02,$CF,$01,$BE,$0B,$67; RAW DATA : 	text "어느 포켓몬에 사용하겠습니까?"
 	done
 
 _PartyMenuBattleText::
-	text "Bring out which"
-	line "#MON?"
+	text $06,$EE,$02,$C0,$7F,$0A,$27,$09,$2F,$04,$93,$07,$8B,$7F,$01,$D8,$02,$4B,$01,$3A,$06,$60,$02,$CF,$01,$BE,$0B,$67; RAW DATA : 	text $06,$EE,$02,$C0,$7F,$0A,$27,$09,$2F,$04,$93,$07,$8B,$7F,$01,$D8,$02,$4B,$01,$3A,$06,$60,$02,$CF,$01,$BE,$0B,$67; RAW DATA : 	text $06,$EE,$02,$C0,$7F,$0A,$27,$09,$2F,$04,$93,$07,$8B,$7F,$01,$D8,$02,$4B,$01,$3A,$06,$60,$02,$CF,$01,$BE,$0B,$67; RAW DATA : 	text "어느 포켓몬을 꺼내겠습니까?"
 	done
 
 _PartyMenuUseTMText::
-	text "Use TM on which"
-	line "#MON?"
+	text $06,$EE,$02,$C0,$7F,$0A,$27,$09,$2F,$04,$93,$07,$01,$01,$34,$7F,$01,$01,$04,$33,$09,$01,$01,$3A,$06,$60,$02,$CF,$01,$BE,$0B,$67; RAW DATA : 	text $06,$EE,$02,$C0,$7F,$0A,$27,$09,$2F,$04,$93,$07,$01,$01,$34,$7F,$01,$01,$04,$33,$09,$01,$01,$3A,$06,$60,$02,$CF,$01,$BE,$0B,$67; RAW DATA : 	text $06,$EE,$02,$C0,$7F,$0A,$27,$09,$2F,$04,$93,$07,$01,$01,$34,$7F,$01,$01,$04,$33,$09,$01,$01,$3A,$06,$60,$02,$CF,$01,$BE,$0B,$67; RAW DATA : 	text "어느 포켓몬에게 가르치겠습니까?"
 	done
 
 _PartyMenuSwapMonText::
-	text "Move #MON"
-	line "where?"
+	text $06,$EE,$03,$60,$03,$FE,$7F,$07,$9C,$03,$1F,$0A,$6F,$01,$3A,$06,$60,$02,$CF,$01,$BE,$0B,$67; RAW DATA : 	text $06,$EE,$03,$60,$03,$FE,$7F,$07,$9C,$03,$1F,$0A,$6F,$01,$3A,$06,$60,$02,$CF,$01,$BE,$0B,$67; RAW DATA : 	text $06,$EE,$03,$60,$03,$FE,$7F,$07,$9C,$03,$1F,$0A,$6F,$01,$3A,$06,$60,$02,$CF,$01,$BE,$0B,$67; RAW DATA : 	text "어디로 이동하겠습니까?"
 	done
 
 _PotionText::
 	TX_RAM wcd6d
-	text ""
-	line "recovered by @"
+	text $07,$97,$7F,$08,$BC,$03,$F2,$07,$9C; RAW DATA : 	text "의 체력이"
+	line $50; RAW DATA : 	line "@"
 	TX_NUM wHPBarHPDifference, 2, 3
-	text "!"
+	text $0A,$B8,$05,$19,$03,$27,$06,$FA,$02,$D9,$0B,$66; RAW DATA : 	text "회복되었다!"
 	done
 
 _AntidoteText::
 	TX_RAM wcd6d
-	text " was"
-	line "cured of poison!"
+	text $07,$97,$7F,$03,$16,$07,$8A; RAW DATA : 	text "의 독은"
+	line $01,$CA,$02,$2D,$07,$9C,$7F,$05,$B7,$03,$C3,$07,$E3,$02,$D9,$0B,$66; RAW DATA : 	line "깨끗이 사라졌다!"
 	done
 
 _ParlyzHealText::
 	TX_RAM wcd6d
-	text "'s"
-	line "rid of paralysis!"
+	text $07,$97,$7F,$04,$96,$07,$01; RAW DATA : 	text "의 몸에"
+	line $04,$46,$05,$61,$01,$01,$7F,$05,$B7,$03,$C3,$07,$E3,$02,$D9,$0B,$66; RAW DATA : 	line "마비가 사라졌다!"
 	done
 
 _BurnHealText::
 	TX_RAM wcd6d
-	text "'s"
-	line "burn was healed!"
+	text $07,$97; RAW DATA : 	text "의"
+	line $0A,$AD,$05,$C3,$07,$9C,$7F,$0A,$B8,$05,$19,$03,$27,$06,$FA,$02,$D9,$0B,$66; RAW DATA : 	line "화상이 회복되었다!"
 	done
 
 _IceHealText::
 	TX_RAM wcd6d
-	text " was"
-	line "defrosted!"
+	text $07,$97,$7F,$04,$96,$07,$01; RAW DATA : 	text "의 몸에"
+	line $06,$F3,$07,$8D,$07,$9C,$7F,$02,$8C,$06,$D2,$02,$D9,$0B,$66; RAW DATA : 	line "얼음이 녹았다!"
 	done
 
 _AwakeningText::
 	TX_RAM wcd6d
-	text ""
-	line "woke up!"
+	text $02,$C2,$0B,$64,$07,$8A,$0B,$65; RAW DATA : 	text "는(은)"
+	line $02,$AB,$07,$8B,$7F,$03,$89,$02,$D9,$0B,$66; RAW DATA : 	line "눈을 떴다!"
 	done
 
 _FullHealText::
 	TX_RAM wcd6d
-	text "'s"
-	line "health returned!"
+	text $02,$C2,$0B,$64,$07,$8A,$0B,$65; RAW DATA : 	text "는(은)"
+	line $01,$27,$01,$0D,$0A,$6F,$01,$34,$7F,$03,$27,$06,$FA,$02,$D9,$0B,$66; RAW DATA : 	line "건강하게 되었다!"
 	done
 
 _ReviveText::
 	TX_RAM wcd6d
-	text ""
-	line "is revitalized!"
+	text $02,$C2,$0B,$64,$07,$8A,$0B,$65; RAW DATA : 	text "는(은)"
+	line $01,$B2,$07,$4E,$07,$8B,$7F,$03,$27,$08,$A3,$06,$D2,$02,$D9,$0B,$66; RAW DATA : 	line "기운을 되찾았다!"
 	done
 
 _RareCandyText::
 	TX_RAM wcd6d
-	text " grew"
-	line "to level @"
+	text $07,$97,$7F,$03,$E9,$05,$07,$07,$9C; RAW DATA : 	text "의 레벨이"
+	line $50; RAW DATA : 	lint "@"
 	TX_NUM wCurEnemyLVL, 1, 3
-	text "!@@"
+	text $0B,$64,$07,$88,$0B,$65,$03,$FE,$7F,$03,$27,$06,$FA,$02,$D9,$0B,$66,$50,$50; RAW DATA : 	text "(으)로 되었다!@@"
 
 _TurnedOnPC1Text::
-	text "<PLAYER> turned on"
-	line "the PC."
+	text "<PLAYER>",$02,$C2,$0B,$64,$07,$8A,$0B,$65
+	line $09,$24,$0A,$4B,$09,$9D,$07,$97,$7F,$06,$4A,$07,$77,$09,$01,$04,$36,$7F,$09,$37,$02,$D9,$0B,$66
 	prompt
 
 _AccessedBillsPCText::
-	text "Accessed BILL's"
-	line "PC."
+	text $07,$9C,$06,$26,$07,$B7,$07,$97,$7F,$09,$24,$0A,$4B,$09,$9D,$07,$2D,$7F,$07,$0C,$01,$41,$0A,$7F,$02,$D9,$0B,$66
 
-	para "Accessed #MON"
-	line "Storage System."
+	para $0A,$27,$09,$2F,$04,$93,$7F,$04,$63,$01,$B8,$7F,$06,$63,$06,$4A,$09,$AB,$07,$8B
+	line $05,$32,$03,$DF,$02,$62,$06,$60,$02,$CF,$02,$D9,$0B,$66
 	prompt
 
 _AccessedSomeonesPCText::
-	text "Accessed someone's"
-	line "PC."
+	text $02,$A9,$01,$8A,$01,$01,$07,$97,$7F,$09,$24,$0A,$4B,$09,$9D,$07,$2D,$7F,$07,$0C,$01,$41,$0A,$7F,$02,$D9,$0B,$66
 
-	para "Accessed #MON"
-	line "Storage System."
+	para $0A,$27,$09,$2F,$04,$93,$7F,$04,$63,$01,$B8,$7F,$06,$63,$06,$4A,$09,$AB,$07,$8B
+	line $05,$32,$03,$DF,$02,$62,$06,$60,$02,$CF,$02,$D9,$0B,$66
 	prompt
 
 _AccessedMyPCText::
-	text "Accessed my PC."
+	text $07,$AA,$06,$65,$07,$97,$7F,$09,$24,$0A,$4B,$09,$9D,$07,$2D,$7F,$07,$0C,$01,$41,$0A,$7F,$02,$D9,$0B,$66
 
-	para "Accessed Item"
-	line "Storage System."
+	para $03,$15,$01,$88,$7F,$04,$63,$01,$B8,$7F,$06,$63,$06,$4A,$09,$AB,$07,$8B
+	line $05,$32,$03,$DF,$02,$62,$06,$60,$02,$CF,$02,$D9,$0B,$66
 	prompt
 
 _TurnedOnPC2Text::
-	text "<PLAYER> turned on"
-	line "the PC."
+	text $52,$02,$C2,$0B,$64,$07,$8A,$0B,$65
+	line $09,$24,$0A,$4B,$09,$9D,$07,$97,$7F,$06,$4A,$07,$77,$09,$01,$04,$36,$7F,$02,$76,$06,$FA,$02,$D9,$0B,$66
 	prompt
 
 _WhatDoYouWantText::
-	text "What do you want"
-	line "to do?"
+	text $04,$AB,$06,$F9,$07,$8B,$7F,$0A,$6F,$01,$3A,$06,$60,$02,$CF,$01,$BE,$0B,$67
 	done
 
 _WhatToDepositText::
-	text "What do you want"
-	line "to deposit?"
+	text $04,$AB,$06,$F9,$07,$8B; RAW DATA : 	text "무엇을"
+	line $04,$63,$01,$B2,$01,$3A,$06,$60,$02,$CF,$01,$BE,$0B,$67; RAW DATA : 	line "맡기겠습니까?"
 	done
 
 _DepositHowManyText::
-	text "How many?"
+	text $04,$8E,$7F,$01,$13,$04,$36,$7F,$04,$63,$01,$B2,$01,$3A,$06,$60,$02,$CF,$01,$BE,$0B,$67; RAW DATA : 	text "몇 개를 맡기겠습니까?"
 	done
 
 _ItemWasStoredText::
 	TX_RAM wcd6d
-	text " was"
-	line "stored via PC."
+	text $04,$36,$0B,$64,$07,$8B,$0B,$65; RAW DATA : 	text "를(을)"
+	line $09,$24,$0A,$4B,$09,$9D,$07,$01,$7F,$04,$63,$01,$45,$06,$60,$02,$CF,$02,$D9; RAW DATA : 	line "컴퓨터에 맡겼습니다"
 	prompt
 
 _NothingToDepositText::
-	text "You have nothing"
-	line "to deposit."
+	text $03,$15,$01,$88,$04,$36,$7F,$0A,$6F,$02,$3A,$03,$15; RAW DATA : 	text "도구를 하나도"
+	line $01,$01,$08,$26,$01,$4D,$7F,$07,$A6,$08,$26,$7F,$06,$CA,$06,$C6,$0B,$66; RAW DATA : 	line "가지고 있지 않아!"
 	prompt
 
 _NoRoomToStoreText::
-	text "No room left to"
-	line "store items."
+	text $03,$15,$01,$88,$01,$01,$7F,$01,$01,$03,$46,$7F,$07,$A6,$06,$60,$02,$CF,$02,$D9; RAW DATA : 	text "도구가 가득 있습니다"
+	line $02,$F5,$7F,$07,$9C,$05,$C3,$7F,$04,$63,$01,$B6,$7F,$06,$26,$7F,$06,$F8,$06,$60,$02,$CF,$02,$D9,$0B,$66; RAW DATA : 	line "더 이상 맡길 수 없습니다!"
 	prompt
 
 _WhatToWithdrawText::
-	text "What do you want"
-	line "to withdraw?"
+	text $04,$AB,$06,$F9,$07,$8B; RAW DATA : 	text "무엇을"
+	line $01,$D8,$02,$4B,$01,$3A,$06,$60,$02,$CF,$01,$BE,$0B,$67; RAW DATA : 	line "꺼내겠습니까?"
 	done
 
 _WithdrawHowManyText::
-	text "How many?"
+	text $04,$8E,$7F,$01,$13,$04,$36,$7F,$01,$D8,$02,$4B,$01,$3A,$06,$60,$02,$CF,$01,$BE,$0B,$67; RAW DATA : 	text "몇 개를 꺼내겠습니까?"
 	done
 
 _WithdrewItemText::
-	text "Withdrew"
-	line "@"
 	TX_RAM wcd6d
-	text "."
+	text $04,$36,$0B,$64,$07,$8B,$0B,$65; RAW DATA : 	text "를(을)"
+	line $09,$24,$0A,$4B,$09,$9D,$05,$DD,$7F,$01,$D8,$02,$62,$06,$60,$02,$CF,$02,$D9; RAW DATA : 	line "컴퓨터서 꺼냈습니다"
 	prompt
 
 _NothingStoredText::
-	text "There is nothing"
-	line "stored."
+	text $03,$15,$01,$88,$04,$36,$7F,$0A,$6F,$02,$3A,$03,$15; RAW DATA : 	text "도구를 하나도"
+	line $01,$01,$08,$26,$01,$4D,$7F,$07,$A6,$08,$26,$7F,$06,$CA,$06,$C6,$0B,$66; RAW DATA : 	line "가지고 있지 않아!"
 	prompt
 
 _CantCarryMoreText::
-	text "You can't carry"
-	line "any more items."
+	text $08,$26,$02,$D1,$7F,$04,$B0,$01,$27,$07,$9C,$7F,$07,$AC,$03,$B0,$7F,$07,$A6,$06,$EE,$05,$DD; RAW DATA : 	text "지닌 물건이 잔뜩 있어서"
+	line $01,$D8,$02,$4E,$7F,$06,$26,$7F,$06,$F8,$06,$60,$02,$CF,$02,$D9,$0B,$66; RAW DATA : 	line "꺼낼 수 없습니다!"
 	prompt
 
 _WhatToTossText::
-	text "What do you want"
-	line "to toss away?"
+	text $04,$AB,$06,$F9,$07,$8B; RAW DATA : 	text "무엇을"
+	line $04,$F6,$04,$3E,$01,$3A,$06,$60,$02,$CF,$01,$BE,$0B,$67; RAW DATA : 	line "버리겠습니까?"
 	done
 
 _TossHowManyText::
-	text "How many?"
+	text $04,$8E,$7F,$01,$13,$7F,$04,$F6,$04,$3E,$01,$3A,$06,$60,$02,$CF,$01,$BE,$0B,$67; RAW DATA : 	text "몇 개 버리겠습니까?"
 	done
 
 _AccessedHoFPCText::
-	text "Accessed #MON"
-	line "LEAGUE's site."
+	text $0A,$27,$09,$2F,$04,$93,$7F,$04,$3E,$01,$A7,$7F,$01,$B2,$03,$FF,$07,$01; RAW DATA : 	text "포켓몬 리그 기록에"
+	line $07,$D2,$06,$03,$0A,$7F,$06,$60,$02,$CF,$02,$D9,$0B,$66; RAW DATA : 	line "접속했습니다!"
 
-	para "Accessed the HALL"
-	line "OF FAME List."
+	para $04,$8D,$07,$19,$07,$97,$7F,$07,$CC,$02,$E7,$7F,$04,$3E,$06,$4A,$09,$DE,$07,$01; RAW DATA : 	para "명예의 전당 리스트에"
+	line $07,$D2,$06,$03,$0A,$7F,$06,$60,$02,$CF,$02,$D9,$0B,$66; RAW DATA : 	line "접속했습니다!"
 	prompt
 
 _SwitchOnText::
-	text "Switch on!"
+	text $09,$24,$0A,$4B,$09,$9D,$07,$97,$7F,$06,$4A,$07,$77,$09,$01,$04,$36,$7F,$02,$76,$06,$FA,$02,$D9,$0B,$66; RAW DATA : 	text "컴퓨터의 스위치를 넣었다!"
 	prompt
 
 _WhatText::
-	text "What?"
+	text $04,$AB,$06,$4C,$07,$9F,$07,$9C,$08,$26,$0B,$67; RAW DATA : 	text "무슨일이지?"
 	done
 
 _DepositWhichMonText::
-	text "Deposit which"
-	line "#MON?"
+	text $06,$EE,$02,$C0,$7F,$0A,$27,$09,$2F,$04,$93,$07,$8B; RAW DATA : 	text "어느 포켓몬을"
+	line $04,$63,$01,$B2,$01,$3A,$06,$60,$02,$CF,$01,$BE,$0B,$67; RAW DATA : 	line "맡기겠습니까?"
 	done
 
 _MonWasStoredText::
 	TX_RAM wcf4b
-	text " was"
-	line "stored in Box @"
+	text $04,$36,$0B,$64,$07,$8B,$0B,$65; RAW DATA : 	text "를(을)"
+	line $04,$DA,$06,$4A,$7F,$50; RAW DATA : 	line "박스 @"
 	TX_RAM wBoxNumString
-	text "."
+	text $07,$01,$7F,$04,$63,$01,$45,$02,$D9,$0B,$66; RAW DATA : 	text "에 맡겼다!"
 	prompt
 
 _CantDepositLastMonText::
-	text "You can't deposit"
-	line "the last #MON!"
+	text $06,$6E,$07,$4F,$7F,$0A,$27,$09,$2F,$04,$93,$07,$9C,$7F,$06,$F8,$06,$EE,$08,$26,$01,$34,$7F,$03,$2B,$02,$CF,$02,$D9,$0B,$66; RAW DATA : 	text "싸울 포켓몬이 없어지게 됩니다!"
 	prompt
 
 _BoxFullText::
-	text "Oops! This Box is"
-	line "full of #MON."
+	text $04,$DA,$06,$4A,$01,$01,$7F,$01,$01,$03,$46,$08,$A1,$06,$60,$02,$CF,$02,$D9,$0B,$66; RAW DATA : 	text "박스가 가득찼습니다!"
 	prompt
 
 _MonIsTakenOutText::
 	TX_RAM wcf4b
-	text " is"
-	line "taken out."
-	cont "Got @"
-	TX_RAM wcf4b
-	text "."
+	text $04,$36,$0B,$64,$07,$8B,$0B,$65,$7F,$08,$A3,$06,$D2,$02,$D9,$0B,$66; RAW DATA : 	text "를(을) 찾았다!"
+	;line $01,$D8,$02,$62,$06,$60,$02,$CF,$02,$D9,$0B,$6C; RAW DATA : 	;line "꺼냈습니다."
+	;cont $50; RAW DATA : 	;cont "@"
+	;TX_RAM wcf4b
+	;text $08,$A3,$06,$D2,$06,$60,$02,$CF,$02,$D9,$0B,$6C; RAW DATA : 	;text "찾았습니다."
 	prompt
 
 _NoMonText::
-	text "What? There are"
-	line "no #MON here!"
+	text $07,$09,$01,$B2,$07,$01,$02,$C2,$7F,$04,$63,$01,$3C,$03,$30; RAW DATA : 	text "여기에는 맡겨둔"
+	line $0A,$27,$09,$2F,$04,$93,$07,$9C,$7F,$06,$F8,$06,$60,$02,$CF,$02,$D9,$0B,$66; RAW DATA : 	line "포켓몬이 없습니다!"
 	prompt
 
 _CantTakeMonText::
-	text "You can't take"
-	line "any more #MON."
-
-	para "Deposit #MON"
-	line "first."
+	text $02,$F5,$07,$9C,$05,$C3,$7F,$03,$05,$04,$3E,$01,$4D,$7F,$01,$05,$7F,$06,$26,$7F,$06,$F8,$06,$60,$02,$CF,$02,$D9,$0B,$66; RAW DATA : 	text "더이상 데리고 갈 수 없습니다!"
 	prompt
 
 _ReleaseWhichMonText::
-	text "Release which"
-	line "#MON?"
+	text $07,$D4,$04,$4B,$03,$FE,$7F,$02,$95,$06,$C6,$08,$06,$01,$3A,$06,$60,$02,$CF,$01,$BE,$0B,$67; RAW DATA : 	text "정말로 놓아주겠습니까?"
 	done
 
 _OnceReleasedText::
-	text "Once released,"
-	line "@"
+	text $02,$95,$06,$C6,$08,$08,$7F,$0A,$27,$09,$2F,$04,$93,$07,$8A; RAW DATA : 	text "놓아준 포켓몬은"
+	line $07,$15,$07,$68,$0A,$F7,$7F,$07,$AB,$05,$10,$07,$A4,$02,$CF,$02,$D9; RAW DATA : 	line "영원히 작별입니다"
+	para $50; RAW DATA : 	para "@"
 	TX_RAM wcf4b
-	text " is"
-	cont "gone forever. OK?"
+	text $07,$8B,$0B,$64,$04,$36,$0B,$65; RAW DATA : 	text "을(를)"
+	cont $07,$D4,$04,$4B,$03,$FE,$7F,$02,$95,$06,$C6,$08,$06,$01,$3A,$06,$60,$02,$CF,$01,$BE,$0B,$67; RAW DATA : 	cont "정말로 놓아주겠습니까?"
 	done
 
 _MonWasReleasedText::
 	TX_RAM wcf4b
-	text " was"
-	line "released outside."
-	cont "Bye @"
+	text $04,$36,$0B,$64,$07,$8B,$0B,$65,$7F,$04,$DB,$07,$01,$7F,$02,$95,$06,$C6,$08,$06,$06,$FA,$02,$D9; RAW DATA : 	text "를(을) 밖에 놓아주었다"
+	line $07,$AF,$01,$01,$0B,$68,$0B,$66,$50; RAW DATA : 	line "잘가-!@"
 
 _CF4BExclamationText::
 	TX_RAM wcf4b
-	text "!"
+	text $0B,$66; RAW DATA : 	text "!"
 	prompt
 
 _RequireCoinCaseText::
-	text "A COIN CASE is"
-	line "required!@@"
+	text $03,$1F,$07,$CC,$09,$29,$07,$9C,$06,$4A,$01,$01; RAW DATA : 	text "동전케이스가"
+	line $0A,$6A,$07,$44,$0A,$75,$02,$CF,$02,$D9,$0B,$66,$50,$50; RAW DATA : 	line "필요합니다!@@"
 
 _ExchangeCoinsForPrizesText::
-	text "We exchange your"
-	line "coins for prizes."
+	text $01,$34,$07,$A3,$07,$8B,$7F,$0A,$78,$05,$DD,$7F,$04,$90,$07,$8A,$7F,$03,$1F,$07,$CC,$07,$8A; RAW DATA : 	text "게임을 해서 모은 동전은"
+	line $01,$46,$0A,$40,$07,$88,$03,$FE,$7F,$01,$83,$0A,$AF,$0A,$72,$7F,$06,$26,$7F,$07,$A6,$06,$60,$02,$CF,$02,$D9,$0B,$66; RAW DATA : 	line "경품으로 교환할 수 있습니다!"
 	prompt
 
 _WhichPrizeText::
-	text "Which prize do"
-	line "you want?"
+	text $06,$EE,$02,$C0,$7F,$01,$2D,$07,$8B,$7F,$01,$4D,$04,$33,$06,$63,$01,$3A,$06,$60,$02,$CF,$01,$BE,$0B,$67; RAW DATA : 	text "어느 것을 고르시겠습니까?"
 	done
 
 _HereYouGoText::
-	text "Here you go!@@"
+	text $02,$77,$7F,$07,$09,$01,$B2,$7F,$07,$A6,$06,$60,$02,$CF,$02,$D9,$0B,$66,$0B,$66,$50,$50; RAW DATA : 	text "네 여기 있습니다!!@@"
 
 _SoYouWantPrizeText::
-	text "So, you want"
-	line "@"
+	text $50; RAW DATA : 	text "@"
 	TX_RAM wcd6d
-	text "?"
+	text $0B,$64,$07,$88,$0B,$65,$03,$FE; RAW DATA : 	text "(으)로"
+	line $0A,$6F,$06,$63,$01,$3A,$06,$60,$02,$CF,$01,$BE,$0B,$67; RAW DATA : 	line "하시겠습니까?"
 	done
 
 _SorryNeedMoreCoinsText::
-	text "Sorry, you need"
-	line "more coins.@@"
+	text $03,$1F,$07,$CC,$07,$9C,$7F,$05,$2E,$07,$E7,$0A,$6F,$01,$8A,$07,$44,$50,$50; RAW DATA : 	text "동전이 부족하군요@@"
 
 _OopsYouDontHaveEnoughRoomText::
-	text "Oops! You don't"
-	line "have enough room.@@"
+	text $01,$A7,$7F,$07,$9C,$05,$C3,$07,$8A,$7F,$08,$26,$02,$D2,$7F,$06,$26,$7F,$06,$F8,$06,$60,$02,$CF,$02,$D9,$50,$50; RAW DATA : 	text "그 이상은 지닐 수 없습니다@@"
 
 _OhFineThenText::
-	text "Oh, fine then.@@"
+	text $01,$76,$08,$9A,$07,$8A,$03,$4D,$0A,$75,$02,$CF,$02,$D9,$50,$50; RAW DATA : 	text "괜찮은듯합니다@@"
 
 _GetDexRatedText::
-	text "Want to get your"
-	line "#DEX rated?"
+	text $0A,$96,$07,$B7,$07,$97,$7F,$0A,$27,$09,$2F,$04,$93,$7F,$03,$15,$01,$08,$07,$8B; RAW DATA : 	text "현재의 포켓몬 도감을"
+	line $0A,$22,$01,$01,$04,$DE,$01,$3A,$06,$60,$02,$CF,$01,$BE,$0B,$67; RAW DATA : 	line "평가받겠습니까?"
 	done
 
 _ClosedOaksPCText::
-	text "Closed link to"
-	line "PROF.OAK's PC.@@"
+	text $0B,$6A,$0B,$6A,$7F,$07,$20,$04,$DA,$05,$B7,$07,$97,$7F,$09,$24,$0A,$4B,$09,$9D,$07,$2D,$07,$97; RAW DATA : 	text "…… 오박사의 컴퓨터와의"
+	line $07,$D2,$06,$03,$07,$8B,$7F,$02,$31,$02,$62,$02,$D9,$0B,$66,$50,$50; RAW DATA : 	line "접속을 끝냈다!@@"
 
 _AccessedOaksPCText::
-	text "Accessed PROF."
-	line "OAK's PC."
+	text $07,$20,$04,$DA,$05,$B7,$07,$97,$7F,$09,$24,$0A,$4B,$09,$9D,$07,$2D,$7F,$07,$0C,$01,$41,$0A,$7F,$02,$D9,$0B,$66; RAW DATA : 	text "오박사의 컴퓨터와 연결했다!"
 
-	para "Accessed #DEX"
-	line "Rating System."
+	para $0A,$27,$09,$2F,$04,$93,$7F,$03,$15,$01,$08; RAW DATA : 	para "포켓몬 도감"
+	line $0A,$22,$01,$01,$7F,$06,$63,$06,$4A,$09,$AB,$07,$8B,$7F,$05,$32,$03,$DF,$02,$62,$06,$60,$02,$CF,$02,$D9,$0B,$66; RAW DATA : 	line "평가 시스템을 불러냈습니다!"
 	prompt
 
 _WhereWouldYouLikeText::
@@ -1862,33 +1858,34 @@ _LinkCanceledText::
 INCLUDE "text/oakspeech.asm"
 
 _DoYouWantToNicknameText::
-	text "Do you want to"
-	line "give a nickname"
-	cont "to @"
+	text $50; RAW DATA : 	text "@"
 	TX_RAM wcd6d
-	text "?"
+	text $07,$01,$01,$34; RAW DATA : 	text "에게"
+	line $07,$9C,$04,$37,$07,$8B,$7F,$05,$39,$07,$9C,$01,$3A,$06,$60,$02,$CF,$01,$BE,$0B,$67; RAW DATA : 	line "이름을 붙이겠습니까?"
 	done
 
 _YourNameIsText::
-	text "Right! So your"
-	line "name is <PLAYER>!"
+	text $04,$62,$02,$D9,$0B,$66; RAW DATA : 	text "맞다!"
+	line $02,$77,$7F,$07,$9C,$04,$37,$07,$8A,$7F; RAW DATA : 	line "네 이름은 "
+	db $52,$01,$8A,$07,$9C,$06,$FA,$08,$26,$0B,$66; RAW DATA : db "이었지!"
+
 	prompt
 
 _HisNameIsText::
-	text "That's right! I"
-	line "remember now! His"
-	cont "name is <RIVAL>!"
+	text $01,$A7,$03,$D1,$7F,$04,$62,$06,$C6,$0B,$66,$7F,$01,$B2,$06,$EF,$02,$45,$01,$88,$02,$3A,$0B,$66; RAW DATA : 	text "그래 맞아! 기억났구나!"
+	line $07,$9C,$7F,$06,$C6,$07,$9C,$07,$97,$7F,$07,$9C,$04,$37,$07,$8A,$7F; RAW DATA : 	line "이 아이의 이름은 "
+	cont $53,$01,$8A,$07,$9C,$06,$FA,$08,$26,$0B,$66; RAW DATA : db "이었지!"
 	prompt
 
 _WillBeTradedText::
 	TX_RAM wNameOfPlayerMonToBeTraded
-	text " and"
-	line "@"
+	text $01,$6A,$0B,$64,$07,$2D,$0B,$65; RAW DATA : 	text "과(와)"
+	line $50; RAW DATA : 	line "@"
 	TX_RAM wcd6d
-	text " will"
-	cont "be traded."
+	text $04,$36,$0B,$64,$07,$8B,$0B,$65; RAW DATA : 	text "를(을)"
+	cont $01,$83,$0A,$AF,$0A,$75,$02,$CF,$02,$D9,$0B,$66; RAW DATA : 	cont "교환합니다!"
 	done
-
+;검수해야됨
 _Char00Text::
 	TX_NUM hSpriteIndexOrTextID,1,2
 	text " ERROR."
