@@ -8,16 +8,17 @@
 	sudo make install
 	cd ..
 
-	git clone https://github.com/009342/pokered
+	git clone https://github.com/wintiger0222/pokeredkr
 	cd pokered
 
-To build **pokered.gbc** and **pokeblue.gbc**:
+To build **pokered.gbc** and **pokegreen.gbc** and **pokeblue.gbc**:
 
 	make
 
 To build them individually:
 
 	make red
+	make green
 	make blue
 
 
@@ -30,10 +31,10 @@ Then in **Terminal**, run:
 	xcode-select --install
 	brew install rgbds
 
-	git clone https://github.com/009342/pokered
+	git clone https://github.com/wintiger0222/pokeredkr
 	cd pokered
 
-To build **pokered.gbc** and **pokeblue.gbc**:
+To build **pokered.gbc** and **pokegreen.gbc** and **pokeblue.gbc**:
 
 	make
 
@@ -52,9 +53,9 @@ Then download [**rgbds**](https://github.com/rednex/rgbds/releases/): the latest
 
 In the **Cygwin terminal**, enter these commands:
 
-	git clone https://github.com/009342/pokered
+	git clone https://github.com/wintiger0222/pokeredkr
 	cd pokered
 
-To build **pokered.gbc** and **pokeblue.gbc**:
+To build **pokered.gbc** and **pokegreen.gbc** and **pokeblue.gbc**:
 
 	make
