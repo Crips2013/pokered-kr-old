@@ -589,19 +589,20 @@ DisplayOptionMenu:
 	jp .eraseOldMenuCursor
 
 TextSpeedOptionText:
-	db   "TEXT SPEED"
-	next " FAST  MEDIUM SLOW@"
+	db   $07,$9C,$06,$DF,$01,$B2,$07,$97,$7F,$06,$03,$03,$15
+	next " ",$05,$6C,$04,$33,$01,$34,"   ",$05,$18,$09,$BB,"     ",$02,$C0,$04,$3E,$01,$34,$50
 
 BattleAnimationOptionText:
-	db   "BATTLE ANIMATION"
-	next " ON       OFF@"
+	db   $07,$CC,$09,$C5,$7F,$06,$D6,$02,$CF,$04,$7E,$07,$9C,$05,$F7
+	next " ",$05,$18,$02,$D9,"       ",$06,$C8," ",$05,$18,$02,$D9,$50
 
 BattleStyleOptionText:
-	db   "BATTLE STYLE"
-	next " SHIFT    SET@"
+	db   $06,$63,$0A,$75,$07,$97,$7F,$04,$1A
+	next " ",$01,$83,$08,$BC," ",$09,$88,$07,$A4,"    ",$06,$62,$07,$AA,$0B,$6D,$01,$48,$06,$03," ",$09,$88,$07,$A4,$50
+	
 
 OptionMenuCancelText:
-	db "CANCEL@"
+	db $02,$31,$50
 
 ; sets the options variable according to the current placement of the menu cursors in the options menu
 SetOptionsFromCursorPositions:
