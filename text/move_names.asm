@@ -1,167 +1,166 @@
 MoveNames::
-	db "POUND@"
-	db "KARATE CHOP@"
-	db "DOUBLESLAP@"
-	db "COMET PUNCH@"
-	db "MEGA PUNCH@"
-	db "PAY DAY@"
-	db "FIRE PUNCH@"
-	db "ICE PUNCH@"
-	db "THUNDERPUNCH@"
-	db "SCRATCH@"
-	db "VICEGRIP@"
-	db "GUILLOTINE@"
-	db "RAZOR WIND@"
-	db "SWORDS DANCE@"
-	db "CUT@"
-	db "GUST@"
-	db "WING ATTACK@"
-	db "WHIRLWIND@"
-	db "FLY@"
-	db "BIND@"
-	db "SLAM@"
-	db "VINE WHIP@"
-	db "STOMP@"
-	db "DOUBLE KICK@"
-	db "MEGA KICK@"
-	db "JUMP KICK@"
-	db "ROLLING KICK@"
-	db "SAND-ATTACK@"
-	db "HEADBUTT@"
-	db "HORN ATTACK@"
-	db "FURY ATTACK@"
-	db "HORN DRILL@"
-	db "TACKLE@"
-	db "BODY SLAM@"
-	db "WRAP@"
-	db "TAKE DOWN@"
-	db "THRASH@"
-	db "DOUBLE-EDGE@"
-	db "TAIL WHIP@"
-	db "POISON STING@"
-	db "TWINEEDLE@"
-	db "PIN MISSILE@"
-	db "LEER@"
-	db "BITE@"
-	db "GROWL@"
-	db "ROAR@"
-	db "SING@"
-	db "SUPERSONIC@"
-	db "SONICBOOM@"
-	db "DISABLE@"
-	db "ACID@"
-	db "EMBER@"
-	db "FLAMETHROWER@"
-	db "MIST@"
-	db "WATER GUN@"
-	db "HYDRO PUMP@"
-	db "SURF@"
-	db "ICE BEAM@"
-	db "BLIZZARD@"
-	db "PSYBEAM@"
-	db "BUBBLEBEAM@"
-	db "AURORA BEAM@"
-	db "HYPER BEAM@"
-	db "PECK@"
-	db "DRILL PECK@"
-	db "SUBMISSION@"
-	db "LOW KICK@"
-	db "COUNTER@"
-	db "SEISMIC TOSS@"
-	db "STRENGTH@"
-	db "ABSORB@"
-	db "MEGA DRAIN@"
-	db "LEECH SEED@"
-	db "GROWTH@"
-	db "RAZOR LEAF@"
-	db "SOLARBEAM@"
-	db "POISONPOWDER@"
-	db "STUN SPORE@"
-	db "SLEEP POWDER@"
-	db "PETAL DANCE@"
-	db "STRING SHOT@"
-	db "DRAGON RAGE@"
-	db "FIRE SPIN@"
-	db "THUNDERSHOCK@"
-	db "THUNDERBOLT@"
-	db "THUNDER WAVE@"
-	db "THUNDER@"
-	db "ROCK THROW@"
-	db "EARTHQUAKE@"
-	db "FISSURE@"
-	db "DIG@"
-	db "TOXIC@"
-	db "CONFUSION@"
-	db "PSYCHIC@"
-	db "HYPNOSIS@"
-	db "MEDITATE@"
-	db "AGILITY@"
-	db "QUICK ATTACK@"
-	db "RAGE@"
-	db "TELEPORT@"
-	db "NIGHT SHADE@"
-	db "MIMIC@"
-	db "SCREECH@"
-	db "DOUBLE TEAM@"
-	db "RECOVER@"
-	db "HARDEN@"
-	db "MINIMIZE@"
-	db "SMOKESCREEN@"
-	db "CONFUSE RAY@"
-	db "WITHDRAW@"
-	db "DEFENSE CURL@"
-	db "BARRIER@"
-	db "LIGHT SCREEN@"
-	db "HAZE@"
-	db "REFLECT@"
-	db "FOCUS ENERGY@"
-	db "BIDE@"
-	db "METRONOME@"
-	db "MIRROR MOVE@"
-	db "SELFDESTRUCT@"
-	db "EGG BOMB@"
-	db "LICK@"
-	db "SMOG@"
-	db "SLUDGE@"
-	db "BONE CLUB@"
-	db "FIRE BLAST@"
-	db "WATERFALL@"
-	db "CLAMP@"
-	db "SWIFT@"
-	db "SKULL BASH@"
-	db "SPIKE CANNON@"
-	db "CONSTRICT@"
-	db "AMNESIA@"
-	db "KINESIS@"
-	db "SOFTBOILED@"
-	db "HI JUMP KICK@"
-	db "GLARE@"
-	db "DREAM EATER@"
-	db "POISON GAS@"
-	db "BARRAGE@"
-	db "LEECH LIFE@"
-	db "LOVELY KISS@"
-	db "SKY ATTACK@"
-	db "TRANSFORM@"
-	db "BUBBLE@"
-	db "DIZZY PUNCH@"
-	db "SPORE@"
-	db "FLASH@"
-	db "PSYWAVE@"
-	db "SPLASH@"
-	db "ACID ARMOR@"
-	db "CRABHAMMER@"
-	db "EXPLOSION@"
-	db "FURY SWIPES@"
-	db "BONEMERANG@"
-	db "REST@"
-	db "ROCK SLIDE@"
-	db "HYPER FANG@"
-	db "SHARPEN@"
-	db "CONVERSION@"
-	db "TRI ATTACK@"
-	db "SUPER FANG@"
-	db "SLASH@"
-	db "SUBSTITUTE@"
-	db "STRUGGLE@"
-
+	db $04,$47,$09,$01,$01,$B2,$50
+	db $09,$92,$01,$97,$02,$E7,$06,$26,$50
+	db $07,$0C,$06,$03,$7F,$05,$84,$09,$01,$01,$B2,$50
+	db $07,$0C,$06,$03,$0A,$0D,$09,$01,$50
+	db $04,$7E,$01,$01,$09,$B6,$0A,$0D,$09,$01,$50
+	db $01,$4D,$06,$E7,$07,$9C,$03,$17,$04,$DE,$01,$B2,$50
+	db $05,$32,$01,$F9,$0A,$0D,$09,$01,$50
+	db $02,$63,$03,$1F,$0A,$0D,$09,$01,$50
+	db $04,$F8,$01,$13,$0A,$0D,$09,$01,$50
+	db $0A,$72,$09,$6B,$01,$B2,$50
+	db $08,$93,$01,$B2,$50
+	db $01,$01,$07,$77,$07,$AA,$04,$33,$01,$B2,$50
+	db $09,$0E,$04,$D9,$03,$C7,$50
+	db $09,$0E,$08,$E3,$50
+	db $0A,$3E,$05,$03,$01,$B2,$50
+	db $04,$D9,$03,$C7,$07,$9F,$07,$88,$09,$80,$01,$B2,$50
+	db $02,$3F,$01,$13,$09,$01,$01,$B2,$50
+	db $02,$3F,$03,$F1,$04,$F6,$04,$3E,$01,$B2,$50
+	db $01,$68,$08,$0F,$02,$3F,$01,$B2,$50
+	db $07,$E6,$07,$9C,$01,$B2,$50
+	db $0A,$FB,$01,$DF,$09,$01,$01,$B2,$50
+	db $03,$02,$01,$8C,$08,$A4,$08,$8F,$50
+	db $08,$2E,$04,$E2,$01,$B2,$50
+	db $03,$2E,$04,$F8,$09,$01,$01,$B2,$50
+	db $04,$7E,$01,$01,$09,$B6,$09,$81,$50
+	db $07,$D1,$0A,$61,$09,$81,$50
+	db $03,$19,$03,$F1,$08,$97,$01,$B2,$50
+	db $04,$90,$03,$D1,$05,$A1,$04,$3E,$01,$B2,$50
+	db $04,$DA,$09,$01,$01,$B2,$50
+	db $05,$A4,$08,$8E,$04,$33,$01,$B2,$50
+	db $04,$46,$01,$88,$08,$8E,$04,$33,$01,$B2,$50
+	db $05,$A4,$03,$45,$04,$41,$50
+	db $04,$96,$09,$BB,$04,$DA,$09,$01,$01,$B2,$50
+	db $02,$A9,$04,$33,$01,$B2,$50
+	db $01,$B8,$04,$E4,$04,$4B,$07,$9C,$50
+	db $03,$19,$08,$28,$50
+	db $02,$3D,$03,$1F,$05,$2E,$04,$3E,$01,$B2,$50
+	db $07,$9C,$09,$F7,$05,$B7,$09,$F7,$09,$92,$09,$7C,$50
+	db $01,$EF,$04,$3E,$0A,$E7,$03,$49,$01,$B2,$50
+	db $03,$16,$09,$07,$50
+	db $02,$F5,$05,$4D,$02,$CF,$03,$49,$50
+	db $04,$D9,$02,$C3,$04,$CC,$05,$B7,$07,$9F,$50
+	db $08,$40,$03,$F1,$05,$18,$01,$B2,$50
+	db $04,$B0,$01,$B2,$50
+	db $07,$4F,$07,$8D,$06,$02,$04,$3E,$50
+	db $07,$4F,$05,$2E,$08,$32,$01,$B2,$50
+	db $02,$8B,$03,$D1,$0A,$6F,$01,$B2,$50
+	db $08,$CA,$07,$8D,$09,$F4,$50
+	db $06,$02,$02,$D0,$05,$35,$50
+	db $05,$B7,$06,$4D,$04,$AD,$01,$B2,$50
+	db $07,$4B,$0A,$78,$06,$D7,$50
+	db $05,$32,$01,$F9,$05,$EC,$03,$FA,$50
+	db $0A,$AD,$07,$10,$04,$E6,$05,$B7,$50
+	db $0A,$F2,$06,$C8,$01,$13,$50
+	db $04,$B0,$02,$EB,$0A,$27,$50
+	db $0A,$6F,$07,$9C,$03,$45,$03,$FE,$0A,$0F,$0A,$61,$50
+	db $09,$F4,$03,$15,$09,$88,$01,$B2,$50
+	db $02,$63,$03,$1F,$05,$66,$50
+	db $02,$AB,$05,$18,$03,$C3,$50
+	db $0A,$AF,$05,$C3,$05,$66,$50
+	db $01,$25,$0A,$40,$01,$74,$05,$E1,$50
+	db $07,$20,$03,$FE,$03,$C3,$7F,$05,$66,$50
+	db $09,$F4,$01,$7B,$01,$74,$05,$E1,$50
+	db $08,$69,$01,$B2,$50
+	db $0A,$B8,$07,$CC,$05,$2E,$04,$3E,$50
+	db $08,$26,$07,$21,$07,$97,$04,$D9,$09,$6B,$50
+	db $07,$B2,$09,$01,$01,$B2,$50
+	db $09,$0B,$07,$4E,$09,$9D,$50
+	db $08,$26,$01,$88,$02,$F8,$08,$26,$01,$B2,$50
+	db $01,$7B,$03,$F2,$50
+	db $0A,$ED,$06,$26,$50
+	db $04,$7E,$01,$01,$03,$45,$03,$E9,$07,$9E,$50
+	db $06,$BE,$05,$A1,$04,$3E,$01,$B2,$50
+	db $05,$EA,$07,$B5,$50
+	db $07,$A9,$02,$3F,$01,$01,$04,$33,$01,$B2,$50
+	db $06,$06,$03,$C3,$05,$66,$50
+	db $03,$16,$01,$01,$04,$17,$50
+	db $07,$CA,$04,$3E,$01,$01,$04,$17,$50
+	db $06,$26,$04,$89,$01,$01,$04,$17,$50
+	db $01,$F9,$07,$A9,$02,$ED,$06,$4A,$50
+	db $06,$67,$05,$A5,$01,$B2,$50
+	db $07,$4B,$07,$97,$05,$30,$02,$8B,$50
+	db $0A,$B8,$07,$20,$04,$3E,$05,$32,$01,$F9,$50
+	db $07,$CC,$01,$B2,$06,$1E,$09,$79,$50
+	db $F7,$F6,$04,$48,$05,$1C,$09,$DE,$50
+	db $07,$CC,$01,$B2,$07,$AA,$05,$DE,$09,$F4,$50
+	db $04,$F8,$01,$13,$50
+	db $03,$19,$03,$83,$01,$88,$01,$B2,$50
+	db $08,$26,$08,$28,$50
+	db $03,$75,$01,$01,$04,$33,$01,$B2,$50
+	db $01,$88,$04,$7B,$09,$F4,$01,$B2,$50
+	db $04,$6D,$03,$16,$50
+	db $07,$10,$03,$1F,$03,$F2,$50
+	db $05,$B7,$07,$9C,$09,$3A,$09,$80,$02,$77,$06,$63,$06,$4A,$50
+	db $08,$D6,$04,$89,$06,$2A,$50
+	db $07,$44,$01,$01,$0A,$27,$08,$1E,$50
+	db $01,$4D,$06,$03,$07,$9C,$03,$1F,$50
+	db $07,$CC,$01,$74,$05,$DE,$0A,$AD,$50
+	db $05,$30,$02,$8B,$50
+	db $06,$28,$01,$03,$07,$9C,$03,$1F,$50
+	db $02,$3A,$07,$9C,$09,$DE,$0A,$8C,$03,$45,$50
+	db $0A,$E4,$02,$4B,$02,$4B,$01,$B2,$50
+	db $06,$68,$07,$8A,$06,$02,$04,$3E,$50
+	db $01,$A7,$04,$42,$07,$AA,$7F,$05,$30,$06,$65,$50
+	db $87,$8F,$7F,$0A,$B8,$05,$19,$50
+	db $02,$DC,$02,$DC,$0A,$78,$08,$26,$01,$B2,$50
+	db $07,$AB,$06,$C6,$08,$26,$01,$B2,$50
+	db $07,$0C,$04,$47,$50
+	db $07,$9C,$05,$C3,$0A,$71,$05,$6B,$50
+	db $01,$DE,$08,$2A,$07,$01,$06,$2B,$01,$B2,$50
+	db $07,$65,$09,$79,$04,$3E,$01,$B2,$50
+	db $04,$E8,$04,$3E,$06,$EE,$50
+	db $05,$6B,$07,$97,$7F,$07,$B5,$04,$47,$50
+	db $0A,$E6,$06,$C8,$01,$13,$50
+	db $04,$3E,$0A,$63,$03,$EA,$09,$9D,$50
+	db $01,$B2,$08,$E6,$07,$CC,$50
+	db $08,$9C,$01,$B2,$50
+	db $06,$05,$01,$01,$03,$C4,$0A,$E7,$03,$49,$01,$B2,$50
+	db $03,$6B,$03,$C3,$0A,$6F,$01,$B2,$50
+	db $07,$AA,$0A,$28,$50
+	db $06,$CB,$0A,$28,$09,$8A,$50
+	db $0A,$73,$01,$B2,$50;핥기
+	db $06,$4A,$04,$90,$01,$A7,$50
+	db $07,$20,$04,$B0,$01,$68,$01,$3D,$50
+	db $05,$90,$02,$D9,$01,$9D,$09,$01,$01,$B2,$50
+	db $05,$32,$02,$EB,$04,$AE,$07,$AA,$50;불대문자
+	db $0A,$28,$0A,$27,$07,$20,$04,$33,$01,$B2,$50
+	db $01,$DE,$08,$2A,$02,$32,$07,$4C,$01,$B2,$50
+	db $06,$4A,$0A,$67,$03,$45,$06,$4A,$09,$88,$50
+	db $03,$FE,$09,$29,$09,$DE,$04,$DA,$09,$01,$01,$B2,$50
+	db $01,$01,$06,$63,$02,$EB,$0A,$27,$50
+	db $0A,$D6,$01,$08,$01,$B2,$50
+	db $04,$61,$01,$02,$06,$2A,$50
+	db $06,$29,$01,$01,$03,$C4,$0A,$D6,$01,$B2,$50
+	db $06,$CB,$02,$4A,$01,$B2,$50
+	db $04,$AB,$04,$3D,$08,$97,$01,$B2,$50
+	db $04,$EC,$07,$97,$04,$CC,$06,$02,$50
+	db $02,$0E,$04,$74,$01,$B2,$50
+	db $03,$16,$01,$01,$06,$4A,$50
+	db $06,$CB,$02,$F8,$08,$26,$01,$B2,$50
+	db $0A,$ED,$0A,$97,$50
+	db $06,$C7,$04,$46,$07,$97,$09,$80,$06,$4A,$50
+	db $05,$32,$05,$C5,$50
+	db $05,$0F,$06,$65,$50
+	db $01,$25,$0A,$40,$50
+	db $07,$BB,$07,$BB,$0A,$0D,$09,$01,$50
+	db $04,$F6,$05,$E8,$0A,$27,$07,$AA,$50
+	db $0A,$63,$03,$D1,$06,$63,$50
+	db $05,$B7,$07,$9C,$09,$3A,$07,$6E,$07,$9C,$05,$4A,$50
+	db $09,$D2,$06,$EE,$07,$20,$04,$33,$01,$B2,$50
+	db $02,$8C,$01,$B2,$50
+	db $08,$93,$01,$34,$0A,$7C,$04,$73,$50
+	db $02,$EB,$0A,$28,$09,$F8,$50
+	db $04,$46,$01,$88,$0A,$72,$09,$6B,$01,$B2,$50
+	db $05,$90,$02,$D9,$01,$9D,$05,$2E,$04,$7E,$03,$CB,$50
+	db $07,$B1,$07,$AA,$01,$B2,$50
+	db $06,$4A,$09,$B6,$05,$CE,$07,$66,$50
+	db $0A,$6A,$05,$BC,$06,$D5,$02,$CF,$50
+	db $01,$02,$08,$26,$01,$B2,$50
+	db $09,$A8,$06,$4A,$08,$C4,$50
+	db $09,$DE,$03,$C3,$07,$9C,$06,$EE,$09,$93,$50
+	db $05,$30,$02,$8B,$07,$97,$06,$D5,$02,$CF,$50
+	db $05,$03,$06,$EE,$01,$01,$04,$33,$01,$B2,$50
+	db $02,$EB,$09,$88,$08,$E2,$03,$1F,$50
+	db $04,$DF,$04,$F6,$03,$35,$50

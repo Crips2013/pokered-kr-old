@@ -85,12 +85,12 @@ DisplayPCMainMenu::
 	ld [H_AUTOBGTRANSFERENABLED], a
 	ret
 
-SomeonesPCText:   db "SOMEONE's PC@"
-BillsPCText:      db "BILL's PC@"
-PlayersPCText:    db "'s PC@"
-OaksPCText:       db "PROF.OAK's PC@"
-PKMNLeaguePCText: db $4a, "LEAGUE@"
-LogOffPCText:     db "LOG OFF@"
+SomeonesPCText:   db $02,$A9,$01,$8A,$01,$01,$07,$97,$7F,$09,$24,$0A,$4B,$09,$9D,$50
+BillsPCText:      db $07,$9C,$06,$26,$07,$B7,$07,$97,$7F,$09,$24,$0A,$4B,$09,$9D,$50
+PlayersPCText:    db $07,$97,$7F,$09,$24,$0A,$4B,$09,$9D,$50
+OaksPCText:       db $07,$20,$04,$DA,$05,$B7,$07,$97,$7F,$09,$24,$0A,$4B,$09,$9D,$50
+PKMNLeaguePCText: db $07,$CC,$02,$E7,$7F,$03,$4E,$03,$FF,$50
+LogOffPCText:     db $06,$4A,$07,$77,$09,$01,$04,$36,$7F,$02,$24,$02,$D9,$50
 
 BillsPC_::
 	ld hl, wd730
@@ -339,15 +339,16 @@ DisplayMonListMenu:
 	ret
 
 BillsPCMenuText:
-	db   "WITHDRAW ", $4a
-	next "DEPOSIT ",  $4a
-	next "RELEASE ",  $4a
-	next "CHANGE BOX"
-	next "SEE YA!"
-	db "@"
+	db   $0A,$27,$09,$2F,$04,$93,$07,$8B,$7F,$03,$05,$04,$3E,$01,$4D,$7F,$01,$03,$02,$D9
+	next $0A,$27,$09,$2F,$04,$93,$07,$8B,$7F,$04,$63,$01,$B2,$02,$D9
+	next $0A,$27,$09,$2F,$04,$93,$07,$8B,$7F,$02,$95,$06,$C6,$08,$06,$02,$D9
+	next $04,$DA,$06,$4A,$04,$36,$7F,$04,$D9,$02,$09,$02,$D9
+	next $01,$A7,$03,$E3,$7F,$06,$C8,$02,$87
+	db $50
+
 
 BoxNoPCText:
-	db "BOX No.@"
+	db $08,$26,$01,$AD,$07,$97,$7F,$04,$DA,$06,$4A,$50; RAW DATA : 	db "吏湲덉쓽 諛뺤뒪@"
 
 KnowsHMMove::
 ; returns whether mon with party index [wWhichPokemon] knows an HM move
@@ -451,11 +452,11 @@ DisplayDepositWithdrawMenu:
 	call LoadGBPal
 	jr .loop
 
-DepositPCText:  db "DEPOSIT@"
-WithdrawPCText: db "WITHDRAW@"
+DepositPCText:  db $04,$63,$01,$B2,$02,$D9,$50; RAW DATA : DepositPCText:  db "留↔린??"
+WithdrawPCText: db $08,$A3,$02,$D9,$50; RAW DATA : WithdrawPCText: db "李얜떎@"
 StatsCancelPCText:
-	db   "STATS"
-	next "CANCEL@"
+	db   $05,$C3,$09,$92,$04,$36,$7F,$05,$18,$02,$D9; RAW DATA : 	db   "?곹깭瑜?蹂대떎"
+	next $01,$A7,$04,$48,$03,$2E,$02,$D9,$50; RAW DATA : 	next "洹몃쭔?먮떎@"
 
 SwitchOnText:
 	TX_FAR _SwitchOnText

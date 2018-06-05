@@ -120,7 +120,7 @@ DisplayTitleScreen:
 IF DEF(_RED)
 	ld a, CHARMANDER ; which Pokemon to show first on the title screen
 ENDC
-IF DEF(_GRREN)
+IF DEF(_GREEN)
 	ld a, BULBASAUR ; which Pokemon to show first on the title screen
 ENDC
 IF DEF(_BLUE)
