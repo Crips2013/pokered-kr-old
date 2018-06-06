@@ -151,10 +151,10 @@ LinkCableHelpText2:
 	db "@"
 
 HowToLinkText:
-	db   $09,$BB,$06,$65,$09,$29,$07,$9C,$05,$4D,$7F,$09,$7C,$03,$E4; RAW DATA : 	db   "통신케이블 클럽"
-	next $09,$3D,$03,$FE,$05,$EC,$07,$62; RAW DATA : 	next "콜로세움"
-	next $09,$DE,$03,$E9,$07,$9C,$03,$45,$05,$EE,$09,$9D; RAW DATA : 	next "트레이드센터"
-	next $01,$A7,$04,$48,$03,$2E,$02,$D9,$50; RAW DATA : 	next "그만두다@"
+	db   "HOW TO LINK"
+	next "COLOSSEUM"
+	next "TRADE CENTER"
+	next "STOP READING@"
 
 LinkCableInfoTexts:
 	dw LinkCableInfoText1
@@ -268,14 +268,14 @@ ViridianSchoolBlackboardText2:
 	db "@"
 
 StatusAilmentText1:
-	db   $7F,$07,$B1,$03,$4A; RAW DATA : 	db   " 잠듦"
-	next $7F,$03,$16; RAW DATA : 	next " 독"
-	next $7F,$04,$46,$05,$61,$50; RAW DATA : 	next " 마비@"
+	db   " SLP"
+	next " PSN"
+	next " PAR@"
 
 StatusAilmentText2:
-	db   $7F,$0A,$AD,$05,$C3; RAW DATA : 	db   " 화상"
-	next $7F,$01,$08,$07,$CC; RAW DATA : 	next " 감전"
-	next $7F,$01,$A7,$04,$48,$03,$2E,$02,$D9,$50,$50; RAW DATA : 	next " 그만두다@@"
+	db   " BRN"
+	next " FRZ"
+	next " QUIT@@"
 
 ViridianBlackboardStatusPointers:
 	dw ViridianBlackboardSleepText

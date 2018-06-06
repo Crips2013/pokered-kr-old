@@ -437,16 +437,16 @@ SaveScreenInfoText:
 	next $0A,$63,$03,$E9,$07,$9C,$7F,$06,$63,$01,$03,$50
 
 DisplayOptionMenu:
-	coord hl, 0, 0
-	ld b, 3
+	coord hl, 0, 1
+	ld b, 2
 	ld c, 18
 	call TextBoxBorder
-	coord hl, 0, 5
-	ld b, 3
+	coord hl, 0, 6
+	ld b, 2
 	ld c, 18
 	call TextBoxBorder
-	coord hl, 0, 10
-	ld b, 3
+	coord hl, 0, 11
+	ld b, 2
 	ld c, 18
 	call TextBoxBorder
 	coord hl, 1, 1

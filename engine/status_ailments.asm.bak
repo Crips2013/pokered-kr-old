@@ -10,37 +10,37 @@ PrintStatusAilment:
 	jr nz, .par
 	and SLP
 	ret z
-	ld a, $C0
+	ld a, "S"
 	ld [hli], a
-	ld a, $C1
+	ld a, "L"
 	ld [hli], a
-	ld [hl], $C2
+	ld [hl], "P"
 	ret
 .psn
-	ld a, $C3
+	ld a, "P"
 	ld [hli], a
-	ld a, $C4
+	ld a, "S"
 	ld [hli], a
-	ld [hl], $C5
+	ld [hl], "N"
 	ret
 .brn
-	ld a, $C6
+	ld a, "B"
 	ld [hli], a
-	ld a, $C7
+	ld a, "R"
 	ld [hli], a
-	ld [hl], $C8
+	ld [hl], "N"
 	ret
 .frz
-	ld a, $D0
+	ld a, "F"
 	ld [hli], a
-	ld a, $D1
+	ld a, "R"
 	ld [hli], a
-	ld [hl], $D2
+	ld [hl], "Z"
 	ret
 .par
-	ld a, $D3
+	ld a, "P"
 	ld [hli], a
-	ld a, $D4
+	ld a, "A"
 	ld [hli], a
-	ld [hl], $D5
+	ld [hl], "R"
 	ret

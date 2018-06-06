@@ -176,9 +176,10 @@ DisplayIntroNameTextBox:
 	ld [wCurrentMenuItem], a
 	ld [wLastMenuItem], a
 	inc a
-	;inc a
-	ld [wTopMenuItemX], a
 	ld [wMenuWatchedKeys], a ; A_BUTTON
+	
+	ld [wTopMenuItemX], a
+	inc a
 	inc a
 	ld [wTopMenuItemY], a
 	inc a
@@ -191,7 +192,7 @@ DisplayIntroNameTextBox:
 IF DEF(_RED)
 DefaultNamesPlayer:
 	db   $06,$4A,$06,$4A,$03,$FE,$7F,$01,$41,$07,$D4,$0A,$6F,$02,$D9
-	next "RED"
+	db $50, $03, $E9, $03, $45
 	next $08,$26,$07,$4C
 	next $04,$8D,$05,$DE
 	next $07,$79,$03,$15,$09,$88,$07,$9C,$01,$25; RAW DATA : 	next "윈도타이거"
@@ -209,7 +210,7 @@ ENDC
 IF DEF(_BLUE)
 DefaultNamesPlayer:
 	db   $06,$4A,$06,$4A,$03,$FE,$7F,$01,$41,$07,$D4,$0A,$6F,$02,$D9
-	next "BLUE"
+	db "@", $05, $4D, $04, $17
 	next $08,$26,$07,$4C
 	next $04,$8D,$05,$DE
 	next $07,$79,$03,$15,$09,$88,$07,$9C,$01,$25; RAW DATA : 	next "윈도타이거"
@@ -235,7 +236,7 @@ DefaultNamesPlayer:
 
 DefaultNamesRival:
 	db   $06,$4A,$06,$4A,$03,$FE,$7F,$01,$41,$07,$D4,$0A,$6F,$02,$D9
-	next "red"
+	db $50, $03, $E9, $03, $45
 	next $08,$26,$07,$4C
 	next $04,$8D,$05,$DE
 	next $07,$79,$03,$15,$09,$88,$07,$9C,$01,$25; RAW DATA : 	next "윈도타이거"
@@ -268,30 +269,30 @@ GetDefaultName:
 IF DEF(_RED)
 DefaultNamesPlayerList:
 	db   $06,$4A,$06,$4A,$03,$FE,$7F,$01,$41,$07,$D4,$0A,$6F,$02,$D9
-	db $50,  "RED"
+	db $50, $03, $E9, $03, $45
 	db $50,  $08,$26,$07,$4C
 	db $50,  $04,$8D,$05,$DE
-	db $50,  $07,$79,$03,$15,$09,$88,$07,$9C,$01,$25; RAW DATA : 	db $50,  "윈도타이거"
+	db $50,  $07,$79,$03,$15,$09,$88,$07,$9C,$01,$25,$50; RAW DATA : 	db $50,  "윈도타이거"
 DefaultNamesRivalList:
-	db   $06,$4A,$06,$4A,$03,$FE,$7F,$01,$41,$07,$D4,$0A,$6F,$02,$D9
+	db   $06,$4A,$06,$4A,$03,$FE,$7F,$01,$41,$07,$D4,$0A,$6F,$02,$D9,$50
 	db $50,  $01,$A7,$04,$40
 	db $50,  $04,$D9,$03,$C7
 	db $50,  $04,$AE,$0A,$AF
-	db $50,  $02,$9A,$06,$BE; RAW DATA : 	db $50,  "뇌씨"
+	db $50,  $02,$9A,$06,$BE,$50; RAW DATA : 	db $50,  "뇌씨"
 ENDC
 IF DEF(_BLUE)
 DefaultNamesPlayerList:
 	db   $06,$4A,$06,$4A,$03,$FE,$7F,$01,$41,$07,$D4,$0A,$6F,$02,$D9
-	db $50,  "BLUE"
+	db "@", $05, $4D, $04, $17
 	db $50,  $08,$26,$07,$4C
 	db $50,  $04,$8D,$05,$DE
-	db $50,  $07,$79,$03,$15,$09,$88,$07,$9C,$01,$25; RAW DATA : 	db $50,  "윈도타이거"
+	db $50,  $07,$79,$03,$15,$09,$88,$07,$9C,$01,$25,$50; RAW DATA : 	db $50,  "윈도타이거"
 DefaultNamesRivalList:
 	db   $06,$4A,$06,$4A,$03,$FE,$7F,$01,$41,$07,$D4,$0A,$6F,$02,$D9
 	db $50,  $01,$A7,$04,$40
 	db $50,  $04,$D9,$03,$C7
 	db $50,  $04,$AE,$0A,$AF
-	db $50,  $02,$9A,$06,$BE; RAW DATA : 	db $50,  "뇌씨"
+	db $50,  $02,$9A,$06,$BE,$50; RAW DATA : 	db $50,  "뇌씨"
 ENDC
 IF DEF(_GREEN)
 DefaultNamesPlayerList:
@@ -299,13 +300,13 @@ DefaultNamesPlayerList:
 	db $50,  $01,$A7,$04,$40
 	db $50,  $04,$D9,$03,$C7
 	db $50,  $04,$AE,$0A,$AF
-	db $50,  $02,$9A,$06,$BE; RAW DATA : 	db $50,  "뇌씨"
+	db $50,  $02,$9A,$06,$BE,$50; RAW DATA : 	db $50,  "뇌씨"
 DefaultNamesRivalList:
-	db   $06,$4A,$06,$4A,$03,$FE,$7F,$01,$41,$07,$D4,$0A,$6F,$02,$D9
-	db $50,  "red"
+	db   $06,$4A,$06,$4A,$03,$FE,$7F,$01,$41,$07,$D4,$0A,$6F,$02,$D9,$50
+	db $50, $03, $E9, $03, $45
 	db $50,  $08,$26,$07,$4C
 	db $50,  $04,$8D,$05,$DE
-	db $50,  $07,$79,$03,$15,$09,$88,$07,$9C,$01,$25; RAW DATA : 	db $50,  "윈도타이거"
+	db $50,  $07,$79,$03,$15,$09,$88,$07,$9C,$01,$25,$50; RAW DATA : 	db $50,  "윈도타이거"
 ENDC
 
 TextTerminator_6b20:

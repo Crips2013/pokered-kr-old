@@ -656,7 +656,7 @@ db $06,$4A,$09,$A7,$07,$9C,$09,$9D,$06,$4A,$04,$36,$7F,$05,$18,$02,$D9,$7F,$01,$
 	ld a, " "
 	ld [hl], a
 .cancelMenuItem_Loop
-	ld a, $ed ; filled arrow cursor
+	ld a, "?? ; filled arrow cursor
 	Coorda 1, 16
 .cancelMenuItem_JoypadLoop
 	call JoypadLowSensitivity

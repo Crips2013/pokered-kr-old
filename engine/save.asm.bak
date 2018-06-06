@@ -494,21 +494,21 @@ ChooseABoxText:
 	db "@"
 
 BoxNames:
-	db   $D9, $DA, "1"
-	next $D9, $DA, "2"
-	next $D9, $DA, "3"
-	next $D9, $DA, "4"
-	next $D9, $DA, "5"
-	next $D9, $DA, "6"
-	next $D9, $DA, "7"
-	next $D9, $DA, "8"
-	next $D9, $DA, "9"
-	next $D9, $DA, "10"
-	next $D9, $DA, "11"
-	next $D9, $DA, "12@"
+	db   "BOX 1"
+	next "BOX 2"
+	next "BOX 3"
+	next "BOX 4"
+	next "BOX 5"
+	next "BOX 6"
+	next "BOX 7"
+	next "BOX 8"
+	next "BOX 9"
+	next "BOX10"
+	next "BOX11"
+	next "BOX12@"
 
 BoxNoText:
-	db $08,$26,$01,$AD,$07,$97,$7F,$04,$DA,$06,$4A,$50; RAW DATA : 	db "지금의 박스@"
+	db "BOX No.@"
 
 EmptyAllSRAMBoxes:
 ; marks all boxes in SRAM as empty (initialisation for the first time the

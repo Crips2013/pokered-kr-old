@@ -241,12 +241,10 @@ PlayerPCToss:
 	jp .loop
 
 PlayersPCMenuEntries:
-	db   $03,$15,$01,$88,$04,$36,$7F,$01,$D8,$02,$4B,$02,$D9; RAW DATA : 	db   "?ÑÍµ¨Î•?Í∫ºÎÇ¥??
-	next $03,$15,$01,$88,$04,$36,$7F,$04,$63,$01,$B2,$02,$D9; RAW DATA : 	next "?ÑÍµ¨Î•?Îß°Í∏∞??
-	next $03,$15,$01,$88,$04,$36,$7F,$04,$F6,$04,$3E,$02,$D9; RAW DATA : 	next "?ÑÍµ¨Î•?Î≤ÑÎ¶¨??
-	next $07,$D2,$06,$03,$07,$8B,$7F,$02,$27,$02,$D9,$50; RAW DATA : 	next "?ëÏÜç???äÎã§@"
-
-
+	db   "WITHDRAW ITEM"
+	next "DEPOSIT ITEM"
+	next "TOSS ITEM"
+	next "LOG OFF@"
 
 TurnedOnPC2Text:
 	TX_FAR _TurnedOnPC2Text

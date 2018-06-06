@@ -445,12 +445,11 @@ BillsHousePokemonListText1:
 	db "@"
 
 BillsMonListText:
-	db   $07,$9C,$05,$4A,$07,$9C; RAW DATA : 	db   "?¥Î∏å??
-	next $05,$2E,$06,$4A,$09,$9D; RAW DATA : 	next "Î∂Ä?§ÌÑ∞"
-	next $08,$1A,$0A,$67,$06,$83,$02,$F5; RAW DATA : 	next "Ï•¨Ìîº?¨Îçî"
-	next $05,$CE,$04,$CC,$03,$45; RAW DATA : 	next "?§Î???
-	next $01,$A7,$04,$48,$03,$2E,$02,$D9,$50; RAW DATA : 	next "Í∑∏Îßå?êÎã§@"
-
+	db   "EEVEE"
+	next "FLAREON"
+	next "JOLTEON"
+	next "VAPOREON"
+	next "CANCEL@"
 
 BillsHousePokemonListText2:
 	TX_FAR _BillsHousePokemonListText2

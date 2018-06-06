@@ -593,10 +593,10 @@ DrawTrainerInfo:
 	coord hl, 2, 2
 	ld de, TrainerInfo_NameMoneyTimeText
 	call PlaceString
-	coord hl, 5, 2
+	coord hl, 7, 2
 	ld de, wPlayerName
 	call PlaceString
-	coord hl, 5, 4
+	coord hl, 8, 4
 	ld de, wPlayerMoney
 	ld c, $e3
 	call PrintBCDNumber
