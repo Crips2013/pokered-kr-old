@@ -8,7 +8,6 @@ To set up the repository, see [**INSTALL.md**](INSTALL.md).
 
 ## Credits
 - 009342 : Main code
-- All of [Pokémon Yellow Korean Fan Translation][pokeyellowkr]'s staff
 
 ## Open Source License
 Some of the code in this repository uses open source.
