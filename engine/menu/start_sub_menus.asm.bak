@@ -51,6 +51,8 @@ StartMenu_Pokemon:
 	ld a, c
 	ld [hli], a ; top menu item Y
 	ld a, [hFieldMoveMonMenuTopMenuItemX]
+	dec a
+	dec a
 	ld [hli], a ; top menu item X
 	xor a
 	ld [hli], a ; current menu item ID
@@ -593,10 +595,10 @@ DrawTrainerInfo:
 	coord hl, 2, 2
 	ld de, TrainerInfo_NameMoneyTimeText
 	call PlaceString
-	coord hl, 7, 2
+	coord hl, 5, 2
 	ld de, wPlayerName
 	call PlaceString
-	coord hl, 8, 4
+	coord hl, 5, 4
 	ld de, wPlayerMoney
 	ld c, $e3
 	call PrintBCDNumber

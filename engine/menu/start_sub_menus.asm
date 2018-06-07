@@ -51,6 +51,8 @@ StartMenu_Pokemon:
 	ld a, c
 	ld [hli], a ; top menu item Y
 	ld a, [hFieldMoveMonMenuTopMenuItemX]
+	dec a
+	dec a
 	ld [hli], a ; top menu item X
 	xor a
 	ld [hli], a ; current menu item ID
@@ -550,7 +552,7 @@ DrawTrainerInfo:
 	call TrainerInfo_FarCopyData
 	ld hl, GymLeaderFaceAndBadgeTileGraphics  ; gym leader face and badge tile patterns
 	ld de, vChars2 + $200
-	ld bc, $0400
+	ld bc, $0560
 	ld a, $03
 	call FarCopyData2
 	ld hl, TextBoxGraphics

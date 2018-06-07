@@ -166,7 +166,7 @@ TextBoxTextAndCoordTable:
 	db 3,0   ; text coordinates
 
 	db USE_TOSS_MENU_TEMPLATE
-	db 13,10,19,14 ; text box coordinates
+	db 13,9,19,14 ; text box coordinates
 	dw UseTossText
 	db 15,11 ; text coordinates
 
@@ -191,19 +191,19 @@ TextBoxTextAndCoordTable:
 	db 2,14  ; text coordinates
 
 	db SWITCH_STATS_CANCEL_MENU_TEMPLATE
-	db 11,11,19,17 ; text box coordinates
+	db 9,10,19,17 ; text box coordinates
 	dw SwitchStatsCancelText
-	db 13,12 ; text coordinates
+	db 11,12 ; text coordinates
 
 	db BUY_SELL_QUIT_MENU_TEMPLATE
-	db 0,0,10,6    ; text box coordinates
+	db 0,0,10,7    ; text box coordinates
 	dw BuySellQuitText
-	db 2,1   ; text coordinates
+	db 2,2   ; text coordinates
 
 	db MONEY_BOX_TEMPLATE
 	db 11,0,19,2   ; text box coordinates
 	dw MoneyText
-	db 13,0  ; text coordinates
+	db 12,0  ; text coordinates
 
 	db JP_AH_MENU_TEMPLATE
 	db 7,6,11,10   ; text box coordinates
@@ -218,53 +218,68 @@ TextBoxTextAndCoordTable:
 ; note that there is no terminator
 
 BuySellQuitText:
-	db   "BUY"
-	next "SELL"
-	next "QUIT@@"
+	db   $05,$B7,$03,$DF,$7F,$07,$20,$02,$D9
+	next $09,$F8,$03,$DF,$7F,$07,$20,$02,$D9
+	next $06,$C6,$04,$AB,$01,$2D,$03,$15,$7F,$06,$C6,$02,$D5,$02,$CF,$02,$D9,$50,$50
 
 UseTossText:
-	db   "USE"
-	next "TOSS@"
+	db   $05,$B7,$07,$4B,$0A,$6F,$02,$D9; RAW DATA : 	db   "사용하다"
+	next $04,$F6,$04,$3E,$02,$D9,$50; RAW DATA : 	next "버리다@"
 
 JapaneseSaveMessageText:
-	db   "きろく"
-	next "メッセージ@"
+	db   $01,$B2,$03,$FF; RAW DATA : 	db   "기록"
+	next $04,$7E,$06,$63,$08,$26,$50; RAW DATA : 	next "메시지@"
+;db   "きろく"
+;	next "メッセージ@"
 
+	
 JapaneseSpeedOptionsText:
-	db   "はやい"
-	next "おそい@"
-
+	db   $05,$71,$03,$C3; RAW DATA : 	db   "빨라"
+	next $02,$C0,$03,$F1,$50; RAW DATA : 	next "느려@"
+;하야이
+;오소이
 MoneyText:
-	db "MONEY@"
-
+	;db $03,$17,$50; RAW DATA : 	db "돈@"
+	db $CB,$CC,$50
+;MONEY
 JapaneseMochimonoText:
-	db "もちもの@"
-
+	db $06,$02,$08,$26,$0A,$40,$50; RAW DATA : 	db "소지품@"
+;もちもの
 JapaneseMainMenuText:
-	db   "つづきから"
-	next "さいしょから@"
-
+	db   $07,$9C,$06,$EE,$05,$DD; RAW DATA : 	db   "이어서"
+	next $04,$8D,$05,$EC,$05,$DD,$07,$01,$05,$DD,$50; RAW DATA : 	next "명세서에서@"
+;つづきから
+;さいしょから
 BattleMenuText:
-	db   "FIGHT ",$E1,$E2
-	next "ITEM  RUN@"
+	db   $06,$6E,$07,$4C,$02,$D9,$7F,$7F,$01,$01,$04,$E6
+	next $0A,$27,$09,$2F,$04,$93,$7F,$7F,$03,$15,$04,$61,$09,$01,$02,$D9,$50
 
 SafariZoneBattleMenuText:
-	db   "BALL×       BAIT"
-	next "THROW ROCK  RUN@"
+	db   $05,$B7,$09,$F4,$04,$3E,$05,$1C; RAW DATA : 	db   "사파리볼"
+	db "×"
+	db $7F,$7F,$7F,$7F,$7F,$7F,$7F,$04,$74,$07,$9C,$04,$36,$08,$06,$02,$D9; RAW DATA : 	db "      먹이를 주다"
+	next $03,$19,$07,$8B,$7F,$02,$F8,$08,$26,$02,$D9,$7F,$7F,$7F,$7F,$7F,$03,$15,$04,$61,$09,$01,$02,$D9,$50; RAW DATA : 	next "돌을 던지다     도망치다@"
+;	db   "BALL×       BAIT"
+;	next "THROW ROCK  RUN@"
 
+	
 SwitchStatsCancelText:
-	db   "SWITCH"
-	next "STATS"
-	next "CANCEL@"
+	db   $06,$28,$05,$DD,$04,$D9,$02,$09,$01,$B2
+	next $01,$0D,$0A,$71,$07,$D4,$03,$15,$04,$36,$7F,$05,$18,$02,$D9
+	next $03,$19,$06,$C6,$01,$01,$02,$D9,$50
 
 JapaneseAhText:
-	db "アッ!@"
-
+	db $06,$D1,$0B,$66,$50; RAW DATA : 	db "앗!@"
+;アッ!@
 JapanesePokedexMenu:
-	db   "データをみる"
-	next "なきごえ"
-	next "ぶんぷをみる"
-	next "キャンセル@"
+	db   $03,$05,$07,$9C,$09,$88,$04,$36,$05,$18,$02,$D9; RAW DATA : 	db   "데이타를보다"
+	next $07,$4F,$07,$8D,$06,$02,$04,$3E; RAW DATA : 	next "울음소리"
+	next $05,$30,$0A,$27; RAW DATA : 	next "분포"
+	next $09,$15,$06,$4D,$50; RAW DATA : 	next "캔슬@"
+;データをみる
+;なきごえ
+;ぶんぷをみる
+;キャンセル
 
 DisplayMoneyBox:
 	ld hl, wd730
@@ -300,7 +315,7 @@ DoBuySellQuitMenu:
 	ld [wMenuWatchedKeys], a
 	ld a, $2
 	ld [wMaxMenuItem], a
-	ld a, $1
+	ld a, $2
 	ld [wTopMenuItemY], a
 	ld a, $1
 	ld [wTopMenuItemX], a
@@ -358,8 +373,10 @@ DisplayTwoOptionMenu:
 	ld a, $1
 	ld [wMaxMenuItem], a
 	ld a, b
+	dec a
 	ld [wTopMenuItemY], a
 	ld a, c
+	dec c
 	ld [wTopMenuItemX], a
 	xor a
 	ld [wLastMenuItem], a
@@ -405,10 +422,19 @@ DisplayTwoOptionMenu:
 	pop hl
 	ld a, [hli]
 	and a ; put blank line before first menu item?
-	ld bc, 20 + 2
+	ld bc, 2*20 + 2
 	jr z, .noBlankLine
 	ld bc, 2 * 20 + 2
+	ld a,[wTopMenuItemY]
+	inc a
+	ld [wTopMenuItemY],a
+	jr nz, .withBlackLine
 .noBlankLine
+	ld a,[wTopMenuItemY]
+	inc a
+	inc a
+	ld [wTopMenuItemY],a
+.withBlackLine
 	ld a, [hli]
 	ld e, a
 	ld a, [hli]
@@ -481,7 +507,7 @@ DisplayTwoOptionMenu:
 
 TwoOptionMenu_SaveScreenTiles:
 	ld de, wBuffer
-	lb bc, 5, 6
+	lb bc, 6, 8
 .loop
 	ld a, [hli]
 	ld [de], a
@@ -489,17 +515,17 @@ TwoOptionMenu_SaveScreenTiles:
 	dec c
 	jr nz, .loop
 	push bc
-	ld bc, SCREEN_WIDTH - 6
+	ld bc, SCREEN_WIDTH - 8
 	add hl, bc
 	pop bc
-	ld c, $6
+	ld c, $8
 	dec b
 	jr nz, .loop
 	ret
 
 TwoOptionMenu_RestoreScreenTiles:
 	ld de, wBuffer
-	lb bc, 5, 6
+	lb bc, 6, 8
 .loop
 	ld a, [de]
 	inc de
@@ -507,10 +533,10 @@ TwoOptionMenu_RestoreScreenTiles:
 	dec c
 	jr nz, .loop
 	push bc
-	ld bc, SCREEN_WIDTH - 6
+	ld bc, SCREEN_WIDTH - 8
 	add hl, bc
 	pop bc
-	ld c, 6
+	ld c, 8
 	dec b
 	jr nz, .loop
 	call UpdateSprites
@@ -522,44 +548,47 @@ TwoOptionMenu_RestoreScreenTiles:
 ; 02: byte put blank line before first menu item
 ; 03: word text pointer
 TwoOptionMenuStrings:
-	db 4,3,0
+	db 4,4,0
 	dw .YesNoMenu
-	db 6,3,0
+	db 6,4,0
 	dw .NorthWestMenu
-	db 6,3,0
+	db 6,4,0
 	dw .SouthEastMenu
-	db 6,3,0
+	db 6,4,0
 	dw .YesNoMenu
-	db 6,3,0
+	db 6,4,0
 	dw .NorthEastMenu
-	db 7,3,0
+	db 7,4,0
 	dw .TradeCancelMenu
 	db 7,4,1
 	dw .HealCancelMenu
-	db 4,3,0
+	db 4,4,0
 	dw .NoYesMenu
 
+
 .NoYesMenu
-	db   "NO"
-	next "YES@"
+	db $06,$C6,$02,$CF,$07,$20,$4E,$07,$19,$50
 .YesNoMenu
-	db   "YES"
-	next "NO@"
+	db $07,$19,$4E,$06,$C6,$02,$CF,$07,$20,$50
 .NorthWestMenu
-	db   "NORTH"
-	next "WEST@"
+	db $05,$2F,$08,$6A; RAW DATA : 	db "북쪽"
+	db $4E,$05,$DD,$08,$6A,$50; RAW DATA : 	db $4E,"서쪽@"
+	;db $8D,$8E,$91,$93,$87; RAW DATA : 	;db "NORTH",$4E,"WEST@"
 .SouthEastMenu
-	db   "SOUTH"
-	next "EAST@"
+	db $02,$42,$08,$6A; RAW DATA : 	db "남쪽"
+	db $4E,$03,$1F,$08,$6A,$50; RAW DATA : 	db $4E,"동쪽@"
+	;db $92,$8E,$94,$93,$87; RAW DATA : 	;db "SOUTH",$4E,"EAST@"
 .NorthEastMenu
-	db   "NORTH"
-	next "EAST@"
+	db $05,$2F,$08,$6A; RAW DATA : 	db "북쪽"
+	db $4E,$03,$1F,$08,$6A,$50; RAW DATA : 	db $4E,"동쪽@"
+	;db $8D,$8E,$91,$93,$87; RAW DATA : 	;db "NORTH",$4E,"EAST@"
 .TradeCancelMenu
-	db   "TRADE"
-	next "CANCEL@"
+	db $01,$83,$0A,$AF; RAW DATA : 	db "교환"
+	db $4E,$01,$A7,$04,$48,$03,$2E,$02,$D9,$50; RAW DATA : 	db $4E,"그만두다@"
 .HealCancelMenu
-	db   "HEAL"
-	next "CANCEL@"
+	;db "HEAL",$4E,"CANCEL@"
+	db $06,$3C,$01,$34,$0A,$6F,$02,$D9; RAW DATA : db "쉬게하다"
+	db $4E,$01,$A7,$04,$48,$03,$2E,$02,$D9,$50; RAW DATA : db $4E,"그만두다@"
 
 DisplayFieldMoveMonMenu:
 	xor a
@@ -576,14 +605,13 @@ DisplayFieldMoveMonMenu:
 	jr nz, .fieldMovesExist
 
 ; no field moves
-	coord hl, 11, 11
-	ld b, 5
-	ld c, 7
+	coord hl, 9, 10
+	lb bc, 6, 9
 	call TextBoxBorder
 	call UpdateSprites
 	ld a, 12
 	ld [hFieldMoveMonMenuTopMenuItemX], a
-	coord hl, 13, 12
+	coord hl, 11, 12
 	ld de, PokemonMenuEntries
 	jp PlaceString
 
@@ -592,13 +620,13 @@ DisplayFieldMoveMonMenu:
 
 ; Calculate the text box position and dimensions based on the leftmost X coord
 ; of the field move names before adjusting for the number of field moves.
-	coord hl, 0, 11
+	coord hl, 18, 9
 	ld a, [wFieldMovesLeftmostXCoord]
 	dec a
 	ld e, a
 	ld d, 0
 	add hl, de
-	ld b, 5
+	ld b, 6
 	ld a, 18
 	sub e
 	ld c, a
@@ -613,17 +641,14 @@ DisplayFieldMoveMonMenu:
 	inc b
 	dec a
 	jr nz, .textBoxHeightLoop
-
+	inc c
+	inc c
 ; Make space for an extra blank row above the top field move.
-	ld de, -SCREEN_WIDTH
-	add hl, de
-	inc b
-
 	call TextBoxBorder
 	call UpdateSprites
 
 ; Calculate the position of the first field move name to print.
-	coord hl, 0, 12
+	coord hl, 18, 11
 	ld a, [wFieldMovesLeftmostXCoord]
 	inc a
 	ld e, a
@@ -672,7 +697,7 @@ DisplayFieldMoveMonMenu:
 	pop hl
 	ld a, [wFieldMovesLeftmostXCoord]
 	ld [hFieldMoveMonMenuTopMenuItemX], a
-	coord hl, 0, 12
+	coord hl, 18, 11
 	ld a, [wFieldMovesLeftmostXCoord]
 	inc a
 	ld e, a
@@ -682,20 +707,20 @@ DisplayFieldMoveMonMenu:
 	jp PlaceString
 
 FieldMoveNames:
-	db "CUT@"
-	db "FLY@"
-	db "@"
-	db "SURF@"
-	db "STRENGTH@"
-	db "FLASH@"
-	db "DIG@"
-	db "TELEPORT@"
-	db "SOFTBOILED@"
+	db $0A,$3E,$05,$03,$01,$B2,$50
+	db $01,$68,$08,$0F,$02,$3F,$01,$B2,$50
+	db $07,$09,$03,$DF,$05,$30,$03,$1F,$04,$E6,$0A,$6F,$05,$EC,$07,$44,$03,$1F,$04,$E6,$0A,$3E,$07,$BB,$50;RAW DATA : "여러분동방하세요동방풀잼@"
+	db $09,$F4,$03,$15,$09,$88,$01,$B2,$50
+	db $01,$7B,$03,$F2,$50
+	db $0A,$63,$03,$D1,$06,$63,$50
+	db $01,$88,$04,$7B,$09,$F4,$01,$B2,$50
+	db $06,$28,$01,$03,$07,$9C,$03,$1F,$50
+	db $06,$CB,$02,$4A,$01,$B2,$50
 
 PokemonMenuEntries:
-	db   "STATS"
-	next "SWITCH"
-	next "CANCEL@"
+	db   $01,$0D,$0A,$71,$07,$D4,$03,$15,$04,$36,$7F,$05,$18,$02,$D9
+	next $06,$28,$05,$DD,$04,$D9,$02,$09,$01,$B2
+	next $03,$19,$06,$C6,$01,$01,$02,$D9,$50
 
 GetMonFieldMoves:
 	ld a, [wWhichPokemon]

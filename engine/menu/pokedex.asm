@@ -81,7 +81,7 @@ HandlePokedexSideMenu:
 	ld hl, wTopMenuItemY
 	ld a, 10
 	ld [hli], a ; top menu item Y
-	ld a, 15
+	ld a, 13
 	ld [hli], a ; top menu item X
 	xor a
 	ld [hli], a ; current menu item ID
@@ -128,9 +128,9 @@ HandlePokedexSideMenu:
 
 .buttonBPressed
 	push bc
-	coord hl, 15, 10
+	coord hl, 14, 8
 	ld de, 20
-	lb bc, " ", 7
+	lb bc, " ", 9
 	call DrawTileLine ; cover up the menu cursor in the side menu
 	pop bc
 	jr .exitSideMenu
@@ -158,43 +158,41 @@ HandlePokedexListMenu:
 	xor a
 	ld [H_AUTOBGTRANSFERENABLED], a
 ; draw the horizontal line separating the seen and owned amounts from the menu
-	coord hl, 15, 8
-	ld a, "─"
-	ld [hli], a
-	ld [hli], a
-	ld [hli], a
-	ld [hli], a
-	ld [hli], a
-	coord hl, 14, 0
+	coord hl, 12, 8
+	push bc
+	lb bc, 8, 6
+	call TextBoxBorder
+	pop bc
+	coord hl, 11, 0
 	ld [hl], $71 ; vertical line tile
-	coord hl, 14, 1
+	coord hl, 11, 1
 	call DrawPokedexVerticalLine
-	coord hl, 14, 9
+	coord hl, 11, 9
 	call DrawPokedexVerticalLine
 	ld hl, wPokedexSeen
 	ld b, wPokedexSeenEnd - wPokedexSeen
 	call CountSetBits
 	ld de, wNumSetBits
-	coord hl, 16, 3
+	coord hl, 16, 2
 	lb bc, 1, 3
 	call PrintNumber ; print number of seen pokemon
 	ld hl, wPokedexOwned
 	ld b, wPokedexOwnedEnd - wPokedexOwned
 	call CountSetBits
 	ld de, wNumSetBits
-	coord hl, 16, 6
+	coord hl, 16, 5
 	lb bc, 1, 3
 	call PrintNumber ; print number of owned pokemon
-	coord hl, 16, 2
+	coord hl, 13, 1
 	ld de, PokedexSeenText
 	call PlaceString
-	coord hl, 16, 5
+	coord hl, 13, 4
 	ld de, PokedexOwnText
 	call PlaceString
 	coord hl, 1, 1
 	ld de, PokedexContentsText
 	call PlaceString
-	coord hl, 16, 10
+	coord hl, 14, 10
 	ld de, PokedexMenuItemsText
 	call PlaceString
 ; find the highest pokedex number among the pokemon the player has seen
@@ -217,8 +215,8 @@ HandlePokedexListMenu:
 .loop
 	xor a
 	ld [H_AUTOBGTRANSFERENABLED], a
-	coord hl, 4, 2
-	lb bc, 14, 10
+	coord hl, 5, 2
+	lb bc, 14, 5
 	call ClearScreenArea
 	coord hl, 1, 3
 	ld a, [wListScrollOffset]
@@ -239,14 +237,9 @@ HandlePokedexListMenu:
 	push af
 	push de
 	push hl
-	ld de, -SCREEN_WIDTH
-	add hl, de
 	ld de, wd11e
 	lb bc, LEADING_ZEROES | 1, 3
 	call PrintNumber ; print the pokedex number
-	ld de, SCREEN_WIDTH
-	add hl, de
-	dec hl
 	push hl
 	ld hl, wPokedexOwned
 	call IsPokemonBitSet
@@ -263,7 +256,7 @@ HandlePokedexListMenu:
 	ld de, .dashedLine ; print a dashed line in place of the name if the player hasn't seen the pokemon
 	jr .skipGettingName
 .dashedLine ; for unseen pokemon in the list
-	db "----------@"
+	db "-----@"
 .getPokemonName
 	call PokedexToIndex
 	call GetMonName
@@ -472,6 +465,8 @@ ShowPokedexDataInternal:
 	ld h, b
 	ld l, c
 	push de
+	ld de, PokeText
+	call PlaceString
 	ld a, [wd11e]
 	push af
 	call IndexToPokedex
@@ -516,7 +511,7 @@ ShowPokedexDataInternal:
 	jp z, .waitForButtonPress ; if the pokemon has not been owned, don't print the height, weight, or description
 	inc de ; de = address of feet (height)
 	ld a, [de] ; reads feet, but a is overwritten without being used
-	coord hl, 12, 6
+	coord hl, 13, 6
 	lb bc, 1, 2
 	call PrintNumber ; print feet (height)
 	ld a, $60 ; feet symbol tile (one tick)
@@ -527,6 +522,9 @@ ShowPokedexDataInternal:
 	lb bc, LEADING_ZEROES | 1, 2
 	call PrintNumber ; print inches (height)
 	ld a, $61 ; inches symbol tile (two ticks)
+	ld [hl], a
+	coord hl, 15, 6
+	ld a, "." ; feet symbol tile (one tick)
 	ld [hl], a
 ; now print the weight (note that weight is stored in tenths of pounds internally)
 	inc de
@@ -591,12 +589,12 @@ ShowPokedexDataInternal:
 	ret
 
 HeightWeightText:
-	db   "HT  ?",$60,"??",$61
-	next "WT   ???lb@"
+	db $09,$80,"    ???",$60
+	next $04,$AB,$01,$34,"   ???",$61,$62,"@"
 
 ; XXX does anything point to this?
 PokeText:
-	db "#@"
+	db $0A,$27,$09,$2F,$04,$93,$50
 
 ; horizontal line that divides the pokedex text description from the rest of the data
 PokedexDataDividerLine:

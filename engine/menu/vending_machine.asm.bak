@@ -85,16 +85,15 @@ VendingMachineText1:
 	db "@"
 
 DrinkText:
-	db   "FRESH WATER"
-	next "SODA POP"
-	next "LEMONADE"
-	next "CANCEL@"
+	db   $04,$60,$07,$A6,$02,$C2,$7F,$04,$B0; RAW DATA : 	db   "맛있는 물"
+	next $04,$CC,$02,$77,$03,$C6,$7F,$05,$B7,$07,$9C,$02,$D9; RAW DATA : 	next "미네랄 사이다"
+	next $0A,$C4,$04,$33,$08,$F7,$7F,$04,$D0,$09,$79; RAW DATA : 	next "후르츠 밀크"
+	next $01,$A7,$04,$48,$03,$2E,$02,$D9,$50; RAW DATA : 	next "그만두다@"
 
 DrinkPriceText:
-	db   "¥200"
-	next "¥300"
-	next "¥350"
-	next "@"
+	db   "200¥"
+	next "300¥"
+	next "350¥",$4E,"@"
 
 VendingMachineText4:
 	TX_FAR _VendingMachineText4

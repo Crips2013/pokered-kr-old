@@ -1044,7 +1044,7 @@ ItemUseMedicine:
 	sbc b
 	ld [hl], a
 	ld [wHPBarNewHP+1], a
-	coord hl, 4, 1
+	coord hl, 11, 1
 	ld a, [wWhichPokemon]
 	ld bc, 2 * SCREEN_WIDTH
 	call AddNTimes ; calculate coordinates of HP bar of pokemon that used Softboiled
@@ -1174,7 +1174,7 @@ ItemUseMedicine:
 	xor a
 	ld [wBattleMonStatus], a ; remove the status ailment in the in-battle pokemon data
 .calculateHPBarCoords
-	ld hl, wOAMBuffer + $90
+	ld hl, wOAMBuffer + $83
 	ld bc, 2 * SCREEN_WIDTH
 	inc d
 .calculateHPBarCoordsLoop
@@ -1424,12 +1424,13 @@ VitaminNoEffectText:
 	TX_FAR _VitaminNoEffectText
 	db "@"
 
+
 VitaminText:
-	db "HEALTH@"
-	db "ATTACK@"
-	db "DEFENSE@"
-	db "SPEED@"
-	db "SPECIAL@"
+	db $08,$BC,$03,$F2,$50; RAW DATA : 	db "체력@"
+	db $01,$68,$01,$3D,$50; RAW DATA : 	db "공격@"
+	db $04,$E6,$06,$EE,$50; RAW DATA : 	db "방어@"
+	db $06,$4A,$0A,$67,$03,$45,$50; RAW DATA : 	db "스피드@"
+	db $09,$DF,$06,$26,$50; RAW DATA : 	db "특수@"
 
 ItemUseBait:
 	ld hl, ThrewBaitText
@@ -2221,8 +2222,8 @@ ItemUseTMHM:
 	call PrintText
 	ld hl, TeachMachineMoveText
 	call PrintText
-	coord hl, 14, 7
-	lb bc, 8, 15
+	coord hl, 14, 6
+	lb bc, 7, 15
 	ld a, TWO_OPTION_MENU
 	ld [wTextBoxID], a
 	call DisplayTextBoxID ; yes/no menu
@@ -2607,8 +2608,8 @@ TossItem_:
 	call CopyStringToCF4B ; copy name to wcf4b
 	ld hl, IsItOKToTossItemText
 	call PrintText
-	coord hl, 14, 7
-	lb bc, 8, 15
+	coord hl, 14, 6
+	lb bc, 7, 15
 	ld a, TWO_OPTION_MENU
 	ld [wTextBoxID], a
 	call DisplayTextBoxID ; yes/no menu

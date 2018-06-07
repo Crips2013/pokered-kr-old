@@ -25,11 +25,13 @@ PrintType:
 
 ; erase "TYPE2/" if the mon only has 1 type
 EraseType2Text:
-	ld a, " "
-	ld bc, $13
+	ld bc, $24
 	add hl, bc
-	ld bc, $6
-	jp FillMemory
+	ld de, RemoveText
+	;call PlaceString
+	jp PlaceString
+RemoveText:
+db $0B,$6D,$0B,$6D,$0B,$6D,$0B,$6D,$0B,$6D,$50
 
 PrintMoveType:
 	call GetPredefRegisters

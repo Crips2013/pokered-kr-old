@@ -25,7 +25,7 @@ VendingMachineMenu:
 	coord hl, 2, 5
 	ld de, DrinkText
 	call PlaceString
-	coord hl, 9, 6
+	coord hl, 9, 5
 	ld de, DrinkPriceText
 	call PlaceString
 	ld hl, wd730

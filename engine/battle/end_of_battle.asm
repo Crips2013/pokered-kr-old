@@ -75,13 +75,13 @@ EndOfBattle:
 	ret
 
 YouWinText:
-	db "YOU WIN@"
+	db $02,$E7,$06,$65,$07,$97,$7F,$06,$62,$04,$3E,$50; RAW DATA : 	db "당신의 승리@"
 
 YouLoseText:
-	db "YOU LOSE@"
+	db $02,$E7,$06,$65,$07,$97,$7F,$0A,$00,$04,$E8,$50; RAW DATA : 	db "당신의 패배@"
 
 DrawText:
-	db "  DRAW@"
+	db $7F,$04,$AB,$06,$62,$05,$2E,$50; RAW DATA : 	db " 무승부@"
 
 PickUpPayDayMoneyText:
 	TX_FAR _PickUpPayDayMoneyText

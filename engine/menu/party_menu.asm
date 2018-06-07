@@ -48,6 +48,9 @@ RedrawPartyMenu_:
 	ld hl, wPartyMonNicks
 	call GetPartyMonName
 	pop hl
+
+	ld bc,20
+	add hl, bc
 	call PlaceString ; print the pokemon's name
 	callba WriteMonPartySpriteOAMByPartyIndex ; place the appropriate pokemon icon
 	ld a, [hPartyMonIndex]
@@ -81,7 +84,7 @@ RedrawPartyMenu_:
 	cp EVO_STONE_PARTY_MENU
 	jr z, .evolutionStoneMenu
 	push hl
-	ld bc, 14 ; 14 columns to the right
+	ld bc,8
 	add hl, bc
 	ld de, wLoadedMonStatus
 	call PrintStatusCondition
@@ -109,13 +112,13 @@ RedrawPartyMenu_:
 	jr nz, .placeMoveLearnabilityString
 	ld de, .notAbleToLearnMoveText
 .placeMoveLearnabilityString
-	ld bc, 20 + 9 ; down 1 row and right 9 columns
 	push hl
+	ld bc,20 + 9 ; down 1 row and right 9 columns
 	add hl, bc
 	call PlaceString
 	pop hl
 .printLevel
-	ld bc, 10 ; move 10 columns to the right
+	ld bc, 20+5
 	add hl, bc
 	call PrintLevel
 	pop hl
@@ -127,9 +130,9 @@ RedrawPartyMenu_:
 	inc c
 	jp .loop
 .ableToLearnMoveText
-	db "ABLE@"
+	db $04,$E8,$07,$4F,$7F,$06,$26,$7F,$07,$A6,$02,$D9,$50
 .notAbleToLearnMoveText
-	db "NOT ABLE@"
+	db $04,$E8,$07,$4F,$7F,$06,$26,$7F,$06,$F8,$02,$D9,$50
 .evolutionStoneMenu
 	push hl
 	ld hl, EvosMovesPointerTable
@@ -176,17 +179,18 @@ RedrawPartyMenu_:
 ; if it does match
 	ld de, .ableToEvolveText
 .placeEvolutionStoneString
-	ld bc, 20 + 9 ; down 1 row and right 9 columns
 	pop hl
 	push hl
+	ld bc, 20 + 9 ; down 1 row and right 9 columns
 	add hl, bc
 	call PlaceString
 	pop hl
-	jr .printLevel
+	jp .printLevel
+	
 .ableToEvolveText
-	db "ABLE@"
+	db $06,$B5,$7F,$06,$26,$7F,$07,$A6,$02,$D9,$50
 .notAbleToEvolveText
-	db "NOT ABLE@"
+	db $06,$B5,$7F,$06,$26,$7F,$06,$F8,$02,$D9,$50
 .afterDrawingMonEntries
 	ld b, SET_PAL_PARTY_MENU
 	call RunPaletteCommand
