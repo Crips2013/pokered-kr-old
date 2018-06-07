@@ -2724,8 +2724,8 @@ SelectMenuItem:
 	ld [hl], $ec
 .select
 	ld hl, hFlags_0xFFF6
-;	set 1, [hl]
-	res 1, [hl]
+	set 1, [hl]
+;	res 1, [hl]
 	call HandleMenuInput
 	ld hl, hFlags_0xFFF6
 	res 1, [hl]

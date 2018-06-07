@@ -52,6 +52,8 @@ RedrawPartyMenu_:
 	ld bc,20
 	add hl, bc
 	call PlaceString ; print the pokemon's name
+	ld bc,-20
+	add hl, bc
 	callba WriteMonPartySpriteOAMByPartyIndex ; place the appropriate pokemon icon
 	ld a, [hPartyMonIndex]
 	ld [wWhichPokemon], a

@@ -174,7 +174,7 @@ DrawHPBar::
 
 	push hl
 	push de
-	push bc
+	;push bc
 
 	; Left
 	ld a, $71 ; "HP:"
@@ -230,7 +230,7 @@ DrawHPBar::
 	add e
 	ld [hl], a
 .done
-	pop bc
+	;pop bc
 	pop de
 	pop hl
 	ret
@@ -648,8 +648,6 @@ PrintBCDNumber::
 	jr z, .loop
 	bit 7, b
 	jr nz, .loop
-	ld [hl], "¥"
-	inc hl
 .loop
 	ld a, [de]
 	swap a
@@ -660,20 +658,22 @@ PrintBCDNumber::
 	dec c
 	jr nz, .loop
 	bit 7, b ; were any non-zero digits printed?
-	jr z, .done ; if so, we are done
+	jr z, .KoreanCurrency ; if so, we are done
 .numberEqualsZero ; if every digit of the BCD number is zero
 	bit 6, b ; left or right alignment?
 	jr nz, .skipRightAlignmentAdjustment
 	dec hl ; if the string is right-aligned, it needs to be moved back one space
 .skipRightAlignmentAdjustment
-	bit 5, b
-	jr z, .skipCurrencySymbol
-	ld [hl], "¥"
-	inc hl
-.skipCurrencySymbol
 	ld [hl], "0"
 	call PrintLetterDelay
 	inc hl
+.KoreanCurrency
+	pop bc
+	bit 5, b
+	jr z, .SkipCurrency
+	ld [hl], "¥"
+	inc hl
+.SkipCurrency
 .done
 	ret
 
@@ -687,8 +687,6 @@ PrintBCDDigit::
 ; if bit 7 is set, then no numbers have been printed yet
 	bit 5, b ; print the currency symbol?
 	jr z, .skipCurrencySymbol
-	ld [hl], "¥"
-	inc hl
 	res 5, b
 .skipCurrencySymbol
 	res 7, b ; unset 7 to indicate that a nonzero digit has been reached
@@ -1708,7 +1706,8 @@ PrintListMenuEntries::
 	jr nz, .skipMultiplying
 ; if it's an item menu
 ; item entries are 2 bytes long, so multiply by 2
-	sla a
+	;sla a
+	add a
 	sla c
 .skipMultiplying
 	add e
@@ -1773,7 +1772,7 @@ PrintListMenuEntries::
 	ld [wcf91], a
 	call GetItemPrice ; get price
 	pop hl
-	ld bc, SCREEN_WIDTH + 5 ; 1 row down and 5 columns right
+	ld bc, 5 ;  5 columns right
 	add hl, bc
 	ld c, $a3 ; no leading zeroes, right-aligned, print currency symbol, 3 bytes
 	call PrintBCDNumber
@@ -1811,7 +1810,7 @@ PrintListMenuEntries::
 	ld [wLoadedMonLevel], a
 .skipCopyingLevel
 	pop hl
-	ld bc, $001c
+	ld bc, $0009;$001c
 	add hl, bc
 	call PrintLevel
 	pop af
@@ -1831,7 +1830,7 @@ PrintListMenuEntries::
 	and a ; is the item unsellable?
 	jr nz, .skipPrintingItemQuantity ; if so, don't print the quantity
 	push hl
-	ld bc, SCREEN_WIDTH + 8 ; 1 row down and 8 columns right
+	ld bc, 9 ; 1 row down and 8 columns right
 	add hl, bc
 	ld a, "×"
 	ld [hli], a
@@ -1855,7 +1854,7 @@ PrintListMenuEntries::
 	push bc
 	inc c
 	ld a, [wMenuItemToSwap] ; ID of item chosen for swapping (counts from 1)
-	and a ; is an item being swapped?
+	sla a;and a ; is an item being swapped?
 	jr z, .nextListEntry
 	sla a
 	cp c ; is it this item?
@@ -1880,7 +1879,7 @@ PrintListMenuEntries::
 	jp PlaceString
 
 ListMenuCancelText::
-	db "CANCEL@"
+	db $03,$19,$06,$C6,$01,$01,$02,$D9,$50; RAW DATA : db "돌아가다@"
 
 GetMonName::
 	push hl
@@ -1947,11 +1946,11 @@ GetMachineName::
 	add 5
 	ld [wd11e], a
 	ld hl, HiddenPrefix ; points to "HM"
-	ld bc, 2
+	ld bc, 8
 	jr .WriteMachinePrefix
 .WriteTM
 	ld hl, TechnicalPrefix ; points to "TM"
-	ld bc, 2
+	ld bc, 8
 .WriteMachinePrefix
 	ld de, wcd6d
 	call CopyData
@@ -1984,11 +1983,10 @@ GetMachineName::
 	pop de
 	pop hl
 	ret
-
 TechnicalPrefix::
-	db "TM"
+	db $01,$B2,$06,$2A,$04,$73,$06,$65; RAW DATA : db "기술머신"
 HiddenPrefix::
-	db "HM"
+	db $05,$61,$07,$CC,$04,$73,$06,$65; RAW DATA : db "비전머신"
 
 ; sets carry if item is HM, clears carry if item is not HM
 ; Input: a = item ID
@@ -2980,16 +2978,16 @@ Func_35f4::
 InitYesNoTextBoxParameters::
 	xor a ; YES_NO_MENU
 	ld [wTwoOptionMenuID], a
-	coord hl, 14, 7
-	ld bc, $80f
+	coord hl, 14, 6
+	lb bc, 7, 15
 	ret
 
 YesNoChoicePokeCenter::
 	call SaveScreenTilesToBuffer1
 	ld a, HEAL_CANCEL_MENU
 	ld [wTwoOptionMenuID], a
-	coord hl, 11, 6
-	lb bc, 8, 12
+	coord hl, 12, 6
+	lb bc, 8, 13
 	jr DisplayYesNoChoice
 
 WideYesNoChoice:: ; unused
@@ -4008,21 +4006,23 @@ PlaceMenuCursor::
 	ld a, [wLastMenuItem]
 	and a ; was the previous menu id 0?
 	jr z, .checkForArrow1
+	ld bc, 40
 	push af
 	ld a, [hFlags_0xFFF6]
 	bit 1, a ; is the menu double spaced?
 	jr z, .doubleSpaced1
 	ld bc, 20
-	jr .getOldMenuItemScreenPosition
+;	jr .getOldMenuItemScreenPosition
 .doubleSpaced1
-	ld bc, 40
-.getOldMenuItemScreenPosition
+;	ld bc, 40
+;.getOldMenuItemScreenPosition
 	pop af
 .oldMenuItemLoop
 	add hl, bc
 	dec a
 	jr nz, .oldMenuItemLoop
 .checkForArrow1
+	ld bc, 40
 	ld a, [hl]
 	cp "▶" ; was an arrow next to the previously selected menu item?
 	jr nz, .skipClearingArrow
@@ -4034,15 +4034,16 @@ PlaceMenuCursor::
 	ld a, [wCurrentMenuItem]
 	and a
 	jr z, .checkForArrow2
+	ld bc, 40
 	push af
 	ld a, [hFlags_0xFFF6]
 	bit 1, a ; is the menu double spaced?
 	jr z, .doubleSpaced2
 	ld bc, 20
-	jr .getCurrentMenuItemScreenPosition
+;	jr .getCurrentMenuItemScreenPosition
 .doubleSpaced2
-	ld bc, 40
-.getCurrentMenuItemScreenPosition
+;	ld bc, 40
+;.getCurrentMenuItemScreenPosition
 	pop af
 .currentMenuItemLoop
 	add hl, bc

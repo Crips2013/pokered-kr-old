@@ -1,6 +1,6 @@
 ZoneMonsCenter:
 	db $1E
-	IF DEF(_RED)
+	IF DEF(_RED) || DEF(_GREEN)
 		db 22,NIDORAN_M
 		db 25,RHYHORN
 		db 22,VENONAT

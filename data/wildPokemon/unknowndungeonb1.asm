@@ -9,7 +9,7 @@ DungeonMonsB1:
 	IF DEF(_RED)
 		db 57,ARBOK
 	ENDC
-	IF DEF(_BLUE)
+	IF DEF(_GREEN) || DEF(_BLUE)
 		db 57,SANDSLASH
 	ENDC
 	db 65,DITTO
