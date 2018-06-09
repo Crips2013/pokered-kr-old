@@ -192,7 +192,7 @@ DisplayIntroNameTextBox:
 IF DEF(_RED)
 DefaultNamesPlayer:
 	db   $06,$4A,$06,$4A,$03,$FE,$7F,$01,$41,$07,$D4,$0A,$6F,$02,$D9
-	db $50, $03, $E9, $03, $45
+	next $03, $E9, $03, $45
 	next $08,$26,$07,$4C
 	next $04,$8D,$05,$DE
 	next $07,$79,$03,$15,$09,$88,$07,$9C,$01,$25; RAW DATA : 	next "윈도타이거"
@@ -210,7 +210,7 @@ ENDC
 IF DEF(_BLUE)
 DefaultNamesPlayer:
 	db   $06,$4A,$06,$4A,$03,$FE,$7F,$01,$41,$07,$D4,$0A,$6F,$02,$D9
-	db "@", $05, $4D, $04, $17
+	next  $05, $4D, $04, $17
 	next $08,$26,$07,$4C
 	next $04,$8D,$05,$DE
 	next $07,$79,$03,$15,$09,$88,$07,$9C,$01,$25; RAW DATA : 	next "윈도타이거"
@@ -236,7 +236,7 @@ DefaultNamesPlayer:
 
 DefaultNamesRival:
 	db   $06,$4A,$06,$4A,$03,$FE,$7F,$01,$41,$07,$D4,$0A,$6F,$02,$D9
-	db $50, $03, $E9, $03, $45
+	next $03, $E9, $03, $45
 	next $08,$26,$07,$4C
 	next $04,$8D,$05,$DE
 	next $07,$79,$03,$15,$09,$88,$07,$9C,$01,$25; RAW DATA : 	next "윈도타이거"
@@ -283,7 +283,7 @@ ENDC
 IF DEF(_BLUE)
 DefaultNamesPlayerList:
 	db   $06,$4A,$06,$4A,$03,$FE,$7F,$01,$41,$07,$D4,$0A,$6F,$02,$D9
-	db "@", $05, $4D, $04, $17
+	db $50, $05, $4D, $04, $17
 	db $50,  $08,$26,$07,$4C
 	db $50,  $04,$8D,$05,$DE
 	db $50,  $07,$79,$03,$15,$09,$88,$07,$9C,$01,$25,$50; RAW DATA : 	db $50,  "윈도타이거"

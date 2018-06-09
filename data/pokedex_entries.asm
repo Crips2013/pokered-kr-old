@@ -195,1065 +195,1065 @@ PokedexEntryPointers:
 ; weight in pounds
 ; text entry
 
-RhydonDexEntry:
-	db "DRILL@"
-	db 6,3
-	dw 2650
-	TX_FAR _RhydonDexEntry
-	db "@"
-
-KangaskhanDexEntry:
-	db "PARENT@"
-	db 7,3
-	dw 1760
-	TX_FAR _KangaskhanDexEntry
-	db "@"
-
-NidoranMDexEntry:
-	db "POISON PIN@"
-	db 1,8
-	dw 200
-	TX_FAR _NidoranMDexEntry
-	db "@"
-
-ClefairyDexEntry:
-	db "FAIRY@"
-	db 2,0
-	dw 170
-	TX_FAR _ClefairyDexEntry
-	db "@"
-
-SpearowDexEntry:
-	db "TINY BIRD@"
-	db 1,0
-	dw 40
-	TX_FAR _SpearowDexEntry
-	db "@"
-
-VoltorbDexEntry:
-	db "BALL@"
-	db 1,8
-	dw 230
-	TX_FAR _VoltorbDexEntry
-	db "@"
-
-NidokingDexEntry:
-	db "DRILL@"
-	db 4,7
-	dw 1370
-	TX_FAR _NidokingDexEntry
-	db "@"
-
-SlowbroDexEntry:
-	db "HERMITCRAB@"
-	db 5,3
-	dw 1730
-	TX_FAR _SlowbroDexEntry
-	db "@"
+BulbasaurDexEntry:
+	db $06,$BE,$06,$D1,$50; RAW DATA : 	db "씨앗@"
+	db 0,7
+	dw 69
+	TX_FAR _BulbasaurDexEntry
+	db $50; RAW DATA : 	db "@"
 
 IvysaurDexEntry:
-	db "SEED@"
-	db 3,3
-	dw 290
-	TX_FAR _IvysaurDexEntry
-	db "@"
-
-ExeggutorDexEntry:
-	db "COCONUT@"
-	db 6,7
-	dw 2650
-	TX_FAR _ExeggutorDexEntry
-	db "@"
-
-LickitungDexEntry:
-	db "LICKING@"
-	db 3,11
-	dw 1440
-	TX_FAR _LickitungDexEntry
-	db "@"
-
-ExeggcuteDexEntry:
-	db "EGG@"
-	db 1,4
-	dw 60
-	TX_FAR _ExeggcuteDexEntry
-	db "@"
-
-GrimerDexEntry:
-	db "SLUDGE@"
-	db 2,11
-	dw 660
-	TX_FAR _GrimerDexEntry
-	db "@"
-
-GengarDexEntry:
-	db "SHADOW@"
-	db 4,11
-	dw 890
-	TX_FAR _GengarDexEntry
-	db "@"
-
-NidoranFDexEntry:
-	db "POISON PIN@"
-	db 1,4
-	dw 150
-	TX_FAR _NidoranFDexEntry
-	db "@"
-
-NidoqueenDexEntry:
-	db "DRILL@"
-	db 4,3
-	dw 1320
-	TX_FAR _NidoqueenDexEntry
-	db "@"
-
-CuboneDexEntry:
-	db "LONELY@"
-	db 1,4
-	dw 140
-	TX_FAR _CuboneDexEntry
-	db "@"
-
-RhyhornDexEntry:
-	db "SPIKES@"
-	db 3,3
-	dw 2540
-	TX_FAR _RhyhornDexEntry
-	db "@"
-
-LaprasDexEntry:
-	db "TRANSPORT@"
-	db 8,2
-	dw 4850
-	TX_FAR _LaprasDexEntry
-	db "@"
-
-ArcanineDexEntry:
-	db "LEGENDARY@"
-	db 6,3
-	dw 3420
-	TX_FAR _ArcanineDexEntry
-	db "@"
-
-MewDexEntry:
-	db "NEW SPECIE@"
-	db 1,4
-	dw 90
-	TX_FAR _MewDexEntry
-	db "@"
-
-GyaradosDexEntry:
-	db "ATROCIOUS@"
-	db 21,4
-	dw 5180
-	TX_FAR _GyaradosDexEntry
-	db "@"
-
-ShellderDexEntry:
-	db "BIVALVE@"
+	db $06,$BE,$06,$D1,$50; RAW DATA : 	db "씨앗@"
 	db 1,0
-	dw 90
-	TX_FAR _ShellderDexEntry
-	db "@"
+	dw 130
+	TX_FAR _IvysaurDexEntry
+	db $50; RAW DATA : 	db "@"
 
-TentacoolDexEntry:
-	db "JELLYFISH@"
-	db 2,11
+VenusaurDexEntry:
+	db $06,$BE,$06,$D1,$50; RAW DATA : 	db "씨앗@"
+	db 2,0
 	dw 1000
-	TX_FAR _TentacoolDexEntry
-	db "@"
+	TX_FAR _VenusaurDexEntry
+	db $50; RAW DATA : 	db "@"
 
-GastlyDexEntry:
-	db "GAS@"
-	db 4,3
-	dw 2
-	TX_FAR _GastlyDexEntry
-	db "@"
+CharmanderDexEntry:
+	db $03,$15,$04,$16,$02,$A8,$50; RAW DATA : 	db "도룡뇽@"
+	db 0,6
+	dw 85
+	TX_FAR _CharmanderDexEntry
+	db $50; RAW DATA : 	db "@"
 
-ScytherDexEntry:
-	db "MANTIS@"
-	db 4,11
-	dw 1230
-	TX_FAR _ScytherDexEntry
-	db "@"
+CharmeleonDexEntry:
+	db $0A,$AD,$07,$10,$50; RAW DATA : 	db "화염@"
+	db 1,1
+	dw 190
+	TX_FAR _CharmeleonDexEntry
+	db $50; RAW DATA : 	db "@"
 
-StaryuDexEntry:
-	db "STARSHAPE@"
-	db 2,7
-	dw 760
-	TX_FAR _StaryuDexEntry
-	db "@"
+CharizardDexEntry:
+	db $0A,$AD,$07,$10,$50; RAW DATA : 	db "화염@"
+	db 1,7
+	dw 905
+	TX_FAR _CharizardDexEntry
+	db $50; RAW DATA : 	db "@"
+
+SquirtleDexEntry:
+	db $01,$EF,$04,$46,$01,$25,$05,$2F,$50; RAW DATA : 	db "꼬마거북@"
+	db 0,5
+	dw 90
+	TX_FAR _SquirtleDexEntry
+	db $50; RAW DATA : 	db "@"
+
+WartortleDexEntry:
+	db $01,$25,$05,$2F,$50; RAW DATA : 	db "거북@"
+	db 1,0
+	dw 225
+	TX_FAR _WartortleDexEntry
+	db $50; RAW DATA : 	db "@"
 
 BlastoiseDexEntry:
-	db "SHELLFISH@"
-	db 5,3
-	dw 1890
+	db $01,$DE,$08,$2A,$50; RAW DATA : 	db "껍질@"
+	db 1,6
+	dw 855
 	TX_FAR _BlastoiseDexEntry
-	db "@"
-
-PinsirDexEntry:
-	db "STAGBEETLE@"
-	db 4,11
-	dw 1210
-	TX_FAR _PinsirDexEntry
-	db "@"
-
-TangelaDexEntry:
-	db "VINE@"
-	db 3,3
-	dw 770
-	TX_FAR _TangelaDexEntry
-	db "@"
-
-GrowlitheDexEntry:
-	db "PUPPY@"
-	db 2,4
-	dw 420
-	TX_FAR _GrowlitheDexEntry
-	db "@"
-
-OnixDexEntry:
-	db "ROCK SNAKE@"
-	db 28,10
-	dw 4630
-	TX_FAR _OnixDexEntry
-	db "@"
-
-FearowDexEntry:
-	db "BEAK@"
-	db 3,11
-	dw 840
-	TX_FAR _FearowDexEntry
-	db "@"
-
-PidgeyDexEntry:
-	db "TINY BIRD@"
-	db 1,0
-	dw 40
-	TX_FAR _PidgeyDexEntry
-	db "@"
-
-SlowpokeDexEntry:
-	db "DOPEY@"
-	db 3,11
-	dw 790
-	TX_FAR _SlowpokeDexEntry
-	db "@"
-
-KadabraDexEntry:
-	db "PSI@"
-	db 4,3
-	dw 1250
-	TX_FAR _KadabraDexEntry
-	db "@"
-
-GravelerDexEntry:
-	db "ROCK@"
-	db 3,3
-	dw 2320
-	TX_FAR _GravelerDexEntry
-	db "@"
-
-ChanseyDexEntry:
-	db "EGG@"
-	db 3,7
-	dw 760
-	TX_FAR _ChanseyDexEntry
-	db "@"
-
-MachokeDexEntry:
-	db "SUPERPOWER@"
-	db 4,11
-	dw 1550
-	TX_FAR _MachokeDexEntry
-	db "@"
-
-MrMimeDexEntry:
-	db "BARRIER@"
-	db 4,3
-	dw 1200
-	TX_FAR _MrMimeDexEntry
-	db "@"
-
-HitmonleeDexEntry:
-	db "KICKING@"
-	db 4,11
-	dw 1100
-	TX_FAR _HitmonleeDexEntry
-	db "@"
-
-HitmonchanDexEntry:
-	db "PUNCHING@"
-	db 4,7
-	dw 1110
-	TX_FAR _HitmonchanDexEntry
-	db "@"
-
-ArbokDexEntry:
-	db "COBRA@"
-	db 11,6
-	dw 1430
-	TX_FAR _ArbokDexEntry
-	db "@"
-
-ParasectDexEntry:
-	db "MUSHROOM@"
-	db 3,3
-	dw 650
-	TX_FAR _ParasectDexEntry
-	db "@"
-
-PsyduckDexEntry:
-	db "DUCK@"
-	db 2,7
-	dw 430
-	TX_FAR _PsyduckDexEntry
-	db "@"
-
-DrowzeeDexEntry:
-	db "HYPNOSIS@"
-	db 3,3
-	dw 710
-	TX_FAR _DrowzeeDexEntry
-	db "@"
-
-GolemDexEntry:
-	db "MEGATON@"
-	db 4,7
-	dw 6620
-	TX_FAR _GolemDexEntry
-	db "@"
-
-MagmarDexEntry:
-	db "SPITFIRE@"
-	db 4,3
-	dw 980
-	TX_FAR _MagmarDexEntry
-	db "@"
-
-ElectabuzzDexEntry:
-	db "ELECTRIC@"
-	db 3,7
-	dw 660
-	TX_FAR _ElectabuzzDexEntry
-	db "@"
-
-MagnetonDexEntry:
-	db "MAGNET@"
-	db 3,3
-	dw 1320
-	TX_FAR _MagnetonDexEntry
-	db "@"
-
-KoffingDexEntry:
-	db "POISON GAS@"
-	db 2,0
-	dw 20
-	TX_FAR _KoffingDexEntry
-	db "@"
-
-MankeyDexEntry:
-	db "PIG MONKEY@"
-	db 1,8
-	dw 620
-	TX_FAR _MankeyDexEntry
-	db "@"
-
-SeelDexEntry:
-	db "SEA LION@"
-	db 3,7
-	dw 1980
-	TX_FAR _SeelDexEntry
-	db "@"
-
-DiglettDexEntry:
-	db "MOLE@"
-	db 0,8
-	dw 20
-	TX_FAR _DiglettDexEntry
-	db "@"
-
-TaurosDexEntry:
-	db "WILD BULL@"
-	db 4,7
-	dw 1950
-	TX_FAR _TaurosDexEntry
-	db "@"
-
-FarfetchdDexEntry:
-	db "WILD DUCK@"
-	db 2,7
-	dw 330
-	TX_FAR _FarfetchdDexEntry
-	db "@"
-
-VenonatDexEntry:
-	db "INSECT@"
-	db 3,3
-	dw 660
-	TX_FAR _VenonatDexEntry
-	db "@"
-
-DragoniteDexEntry:
-	db "DRAGON@"
-	db 7,3
-	dw 4630
-	TX_FAR _DragoniteDexEntry
-	db "@"
-
-DoduoDexEntry:
-	db "TWIN BIRD@"
-	db 4,7
-	dw 860
-	TX_FAR _DoduoDexEntry
-	db "@"
-
-PoliwagDexEntry:
-	db "TADPOLE@"
-	db 2,0
-	dw 270
-	TX_FAR _PoliwagDexEntry
-	db "@"
-
-JynxDexEntry:
-	db "HUMANSHAPE@"
-	db 4,7
-	dw 900
-	TX_FAR _JynxDexEntry
-	db "@"
-
-MoltresDexEntry:
-	db "FLAME@"
-	db 6,7
-	dw 1320
-	TX_FAR _MoltresDexEntry
-	db "@"
-
-ArticunoDexEntry:
-	db "FREEZE@"
-	db 5,7
-	dw 1220
-	TX_FAR _ArticunoDexEntry
-	db "@"
-
-ZapdosDexEntry:
-	db "ELECTRIC@"
-	db 5,3
-	dw 1160
-	TX_FAR _ZapdosDexEntry
-	db "@"
-
-DittoDexEntry:
-	db "TRANSFORM@"
-	db 1,0
-	dw 90
-	TX_FAR _DittoDexEntry
-	db "@"
-
-MeowthDexEntry:
-	db "SCRATCHCAT@"
-	db 1,4
-	dw 90
-	TX_FAR _MeowthDexEntry
-	db "@"
-
-KrabbyDexEntry:
-	db "RIVER CRAB@"
-	db 1,4
-	dw 140
-	TX_FAR _KrabbyDexEntry
-	db "@"
-
-VulpixDexEntry:
-	db "FOX@"
-	db 2,0
-	dw 220
-	TX_FAR _VulpixDexEntry
-	db "@"
-
-NinetalesDexEntry:
-	db "FOX@"
-	db 3,7
-	dw 440
-	TX_FAR _NinetalesDexEntry
-	db "@"
-
-PikachuDexEntry:
-	db "MOUSE@"
-	db 1,4
-	dw 130
-	TX_FAR _PikachuDexEntry
-	db "@"
-
-RaichuDexEntry:
-	db "MOUSE@"
-	db 2,7
-	dw 660
-	TX_FAR _RaichuDexEntry
-	db "@"
-
-DratiniDexEntry:
-	db "DRAGON@"
-	db 5,11
-	dw 70
-	TX_FAR _DratiniDexEntry
-	db "@"
-
-DragonairDexEntry:
-	db "DRAGON@"
-	db 13,1
-	dw 360
-	TX_FAR _DragonairDexEntry
-	db "@"
-
-KabutoDexEntry:
-	db "SHELLFISH@"
-	db 1,8
-	dw 250
-	TX_FAR _KabutoDexEntry
-	db "@"
-
-KabutopsDexEntry:
-	db "SHELLFISH@"
-	db 4,3
-	dw 890
-	TX_FAR _KabutopsDexEntry
-	db "@"
-
-HorseaDexEntry:
-	db "DRAGON@"
-	db 1,4
-	dw 180
-	TX_FAR _HorseaDexEntry
-	db "@"
-
-SeadraDexEntry:
-	db "DRAGON@"
-	db 3,11
-	dw 550
-	TX_FAR _SeadraDexEntry
-	db "@"
-
-SandshrewDexEntry:
-	db "MOUSE@"
-	db 2,0
-	dw 260
-	TX_FAR _SandshrewDexEntry
-	db "@"
-
-SandslashDexEntry:
-	db "MOUSE@"
-	db 3,3
-	dw 650
-	TX_FAR _SandslashDexEntry
-	db "@"
-
-OmanyteDexEntry:
-	db "SPIRAL@"
-	db 1,4
-	dw 170
-	TX_FAR _OmanyteDexEntry
-	db "@"
-
-OmastarDexEntry:
-	db "SPIRAL@"
-	db 3,3
-	dw 770
-	TX_FAR _OmastarDexEntry
-	db "@"
-
-JigglypuffDexEntry:
-	db "BALLOON@"
-	db 1,8
-	dw 120
-	TX_FAR _JigglypuffDexEntry
-	db "@"
-
-WigglytuffDexEntry:
-	db "BALLOON@"
-	db 3,3
-	dw 260
-	TX_FAR _WigglytuffDexEntry
-	db "@"
-
-EeveeDexEntry:
-	db "EVOLUTION@"
-	db 1,0
-	dw 140
-	TX_FAR _EeveeDexEntry
-	db "@"
-
-FlareonDexEntry:
-	db "FLAME@"
-	db 2,11
-	dw 550
-	TX_FAR _FlareonDexEntry
-	db "@"
-
-JolteonDexEntry:
-	db "LIGHTNING@"
-	db 2,7
-	dw 540
-	TX_FAR _JolteonDexEntry
-	db "@"
-
-VaporeonDexEntry:
-	db "BUBBLE JET@"
-	db 3,3
-	dw 640
-	TX_FAR _VaporeonDexEntry
-	db "@"
-
-MachopDexEntry:
-	db "SUPERPOWER@"
-	db 2,7
-	dw 430
-	TX_FAR _MachopDexEntry
-	db "@"
-
-ZubatDexEntry:
-	db "BAT@"
-	db 2,7
-	dw 170
-	TX_FAR _ZubatDexEntry
-	db "@"
-
-EkansDexEntry:
-	db "SNAKE@"
-	db 6,7
-	dw 150
-	TX_FAR _EkansDexEntry
-	db "@"
-
-ParasDexEntry:
-	db "MUSHROOM@"
-	db 1,0
-	dw 120
-	TX_FAR _ParasDexEntry
-	db "@"
-
-PoliwhirlDexEntry:
-	db "TADPOLE@"
-	db 3,3
-	dw 440
-	TX_FAR _PoliwhirlDexEntry
-	db "@"
-
-PoliwrathDexEntry:
-	db "TADPOLE@"
-	db 4,3
-	dw 1190
-	TX_FAR _PoliwrathDexEntry
-	db "@"
-
-WeedleDexEntry:
-	db "HAIRY BUG@"
-	db 1,0
-	dw 70
-	TX_FAR _WeedleDexEntry
-	db "@"
-
-KakunaDexEntry:
-	db "COCOON@"
-	db 2,0
-	dw 220
-	TX_FAR _KakunaDexEntry
-	db "@"
-
-BeedrillDexEntry:
-	db "POISON BEE@"
-	db 3,3
-	dw 650
-	TX_FAR _BeedrillDexEntry
-	db "@"
-
-DodrioDexEntry:
-	db "TRIPLEBIRD@"
-	db 5,11
-	dw 1880
-	TX_FAR _DodrioDexEntry
-	db "@"
-
-PrimeapeDexEntry:
-	db "PIG MONKEY@"
-	db 3,3
-	dw 710
-	TX_FAR _PrimeapeDexEntry
-	db "@"
-
-DugtrioDexEntry:
-	db "MOLE@"
-	db 2,4
-	dw 730
-	TX_FAR _DugtrioDexEntry
-	db "@"
-
-VenomothDexEntry:
-	db "POISONMOTH@"
-	db 4,11
-	dw 280
-	TX_FAR _VenomothDexEntry
-	db "@"
-
-DewgongDexEntry:
-	db "SEA LION@"
-	db 5,7
-	dw 2650
-	TX_FAR _DewgongDexEntry
-	db "@"
+	db $50; RAW DATA : 	db "@"
 
 CaterpieDexEntry:
-	db "WORM@"
-	db 1,0
-	dw 60
+	db $06,$D6,$04,$FA,$03,$E9,$50; RAW DATA : 	db "애벌레@"
+	db 0,3
+	dw 29
 	TX_FAR _CaterpieDexEntry
-	db "@"
+	db $50; RAW DATA : 	db "@"
 
 MetapodDexEntry:
-	db "COCOON@"
-	db 2,4
-	dw 220
+	db $04,$F8,$03,$05,$01,$B2,$50; RAW DATA : 	db "번데기@"
+	db 0,7
+	dw 99
 	TX_FAR _MetapodDexEntry
-	db "@"
+	db $50; RAW DATA : 	db "@"
 
 ButterfreeDexEntry:
-	db "BUTTERFLY@"
-	db 3,7
-	dw 710
+	db $02,$3A,$05,$61,$50; RAW DATA : 	db "나비@"
+	db 1,1
+	dw 320
 	TX_FAR _ButterfreeDexEntry
-	db "@"
+	db $50; RAW DATA : 	db "@"
 
-MachampDexEntry:
-	db "SUPERPOWER@"
-	db 5,3
-	dw 2870
-	TX_FAR _MachampDexEntry
-	db "@"
+WeedleDexEntry:
+	db $06,$0B,$08,$E6,$07,$9C,$50; RAW DATA : 	db "송충이@"
+	db 0,3
+	dw 32
+	TX_FAR _WeedleDexEntry
+	db $50; RAW DATA : 	db "@"
 
-GolduckDexEntry:
-	db "DUCK@"
-	db 5,7
-	dw 1690
-	TX_FAR _GolduckDexEntry
-	db "@"
+KakunaDexEntry:
+	db $04,$F8,$03,$05,$01,$B2,$50; RAW DATA : 	db "번데기@"
+	db 0,6
+	dw 100
+	TX_FAR _KakunaDexEntry
+	db $50; RAW DATA : 	db "@"
 
-HypnoDexEntry:
-	db "HYPNOSIS@"
-	db 5,3
-	dw 1670
-	TX_FAR _HypnoDexEntry
-	db "@"
+BeedrillDexEntry:
+	db $03,$16,$04,$FA,$50; RAW DATA : 	db "독벌@"
+	db 1,0
+	dw 295
+	TX_FAR _BeedrillDexEntry
+	db $50; RAW DATA : 	db "@"
 
-GolbatDexEntry:
-	db "BAT@"
-	db 5,3
-	dw 1210
-	TX_FAR _GolbatDexEntry
-	db "@"
+PidgeyDexEntry:
+	db $06,$C6,$01,$B2,$05,$C5,$50; RAW DATA : 	db "아기새@"
+	db 0,3
+	dw 18
+	TX_FAR _PidgeyDexEntry
+	db $50; RAW DATA : 	db "@"
 
-MewtwoDexEntry:
-	db "GENETIC@"
-	db 6,7
-	dw 2690
-	TX_FAR _MewtwoDexEntry
-	db "@"
+PidgeottoDexEntry:
+	db $05,$C5,$50; RAW DATA : 	db "새@"
+	db 1,1
+	dw 300
+	TX_FAR _PidgeottoDexEntry
+	db $50; RAW DATA : 	db "@"
 
-SnorlaxDexEntry:
-	db "SLEEPING@"
-	db 6,11
-	dw 10140
-	TX_FAR _SnorlaxDexEntry
-	db "@"
+PidgeotDexEntry:
+	db $05,$C5,$50; RAW DATA : 	db "새@"
+	db 1,5
+	dw 395
+	TX_FAR _PidgeotDexEntry
+	db $50; RAW DATA : 	db "@"
 
-MagikarpDexEntry:
-	db "FISH@"
-	db 2,11
-	dw 220
-	TX_FAR _MagikarpDexEntry
-	db "@"
+RattataDexEntry:
+	db $08,$13,$50; RAW DATA : 	db "쥐@"
+	db 0,3
+	dw 35
+	TX_FAR _RattataDexEntry
+	db $50; RAW DATA : 	db "@"
 
-MukDexEntry:
-	db "SLUDGE@"
-	db 3,11
-	dw 660
-	TX_FAR _MukDexEntry
-	db "@"
+RaticateDexEntry:
+	db $08,$13,$50; RAW DATA : 	db "쥐@"
+	db 0,7
+	dw 185
+	TX_FAR _RaticateDexEntry
+	db $50; RAW DATA : 	db "@"
 
-KinglerDexEntry:
-	db "PINCER@"
-	db 4,3
-	dw 1320
-	TX_FAR _KinglerDexEntry
-	db "@"
+SpearowDexEntry:
+	db $06,$C6,$01,$B2,$05,$C5,$50; RAW DATA : 	db "아기새@"
+	db 0,3
+	dw 20
+	TX_FAR _SpearowDexEntry
+	db $50; RAW DATA : 	db "@"
 
-CloysterDexEntry:
-	db "BIVALVE@"
-	db 4,11
-	dw 2920
-	TX_FAR _CloysterDexEntry
-	db "@"
+FearowDexEntry:
+	db $05,$2E,$04,$3E,$50; RAW DATA : 	db "부리@"
+	db 1,2
+	dw 380
+	TX_FAR _FearowDexEntry
+	db $50; RAW DATA : 	db "@"
 
-ElectrodeDexEntry:
-	db "BALL@"
-	db 3,11
-	dw 1470
-	TX_FAR _ElectrodeDexEntry
-	db "@"
+EkansDexEntry:
+	db $04,$EC,$50; RAW DATA : 	db "뱀@"
+	db 2,0
+	dw 690
+	TX_FAR _EkansDexEntry
+	db $50; RAW DATA : 	db "@"
+
+ArbokDexEntry:
+	db $09,$3A,$05,$4A,$03,$C3,$50; RAW DATA : 	db "코브라@"
+	db 3,5
+	dw 650
+	TX_FAR _ArbokDexEntry
+	db $50; RAW DATA : 	db "@"
+
+PikachuDexEntry:
+	db $08,$13,$50; RAW DATA : 	db "쥐@"
+	db 0,4
+	dw 60
+	TX_FAR _PikachuDexEntry
+	db $50; RAW DATA : 	db "@"
+
+RaichuDexEntry:
+	db $08,$13,$50; RAW DATA : 	db "쥐@"
+	db 0,8
+	dw 300
+	TX_FAR _RaichuDexEntry
+	db $50; RAW DATA : 	db "@"
+
+SandshrewDexEntry:
+	db $08,$13,$50; RAW DATA : 	db "쥐@"
+	db 0,6
+	dw 120
+	TX_FAR _SandshrewDexEntry
+	db $50; RAW DATA : 	db "@"
+
+SandslashDexEntry:
+	db $08,$13,$50; RAW DATA : 	db "쥐@"
+	db 1,0
+	dw 295
+	TX_FAR _SandslashDexEntry
+	db $50; RAW DATA : 	db "@"
+
+NidoranFDexEntry:
+	db $03,$16,$09,$07,$50; RAW DATA : 	db "독침@"
+	db 0,4
+	dw 70
+	TX_FAR _NidoranFDexEntry
+	db $50; RAW DATA : 	db "@"
+
+NidorinaDexEntry:
+	db $03,$16,$09,$07,$50; RAW DATA : 	db "독침@"
+	db 0,8
+	dw 200
+	TX_FAR _NidorinaDexEntry
+	db $50; RAW DATA : 	db "@"
+
+NidoqueenDexEntry:
+	db $03,$45,$04,$41,$50; RAW DATA : 	db "드릴@"
+	db 1,3
+	dw 600
+	TX_FAR _NidoqueenDexEntry
+	db $50; RAW DATA : 	db "@"
+
+NidoranMDexEntry:
+	db $03,$16,$09,$07,$50; RAW DATA : 	db "독침@"
+	db 0,5
+	dw 90
+	TX_FAR _NidoranMDexEntry
+	db $50; RAW DATA : 	db "@"
+
+NidorinoDexEntry:
+	db $03,$16,$09,$07,$50; RAW DATA : 	db "독침@"
+	db 0,9
+	dw 195
+	TX_FAR _NidorinoDexEntry
+	db $50; RAW DATA : 	db "@"
+
+NidokingDexEntry:
+	db $03,$45,$04,$41,$50; RAW DATA : 	db "드릴@"
+	db 1,4
+	dw 620
+	TX_FAR _NidokingDexEntry
+	db $50; RAW DATA : 	db "@"
+
+ClefairyDexEntry:
+	db $07,$44,$07,$D4,$50; RAW DATA : 	db "요정@"
+	db 0,6
+	dw 75
+	TX_FAR _ClefairyDexEntry
+	db $50; RAW DATA : 	db "@"
 
 ClefableDexEntry:
-	db "FAIRY@"
-	db 4,3
-	dw 880
+	db $07,$44,$07,$D4,$50; RAW DATA : 	db "요정@"
+	db 1,3
+	dw 400
 	TX_FAR _ClefableDexEntry
-	db "@"
+	db $50; RAW DATA : 	db "@"
 
-WeezingDexEntry:
-	db "POISON GAS@"
-	db 3,11
-	dw 210
-	TX_FAR _WeezingDexEntry
-	db "@"
+VulpixDexEntry:
+	db $07,$09,$07,$4C,$50; RAW DATA : 	db "여우@"
+	db 0,6
+	dw 99
+	TX_FAR _VulpixDexEntry
+	db $50; RAW DATA : 	db "@"
+
+NinetalesDexEntry:
+	db $07,$09,$07,$4C,$50; RAW DATA : 	db "여우@"
+	db 1,1
+	dw 199
+	TX_FAR _NinetalesDexEntry
+	db $50; RAW DATA : 	db "@"
+
+JigglypuffDexEntry:
+	db $0A,$43,$05,$E1,$50; RAW DATA : 	db "풍선@"
+	db 0,5
+	dw 55
+	TX_FAR _JigglypuffDexEntry
+	db $50; RAW DATA : 	db "@"
+
+WigglytuffDexEntry:
+	db $0A,$43,$05,$E1,$50; RAW DATA : 	db "풍선@"
+	db 1,0
+	dw 120
+	TX_FAR _WigglytuffDexEntry
+	db $50; RAW DATA : 	db "@"
+
+ZubatDexEntry:
+	db $04,$DA,$08,$13,$50; RAW DATA : 	db "박쥐@"
+	db 0,8
+	dw 75
+	TX_FAR _ZubatDexEntry
+	db $50; RAW DATA : 	db "@"
+
+GolbatDexEntry:
+	db $04,$DA,$08,$13,$50; RAW DATA : 	db "박쥐@"
+	db 1,6
+	dw 550
+	TX_FAR _GolbatDexEntry
+	db $50; RAW DATA : 	db "@"
+
+OddishDexEntry:
+	db $07,$B2,$08,$CA,$50; RAW DATA : 	db "잡초@"
+	db 0,5
+	dw 54
+	TX_FAR _OddishDexEntry
+	db $50; RAW DATA : 	db "@"
+
+GloomDexEntry:
+	db $07,$B2,$08,$CA,$50; RAW DATA : 	db "잡초@"
+	db 0,8
+	dw 86
+	TX_FAR _GloomDexEntry
+	db $50; RAW DATA : 	db "@"
+
+VileplumeDexEntry:
+	db $01,$F9,$50; RAW DATA : 	db "꽃@"
+	db 1,2
+	dw 186
+	TX_FAR _VileplumeDexEntry
+	db $50; RAW DATA : 	db "@"
+
+ParasDexEntry:
+	db $04,$F6,$05,$E8,$50; RAW DATA : 	db "버섯@"
+	db 0,3
+	dw 54
+	TX_FAR _ParasDexEntry
+	db $50; RAW DATA : 	db "@"
+
+ParasectDexEntry:
+	db $04,$F6,$05,$E8,$50; RAW DATA : 	db "버섯@"
+	db 1,0
+	dw 295
+	TX_FAR _ParasectDexEntry
+	db $50; RAW DATA : 	db "@"
+
+VenonatDexEntry:
+	db $01,$4F,$08,$E6,$50; RAW DATA : 	db "곤충@"
+	db 1,0
+	dw 300
+	TX_FAR _VenonatDexEntry
+	db $50; RAW DATA : 	db "@"
+
+VenomothDexEntry:
+	db $03,$16,$02,$3A,$04,$E6,$50; RAW DATA : 	db "독나방@"
+	db 1,5
+	dw 125
+	TX_FAR _VenomothDexEntry
+	db $50; RAW DATA : 	db "@"
+
+DiglettDexEntry:
+	db $03,$2E,$02,$F5,$08,$26,$50; RAW DATA : 	db "두더지@"
+	db 0,2
+	dw 8
+	TX_FAR _DiglettDexEntry
+	db $50; RAW DATA : 	db "@"
+
+DugtrioDexEntry:
+	db $03,$2E,$02,$F5,$08,$26,$50; RAW DATA : 	db "두더지@"
+	db 0,7
+	dw 333
+	TX_FAR _DugtrioDexEntry
+	db $50; RAW DATA : 	db "@"
+
+MeowthDexEntry:
+	db $07,$44,$01,$7B,$01,$4D,$06,$E7,$07,$9C,$50; RAW DATA : 	db "요괴고양이@"
+	db 1,0
+	dw 320
+	TX_FAR _MeowthDexEntry
+	db $50; RAW DATA : 	db "@"
 
 PersianDexEntry:
-	db "CLASSY CAT@"
+	db $05,$D4,$01,$4D,$06,$E7,$07,$9C,$50; RAW DATA : 	db "샴고양이@"
 	db 3,3
 	dw 710
 	TX_FAR _PersianDexEntry
-	db "@"
+	db $50; RAW DATA : 	db "@"
 
-MarowakDexEntry:
-	db "BONEKEEPER@"
-	db 3,3
-	dw 990
-	TX_FAR _MarowakDexEntry
-	db "@"
+PsyduckDexEntry:
+	db $07,$20,$04,$3E,$50; RAW DATA : 	db "오리@"
+	db 0,8
+	dw 196
+	TX_FAR _PsyduckDexEntry
+	db $50; RAW DATA : 	db "@"
 
-HaunterDexEntry:
-	db "GAS@"
-	db 5,3
-	dw 2
-	TX_FAR _HaunterDexEntry
-	db "@"
+GolduckDexEntry:
+	db $07,$20,$04,$3E,$50; RAW DATA : 	db "오리@"
+	db 1,7
+	dw 766
+	TX_FAR _GolduckDexEntry
+	db $50; RAW DATA : 	db "@"
+
+MankeyDexEntry:
+	db $03,$17,$06,$2E,$07,$9C,$50; RAW DATA : 	db "돈숭이@"
+	db 0,5
+	dw 280
+	TX_FAR _MankeyDexEntry
+	db $50; RAW DATA : 	db "@"
+
+PrimeapeDexEntry:
+	db $03,$17,$06,$2E,$07,$9C,$50; RAW DATA : 	db "돈숭이@"
+	db 1,0
+	dw 320
+	TX_FAR _PrimeapeDexEntry
+	db $50; RAW DATA : 	db "@"
+
+GrowlitheDexEntry:
+	db $01,$0D,$06,$C6,$08,$26,$50; RAW DATA : 	db "강아지@"
+	db 0,7
+	dw 190
+	TX_FAR _GrowlitheDexEntry
+	db $50; RAW DATA : 	db "@"
+
+ArcanineDexEntry:
+	db $07,$CC,$05,$E3,$50; RAW DATA : 	db "전설@"
+	db 1,9
+	dw 1550
+	TX_FAR _ArcanineDexEntry
+	db $50; RAW DATA : 	db "@"
+
+PoliwagDexEntry:
+	db $07,$23,$08,$AC,$07,$9C,$50; RAW DATA : 	db "올챙이@"
+	db 0,6
+	dw 124
+	TX_FAR _PoliwagDexEntry
+	db $50; RAW DATA : 	db "@"
+
+PoliwhirlDexEntry:
+	db $07,$23,$08,$AC,$07,$9C,$50; RAW DATA : 	db "올챙이@"
+	db 1,0
+	dw 200
+	TX_FAR _PoliwhirlDexEntry
+	db $50; RAW DATA : 	db "@"
+
+PoliwrathDexEntry:
+	db $07,$23,$08,$AC,$07,$9C,$50; RAW DATA : 	db "올챙이@"
+	db 1,3
+	dw 540
+	TX_FAR _PoliwrathDexEntry
+	db $50; RAW DATA : 	db "@"
 
 AbraDexEntry:
-	db "PSI@"
+	db $08,$CA,$02,$C9,$03,$F2,$50; RAW DATA : 	db "초능력@"
 	db 2,11
 	dw 430
 	TX_FAR _AbraDexEntry
-	db "@"
+	db $50; RAW DATA : 	db "@"
+
+KadabraDexEntry:
+	db $08,$CA,$02,$C9,$03,$F2,$50; RAW DATA : 	db "초능력@"
+	db 1,3
+	dw 565
+	TX_FAR _KadabraDexEntry
+	db $50; RAW DATA : 	db "@"
 
 AlakazamDexEntry:
-	db "PSI@"
-	db 4,11
-	dw 1060
+	db $08,$CA,$02,$C9,$03,$F2,$50; RAW DATA : 	db "초능력@"
+	db 1,5
+	dw 480
 	TX_FAR _AlakazamDexEntry
-	db "@"
+	db $50; RAW DATA : 	db "@"
 
-PidgeottoDexEntry:
-	db "BIRD@"
-	db 3,7
-	dw 660
-	TX_FAR _PidgeottoDexEntry
-	db "@"
+MachopDexEntry:
+	db $01,$7B,$03,$F2,$50; RAW DATA : 	db "괴력@"
+	db 0,8
+	dw 195
+	TX_FAR _MachopDexEntry
+	db $50; RAW DATA : 	db "@"
 
-PidgeotDexEntry:
-	db "BIRD@"
-	db 4,11
-	dw 870
-	TX_FAR _PidgeotDexEntry
-	db "@"
+MachokeDexEntry:
+	db $01,$7B,$03,$F2,$50; RAW DATA : 	db "괴력@"
+	db 1,5
+	dw 705
+	TX_FAR _MachokeDexEntry
+	db $50; RAW DATA : 	db "@"
 
-StarmieDexEntry:
-	db "MYSTERIOUS@"
-	db 3,7
-	dw 1760
-	TX_FAR _StarmieDexEntry
-	db "@"
-
-BulbasaurDexEntry:
-	db "SEED@"
-	db 2,4
-	dw 150
-	TX_FAR _BulbasaurDexEntry
-	db "@"
-
-VenusaurDexEntry:
-	db "SEED@"
-	db 6,7
-	dw 2210
-	TX_FAR _VenusaurDexEntry
-	db "@"
-
-TentacruelDexEntry:
-	db "JELLYFISH@"
-	db 5,3
-	dw 1210
-	TX_FAR _TentacruelDexEntry
-	db "@"
-
-GoldeenDexEntry:
-	db "GOLDFISH@"
-	db 2,0
-	dw 330
-	TX_FAR _GoldeenDexEntry
-	db "@"
-
-SeakingDexEntry:
-	db "GOLDFISH@"
-	db 4,3
-	dw 860
-	TX_FAR _SeakingDexEntry
-	db "@"
-
-PonytaDexEntry:
-	db "FIRE HORSE@"
-	db 3,3
-	dw 660
-	TX_FAR _PonytaDexEntry
-	db "@"
-
-RapidashDexEntry:
-	db "FIRE HORSE@"
-	db 5,7
-	dw 2090
-	TX_FAR _RapidashDexEntry
-	db "@"
-
-RattataDexEntry:
-	db "RAT@"
-	db 1,0
-	dw 80
-	TX_FAR _RattataDexEntry
-	db "@"
-
-RaticateDexEntry:
-	db "RAT@"
-	db 2,4
-	dw 410
-	TX_FAR _RaticateDexEntry
-	db "@"
-
-NidorinoDexEntry:
-	db "POISON PIN@"
-	db 2,11
-	dw 430
-	TX_FAR _NidorinoDexEntry
-	db "@"
-
-NidorinaDexEntry:
-	db "POISON PIN@"
-	db 2,7
-	dw 440
-	TX_FAR _NidorinaDexEntry
-	db "@"
-
-GeodudeDexEntry:
-	db "ROCK@"
-	db 1,4
-	dw 440
-	TX_FAR _GeodudeDexEntry
-	db "@"
-
-PorygonDexEntry:
-	db "VIRTUAL@"
-	db 2,7
-	dw 800
-	TX_FAR _PorygonDexEntry
-	db "@"
-
-AerodactylDexEntry:
-	db "FOSSIL@"
-	db 5,11
+MachampDexEntry:
+	db $01,$7B,$03,$F2,$50; RAW DATA : 	db "괴력@"
+	db 1,6
 	dw 1300
-	TX_FAR _AerodactylDexEntry
-	db "@"
-
-MagnemiteDexEntry:
-	db "MAGNET@"
-	db 1,0
-	dw 130
-	TX_FAR _MagnemiteDexEntry
-	db "@"
-
-CharmanderDexEntry:
-	db "LIZARD@"
-	db 2,0
-	dw 190
-	TX_FAR _CharmanderDexEntry
-	db "@"
-
-SquirtleDexEntry:
-	db "TINYTURTLE@"
-	db 1,8
-	dw 200
-	TX_FAR _SquirtleDexEntry
-	db "@"
-
-CharmeleonDexEntry:
-	db "FLAME@"
-	db 3,7
-	dw 420
-	TX_FAR _CharmeleonDexEntry
-	db "@"
-
-WartortleDexEntry:
-	db "TURTLE@"
-	db 3,3
-	dw 500
-	TX_FAR _WartortleDexEntry
-	db "@"
-
-CharizardDexEntry:
-	db "FLAME@"
-	db 5,7
-	dw 2000
-	TX_FAR _CharizardDexEntry
-	db "@"
-
-OddishDexEntry:
-	db "WEED@"
-	db 1,8
-	dw 120
-	TX_FAR _OddishDexEntry
-	db "@"
-
-GloomDexEntry:
-	db "WEED@"
-	db 2,7
-	dw 190
-	TX_FAR _GloomDexEntry
-	db "@"
-
-VileplumeDexEntry:
-	db "FLOWER@"
-	db 3,11
-	dw 410
-	TX_FAR _VileplumeDexEntry
-	db "@"
+	TX_FAR _MachampDexEntry
+	db $50; RAW DATA : 	db "@"
 
 BellsproutDexEntry:
-	db "FLOWER@"
-	db 2,4
-	dw 90
+	db $01,$F9,$50; RAW DATA : 	db "꽃@"
+	db 0,7
+	dw 40
 	TX_FAR _BellsproutDexEntry
-	db "@"
+	db $50; RAW DATA : 	db "@"
 
 WeepinbellDexEntry:
-	db "FLYCATCHER@"
-	db 3,3
-	dw 140
+	db $09,$F4,$04,$3E,$07,$B2,$07,$9C,$50; RAW DATA : 	db "파리잡이@"
+	db 1,0
+	dw 64
 	TX_FAR _WeepinbellDexEntry
-	db "@"
+	db $50; RAW DATA : 	db "@"
 
 VictreebelDexEntry:
-	db "FLYCATCHER@"
-	db 5,7
-	dw 340
+	db $09,$F4,$04,$3E,$07,$B2,$07,$9C,$50; RAW DATA : 	db "파리잡이@"
+	db 1,7
+	dw 155
 	TX_FAR _VictreebelDexEntry
-	db "@"
+	db $50; RAW DATA : 	db "@"
+
+TentacoolDexEntry:
+	db $0A,$78,$09,$F4,$04,$3E,$50; RAW DATA : 	db "해파리@"
+	db 0,9
+	dw 455
+	TX_FAR _TentacoolDexEntry
+	db $50; RAW DATA : 	db "@"
+
+TentacruelDexEntry:
+	db $0A,$78,$09,$F4,$04,$3E,$50; RAW DATA : 	db "해파리@"
+	db 1,6
+	dw 550
+	TX_FAR _TentacruelDexEntry
+	db $50; RAW DATA : 	db "@"
+
+GeodudeDexEntry:
+	db $06,$CF,$05,$DE,$50; RAW DATA : 	db "암석@"
+	db 0,4
+	dw 200
+	TX_FAR _GeodudeDexEntry
+	db $50; RAW DATA : 	db "@"
+
+GravelerDexEntry:
+	db $06,$CF,$05,$DE,$50; RAW DATA : 	db "암석@"
+	db 1,0
+	dw 1050
+	TX_FAR _GravelerDexEntry
+	db $50; RAW DATA : 	db "@"
+
+GolemDexEntry:
+	db $04,$7E,$01,$01,$09,$B6,$50; RAW DATA : 	db "메가톤@"
+	db 1,4
+	dw 3000
+	TX_FAR _GolemDexEntry
+	db $50; RAW DATA : 	db "@"
+
+PonytaDexEntry:
+	db $05,$32,$07,$97,$04,$4B,$50; RAW DATA : 	db "불의말@"
+	db 1,0
+	dw 300
+	TX_FAR _PonytaDexEntry
+	db $50; RAW DATA : 	db "@"
+
+RapidashDexEntry:
+	db $05,$32,$07,$97,$04,$4B,$50; RAW DATA : 	db "불의말@"
+	db 1,7
+	dw 950
+	TX_FAR _RapidashDexEntry
+	db $50; RAW DATA : 	db "@"
+
+SlowpokeDexEntry:
+	db $06,$F3,$01,$03,$07,$9C,$50; RAW DATA : 	db "얼간이@"
+	db 1,2
+	dw 360
+	TX_FAR _SlowpokeDexEntry
+	db $50; RAW DATA : 	db "@"
+
+SlowbroDexEntry:
+	db $01,$B2,$05,$CD,$50; RAW DATA : 	db "기생@"
+	db 1,6
+	dw 785
+	TX_FAR _SlowbroDexEntry
+	db $50; RAW DATA : 	db "@"
+
+MagnemiteDexEntry:
+	db $07,$AA,$05,$DE,$50; RAW DATA : 	db "자석@"
+	db 0,3
+	dw 60
+	TX_FAR _MagnemiteDexEntry
+	db $50; RAW DATA : 	db "@"
+
+MagnetonDexEntry:
+	db $07,$AA,$05,$DE,$50; RAW DATA : 	db "자석@"
+	db 1,0
+	dw 600
+	TX_FAR _MagnetonDexEntry
+	db $50; RAW DATA : 	db "@"
+
+FarfetchdDexEntry:
+	db $08,$BB,$03,$35,$07,$20,$04,$3E,$50; RAW DATA : 	db "청둥오리@"
+	db 0,8
+	dw 150
+	TX_FAR _FarfetchdDexEntry
+	db $50; RAW DATA : 	db "@"
+
+DoduoDexEntry:
+	db $06,$76,$03,$35,$07,$9C,$05,$C5,$50; RAW DATA : 	db "쌍둥이새@"
+	db 1,4
+	dw 392
+	TX_FAR _DoduoDexEntry
+	db $50; RAW DATA : 	db "@"
+
+DodrioDexEntry:
+	db $05,$EC,$06,$76,$03,$35,$07,$9C,$50; RAW DATA : 	db "세쌍둥이@"
+	db 1,8
+	dw 852
+	TX_FAR _DodrioDexEntry
+	db $50; RAW DATA : 	db "@"
+
+SeelDexEntry:
+	db $01,$0D,$09,$01,$50; RAW DATA : 	db "강치@"
+	db 1,1
+	dw 900
+	TX_FAR _SeelDexEntry
+	db $50; RAW DATA : 	db "@"
+
+DewgongDexEntry:
+	db $01,$0D,$09,$01,$50; RAW DATA : 	db "강치@"
+	db 1,7
+	dw 1200
+	TX_FAR _DewgongDexEntry
+	db $50; RAW DATA : 	db "@"
+
+GrimerDexEntry:
+	db $08,$28,$0A,$EB,$50; RAW DATA : 	db "진흙@"
+	db 0,9
+	dw 300
+	TX_FAR _GrimerDexEntry
+	db $50; RAW DATA : 	db "@"
+
+MukDexEntry:
+	db $08,$28,$0A,$EB,$50; RAW DATA : 	db "진흙@"
+	db 1,2
+	dw 300
+	TX_FAR _MukDexEntry
+	db $50; RAW DATA : 	db "@"
+
+ShellderDexEntry:
+	db $03,$2E,$07,$E6,$01,$13,$50; RAW DATA : 	db "두조개@"
+	db 0,3
+	dw 40
+	TX_FAR _ShellderDexEntry
+	db $50; RAW DATA : 	db "@"
+
+CloysterDexEntry:
+	db $03,$2E,$07,$E6,$01,$13,$50; RAW DATA : 	db "두조개@"
+	db 1,5
+	dw 1325
+	TX_FAR _CloysterDexEntry
+	db $50; RAW DATA : 	db "@"
+
+GastlyDexEntry:
+	db $01,$01,$06,$4A,$50; RAW DATA : 	db "가스@"
+	db 1,3
+	dw 1
+	TX_FAR _GastlyDexEntry
+	db $50; RAW DATA : 	db "@"
+
+HaunterDexEntry:
+	db $01,$01,$06,$4A,$50; RAW DATA : 	db "가스@"
+	db 1,6
+	dw 1
+	TX_FAR _HaunterDexEntry
+	db $50; RAW DATA : 	db "@"
+
+GengarDexEntry:
+	db $01,$A7,$04,$42,$07,$AA,$50; RAW DATA : 	db "그림자@"
+	db 1,5
+	dw 405
+	TX_FAR _GengarDexEntry
+	db $50; RAW DATA : 	db "@"
+
+OnixDexEntry:
+	db $03,$19,$04,$EC,$50; RAW DATA : 	db "돌뱀@"
+	db 8,8
+	dw 2100
+	TX_FAR _OnixDexEntry
+	db $50; RAW DATA : 	db "@"
+
+DrowzeeDexEntry:
+	db $08,$D6,$04,$89,$50; RAW DATA : 	db "최면@"
+	db 1,0
+	dw 324
+	TX_FAR _DrowzeeDexEntry
+	db $50; RAW DATA : 	db "@"
+
+HypnoDexEntry:
+	db $08,$D6,$04,$89,$50; RAW DATA : 	db "최면@"
+	db 1,6
+	dw 756
+	TX_FAR _HypnoDexEntry
+	db $50; RAW DATA : 	db "@"
+
+KrabbyDexEntry:
+	db $01,$34,$50; RAW DATA : 	db "게@"
+	db 0,4
+	dw 65
+	TX_FAR _KrabbyDexEntry
+	db $50; RAW DATA : 	db "@"
+
+KinglerDexEntry:
+	db $08,$2D,$01,$34,$50; RAW DATA : 	db "집게@"
+	db 1,3
+	dw 600
+	TX_FAR _KinglerDexEntry
+	db $50; RAW DATA : 	db "@"
+
+VoltorbDexEntry:
+	db $05,$1C,$50; RAW DATA : 	db "볼@"
+	db 1,2
+	dw 666
+	TX_FAR _VoltorbDexEntry
+	db $50; RAW DATA : 	db "@"
+
+ElectrodeDexEntry:
+	db $05,$1C,$50; RAW DATA : 	db "볼@"
+	db 3,11
+	dw 1470
+	TX_FAR _ElectrodeDexEntry
+	db $50; RAW DATA : 	db "@"
+
+ExeggcuteDexEntry:
+	db $06,$CB,$50; RAW DATA : 	db "알@"
+	db 0,4
+	dw 25
+	TX_FAR _ExeggcuteDexEntry
+	db $50; RAW DATA : 	db "@"
+
+ExeggutorDexEntry:
+	db $06,$DF,$07,$AA,$02,$3A,$04,$AB,$50; RAW DATA : 	db "야자나무@"
+	db 2,0
+	dw 1200
+	TX_FAR _ExeggutorDexEntry
+	db $50; RAW DATA : 	db "@"
+
+CuboneDexEntry:
+	db $01,$4D,$03,$16,$50; RAW DATA : 	db "고독@"
+	db 0,4
+	dw 65
+	TX_FAR _CuboneDexEntry
+	db $50; RAW DATA : 	db "@"
+
+MarowakDexEntry:
+	db $05,$90,$02,$D9,$01,$9D,$50; RAW DATA : 	db "뼈다귀@"
+	db 1,0
+	dw 450
+	TX_FAR _MarowakDexEntry
+	db $50; RAW DATA : 	db "@"
+
+HitmonleeDexEntry:
+	db $09,$81,$50; RAW DATA : 	db "킥@"
+	db 1,5
+	dw 498
+	TX_FAR _HitmonleeDexEntry
+	db $50; RAW DATA : 	db "@"
+
+HitmonchanDexEntry:
+	db $0A,$0D,$09,$01,$50; RAW DATA : 	db "펀치@"
+	db 1,4
+	dw 502
+	TX_FAR _HitmonchanDexEntry
+	db $50; RAW DATA : 	db "@"
+
+LickitungDexEntry:
+	db $0A,$73,$01,$B2,$50; RAW DATA : 	db "핥기@"
+	db 1,2
+	dw 655
+	TX_FAR _LickitungDexEntry
+	db $50; RAW DATA : 	db "@"
+
+KoffingDexEntry:
+	db $03,$16,$01,$01,$06,$4A,$50; RAW DATA : 	db "독가스@"
+	db 0,6
+	dw 10
+	TX_FAR _KoffingDexEntry
+	db $50; RAW DATA : 	db "@"
+
+WeezingDexEntry:
+	db $03,$16,$01,$01,$06,$4A,$50; RAW DATA : 	db "독가스@"
+	db 1,2
+	dw 95
+	TX_FAR _WeezingDexEntry
+	db $50; RAW DATA : 	db "@"
+
+RhyhornDexEntry:
+	db $05,$A4,$50; RAW DATA : 	db "뿔@"
+	db 1,0
+	dw 1150
+	TX_FAR _RhyhornDexEntry
+	db $50; RAW DATA : 	db "@"
+
+RhydonDexEntry:
+	db $03,$45,$04,$41,$50; RAW DATA : 	db "드릴@"
+	db 1,9
+	dw 1200
+	TX_FAR _RhydonDexEntry
+	db $50; RAW DATA : 	db "@"
+
+ChanseyDexEntry:
+	db $06,$CB,$50; RAW DATA : 	db "알@"
+	db 1,1
+	dw 346
+	TX_FAR _ChanseyDexEntry
+	db $50; RAW DATA : 	db "@"
+
+TangelaDexEntry:
+	db $02,$75,$09,$60,$50; RAW DATA : 	db "넝쿨@"
+	db 1,0
+	dw 350
+	TX_FAR _TangelaDexEntry
+	db $50; RAW DATA : 	db "@"
+
+KangaskhanDexEntry:
+	db $01,$01,$07,$E7,$50; RAW DATA : 	db "가족@"
+	db 2,2
+	dw 800
+	TX_FAR _KangaskhanDexEntry
+	db $50; RAW DATA : 	db "@"
+
+HorseaDexEntry:
+	db $03,$45,$03,$E9,$01,$4F,$50; RAW DATA : 	db "드레곤@"
+	db 0,4
+	dw 80
+	TX_FAR _HorseaDexEntry
+	db $50; RAW DATA : 	db "@"
+
+SeadraDexEntry:
+	db $03,$45,$03,$E9,$01,$4F,$50; RAW DATA : 	db "드레곤@"
+	db 1,2
+	dw 250
+	TX_FAR _SeadraDexEntry
+	db $50; RAW DATA : 	db "@"
+
+GoldeenDexEntry:
+	db $01,$AD,$05,$38,$06,$EE,$50; RAW DATA : 	db "금붕어@"
+	db 0,6
+	dw 150
+	TX_FAR _GoldeenDexEntry
+	db $50; RAW DATA : 	db "@"
+
+SeakingDexEntry:
+	db $01,$AD,$05,$38,$06,$EE,$50; RAW DATA : 	db "금붕어@"
+	db 1,3
+	dw 390
+	TX_FAR _SeakingDexEntry
+	db $50; RAW DATA : 	db "@"
+
+StaryuDexEntry:
+	db $05,$10,$50; RAW DATA : 	db "별@"
+	db 0,8
+	dw 345
+	TX_FAR _StaryuDexEntry
+	db $50; RAW DATA : 	db "@"
+
+StarmieDexEntry:
+	db $06,$26,$06,$26,$01,$E2,$02,$32,$50; RAW DATA : 	db "수수께끼@"
+	db 1,1
+	dw 800
+	TX_FAR _StarmieDexEntry
+	db $50; RAW DATA : 	db "@"
+
+MrMimeDexEntry:
+	db $04,$E8,$04,$3E,$06,$EE,$50; RAW DATA : 	db "배리어@"
+	db 1,3
+	dw 545
+	TX_FAR _MrMimeDexEntry
+	db $50; RAW DATA : 	db "@"
+
+ScytherDexEntry:
+	db $04,$F6,$04,$46,$07,$B7,$05,$61,$50; RAW DATA : 	db "버마재비@"
+	db 1,5
+	dw 560
+	TX_FAR _ScytherDexEntry
+	db $50; RAW DATA : 	db "@"
+
+JynxDexEntry:
+	db $07,$9E,$01,$03,$0A,$9C,$09,$92,$50; RAW DATA : 	db "인간형태@"
+	db 1,4
+	dw 406
+	TX_FAR _JynxDexEntry
+	db $50; RAW DATA : 	db "@"
+
+ElectabuzzDexEntry:
+	db $07,$CC,$01,$B2,$50; RAW DATA : 	db "전기@"
+	db 1,1
+	dw 300
+	TX_FAR _ElectabuzzDexEntry
+	db $50; RAW DATA : 	db "@"
+
+MagmarDexEntry:
+	db $05,$32,$05,$A5,$01,$B2,$50; RAW DATA : 	db "불뿜기@"
+	db 1,3
+	dw 445
+	TX_FAR _MagmarDexEntry
+	db $50; RAW DATA : 	db "@"
+
+PinsirDexEntry:
+	db $05,$A4,$08,$2D,$01,$34,$50; RAW DATA : 	db "뿔집게@"
+	db 1,5
+	dw 550
+	TX_FAR _PinsirDexEntry
+	db $50; RAW DATA : 	db "@"
+
+TaurosDexEntry:
+	db $05,$EA,$02,$3D,$06,$02,$50; RAW DATA : 	db "성난소@"
+	db 1,4
+	dw 884
+	TX_FAR _TaurosDexEntry
+	db $50; RAW DATA : 	db "@"
+
+MagikarpDexEntry:
+	db $04,$B0,$01,$4D,$01,$B2,$50; RAW DATA : 	db "물고기@"
+	db 0,9
+	dw 100
+	TX_FAR _MagikarpDexEntry
+	db $50; RAW DATA : 	db "@"
+
+GyaradosDexEntry:
+	db $0A,$E4,$06,$C7,$50; RAW DATA : 	db "흉악@"
+	db 6,5
+	dw 2350
+	TX_FAR _GyaradosDexEntry
+	db $50; RAW DATA : 	db "@"
+
+LaprasDexEntry:
+	db $09,$8B,$01,$2D,$50; RAW DATA : 	db "탈것@"
+	db 2,5
+	dw 2200
+	TX_FAR _LaprasDexEntry
+	db $50; RAW DATA : 	db "@"
+
+DittoDexEntry:
+	db $05,$0F,$06,$65,$50; RAW DATA : 	db "변신@"
+	db 0,3
+	dw 40
+	TX_FAR _DittoDexEntry
+	db $50; RAW DATA : 	db "@"
+
+EeveeDexEntry:
+	db $08,$28,$0A,$AD,$50; RAW DATA : 	db "진화@"
+	db 0,3
+	dw 65
+	TX_FAR _EeveeDexEntry
+	db $50; RAW DATA : 	db "@"
+
+VaporeonDexEntry:
+	db $01,$25,$0A,$40,$05,$A5,$01,$B2,$50; RAW DATA : 	db "거품뿜기@"
+	db 1,0
+	dw 290
+	TX_FAR _VaporeonDexEntry
+	db $50; RAW DATA : 	db "@"
+
+JolteonDexEntry:
+	db $04,$F8,$01,$13,$50; RAW DATA : 	db "번개@"
+	db 0,8
+	dw 245
+	TX_FAR _JolteonDexEntry
+	db $50; RAW DATA : 	db "@"
+
+FlareonDexEntry:
+	db $05,$32,$01,$F9,$50; RAW DATA : 	db "불꽃@"
+	db 0,9
+	dw 250
+	TX_FAR _FlareonDexEntry
+	db $50; RAW DATA : 	db "@"
+
+PorygonDexEntry:
+	db $01,$01,$05,$C3,$50; RAW DATA : 	db "가상@"
+	db 0,8
+	dw 365
+	TX_FAR _PorygonDexEntry
+	db $50; RAW DATA : 	db "@"
+
+OmanyteDexEntry:
+	db $06,$02,$07,$4B,$03,$19,$07,$9C,$50; RAW DATA : 	db "소용돌이@"
+	db 0,4
+	dw 75
+	TX_FAR _OmanyteDexEntry
+	db $50; RAW DATA : 	db "@"
+
+OmastarDexEntry:
+	db $06,$02,$07,$4B,$03,$19,$07,$9C,$50; RAW DATA : 	db "소용돌이@"
+	db 1,0
+	dw 350
+	TX_FAR _OmastarDexEntry
+	db $50; RAW DATA : 	db "@"
+
+KabutoDexEntry:
+	db $01,$DE,$08,$2A,$50; RAW DATA : 	db "껍질@"
+	db 0,5
+	dw 115
+	TX_FAR _KabutoDexEntry
+	db $50; RAW DATA : 	db "@"
+
+KabutopsDexEntry:
+	db $01,$DE,$08,$2A,$50; RAW DATA : 	db "껍질@"
+	db 1,3
+	dw 405
+	TX_FAR _KabutopsDexEntry
+	db $50; RAW DATA : 	db "@"
+
+AerodactylDexEntry:
+	db $0A,$AD,$05,$DE,$50; RAW DATA : 	db "화석@"
+	db 1,8
+	dw 590
+	TX_FAR _AerodactylDexEntry
+	db $50; RAW DATA : 	db "@"
+
+SnorlaxDexEntry:
+	db $07,$E9,$07,$8D,$50; RAW DATA : 	db "졸음@"
+	db 2,1
+	dw 4600
+	TX_FAR _SnorlaxDexEntry
+	db $50; RAW DATA : 	db "@"
+
+ArticunoDexEntry:
+	db $02,$63,$03,$1F,$50; RAW DATA : 	db "냉동@"
+	db 1,7
+	dw 554
+	TX_FAR _ArticunoDexEntry
+	db $50; RAW DATA : 	db "@"
+
+ZapdosDexEntry:
+	db $07,$CC,$01,$B2,$50; RAW DATA : 	db "전기@"
+	db 1,6
+	dw 526
+	TX_FAR _ZapdosDexEntry
+	db $50; RAW DATA : 	db "@"
+
+MoltresDexEntry:
+	db $0A,$AD,$07,$10,$50; RAW DATA : 	db "화염@"
+	db 2,0
+	dw 600
+	TX_FAR _MoltresDexEntry
+	db $50; RAW DATA : 	db "@"
+
+DratiniDexEntry:
+	db $03,$45,$03,$D1,$01,$4F,$50; RAW DATA : 	db "드래곤@"
+	db 1,8
+	dw 33
+	TX_FAR _DratiniDexEntry
+	db $50; RAW DATA : 	db "@"
+
+DragonairDexEntry:
+	db $03,$45,$03,$D1,$01,$4F,$50; RAW DATA : 	db "드래곤@"
+	db 4,0
+	dw 165
+	TX_FAR _DragonairDexEntry
+	db $50; RAW DATA : 	db "@"
+
+DragoniteDexEntry:
+	db $03,$45,$03,$D1,$01,$4F,$50; RAW DATA : 	db "드래곤@"
+	db 2,2
+	dw 2100
+	TX_FAR _DragoniteDexEntry
+	db $50; RAW DATA : 	db "@"
+
+MewtwoDexEntry:
+	db $07,$7F,$07,$CC,$50; RAW DATA : 	db "유전@"
+	db 2,0
+	dw 1220
+	TX_FAR _MewtwoDexEntry
+	db $50; RAW DATA : 	db "@"
+
+MewDexEntry:
+	db $06,$65,$07,$EE,$50; RAW DATA : 	db "신종@"
+	db 0,4
+	dw 40
+	TX_FAR _MewDexEntry
+	db $50; RAW DATA : 	db "@"
 
 MissingNoDexEntry:
-	db "???@"
+	db $0B,$67,$0B,$67,$0B,$67,$50; RAW DATA : 	db "???@"
 	db 10 ; 1.0 m
 	db 100 ; 10.0 kg
-	db 0,"コメント さくせいちゅう@" ; コメント作成中 (Comment to be written)
+	text $09,$3A,$04,$80,$09,$DE,$7F,$07,$AB,$05,$EA,$08,$0F,$7F,$04,$90,$03,$2E,$03,$49,$7F,$03,$1F,$04,$E6,$09,$F4,$05,$EC,$07,$44,$50; RAW DATA : 	text "코멘트 작성중 모두들 동방파세요@" ; コメント作成中 (Comment to be written)

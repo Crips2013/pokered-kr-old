@@ -92,7 +92,7 @@ RedrawPartyMenu_:
 	call PrintStatusCondition
 	pop hl
 	push hl
-	ld bc, SCREEN_WIDTH + 1 ; down 1 row and right 1 column
+	ld bc, 8 ; down 1 row and right 1 column
 	ld a, [hFlags_0xFFF6]
 	set 0, a
 	ld [hFlags_0xFFF6], a
