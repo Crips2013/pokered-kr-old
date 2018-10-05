@@ -1,22 +1,26 @@
 _Route16GateText_49777::
-	text "No pedestrians"
-	line "are allowed on"
-	cont "CYCLING ROAD!"
+	text $05,$18,$0A,$80,$07,$AA,$03,$49,$07,$8A,$7F,$05,$B7,$07,$9C,$09,$7C,$04,$45,$7F,$03,$FE,$03,$45,$07,$01; RAW DATA : 	text "보행자들은 사이클링 로드에"
+	line $08,$E2,$07,$A4,$7F,$01,$AD,$08,$26,$06,$DF,$0B,$66; RAW DATA : 	line "출입 금지야!"
 	done
+
+ 
 
 _Route16GateText_4977c::
-	text "CYCLING ROAD is a"
-	line "downhill course"
-	cont "by the sea. It's"
-	cont "a great ride."
-	done
+	text $05,$B7,$07,$9C,$09,$7C,$04,$45,$7F,$03,$FE,$03,$45,$02,$C2,$7F,$05,$61,$09,$8B,$01,$B6,$7F,$09,$3A,$06,$4A; RAW DATA : 	text "사이클링 로드는 비탈길 코스"
+	line $04,$D9,$02,$E5,$04,$D9,$03,$C7,$07,$9C,$7F,$01,$B2,$05,$30,$07,$F1,$02,$D9,$01,$4D; RAW DATA : 	line "바닷바람이 기분좋다고"
+	Done
 
 _Route16GateText_49781::
-	text "Excuse me! Wait"
-	line "up please!"
+	text $01,$25,$01,$B2,$0B,$66; RAW DATA : 	text "거기!"
+	line $07,$B1,$01,$C1,$7F,$01,$B2,$02,$D9,$03,$F1,$0B,$66; RAW DATA : 	line "잠깐 기다려!"
 	done
 
+ 
+
 _Route16GateText2::
-	text "How'd you get in?"
-	line "Good effort!"
+	text $01,$25,$01,$B4,$7F,$06,$EE,$03,$81,$01,$34,$7F,$03,$49,$06,$EE,$01,$03,$01,$25,$06,$DF,$0B,$67; RAW DATA : 	text "거긴 어떡게 들어간거야?"
+	line $02,$EB,$02,$DC,$0A,$6F,$02,$D9,$0B,$66; RAW DATA : 	line "대단하다!"
 	done
+
+ 
+

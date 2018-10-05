@@ -1,6 +1,5 @@
 _Route2HouseText1::
-	text "A fainted #MON"
-	line "can't fight. But, "
-	cont "it can still use "
-	cont "moves like CUT!"
+	text $01,$B2,$07,$CD,$0A,$71,$7F,$0A,$27,$09,$2F,$04,$93,$07,$8A,$7F,$06,$6E,$07,$4F,$7F,$06,$26,$02,$C2,$7F,$06,$F8,$08,$26,$04,$48; RAW DATA : 	text "기절한 포켓몬은 싸울 수는 없지만"
+	line $0A,$3E,$05,$03,$01,$B2,$7F,$01,$10,$07,$8A,$7F,$01,$B2,$06,$2A,$07,$8A; RAW DATA : 	line "풀베기 같은 기술은"
+	cont $05,$B7,$07,$4B,$0A,$72,$7F,$06,$26,$7F,$07,$A6,$06,$EE,$0B,$66; RAW DATA : 	cont "사용할 수 있어!"
 	done

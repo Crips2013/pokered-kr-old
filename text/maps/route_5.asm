@@ -1,5 +1,4 @@
 _Route5Text1::
-	text "UNDERGROUND PATH"
-	line "CERULEAN CITY -"
-	cont "VERMILION CITY"
+	text $07,$09,$01,$B2,$05,$DD,$05,$2E,$09,$9D,$7F,$08,$26,$0A,$6F,$09,$BB,$03,$FE; RAW DATA : 	text "여기서부터 지하통로"
+	line $05,$4D,$04,$17,$06,$63,$09,$EC,$7F,$0B,$6A,$0B,$6A,$7F,$01,$05,$05,$C6,$06,$63,$09,$EC; RAW DATA : 	line "블루시티 …… 갈색시티"
 	done

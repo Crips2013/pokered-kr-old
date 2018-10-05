@@ -1,42 +1,44 @@
 _TM39PreReceiveText::
-	text "My #MON's"
-	line "ashes are stored"
-	cont "in #MON TOWER."
+	text $02,$4B,$7F,$0A,$27,$09,$2F,$04,$93,$07,$97,$7F,$07,$B7,$02,$C2; RAW DATA : 	text "내 포켓몬의 재는"
+	line $0A,$27,$09,$2F,$04,$93,$7F,$09,$88,$07,$66,$07,$01,$7F,$02,$43,$01,$61,$03,$27,$07,$A6,$06,$EE; RAW DATA : 	line "포켓몬 타워에 납골되있어"
 
-	para "You can have this"
-	line "TM. I don't need"
-	cont "it any more..."
+ 
+
+	para $07,$9C,$7F,$01,$B2,$06,$2A,$04,$73,$06,$65,$7F,$01,$01,$07,$DE; RAW DATA : 	para "이 기술머신 가져"
+	line $07,$9C,$07,$D6,$7F,$02,$3D,$7F,$0A,$6A,$07,$44,$06,$F8,$07,$88,$02,$CF,$01,$BE,$0B,$6A,$0B,$6A; RAW DATA : 	line "이제 난 필요없으니까……"
 	prompt
 
 _ReceivedTM39Text::
-	text "<PLAYER> received"
-	line "TM39!@@"
+	text $52, $02,$C2,$0B,$64,$07,$8A,$0B,$65; RAW DATA : 	text $52, "는(은)"
+	line $01,$B2,$06,$2A,$04,$73,$06,$65,$F9,$FF,$04,$36,$7F,$06,$F2,$06,$FA,$02,$D9,$0B,$66,$0B,$66,$50,$50; RAW DATA : 	line "기술머신39를 얻었다!!@@"
 
 _TM39ExplanationText::
-	text "TM39 is a move"
-	line "called SWIFT."
+	text $01,$B2,$06,$2A,$04,$73,$06,$65,$F9,$FF,$02,$C2; RAW DATA : 	text "기술머신39는"
+	line $06,$4A,$0A,$67,$03,$45,$06,$4A,$09,$88,$03,$C3,$02,$C2,$7F,$01,$B2,$06,$2A,$07,$9C,$06,$DF; RAW DATA : 	line "스피드스타라는 기술이야"
 
-	para "It's very accurate,"
-	line "so use it during"
-	cont "battles you can't"
-	cont "afford to lose."
-	done
+ 
+
+	para $01,$82,$07,$B5,$0A,$F7,$7F,$07,$D4,$0A,$AE,$03,$15,$01,$01,$7F,$02,$94,$07,$8A,$7F,$01,$68,$01,$3D,$07,$9C,$02,$CF; RAW DATA : 	para "굉장히 정확도가 높은 공격이니"
+	line $08,$26,$01,$4D,$7F,$06,$6D,$08,$26,$7F,$06,$CA,$07,$88,$04,$89,$7F,$05,$B7,$07,$4B,$0A,$78,$05,$21; RAW DATA : 	line "지고 싶지 않으면 사용해봐"
+	Done
 
 _TM39NoRoomText::
-	text "You don't have"
-	line "room for this."
-	done
+	text $02,$F5,$7F,$07,$9C,$05,$C3,$7F,$03,$49,$7F,$06,$26,$7F,$06,$F8,$06,$EE,$0B,$66; RAW DATA : 	text "더 이상 들 수 없어!"
+	Done
 
 _Route12GateUpstairsText_495b8::
-	text "Looked into the"
-	line "binoculars."
+	text $06,$76,$06,$C8,$01,$46,$07,$8B,$7F,$03,$49,$07,$09,$02,$D9,$05,$23,$02,$D9; RAW DATA : 	text "쌍안경을 들여다봤다"
 
-	para "A man fishing!"
+
+
+	para $02,$3C,$06,$63,$02,$0B,$07,$9C,$7F,$05,$18,$07,$9E,$02,$D9,$0B,$66; RAW DATA : 	para "낚시꾼이 보인다!"
 	done
 
-_Route12GateUpstairsText_495c4::
-	text "Looked into the"
-	line "binoculars."
 
-	para "It's #MON TOWER!"
+
+_Route12GateUpstairsText_495c4::
+	text $06,$76,$06,$C8,$01,$46,$07,$8B,$7F,$03,$49,$07,$09,$02,$D9,$05,$23,$02,$D9; RAW DATA : 	text "쌍안경을 들여다봤다"
+
+
+	para $0A,$27,$09,$2F,$04,$93,$09,$88,$07,$66,$01,$01,$7F,$05,$18,$07,$9E,$02,$D9,$0B,$66; RAW DATA : 	para "포켓몬타워가 보인다!"
 	done

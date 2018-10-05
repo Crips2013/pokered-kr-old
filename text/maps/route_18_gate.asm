@@ -1,14 +1,13 @@
 _Route18GateText_49928::
-	text "You need a BICYCLE"
-	line "for CYCLING ROAD!"
+	text $06,$6E,$07,$9C,$09,$7C,$04,$45,$7F,$03,$FE,$03,$45,$07,$01,$05,$DD,$02,$C2; RAW DATA : 	text "싸이클링 로드에서는"
+	line $07,$AA,$07,$CC,$01,$25,$01,$01,$7F,$07,$A6,$06,$EE,$06,$DF,$7F,$0A,$75,$02,$CF,$02,$D9,$0B,$66; RAW DATA : 	line "자전거가 있어야 합니다!"
 	done
 
 _Route18GateText_4992d::
-	text "CYCLING ROAD is"
-	line "all uphill from"
-	cont "here."
+	text $06,$6E,$07,$9C,$09,$7C,$04,$45,$7F,$03,$FE,$03,$45,$02,$C2,$7F,$07,$09,$01,$B2,$05,$DD,$05,$2E,$09,$9D; RAW DATA : 	text "싸이클링 로드는 여기서부터"
+	line $08,$7E,$07,$4D,$7F,$07,$20,$04,$33,$04,$47,$01,$B6,$07,$A4,$02,$CF,$02,$D9; RAW DATA : 	line "쭈욱 오르막길입니다"
 	done
 
 _Route18GateText_49932::
-	text "Excuse me!"
+	text $06,$67,$03,$FA,$0A,$75,$02,$CF,$02,$D9,$0B,$66; RAW DATA : 	text "실례합니다!"
 	done

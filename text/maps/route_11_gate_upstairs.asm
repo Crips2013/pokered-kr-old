@@ -1,40 +1,46 @@
 _Route11GateUpstairsText_494a3::
-	text "There are items on"
-	line "the ground that"
-	cont "can't be seen."
+	text $02,$AB,$07,$01,$02,$C2,$7F,$06,$C8,$05,$18,$07,$9C,$02,$C2,$7F,$06,$C6,$07,$9C,$09,$AB,$03,$49,$07,$9C; RAW DATA : 	text "눈에는 안보이는 아이템들이"
+	line $03,$75,$04,$D9,$02,$DA,$07,$01,$7F,$03,$83,$06,$EE,$07,$DE,$07,$A6,$06,$EE; RAW DATA : 	line "땅바닥에 떨어져있어"
+ 
 
-	para "ITEMFINDER will"
-	line "detect an item"
-	cont "close to you."
+	para $02,$D9,$07,$4C,$08,$31,$04,$73,$06,$65,$07,$8B,$7F,$06,$B2,$04,$89; RAW DATA : 	para "다우징머신을 쓰면"
+	line $01,$A9,$08,$B3,$07,$01,$7F,$07,$A6,$02,$C2,$7F,$06,$C6,$07,$9C,$09,$AB,$07,$8B; RAW DATA : 	line "근처에 있는 아이템을"
+	cont $09,$8D,$08,$26,$0A,$78,$7F,$08,$09,$01,$25,$06,$DF; RAW DATA : 	cont "탐지해 줄거야"
 
-	para "It can't pinpoint"
-	line "it, so you have"
-	cont "to look yourself!"
+	para $07,$D4,$0A,$AE,$0A,$71,$7F,$07,$77,$09,$01,$02,$C2; RAW DATA : 	para "정확한 위치는"
+	line $06,$CB,$03,$F1,$08,$06,$08,$26,$7F,$04,$98,$0A,$6F,$02,$CF,$01,$BE; RAW DATA : 	line "알려주지 못하니까"
+	cont $08,$27,$07,$D2,$7F,$08,$A3,$06,$C6,$05,$21,$06,$DF,$7F,$03,$25,$0B,$66; RAW DATA : 	cont "직접 찾아봐야 돼!"
 	done
+
+  
 
 _BinocularsSnorlaxText::
-	text "Looked into the"
-	line "binoculars."
+	text $06,$76,$06,$C8,$01,$46,$07,$8B,$7F,$03,$49,$07,$09,$02,$D9,$05,$23,$02,$D9; RAW DATA : 	text "쌍안경을 들여다봤다"
 
-	para "A big #MON is"
-	line "asleep on a road!"
+
+
+	para $01,$B6,$07,$01,$7F,$01,$25,$02,$EB,$0A,$71,$7F,$0A,$27,$09,$2F,$04,$93,$07,$9C; RAW DATA : 	para "길에 거대한 포켓몬이"
+	line $07,$AA,$01,$4D,$07,$A6,$02,$D9,$0B,$66; RAW DATA : 	line "자고있다!"
 	done
+
+ 
 
 _BinocularsNoSnorlaxText::
-	text "Looked into the"
-	line "binoculars."
+	text $06,$76,$06,$C8,$01,$46,$07,$8B,$7F,$03,$49,$07,$09,$02,$D9,$05,$23,$02,$D9; RAW DATA : 	text "쌍안경을 들여다봤다"
 
-	para "It's a beautiful"
-	line "view!"
+
+
+	para $07,$D4,$04,$4B,$7F,$04,$7A,$08,$28,$7F,$0A,$43,$01,$46,$07,$9C,$02,$D9,$0B,$66; RAW DATA : 	para "정말 멋진 풍경이다!"
 	done
+
+
 
 _Route11GateUpstairsText_494d5::
-	text "Looked into the"
-	line "binoculars."
+	text $06,$76,$06,$C8,$01,$46,$07,$8B,$7F,$03,$49,$07,$09,$02,$D9,$05,$23,$02,$D9; RAW DATA : 	text "쌍안경을 들여다봤다"
 
-	para "The only way to"
-	line "get from CERULEAN"
-	cont "CITY to LAVENDER"
-	cont "is by way of the"
-	cont "ROCK TUNNEL."
-	done
+
+	para $05,$4D,$04,$17,$06,$63,$09,$EC,$07,$01,$05,$DD,$7F,$05,$18,$03,$C3,$09,$88,$07,$4E,$07,$88,$03,$FE; RAW DATA : 	para "블루시티에서 보라타운으로"
+	line $01,$01,$02,$C2,$7F,$01,$B6,$07,$8A,$7F,$03,$19,$05,$BA,$09,$9D,$02,$6E,$07,$9C; RAW DATA : 	line "가는 길은 돌산터널이"
+	cont $07,$7F,$07,$9F,$0A,$71,$7F,$03,$4D,$7F,$0A,$6F,$02,$D9; RAW DATA : 	cont "유일한 듯 하다"
+	Done
+

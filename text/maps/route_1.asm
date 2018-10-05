@@ -1,49 +1,41 @@
 _Route1ViridianMartSampleText::
-	text "Hi! I work at a"
-	line "#MON MART."
+	text $06,$C8,$02,$87,$0B,$66; RAW DATA : 	text "안녕!"
+	line $02,$3A,$02,$C2,$7F,$0A,$61,$03,$EB,$03,$49,$04,$3E,$7F,$06,$23,$07,$01,$05,$DD,$7F,$07,$9F,$0A,$78; RAW DATA : 	line "나는 프렌들리 숍에서 일해"
 
-	para "It's a convenient"
-	line "shop, so please"
-	cont "visit us in"
-	cont "VIRIDIAN CITY."
+	para $07,$9C,$01,$2D,$07,$CA,$01,$2D,$7F,$0A,$1D,$04,$3E,$0A,$71,$7F,$04,$B0,$01,$27,$07,$8B,$7F,$09,$F4,$02,$CF,$01,$BE; RAW DATA : 	para "이것저것 편리한 물건을 파니까"
+	line $05,$C3,$03,$FF,$06,$63,$09,$EC,$07,$01,$7F,$03,$49,$04,$33,$01,$34,$03,$27,$04,$89; RAW DATA : 	line "상록시티에 들르게되면"
+	cont $01,$F0,$7F,$08,$A3,$06,$C6,$07,$2D,$08,$10; RAW DATA : 	cont "꼭 찾아와줘"
 
-	para "I know, I'll give"
-	line "you a sample!"
-	cont "Here you go!"
+	para $07,$09,$01,$B2,$7F,$05,$C9,$0A,$63,$07,$8B,$7F,$08,$09,$01,$34,$0B,$66; RAW DATA : 	para "여기 샘플을 줄게!"
+	line $04,$DE,$06,$C6,$03,$36,$0B,$66; RAW DATA : 	line "받아둬!"
 	prompt
 
 _Route1Text_1cae8::
-	text "<PLAYER> got"
-	line "@"
+	text $52, $02,$C2,$0B,$64,$07,$8A,$0B,$65; RAW DATA : 	text $52, "는(은)"
+	line $50; RAW DATA : 	line "@"
 	TX_RAM wcf4b
-	text "!@@"
+	text $04,$36,$0B,$64,$07,$8B,$0B,$65,$7F,$06,$F2,$06,$FA,$02,$D9,$0B,$66,$50,$50; RAW DATA : 	text "를(을) 얻었다!@@"
 
 _Route1Text_1caee::
-	text "We also carry"
-	line "# BALLs for"
-	cont "catching #MON!"
+	text $04,$93,$06,$4A,$09,$9D,$05,$1C,$03,$15,$7F,$09,$F8,$01,$4D,$07,$A6,$06,$EE,$0B,$66; RAW DATA : 	text "몬스터볼도 팔고있어!"
 	done
 
 _Route1Text_1caf3::
-	text "You have too much"
-	line "stuff with you!"
+	text $01,$01,$08,$28,$7F,$04,$B0,$01,$27,$07,$9C,$7F,$02,$6A,$04,$AB,$7F,$04,$49,$02,$77,$0B,$66; RAW DATA : 	text "가진 물건이 너무 많네!"
 	done
 
 _Route1Text2::
-	text "See those ledges"
-	line "along the road?"
+	text $07,$CA,$01,$B2,$7F,$01,$46,$05,$B7,$08,$28,$7F,$05,$61,$09,$8B,$01,$B6,$7F,$05,$18,$07,$09,$0B,$67; RAW DATA : 	text "저기 경사진 비탈길 보여?"
 
-	para "It's a bit scary,"
-	line "but you can jump"
-	cont "from them."
+	para $07,$EB,$7F,$04,$AB,$05,$E7,$01,$B4,$0A,$6F,$08,$26,$04,$48; RAW DATA : 	para "좀 무섭긴하지만"
+	line $07,$77,$07,$01,$05,$DD,$7F,$03,$A9,$06,$EE,$02,$4B,$04,$41,$06,$26,$7F,$07,$A6,$06,$EE,$0B,$66; RAW DATA : 	line "위에서 뛰어내릴수 있어!"
 
-	para "You can get back"
-	line "to PALLET TOWN"
-	cont "quicker that way."
-	done
+	para $05,$61,$09,$8B,$01,$B6,$07,$8B,$7F,$07,$9C,$07,$4B,$0A,$6F,$04,$89; RAW DATA : 	para "비탈길을 이용하면"
+	line $09,$92,$08,$CA,$04,$46,$07,$8B,$03,$FE,$7F,$03,$19,$06,$C6,$01,$01,$02,$C2,$01,$27,$7F,$01,$AD,$04,$E6,$07,$9C,$06,$DF,$0B,$66; RAW DATA : 	line "태초마을로 돌아가는건 금방이야!"
+	Done
 
 _Route1Text3::
-	text "ROUTE 1"
-	line "PALLET TOWN -"
-	cont "VIRIDIAN CITY"
+	text $07,$9C,$01,$67,$07,$8A,$7F,$F7,$04,$F8,$7F,$03,$15,$03,$FE; RAW DATA : 	text "이곳은 1번 도로"
+	line $09,$92,$08,$CA,$04,$46,$07,$8B,$7F,$0B,$6A,$0B,$6A,$7F,$05,$C3,$03,$FF,$06,$63,$09,$EC; RAW DATA : 	line "태초마을 …… 상록시티"
 	done
+

@@ -128,6 +128,18 @@ HangulCheck::
 	call BankswitchCommon
 	jr .Done
 .NotHangul
+	cp a,$80
+	jr c,.NotEnglish
+	ld c,a
+	ld a,[H_LOADEDROMBANK]
+	push af
+	ld a,BANK(PrintEnglish)
+	call BankswitchCommon
+	call PrintEnglish
+	pop af
+	call BankswitchCommon
+	jr .Done
+.NotEnglish
 	ld [hli], a
 .Done
 	call PrintLetterDelay
@@ -232,21 +244,23 @@ FinishDTE::
 	jp PlaceNextChar
 
 Char5CText::
-	db "TM@"
+	db $01,$B2,$06,$2A,$04,$73,$06,$65,$50
 Char5DText::
-	db "TRAINER@"
+	db $09,$DE,$03,$E9,$07,$9C,$02,$6A,$50
 Char5BText::
-	db "PC@"
+	db $09,$24,$0A,$4B,$09,$9D,$50
 Char5EText::
-	db "ROCKET@"
+	db $03,$FE,$09,$2F,$50
 Char54Text::
-	db "POKé@"
+	;db "POKé@"
+	db $0A,$27,$09,$2F,$50
 Char56Text::
-	db "……@"
+	db $0B,$6A,$0B,$6A,$50
 Char5AText::
-	db "Enemy @"
+	db $07,$CB,$07,$97,$7F,$50
+	;Enermy
 Char4AText::
-	db $E1,$E2,"@" ; PKMN
+	db $E1, $E2, "@" ; PKMN
 
 Char55::
 	push de

@@ -1,7 +1,12 @@
 _Route15GateText1::
-	text "Are you working"
-	line "on a #DEX?"
+	text $02,$6A,$7F,$0A,$27,$09,$2F,$04,$93,$7F,$03,$15,$01,$08,$07,$8B; RAW DATA : 	text "너 포켓몬 도감을"
+	line $08,$A4,$07,$4C,$02,$C2,$7F,$08,$0F,$07,$9C,$02,$CF,$0B,$67; RAW DATA : 	line "채우는 중이니?"
 
-	para "PROF.OAK's AIDE"
-	line "came by here."
-	done
+ 
+
+	para $07,$20,$04,$DA,$05,$B7,$07,$97,$7F,$07,$E6,$06,$26,$01,$01; RAW DATA : 	para "오박사의 조수가"
+	line $07,$09,$01,$B2,$7F,$07,$2D,$07,$A6,$02,$DC,$02,$D9; RAW DATA : 	line "여기 와있단다"
+	Done
+
+ 
+

@@ -1,64 +1,59 @@
 _Route24Text_51510::
-	text "Congratulations!"
-	line "You beat our 5"
-	cont "contest trainers!@@"
+	text $08,$E0,$0A,$6F,$03,$45,$04,$43,$02,$CF,$02,$D9,$0B,$66; RAW DATA : 	text "축하드립니다!"
+	line $09,$DE,$03,$E9,$07,$9C,$02,$6A,$7F,$FB,$04,$8D,$01,$6A,$07,$97; RAW DATA : 	line "트레이너 5명과의"
+	cont $06,$63,$0A,$75,$07,$8B,$7F,$07,$D6,$0A,$00,$0A,$7F,$06,$60,$02,$CF,$02,$D9,$0B,$66,$50,$50; RAW DATA : 	cont "시합을 제패했습니다!@@"
 
 _Route24Text_51515::
-	db $0
-	para "You just earned a"
-	line "fabulous prize!"
+	text ""
+	para $02,$E7,$06,$65,$07,$01,$01,$34,$7F,$04,$7A,$08,$28,$7F,$05,$C3,$0A,$40,$07,$8B; RAW DATA : 	para "당신에게 멋진 상품을"
+	line $08,$25,$07,$09,$0A,$6F,$01,$3A,$06,$60,$02,$CF,$02,$D9,$0B,$66; RAW DATA : 	line "증여하겠습니다!"
 	prompt
 
 _Route24Text_5151a::
-	text "<PLAYER> received"
-	line "a @"
+	text $52, $02,$C2,$0B,$64,$07,$8A,$0B,$65; RAW DATA : 	text $52, "는(은)"
+	line $50; RAW DATA : 	line "@"
 	TX_RAM wcf4b
-	text "!@@"
+	text $04,$36,$0B,$64,$07,$8B,$0B,$65,$7F,$06,$F2,$06,$FA,$02,$D9,$0B,$66,$50,$50; RAW DATA : 	text "를(을) 얻었다!@@"
 
 _Route24Text_51521::
-	text "You don't have"
-	line "any room!"
+	text $07,$9C,$7F,$07,$9C,$05,$C3,$07,$8A; RAW DATA : 	text "이 이상은"
+	line $03,$49,$7F,$06,$26,$7F,$06,$F8,$06,$EE,$0B,$66; RAW DATA : 	line "들 수 없어!"
 	done
 
 _Route24Text_51526::
-	text "By the way, would"
-	line "you like to join"
-	cont "TEAM ROCKET?"
+	text $01,$A7,$03,$E1,$03,$05,$7F,$04,$4B,$07,$9C,$06,$DF; RAW DATA : 	text "그런데 말이야"
+	line $07,$AA,$02,$77,$7F,$03,$FE,$09,$2F,$02,$DC,$07,$01,$7F,$03,$49,$06,$EE,$07,$23; RAW DATA : 	line "자네 로켓단에 들어올"
+	cont $05,$CD,$01,$02,$07,$8A,$7F,$06,$F8,$02,$C2,$01,$01,$0B,$67; RAW DATA : 	cont "생각은 없는가?"
 
-	para "We're a group"
-	line "dedicated to evil"
-	cont "using #MON!"
+	para $07,$4C,$04,$3E,$7F,$07,$E6,$08,$27,$07,$8A,$7F,$03,$3E,$05,$EC,$01,$48,$04,$36,$7F,$08,$26,$04,$E8,$0A,$6F,$01,$B2; RAW DATA : 	para "우리 조직은 뒷세계를 지배하기"
+	line $07,$77,$0A,$78,$7F,$0A,$27,$09,$2F,$04,$93,$07,$8B,$7F,$07,$9C,$07,$4B,$0A,$6F,$08,$26,$0B,$66; RAW DATA : 	line "위해 포켓몬을 이용하지!"
 
-	para "Want to join?"
+	para $0A,$74,$01,$E2,$7F,$0A,$6F,$01,$3A,$02,$3A,$0B,$67; RAW DATA : 	para "함께 하겠나?"
 
-	para "Are you sure?"
+	para $08,$28,$06,$69,$07,$9C,$06,$DF,$0B,$67; RAW DATA : 	para "진심이야?"
 
-	para "Come on, join us!"
+	para $02,$93,$02,$E3,$04,$4B,$01,$4D,$7F,$07,$4C,$04,$3E,$03,$CB,$7F,$0A,$74,$01,$E2,$0A,$6F,$07,$AA,$01,$4D,$0B,$66; RAW DATA : 	para "농담말고 우리랑 함께하자고!"
 
-	para "I'm telling you"
-	line "to join!"
+	para $02,$4B,$01,$01,$7F,$04,$4B,$0A,$71,$01,$27,$7F,$0A,$75,$04,$29,$06,$DF,$0B,$66; RAW DATA : 	para "내가 말한건 합류야!"
 
-	para "OK, you need"
-	line "convincing!"
+	para $06,$CB,$06,$D2,$06,$EE; RAW DATA : 	para "알았어"
+	line $02,$6A,$0A,$71,$09,$A7,$02,$C2,$7F,$05,$E3,$03,$46,$07,$9C,$7F,$0A,$6A,$07,$44,$0A,$71,$01,$25,$06,$DF,$0B,$66; RAW DATA : 	line "너한테는 설득이 필요한거야!"
 
-	para "I'll make you an"
-	line "offer you can't"
-	cont "refuse!"
+	para $02,$77,$01,$01,$7F,$02,$F5,$02,$C2,$7F,$04,$DD,$0A,$77,$0A,$6F,$08,$26,$7F,$04,$98,$0A,$6F,$01,$34; RAW DATA : 	para "네가 더는 반항하지 못하게"
+	line $04,$48,$03,$49,$06,$EE,$08,$06,$04,$46,$0B,$66; RAW DATA : 	line "만들어주마!"
 	done
 
 _Route24Text_5152b::
-	text "Arrgh!"
-	line "You are good!"
+	text $06,$C6,$0A,$E5,$07,$88,$07,$89,$0B,$66; RAW DATA : 	text "아흐으윽!"
+	line $02,$6A,$7F,$07,$F1,$07,$8B,$02,$EB,$03,$FE,$7F,$0A,$78,$0B,$66; RAW DATA : 	line "너 좋을대로 해!"
 	prompt
 
 _Route24Text_51530::
-	text "With your ability,"
-	line "you could become"
-	cont "a top leader in"
-	cont "TEAM ROCKET!"
+	text $02,$77,$7F,$06,$67,$03,$F2,$07,$9C,$04,$89,$7F,$03,$FE,$09,$2F,$02,$DC,$07,$01,$05,$DD; RAW DATA : 	text "네 실력이면 로켓단에서"
+	line $01,$03,$05,$2E,$01,$AE,$07,$9C,$7F,$03,$29,$06,$26,$7F,$07,$A6,$06,$EE,$0B,$66; RAW DATA : 	line "간부급이 될수 있어!"
 	done
 
 _Route24BattleText1::
-	text "I saw your feat"
-	line "from the grass!"
+	text $0A,$3E,$04,$E7,$07,$01,$05,$DD,$05,$2E,$09,$9D; RAW DATA : 	text "풀밭에서부터"
+	line $02,$77,$7F,$06,$08,$06,$BE,$04,$36,$7F,$05,$23,$08,$26,$0B,$66; RAW DATA : 	line "네 솜씨를 봤지!"
 	done

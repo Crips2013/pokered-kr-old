@@ -1,15 +1,9 @@
 _Route18GateUpstairsText_49993::
-	text "Looked into the"
-	line "binoculars."
-
-	para "PALLET TOWN is in"
-	line "the west!"
+	text $06,$76,$06,$C8,$01,$46,$07,$8B,$7F,$03,$49,$07,$09,$02,$D9,$05,$23,$02,$D9,$0B,$66; RAW DATA : 	text "쌍안경을 들여다봤다!"
+	line $05,$DD,$08,$6A,$07,$01,$7F,$09,$92,$08,$CA,$04,$46,$07,$8B,$07,$9C,$7F,$05,$18,$07,$9E,$02,$D9,$0B,$66; RAW DATA : 	line "서쪽에 태초마을이 보인다!"
 	done
-
+	
 _Route18GateUpstairsText_4999f::
-	text "Looked into the"
-	line "binoculars."
-
-	para "There are people"
-	line "swimming!"
+	text $06,$76,$06,$C8,$01,$46,$07,$8B,$7F,$03,$49,$07,$09,$02,$D9,$05,$23,$02,$D9,$0B,$66; RAW DATA : 	text "쌍안경을 들여다봤다!"
+	line $06,$26,$07,$15,$0A,$6F,$02,$C2,$7F,$05,$B7,$03,$C7,$03,$49,$07,$9C,$7F,$05,$18,$07,$9E,$02,$D9,$0B,$66; RAW DATA : 	line "수영하는 사람들이 보인다!"
 	done

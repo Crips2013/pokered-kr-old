@@ -1,31 +1,28 @@
 _Route16HouseText3::
-	text "Oh, you found my"
-	line "secret retreat!"
+	text $07,$9C,$03,$E1; RAW DATA : 	text "이런"
+	line $02,$4B,$7F,$05,$61,$04,$D0,$7F,$01,$B2,$08,$26,$04,$36,$7F,$08,$A3,$06,$C6,$02,$4B,$02,$D9,$02,$CF,$0B,$66; RAW DATA : 	line "내 비밀 기지를 찾아내다니!"
 
-	para "Please don't tell"
-	line "anyone I'm here."
-	cont "I'll make it up"
-	cont "to you with this!"
+	para $07,$9C,$01,$29,$7F,$08,$09,$09,$A7,$02,$CF; RAW DATA : 	para "이걸 줄테니"
+	line $02,$A9,$01,$88,$07,$01,$01,$34,$03,$15,$7F,$07,$09,$01,$B6; RAW DATA : 	line "누구에게도 여길"
+	cont $04,$4B,$0A,$6F,$08,$26,$7F,$04,$46,$0B,$66; RAW DATA : 	cont "말하지 마!"
 	prompt
 
 _ReceivedHM02Text::
-	text "<PLAYER> received"
-	line "HM02!@@"
+	text $52, $02,$C2,$0B,$64,$07,$8A,$0B,$65; RAW DATA : 	text $52, "는(은)"
+	line $05,$61,$07,$CC,$04,$73,$06,$65,$F6,$F8,$04,$36,$7F,$04,$DE,$06,$D2,$02,$D9,$0B,$66,$50,$50; RAW DATA : 	line "비전머신02를 받았다!@@"
 
 _HM02ExplanationText::
-	text "HM02 is FLY."
-	line "It will take you"
-	cont "back to any town."
+	text $05,$61,$07,$CC,$04,$73,$06,$65,$F6,$F8,$02,$C2,$7F,$01,$68,$08,$0F,$02,$3F,$01,$B2; RAW DATA : 	text "비전머신02는 공중날기"
+	line $02,$77,$01,$01,$7F,$01,$01,$05,$23,$02,$F8,$7F,$03,$15,$06,$63,$03,$FE; RAW DATA : 	line "네가 가봤던 도시로"
+	cont $02,$3F,$06,$C6,$7F,$01,$05,$7F,$06,$26,$7F,$07,$A6,$06,$EE,$0B,$66; RAW DATA : 	cont "날아 갈 수 있어!"
 
-	para "Put it to good"
-	line "use!"
+	para $07,$AF,$7F,$06,$B2,$03,$C3,$01,$4D,$0B,$66; RAW DATA : 	para "잘 쓰라고!"
 	done
 
 _HM02NoRoomText::
-	text "You don't have any"
-	line "room for this."
-	done
+	text $07,$9C,$7F,$07,$9C,$05,$C3,$7F,$03,$49,$7F,$06,$26,$7F,$06,$F8,$06,$EE,$0B,$66; RAW DATA : 	text "이 이상 들 수 없어!"
+	Done
 
 _Route16HouseText_1e652::
-	text "FEAROW: Kyueen!"
+	text $01,$CA,$05,$61,$03,$45,$04,$41,$07,$E6,$0B,$62,$01,$CA,$05,$61,$0B,$66; RAW DATA : 	text "깨비드릴조『깨비!"
 	done
