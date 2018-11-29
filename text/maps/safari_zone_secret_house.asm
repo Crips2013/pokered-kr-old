@@ -1,44 +1,39 @@
 _SecretHouseText_4a350::
-	text "Ah! Finally!"
+	text $06,$C6,$0B,$66,$7F,$03,$45,$03,$60,$06,$EE,$0B,$66; RAW DATA : 	text "아! 드디어!"
 
-	para "You're the first"
-	line "person to reach"
-	cont "the SECRET HOUSE!"
+	para $05,$61,$04,$D0,$07,$97,$7F,$08,$2D,$07,$01,$7F,$08,$B9,$04,$F8,$08,$40,$03,$FE; RAW DATA : 	para "비밀의 집에 첫번째로"
+	line $03,$15,$08,$98,$0A,$6F,$05,$FC,$06,$60,$02,$CF,$02,$D9,$0B,$66; RAW DATA : 	line "도착하셨습니다!"
 
-	para "I was getting"
-	line "worried that no"
-	cont "one would win our"
-	cont "campaign prize."
+	para $07,$CA,$0A,$F1,$7F,$09,$17,$0A,$14,$07,$9E,$07,$01; RAW DATA : 	para "저희 캠페인에"
+	line $02,$E7,$08,$B7,$03,$27,$02,$C2,$7F,$05,$B7,$03,$C7,$07,$9C; RAW DATA : 	line "당첨되는 사람이"
+	cont $06,$C8,$7F,$02,$3A,$07,$23,$01,$BE,$05,$21,$7F,$01,$26,$07,$D4,$0A,$7F,$02,$77,$07,$44; RAW DATA : 	cont "안 나올까봐 걱정했네요"
 
-	para "Congratulations!"
-	line "You have won!"
+	para $08,$E0,$0A,$6F,$03,$45,$04,$43,$02,$CF,$02,$D9,$0B,$66; RAW DATA : 	para "축하드립니다!"
+	line $02,$E7,$08,$B7,$03,$26,$06,$60,$02,$CF,$02,$D9,$0B,$66; RAW DATA : 	line "당첨됐습니다!"
 	prompt
 
 _ReceivedHM03Text::
-	text "<PLAYER> received"
-	line "@"
+	text $52, $02,$C2,$0B,$64,$07,$8A,$0B,$65; RAW DATA : 	text $52, "는(은)"
+	line $50; RAW DATA : 	line "@"
 	TX_RAM wcf4b
-	text "!@@"
+	text $04,$36,$0B,$64,$07,$8B,$0B,$65,$7F,$06,$F2,$06,$FA,$02,$D9,$0B,$66,$50,$50; RAW DATA : 	text "를(을) 얻었다!@@"
 
 _HM03ExplanationText::
-	text "HM03 is SURF!"
+	text $05,$61,$07,$CC,$04,$73,$06,$65,$F9,$07,$8A,$7F,$09,$F4,$03,$15,$09,$88,$01,$B2,$0B,$66; RAW DATA : 	text "비전머신3은 파도타기!"
 
-	para "#MON will be"
-	line "able to ferry you"
-	cont "across water!"
+	para $0A,$27,$09,$2F,$04,$93,$07,$9C,$7F,$05,$B7,$03,$C7,$07,$8B,$7F,$09,$92,$07,$4C,$01,$4D; RAW DATA : 	para "포켓몬이 사람을 태우고"
+	line $04,$B0,$07,$77,$04,$36,$7F,$01,$27,$02,$6E,$06,$26,$7F,$07,$A6,$01,$34,$7F,$0A,$6F,$08,$02,$0B,$66; RAW DATA : 	line "물위를 건널수 있게 하죠!"
 
-	para "And, this HM isn't"
-	line "disposable! You"
-	cont "can use it over"
-	cont "and over!"
+	para $01,$34,$02,$D9,$01,$01,$7F,$05,$61,$07,$CC,$04,$73,$06,$65,$07,$8A; RAW DATA : 	para "게다가 비전머신은"
+	line $07,$9F,$0A,$B8,$07,$4B,$07,$9C,$7F,$06,$C6,$02,$D5,$02,$CF,$02,$D9,$0B,$66; RAW DATA : 	line "일회용이 아닙니다!"
+	cont $04,$8E,$04,$F8,$07,$9C,$01,$4D,$7F,$05,$B7,$07,$4B,$0A,$72,$06,$26,$7F,$07,$A6,$06,$60,$02,$CF,$02,$D9,$0B,$66; RAW DATA : 	cont "몇번이고 사용할수 있습니다!"
 
-	para "You're super lucky"
-	line "for winning this"
-	cont "fabulous prize!"
+	para $07,$9C,$03,$E8,$01,$34,$7F,$04,$7A,$08,$28,$7F,$05,$C3,$0A,$40,$07,$8B; RAW DATA : 	para "이렇게 멋진 상품을"
+	line $04,$DE,$02,$C2,$7F,$02,$E7,$06,$65,$07,$8A; RAW DATA : 	line "받는 당신은"
+	cont $07,$D4,$04,$4B,$03,$FE,$7F,$07,$4E,$07,$9C,$7F,$07,$F1,$07,$8A,$01,$2C,$02,$CF,$02,$D9,$0B,$66; RAW DATA : 	cont "정말로 운이 좋은겁니다!"
 	done
 
 _HM03NoRoomText::
-	text "You don't have"
-	line "room for this"
-	cont "fabulous prize!"
+	text $07,$9C,$7F,$07,$9C,$05,$C3,$7F,$03,$49,$7F,$06,$26,$7F,$06,$F8,$06,$EE,$0B,$66; RAW DATA : 	text "이 이상 들 수 없어!"
+	line $07,$9C,$7F,$04,$7A,$08,$28,$7F,$05,$C3,$0A,$40,$07,$8B,$7F,$01,$01,$07,$DE,$01,$01,$06,$DF,$0A,$78,$0B,$66; RAW DATA : 	line "이 멋진 상품을 가져가야해!"
 	done

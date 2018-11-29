@@ -23,11 +23,7 @@ _AgathaBeforeBattleText::
 	
 
 _AgathaEndBattleText::
-IF DEF(_YELLOW)
 	text $07,$20,$0B,$68,$0A,$A3,$7F,$04,$BA,$01,$01; RAW DATA : 	text "오-호 뭔가"
-ELSE
-	text "Oh ho!"
-ENDC
 	line $05,$18,$09,$BB,$02,$4B,$01,$B2,$01,$01,$7F,$06,$C6,$02,$CF,$01,$88,$02,$3A,$7F,$01,$EF,$04,$46,$06,$DF; RAW DATA : 	line "보통내기가 아니구나 꼬마야"
 	prompt
 

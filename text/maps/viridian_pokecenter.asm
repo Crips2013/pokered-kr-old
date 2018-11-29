@@ -1,16 +1,14 @@
 _ViridianPokeCenterText2::
-	text "You can use that"
-	line "PC in the corner."
+	text $09,$3A,$02,$6A,$08,$6A,$07,$01,$7F,$07,$A6,$02,$C2; RAW DATA : 	text "코너쪽에 있는"
+	line $09,$24,$0A,$4B,$09,$9D,$02,$C2,$7F,$07,$9C,$07,$4B,$7F,$01,$01,$02,$C9,$0A,$6F,$06,$6A,$02,$CF,$02,$D9; RAW DATA : 	line "컴퓨터는 이용 가능하십니다"
 
-	para "The receptionist"
-	line "told me. So kind!"
+	para $02,$E3,$02,$E7,$07,$AA,$07,$9E,$7F,$07,$D6,$01,$34,$7F,$04,$AE,$07,$97,$0A,$6F,$06,$63,$04,$89; RAW DATA : 	para "담당자인 제게 문의하시면"
+	line $09,$03,$07,$CD,$0A,$F7,$7F,$03,$15,$07,$2D,$03,$45,$04,$3E,$01,$3A,$06,$60,$02,$CF,$02,$D9,$0B,$66; RAW DATA : 	line "친절히 도와드리겠습니다!"
 	done
 
 _ViridianPokeCenterText3::
-	text "There's a #MON"
-	line "CENTER in every"
-	cont "town ahead."
+	text $07,$CA,$0A,$F1,$7F,$0A,$27,$09,$2F,$04,$93,$7F,$05,$EE,$09,$9D,$02,$C2; RAW DATA : 	text "저희 포켓몬 센터는"
+	line $04,$90,$03,$47,$7F,$04,$46,$07,$8B,$07,$01,$7F,$07,$A6,$06,$60,$02,$CF,$02,$D9; RAW DATA : 	line "모든 마을에 있습니다"
 
-	para "They don't charge"
-	line "any money either!"
+	para $07,$9C,$07,$4B,$07,$44,$01,$AD,$07,$8A,$7F,$04,$AB,$04,$11,$07,$A4,$02,$CF,$02,$D9,$0B,$66; RAW DATA : 	para "이용요금은 무료입니다!"
 	done

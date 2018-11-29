@@ -12,19 +12,7 @@ Route22Mons:
 		db 3,NIDORAN_F
 		db 4,NIDORAN_F
 	ENDC
-	IF DEF(_GREEN)
-		db 3,RATTATA
-		db 3,NIDORAN_M
-		db 4,RATTATA
-		db 4,NIDORAN_M
-		db 2,RATTATA
-		db 2,NIDORAN_M
-		db 3,SPEAROW
-		db 5,SPEAROW
-		db 3,NIDORAN_F
-		db 4,NIDORAN_F
-	ENDC
-	IF DEF(_BLUE)
+	IF DEF(_GREEN);해외판블루
 		db 3,RATTATA
 		db 3,NIDORAN_F
 		db 4,RATTATA
@@ -35,5 +23,17 @@ Route22Mons:
 		db 5,SPEAROW
 		db 3,NIDORAN_M
 		db 4,NIDORAN_M
+	ENDC
+	IF DEF(_BLUE)
+		db 3,RATTATA
+		db 3,NIDORAN_M
+		db 4,RATTATA
+		db 4,NIDORAN_M
+		db 2,RATTATA
+		db 2,NIDORAN_M
+		db 3,SPEAROW
+		db 5,SPEAROW
+		db 3,NIDORAN_F
+		db 4,NIDORAN_F
 	ENDC
 	db $00

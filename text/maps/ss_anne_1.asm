@@ -1,21 +1,19 @@
 _SSAnne1Text1::
-	text "Bonjour!"
-	line "I am le waiter on"
-	cont "this ship!"
+	text $05,$20,$08,$06,$04,$33,$0B,$66; RAW DATA : 	text "봉주르!"
+	line $07,$CA,$02,$C2,$7F,$07,$9C,$7F,$04,$E8,$07,$97,$7F,$07,$6E,$07,$9C,$09,$9D,$07,$A4,$02,$CF,$02,$D9; RAW DATA : 	line "저는 이 배의 웨이터입니다"
+	
+	para $01,$9D,$0A,$6F,$04,$36,$7F,$04,$90,$06,$67,$06,$26,$7F,$07,$A6,$07,$8D,$07,$01,$7F,$01,$08,$05,$B7,$03,$45,$04,$3E,$04,$87; RAW DATA : 	para "귀하를 모실수 있음에 감사드리며"
+	line $0A,$6A,$07,$44,$0A,$71,$7F,$01,$2D,$07,$9C,$7F,$07,$A6,$07,$88,$06,$63,$04,$89,$7F,$05,$2E,$02,$E3,$06,$F8,$07,$9C; RAW DATA : 	line "필요한 것이 있으시면 부담없이"
+	cont $04,$4B,$06,$B8,$0A,$78,$7F,$08,$06,$06,$63,$01,$B6,$7F,$04,$D9,$03,$C8,$02,$CF,$02,$D9; RAW DATA : 	cont "말씀해 주시길 바랍니다"
 
-	para "I will be happy"
-	line "to serve you any-"
-	cont "thing you please!"
-
-	para "Ah! Le strong"
-	line "silent type!"
+	para $06,$C6,$0B,$66; RAW DATA : 	para "아!"
+	line $01,$6A,$04,$AC,$0A,$6F,$06,$65,$7F,$05,$30,$07,$9C,$01,$8A,$07,$44,$0B,$66; RAW DATA : 	line "과묵하신 분이군요!"
 	done
 
 _SSAnne1Text2::
-	text "The passengers"
-	line "are restless!"
+	text $07,$9C,$04,$F8,$7F,$06,$62,$01,$14,$03,$49,$07,$8A; RAW DATA : 	text "이번 승객들은"
+	line $08,$26,$09,$01,$08,$26,$03,$15,$7F,$06,$CA,$02,$3A,$05,$21,$0B,$66; RAW DATA : 	line "지치지도 않나봐!"
 
-	para "You might be"
-	line "challenged by the"
-	cont "more bored ones!"
+	para $06,$69,$06,$69,$0A,$71,$7F,$05,$B7,$03,$C7,$03,$49,$07,$01,$01,$34,$7F,$03,$15,$07,$CC,$04,$DE,$06,$C6,$03,$15; RAW DATA : 	para "심심한 사람들에게 도전받아도"
+	line $02,$E7,$0A,$B2,$0A,$6F,$08,$26,$7F,$04,$4B,$03,$C3,$01,$4D,$0B,$66; RAW DATA : 	line "당황하지 말라고!"
 	done

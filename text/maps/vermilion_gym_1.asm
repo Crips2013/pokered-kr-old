@@ -1,21 +1,19 @@
 _VermilionGymText_5cb6d::
-	text "Hey, kid! What do"
-	line "you think you're"
-	cont "doing here?"
+	text $08,$97,$03,$F7,$0B,$66; RAW DATA : 	text "차렷!"
+	line $07,$73,$09,$24,$7F,$09,$C5,$7F,$01,$05,$05,$C6,$06,$63,$09,$EC,$0B,$66; RAW DATA : 	line "웰컴 투 갈색시티!"
 
-	para "You won't live"
-	line "long in combat!"
-	cont "That's for sure!"
+	para $03,$EF,$08,$F7,$7F,$06,$BE,$7F,$06,$EE,$03,$60; RAW DATA : 	para "렛츠 씨 어디"
+	line $09,$80,$03,$45,$0B,$66; RAW DATA : 	line "키드!"
 
-	para "I tell you kid,"
-	line "electric #MON"
-	cont "saved me during"
-	cont "the war!"
+	para $0A,$6F,$0A,$6F,$0A,$6F,$0B,$66; RAW DATA : 	para "하하하!"
+	line $07,$7F,$07,$97,$7F,$0A,$3A,$06,$EE,$0A,$71,$7F,$0A,$FB,$07,$88,$03,$FE; RAW DATA : 	line "유의 푸어한 힘으로"
+	cont $02,$3F,$7F,$01,$FF,$02,$3A,$7F,$04,$D9,$02,$F5,$0A,$6F,$01,$34,$7F,$0A,$78,$05,$DD; RAW DATA : 	cont "날 꽤나 바더하게 해서"
+	cont $04,$E8,$03,$45,$7F,$06,$02,$04,$3E,$02,$3A,$7F,$03,$48,$01,$3A,$01,$8A,$0B,$66; RAW DATA : 	cont "배드 소리나 듣겠군!"
 
-	para "They zapped my"
-	line "enemies into"
-	cont "paralysis!"
+	para $0A,$27,$09,$2F,$04,$93,$7F,$04,$E8,$09,$E2,$07,$8A,$7F,$07,$66,$0B,$66; RAW DATA : 	para "포켓몬 배틀은 워!"
+	line $02,$8B,$04,$4B,$7F,$0A,$0B,$06,$4C,$07,$9E,$7F,$07,$AA,$02,$77,$0A,$71,$09,$A7,$7F,$05,$18,$07,$09,$08,$06,$08,$26,$0B,$66; RAW DATA : 	line "노말 퍼슨인 자네한테 보여주지!"
 
-	para "The same as I'll"
-	line "do to you!"
+	para $07,$AA,$02,$77,$02,$C2,$7F,$01,$60; RAW DATA : 	para "자네는 곧"
+	line $01,$B2,$05,$4A,$7F,$06,$F7,$0A,$72,$01,$2D,$07,$9C,$02,$D9,$0B,$66; RAW DATA : 	line "기브 업할것이다!"
 	done
+;해당 캐릭 자체가 역대 주인공들을 '키드'로 호칭하기때문에 이건 바꾸시면 캐붕입니다.

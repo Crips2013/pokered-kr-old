@@ -1,19 +1,20 @@
 _SafariZoneRestHouse2Text1::
-	text "Tossing ROCKs at"
-	line "#MON might"
-	cont "make them run,"
-	cont "but they'll be"
-	cont "easier to catch."
+	text $03,$19,$07,$8B,$7F,$0A,$27,$09,$2F,$04,$93,$07,$01,$01,$34,$7F,$02,$F8,$08,$26,$04,$89; RAW DATA : 	text "돌을 포켓몬에게 던지면"
+	line $03,$15,$04,$61,$09,$05,$06,$26,$03,$15,$7F,$07,$A6,$08,$26,$04,$48; RAW DATA : 	line "도망칠수도 있지만"
+	cont $07,$EB,$02,$F5,$7F,$07,$B2,$01,$B2,$7F,$06,$41,$01,$34; RAW DATA : 	cont "좀더 잡기 쉽게"
+	cont $04,$48,$03,$49,$01,$B2,$03,$15,$7F,$0A,$78; RAW DATA : 	cont "만들기도 해"
 	done
 
 _SafariZoneRestHouse2Text2::
-	text "Using BAIT will"
-	line "make #MON"
-	cont "easier to catch."
+	text $04,$74,$07,$9C,$04,$36,$7F,$08,$06,$04,$89,$7F,$0A,$27,$09,$2F,$04,$93,$07,$8A; RAW DATA : 	text "먹이를 주면 포켓몬은"
+	line $02,$F5,$7F,$06,$41,$01,$34,$7F,$07,$B2,$07,$8B,$7F,$06,$26,$03,$15,$7F,$07,$A6,$06,$EE; RAW DATA : 	line "더 쉽게 잡을 수도 있어"
 	done
 
 _SafariZoneRestHouse2Text3::
-	text "I hiked a lot, but"
-	line "I didn't see any"
-	cont "#MON I wanted."
+	text $02,$D9,$04,$3E,$01,$01,$7F,$07,$CA,$04,$3E,$01,$34,$7F,$03,$19,$06,$C6,$02,$D9,$02,$80,$7F,$05,$23,$08,$26,$04,$48; RAW DATA : 	text "다리가 저리게 돌아다녀 봤지만"
+	line $02,$4B,$01,$01,$7F,$07,$68,$0A,$6F,$02,$C2,$7F,$0A,$27,$09,$2F,$04,$93,$07,$8A,$7F,$04,$98,$7F,$05,$23,$06,$EE; RAW DATA : 	line "내가 원하는 포켓몬은 못 봤어"
 	done
+
+;Tossing ROCK 관련
+;소울실버로 확인해본 결과, 커맨드는 [볼/먹이/진흙/도망간다]로 나와서 의역했습니다.
+;짱돌 대체어 후보로는 자갈, 조약돌입니다.

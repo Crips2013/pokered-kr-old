@@ -1,12 +1,10 @@
 _SaffronPokecenterText2::
-	text "#MON growth"
-	line "rates differ from"
-	cont "specie to specie."
+	text $0A,$27,$09,$2F,$04,$93,$07,$97,$7F,$05,$EA,$07,$B5,$06,$03,$03,$15,$02,$C2; RAW DATA : 	text "포켓몬의 성장속도는"
+	line $07,$EE,$04,$29,$04,$46,$02,$D9,$7F,$07,$D6,$01,$02,$01,$02,$07,$9C,$06,$DF; RAW DATA : 	line "종류마다 제각각이야"
 	done
 
 _SaffronPokecenterText3::
-	text "SILPH CO. is very"
-	line "famous. That's"
-	cont "why it attracted"
-	cont "TEAM ROCKET!"
+	text $06,$67,$0A,$61,$7F,$08,$06,$06,$64,$0A,$B8,$05,$B7,$02,$C2; RAW DATA : 	text "실프 주식회사는"
+	line $07,$7F,$04,$8D,$0A,$71,$7F,$02,$EB,$01,$B2,$06,$F7,$07,$9C,$06,$DF; RAW DATA : 	line "유명한 대기업이야"
+	cont $01,$A7,$01,$25,$03,$77,$04,$AE,$07,$01,$7F,$03,$FE,$09,$2F,$02,$DC,$07,$9C,$7F,$07,$D1,$03,$F9,$0A,$7F,$08,$26,$0B,$66; RAW DATA : 	cont "그거때문에 로켓단이 점령했지!"
 	done

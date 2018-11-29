@@ -19,9 +19,9 @@ _OakGrassText::
 
 ELSE
 _OakWalksUpText::
-	text "OAK: It's unsafe!"
-	line "Wild #MON live"
-	cont "in tall grass!"
+	text $07,$20,$04,$DA,$05,$B7,$0B,$62,$07,$77,$0A,$88,$0A,$72,$7F,$05,$87,$0A,$7F,$02,$D9,$0B,$66; RAW DATA : 	text "오박사『위험할 뻔했다!"
+	line $06,$26,$0A,$3E,$07,$01,$05,$DD,$02,$C2,$7F,$06,$DF,$05,$CD,$7F,$0A,$27,$09,$2F,$04,$93,$03,$49,$07,$9C; RAW DATA : 	para "수풀에서는 야생 포켓몬들이"
+	cont $02,$3A,$07,$22,$02,$DC,$02,$D9,$0B,$66; RAW DATA : 	line "나온단다!"
 
 ENDC
 

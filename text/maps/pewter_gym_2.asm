@@ -1,142 +1,167 @@
+
 _PewterGymText_5c4a3::
-	text "There are all"
-	line "kinds of trainers"
-	cont "in the world!"
+	text $05,$EC,$05,$C3,$07,$01,$02,$C2,$7F,$01,$0D,$0A,$71,$7F,$09,$DE,$03,$E9,$07,$9C,$02,$6A,$01,$01; RAW DATA : 	text "세상에는 강한 트레이너가"
+	line $04,$49,$07,$9C,$7F,$07,$E8,$07,$B7,$0A,$71,$02,$D9; RAW DATA : 	line "많이 존재한다"
 
-	para "You appear to be"
-	line "very gifted as a"
-	cont "#MON trainer!"
+	para $04,$8E,$04,$8E,$07,$8A,$7F,$06,$6E,$07,$62,$07,$8B,$7F,$07,$77,$0A,$78,$7F,$01,$B2,$04,$33,$01,$4D; RAW DATA : 	para "몇몇은 싸움을 위해 기르고"
+	line $06,$D6,$07,$2F,$07,$4B,$07,$88,$03,$FE,$7F,$01,$B2,$04,$33,$02,$C2,$7F,$05,$B7,$03,$C7,$03,$15,$7F,$07,$A6,$08,$26; RAW DATA : 	line "애완용으로 기르는 사람도 있지"
 
-	para "Go to the GYM in"
-	line "CERULEAN and test"
-	cont "your abilities!"
+ 
+
+	para $02,$3D,$7F,$0A,$27,$09,$2F,$04,$93,$7F,$09,$DE,$03,$E9,$07,$9C,$02,$6A,$01,$01; RAW DATA : 	para "난 포켓몬 트레이너가"
+	line $03,$27,$01,$B2,$7F,$07,$77,$0A,$78,$7F,$06,$26,$03,$F3,$08,$0F,$07,$9C,$02,$D9; RAW DATA : 	line "되기 위해 수련중이다"
+
+	para $02,$77,$7F,$0A,$27,$09,$2F,$04,$93,$07,$8B,$7F,$02,$F5,$07,$4D,$7F,$06,$26,$03,$F3,$06,$63,$09,$83,$01,$25,$04,$89; RAW DATA : 	para "네 포켓몬을 더욱 수련시킬거면"
+	line $05,$4D,$04,$17,$06,$63,$09,$EC,$7F,$08,$BC,$07,$80,$01,$6C,$07,$01,$7F,$01,$01,$03,$C9,$0B,$66; RAW DATA : 	line "블루시티 체육관에 가랏!"
 	done
 
 _TM34PreReceiveText::
-	text "Wait! Take this"
-	line "with you!"
+	text $07,$B1,$01,$C1,$0B,$66; RAW DATA : 	text "잠깐!"
+	line $07,$9C,$01,$2D,$03,$15,$7F,$01,$01,$07,$DE,$01,$01,$0B,$66; RAW DATA : 	line "이것도 가져가!"
 	done
 
+ 
+
 _ReceivedTM34Text::
-	text "<PLAYER> received"
-	line "TM34!@@"
+	text $52, $02,$C2,$0B,$64,$07,$8A,$0B,$65; RAW DATA : 	text $52, "는(은)"
+	line $01,$B2,$06,$2A,$04,$73,$06,$65,$F9,$FA,$04,$36,$7F,$06,$F2,$06,$FA,$02,$D9,$0B,$66,$50,$50; RAW DATA : 	line "기술머신34를 얻었다!@@"
 
 _TM34ExplanationText::
 	db $0
-	para "A TM contains a"
-	line "technique that"
-	cont "can be taught to"
-	cont "#MON!"
+	para $01,$B2,$06,$2A,$04,$73,$06,$65,$7F,$06,$C8,$07,$01,$02,$C2; RAW DATA : 	para "기술머신 안에는"
+	line $0A,$27,$09,$2F,$04,$93,$7F,$01,$B2,$06,$2A,$07,$9C,$7F,$03,$49,$06,$EE,$07,$A6,$02,$D9,$0B,$66; RAW DATA : 	line "포켓몬 기술이 들어있다!"
 
-	para "A TM is good only"
-	line "once! So when you"
-	cont "use one to teach"
-	cont "a new technique,"
-	cont "pick the #MON"
-	cont "carefully!"
+	para $01,$B2,$06,$2A,$04,$73,$06,$65,$07,$8A,$7F,$0A,$71,$04,$F8,$04,$DB,$07,$01,$7F,$04,$98,$06,$B2,$02,$CF,$01,$BE; RAW DATA : 	para "기술머신은 한번밖에 못쓰니까"
+	line $05,$B7,$07,$4B,$0A,$72,$7F,$0A,$27,$09,$2F,$04,$93,$07,$8B; RAW DATA : 	line "사용할 포켓몬을"
+	cont $06,$65,$08,$0F,$0A,$F7,$7F,$01,$61,$03,$C3,$06,$DF,$7F,$03,$28,$02,$D9,$0B,$66; RAW DATA : 	cont "신중히 골라야 된다!"
 
-	para "TM34 contains"
-	line "BIDE!"
+	para $01,$B2,$06,$2A,$04,$73,$06,$65,$F9,$FA,$02,$C2,$7F,$08,$9C,$01,$B2,$0B,$66; RAW DATA : 	para "기술머신34는 참기!"
 
-	para "Your #MON will"
-	line "absorb damage in"
-	cont "battle then pay"
-	cont "it back double!"
+
+
+	para $0A,$AD,$04,$36,$7F,$06,$77,$06,$C6,$03,$2E,$06,$FA,$02,$D9,$01,$01; RAW DATA : 	para "화를 쌓아두었다가"
+	line $03,$2E,$04,$E8,$03,$FE,$7F,$03,$19,$03,$F1,$08,$06,$08,$26,$0B,$66; RAW DATA : 	line "두배로 돌려주지!"
 	done
 
+ 
+
 _TM34NoRoomText::
-	text "You don't have"
-	line "room for this!"
+	text $07,$9C,$7F,$07,$9C,$05,$C3,$7F,$03,$49,$7F,$06,$26,$7F,$06,$F8,$06,$EE,$0B,$66; RAW DATA : 	text "이 이상 들 수 없어!"
 	done
 
 _PewterGymText_5c4bc::
-	text "I took"
-	line "you for granted."
+	text $07,$9E,$07,$D4,$0A,$72,$06,$26,$7F,$04,$DB,$07,$01,$7F,$06,$F8,$01,$3A,$02,$C2,$01,$29; RAW DATA : 	text "인정할수 밖에 없겠는걸"
 
-	para "As proof of your"
-	line "victory, here's"
-	cont "the BOULDERBADGE!"
 
-	para "<PLAYER> received"
-	line "the BOULDERBADGE!@@"
+
+	para $07,$AA,$7F,$07,$9C,$7F,$04,$E8,$08,$26,$04,$36; RAW DATA : 	para "자 이 배지를"
+	line $01,$01,$08,$26,$01,$4D,$7F,$01,$01,$03,$C3,$0B,$66; RAW DATA : 	line "가지고 가라!"
+	para $52, $02,$C2,$0B,$64,$07,$8A,$0B,$65; RAW DATA : 	para $52, "는(은)"
+	line $0A,$B8,$05,$C6,$04,$E8,$08,$26,$04,$36,$7F,$06,$F2,$06,$FA,$02,$D9,$0B,$66,$50,$50; RAW DATA : 	line "회색배지를 얻었다!@@"
 
 _PewterGymText_5c4c1::
 	db $0
-	para "That's an official"
-	line "#MON LEAGUE"
-	cont "BADGE!"
+	para $01,$A7,$01,$27,$7F,$0A,$27,$09,$2F,$04,$93,$7F,$04,$E8,$08,$26,$02,$D9,$0B,$66; RAW DATA : 	para "그건 포켓몬 배지다!"
 
-	para "Its bearer's"
-	line "#MON become"
-	cont "more powerful!"
+	para $04,$E8,$08,$26,$07,$97,$7F,$06,$02,$07,$7F,$07,$AA,$02,$C2; RAW DATA : 	para "배지의 소유자는"
+	line $07,$EB,$02,$F5,$7F,$01,$0D,$0A,$78,$08,$26,$08,$26,$0B,$66; RAW DATA : 	line "좀더 강해지지!"
 
-	para "The technique"
-	line "FLASH can now be"
-	cont "used any time!"
+	para $01,$A7,$04,$3E,$01,$4D,$7F,$0A,$63,$03,$D1,$06,$63,$7F,$01,$B2,$06,$2A,$07,$8B; RAW DATA : 	para "그리고 플래시 기술을"
+	line $06,$F0,$07,$D6,$03,$47,$7F,$05,$B7,$07,$4B,$0A,$72,$06,$26,$7F,$07,$A6,$01,$34,$7F,$03,$28,$02,$D9,$0B,$66; RAW DATA : 	line "언제든 사용할수 있게 된다!"
 	prompt
+
+ 
 
 _PewterGymBattleText1::
-	text "Stop right there,"
-	line "kid!"
+	text $01,$25,$01,$B2,$7F,$04,$78,$08,$E7; RAW DATA : 	text "거기 멈춰"
+	line $06,$D6,$06,$0B,$07,$9C,$0B,$66; RAW DATA : 	line "애송이!"
 
-	para "You're still light"
-	line "years from facing"
-	cont "BROCK!"
+
+	para $02,$6A,$7F,$01,$10,$07,$8A,$06,$D6,$01,$01,$7F,$07,$65,$07,$9C,$04,$36; RAW DATA : 	para "너 같은애가 웅이를"
+	line $05,$C3,$02,$EB,$0A,$6F,$01,$B2,$07,$01,$02,$C2,$7F,$04,$48,$01,$74,$02,$82,$7F,$07,$9C,$04,$33,$02,$D9,$01,$4D,$0B,$66; RAW DATA : 	line "상대하기에는 만광년 이르다고!"
 	done
+
+ 
 
 _PewterGymEndBattleText1::
-	text "Darn!"
+	text $07,$D6,$01,$B6,$0B,$66; RAW DATA : 	text "제길!"
 
-	para "Light years isn't"
-	line "time! It measures"
-	cont "distance!"
+
+
+	para $04,$48,$01,$74,$02,$82,$07,$9C,$03,$C3,$01,$4D,$7F,$04,$4B,$0A,$71,$7F,$01,$27,$7F; RAW DATA : 	para "만광년이라고 말한 건 "
+	line $06,$63,$01,$03,$07,$9C,$7F,$06,$C6,$02,$CF,$03,$C3,$7F,$01,$25,$04,$3E,$03,$C3,$01,$88,$0B,$66; RAW DATA : 	line "시간이 아니라 거리라구!"
 	prompt
+
+ 
 
 _PewterGymAfterBattleText1::
-	text "You're pretty hot,"
-	line "but not as hot"
-	cont "as BROCK!"
+	text $02,$6A,$7F,$07,$D6,$04,$FD,$7F,$01,$3D,$0A,$71,$01,$29; RAW DATA : 	text "너 제법 격한걸"
+	line $0A,$6F,$08,$26,$04,$48,$7F,$07,$65,$07,$9C,$04,$48,$09,$7D,$07,$8A,$7F,$06,$C6,$02,$CF,$08,$26,$0B,$66; RAW DATA : 	line "하지만 웅이만큼은 아니지!"
 	done
+
 
 _PewterGymText_5c515::
-	text "Hiya! I can tell"
-	line "you have what it"
-	cont "takes to become a"
-	cont "#MON champ!"
+	text $06,$C8,$02,$87,$0B,$66,$7F,$04,$CC,$03,$D1,$07,$97,$7F,$08,$A8,$0A,$67,$06,$F0,$0B,$66; RAW DATA : 	text "안녕! 미래의 챔피언!"
+	line $08,$A8,$0A,$67,$06,$F0,$07,$9C,$7F,$03,$27,$01,$B2,$07,$77,$0A,$78; RAW DATA : 	line "챔피언이 되기위해"
+	cont $0A,$6A,$07,$44,$0A,$71,$01,$29,$7F,$06,$CB,$03,$F1,$08,$09,$01,$34,$0B,$66; RAW DATA : 	cont "필요한걸 알려줄게!"
 
-	para "I'm no trainer,"
-	line "but I can tell"
-	cont "you how to win!"
+	para $02,$3D,$7F,$09,$DE,$03,$E9,$07,$9C,$02,$6A,$02,$C2,$7F,$06,$C6,$02,$CF,$08,$26,$04,$48; RAW DATA : 	para "난 트레이너는 아니지만"
+	line $07,$9C,$01,$B2,$02,$C2,$7F,$04,$E6,$04,$FD,$07,$01,$7F,$02,$EB,$0A,$78,$05,$DD; RAW DATA : 	line "이기는 방법에 대해서"
+	cont $06,$CB,$03,$F1,$08,$09,$06,$26,$07,$A6,$06,$EE,$0B,$66; RAW DATA : 	cont "알려줄수있어!"
 
-	para "Let me take you"
-	line "to the top!"
+  
+
+	para $02,$4B,$01,$01,$7F,$02,$6E,$7F,$08,$D6,$01,$4D,$03,$FE; RAW DATA : 	para "내가 널 최고로"
+	line $04,$48,$03,$49,$06,$EE,$7F,$08,$09,$01,$34,$0B,$66; RAW DATA : 	line "만들어 줄게!"
 	done
 
+ 
+
 _PewterGymText_5c51a::
-	text "All right! Let's"
-	line "get happening!"
+	text $07,$F1,$06,$C6,$0B,$66; RAW DATA : 	text "좋아!"
+	line $01,$A7,$03,$E3,$7F,$06,$63,$07,$AB,$0A,$78,$05,$1C,$01,$BE,$0B,$66; RAW DATA : 	line "그럼 시작해볼까!"
 	prompt
 
-_PewterGymText_5c51f::
-	text "The 1st #MON"
-	line "out in a match is"
-	cont "at the top of the"
-	cont "#MON LIST!"
+ 
 
-	para "By changing the"
-	line "order of #MON,"
-	cont "matches could be"
-	cont "made easier!"
+_PewterGymText_5c51f::
+	text $08,$26,$02,$CF,$01,$4D,$7F,$07,$A6,$02,$C2,$7F,$0A,$27,$09,$2F,$04,$93,$7F,$08,$0F; RAW DATA : 	text "지니고 있는 포켓몬 중"
+	line $04,$67,$7F,$07,$77,$07,$97,$7F,$0A,$27,$09,$2F,$04,$93,$07,$9C,$7F,$01,$01,$07,$B5,$7F,$04,$75,$07,$CA; RAW DATA : 	line "맨 위의 포켓몬이 가장 먼저"
+	cont $06,$6E,$07,$4C,$01,$34,$7F,$03,$29,$7F,$01,$25,$06,$DF,$0B,$66; RAW DATA : 	cont "싸우게 될 거야!"
+
+
+	para $0A,$27,$09,$2F,$04,$93,$07,$97,$7F,$06,$28,$05,$DD,$04,$36,$7F,$04,$D9,$02,$09,$04,$89; RAW DATA : 	para "포켓몬의 순서를 바꾸면"
+	line $07,$EB,$7F,$02,$F5,$7F,$06,$41,$01,$34,$7F,$07,$9C,$01,$B6,$7F,$06,$26,$7F,$03,$15,$7F,$07,$A6,$06,$EE,$0B,$66; RAW DATA : 	line "좀 더 쉽게 이길 수 도 있어!"
 	done
 
 _PewterGymText_5c524::
-	text "It's a free"
-	line "service! Let's"
-	cont "get happening!"
+	text $03,$17,$02,$DE,$03,$C3,$01,$4D,$7F,$06,$C8,$0A,$72,$7F,$09,$A7,$02,$CF; RAW DATA : 	text "돈달라고 안할 테니"
+	line $03,$49,$06,$EE,$05,$18,$03,$C3,$01,$88,$0B,$66; RAW DATA : 	line "들어보라구!"
 	prompt
 
+ 
+
 _PewterGymText_5c529::
-	text "Just as I thought!"
-	line "You're #MON"
-	cont "champ material!"
+	text $02,$4B,$7F,$07,$19,$05,$C3,$02,$EB,$03,$FE,$06,$DF,$0B,$66; RAW DATA : 	text "내 예상대로야!"
+	line $07,$0A,$06,$63,$7F,$02,$6D,$7F,$0A,$27,$09,$2F,$04,$93,$7F,$08,$A8,$0A,$67,$06,$F0,$07,$9C; RAW DATA : 	line "역시 넌 포켓몬 챔피언이"
+	cont $03,$29,$7F,$07,$B7,$04,$91,$07,$9C,$06,$DF,$0B,$66; RAW DATA : 	cont "될 재목이야!"
 	done
+
+ 
+
+_PewterGymGuyText::
+	text $07,$F1,$06,$C6,$0B,$66; RAW DATA : 	text "좋아!"
+	line $01,$A7,$03,$E3,$7F,$06,$63,$07,$AB,$0A,$78,$05,$1C,$01,$BE,$0B,$66; RAW DATA : 	line "그럼 시작해볼까!"
+
+ 
+
+	para $02,$77,$7F,$0A,$67,$09,$0B,$08,$F2,$03,$FE,$7F,$07,$9C,$7F,$08,$BC,$07,$80,$01,$6C,$07,$8B; RAW DATA : 	para "네 피카츄로 이 체육관을"
+	line $03,$19,$09,$F4,$0A,$6F,$02,$C2,$01,$27,$7F,$0A,$FB,$03,$49,$01,$25,$06,$DF,$0B,$66; RAW DATA : 	line "돌파하는건 힘들거야!"
+
+ 
+
+	para $07,$CC,$01,$B2,$01,$68,$01,$3D,$07,$8A,$7F,$07,$65,$07,$97,$7F,$03,$75,$09,$88,$07,$A4,$7F,$0A,$27,$09,$2F,$04,$93,$07,$01,$01,$34; RAW DATA : 	para "전기공격은 웅의 땅타입 포켓몬에게"
+	line $06,$C6,$04,$AB,$03,$E1,$7F,$0A,$BF,$01,$6A,$01,$01,$7F,$06,$F8,$01,$B2,$03,$77,$04,$AE,$07,$9C,$08,$26; RAW DATA : 	line "아무런 효과가 없기때문이지"
+	done
+
+ 

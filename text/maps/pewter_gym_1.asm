@@ -1,18 +1,17 @@
 _PewterGymText_5c49e::
-	text "I'm BROCK!"
-	line "I'm PEWTER's GYM"
-	cont "LEADER!"
+	text $02,$3A,$02,$C2,$7F,$0A,$B8,$05,$C6,$06,$63,$09,$EC,$7F,$0A,$27,$09,$2F,$04,$93,$7F,$08,$BC,$07,$80,$01,$6C; RAW DATA : 	text "나는 회색시티 포켓몬 체육관"
+	line $01,$6C,$07,$B5,$07,$9E,$7F,$07,$65,$0B,$66; RAW DATA : 	line "관장인 웅!"
 
-	para "I believe in rock"
-	line "hard defense and"
-	cont "determination!"
+	para $04,$D9,$07,$77,$07,$97,$7F,$02,$DC,$02,$DC,$0A,$71,$7F,$04,$E6,$06,$EE,$07,$2D; RAW DATA : 	para "바위의 단단한 방어와"
+	line $07,$97,$08,$26,$04,$36,$7F,$07,$97,$06,$69,$09,$01,$7F,$06,$CA,$02,$C2,$07,$AA,$0B,$66; RAW DATA : 	line "의지를 의심치 않는자!"
 
-	para "That's why my"
-	line "#MON are all"
-	cont "the rock-type!"
+ 
 
-	para "Do you still want"
-	line "to challenge me?"
-	cont "Fine then! Show"
-	cont "me your best!"
+	para $01,$A7,$01,$34,$7F,$02,$4B,$7F,$0A,$27,$09,$2F,$04,$93,$07,$9C; RAW DATA : 	para "그게 내 포켓몬이"
+	line $04,$90,$03,$2E,$7F,$04,$D9,$07,$77,$09,$88,$07,$A4,$07,$9E,$7F,$07,$9C,$07,$7F,$08,$26,$0B,$66; RAW DATA : 	line "모두 바위타입인 이유지!"
+
+ 
+
+	para $01,$A7,$03,$D1,$03,$15,$7F,$02,$3A,$0A,$71,$09,$A7,$7F,$03,$15,$07,$CC,$0A,$6F,$01,$3A,$02,$D9,$01,$4D,$0B,$67; RAW DATA : 	para "그래도 나한테 도전하겠다고?"
+	line $01,$A7,$03,$E3,$7F,$07,$20,$02,$6A,$03,$C3,$0B,$66; RAW DATA : 	line "그럼 오너라!"
 	done

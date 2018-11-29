@@ -1,24 +1,24 @@
 _PewterHouse1Text1::
-	text "NIDORAN: Bowbow!@@"
+	text $02,$CF,$03,$45,$03,$E1,$0B,$62,$02,$CF,$03,$45,$02,$CF,$03,$45,$0B,$66,$50,$50; RAW DATA : 	text "니드런『니드니드!@@"
 
 _PewterHouse1Text2::
-	text "NIDORAN sit!"
+	text $02,$CF,$03,$45,$03,$E1,$7F,$06,$C9,$06,$C6,$0B,$66; RAW DATA : 	text "니드런 앉아!"
 	done
 
 _PewterHouse1Text3::
-	text "Our #MON's an"
-	line "outsider, so it's"
-	cont "hard to handle."
+	text $07,$4C,$04,$3E,$7F,$06,$05,$02,$D4,$07,$8A,$7F,$0A,$27,$09,$2F,$04,$93,$07,$9C,$03,$C3; RAW DATA : 	text "우리 손님은 포켓몬이라"
+	line $02,$EB,$07,$90,$0A,$6F,$01,$B2,$01,$01,$7F,$0A,$FB,$03,$49,$06,$EE; RAW DATA : 	line "대응하기가 힘들어"
 
-	para "An outsider is a"
-	line "#MON that you"
-	cont "get in a trade."
+	para $06,$C6,$7F,$01,$A7,$03,$DF,$02,$CF,$01,$BE,$7F,$01,$83,$0A,$AF,$07,$88,$03,$FE,$7F,$06,$F2,$07,$8A; RAW DATA : 	para "아 그러니까 교환으로 얻은"
+	line $0A,$27,$09,$2F,$04,$93,$07,$8B,$7F,$04,$4B,$0A,$6F,$02,$C2,$01,$25,$06,$DF; RAW DATA : 	line "포켓몬을 말하는거야"
 
-	para "It grows fast, but"
-	line "it may ignore an"
-	cont "unskilled trainer"
-	cont "in battle!"
+	para $05,$EA,$07,$B5,$07,$8A,$7F,$0A,$CE,$06,$C0,$7F,$05,$6C,$04,$33,$08,$26,$04,$48; RAW DATA : 	para "성장은 훨씬 빠르지만"
+	line $04,$CC,$06,$27,$0A,$71,$7F,$09,$DE,$03,$E9,$07,$9C,$02,$6A,$03,$C3,$01,$4D,$7F,$05,$CD,$01,$02,$0A,$6F,$04,$89; RAW DATA : 	line "미숙한 트레이너라고 생각하면"
+	cont $07,$CC,$09,$C5,$08,$0F,$07,$01,$7F,$04,$AB,$06,$63,$0A,$6F,$02,$C2,$7F,$07,$9F,$03,$15,$07,$A6,$08,$26,$0B,$66; RAW DATA : 	cont "전투중에 무시하는 일도있지!"
 
-	para "If only we had"
-	line "some BADGEs..."
+	para $07,$4C,$04,$3E,$01,$01,$7F,$04,$EE,$08,$26,$04,$36,$7F,$07,$EB; RAW DATA : 	para "우리가 뱃지를 좀"
+	line $01,$01,$08,$26,$01,$4D,$7F,$07,$A6,$06,$FA,$02,$F5,$03,$C3,$04,$89,$0B,$6A,$0B,$6A; RAW DATA : 	line "가지고 있었더라면……"
 	done
+
+ 
+

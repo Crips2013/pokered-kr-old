@@ -1,3 +1,2 @@
 _RocketElevatorText_4578b::
-	text "It appears to"
-	line "need a key.@@"
+	text $09,$0B,$03,$45,$09,$80,$01,$01,$7F,$0A,$6A,$07,$44,$0A,$78,$7F,$05,$18,$07,$9E,$02,$D9,$50,$50; RAW DATA : 	text "카드키가 필요해 보인다@@"

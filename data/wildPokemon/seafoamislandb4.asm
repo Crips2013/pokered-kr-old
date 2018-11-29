@@ -12,19 +12,7 @@ IslandMonsB4:
 		db 39,SLOWBRO
 		db 32,GOLBAT
 	ENDC
-	IF DEF(_GREEN)
-		db 31,KRABBY
-		db 31,STARYU
-		db 33,KRABBY
-		db 33,STARYU
-		db 29,HORSEA
-		db 31,SEEL
-		db 31,HORSEA
-		db 29,SEEL
-		db 39,JYNX
-		db 32,GOLBAT
-	ENDC
-	IF DEF(_BLUE)
+	IF DEF(_GREEN);해외판블루
 		db 31,KRABBY
 		db 31,STARYU
 		db 33,KRABBY
@@ -35,5 +23,18 @@ IslandMonsB4:
 		db 29,SEEL
 		db 39,GOLDUCK
 		db 32,GOLBAT
+	ENDC
+	IF DEF(_BLUE)
+		db 31,KRABBY
+		db 31,STARYU
+		db 33,KRABBY
+		db 33,STARYU
+		db 29,HORSEA
+		db 31,SEEL
+		db 31,HORSEA
+		db 29,SEEL
+		db 39,JYNX
+		db 32,GOLBAT
+
 	ENDC
 	db $00

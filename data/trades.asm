@@ -12,20 +12,8 @@ TradeMons:
 		db VENONAT,   TANGELA,  2,"CRINKLES@@@"
 		db NIDORAN_M, NIDORAN_F,2,"SPOT@@@@@@@"
 	ENDC
-	IF DEF(_GREEN)
-	   	db RHYDON,    KANGASKHAN,0,"KASSANDRA@@"
-	    db JIGGLYPUFF,MR_MIME,   0,"MASON@@@@@@"
-	    db BUTTERFREE,BEEDRILL,  2,"CHIKUCHIKU@"
-	    db GROWLITHE, KRABBY,    0,"PINCHER@@@@"
-	    db PIDGEY,    FARFETCHD, 2,"DUX@@@@@@@@"
-	    db PERSIAN,   TAUROS,    0,"BULLOX@@@@@"
-	    db MACHOKE,   HAUNTER,   1,"SPECTRE@@@@"
-	    db KADABRA,   GRAVELER,  1,"ROCKY@@@@@@"
-	    db SEEL,      SLOWPOKE,  2,"SLOWMO@@@@@"
-	    db RATTATA,   POLIWAG,   2,"SPOT@@@@@@@"
-    ENDC
-	IF DEF(_BLUE)
-	   	db WEEPINBELL,VENOMOTH,  0,"FLUTTERS@@@"
+	IF DEF(_GREEN);해외판블루
+		db WEEPINBELL,VENOMOTH,  0,"FLUTTERS@@@"
 	    db CLEFAIRY,  MR_MIME,   0,"MIIKO@@@@@@"
 	    db BUTTERFREE,BEEDRILL,  2,"CHIKUCHIKU@"
 	    db VULPIX,    HORSEA,    0,"AQUAINE@@@@"
@@ -35,4 +23,16 @@ TradeMons:
 	    db PIDGEOTTO, RATICATE,  1,"CHEWY@@@@@@"
 	    db PSYDUCK,   GOLDEEN,   2,"GOLDY@@@@@@"
 	    db SPEAROW,   TENTACOOL, 2,"TENTEAL@@@@"
-	ENDC
+    ENDC
+	IF DEF(_BLUE)
+		db RHYDON,    KANGASKHAN,0,"KASSANDRA@@"
+	    db JIGGLYPUFF,MR_MIME,   0,"MASON@@@@@@"
+	    db BUTTERFREE,BEEDRILL,  2,"CHIKUCHIKU@"
+	    db GROWLITHE, KRABBY,    0,"PINCHER@@@@"
+	    db PIDGEY,    FARFETCHD, 2,"DUX@@@@@@@@"
+	    db PERSIAN,   TAUROS,    0,"BULLOX@@@@@"
+	    db MACHOKE,   HAUNTER,   1,"SPECTRE@@@@"
+	    db KADABRA,   GRAVELER,  1,"ROCKY@@@@@@"
+	    db SEEL,      SLOWPOKE,  2,"SLOWMO@@@@@"
+	    db RATTATA,   POLIWAG,   2,"SPOT@@@@@@@"	
+	 ENDC

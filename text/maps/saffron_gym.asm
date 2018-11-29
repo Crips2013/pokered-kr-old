@@ -1,241 +1,212 @@
 _SaffronGymText_5d162::
-	text "I had a vision of"
-	line "your arrival!"
+	text $0B,$6A,$0B,$6A,$02,$77,$01,$01,$7F,$07,$23,$01,$D8,$03,$C3,$02,$C2,$7F,$07,$19,$01,$08,$07,$9C; RAW DATA : 	text "……네가 올꺼라는 예감이"
+	line $03,$49,$06,$FA,$06,$FA,$06,$EE,$0B,$66; RAW DATA : 	line "들었었어!"
 
-	para "I have had psychic"
-	line "powers since I"
-	cont "was a child."
+	para $06,$EE,$04,$41,$07,$CB,$05,$2E,$09,$9D; RAW DATA : 	para "어릴적부터"
+	line $02,$4B,$01,$35,$7F,$08,$CA,$02,$C9,$03,$F2,$07,$9C,$7F,$07,$A6,$06,$FA,$06,$EE; RAW DATA : 	line "내겐 초능력이 있었어"
 
-	para "I first learned"
-	line "to bend spoons"
-	cont "with my mind."
+	para $04,$67,$7F,$08,$B3,$07,$8D,$07,$01,$7F,$04,$E8,$07,$4E,$01,$27,$7F,$06,$05,$07,$8B,$7F,$06,$C8,$02,$EB,$01,$4D; RAW DATA : 	para "맨 처음에 배운건 손을 안대고"
+	line $06,$4A,$0A,$3C,$07,$8B,$7F,$01,$88,$05,$2E,$04,$3E,$02,$C2,$01,$25,$07,$14,$08,$26; RAW DATA : 	line "스푼을 구부리는거였지"
 
-	para "I dislike fight-"
-	line "ing, but if you"
-	cont "wish, I will show"
-	cont "you my powers!"
+	para $02,$3A,$02,$C2,$7F,$06,$6E,$07,$62,$07,$8B; RAW DATA : 	para "나는 싸움을"
+	line $07,$F1,$06,$C6,$0A,$6F,$08,$26,$7F,$06,$CA,$08,$26,$04,$48,$0B,$6A,$0B,$6A; RAW DATA : 	line "좋아하지 않지만……"
+	
+	para $02,$77,$01,$01,$7F,$07,$68,$0A,$71,$02,$D9,$04,$89; RAW DATA : 	para "네가 원한다면"
+	line $02,$3A,$07,$97,$7F,$07,$01,$06,$4A,$0A,$0B,$7F,$02,$C9,$03,$F2,$07,$8B; RAW DATA : 	line "나의 에스퍼 능력을"
+	cont $05,$18,$07,$09,$08,$06,$01,$3A,$06,$EE,$0B,$66; RAW DATA : 	cont "보여주겠어!"
 	done
 
 _SaffronGymText_5d167::
-	text "I'm"
-	line "shocked!"
-	cont "But, a loss is a"
-	cont "loss."
+	text $07,$19,$05,$C3,$07,$8B,$7F,$03,$A9,$06,$EE,$02,$71,$02,$C2,$01,$88,$02,$3A,$0B,$6A,$0B,$6A,$0B,$66; RAW DATA : 	text "예상을 뛰어넘는구나……!"
+	line $01,$A7,$03,$D1,$05,$21,$06,$DF,$7F,$08,$28,$01,$27,$7F,$08,$28,$01,$25,$01,$3A,$08,$26,$04,$48; RAW DATA : 	line "그래봐야 진건 진거겠지만"
 
-	para "I admit I didn't"
-	line "work hard enough"
-	cont "to win!"
+	para $02,$4B,$01,$01,$7F,$07,$9C,$01,$B2,$01,$B2,$7F,$07,$77,$0A,$78,$05,$DD; RAW DATA : 	para "내가 이기기 위해서"
+	line $07,$CC,$03,$F2,$07,$8B,$7F,$01,$B2,$07,$4F,$07,$9C,$08,$26,$7F,$04,$98,$0A,$71,$01,$25,$7F,$07,$9E,$07,$D4,$0A,$78,$0B,$66; RAW DATA : 	line "전력을 기울이지 못한거 인정해!"
 
-	para "You earned the"
-	line "MARSHBADGE!@@"
+	para $02,$3A,$07,$97,$7F,$01,$61,$03,$45,$04,$E8,$08,$26,$04,$36; RAW DATA : 	para "나의 골드배지를"
+	line $02,$6A,$07,$01,$01,$34,$7F,$08,$06,$01,$3A,$06,$EE,$0B,$66,$50,$50; RAW DATA : 	line "너에게 주겠어!@@"
 
 _SaffronGymText_5d16e::
-	text "Everyone has"
-	line "psychic power!"
-	cont "People just don't"
-	cont "realize it!"
+	text $04,$90,$03,$47,$7F,$05,$B7,$03,$C7,$07,$01,$01,$34,$02,$C2; RAW DATA : 	text "모든 사람에게는"
+	line $08,$CA,$02,$C9,$03,$F2,$07,$9C,$7F,$07,$A6,$06,$EE,$0B,$66; RAW DATA : 	line "초능력이 있어!"
+	cont $01,$A7,$07,$CA,$7F,$05,$B7,$03,$C7,$03,$49,$07,$9C; RAW DATA : 	cont "그저 사람들이"
+	cont $07,$9E,$08,$26,$0A,$6F,$08,$26,$7F,$04,$98,$0A,$72,$05,$A3,$0B,$66; RAW DATA : 	cont "인지하지 못할뿐!"
 	done
 
 _SaffronGymText_5d173::
-	text "The MARSHBADGE"
-	line "makes #MON up"
-	cont "to L70 obey you!"
+	text $01,$A7,$7F,$01,$61,$03,$45,$04,$E8,$08,$26,$02,$C2; RAW DATA : 	text "그 골드배지는"
+	line $03,$E9,$05,$07,$7F,$FD,$F6,$07,$9C,$0A,$6F,$07,$97,$7F,$06,$EE,$03,$82,$7F,$0A,$27,$09,$2F,$04,$93,$07,$9C,$03,$47; RAW DATA : 	line "레벨 70이하의 어떤 포켓몬이든"
+	cont $05,$19,$07,$EE,$0A,$6F,$01,$34,$7F,$0A,$78,$0B,$66; RAW DATA : 	cont "복종하게 해!"
 
-	para "Stronger #MON"
-	line "will become wild,"
-	cont "ignoring your"
-	cont "orders in battle!"
+	para $01,$A7,$05,$18,$02,$D9,$7F,$01,$0D,$0A,$71,$7F,$0A,$27,$09,$2F,$04,$93,$07,$8A; RAW DATA : 	para "그보다 강한 포켓몬은"
+	line $02,$3F,$03,$A9,$01,$34,$7F,$03,$27,$05,$DD; RAW DATA : 	line "날뛰게 되서"
+	cont $04,$E8,$09,$E2,$08,$0F,$7F,$02,$77,$7F,$04,$8D,$03,$F9,$03,$15,$7F,$03,$48,$08,$26,$7F,$06,$CA,$06,$C6,$0B,$66; RAW DATA : 	cont "배틀중 네 명령도 듣지 않아!"
 
-	para "Just don't raise"
-	line "your #MON too"
-	cont "much!"
+	para $01,$A7,$07,$CA,$7F,$02,$77,$7F,$0A,$27,$09,$2F,$04,$93,$07,$8B; RAW DATA : 	para "그저 네 포켓몬을"
+	line $01,$6A,$0A,$6F,$01,$34,$7F,$02,$DC,$03,$F3,$06,$63,$09,$80,$08,$26,$04,$48,$7F,$06,$CA,$07,$88,$04,$89,$7F,$03,$25,$0B,$66; RAW DATA : 	line "과하게 단련시키지만 않으면 돼!"
 
-	para "Wait, please take"
-	line "this TM with you!"
+	para $07,$B1,$06,$63,$04,$48; RAW DATA : 	para "잠시만"
+	line $01,$B2,$06,$2A,$04,$73,$06,$65,$03,$15,$7F,$08,$09,$01,$34,$0B,$66; RAW DATA : 	line "기술머신도 줄게!"
 	done
 
 ReceivedTM46Text::
-	text "<PLAYER> received"
-	line "TM46!@@"
+	text $52, $02,$C2,$0B,$64,$07,$8A,$0B,$65; RAW DATA : 	text $52, "는(은)"
+	line $01,$B2,$06,$2A,$04,$73,$06,$65,$FA,$FC,$07,$8B,$7F,$06,$F2,$06,$FA,$02,$D9,$0B,$66,$50,$50; RAW DATA : 	line "기술머신46을 얻었다!@@"
 
 _TM46ExplanationText::
 	db $0
-	para "TM46 is PSYWAVE!"
-	line "It uses powerful"
-	cont "psychic waves to"
-	cont "inflict damage!"
+	para $01,$B2,$06,$2A,$04,$73,$06,$65,$FA,$FC,$07,$8A,$7F,$05,$B7,$07,$9C,$09,$3A,$07,$6E,$07,$9C,$05,$4A,$0B,$66; RAW DATA : 	para "기술머신46은 사이코웨이브!"
+	line $07,$9C,$01,$29,$7F,$06,$B2,$04,$89,$7F,$04,$47,$01,$0D,$0A,$71,$7F,$07,$10,$03,$F2,$09,$F4,$03,$FE; RAW DATA : 	line "이걸 쓰면 막강한 염력파로"
+	cont $09,$88,$01,$3D,$07,$8B,$7F,$08,$09,$06,$26,$7F,$07,$A6,$06,$EE,$0B,$66; RAW DATA : 	cont "타격을 줄수 있어!"
 	done
 
 _TM46NoRoomText::
-	text "Your pack is full"
-	line "of other items!"
+	text $07,$9C,$7F,$07,$9C,$05,$C3,$7F,$03,$49,$7F,$06,$26,$7F,$06,$F8,$06,$EE,$0B,$66; RAW DATA : 	text "이 이상 들 수 없어!"
 	done
 
 _SaffronGymText_5d1e6::
-	text "Yo! Champ in"
-	line "making!"
+	text $07,$44,$0B,$66; RAW DATA : 	text "요!"
+	line $04,$CC,$03,$D1,$07,$97,$7F,$08,$A8,$0A,$67,$06,$F0,$0B,$66; RAW DATA : 	line "미래의 챔피언!"
 
-	para "SABRINA's #MON"
-	line "use psychic power"
-	cont "instead of force!"
+	para $08,$CA,$03,$F3,$07,$97,$7F,$0A,$27,$09,$2F,$04,$93,$07,$8A; RAW DATA : 	para "초련의 포켓몬은"
+	line $04,$B0,$04,$3E,$07,$CB,$7F,$01,$68,$01,$3D,$07,$9C,$7F,$06,$C6,$02,$D1; RAW DATA : 	line "물리적 공격이 아닌"
+	cont $08,$CA,$02,$C9,$03,$F2,$07,$8B,$7F,$06,$B4,$02,$D9,$08,$26,$0B,$66; RAW DATA : 	cont "초능력을 쓴다지!"
 
-	para "Fighting #MON"
-	line "are weak against"
-	cont "psychic #MON!"
+	para $01,$3D,$09,$C5,$09,$88,$07,$A4,$7F,$0A,$27,$09,$2F,$04,$93,$07,$97,$7F,$06,$E0,$07,$D1,$07,$8A; RAW DATA : 	para "격투타입 포켓몬의 약점은"
+	line $07,$01,$06,$4A,$0A,$0B,$09,$88,$07,$A4,$7F,$0A,$27,$09,$2F,$04,$93,$0B,$66; RAW DATA : 	line "에스퍼타입 포켓몬!"
 
-	para "They get creamed"
-	line "before they can"
-	cont "even aim a punch!"
+	para $08,$06,$04,$74,$07,$9C,$7F,$02,$3A,$01,$B2,$01,$B2,$03,$15,$7F,$07,$CC,$07,$01; RAW DATA : 	para "주먹이 나기기도 전에"
+	line $01,$4F,$08,$07,$07,$88,$03,$FE,$7F,$04,$48,$03,$49,$06,$EE,$7F,$04,$F6,$04,$3E,$08,$26,$0B,$66; RAW DATA : 	line "곤죽으로 만들어 버리지!"
 	done
 
 _SaffronGymText_5d1eb::
-	text "Psychic power,"
-	line "huh?"
+	text $08,$CA,$02,$C9,$03,$F2,$07,$8B,$0B,$6A,$0B,$6A; RAW DATA : 	text "초능력을……"
+	line $07,$90,$0B,$67; RAW DATA : 	line "응?"
 
-	para "If I had that,"
-	line "I'd make a bundle"
-	cont "at the slots!"
+	para $02,$3A,$0A,$71,$09,$A7,$7F,$01,$A7,$03,$E1,$01,$34,$7F,$07,$A6,$02,$D9,$04,$89,$0B,$6B; RAW DATA : 	para "나한테 그런게 있다면,"
+	line $06,$4D,$04,$04,$04,$73,$06,$65,$07,$8B,$7F,$0A,$DB,$06,$B5,$01,$4D,$7F,$06,$6D,$06,$EE,$0B,$66; RAW DATA : 	line "슬롯머신을 휩쓸고 싶어!"
 	done
 
 _SaffronGymBattleText1::
-	text "SABRINA is younger"
-	line "than I, but I"
-	cont "respect her!"
+	text $08,$CA,$03,$F3,$06,$BE,$02,$C2,$7F,$02,$3A,$05,$18,$02,$D9; RAW DATA : 	text "초련씨는 나보다"
+	line $06,$EE,$04,$3E,$02,$D9,$01,$4F,$7F,$0A,$78,$03,$15; RAW DATA : 	line "어리다곤 해도"
+	cont $02,$3D,$7F,$01,$A7,$02,$80,$04,$36,$7F,$07,$E8,$01,$46,$0A,$71,$02,$D9,$0B,$66; RAW DATA : 	cont "난 그녀를 존경한다!"
 	done
 
 _SaffronGymEndBattleText1::
-	text "Not"
-	line "good enough!"
+	text $07,$9C,$01,$29,$03,$FE,$02,$C2,$7F,$05,$2E,$07,$E7,$0A,$78,$0B,$66; RAW DATA : 	text "이걸로는 부족해!" 
 	prompt
 
 _SaffronGymAfterBattleText1::
-	text "In a battle of"
-	line "equals, the one"
-	cont "with the stronger"
-	cont "will wins!"
+	text $01,$68,$07,$D4,$0A,$71,$7F,$06,$62,$05,$2E,$04,$36,$7F,$09,$BB,$0A,$78; RAW DATA : 	text "공정한 승부를 통해"
+	line $02,$F5,$07,$4D,$7F,$01,$0D,$0A,$78,$08,$26,$01,$4D; RAW DATA : 	line "더욱 강해지고"
+	cont $01,$A7,$7F,$02,$31,$07,$01,$02,$C2,$7F,$06,$62,$04,$3E,$01,$01,$7F,$07,$A6,$08,$26,$0B,$66; RAW DATA : 	cont "그 끝에는 승리가 있지!"
 
-	para "If you wish"
-	line "to beat SABRINA,"
-	cont "focus on winning!"
+	para $02,$77,$01,$01,$7F,$07,$D4,$7F,$08,$CA,$03,$F3,$7F,$01,$6C,$07,$B5,$07,$8B; RAW DATA : 	para "네가 정 초련 관장을"
+	line $07,$9C,$01,$B2,$01,$4D,$7F,$06,$6D,$02,$D9,$04,$89; RAW DATA : 	line "이기고 싶다면"
+	cont $06,$62,$04,$3E,$07,$01,$7F,$02,$AB,$07,$8B,$7F,$03,$8C,$08,$26,$04,$46,$03,$C3,$0B,$66; RAW DATA : 	cont "승리에 눈을 떼지마라!"
 	done
 
 _SaffronGymBattleText2::
-	text "Does our unseen"
-	line "power scare you?"
+	text $05,$18,$07,$9C,$08,$26,$7F,$06,$CA,$02,$C2,$0A,$FB,$07,$8B; RAW DATA : 	text "보이지 않는힘을"
+	line $03,$2E,$03,$F1,$07,$66,$7F,$0A,$6F,$02,$CF,$0B,$67; RAW DATA : 	line "두려워 하니?"
 	done
 
 _SaffronGymEndBattleText2::
-	text "I never"
-	line "foresaw this!"
+	text $07,$9C,$01,$27,$7F,$07,$CC,$0A,$94; RAW DATA : 	text "이건 전혀"
+	line $07,$19,$01,$3F,$09,$01,$7F,$04,$98,$0A,$7F,$06,$EE,$0B,$66; RAW DATA : 	line "예견치 못했어!"
 	prompt
 
 _SaffronGymAfterBattleText2::
-	text "Psychic #MON"
+	text $07,$01,$06,$4A,$0A,$0B,$7F,$0A,$27,$09,$2F,$04,$93,$07,$9C; RAW DATA : 	text "에스퍼 포켓몬이"
 IF DEF(_YELLOW)
-	text "Psychic #MON"
-	line "fear only bugs!"
+	line $04,$AB,$05,$DD,$07,$66,$7F,$0A,$6F,$02,$C2,$01,$27,$7F,$04,$FA,$03,$E9,$05,$A3,$07,$9C,$06,$DF,$0B,$66; RAW DATA : 	line "무서워 하는건 벌레뿐이야!"
 ELSE
 	line "fear only ghosts"
 	cont "and bugs!"
-	done
 ENDC
-
+	done
 _SaffronGymBattleText3::
-	text "#MON take on"
-	line "the appearance of"
-	cont "their trainers."
+	text $0A,$27,$09,$2F,$04,$93,$07,$01,$01,$34,$02,$C2,$7F,$07,$AA,$06,$65,$07,$97,$7F,$09,$DE,$03,$E9,$07,$9C,$02,$6A,$07,$97; RAW DATA : 	text "포켓몬에게는 자신의 트레이너의"
+	line $05,$EA,$0A,$82,$07,$9C,$7F,$05,$18,$07,$9C,$01,$B2,$7F,$04,$46,$03,$F3; RAW DATA : 	line "성향이 보이기 마련"
 
-	para "Your #MON must"
-	line "be tough, then!"
+	para $02,$77,$7F,$0A,$27,$09,$2F,$04,$93,$07,$8B; RAW DATA : 	para "네 포켓몬을"
+	line $05,$18,$06,$C6,$7F,$0A,$6F,$02,$CF,$7F,$01,$0D,$07,$9E,$0A,$6F,$01,$3A,$01,$8A,$0B,$66; RAW DATA : 	line "보아 하니 강인하겠군!"
 	done
 
 _SaffronGymEndBattleText3::
-	text "I knew"
-	line "it!"
+	text $07,$0A,$06,$63; RAW DATA : 	text "역시"
+	line $01,$A7,$03,$E2,$08,$09,$7F,$06,$CB,$06,$D2,$06,$EE,$0B,$66; RAW DATA : 	line "그럴줄 알았어!"
 	prompt
 
 _SaffronGymAfterBattleText3::
-	text "I must teach"
-	line "better techniques"
-	cont "to my #MON!"
+	text $02,$4B,$7F,$0A,$27,$09,$2F,$04,$93,$0A,$71,$09,$A7,$7F,$05,$18,$02,$D9,$7F,$02,$3A,$07,$8A; RAW DATA : 	text "내 포켓몬한테 보다 나은"
+	line $09,$A7,$09,$79,$02,$D0,$07,$8B,$7F,$01,$01,$04,$33,$08,$C4,$06,$DF,$01,$3A,$06,$EE,$0B,$66; RAW DATA : 	line "테크닉을 가르쳐야겠어!"
 	done
 
 _SaffronGymBattleText4::
-	text "You know that"
-	line "power alone isn't"
-	cont "enough!"
+	text $02,$6A,$03,$15,$7F,$06,$CB,$01,$3A,$08,$26,$04,$48; RAW DATA : 	text "너도 알겠지만"
+	line $0A,$FB,$7F,$0A,$6F,$02,$3A,$04,$48,$7F,$01,$01,$08,$26,$01,$4D,$02,$C2,$7F,$05,$2E,$07,$E7,$0A,$78,$0B,$66; RAW DATA : 	line "힘 하나만 가지고는 부족해!"
 	done
 
 _SaffronGymEndBattleText4::
-	text "I don't"
-	line "believe this!"
+	text $04,$CF,$07,$8B,$06,$26,$01,$01,$7F,$06,$F8,$06,$EE,$0B,$66; RAW DATA : 	text "믿을수가 없어!"
 	prompt
 
 _SaffronGymAfterBattleText4::
-	text "SABRINA just wiped"
-	line "out the KARATE"
-	cont "MASTER next door!"
+	text $08,$CA,$03,$F3,$01,$6C,$07,$B5,$02,$D4,$07,$8A,$7F,$07,$17,$7F,$01,$27,$04,$B0; RAW DATA : 	text "초련관장님은 옆 건물"
+	line $09,$92,$01,$97,$07,$35,$07,$8B,$7F,$04,$DA,$05,$BC,$02,$62,$06,$EE,$0B,$66; RAW DATA : 	line "태권왕을 박살냈어!"
 	done
 
 _SaffronGymBattleText5::
-	text "You and I, our"
-	line "#MON shall"
-	cont "fight!"
+	text $02,$6A,$0A,$6F,$01,$4D,$7F,$02,$3A; RAW DATA : 	text "너하고 나"
+	line $07,$4C,$04,$3E,$03,$49,$7F,$0A,$27,$09,$2F,$04,$93,$07,$8A; RAW DATA : 	line "우리들 포켓몬은"
+	cont $06,$6E,$07,$4C,$01,$34,$7F,$03,$29,$01,$2D,$07,$9C,$02,$D9,$0B,$66; RAW DATA : 	cont "싸우게 될것이다!"
 	done
 
 _SaffronGymEndBattleText5::
-	text "I lost"
-	line "after all!"
+	text $04,$90,$03,$47,$01,$2D,$07,$01,$05,$DD,$7F,$07,$E3,$02,$D9,$0B,$66; RAW DATA : 	text "모든것에서 졌다!"
 	prompt
 
 _SaffronGymAfterBattleText5::
-	text "I knew that this"
-	line "was going to take"
-	cont "place."
+	text $01,$41,$01,$89,$7F,$07,$9C,$03,$E8,$01,$34,$7F,$03,$29,$7F,$08,$09; RAW DATA : 	text "결국 이렇게 될 줄"
+	line $02,$3A,$02,$C2,$7F,$06,$CB,$01,$4D,$7F,$07,$A6,$06,$FA,$02,$D9; RAW DATA : 	line "나는 알고 있었다"
 	done
 
 _SaffronGymBattleText6::
-	text "SABRINA is young,"
-	line "but she's also"
-	cont "our LEADER!"
+	text $08,$CA,$03,$F3,$06,$BE,$01,$01,$7F,$06,$EE,$04,$3E,$02,$D9,$01,$4F,$7F,$0A,$78,$03,$15; RAW DATA : 	text "초련씨가 어리다곤 해도"
+	line $02,$A9,$01,$01,$7F,$04,$B9,$03,$D1,$03,$15,$7F,$07,$4C,$04,$3E,$7F,$01,$6C,$07,$B5,$02,$D4,$07,$9C,$06,$DF,$0B,$66; RAW DATA : 	line "누가 뭐래도 우리 관장님이야!"
 
-	para "You won't reach"
-	line "her easily!"
+	para $02,$77,$7F,$02,$80,$05,$DE,$07,$8B; RAW DATA : 	para "네 녀석을"
+	line $06,$41,$05,$B7,$04,$3E,$7F,$06,$C8,$7F,$05,$18,$02,$4B,$08,$06,$01,$3A,$02,$D9,$0B,$66; RAW DATA : 	line "쉽사리 안 보내주겠다!"
 	done
 
 _SaffronGymEndBattleText6::
-	text "I lost"
-	line "my concentration!"
+	text $08,$2D,$08,$0F,$03,$F2,$07,$9C,$7F,$03,$83,$06,$EE,$07,$E3,$02,$77,$0B,$66; RAW DATA : 	text "집중력이 떨어졌네!"
 	prompt
 
 _SaffronGymAfterBattleText6::
-	text "There used to be"
-	line "2 #MON GYMs in"
-	cont "SAFFRON."
+	text $02,$8B,$03,$CB,$06,$63,$09,$EC,$07,$01,$02,$C2,$7F,$F8,$01,$13,$07,$97; RAW DATA : 	text "노랑시티에는 2개의"
+	line $0A,$27,$09,$2F,$04,$93,$7F,$08,$BC,$07,$80,$01,$6C,$07,$9C,$7F,$07,$A6,$06,$FA,$06,$EE; RAW DATA : 	line "포켓몬 체육관이 있었어"
 
-	para "The FIGHTING DOJO"
-	line "next door lost"
-	cont "its GYM status"
-	cont "when we went and"
-	cont "creamed them!"
+	para $07,$4C,$04,$3E,$01,$01,$7F,$07,$17,$7F,$01,$27,$04,$B0,$07,$9E; RAW DATA : 	para "우리가 옆 건물인"
+	line $01,$3D,$09,$C5,$03,$15,$07,$B5,$07,$8B,$7F,$01,$4F,$08,$07,$07,$88,$03,$FE,$7F,$04,$48,$03,$49,$06,$EE,$05,$DD; RAW DATA : 	line "격투도장을 곤죽으로 만들어서"
+	cont $01,$A7,$01,$67,$07,$8A,$7F,$08,$BC,$07,$80,$01,$6C,$7F,$07,$AA,$01,$3D,$07,$8B,$7F,$05,$C3,$06,$67,$0A,$7F,$08,$26,$0B,$66; RAW DATA : 	cont "그곳은 체육관 자격을 상실했지!"
 	done
 
 _SaffronGymBattleText7::
-	text "SAFFRON #MON"
-	line "GYM is famous for"
-	cont "its psychics!"
+	text $02,$8B,$03,$CB,$06,$63,$09,$EC,$7F,$0A,$27,$09,$2F,$04,$93,$7F,$08,$BC,$07,$80,$01,$6C,$07,$8A; RAW DATA : 	text "노랑시티 포켓몬 체육관은"
+	line $08,$CA,$02,$C9,$03,$F2,$07,$88,$03,$FE,$7F,$07,$7F,$04,$8D,$0A,$6F,$08,$26,$0B,$66; RAW DATA : 	line "초능력으로 유명하지!"
 
-	para "You want to see"
-	line "SABRINA!"
-	cont "I can tell!"
+	para $02,$6D,$7F,$08,$CA,$03,$F3,$07,$8B,$7F,$04,$48,$02,$3A,$01,$4D,$7F,$06,$6D,$07,$8B,$01,$25,$06,$DF,$0B,$66; RAW DATA : 	para "넌 초련을 만나고 싶을거야!"
+	line $02,$4B,$01,$01,$7F,$04,$4B,$0A,$78,$03,$2E,$08,$26,$0B,$66; RAW DATA : 	line "내가 말해두지!"
 	done
 
 _SaffronGymEndBattleText7::
-	text "Arrrgh!"
+	text $06,$C6,$07,$88,$07,$88,$0A,$E6,$0B,$66; RAW DATA : 	text "아으으흑!"
 	prompt
 
 _SaffronGymAfterBattleText7::
-	text "That's right! I"
-	line "used telepathy to"
-	cont "read your mind!"
+	text $06,$CB,$06,$D2,$02,$D9,$01,$4D,$0B,$66; RAW DATA : 	text "알았다고!"
+	line $09,$AA,$03,$E9,$09,$F4,$06,$63,$03,$FE,$7F,$02,$CF,$7F,$05,$CD,$01,$02,$7F,$07,$A0,$06,$FA,$07,$88,$02,$CF,$01,$C1,$0B,$66; RAW DATA : 	line "텔레파시로 니 생각 읽었으니깐!"
 	done

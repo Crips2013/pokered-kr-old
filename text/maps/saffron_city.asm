@@ -1,151 +1,133 @@
 _SaffronCityText1::
-	text "What do you want?"
-	line "Get lost!"
+	text $02,$3A,$0A,$71,$09,$A7,$7F,$05,$1C,$07,$9F,$7F,$07,$A6,$02,$64,$0B,$67; RAW DATA : 	text "나한테 볼일 있냐?"
+	line $06,$82,$7F,$01,$D8,$07,$DE,$0B,$66; RAW DATA : 	line "썩 꺼져!"
 	done
 
 _SaffronCityText2::
-	text "BOSS said he'll"
-	line "take this town!"
+	text $05,$18,$06,$4A,$01,$E2,$05,$DD,$7F,$04,$4B,$0A,$6F,$06,$63,$01,$B6; RAW DATA : 	text "보스께서 말하시길"
+	line $07,$9C,$7F,$03,$15,$06,$63,$04,$36,$7F,$07,$D1,$03,$F9,$0A,$6F,$06,$65,$02,$F2,$06,$EE,$0B,$66; RAW DATA : 	line "이 도시를 점령하신댔어!"
 	done
 
 _SaffronCityText3::
-	text "Get out of the"
-	line "way!"
+	text $04,$E6,$0A,$78,$0A,$6F,$08,$26,$7F,$04,$4B,$01,$4D,$7F,$05,$61,$09,$31,$0B,$66; RAW DATA : 	text "방해하지 말고 비켜!"
 	done
 
 _SaffronCityText4::
-	text "SAFFRON belongs"
-	line "to TEAM ROCKET!"
+	text $02,$8B,$03,$CB,$06,$63,$09,$EC,$02,$C2,$7F,$07,$9C,$07,$D6; RAW DATA : 	text "노랑시티는 이제"
+	line $03,$FE,$09,$2F,$02,$DC,$07,$9C,$7F,$08,$97,$08,$26,$0A,$6F,$01,$3A,$02,$D9,$0B,$66; RAW DATA : 	line "로켓단이 차지하겠다!"
 	done
 
 _SaffronCityText5::
-	text "Being evil makes"
-	line "me feel so alive!"
+	text $06,$C7,$04,$46,$01,$01,$7F,$03,$27,$01,$03,$02,$D9,$02,$C2,$7F,$01,$27; RAW DATA : 	text "악마가 되간다는 건"
+	line $05,$BC,$06,$C6,$7F,$07,$A6,$07,$8D,$07,$8B,$7F,$02,$C0,$02,$32,$02,$C2,$01,$2D,$0B,$66; RAW DATA : 	line "살아 있음을 느끼는것!"
 	done
 
 _SaffronCityText6::
-	text "Ow! Watch where"
-	line "you're walking!"
+	text $07,$88,$06,$C7,$0B,$66; RAW DATA : 	text "으악!"
+	line $03,$98,$04,$D9,$03,$FE,$7F,$05,$18,$01,$4D,$7F,$01,$29,$06,$EE,$0B,$66; RAW DATA : 	line "똑바로 보고 걸어!"
 	done
 
 _SaffronCityText7::
-	text "With SILPH under"
-	line "control, we can"
-	cont "exploit #MON"
-	cont "around the world!"
+	text $06,$67,$0A,$61,$08,$06,$06,$64,$0A,$B8,$05,$B7,$07,$97,$7F,$06,$63,$05,$E3,$02,$F6,$07,$01; RAW DATA : 	text "실프주식회사의 시설덕에"
+	line $06,$CF,$0A,$E6,$07,$97,$7F,$05,$EC,$03,$F2,$07,$8B,$7F,$02,$70,$0A,$F7,$02,$C2,$03,$05; RAW DATA : 	line "암흑의 세력을 넓히는데"
+	cont $0A,$27,$09,$2F,$04,$93,$07,$8B,$7F,$07,$9C,$07,$4B,$0A,$72,$7F,$06,$26,$7F,$07,$A6,$08,$26,$0B,$66; RAW DATA : 	cont "포켓몬을 이용할 수 있지!"
 	done
 
 _SaffronCityText8::
-	text "You beat TEAM"
-	line "ROCKET all alone?"
-	cont "That's amazing!"
+	text $0A,$A5,$07,$AA,$05,$DD,$7F,$03,$FE,$09,$2F,$02,$DC,$07,$8B,$7F,$01,$9B,$04,$8A,$06,$63,$09,$37,$02,$D9,$01,$4D,$0B,$67; RAW DATA : 	text "혼자서 로켓단을 궤멸시켰다고?"
+	line $01,$82,$07,$B5,$0A,$6F,$02,$D9,$0B,$66; RAW DATA : 	line "굉장하다!"
 	done
 
 _SaffronCityText9::
-	text "Yeah! TEAM ROCKET"
-	line "is gone!"
-	cont "It's safe to go"
-	cont "out again!"
+	text $07,$9C,$06,$E6,$0A,$A3,$0B,$66; RAW DATA : 	text "이얏호!"
+	line $03,$FE,$09,$2F,$02,$DC,$07,$9C,$7F,$05,$B7,$03,$C3,$07,$E3,$02,$D9,$0B,$66; RAW DATA : 	line "로켓단이 사라졌다!"
+	cont $07,$09,$01,$B4,$7F,$02,$D9,$06,$63,$7F,$06,$C8,$07,$CC,$0A,$78,$07,$E3,$06,$EE,$0B,$66; RAW DATA : 	cont "여긴 다시 안전해졌어!"
 	done
 
 _SaffronCityText10::
-	text "People should be"
-	line "flocking back to"
-	cont "SAFFRON now."
+	text $02,$8B,$03,$CB,$06,$63,$09,$EC,$03,$FE,$7F,$05,$B7,$03,$C7,$03,$49,$07,$9C; RAW DATA : 	text "노랑시티로 사람들이"
+	line $02,$D9,$06,$63,$7F,$03,$19,$06,$C6,$07,$2D,$06,$DF,$7F,$0A,$72,$09,$A9,$03,$05,$7F,$04,$4B,$07,$9C,$08,$26; RAW DATA : 	line "다시 돌아와야 할텐데 말이지"
 	done
 
 _SaffronCityText11::
-	text "I flew here on my"
-	line "PIDGEOT when I"
-	cont "read about SILPH."
+	text $06,$67,$0A,$61,$08,$06,$06,$64,$0A,$B8,$05,$B7,$07,$97,$7F,$06,$02,$06,$64,$07,$8B,$7F,$07,$A0,$01,$4D,$05,$DD; RAW DATA : 	text "실프주식회사의 소식을 읽고서"
+	line $07,$9C,$01,$67,$07,$01,$7F,$0A,$67,$07,$E8,$09,$C5,$04,$36,$7F,$09,$88,$01,$4D,$7F,$07,$34,$06,$EE; RAW DATA : 	line "이곳에 피존투를 타고 왔어"
 
-	para "It's already over?"
-	line "I missed the"
-	cont "media action."
+	para $07,$9C,$04,$CC,$7F,$05,$C3,$0A,$B2,$07,$EE,$04,$11,$07,$9E,$01,$01,$0B,$67; RAW DATA : 	para "이미 상황종료인가?"
+	line $09,$DF,$07,$EE,$07,$8B,$7F,$02,$95,$08,$C4,$04,$F6,$03,$F8,$02,$77; RAW DATA : 	line "특종을 놓쳐버렸네"
 	done
 
 _SaffronCityText12::
-	text "PIDGEOT: Bi bibii!@@"
+	text $0A,$67,$07,$E8,$09,$C5,$0B,$62,$0A,$67,$07,$E8,$0B,$66,$50,$50; RAW DATA : 	text "피존투『피존!@@"
 
 _SaffronCityText13::
-	text "I saw ROCKET"
-	line "BOSS escaping"
-	cont "SILPH's building."
+	text $06,$67,$0A,$61,$08,$06,$06,$64,$0A,$B8,$05,$B7,$7F,$05,$64,$03,$69,$07,$01,$05,$DD; RAW DATA : 	text "실프주식회사 빌딩에서"
+	line $03,$FE,$09,$2F,$02,$DC,$7F,$03,$2E,$04,$91,$07,$9C,$7F,$05,$6C,$07,$DE,$02,$3A,$07,$20,$02,$C2,$01,$29,$7F,$05,$23,$06,$EE; RAW DATA : 	line "로켓단 두목이 빠져나오는걸 봤어"
 	done
 
 _SaffronCityText14::
-	text "I'm a security"
-	line "guard."
+	text $02,$3A,$02,$C2,$06,$DF,$7F,$05,$18,$06,$C8,$7F,$01,$46,$05,$61,$07,$68; RAW DATA : 	text "나는야 보안 경비원"
 
-	para "Suspicious kids I"
-	line "don't allow in!"
+	para $06,$26,$05,$C3,$08,$4D,$07,$8A,$7F,$01,$EF,$04,$46,$02,$C2; RAW DATA : 	para "수상쩍은 꼬마는"
+	line $08,$E2,$07,$A4,$0A,$83,$01,$01,$7F,$06,$C8,$7F,$0A,$78,$08,$08,$02,$D9,$0B,$66; RAW DATA : 	line "출입허가 안 해준다!"
 	done
 
 _SaffronCityText15::
-	text "..."
-	line "Snore..."
+	text $09,$60,$09,$60,$0B,$6A,$0B,$6A; RAW DATA : 	text "쿨쿨……"
 
-	para "Hah! He's taking"
-	line "a snooze!"
+	para $0A,$76,$0B,$66; RAW DATA : 	para "핫!"
+	line $01,$C4,$04,$DA,$7F,$07,$E9,$06,$D2,$02,$D9,$0B,$66; RAW DATA : 	line "깜박 졸았다!"
 	done
 
 _SaffronCityText16::
-	text "SAFFRON CITY"
-	line "Shining, Golden"
-	cont "Land of Commerce"
+	text $07,$9C,$01,$67,$07,$8A,$7F,$02,$8B,$03,$CB,$06,$63,$09,$EC; RAW DATA : 	text "이곳은 노랑시티"
+	line $02,$8B,$03,$CB,$07,$8A,$7F,$01,$AD,$05,$6B,$07,$88,$03,$FE,$7F,$05,$6B,$02,$3A,$02,$C2,$7F,$05,$C6,$01,$C2; RAW DATA : 	line "노랑은 금빛으로 빛나는 색깔"
 	done
 
 _SaffronCityText17::
-	text "FIGHTING DOJO"
+	text $02,$A9,$01,$88,$03,$47,$08,$26,$7F,$07,$20,$05,$EC,$07,$44; RAW DATA : 	text "누구든지 오세요"
+	line $01,$3D,$09,$C5,$7F,$03,$15,$07,$B5,$0B,$66; RAW DATA : 	line "격투 도장!"
 	done
 
 _SaffronCityText18::
-	text "SAFFRON CITY"
-	line "#MON GYM"
-	cont "LEADER: SABRINA"
+	text $02,$8B,$03,$CB,$06,$63,$09,$EC,$7F,$0A,$27,$09,$2F,$04,$93,$7F,$08,$BC,$07,$80,$01,$6C; RAW DATA : 	text "노랑시티 포켓몬 체육관"
+	line $01,$6C,$07,$B5,$7F,$08,$CA,$03,$F3; RAW DATA : 	line "관장 초련"
+	cont $07,$01,$06,$4A,$0A,$0B,$7F,$03,$E9,$07,$9C,$03,$60; RAW DATA : 	cont "에스퍼 레이디"
 
-	para "The Master of"
-	line "Psychic #MON!"
 	done
 
 _SaffronCityText20::
-	text "TRAINER TIPS"
+	text $09,$DE,$03,$E9,$07,$9C,$02,$6A,$7F,$09,$F1; RAW DATA : 	text "트레이너 팁"
 
-	para "FULL HEAL cures"
-	line "all ailments like"
-	cont "sleep and burns."
+	para $04,$48,$05,$14,$09,$BB,$09,$01,$07,$D6,$02,$C2; RAW DATA : 	para "만병통치제는"
+	line $06,$26,$04,$89,$07,$9C,$02,$3A,$7F,$0A,$AD,$05,$C3,$01,$10,$07,$8A,$7F,$05,$C3,$09,$92,$07,$9C,$05,$C3,$07,$8B; RAW DATA : 	line "수면이나 화상같은 상태이상을"
+	cont $04,$90,$03,$2E,$7F,$09,$01,$04,$11,$0A,$72,$06,$26,$7F,$07,$A6,$06,$60,$02,$CF,$02,$D9; RAW DATA : 	cont "모두 치료할수 있습니다"
 
-	para "It costs a bit"
-	line "more, but it's"
-	cont "more convenient."
+	para $01,$01,$01,$3D,$07,$9C,$7F,$07,$EB,$02,$F5; RAW DATA : 	para "가격이 좀더"
+	line $02,$94,$01,$3A,$08,$26,$04,$48; RAW DATA : 	line "높겠지만"
+	cont $01,$A7,$04,$48,$0A,$71,$7F,$0A,$1D,$04,$3E,$0A,$74,$07,$9C,$7F,$07,$A6,$06,$60,$02,$CF,$02,$D9; RAW DATA : 	cont "그만한 편리함이 있습니다"
 	done
 
 _SaffronCityText21::
-	text "TRAINER TIPS"
+	text $0B,$6A,$0B,$6A,$7F,$03,$46,$07,$9C,$7F,$03,$27,$02,$C2,$7F,$01,$34,$06,$63,$09,$F7,$0B,$66; RAW DATA : 	text "…… 득이 되는 게시판!"
 
-	para "New GREAT BALL"
-	line "offers improved"
-	cont "capture rates."
+	para $06,$44,$0A,$0B,$05,$1C,$07,$8A,$7F,$0A,$82,$05,$C3,$03,$28; RAW DATA : 	para "슈퍼볼은 향상된"
+	line $0A,$27,$0A,$B9,$05,$EA,$02,$C9,$07,$8B,$7F,$04,$DF,$0A,$D6,$0A,$75,$02,$CF,$02,$D9; RAW DATA : 	line "포획성능을 발휘합니다"
 
-	para "Try it on those"
-	line "hard-to-catch"
-	cont "#MON."
+	para $07,$9C,$01,$29,$03,$FE,$7F,$07,$B2,$01,$B2,$0A,$FB,$03,$47; RAW DATA : 	para "이걸로 잡기힘든"
+	line $0A,$27,$09,$2F,$04,$93,$07,$8B,$7F,$07,$B2,$06,$C6,$05,$18,$05,$EC,$07,$44,$0B,$66; RAW DATA : 	line "포켓몬을 잡아보세요!"
 	done
 
 _SaffronCityText22::
-	text "SILPH CO."
-	line "OFFICE BUILDING"
+	text $06,$67,$0A,$61,$08,$06,$06,$64,$0A,$B8,$05,$B7; RAW DATA : 	text "실프주식회사"
+	line $05,$1B,$05,$B7,$7F,$05,$64,$03,$69; RAW DATA : 	line "본사 빌딩"
 	done
 
 _SaffronCityText24::
-	text "MR.PSYCHIC's"
-	line "HOUSE"
+	text $07,$01,$06,$4A,$0A,$0B,$7F,$06,$C6,$07,$CA,$06,$BE,$07,$97,$7F,$08,$2D; RAW DATA : 	text "에스퍼 아저씨의 집"
 	done
 
 _SaffronCityText25::
-	text "SILPH's latest"
-	line "product!"
-
-	para "Release to be"
-	line "determined..."
+	text $06,$67,$0A,$61,$08,$06,$06,$64,$0A,$B8,$05,$B7,$7F,$08,$D6,$06,$65,$7F,$05,$C3,$0A,$40,$0B,$66; RAW DATA : 	text "실프주식회사 최신 상품!"
+	line $01,$60,$7F,$01,$68,$01,$13,$03,$2B,$02,$CF,$02,$D9,$0B,$6A,$0B,$6A; RAW DATA : 	line "곧 공개됩니다……"
 	done

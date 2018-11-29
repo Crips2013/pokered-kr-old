@@ -1,83 +1,79 @@
 _WardenGibberishText1::
-	text "WARDEN: Hif fuff"
-	line "hefifoo!"
+	text $07,$68,$07,$B5,$0B,$62,$06,$C6,$06,$EE,$07,$88,$7F,$0A,$6F,$06,$63,$07,$88; RAW DATA : 	text "원장『아어으 하시으"
+	line $05,$4A,$02,$CF,$01,$01,$0B,$66; RAW DATA : 	line "브니가!"
 
-	para "Ha lof ha feef ee"
-	line "hafahi ho. Heff"
-	cont "hee fwee!"
+	para $0A,$6F,$7F,$04,$46,$0A,$C4,$7F,$05,$B7,$06,$C6,$0A,$E5,$04,$3E; RAW DATA : 	para "하 마후 사아흐리"
+	line $06,$63,$0A,$8C,$07,$88,$7F,$0A,$78,$07,$88,$03,$05,$0B,$6C; RAW DATA : 	line "시헤으 해으데."
+	cont $04,$73,$07,$9C,$08,$26,$02,$3A,$0B,$66; RAW DATA : 	cont "머이지나!"
 	done
 
 _WardenGibberishText2::
-	text "Ah howhee ho hoo!"
-	line "Eef ee hafahi ho!"
+	text $06,$C6,$7F,$06,$C6,$07,$09,$0A,$6F,$0A,$8C,$0A,$A3,$7F,$0A,$A3,$0B,$66; RAW DATA : 	text "아 아여하헤호 호!"
+	line $07,$01,$01,$01,$7F,$07,$9C,$06,$EE,$07,$88,$7F,$05,$B7,$07,$88,$05,$4A,$01,$01,$0B,$66; RAW DATA : 	line "에가 이어으 사으브가!"
 	done
 
 _WardenGibberishText3::
-	text "Ha? He ohay heh"
-	line "ha hoo ee haheh!"
+	text $0A,$6F,$0B,$67,$7F,$01,$A7,$7F,$06,$EE,$05,$4A,$01,$01; RAW DATA : 	text "하? 그 어브가"
+	line $0A,$6F,$7F,$0A,$A3,$07,$88,$7F,$0A,$8C,$0A,$8C,$0B,$66; RAW DATA : 	line "하 호으 헤헤!"
 	done
 
 _WardenTeethText1::
-	text "<PLAYER> gave the"
-	line "GOLD TEETH to the"
-	cont "WARDEN!@@"
+	text $52, $02,$C2,$0B,$64,$07,$8A,$0B,$65; RAW DATA : 	text $52, "는(은)"
+	line $07,$68,$07,$B5,$07,$01,$01,$34,$7F,$01,$AD,$09,$E2,$02,$CF,$04,$36,$7F,$01,$27,$02,$62,$02,$D9,$0B,$66,$50,$50; RAW DATA : 	line "원장에게 금틀니를 건냈다!@@"
 
 _WardenTeethText2::
 	db $0
-	para "The WARDEN popped"
-	line "in his teeth!"
+	para $07,$68,$07,$B5,$07,$8A,$7F,$09,$E2,$02,$CF,$04,$36; RAW DATA : 	para "원장은 틀니를"
+	line $02,$32,$07,$6C,$02,$D9,$0B,$66; RAW DATA : 	line "끼웠다!"
 	prompt
 
 _WardenThankYouText::
-	text "WARDEN: Thanks,"
-	line "kid! No one could"
-	cont "understand a word"
-	cont "that I said."
+	text $07,$68,$07,$B5,$0B,$62,$01,$4D,$04,$4F,$01,$88,$02,$3A,$7F,$01,$EF,$04,$46,$0B,$66; RAW DATA : 	text "원장『고맙구나 꼬마!"
+	line $06,$C6,$04,$AB,$03,$15,$7F,$02,$4B,$01,$01,$7F,$0A,$6F,$02,$C2,$04,$4B,$07,$8B; RAW DATA : 	line "아무도 내가 하는말을"
+	cont $06,$CB,$06,$C6,$03,$49,$07,$8B,$06,$26,$01,$01,$7F,$06,$F8,$06,$FA,$02,$DC,$02,$D9; RAW DATA : 	cont "알아들을수가 없었단다"
 
-	para "I couldn't work"
-	line "that way."
-	cont "Let me give you"
-	cont "something for"
-	cont "your trouble."
+	para $06,$F7,$04,$AB,$07,$01,$03,$15,$7F,$08,$97,$08,$2A,$07,$9C,$7F,$07,$A6,$06,$FA,$07,$88,$02,$CF; RAW DATA : 	para "업무에도 차질이 있었으니"
+	line $04,$4B,$07,$9C,$06,$DF; RAW DATA : 	line "말이야"
+	cont $02,$77,$7F,$01,$4D,$04,$CE,$0A,$78,$01,$41,$07,$8B,$7F,$07,$77,$0A,$78; RAW DATA : 	cont "네 고민해결을 위해"
+	cont $02,$4B,$08,$6A,$07,$01,$05,$DD,$7F,$04,$BA,$01,$01,$04,$36,$7F,$08,$09,$01,$BE,$7F,$0A,$71,$02,$D9,$04,$48; RAW DATA : 	cont "내쪽에서 뭔가를 줄까 한다만"
 	prompt
 
 _ReceivedHM04Text::
-	text "<PLAYER> received"
-	line "@"
+	text $52, $02,$C2,$0B,$64,$07,$8A,$0B,$65; RAW DATA : 	text $52, "는(은)"
+	line $50; RAW DATA : 	line "@"
 	TX_RAM wcf4b
-	text "!@@"
+	text $04,$36,$0B,$64,$07,$8B,$0B,$65,$7F,$06,$F2,$06,$FA,$02,$D9,$0B,$66,$50,$50; RAW DATA : 	text "를(을) 얻었다!@@"
 
 _HM04ExplanationText::
-	text "WARDEN: HM04"
-	line "teaches STRENGTH!"
+	text $07,$68,$07,$B5,$0B,$62,$05,$61,$07,$CC,$04,$73,$06,$65,$F6,$FA,$7F,$06,$C8,$07,$01,$02,$C2; RAW DATA : 	text "원장『비전머신04 안에는"
+	line $01,$7B,$03,$F2,$07,$9C,$7F,$03,$49,$06,$EE,$7F,$07,$A6,$02,$DC,$02,$D9,$0B,$66; RAW DATA : 	line "괴력이 들어 있단다!"
 
-	para "It lets #MON"
-	line "move boulders"
-	cont "when you're out-"
-	cont "side of battle."
+	para $0A,$27,$09,$2F,$04,$93,$0A,$71,$09,$A7; RAW DATA : 	para "포켓몬한테"
+	line $07,$9C,$7F,$01,$B2,$06,$2A,$07,$8B,$7F,$01,$01,$04,$33,$08,$C4,$03,$2E,$04,$89; RAW DATA : 	line "이 기술을 가르쳐두면"
+	cont $04,$E8,$09,$E2,$08,$0F,$07,$9C,$7F,$06,$C6,$02,$D2,$03,$77,$03,$15; RAW DATA : 	cont "배틀중이 아닐때도"
+	cont $06,$B5,$06,$26,$01,$01,$7F,$07,$A6,$02,$DC,$02,$D9; RAW DATA : 	cont "쓸수가 있단다"
 
-	para "Oh yes, did you"
-	line "find SECRET HOUSE"
-	cont "in SAFARI ZONE?"
+	para $06,$C6,$07,$9C,$01,$88,$06,$DF,$7F,$05,$B7,$09,$F4,$04,$3E,$7F,$07,$E8,$07,$01,$05,$DD; RAW DATA : 	para "아이구야 사파리 존에서"
+	line $05,$61,$04,$D0,$07,$97,$7F,$08,$2D,$7F,$08,$A3,$01,$4D,$7F,$07,$A6,$06,$FA,$02,$CF,$0B,$67; RAW DATA : 	line "비밀의 집 찾고 있었니?"
 
-	para "If you do, you"
-	line "win an HM!"
+	para $01,$25,$01,$B2,$05,$DD,$02,$C2,$7F,$09,$F4,$03,$15,$09,$88,$01,$B2; RAW DATA : 	para "거기서는 파도타기"
+	line $05,$61,$07,$CC,$04,$73,$06,$65,$07,$8B,$7F,$08,$08,$02,$DC,$02,$D9,$0B,$66; RAW DATA : 	line "비전머신을 준단다!"
 
-	para "I hear it's the"
-	line "rare SURF HM."
+	para $03,$48,$01,$B2,$04,$00,$7F,$09,$F4,$03,$15,$09,$88,$01,$B2,$7F,$05,$61,$07,$CC,$04,$73,$06,$65,$07,$8A; RAW DATA : 	para "듣기론 파도타기 비전머신은"
+	line $01,$9D,$0A,$71,$7F,$06,$C6,$07,$9C,$09,$AB,$07,$9C,$08,$26; RAW DATA : 	line "귀한 아이템이지"
 	done
 
 _HM04NoRoomText::
-	text "Your pack is"
-	line "stuffed full!"
+	text $07,$9C,$7F,$07,$9C,$05,$C3,$07,$8A; RAW DATA : 	text "이 이상은"
+	line $03,$49,$7F,$06,$26,$7F,$06,$F8,$06,$EE,$0B,$66; RAW DATA : 	line "들 수 없어!"
 	done
 
 _FuchsiaHouse2Text_75176::
-	text "#MON photos"
-	line "and fossils."
+	text $0A,$27,$09,$2F,$04,$93,$7F,$05,$B7,$08,$28,$01,$6A; RAW DATA : 	text "포켓몬 사진과"
+	line $0A,$AD,$05,$DE,$03,$49,$07,$9C,$02,$D9,$0B,$66; RAW DATA : 	line "화석들이다!"
 	done
 
 _FuchsiaHouse2Text_7517b::
-	text "Old #MON"
-	line "merchandise."
+	text $07,$20,$03,$D1,$03,$28,$7F,$0A,$27,$09,$2F,$04,$93; RAW DATA : 	text "오래된 포켓몬"
+	line $05,$C3,$0A,$40,$03,$49,$07,$9C,$7F,$07,$A6,$02,$D9,$0B,$66; RAW DATA : 	line "상품들이 있다!"
 	done

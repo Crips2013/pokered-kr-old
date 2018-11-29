@@ -1,35 +1,25 @@
 _UGPathRoute7EntranceUnusedText_5d773::
-	text "I want to shop at"
-	line "the dept. store"
-	cont "in CELADON but..."
+	text $04,$AB,$08,$26,$01,$13,$7F,$06,$63,$09,$EC,$07,$97,$7F,$04,$E9,$0A,$AD,$07,$D1,$07,$01,$05,$DD; RAW DATA : 	text "무지개 시티의 백화점에서"
+	line $06,$1E,$0A,$6E,$0A,$6F,$01,$4F,$7F,$06,$6D,$08,$26,$04,$48,$0B,$6A,$0B,$6A; RAW DATA : 	line "쇼핑하곤 싶지만……"
 
-	para "There are so many"
-	line "rough looking"
-	cont "people there."
-	done
+	para $01,$25,$01,$B4,$7F,$04,$98,$03,$27,$05,$18,$07,$9C,$02,$C2,$7F,$05,$B7,$03,$C7,$03,$49,$07,$9C; RAW DATA : 	para "거긴 못되보이는 사람들이"
+	line $02,$6A,$04,$AB,$7F,$04,$49,$06,$C6,$0B,$6A,$0B,$6A; RAW DATA : 	line "너무 많아……"
+	Done
 
 _UGPathRoute7EntranceUnusedText_5d778::
-	text "TEAM ROCKET had a"
-	line "secret hideout in"
-	cont "CELADON CITY?"
+	text $03,$FE,$09,$2F,$02,$DC,$07,$97,$7F,$05,$61,$04,$D0,$7F,$06,$C6,$08,$26,$09,$DE,$01,$01; RAW DATA : 	text "로켓단의 비밀 아지트가"
+	line $04,$AB,$08,$26,$01,$13,$7F,$06,$63,$09,$EC,$07,$01,$0B,$67; RAW DATA : 	line "무지개 시티에?"
 	done
 
 _UGPathRoute7EntranceUnusedText_5d77d::
-	text "You're here to"
-	line "shop in CELADON?"
+	text $04,$AB,$08,$26,$01,$13,$7F,$06,$63,$09,$EC,$07,$01,$7F,$06,$1E,$0A,$6E,$0A,$6F,$03,$DF,$7F,$01,$01,$02,$C2,$01,$B6,$0B,$67; RAW DATA : 	text "무지개 시티에 쇼핑하러 가는길?"
 
-	para "Just step outside"
-	line "and head west!"
+	para $02,$3A,$01,$01,$05,$DD,$7F,$05,$DD,$08,$6A,$07,$88,$03,$FE,$7F,$01,$01,$04,$89,$03,$25,$0B,$66; RAW DATA : 	para "나가서 서쪽으로 가면돼!"
 	done
 
 _UGPathRoute7EntranceUnusedText_5d782::
-	text "The UNDERGROUND"
-	line "PATH goes beneath"
-	cont "SAFFRON and leads"
-	cont "to LAVENDER."
-
-	para "If you're heading"
-	line "to CERULEAN, go"
-	cont "to the building"
-	cont "across the road."
+	text $08,$26,$0A,$6F,$09,$BB,$03,$FE,$02,$C2,$7F,$02,$8B,$03,$CB,$06,$63,$09,$EC,$07,$97,$7F,$08,$26,$0A,$6F,$04,$36,$7F,$09,$BB,$0A,$78,$7F,$05,$18,$03,$C3,$06,$63,$09,$EC,$01,$BE,$08,$26,$7F,$07,$9C,$06,$EE,$07,$DE; RAW DATA : 	text "지하통로는 노랑시티의 지하를 통해 보라시티까지 이어져"
+	
+	para $05,$4D,$04,$17,$06,$63,$09,$EC,$03,$FE,$7F,$01,$01,$02,$C2,$7F,$08,$0F,$07,$9C,$03,$C3,$04,$89,$7F,$01,$B6,$7F,$01,$27,$02,$6A,$7F,$01,$27,$04,$B0,$03,$FE,$7F,$01,$01,$04,$89,$7F,$03,$25; RAW DATA : 	para "블루시티로 가는 중이라면 길 건너 건물로 가면 돼"
 	done
+

@@ -12,10 +12,10 @@ IslandMonsB3:
 		db 39,SEADRA
 		db 37,DEWGONG
 	ENDC
-	IF DEF(_GREEN)
-		db 31,HORSEA
+	IF DEF(_GREEN);해외판블루
+		db 31,PSYDUCK
 		db 31,SEEL
-		db 33,HORSEA
+		db 33,PSYDUCK
 		db 33,SEEL
 		db 29,KRABBY
 		db 31,STARYU
@@ -23,11 +23,12 @@ IslandMonsB3:
 		db 29,STARYU
 		db 39,KINGLER
 		db 37,DEWGONG
+
 	ENDC
 	IF DEF(_BLUE)
-		db 31,PSYDUCK
+		db 31,HORSEA
 		db 31,SEEL
-		db 33,PSYDUCK
+		db 33,HORSEA
 		db 33,SEEL
 		db 29,KRABBY
 		db 31,STARYU

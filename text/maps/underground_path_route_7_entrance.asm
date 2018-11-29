@@ -1,5 +1,4 @@
 _UndergroundPathEntRoute7Text1::
-	text "I heard a sleepy"
-	line "#MON appeared"
-	cont "near CELADON CITY."
+	text $04,$AB,$08,$26,$01,$13,$06,$63,$09,$EC,$7F,$01,$A9,$08,$B3,$07,$01,$7F,$07,$B1,$02,$09,$03,$DF,$01,$B2; RAW DATA : 	text "무지개시티 근처에 잠꾸러기"
+	line $0A,$27,$09,$2F,$04,$93,$07,$9C,$7F,$02,$3A,$09,$88,$02,$45,$02,$D9,$01,$4D,$7F,$0A,$6F,$02,$F8,$01,$29; RAW DATA : 	line "포켓몬이 나타났다고 하던걸"
 	done

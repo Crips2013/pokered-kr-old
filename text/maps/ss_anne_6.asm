@@ -1,69 +1,88 @@
 _SSAnne6Text1::
-	text "You, mon petit!"
-	line "We're busy here!"
-	cont "Out of the way!"
+	text $01,$25,$01,$B2,$7F,$01,$EF,$04,$46,$0B,$66; RAW DATA : 	text "거기 꼬마!"
+	line $0A,$71,$08,$9C,$7F,$04,$D9,$05,$AA,$02,$CF,$01,$BE; RAW DATA : 	line "한참 바쁘니까"
+	cont $04,$E6,$0A,$78,$0A,$6F,$08,$26,$04,$4B,$01,$4D,$7F,$02,$3A,$01,$01,$0B,$66; RAW DATA : 	cont "방해하지말고 나가!"
 	done
+
+  
 
 _SSAnne6Text2::
-	text "I saw an odd ball"
-	line "in the trash."
-	done
+	text $06,$B2,$03,$E9,$01,$B2,$09,$BB,$07,$01,$05,$DD,$7F; RAW DATA : 	text "쓰레기통에서 "
+	line $07,$9C,$05,$C3,$0A,$71,$7F,$01,$68,$07,$8B,$7F,$05,$1B,$01,$2D,$01,$10,$06,$C6; RAW DATA : 	line "이상한 공을 본것같아"
+	Done
+
 
 _SSAnne6Text3::
-	text "I'm so busy I'm"
-	line "getting dizzy!"
+	text $02,$6A,$04,$AB,$7F,$04,$D9,$05,$6C,$05,$DD,$7F; RAW DATA : 	text "너무 바빠서 "
+	line $06,$B2,$03,$DF,$08,$2A,$01,$2D,$01,$10,$06,$C6,$0B,$66; RAW DATA : 	line "쓰러질것같아!"
 	done
+
+
 
 _SSAnne6Text4::
-	text "Hum-de-hum-de-"
-	line "ho..."
+	text $0A,$E5,$0B,$68,$07,$90,$0B,$68,$7F,$0A,$E5,$0B,$68,$07,$90,$0B,$68; RAW DATA : 	text "흐-응- 흐-응-"
+	line $0A,$DE,$0B,$6A,$0B,$6A; RAW DATA : 	line "휴……"
 
-	para "I peel spuds"
-	line "every day!"
-	cont "Hum-hum..."
+
+	para $02,$3D,$7F,$04,$65,$07,$9F,$7F,$01,$08,$07,$AA,$04,$36; RAW DATA : 	para "난 매일 감자를"
+	line $01,$C0,$06,$C6,$0B,$66; RAW DATA : 	line "깎아!"
+	cont $0A,$E5,$0B,$68,$07,$90,$0B,$68,$7F,$0A,$E5,$0B,$68,$07,$90,$0B,$68; RAW DATA : 	cont "흐-응- 흐-응-"
 	done
+
 
 _SSAnne6Text5::
-	text "Did you hear about"
-	line "SNORLAX?"
+	text $07,$B1,$04,$48,$05,$18,$03,$C3,$01,$4D,$7F,$03,$49,$06,$EE,$05,$23,$02,$CF,$0B,$67; RAW DATA : 	text "잠만보라고 들어봤니?
 
-	para "All it does is"
-	line "eat and sleep!"
+
+
+	para $04,$74,$01,$4D,$7F,$07,$AA,$02,$C2,$01,$2D,$04,$DB,$07,$01; RAW DATA : 	para "먹고 자는것밖에"
+	line $04,$90,$04,$35,$03,$05,$0B,$66; RAW DATA : 	line "모른데!"
 	done
 
-_SSAnne6Text6::
-	text "Snivel...Sniff..."
+ 
 
-	para "I only get to"
-	line "peel onions..."
-	cont "Snivel..."
+_SSAnne6Text6::
+	text $0A,$C7,$08,$4D,$0B,$6A,$0B,$6A,$7F,$09,$7F,$0B,$6A,$0B,$6A; RAW DATA : 	text "훌쩍…… 킁……"
+
+
+	para $01,$A7,$02,$69,$7F,$06,$E7,$09,$F4,$04,$36; RAW DATA : 	para "그냥 양파를"
+	line $01,$BE,$02,$C2,$08,$0F,$07,$9C,$06,$DF,$0B,$6A,$0B,$6A; RAW DATA : 	line "까는중이야……"
+	cont $0A,$C7,$08,$4D,$0B,$6A,$0B,$6A; RAW DATA : 	cont "훌쩍……"
 	done
 
 _SSAnne6Text_61807::
-	text "Er-hem! Indeed I"
-	line "am le CHEF!"
+	text $07,$01,$0A,$90,$0B,$66,$7F; RAW DATA : 	text "에헴! "
+	line $07,$09,$01,$B2,$07,$97,$7F,$02,$4B,$01,$01,$7F,$02,$F5,$7F,$05,$FE,$0A,$61,$0B,$66; RAW DATA : 	line "여기의 내가 더 셰프!"
 
-	para "Le main course is"
+
+	para $02,$F5,$7F,$04,$7E,$07,$9E,$7F,$09,$3A,$06,$4A,$02,$C2; RAW DATA : 	para "더 메인 코스는"
 	prompt
 
-_SSAnne6Text_6180c::
-	text "Salmon du Salad!"
 
-	para "Les guests may"
-	line "gripe it's fish"
-	cont "again, however!"
+_SSAnne6Text_6180c::
+	text $05,$EF,$03,$DF,$03,$45,$7F,$07,$20,$05,$4A,$7F,$07,$0C,$06,$EE,$0B,$66; RAW DATA : 	text "셀러드 오브 연어!"
+
+
+	para $06,$05,$02,$D4,$03,$49,$07,$8A,$7F,$03,$97,$7F,$05,$CD,$05,$E1,$7F,$02,$3A,$07,$22,$02,$D9,$01,$4D; RAW DATA : 	para "손님들은 또 생선 나온다고"
+	line $05,$32,$0A,$22,$0A,$6F,$01,$3A,$08,$26,$0B,$66; RAW DATA : 	line "불평하겠지!"
 	done
 
 _SSAnne6Text_61811::
-	text "Eels au Barbecue!"
+	text $07,$B5,$06,$EE,$7F,$07,$03,$7F,$04,$D9,$05,$61,$09,$75,$0B,$66; RAW DATA : 	text "장어 엔 바비큐!"
 
-	para "Les guests will"
-	line "mutiny, I fear."
-	done
+
+	para $02,$F5,$7F,$06,$05,$02,$D4,$03,$49,$07,$9C,$7F,$0A,$28,$03,$1F,$07,$8B; RAW DATA : 	para "더 손님들이 폭동을"
+	line $07,$9F,$07,$88,$09,$80,$08,$26,$7F,$06,$CA,$07,$88,$03,$F1,$02,$3A,$7F,$04,$94,$03,$C3; RAW DATA : 	line "일으키지 않으려나 몰라"
+	Done
+
 
 _SSAnne6Text_61816::
-	text "Prime Beef Steak!"
+	text $08,$D6,$05,$C3,$01,$AE,$7F,$05,$61,$0A,$61,$7F,$06,$4A,$09,$A7,$07,$9C,$09,$79,$0B,$66; RAW DATA : 	text "최상급 비프 스테이크!"
 
-	para "But, have I enough"
-	line "fillets du beef?"
+
+
+	para $01,$A7,$03,$E1,$03,$05,$7F,$05,$61,$0A,$61,$07,$4B,$7F,$05,$BC,$09,$3A,$01,$B2,$01,$01; RAW DATA : 	para "그런데 비프용 살코기가"
+	line $08,$E6,$05,$30,$0A,$6F,$02,$F8,$01,$01,$0B,$67; RAW DATA : 	line "충분하던가?"
 	done
+
+ 

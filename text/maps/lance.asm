@@ -1,63 +1,56 @@
 _LanceBeforeBattleText::
-	text "Ah! I heard about"
-	line "you <PLAYER>!"
+	text $01,$B2,$02,$D9,$04,$3E,$01,$4D,$7F,$07,$A6,$06,$FA,$02,$D9,$0B,$66; RAW DATA : 	text "기다리고 있었다!"
+	line $52,$01,$8A,$0B,$66; RAW DATA : 	line $52,"군!"
 
-	para "I lead the ELITE"
-	line "FOUR! You can"
-	cont "call me LANCE the"
-	cont "dragon trainer!"
+	para $02,$4B,$01,$01,$7F,$05,$B7,$08,$B5,$07,$35,$07,$9C,$07,$AA; RAW DATA : 	para "내가 사천왕이자"
+	line $03,$45,$03,$D1,$01,$4F,$7F,$07,$E6,$03,$F3,$05,$B7,$7F,$04,$91,$0A,$A3,$0B,$66; RAW DATA : 	line "드래곤 조련사 목호!"
 
-	para "You know that"
-	line "dragons are"
-	cont "mythical #MON!"
+	para $02,$6A,$03,$15,$7F,$06,$CB,$02,$D9,$06,$63,$0A,$67; RAW DATA : 	para "너도 알다시피"
+	line $03,$45,$03,$D1,$01,$4F,$07,$8A; RAW DATA : 	line "드래곤은"
+	cont $07,$CC,$05,$E3,$07,$CB,$07,$9E,$7F,$0A,$27,$09,$2F,$04,$93,$07,$9C,$08,$26,$0B,$66; RAW DATA : 	cont "전설적인 포켓몬이지!"
 
-	para "They're hard to"
-	line "catch and raise,"
-	cont "but their powers"
-	cont "are superior!"
+	para $07,$B2,$02,$C2,$01,$2D,$03,$15,$7F,$01,$B2,$04,$33,$02,$C2,$01,$2D,$03,$15; RAW DATA : 	para "잡는것도 기르는것도"
+	line $06,$EE,$03,$F6,$08,$26,$04,$48,$7F,$01,$A7,$01,$2D,$03,$49,$07,$97,$7F,$0A,$FB,$07,$8A; RAW DATA : 	line "어렵지만 그것들의 힘은"
+	cont $06,$F6,$08,$BB,$02,$3A,$0B,$66; RAW DATA : 	cont "엄청나!"
 
-	para "They're virtually"
-	line "indestructible!"
+	para $05,$B7,$06,$67,$05,$C3,$7F,$01,$CA,$05,$2E,$06,$2A,$06,$26,$7F,$06,$F8,$02,$C2; RAW DATA : 	para "사실상 깨부술수 없는"
+	line $07,$E8,$07,$B7,$08,$26,$0B,$66; RAW DATA : 	line "존재지!"
 
-	para "Well, are you"
-	line "ready to lose?"
+	para $07,$F1,$06,$C6; RAW DATA : 	para "좋아"
+	line $0A,$00,$04,$E8,$04,$36,$7F,$04,$DE,$06,$C6,$03,$49,$07,$9F,$7F,$08,$08,$05,$61,$02,$C2,$7F,$03,$26,$02,$64,$0B,$67; RAW DATA : 	line "패배를 받아들일 준비는 됐냐?"
 
-	para "Your LEAGUE"
-	line "challenge ends"
-	cont "with me, <PLAYER>!"
+	para $02,$3A,$07,$01,$7F,$07,$97,$0A,$78,$05,$DD; RAW DATA : 	para "나에 의해서"
+	line $02,$77,$7F,$03,$15,$07,$CC,$07,$8A,$7F,$02,$31,$07,$9C,$7F,$02,$3F,$01,$D8,$06,$DF; RAW DATA : 	line "네 도전은 끝이 날꺼야" 
+	cont $52, $01,$8A,$0B,$66; RAW DATA : 	cont $52, "군!"
 	done
 
 _LanceEndBattleText::
-	text "That's it!"
+	text $07,$0A,$06,$63,$0B,$66; RAW DATA : 	text "역시!"
 
-	para "I hate to admit"
-	line "it, but you are a"
-	cont "#MON master!"
+	para $07,$9E,$07,$D4,$0A,$6F,$01,$B4,$7F,$06,$68,$08,$26,$04,$48; RAW DATA : 	para "인정하긴 싫지만"
+	line $02,$6A,$01,$01,$7F,$0A,$27,$09,$2F,$04,$93,$7F,$04,$46,$06,$4A,$09,$9D,$07,$9C,$02,$D9,$0B,$66; RAW DATA : 	line "너가 포켓몬 마스터이다!"
 	prompt
 
 _LanceAfterBattleText::
-	text "I still can't"
-	line "believe my"
-	cont "dragons lost to"
-	cont "you, <PLAYER>!"
+	text $07,$09,$07,$CC,$0A,$F7,$7F,$04,$CF,$01,$B2,$08,$2A,$7F,$06,$CA,$02,$C2,$01,$8A; RAW DATA : 	text "여전히 믿기질 않는군"
+	line $02,$4B,$7F,$03,$45,$03,$D1,$01,$4F,$03,$49,$07,$9C,$7F,$02,$77,$01,$34,$7F,$0A,$00,$0A,$7F,$06,$EE; RAW DATA : 	line "내 드래곤들이 네게 패했어"
+	cont $52, $01,$8A,$0B,$66; RAW DATA : 	cont $52, "군!"
 
-	para "You are now the"
-	line "#MON LEAGUE"
-	cont "champion!"
+	para $07,$9C,$07,$D6,$02,$C2,$7F,$02,$6A,$01,$01; RAW DATA : 	para "이제는 너가"
+	line $0A,$27,$09,$2F,$04,$93,$7F,$04,$3E,$01,$A7,$7F,$08,$A8,$0A,$67,$06,$F0,$07,$9C,$02,$77,$0B,$66; RAW DATA : 	line "포켓몬 리그 챔피언이네!"
 
-	para "...Or, you would"
-	line "have been, but"
-	cont "you have one more"
-	cont "challenge ahead."
+	para $0B,$6A,$0B,$6A,$0A,$A4,$07,$8A; RAW DATA : 	para "……혹은"
+	line $01,$A7,$03,$E8,$01,$34,$7F,$03,$27,$01,$3A,$08,$26; RAW DATA : 	line "그렇게 되겠지"
+	cont $01,$A7,$02,$3A,$07,$CA,$02,$3A,$7F,$02,$77,$01,$01,$7F,$0A,$71,$04,$F8,$7F,$02,$F5; RAW DATA : 	cont "그나저나 네가 한번 더"
+	cont $03,$15,$07,$CC,$07,$8B,$7F,$0A,$78,$06,$DF,$0A,$78; RAW DATA : 	cont "도전을 해야해"
 
-	para "You have to face"
-	line "another trainer!"
-	cont "His name is..."
+	para $03,$97,$7F,$02,$D9,$04,$35,$7F,$09,$DE,$03,$E9,$07,$9C,$02,$6A,$07,$2D; RAW DATA : 	para "또 다른 트레이너와"
+	line $04,$62,$05,$39,$06,$EE,$06,$DF,$7F,$0A,$71,$02,$D9,$02,$C2,$7F,$01,$25,$08,$26,$0B,$66; RAW DATA : 	line "맞붙어야 한다는 거지!"
+	cont $01,$A7,$07,$97,$7F,$07,$9C,$04,$37,$07,$8A,$0B,$6A,$0B,$6A; RAW DATA : 	cont "그의 이름은……"
 
-	para "<RIVAL>!"
-	line "He beat the ELITE"
-	cont "FOUR before you!"
+	para $53, $01,$8A,$0B,$66; RAW DATA : 	para $53, "군!"
+	line $01,$A7,$02,$C2,$7F,$02,$6A,$05,$18,$02,$D9,$7F,$04,$75,$07,$CA,$7F; RAW DATA : 	line "그는 너보다 먼저 "
+	cont $05,$B7,$08,$B5,$07,$35,$07,$8B,$7F,$07,$9C,$01,$45,$06,$EE,$0B,$66; RAW DATA : 	cont "사천왕을 이겼어!"
 
-	para "He is the real"
-	line "#MON LEAGUE"
-	cont "champion!@@"
+	para $0A,$96,$07,$B7,$7F,$01,$A7,$01,$01,$7F,$0A,$27,$09,$2F,$04,$93,$7F,$04,$3E,$01,$A7; RAW DATA : 	para "현재 그가 포켓몬 리그"
+	line $08,$A8,$0A,$67,$06,$F0,$07,$9C,$06,$DF,$0B,$66,$50,$50; RAW DATA : 	line "챔피언이야!@@"

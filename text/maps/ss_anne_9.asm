@@ -1,113 +1,135 @@
 _SSAnne9Text_61bf2::
-	text "In all my travels"
-	line "I've never seen"
-	cont "any #MON sleep"
-	cont "like this one!"
+	text $04,$49,$07,$8A,$7F,$07,$09,$0A,$80,$07,$8B,$7F,$0A,$78,$07,$34,$08,$26,$04,$48,$7F,$07,$9C,$02,$80,$05,$DE,$08,$B3,$03,$E3; RAW DATA : 	text "많은 여행을 해왔지만 이녀석처럼"
+	line $07,$AA,$02,$C2,$7F,$0A,$27,$09,$2F,$04,$93,$07,$8A,$7F,$05,$1B,$07,$CB,$07,$9C,$7F,$06,$F8,$06,$EE,$0B,$66; RAW DATA : 	line "자는 포켓몬은 본적이 없어!"
 
-	para "It was something"
-	line "like this!"
+ 
+
+	para $07,$9C,$03,$E8,$01,$34,$7F,$05,$CD,$01,$B4,$7F,$02,$80,$05,$DE,$07,$9C,$06,$DF,$0B,$66; RAW DATA : 	para "이렇게 생긴 녀석이야!"
 	prompt
 
+
+
 _SSAnne9Text_61c01::
-	text "Ah yes, I have"
-	line "seen some #MON"
-	cont "ferry people"
-	cont "across the water!"
+	text $06,$C6,$7F,$04,$62,$06,$C6,$07,$19,$07,$CC,$07,$01,$7F,$04,$8E,$04,$8E; RAW DATA : 	text "아 맞아예전에 몇몇"
+	line $0A,$27,$09,$2F,$04,$93,$07,$9C,$7F,$05,$B7,$03,$C7,$07,$8B,$7F,$09,$92,$07,$4C,$01,$4D; RAW DATA : 	line "포켓몬이 사람을 태우고"
+	cont $04,$B0,$07,$8B,$7F,$01,$27,$02,$6A,$02,$C2,$01,$29,$7F,$05,$1B,$07,$CB,$07,$9C,$07,$A6,$06,$EE; RAW DATA : 	cont "물을 건너는걸 본적이있어"
 	done
+
+ 
 
 _SSAnne9Text_61c10::
-	text "#MON can CUT"
-	line "down small bushes."
-	done
+	text $07,$AB,$07,$8A,$7F,$02,$3A,$04,$AB,$07,$01,$02,$C2; RAW DATA : 	text "작은 나무에는"
+	line $0A,$3E,$05,$03,$01,$B2,$04,$36,$7F,$06,$B5,$7F,$06,$26,$7F,$07,$A6,$06,$EE; RAW DATA : 	line "풀베기를 쓸 수 있어"
+	Done
 
 _SSAnne9BattleText1::
-	text "Competing against"
-	line "the young keeps"
-	cont "me youthful."
-	done
+	text $07,$CE,$07,$8A,$07,$9C,$03,$49,$01,$6A,$7F,$01,$3C,$04,$17,$01,$4D,$07,$A6,$07,$88,$04,$89; RAW DATA : 	text "젊은이들과 겨루고있으면"
+	line $02,$3A,$03,$15,$7F,$07,$CE,$06,$EE,$08,$26,$02,$C2,$7F,$02,$C0,$02,$36,$07,$9C,$03,$C3,$02,$77; RAW DATA : 	line "나도 젊어지는 느낌이라네"
+	Done
+
+ 
 
 _SSAnne9EndBattleText1::
-	text "Good"
-	line "fight! Ah, I feel"
-	cont "young again!"
+	text $07,$F1,$07,$8A,$7F,$06,$6E,$07,$62,$07,$9C,$06,$FA,$02,$77,$0B,$66; RAW DATA : 	text "좋은 싸움이었네!"
+	line $0A,$71,$08,$FE,$7F,$07,$CE,$06,$EE,$08,$28,$7F,$01,$B2,$05,$30,$07,$9C,$01,$8A,$0B,$66; RAW DATA : 	line "한층 젊어진 기분이군!"
 	prompt
 
 _SSAnne9AfterBattleText1::
-	text "15 years ago, I"
-	line "would have won!"
+	text $F7,$FB,$02,$82,$04,$48,$7F,$07,$CE,$06,$FA,$06,$EE,$03,$15; RAW DATA : 	text "15년만 젊었어도"
+	line $07,$9C,$01,$B6,$04,$48,$7F,$0A,$7F,$07,$8B,$09,$A9,$03,$05,$0B,$66; RAW DATA : 	line "이길만 했을텐데!"
 	done
+
+ 
 
 _SSAnne9BattleText2::
-	text "Check out what I"
-	line "fished up!"
+	text $02,$4B,$01,$01,$7F,$02,$3C,$07,$8A,$01,$2D,$07,$EB,$7F,$05,$18,$03,$C3,$01,$88,$0B,$66; RAW DATA : 	text "내가 낚은것좀 보라구!"
 	done
+
+
 
 _SSAnne9EndBattleText2::
-	text "I'm"
-	line "all out!"
+	text $02,$3A,$01,$01,$7F,$03,$83,$06,$EE,$07,$E3,$02,$D9,$0B,$66; RAW DATA : 	text "나가 떨어졌다!"
 	prompt
+
+
 
 _SSAnne9AfterBattleText2::
-	text "Party?"
+	text $09,$F4,$09,$EC,$0B,$67; RAW DATA : 	text "파티?"
 
-	para "The cruise ship's"
-	line "party should be"
-	cont "over by now."
-	done
+
+
+	para $07,$09,$01,$14,$05,$E1,$07,$97,$7F,$09,$F4,$09,$EC,$03,$C3,$04,$89; RAW DATA : 	para "여객선의 파티라면"
+	line $07,$9C,$07,$D6,$7F,$02,$31,$02,$45,$07,$8B,$7F,$09,$A9,$03,$05; RAW DATA : 	line "이제 끝났을 텐데"
+	Done
 
 _SSAnne9BattleText3::
-	text "Which do you like,"
-	line "a strong or a"
-	cont "rare #MON?"
+	text $07,$AA,$02,$79,$7F,$01,$0D,$0A,$71,$7F,$0A,$27,$09,$2F,$04,$93,$07,$9C,$7F,$07,$F1,$07,$8A,$01,$01; RAW DATA : 	text "자넨 강한 포켓몬이 좋은가"
+	line $0A,$F1,$01,$9D,$0A,$71,$7F,$0A,$27,$09,$2F,$04,$93,$07,$9C,$7F,$07,$F1,$07,$8A,$01,$01,$0B,$67; RAW DATA : 	line "희귀한 포켓몬이 좋은가?"
 	done
+
+ 
 
 _SSAnne9EndBattleText3::
-	text "I must"
-	line "salute you!"
+	text $01,$46,$07,$97,$04,$36,$7F,$0A,$35,$0A,$78,$06,$DF,$01,$3A,$01,$8A,$0B,$66; RAW DATA : 	text "경의를 표해야겠군!"
 	prompt
+
+
 
 _SSAnne9AfterBattleText3::
-	text "I prefer strong"
-	line "and rare #MON."
+	text $02,$3D,$7F,$01,$0D,$0A,$6F,$01,$4D,$7F,$0A,$F1,$01,$9D,$0A,$71,$7F,$0A,$27,$09,$2F,$04,$93,$07,$9C,$7F,$07,$F1,$02,$D9,$02,$77; RAW DATA : 	text "난 강하고 희귀한 포켓몬이 좋다네"
 	done
+
+
 
 _SSAnne9BattleText4::
-	text "I never saw you"
-	line "at the party."
-	done
+	text $09,$F4,$09,$EC,$07,$01,$05,$DD,$7F; RAW DATA : 	text "파티에서 "
+	line $05,$1B,$07,$CB,$06,$F8,$02,$C2,$7F,$06,$F3,$01,$8C,$07,$9E,$01,$29; RAW DATA : 	line "본적없는 얼굴인걸"
+	Done
+
+
 
 _SSAnne9EndBattleText4::
-	text "Take"
-	line "it easy!"
+	text $07,$66,$07,$66; RAW DATA : 	text "워워"
+	line $08,$28,$07,$D4,$0A,$78,$0B,$66; RAW DATA : 	line "진정해!"
 	prompt
 
+ 
+
 _SSAnne9AfterBattleText4::
-	text "Oh, I adore your"
-	line "strong #MON!"
+	text $02,$6A,$07,$97,$7F,$01,$A7,$7F,$01,$0D,$0A,$71,$0A,$27,$09,$2F,$04,$93,$03,$49; RAW DATA : 	text "너의 그 강한포켓몬들"
+	line $07,$D4,$04,$4B,$7F,$04,$4E,$07,$01,$7F,$03,$45,$02,$C2,$01,$29,$0B,$66; RAW DATA : 	line "정말 맘에 드는걸!"
 	done
+
+ 
 
 _SSAnne9Text_61c1f::
-	text "Have you gone to"
-	line "the SAFARI ZONE"
-	cont "in FUCHSIA CITY?"
+	text $07,$0C,$05,$30,$0A,$AB,$06,$63,$09,$EC,$07,$97,$7F,$05,$B7,$09,$F4,$04,$3E,$07,$E8,$07,$01; RAW DATA : 	text "연분홍시티의 사파리존에"
+	line $01,$01,$05,$1B,$07,$CB,$7F,$07,$A6,$02,$3A,$0B,$67; RAW DATA : 	line "가본적 있나?"
 
-	para "It had many rare"
-	line "kinds of #MON!!"
+ 
+	para $01,$25,$01,$B4,$7F,$07,$D4,$04,$4B,$7F,$04,$49,$07,$8A,$7F,$07,$EE,$04,$29,$07,$97; RAW DATA : 	para "거긴 정말 많은 종류의"
+	line $0A,$F1,$01,$9D,$0A,$71,$7F,$0A,$27,$09,$2F,$04,$93,$07,$9C,$7F,$07,$A6,$02,$D9,$02,$77,$0B,$66,$0B,$66; RAW DATA : 	line "희귀한 포켓몬이 있다네!!"
 	done
+
+ 
 
 _SSAnne9Text_61c2e::
-	text "Me and my Daddy"
-	line "think the SAFARI"
-	cont "ZONE is awesome!"
+	text $02,$3A,$03,$CB,$7F,$06,$C6,$05,$6C,$02,$C2,$7F,$05,$B7,$09,$F4,$04,$3E,$07,$E8,$07,$9C; RAW DATA : 	text "나랑 아빠는 사파리존이"
+	line $07,$D4,$04,$4B,$7F,$04,$7A,$08,$26,$02,$D9,$01,$4D,$7F,$05,$CD,$01,$02,$0A,$78,$0B,$66; RAW DATA : 	line "정말 멋지다고 생각해!"
 	done
+
+ 
 
 _SSAnne9Text_61c3d::
-	text "The CAPTAIN looked"
-	line "really sick and"
-	cont "pale!"
+	text $06,$C6,$01,$BE,$7F,$05,$18,$02,$CF,$01,$BE,$7F,$05,$E1,$07,$B5,$06,$F3,$01,$8C,$07,$9C; RAW DATA : 	text "아까 보니까 선장얼굴이"
+	line $08,$A2,$04,$E9,$0A,$6F,$01,$4D,$7F,$06,$C6,$09,$F4,$05,$18,$07,$9C,$02,$F8,$03,$05; RAW DATA : 	line "창백하고 아파보이던데"
 	done
 
+ 
+
 _SSAnne9Text_61c4c::
-	text "I hear many people"
-	line "get seasick!"
+	text $04,$49,$07,$8A,$7F,$05,$B7,$03,$C7,$03,$49,$07,$9C; RAW DATA : 	text "많은 사람들이"
+	line $04,$EE,$04,$76,$04,$CC,$04,$36,$7F,$0A,$71,$02,$D9,$01,$4D,$7F,$03,$49,$06,$FA,$06,$EE; RAW DATA : 	line "뱃멀미를 한다고 들었어"
 	done
+
+ 

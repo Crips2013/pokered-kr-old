@@ -35,10 +35,12 @@ IF DEF(_YELLOW)
 	line $0A,$27,$09,$2F,$04,$93,$07,$9F,$06,$26,$03,$FF,$7F,$02,$F5,$07,$4D,$7F,$09,$03,$04,$D0,$0A,$78,$07,$DE; RAW DATA : 	line "포켓몬일수록 더욱 친밀해져"
 	done
 ELSE
-	text "#MON are living"
-	line "things! If they"
-	cont "get tired, give"
-	cont "them a rest!"
+	; text "포켓몬은 살아있어"
+	text $0A, $27, $09, $2F, $04, $93, $07, $8A, " ", $05, $BC, $06, $C6, $07, $A6, $06, $EE
+	; line "포켓몬들이 지쳤을땐"
+	line $0A, $27, $09, $2F, $04, $93, $03, $49, $07, $9C, " ", $08, $26, $08, $C6, $07, $8B, $03, $79
+	; cont "쉬게 해줘야되"
+	cont $06, $3C, $01, $34, " ", $0A, $78, $08, $10, $06, $DF, $03, $27
 	done
 ENDC
 

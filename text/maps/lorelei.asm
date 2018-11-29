@@ -1,42 +1,37 @@
 _LoreleiBeforeBattleText::
-	text "Welcome to"
-	line "#MON LEAGUE!"
+	text $0A,$27,$09,$2F,$04,$93,$7F,$04,$3E,$01,$A7,$07,$01,$7F,$07,$22,$7F,$01,$29; RAW DATA : 	text "포켓몬 리그에 온 걸"
+	line $0A,$AF,$07,$15,$0A,$6F,$08,$26,$0B,$66; RAW DATA : 	line "환영하지!"
 
-	para "I am LORELEI of"
-	line "the ELITE FOUR!"
+	para $02,$4B,$7F,$07,$9C,$04,$37,$07,$8A,$7F,$09,$0D,$02,$3A,$0B,$66; RAW DATA : 	para "내 이름은 칸나!"
+	line $05,$B7,$08,$B5,$07,$35,$08,$0F,$7F,$0A,$71,$7F,$04,$8D,$07,$9C,$02,$D9,$0B,$66; RAW DATA : 	line "사천왕중 한 명이다!"
 
-	para "No one can best"
-	line "me when it comes"
-	cont "to icy #MON!"
+	para $02,$A9,$01,$88,$03,$47,$7F,$06,$03,$06,$26,$04,$AB,$08,$A5,$07,$88,$03,$FE; RAW DATA : 	para "누구든 속수무책으로"
+	line $04,$48,$03,$45,$02,$C2,$7F,$06,$F3,$07,$8D,$7F,$0A,$27,$09,$2F,$04,$93,$0B,$66; RAW DATA : 	line "만드는 얼음 포켓몬!"
 
-	para "Freezing moves"
-	line "are powerful!"
+	para $06,$F3,$03,$F1,$04,$F6,$04,$3E,$02,$C2,$7F,$01,$B2,$06,$2A,$03,$49,$07,$8A; RAW DATA : 	para "얼려버리는 기술들은"
+	line $04,$47,$01,$0D,$0A,$6F,$08,$26,$0B,$66; RAW DATA : 	line "막강하지!"
 
-	para "Your #MON will"
-	line "be at my mercy"
-	cont "when they are"
-	cont "frozen solid!"
+	para $02,$77,$7F,$0A,$27,$09,$2F,$04,$93,$03,$49,$07,$8B,$7F,$01,$F7,$01,$F7,$7F,$06,$F3,$03,$F1,$05,$DD; RAW DATA : 	para "네 포켓몬들을 꽁꽁 얼려서"
+	line $02,$63,$03,$1F,$06,$64,$0A,$40,$07,$88,$03,$FE,$7F,$04,$48,$03,$49,$06,$EE,$08,$06,$04,$46,$0B,$66; RAW DATA : 	line "냉동식품으로 만들어주마!"
 
-	para "Hahaha!"
-	line "Are you ready?"
+	para $0A,$C4,$0A,$C4,$0A,$CA,$0B,$66; RAW DATA : 	para "후후훗!"
+	line $08,$08,$05,$61,$03,$26,$02,$3A,$0B,$67; RAW DATA : 	line "준비됐나?"
 	done
 
 _LoreleiEndBattleText::
-	text "How"
-	line "dare you!"
+	text $06,$EE,$03,$81,$01,$34,$7F,$01,$08,$0A,$F7; RAW DATA : 	text "어떡게 감히"
+	line $02,$4B,$7F,$06,$F3,$07,$8D,$07,$8B,$0B,$66; RAW DATA : 	line "내 얼음을!"
 	prompt
 
 _LoreleiAfterBattleText::
-	text "You're better"
-	line "than I thought!"
-	cont "Go on ahead!"
+	text $06,$C6,$04,$AB,$03,$D1,$03,$15,$7F,$01,$6A,$06,$02,$0A,$22,$01,$01,$7F,$0A,$7F,$01,$8A,$0B,$66; RAW DATA : 	text "아무래도 과소평가 했군!"
+	line $07,$9C,$07,$D6,$05,$2E,$09,$9D,$01,$01,$7F,$05,$1B,$01,$3D,$07,$CB,$07,$9E,$7F,$04,$AB,$02,$EB,$02,$D9,$0B,$66; RAW DATA : 	line "이제부터가 본격적인 무대다!"
 
-	para "You only got a"
-	line "taste of #MON"
-	cont "LEAGUE power!"
+	para $08,$26,$01,$AD,$07,$8A,$7F,$01,$A7,$07,$CA,$7F,$0A,$27,$09,$2F,$04,$93,$7F,$04,$3E,$01,$A7,$07,$97; RAW DATA : 	para "지금은 그저 포켓몬 리그의"
+	line $04,$60,$05,$18,$01,$B2,$07,$9F,$7F,$05,$A3,$07,$9C,$02,$D9,$0B,$66; RAW DATA : 	line "맛보기일 뿐이다!"
 	done
 
 _LoreleiDontRunAwayText::
-	text "Someone's voice:"
-	line "Don't run away!"
+	text $02,$A9,$01,$8A,$01,$01,$07,$97,$7F,$04,$91,$06,$02,$04,$3E,$0B,$62,$06,$C8,$7F,$03,$27,$0B,$66; RAW DATA : 	text "누군가의 목소리『안 되!"
+	line $03,$15,$04,$61,$09,$05,$7F,$06,$28,$7F,$06,$F8,$06,$EE,$0B,$66; RAW DATA : 	line "도망칠 순 없어!"
 	done

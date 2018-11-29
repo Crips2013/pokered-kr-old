@@ -1,24 +1,21 @@
 _MomWakeUpText::
-	text "MOM: Right."
-	line "All boys leave"
-	cont "home some day."
-	cont "It said so on TV."
+	text $06,$F6,$04,$46,$0B,$62,$01,$A7,$03,$D1; RAW DATA : 	text "엄마『그래"
+	line $02,$42,$07,$AA,$7F,$06,$C6,$07,$9C,$03,$49,$07,$8A,$7F,$06,$F0,$07,$D8,$01,$01; RAW DATA : 	line "남자 아이들은 언젠가"
+	cont $08,$2D,$07,$8B,$7F,$03,$80,$02,$3A,$02,$C2,$7F,$04,$FD,$07,$9C,$08,$26; RAW DATA : 	cont "집을 떠나는 법이지"
+	cont $93,$95,$07,$01,$05,$DD,$7F,$01,$A7,$03,$D8,$02,$DC,$02,$D9; RAW DATA : 	cont "TV에서 그랬단다"
 
-	para "PROF.OAK, next"
-	line "door, is looking"
-	cont "for you."
-	done
-
+	para $07,$17,$08,$2D,$07,$97,$7F,$07,$20,$04,$DA,$05,$B7,$02,$D4,$01,$E2,$05,$DD; RAW DATA : 	para "옆집의 오박사님께서"
+	line $02,$6E,$7F,$08,$A3,$07,$88,$06,$63,$02,$F5,$01,$88,$02,$3A; RAW DATA : 	line "널 찾으시더구나"
+	Done
 _MomHealText1::
 IF DEF(_YELLOW)
-	text "MOM: <PLAYER>, if"
-	line "you drive your"
-	cont "#MON too hard,"
-	cont "they'll dislike"
-	cont "you."
+	text $06,$F6,$04,$46,$0B,$62; RAW DATA : 	text "엄마『"
+	db $52, $7F,$04,$48,$06,$E0,$7F,$02,$77,$01,$01; RAW DATA : 	db $52, " 만약 네가"
+	line $0A,$27,$09,$2F,$04,$93,$07,$8B,$7F,$02,$6A,$04,$AB,$7F,$0A,$88,$0A,$6F,$01,$34,$7F,$02,$D9,$04,$17,$04,$89; RAW DATA : 	line "포켓몬을 너무 험하게 다루면"
+	cont $02,$6A,$04,$36,$7F,$06,$68,$06,$EE,$0A,$72,$7F,$01,$2D,$07,$9C,$03,$C5,$02,$D9; RAW DATA : 	cont "너를 싫어할 것이란다"
 
-	para "You should take a"
-	line "rest."
+	para $07,$CB,$02,$E7,$0A,$F7,$7F,$06,$3C,$06,$EE,$01,$01,$04,$89,$05,$DD; RAW DATA : 	para "적당히 쉬어가면서"
+	line $0A,$6F,$03,$F5; RAW DATA : 	line "하렴"
 ELSE
 	text "MOM: <PLAYER>!"
 	line "You should take a"
@@ -28,22 +25,20 @@ ENDC
 	prompt
 
 _MomHealText2::
-	text "MOM: Oh good!"
-	line "You and your"
-	cont "#MON are"
-	cont "looking great!"
-	cont "Take care now!"
+	text $06,$F6,$04,$46,$0B,$62,$06,$EE,$04,$73,$0B,$66; RAW DATA : 	text "엄마『어머!"
+	line $02,$6A,$07,$2D,$7F,$0A,$27,$09,$2F,$04,$93,$7F,$03,$31,$02,$D9; RAW DATA : 	line "너와 포켓몬 둘다"
+	cont $09,$F8,$09,$F8,$0A,$78,$7F,$05,$18,$07,$9C,$02,$77,$0B,$66; RAW DATA : 	cont "팔팔해 보이네!"
+	cont $07,$E6,$06,$69,$0A,$78,$05,$DD,$7F,$02,$D9,$02,$CF,$03,$F5,$0B,$66; RAW DATA : 	cont "조심해서 다니렴!"
 	done
 
 _StandByMeText::
-	text "There's a movie"
-	line "on TV. Four boys"
-	cont "are walking on"
-	cont "railroad tracks."
+	text $93,$95,$07,$01,$05,$DD,$7F,$07,$15,$0A,$AD,$04,$36,$7F,$0A,$6F,$01,$4D,$7F,$07,$A6,$02,$D9; RAW DATA : 	text "TV에서 영화를 하고 있다"
+	line $02,$42,$07,$AA,$06,$C6,$07,$9C,$7F,$02,$7D,$07,$9C,$7F; RAW DATA : 	line "남자아이 넷이 "
+	cont $08,$B6,$03,$FE,$04,$36,$7F,$03,$6B,$03,$C3,$7F,$01,$28,$01,$4D,$07,$A6,$02,$D9,$0B,$6A,$0B,$6A; RAW DATA : 	cont "철로를 따라 걷고있다……"
 
-	para "I better go too."
-	done
+	para $0B,$6A,$0B,$6A,$7F,$02,$3A,$03,$15,$7F,$05,$71,$04,$3E,$7F,$01,$01,$05,$21,$06,$DF,$08,$26,$0B,$66; RAW DATA : 	para "…… 나도 빨리 가봐야지!"
+	Done
 
 _TVWrongSideText::
-	text "Oops, wrong side."
-	done
+	text $07,$9C,$08,$6A,$07,$01,$05,$DD,$02,$C2,$7F,$05,$18,$07,$9C,$08,$26,$7F,$06,$CA,$06,$C6; RAW DATA : 	text "이쪽에서는 보이지 않아"
+	Done

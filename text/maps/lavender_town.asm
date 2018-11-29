@@ -1,64 +1,60 @@
 _LavenderTownText_4413c::
-	text "Do you believe in"
-	line "GHOSTs?"
+	text $02,$6A,$02,$C2,$7F,$07,$7F,$03,$F9,$07,$9C,$7F,$07,$A6,$02,$D9,$01,$4D; RAW DATA : 	text "너는 유령이 있다고"
+	line $05,$CD,$01,$02,$0A,$6F,$02,$CF,$0B,$67; RAW DATA : 	line "생각하니?"
 	done
 
 _LavenderTownText_44141::
-	text "Really? So there"
-	line "are believers..."
+	text $07,$D4,$04,$4B,$07,$9C,$06,$DF,$0B,$67; RAW DATA : 	text "정말이야?"
+	line $02,$6A,$02,$C2,$7F,$07,$7F,$03,$F9,$07,$8B,$7F,$04,$CF,$02,$C2,$01,$88,$02,$3A,$0B,$6A,$0B,$6A; RAW DATA : 	line "너는 유령을 믿는구나……"
 	done
 
 _LavenderTownText_44146::
-	text "Hahaha, I guess"
-	line "not."
+	text $0A,$6F,$0A,$6F,$0A,$6F; RAW DATA : 	text "하하하"
+	line $06,$C6,$02,$D2,$01,$D8,$03,$C3,$01,$4D,$7F,$07,$19,$05,$C3,$0A,$7F,$06,$EE; RAW DATA : 	line "아닐꺼라고 예상했어"
 
-	para "That white hand"
-	line "on your shoulder,"
-	cont "it's not real."
+	para $02,$77,$7F,$06,$EE,$01,$CA,$07,$01; RAW DATA : 	para "네 어깨에"
+	line $0A,$6F,$06,$E1,$06,$05,$07,$9C,$7F,$07,$A6,$01,$B4,$7F,$0A,$6F,$08,$26,$04,$48; RAW DATA : 	line "하얀손이 있긴 하지만"
+	cont $08,$28,$08,$35,$02,$C2,$7F,$06,$C6,$02,$CF,$06,$DF; RAW DATA : 	cont "진짜는 아니야"
 	done
 
 _LavenderTownText2::
-	text "This town is known"
-	line "as the grave site"
-	cont "of #MON."
+	text $05,$18,$03,$C3,$09,$88,$07,$4E,$07,$8A,$7F,$0A,$27,$09,$2F,$04,$93,$07,$8B; RAW DATA : 	text "보라타운은 포켓몬을"
+	line $07,$77,$0A,$71,$7F,$01,$68,$03,$1F,$04,$A6,$08,$26,$03,$FE,$7F,$07,$7F,$04,$8D,$0A,$78; RAW DATA : 	line "위한 공동묘지로 유명해"
 
-	para "Memorial services"
-	line "are held in"
-	cont "#MON TOWER."
+	para $0A,$27,$09,$2F,$04,$93,$7F,$09,$88,$07,$66,$07,$01,$05,$DD,$02,$C2; RAW DATA : 	para "포켓몬 타워에서는"
+	line $07,$77,$03,$F9,$07,$D6,$01,$01,$7F,$07,$0D,$03,$F1; RAW DATA : 	line "위령제가 열려"
 	done
 
 _LavenderTownText3::
-	text "GHOSTs appeared"
-	line "in #MON TOWER."
+	text $07,$7F,$03,$F9,$07,$9C,$7F,$02,$3A,$09,$88,$02,$3D,$01,$67,$07,$9C; RAW DATA : 	text "유령이 나타난곳이"
+	line $0A,$27,$09,$2F,$04,$93,$7F,$09,$88,$07,$66,$03,$D1; RAW DATA : 	line "포켓몬 타워래"
 
-	para "I think they're"
-	line "the spirits of"
-	cont "#MON that the"
-	cont "ROCKETs killed."
+	para $02,$4B,$7F,$05,$CD,$01,$02,$07,$01,$02,$C2; RAW DATA : 	para "내 생각에는"
+	line $03,$FE,$09,$2F,$02,$DC,$07,$9C,$7F,$08,$07,$07,$9E; RAW DATA : 	line "로켓단이 죽인"
+	cont $0A,$27,$09,$2F,$04,$93,$07,$97,$7F,$07,$15,$0A,$A5,$01,$10,$06,$C6; RAW DATA : 	cont "포켓몬의 영혼같아"
 	done
 
 _LavenderTownText4::
-	text "LAVENDER TOWN"
-	line "The Noble Purple"
-	cont "Town"
+	text $07,$9C,$01,$67,$07,$8A,$7F,$05,$18,$03,$C3,$09,$88,$07,$4E; RAW DATA : 	text "이곳은 보라타운"
+	line $05,$18,$03,$C3,$02,$C2,$7F,$07,$AF,$7F,$07,$9D,$07,$8A,$7F,$0A,$27,$03,$15,$05,$6B,$7F,$05,$C6,$01,$C2; RAW DATA : 	line "보라는 잘 익은 포도빛 색깔"
 	done
 
 _LavenderTownText5::
-	text "New SILPH SCOPE!"
+	;나중에 수정요함
+	text $06,$65,$0A,$9C,$7F,$06,$67,$0A,$61,$7F,$06,$4A,$09,$3A,$0A,$61,$0B,$66; RAW DATA : 	text "신형 실프 스코프!"
 
-	para "Make the Invisible"
-	line "Plain to See!"
+	para $0A,$22,$04,$FC,$0A,$6F,$01,$34,$02,$C2,$7F,$05,$1C,$06,$26,$06,$F8,$02,$C2,$01,$2D,$07,$8B; RAW DATA : 	para "평범하게는 볼수없는것을"
+	line $05,$1C,$06,$26,$7F,$07,$A6,$01,$34,$7F,$0A,$78,$08,$0D,$02,$CF,$02,$D9,$0B,$66; RAW DATA : 	line "볼수 있게 해줍니다!"
 
-	para "SILPH CO."
+	para $06,$67,$0A,$61,$7F,$08,$06,$06,$64,$0A,$B8,$05,$B7; RAW DATA : 	para "실프 주식회사"
 	done
 
 _LavenderTownText8::
-	text "LAVENDER VOLUNTEER"
-	line "#MON HOUSE"
+	text $07,$9C,$01,$67,$07,$8A,$7F,$05,$B7,$03,$CB,$07,$97,$7F,$05,$20,$05,$B7,$0A,$B0,$03,$1F; RAW DATA : 	text "이곳은 사랑의 봉사활동"
+	line $0A,$27,$09,$2F,$04,$93,$7F,$0A,$6F,$07,$4C,$06,$4A; RAW DATA : 	line "포켓몬 하우스"
 	done
 
 _LavenderTownText9::
-	text "May the Souls of"
-	line "#MON Rest Easy"
-	cont "#MON TOWER"
+	text $07,$9C,$01,$67,$07,$8A,$7F,$0A,$27,$09,$2F,$04,$93,$7F,$09,$88,$07,$66; RAW DATA : 	text "이곳은 포켓몬 타워"
+	line $0A,$27,$09,$2F,$04,$93,$7F,$07,$09,$01,$B2,$07,$01,$7F,$07,$B1,$03,$49,$02,$D9; RAW DATA : 	line "포켓몬 여기에 잠들다"
 	done

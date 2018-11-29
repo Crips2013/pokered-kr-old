@@ -1,19 +1,16 @@
 _VermilionPokecenterText2::
-	text "Even if they are"
-	line "the same level,"
-	cont "#MON can have"
-	cont "very different"
-	cont "abilities."
+	text $06,$C6,$04,$AB,$04,$3E,$7F,$03,$E9,$05,$07,$07,$9C; RAW DATA : 	text "아무리 레벨이"
+	line $01,$10,$07,$8A,$7F,$0A,$27,$09,$2F,$04,$93,$07,$9C,$03,$C3,$03,$15; RAW DATA : 	line "같은 포켓몬이라도"
+	cont $02,$C9,$03,$F2,$09,$01,$02,$C2,$7F,$01,$A7,$06,$DF,$04,$4B,$03,$FE; RAW DATA : 	cont "능력치는 그야말로"
+	cont $07,$D6,$01,$02,$01,$02,$07,$9C,$03,$C5,$02,$D9; RAW DATA : 	cont "제각각이란다"
 
-	para "A #MON raised"
-	line "by a trainer is"
-	cont "stronger than one"
-	cont "in the wild."
+	para $06,$DF,$05,$CD,$07,$97,$7F,$0A,$27,$09,$2F,$04,$93,$7F,$05,$18,$02,$D9; RAW DATA : 	para "야생의 포켓몬 보다"
+	line $09,$DE,$03,$E9,$07,$9C,$02,$6A,$07,$97,$7F,$0A,$27,$09,$2F,$04,$93,$07,$9C; RAW DATA : 	line "트레이너의 포켓몬이"
+	cont $02,$F5,$7F,$01,$0D,$0A,$6F,$08,$26,$0B,$66; RAW DATA : 	cont "더 강하지!"
 	done
 
 _VermilionPokecenterText3::
-	text "My #MON was"
-	line "poisoned! It"
-	cont "fainted while we"
-	cont "were walking!"
+	text $02,$4B,$7F,$0A,$27,$09,$2F,$04,$93,$07,$9C; RAW DATA : 	text "내 포켓몬이"
+	line $03,$16,$07,$01,$7F,$01,$29,$03,$F8,$06,$FA,$06,$EE,$0B,$66; RAW DATA : 	line "독에 걸렸었어!"
+	cont $01,$28,$02,$C2,$03,$1F,$06,$C8,$07,$01,$7F,$01,$B2,$07,$CD,$0A,$78,$04,$F6,$03,$F8,$06,$EE,$0B,$66; RAW DATA : 	cont "걷는동안에 기절해버렸어!"
 	done

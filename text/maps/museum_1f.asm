@@ -1,107 +1,99 @@
 _Museum1FText_5c21a::
-	text "Come again!"
+	text $02,$D9,$07,$8D,$07,$01,$7F,$03,$97,$7F,$07,$20,$05,$EC,$07,$44,$0B,$66; RAW DATA : 	text "다음에 또 오세요!"
 	done
 
 _Museum1FText_5c21f::
-	text "It's ¥50 for a"
-	line "child's ticket."
+	text $06,$EE,$04,$40,$07,$9C,$07,$4B,$7F,$09,$EC,$09,$2F,$07,$8A; RAW DATA : 	text "어린이용 티켓은"
+	line $FB,$F6,$07,$68,$07,$A4,$02,$CF,$02,$D9; RAW DATA : 	line "50원입니다"
 
-	para "Would you like to"
-	line "come in?"
+	para $07,$A4,$07,$B5,$7F,$0A,$6F,$06,$63,$01,$3A,$06,$60,$02,$CF,$01,$BE,$0B,$67; RAW DATA : 	para "입장 하시겠습니까?"
 	done
 
 _Museum1FText_5c224::
-	text "Right, ¥50!"
-	line "Thank you!"
+	text $FB,$F6,$07,$68,$7F,$04,$DE,$06,$D2,$06,$60,$02,$CF,$02,$D9,$0B,$66; RAW DATA : 	text "50원 받았습니다!"
+	line $01,$08,$05,$B7,$0A,$75,$02,$CF,$02,$D9,$0B,$66; RAW DATA : 	line "감사합니다!"
 	done
 
 _Museum1FText_5c229::
-	text "You don't have"
-	line "enough money."
+	text $03,$17,$07,$9C; RAW DATA : 	text "돈이"
+	line $05,$2E,$07,$E7,$0A,$6F,$02,$77,$07,$44; RAW DATA : 	line "부족하네요"
 	prompt
 
 _Museum1FText_5c22e::
-	text "You can't sneak"
-	line "in the back way!"
+	text $03,$3A,$07,$01,$05,$DD,$7F,$04,$DF,$06,$02,$04,$3E,$08,$07,$07,$9C,$01,$4D; RAW DATA : 	text "뒤에서 발소리죽이고"
+	line $07,$2D,$03,$15,$7F,$06,$02,$07,$4B,$06,$F8,$07,$8B,$01,$29,$0B,$66; RAW DATA : 	line "와도 소용없을걸!"
 
-	para "Oh, whatever!"
-	line "Do you know what"
-	cont "AMBER is?"
+	para $06,$EE,$7F,$06,$C6,$04,$AB,$01,$2D,$03,$15,$7F,$06,$C6,$02,$CF,$06,$DF,$0B,$66; RAW DATA : 	para "어 아무것도 아니야!"
+	line $05,$61,$04,$D0,$07,$97,$7F,$0A,$A3,$04,$DA,$07,$9C; RAW DATA : 	line "비밀의 호박이"
+	cont $04,$BA,$08,$26,$7F,$06,$CB,$06,$C6,$0B,$67; RAW DATA : 	cont "뭔지 알아?"
 	done
 
 _Museum1FText_5c233::
-	text "There's a lab"
-	line "somewhere trying"
-	cont "to resurrect"
-	cont "ancient #MON"
-	cont "from AMBER."
+	text $06,$EE,$03,$62,$01,$01,$07,$01,$05,$DD,$7F,$05,$61,$04,$D0,$07,$97,$7F,$0A,$A3,$04,$DA,$07,$88,$03,$FE; RAW DATA : 	text "어딘가에서 비밀의 호박으로"
+	line $01,$4D,$02,$EB,$7F,$0A,$27,$09,$2F,$04,$93,$07,$8B,$7F,$05,$2E,$0A,$B0,$06,$63,$09,$80,$02,$C2; RAW DATA : 	line "고대 포켓몬을 부활시키는"
+	cont $06,$63,$03,$15,$04,$36,$7F,$0A,$6F,$01,$4D,$7F,$07,$A6,$02,$D9,$02,$77; RAW DATA : 	cont "시도를 하고 있다네"
 	done
 
 _Museum1FText_5c238::
-	text "AMBER is fossil-"
-	line "ized tree sap."
+	text $0A,$A3,$04,$DA,$07,$8A,$7F,$02,$3A,$04,$AB,$06,$26,$06,$D7,$07,$9C; RAW DATA : 	text "호박은 나무수액이"
+	line $0A,$AD,$05,$DE,$0A,$AD,$03,$28,$01,$25,$06,$DF; RAW DATA : 	line "화석화된거야"
 	done
 
 _Museum1FText_5c23d::
-	text "Please go to the"
-	line "other side!"
+	text $07,$FB,$06,$0B,$0A,$75,$02,$CF,$02,$D9; RAW DATA : 	text "죄송합니다"
+	line $07,$9C,$08,$6A,$07,$88,$03,$FE,$02,$C2,$7F,$04,$98,$7F,$01,$09,$02,$CF,$02,$D9,$0B,$66; RAW DATA : 	line "이쪽으로는 못 갑니다!"
 	done
 
 _Museum1FText_5c242::
-	text "Take plenty of"
-	line "time to look!"
+	text $01,$88,$01,$46,$0A,$72,$7F,$06,$63,$01,$03,$07,$8A; RAW DATA : 	text "구경할 시간은"
+	line $08,$E6,$05,$30,$0A,$78,$0B,$66; RAW DATA : 	line "충분해!"
 	done
 
 _Museum1FText_5c251::
-	text "That is one"
-	line "magnificent"
-	cont "fossil!"
+	text $07,$CA,$7F,$0A,$AD,$05,$DE; RAW DATA : 	text "저 화석"
+	line $07,$D4,$04,$4B,$7F,$07,$19,$05,$AA,$02,$D9,$0B,$66; RAW DATA : 	line "정말 예쁘다!"
 	done
 
 _Museum1FText_5c28e::
-	text "Ssh! I think that"
-	line "this chunk of"
-	cont "AMBER contains"
-	cont "#MON DNA!"
+	text $06,$3C,$0B,$68,$07,$A5,$0B,$66; RAW DATA : 	text "쉬-잇!"
+	line $02,$4B,$7F,$05,$CD,$01,$02,$07,$01,$7F,$0A,$A3,$04,$DA,$7F,$03,$02,$06,$EE,$04,$3E,$07,$01; RAW DATA : 	line "내 생각에 호박 덩어리에"
+	cont $03,$49,$06,$EE,$07,$A6,$02,$C2,$01,$27,$7F,$0A,$27,$09,$2F,$04,$93,$07,$97,$7F,$07,$7F,$07,$CC,$07,$AA,$06,$DF,$0B,$66; RAW DATA : 	cont "들어있는건 포켓몬의 유전자야!"
 
-	para "It would be great"
-	line "if #MON could"
-	cont "be resurrected"
-	cont "from it!"
+	para $01,$A7,$03,$E8,$02,$D9,$04,$89,$7F,$01,$82,$07,$B5,$0A,$71,$01,$25,$06,$DF; RAW DATA : 	para "그렇다면 굉장한거야"
+	line $07,$9C,$7F,$07,$7F,$07,$CC,$07,$AA,$03,$FE,$7F,$0A,$27,$09,$2F,$04,$93,$07,$8B; RAW DATA : 	line "이 유전자로 포켓몬을"
+	cont $05,$2E,$0A,$B0,$06,$63,$09,$83,$06,$26,$7F,$07,$A6,$06,$EE,$0B,$66; RAW DATA : 	cont "부활시킬수 있어!"
 
-	para "But, my colleagues"
-	line "just ignore me!"
+	para $01,$A7,$03,$E1,$03,$05,$7F,$02,$4B,$7F,$03,$1F,$04,$11,$02,$C2; RAW DATA : 	para "그런데 내 동료는"
+	line $02,$3F,$7F,$07,$2F,$07,$CC,$0A,$F7,$7F,$04,$AB,$06,$63,$0A,$6F,$01,$4D,$7F,$07,$A6,$06,$EE,$0B,$66; RAW DATA : 	line "날 완전히 무시하고 있어!"
 
-	para "So I have a favor"
-	line "to ask!"
+	para $01,$A7,$03,$E1,$07,$97,$04,$CC,$03,$FE; RAW DATA : 	para "그런의미로"
+	line $07,$AB,$07,$8A,$7F,$05,$2E,$09,$89,$0A,$6F,$02,$3A,$04,$48,$7F,$0A,$78,$03,$15,$7F,$03,$29,$01,$BE,$0B,$66; RAW DATA : 	line "작은 부탁하나만 해도 될까!"
 
-	para "Take this to a"
-	line "#MON LAB and"
-	cont "get it examined!"
+	para $07,$9C,$01,$29,$7F,$01,$01,$08,$26,$01,$4D; RAW DATA : 	para "이걸 가지고"
+	line $0A,$27,$09,$2F,$04,$93,$7F,$07,$0C,$01,$88,$06,$02,$07,$01,$7F,$01,$01,$05,$DD; RAW DATA : 	line "포켓몬 연구소에 가서"
+	cont $02,$4B,$7F,$04,$4B,$07,$8B,$7F,$08,$25,$04,$8D,$0A,$78,$08,$10,$0B,$66; RAW DATA : 	cont "내 말을 증명해줘!"
 	prompt
 
 _ReceivedOldAmberText::
-	text "<PLAYER> received"
-	line "OLD AMBER!@@"
+	text $52, $02,$C2,$0B,$64,$07,$8A,$0B,$65; RAW DATA : 	text $52, "는(은)"
+	line $05,$61,$04,$D0,$07,$97,$7F,$0A,$A3,$04,$DA,$07,$8B,$7F,$06,$F2,$06,$FA,$02,$D9,$0B,$66,$50,$50; RAW DATA : 	line "비밀의 호박을 얻었다!@@"
 
 _Museum1FText_5c299::
-	text "Ssh! Get the OLD"
-	line "AMBER checked!"
+	text $06,$3C,$0B,$68,$07,$A5,$0B,$66; RAW DATA : 	text "쉬-잇!"
+	line $05,$61,$04,$D0,$07,$97,$7F,$0A,$A3,$04,$DA,$07,$8B,$7F,$0A,$AE,$07,$9E,$0A,$78,$05,$21,$0B,$66; RAW DATA : 	line "비밀의 호박을 확인해봐!"
 	done
 
 _Museum1FText_5c29e::
-	text "You don't have"
-	line "space for this!"
+	text $07,$9C,$7F,$07,$9C,$05,$C3,$7F,$03,$49,$7F,$06,$26,$7F,$06,$F8,$06,$EE,$0B,$66; RAW DATA : 	text "이 이상 들 수 없어!"
 	done
 
 _Museum1FText_5c2ad::
-	text "We are proud of 2"
-	line "fossils of very"
-	cont "rare, prehistoric"
-	cont "#MON!"
+	text $07,$4C,$04,$3E,$01,$01,$7F,$07,$AA,$03,$CB,$07,$88,$03,$FE,$7F,$05,$BF,$02,$C2; RAW DATA : 	text "우리가 자랑으로 삼는"
+	line $F8,$01,$13,$07,$97,$7F,$0A,$AD,$05,$DE,$07,$8A,$7F,$07,$D4,$04,$4B,$03,$FE,$7F,$08,$28,$01,$9D,$0A,$78,$07,$44; RAW DATA : 	line "2개의 화석은 정말로 진귀해요"
+	cont $04,$AB,$03,$F1,$7F,$05,$E1,$05,$B7,$06,$63,$02,$EB,$07,$97,$7F,$0A,$27,$09,$2F,$04,$93,$07,$9C,$03,$C3,$01,$4D,$07,$44,$0B,$66; RAW DATA : 	cont "무려 선사시대의 포켓몬이라고요!"
 	done
 
 _Museum1FText_5c2bc::
-	text "The AMBER is"
-	line "clear and gold!"
+	text $0A,$A3,$04,$DA,$0A,$AD,$05,$DE,$07,$8A; RAW DATA : 	text "호박화석은"
+	line $09,$C5,$04,$8D,$0A,$6F,$01,$4D,$7F,$01,$AD,$05,$C6,$07,$9C,$02,$D9,$0B,$66; RAW DATA : 	line "투명하고 금색이다!"
 	done

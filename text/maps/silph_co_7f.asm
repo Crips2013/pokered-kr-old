@@ -1,216 +1,250 @@
 _MeetLaprasGuyText::
-	text "Oh! Hi! You're"
-	line "not a ROCKET! You"
-	cont "came to save us?"
-	cont "Why, thank you!"
+	text $06,$C6,$7F,$06,$C8,$02,$87,$0B,$66; RAW DATA : 	text "아 안녕!"
+	line $02,$6D,$7F,$03,$FE,$09,$2F,$02,$DC,$07,$9C,$7F,$06,$C6,$02,$CF,$01,$88,$02,$3A,$0B,$66; RAW DATA : 	line "넌 로켓단이 아니구나!"
+	cont $07,$4C,$04,$41,$7F,$01,$88,$0A,$78,$08,$06,$03,$DF,$7F,$07,$22,$01,$25,$02,$CF,$0B,$67; RAW DATA : 	cont "우릴 구해주러 온거니?"
+	cont $07,$D4,$04,$4B,$7F,$01,$4D,$04,$46,$07,$66,$0B,$66; RAW DATA : 	cont "정말 고마워!"
 
-	para "I want you to"
-	line "have this #MON"
-	cont "for saving us."
-	prompt
+
+	para $07,$4C,$04,$3E,$04,$36,$7F,$01,$88,$0A,$78,$08,$06,$02,$C2,$7F,$02,$E4,$03,$FA,$03,$FE; RAW DATA : 	para "우리를 구해주는 답례로"
+	line $07,$9C,$0A,$27,$09,$2F,$04,$93,$07,$8B,$7F,$04,$DE,$06,$C6,$08,$11,$07,$88,$04,$89,$7F,$0A,$78; RAW DATA : 	line "이포켓몬을 받아줬으면 해"
+	Prompt
+
+ 
 
 _HeresYourLaprasText::
-	text "It's LAPRAS. It's"
-	line "very intelligent."
+	text $01,$A7,$7F,$0A,$27,$09,$2F,$04,$93,$07,$8A,$7F,$03,$C3,$0A,$61,$03,$C3,$06,$4A; RAW DATA : 	text "그 포켓몬은 라프라스"
+	line $04,$65,$07,$4C,$7F,$03,$98,$03,$98,$0A,$71,$7F,$06,$C6,$07,$9C,$06,$DF; RAW DATA : 	line "매우 똑똑한 아이야"
 
-	para "We kept it in our"
-	line "lab, but it will"
-	cont "be much better"
-	cont "off with you!"
+ 
 
-	para "I think you will"
-	line "be a good trainer"
-	cont "for LAPRAS!"
+	para $07,$4C,$04,$3E,$7F,$06,$67,$0A,$88,$06,$67,$07,$01,$05,$DD,$7F,$04,$63,$01,$4D,$7F,$07,$A6,$06,$FA,$08,$26,$04,$48; RAW DATA : 	para "우리 실험실에서 맡고 있었지만"
+	line $02,$6A,$07,$2D,$7F,$0A,$74,$01,$E2,$7F,$02,$D9,$02,$CF,$02,$C2,$7F,$0A,$1D,$07,$9C; RAW DATA : 	line "너와 함께 다니는 편이"
+	cont $02,$F5,$7F,$0A,$80,$05,$19,$0A,$72,$7F,$01,$2D,$7F,$01,$10,$06,$C6,$0B,$66; RAW DATA : 	cont "더 행복할 것 같아!"
 
-	para "It's a good"
-	line "swimmer. It'll"
-	cont "give you a lift!"
+  
+
+	para $02,$6A,$03,$C3,$04,$89,$7F,$03,$C3,$0A,$61,$03,$C3,$06,$4A,$07,$97,$7F,$04,$7A,$08,$28; RAW DATA : 	para "너라면 라프라스의 멋진"
+	line $09,$DE,$03,$E9,$07,$9C,$02,$6A,$01,$01,$7F,$03,$29,$7F,$06,$26,$7F,$07,$A6,$07,$8B,$7F,$01,$25,$06,$DF,$0B,$66; RAW DATA : 	line "트레이너가 될 수 있을 거야!"
+
+ 
+
+	para $09,$DF,$0A,$F7,$7F,$06,$26,$07,$15,$07,$01,$02,$C2,$7F,$05,$61,$01,$83,$0A,$72; RAW DATA : 	para "특히 수영에는 비교할"
+	line $06,$C6,$07,$9C,$01,$01,$7F,$06,$F8,$02,$C2,$7F,$06,$C6,$07,$9C,$08,$26; RAW DATA : 	line "아이가 없는 아이지"
+	cont $03,$4E,$07,$01,$7F,$09,$8B,$7F,$06,$26,$03,$15,$7F,$07,$A6,$06,$EE,$0B,$66; RAW DATA : 	cont "등에 탈 수도 있어!"
 	done
 
 _LaprasGuyText::
-	text "TEAM ROCKET's"
-	line "BOSS went to the"
-	cont "boardroom! Is our"
-	cont "PRESIDENT OK?"
+	text $03,$FE,$09,$2F,$02,$DC,$07,$97,$7F,$05,$18,$06,$4A,$01,$01; RAW DATA : 	text "로켓단의 보스가"
+	line $07,$9C,$05,$B7,$0A,$B8,$06,$67,$03,$FE,$7F,$01,$0C,$06,$EE,$0B,$66; RAW DATA : 	line "이사회실로 갔어!"
+	cont $0A,$B8,$07,$B5,$02,$D4,$07,$8A,$7F,$01,$76,$08,$9A,$07,$88,$06,$67,$01,$BE,$0B,$67; RAW DATA : 	cont "회장님은 괜찮으실까?"
 	done
+
+  
 
 _LaprasGuySavedText::
-	text "Saved at last!"
-	line "Thank you!"
+	text $07,$D4,$04,$4B,$7F,$07,$4C,$04,$41,$7F,$01,$88,$0A,$78,$08,$11,$01,$88,$02,$3A,$0B,$66,$7F; RAW DATA : 	text "정말 우릴 구해줬구나! "
+	line $01,$4D,$04,$46,$07,$66,$0B,$66; RAW DATA : 	line "고마워!"
 	done
+
+
 
 _SilphCo7Text_51e00::
-	text "TEAM ROCKET was"
-	line "after the MASTER"
-	cont "BALL which will"
-	cont "catch any #MON!"
+	text $03,$FE,$09,$2F,$02,$DC,$07,$8A,$7F,$06,$EE,$03,$82,$7F,$0A,$27,$09,$2F,$04,$93,$07,$9C,$03,$47; RAW DATA : 	text "로켓단은 어떤 포켓몬이든"
+	line $07,$B2,$07,$8B,$7F,$06,$26,$7F,$07,$A6,$02,$C2; RAW DATA : 	line "잡을 수 있는"
+	cont $04,$46,$06,$4A,$09,$9D,$05,$1C,$07,$8B,$7F,$02,$8B,$04,$3E,$02,$C2,$7F,$01,$2D,$7F,$01,$10,$06,$C6,$0B,$66; RAW DATA : 	cont "마스터볼을 노리는 것 같아!"
 	done
+
+  
 
 _CanceledMasterBallText::
-	text "We canceled the"
-	line "MASTER BALL"
-	cont "project because"
-	cont "of TEAM ROCKET."
-	done
+	text $07,$4C,$04,$40,$7F,$03,$FE,$09,$2F,$02,$DC,$07,$8B,$7F,$04,$47,$01,$B2,$7F,$07,$77,$0A,$78; RAW DATA : 	text "우린 로켓단을 막기 위해"
+	line $04,$46,$06,$4A,$09,$9D,$05,$1C,$7F,$0A,$61,$03,$FE,$07,$D7,$09,$DE,$04,$36; RAW DATA : 	line "마스터볼 프로젝트를"
+	cont $0A,$6F,$08,$26,$7F,$04,$4B,$06,$D2,$06,$EE,$06,$DF,$7F,$0A,$7F,$06,$EE; RAW DATA : 	cont "하지 말았어야 했어"
+	Done
+
+  
 
 _SilphCo7Text_51e23::
-	text "It would be bad"
-	line "if TEAM ROCKET"
-	cont "took over SILPH"
-	cont "or our #MON!"
+	text $03,$FE,$09,$2F,$02,$DC,$07,$9C,$7F,$06,$67,$0A,$61,$7F,$08,$06,$06,$64,$0A,$B8,$05,$B7,$02,$3A; RAW DATA : 	text "로켓단이 실프 주식회사나"
+	line $07,$4C,$04,$3E,$7F,$0A,$27,$09,$2F,$04,$93,$07,$8B,$7F,$05,$79,$06,$D1,$02,$C2,$02,$D9,$04,$89; RAW DATA : 	line "우리 포켓몬을 빼앗는다면"
+	cont $07,$D4,$04,$4B,$7F,$02,$2B,$08,$8F,$0A,$72,$01,$25,$06,$DF; RAW DATA : 	cont "정말 끔찍할거야"
 	done
 
+  
+
 _SilphCo7Text_51e28::
-	text "Wow! You chased"
-	line "off TEAM ROCKET"
-	cont "all by yourself?"
+	text $05,$EC,$05,$C3,$07,$01,$0B,$66,$7F,$02,$6A,$7F,$0A,$A5,$07,$AA,$05,$DD; RAW DATA : 	text "세상에! 너 혼자서"
+	line $03,$FE,$09,$2F,$02,$DC,$07,$8B,$7F,$0A,$78,$08,$BC,$06,$63,$09,$80,$01,$4D,$7F,$07,$A6,$02,$C2,$01,$25,$02,$CF,$0B,$67; RAW DATA : 	line "로켓단을 해체시키고 있는거니?"
 	done
 
 _SilphCo7Text_51e46::
-	text "You! It's really"
-	line "dangerous here!"
-	cont "You came to save"
-	cont "me? You can't!"
+	text $02,$6A,$0B,$66,$7F,$07,$09,$01,$B4,$7F,$07,$D4,$04,$4B,$7F,$07,$77,$0A,$88,$0A,$78,$0B,$66; RAW DATA : 	text "너! 여긴 정말 위험해!"
+	line $07,$4C,$04,$41,$7F,$01,$88,$0A,$6F,$03,$DF,$07,$34,$02,$D9,$01,$4D,$0B,$67,$7F,$0A,$FB,$03,$49,$01,$29,$0B,$66; RAW DATA : 	line "우릴 구하러왔다고? 힘들걸!"
 	done
 
+ 
+
 _SilphCo7Text_51e4b::
-	text "Safe at last!"
-	line "Oh thank you!"
+	text $03,$45,$03,$60,$06,$EE,$7F,$06,$C8,$06,$69,$0A,$72,$06,$26,$7F,$07,$A6,$01,$3A,$01,$8A,$0B,$66; RAW DATA : 	text "드디어 안심할수 있겠군!"
+	line $07,$D4,$04,$4B,$7F,$01,$4D,$04,$46,$07,$66,$0B,$66; RAW DATA : 	line "정말 고마워!"
 	done
+
 
 _SilphCo7BattleText1::
 
 IF DEF(_YELLOW)
-	text "Aha! I smell a"
+	text $06,$C6,$0A,$6F,$0B,$66,$7F,$08,$13,$05,$C5,$02,$32,$01,$01; RAW DATA : 	text "아하! 쥐새끼가"
+	
+	
+	;text "Aha! I smell a"
 	
 ELSE
 	text "Oh ho! I smell a"
 
 ENDC
-	line "little rat!"
+	line $07,$09,$01,$B2,$06,$FA,$06,$FA,$01,$8A,$0B,$66; RAW DATA : 	line "여기었었군!"
 	done
 
 _SilphCo7EndBattleText1::
-	text "Lights"
-	line "out!"
+	text $04,$FA,$06,$81,$7F,$02,$31,$02,$3F,$06,$63,$01,$03,$07,$9E,$01,$01,$0B,$66; RAW DATA : 	text "벌써 끝날시간인가!"
 	prompt
 
 _SilphCo7AfterBattleText1::
-	text "You won't find my"
-	line "BOSS by just"
-	cont "scurrying around!"
+	text $01,$A7,$03,$E8,$01,$34,$7F,$07,$09,$01,$B6,$7F,$01,$A7,$03,$E8,$01,$34,$7F,$06,$6E,$03,$19,$06,$C6,$02,$D9,$02,$CF,$01,$B2,$04,$48; RAW DATA : 	text "그렇게 여길 그렇게 싸돌아다니기만"
+	line $0A,$78,$05,$DD,$02,$C2,$7F,$07,$4C,$04,$3E,$05,$18,$06,$4A,$04,$36; RAW DATA : 	line "해서는 우리보스를"
+	cont $07,$CD,$02,$EB,$7F,$04,$48,$02,$3F,$06,$26,$7F,$06,$F8,$07,$8B,$01,$29,$0B,$66; RAW DATA : 	cont "절대 만날수 없을걸!"
 	done
 
-_SilphCo7BattleText2::
-	text "Heheh!"
+  
 
-	para "You mistook me for"
-	line "a SILPH worker?"
+_SilphCo7BattleText2::
+	text $0A,$8C,$0A,$8C,$0A,$8C,$0B,$66; RAW DATA : 	text "헤헤헤!"
+
+
+
+	para $02,$3A,$04,$36,$7F,$0A,$B8,$05,$B7,$7F,$08,$27,$07,$68,$07,$9C,$03,$C3; RAW DATA : 	para "나를 회사 직원이라"
+	line $08,$98,$01,$02,$0A,$6F,$02,$C2,$7F,$01,$27,$01,$01,$0B,$67; RAW DATA : 	line "착각하는 건가?"
 	done
 
 _SilphCo7EndBattleText2::
-	text "I'm"
-	line "done!"
+	text $07,$09,$01,$B2,$01,$BE,$08,$26,$01,$88,$02,$3A,$0B,$66; RAW DATA : 	text "여기까지구나!"
 	prompt
+
+
 
 _SilphCo7AfterBattleText2::
-	text "Despite your age,"
-	line "you are a skilled"
-	cont "trainer!"
+	text $02,$77,$7F,$02,$3A,$07,$9C,$04,$36,$7F,$05,$CD,$01,$02,$0A,$6F,$04,$89; RAW DATA : 	text "네 나이를 생각하면"
+	line $02,$6A,$7F,$07,$D4,$04,$4B,$7F,$03,$A9,$06,$EE,$02,$3D,$7F,$09,$DE,$03,$E9,$07,$9C,$02,$6A,$01,$88,$02,$3A,$0B,$66; RAW DATA : 	line "너 정말 뛰어난 트레이너구나!"
 	done
+
+ 
 
 _SilphCo7BattleText3::
-	text "I am one of the 4"
-	line "ROCKET BROTHERS!"
+	text $02,$3A,$02,$C2,$7F,$03,$FE,$09,$2F,$7F,$05,$4A,$03,$C3,$02,$F5,$06,$4A; RAW DATA : 	text "나는 로켓 브라더스"
+	line $FA,$07,$9E,$04,$E6,$08,$0F,$7F,$0A,$6F,$02,$3A,$0B,$66; RAW DATA : 	line "4인방중 하나!"
 	done
+
+
 
 _SilphCo7EndBattleText3::
-	text "Aack!"
-	line "Brothers, I lost!"
+	text $06,$C6,$06,$C7,$0B,$66; RAW DATA : 	text "아악!"
+	line $04,$CC,$06,$C8,$0A,$6F,$02,$D9,$7F,$0A,$9C,$07,$D6,$07,$09,$0B,$66,$7F,$02,$3D,$7F,$07,$E3,$02,$D9,$0B,$66; RAW DATA : 	line "미안하다 형제여! 난 졌다!"
 	prompt
+
+ 
 
 _SilphCo7AfterBattleText3::
-	text "Doesn't matter."
-	line "My brothers will"
-	cont "repay the favor!"
+	text $01,$A7,$03,$D1,$05,$21,$06,$DF,$7F,$02,$3A,$07,$97,$7F,$0A,$9C,$07,$D6,$03,$49,$07,$9C; RAW DATA : 	text "그래봐야 나의 형제들이"
+	line $05,$19,$06,$26,$0A,$78,$08,$09,$01,$2D,$07,$9C,$02,$D9,$0B,$66; RAW DATA : 	line "복수해줄것이다!"
 	done
+
+ 
 
 _SilphCo7BattleText4::
-	text "A child intruder?"
-	line "That must be you!"
+	text $01,$EF,$04,$46,$7F,$09,$07,$07,$A4,$07,$AA,$0B,$67; RAW DATA : 	text "꼬마 침입자?"
+	line $02,$6E,$7F,$04,$4B,$0A,$6F,$02,$C2,$7F,$01,$25,$07,$14,$01,$8A,$0B,$66; RAW DATA : 	line "널 말하는 거였군!"
 	done
+
+ 
 
 _SilphCo7EndBattleText4::
-	text "Fine!"
-	line "I lost!"
+	text $01,$A7,$04,$48,$0B,$66; RAW DATA : 	text "그만!"
+	line $07,$E3,$06,$EE,$0B,$66; RAW DATA : 	line "졌어!"
 	prompt
 
+ 
+
 _SilphCo7AfterBattleText4::
-	text "Go on home"
-	line "before my BOSS"
-	cont "gets ticked off!"
+	text $05,$18,$06,$4A,$01,$01,$7F,$0A,$A5,$02,$4B,$08,$06,$01,$B2,$07,$CC,$07,$01; RAW DATA : 	text "보스가 혼내주기전에"
+	line $08,$2D,$07,$01,$7F,$03,$19,$06,$C6,$01,$01,$02,$C2,$01,$34,$7F,$07,$F1,$07,$8B,$01,$25,$02,$D9,$0B,$66; RAW DATA : 	line "집에 돌아가는게 좋을거다!"
 	done
+
+ 
 
 _SilphCo7Text_51ebe::
-	text "<RIVAL>: What"
-	line "kept you <PLAYER>?"
+	text $53, $0B,$62,$01,$B2,$02,$D9,$03,$F8,$02,$D9,$01,$4D; RAW DATA : 	text $53, "『기다렸다고"
+	line $52, $0B,$66; RAW DATA : 	line $52, "!"
 	done
+
 
 _SilphCo7Text_51ec3::
-	text "<RIVAL>: Hahaha!"
-	line "I thought you'd"
-	cont "turn up if I"
-	cont "waited here!"
+	text $53, $0B,$62,$0A,$6F,$0A,$6F,$0A,$6F,$0B,$66; RAW DATA : 	text $53, "『하하하!"
+	line $07,$09,$01,$B2,$05,$DD,$7F,$01,$B2,$02,$D9,$04,$3E,$02,$D9,$05,$18,$04,$89; RAW DATA : 	line "여기서 기다리다보면"
+	cont $07,$23,$01,$25,$03,$C3,$01,$4D,$7F,$05,$CD,$01,$02,$0A,$7F,$08,$26; RAW DATA : 	cont "올거라고 생각했지"
 
-	para "I guess TEAM"
-	line "ROCKET slowed you"
-	cont "down! Not that I"
-	cont "care!"
 
-	para "I saw you in"
-	line "SAFFRON, so I"
-	cont "decided to see if"
-	cont "you got better!"
+	para $05,$18,$06,$C6,$0A,$6F,$02,$CF,$7F,$03,$FE,$09,$2F,$02,$DC,$7F,$05,$C3,$02,$EB,$03,$FE; RAW DATA : 	para "보아하니 로켓단 상대로"
+	line $01,$4D,$05,$CD,$0A,$6F,$02,$C2,$01,$2D,$01,$10,$02,$77; RAW DATA : 	line "고생하는것같네"
+	cont $02,$4B,$7F,$07,$9F,$07,$8A,$7F,$06,$C6,$02,$CF,$08,$26,$04,$48,$0B,$66; RAW DATA : 	cont "내 일은 아니지만!"
+
+ 
+;영판만 유난히 !를 남발해서(일판은 남발하지않습니다) !는 알아서 적당히 조절하도록 하겠습니다
+	para $02,$8B,$03,$CB,$06,$63,$09,$EC,$07,$01,$05,$DD,$7F,$02,$6E,$7F,$05,$18,$01,$4D; RAW DATA : 	para "노랑시티에서 널 보고"
+	line $04,$B9,$7F,$07,$E6,$01,$AD,$07,$8A,$7F,$01,$76,$08,$9A,$06,$C6,$07,$E3,$02,$3A; RAW DATA : 	line "뭐 조금은 괜찮아졌나"
+	cont $05,$18,$03,$DF,$07,$22,$01,$25,$08,$26,$0B,$66; RAW DATA : 	cont "보러온거지!"
 	done
 
+  
+
 _SilphCo7Text_51ec8::
-	text "Oh ho!"
-	line "So, you are ready"
-	cont "for BOSS ROCKET!"
+	text $07,$4C,$07,$2D,$0B,$66; RAW DATA : 	text "우와!"
+	line $03,$FE,$09,$2F,$02,$DC,$07,$97,$7F,$05,$18,$06,$4A,$04,$36; RAW DATA : 	line "로켓단의 보스를"
+	cont $07,$B2,$07,$8B,$7F,$08,$08,$05,$61,$01,$01,$7F,$03,$28,$01,$25,$7F,$01,$10,$02,$77,$0B,$66; RAW DATA : 	cont "잡을 준비가 된거 같네!"
 	prompt
 
 _SilphCo7Text_51ecd::
-	text "<RIVAL>: How can"
-	line "I put this?"
+	text $53, $0B,$62,$04,$B9,$03,$C6,$01,$BE; RAW DATA : 	text $53, "『뭐랄까"
 
-	para "You're not good"
-	line "enough to play"
-	cont "with us big boys!"
+	para $02,$6D,$7F,$06,$C6,$08,$27,$7F,$02,$3A,$7F,$01,$10,$07,$8A,$7F,$01,$25,$04,$B0,$07,$8B; RAW DATA : 	para "넌 아직 나 같은 거물을"
+	line $05,$C3,$02,$EB,$0A,$6F,$01,$B2,$07,$03,$7F,$05,$2E,$07,$E7,$0A,$6F,$02,$D9,$02,$C2,$01,$25,$08,$26,$0B,$66; RAW DATA : 	line "상대하기엔 부족하다는거지!"
 	prompt
 
+ 
+
 _SilphCo7Text_51ed2::
-	text "Well, <PLAYER>!"
+	text $04,$B9,$7F; RAW DATA : 	text "뭐 "
+	db	$52, $0B,$66; RAW DATA : 	db	$52, "!"
 
-	para "I'm moving on up"
-	line "and ahead!"
+	para $02,$3D,$7F,$01,$A7,$03,$E3,$7F,$04,$75,$07,$CA,$7F,$01,$01,$07,$A6,$07,$8B,$01,$34,$0B,$66; RAW DATA : 	para "난 그럼 먼저 가있을게!"
 
-	para "By checking my"
-	line "#DEX, I'm"
-	cont "starting to see"
-	cont "what's strong and"
-	cont "how they evolve!"
 
-	para "I'm going to the"
-	line "#MON LEAGUE"
-	cont "to boot out the"
-	cont "ELITE FOUR!"
 
-	para "I'll become the"
-	line "world's most"
-	cont "powerful trainer!"
+	para $08,$D6,$01,$A9,$7F,$0A,$27,$09,$2F,$04,$93,$7F,$03,$15,$01,$08,$07,$8B,$7F,$0A,$AE,$07,$9E,$0A,$6F,$04,$89,$05,$DD; RAW DATA : 	para "최근 포켓몬 도감을 확인하면서"
+	line $06,$EE,$03,$82,$7F,$0A,$27,$09,$2F,$04,$93,$07,$9C,$7F,$01,$0D,$0A,$6F,$01,$4D; RAW DATA : 	line "어떤 포켓몬이 강하고"
+	cont $06,$EE,$03,$81,$01,$34,$7F,$08,$28,$0A,$AD,$0A,$6F,$02,$C2,$08,$26,$7F,$06,$CB,$06,$C6,$02,$62,$01,$25,$03,$47,$0B,$66; RAW DATA : 	cont "어떡게 진화하는지 알아냈거든!"
 
-	para "<PLAYER>, well"
-	line "good luck to you!"
-	cont "Don't sweat it!"
-	cont "Smell ya!"
+	para $02,$42,$07,$8A,$01,$27,$7F,$0A,$27,$09,$2F,$04,$93,$7F,$04,$3E,$01,$A7,$07,$01,$7F,$01,$01,$05,$DD; RAW DATA : 	para "남은건 포켓몬 리그에 가서"
+	line $05,$B7,$08,$B5,$07,$35,$07,$8B,$7F,$01,$C2,$02,$2B,$0A,$6F,$01,$34,$7F,$06,$B2,$03,$DF,$03,$AF,$04,$3E,$01,$4D; RAW DATA : 	line "사천왕을 깔끔하게 쓰러뜨리고"
+ 
+
+	para $05,$EC,$01,$48,$08,$D6,$01,$0D,$07,$97,$7F,$09,$DE,$03,$E9,$07,$9C,$02,$6A,$01,$01; RAW DATA : 	para "세계최강의 트레이너가"
+	line $03,$27,$02,$C2,$07,$9F,$04,$48,$7F,$02,$42,$06,$D2,$02,$DC,$04,$4B,$06,$B8,$0B,$66; RAW DATA : 	line "되는일만 남았단말씀!"
+
+ 
+
+	para $52, $7F,$02,$6A,$03,$15; RAW DATA : 	para $52, " 너도"
+	line $02,$6A,$03,$15,$7F,$07,$0D,$06,$69,$0A,$F7,$7F,$0A,$78,$05,$21,$0B,$66; RAW DATA : 	line "너도 열심히 해봐!"
+	cont $03,$3A,$08,$C4,$08,$26,$08,$26,$04,$4B,$01,$4D,$0B,$66; RAW DATA : 	cont "뒤쳐지지말고!"
+	cont $01,$A7,$03,$E3,$7F,$04,$D9,$07,$9C,$05,$61,$0B,$66; RAW DATA : 	cont "그럼 바이비!"
 	done
+

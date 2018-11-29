@@ -17,13 +17,13 @@ IF DEF(_RED)
     db CLEFAIRY
 	db NIDORINA
 ENDC
-IF DEF(_GREEN)
-    db PIKACHU
-	db HORSEA
-ENDC
-IF DEF(_BLUE)
+IF DEF(_GREEN);해외판블루
     db JIGGLYPUFF
 	db CUBONE
+ENDC
+IF DEF(_BLUE)
+    db PIKACHU
+	db HORSEA
 ENDC
 	db "@"
 
@@ -33,15 +33,15 @@ IF DEF(_RED)
 	coins 500
 	coins 1200
 ENDC
-IF DEF(_GREEN)
-	coins 150
-	coins 620
-	coins 1000
-ENDC
-IF DEF(_BLUE)
+IF DEF(_GREEN);해외판블루
 	coins 120
 	coins 750
 	coins 1200
+ENDC
+IF DEF(_BLUE)
+	coins 150
+	coins 620
+	coins 1000
 ENDC
 	db "@"
 
@@ -50,13 +50,13 @@ IF DEF(_RED)
 	db DRATINI
 	db SCYTHER
 ENDC
-IF DEF(_GREEN)
-	db CLEFABLE
-	db DRAGONAIR
-ENDC
-IF DEF(_BLUE)
+IF DEF(_GREEN);해외판블루
 	db PINSIR
 	db DRATINI
+ENDC
+IF DEF(_BLUE)
+	db CLEFABLE
+	db DRAGONAIR
 ENDC
 	db PORYGON
 	db "@"
@@ -67,15 +67,15 @@ IF DEF(_RED)
 	coins 5500
 	coins 9999
 ENDC
-IF DEF(_GREEN)
-	coins 2880
-	coins 5400
-	coins 8300
-ENDC
-IF DEF(_BLUE)
+IF DEF(_GREEN);해외판블루
 	coins 2500
 	coins 4600
 	coins 6500
+ENDC
+IF DEF(_BLUE)
+	coins 2880
+	coins 5400
+	coins 8300
 ENDC
 	db "@"
 

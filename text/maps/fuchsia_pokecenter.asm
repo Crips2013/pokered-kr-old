@@ -1,20 +1,16 @@
 _FuchsiaPokecenterText1::
-	text "You can't win"
-	line "with just one"
-	cont "strong #MON."
+	text $06,$C6,$04,$AB,$04,$3E,$7F,$01,$0D,$0A,$78,$03,$15; RAW DATA : 	text "아무리 강해도"
+	line $0A,$27,$09,$2F,$04,$93,$7F,$0A,$71,$04,$46,$04,$3E,$7F,$01,$01,$08,$26,$01,$4D,$02,$C2,$7F; RAW DATA : 	line "포켓몬 한마리 가지고는 "
+	cont $07,$9C,$01,$B6,$7F,$06,$26,$7F,$06,$F8,$06,$EE; RAW DATA : 	cont "이길 수 없어"
 
-	para "It's tough, but"
-	line "you have to raise"
-	cont "them evenly."
+	para $01,$A7,$03,$E8,$01,$34,$7F,$0A,$6F,$02,$C2,$01,$27,$7F,$0A,$FB,$03,$45,$02,$CF,$01,$BE; RAW DATA : 	para "그렇게 하는건 힘드니까"
+	line $07,$09,$03,$E5,$07,$8B,$7F,$01,$61,$01,$4D,$04,$17,$7F,$09,$80,$07,$66,$06,$DF,$0A,$78; RAW DATA : 	line "여럿을 골고루 키워야해"
 	done
 
 _FuchsiaPokecenterText3::
-	text "There's a narrow"
-	line "trail west of"
-	cont "VIRIDIAN CITY."
+	text $05,$C3,$03,$FF,$06,$63,$09,$EC,$7F,$05,$DD,$08,$6A,$07,$01; RAW DATA : 	text "상록시티 서쪽에"
+	line $07,$EC,$02,$D9,$03,$C5,$7F,$07,$20,$06,$06,$01,$B6,$07,$9C,$7F,$07,$A6,$06,$EE; RAW DATA : 	line "좁다란 오솔길이 있어"
 
-	para "It goes to #MON"
-	line "LEAGUE HQ."
-	cont "The HQ governs"
-	cont "all trainers."
+	para $01,$25,$01,$B4,$7F,$0A,$27,$09,$2F,$04,$93,$7F,$04,$3E,$01,$A7,$7F,$07,$D2,$06,$26,$08,$B3,$7F,$01,$34,$07,$9C,$09,$DE,$01,$4D; RAW DATA : 	para "거긴 포켓몬 리그 접수처 게이트고"
+	line $09,$DE,$03,$E9,$07,$9C,$02,$6A,$7F,$08,$E2,$07,$A4,$07,$8B,$7F,$09,$BB,$07,$B7,$0A,$78; RAW DATA : 	line "트레이너 출입을 통재해"
 	done

@@ -1,85 +1,81 @@
 _LavenderHouse1Text_1d8d1::
-	text "That's odd, MR.FUJI"
-	line "isn't here."
-	cont "Where'd he go?"
+	text $01,$A7,$01,$25,$08,$9C,$7F,$07,$9C,$05,$C3,$0A,$6F,$02,$77; RAW DATA : 	text "그거참 이상하네"
+	line $03,$4E,$02,$3A,$04,$AB,$7F,$0A,$72,$06,$C6,$04,$F6,$08,$26,$02,$C2,$7F,$07,$09,$01,$B2,$7F,$06,$C8,$7F,$01,$48,$05,$F5; RAW DATA : 	line "등나무 할아버지는 여기 안 계셔"
+	cont $06,$EE,$03,$60,$01,$01,$06,$65,$01,$25,$08,$26,$0B,$67; RAW DATA : 	cont "어디가신거지?"
 	done
 
 _LavenderHouse1Text_1d8d6::
-	text "MR.FUJI had been"
-	line "praying alone for"
-	cont "CUBONE's mother."
+	text $03,$4E,$02,$3A,$04,$AB,$7F,$02,$8B,$07,$9E,$07,$8A; RAW DATA : 	text "등나무 노인은"
+	line $09,$91,$01,$88,$04,$3E,$7F,$06,$EE,$04,$CC,$04,$36,$7F,$07,$77,$0A,$78; RAW DATA : 	line "탕구리 어미를 위해"
+	cont $0A,$A5,$07,$AA,$05,$DD,$7F,$01,$B2,$03,$15,$0A,$78,$07,$34,$06,$EE,$07,$44; RAW DATA : 	cont "혼자서 기도해왔어요"
 	done
 
 _LavenderHouse1Text_1d8f4::
-	text "This is really"
-	line "MR.FUJI's house."
+	text $07,$9C,$01,$67,$07,$9C,$7F,$03,$4E,$02,$3A,$04,$AB,$7F,$0A,$72,$06,$C6,$04,$F6,$08,$26,$07,$97; RAW DATA : 	text "이곳이 등나무 할아버지의"
+	line $08,$28,$08,$35,$7F,$08,$2D,$07,$9C,$03,$C3,$01,$88; RAW DATA : 	line "진짜 집이라구"
 
-	para "He's really kind!"
+	para $01,$A7,$02,$C2,$7F,$07,$D4,$04,$4B,$7F,$07,$9E,$07,$D4,$07,$9C,$7F,$04,$49,$06,$C6,$0B,$66; RAW DATA : 	para "그는 정말 인정이 많아!"
 
-	para "He looks after"
-	line "abandoned and"
-	cont "orphaned #MON!"
+	para $01,$A7,$02,$C2,$7F,$04,$F6,$03,$F1,$08,$26,$01,$25,$02,$3A,$7F,$01,$4D,$06,$C6,$01,$01,$7F,$03,$28; RAW DATA : 	para "그는 버려지거나 고아가 된"
+	line $0A,$27,$09,$2F,$04,$93,$03,$49,$07,$8B,$7F,$03,$05,$03,$F1,$07,$2D,$7F,$03,$19,$05,$18,$06,$C6,$08,$10,$0B,$66; RAW DATA : 	line "포켓몬들을 데려와 돌보아줘!"
 	done
 
 _LavenderHouse1Text_1d8f9::
-	text "It's so warm!"
-	line "#MON are so"
-	cont "nice to hug!"
+	text $07,$2D,$7F,$03,$6B,$03,$B6,$0A,$78,$0B,$66; RAW DATA : 	text "와 따뜻해!"
+	line $0A,$27,$09,$2F,$04,$93,$07,$8A,$7F,$01,$E8,$06,$C8,$02,$C2,$01,$34,$7F,$07,$D4,$04,$4B,$7F,$07,$F1,$06,$C6,$0B,$66; RAW DATA : 	line "포켓몬은 껴안는게 정말 좋아!"
 	done
 
 _LavenderHouse1Text3::
-	text "PSYDUCK: Gwappa!@@"
+	text $01,$4D,$03,$C3,$09,$F4,$02,$F6,$0B,$62,$09,$F4,$02,$F5,$06,$EF,$0B,$68,$0B,$66,$50,$50; RAW DATA : 	text "고라파덕『파더억-!@@"
 
 _LavenderHouse1Text4::
-	text "NIDORINO: Gaoo!@@"
+	text $02,$CF,$03,$45,$04,$3E,$02,$8B,$0B,$62,$02,$CF,$03,$45,$02,$CF,$03,$45,$0B,$66,$50,$50; RAW DATA : 	text "니드리노『니드니드!@@"
 
 _LavenderHouse1Text_1d94c::
-	text "MR.FUJI: <PLAYER>."
+	text $03,$4E,$02,$3A,$04,$AB,$7F,$0A,$72,$06,$C6,$04,$F6,$08,$26,$0B,$62; RAW DATA : 	text "등나무 할아버지『"
+	db $52, $01,$8A; RAW DATA : 	db $52, "군"
 
-	para "Your #DEX quest"
-	line "may fail without"
-	cont "love for your"
-	cont "#MON."
+	para $0A,$27,$09,$2F,$04,$93,$7F,$03,$15,$01,$08,$7F,$08,$A4,$07,$4C,$01,$B2,$01,$01; RAW DATA : 	para "포켓몬 도감 채우기가"
+	line $06,$67,$0A,$00,$0A,$6F,$01,$34,$7F,$03,$28,$02,$D9,$04,$89; RAW DATA : 	line "실패하게 된다면"
+	cont $01,$A7,$01,$27,$7F,$06,$C6,$04,$46,$7F,$05,$B7,$03,$CB,$04,$DE,$08,$26,$7F,$04,$98,$0A,$71; RAW DATA : 	cont "그건 아마 사랑받지 못한"
+	cont $0A,$27,$09,$2F,$04,$93,$03,$77,$04,$AE,$07,$9F,$01,$34,$02,$D9,$0B,$6C; RAW DATA : 	cont "포켓몬때문일게다."
 
-	para "I think this may"
-	line "help your quest."
+	para $02,$4B,$7F,$05,$CD,$01,$02,$07,$01,$02,$C2,$7F,$07,$9C,$01,$34; RAW DATA : 	para "내 생각에는 이게"
+	line $03,$15,$07,$62,$07,$9C,$7F,$03,$29,$01,$25,$7F,$01,$10,$01,$88,$02,$3A; RAW DATA : 	line "도움이 될거 같구나"
 	prompt
 
 _ReceivedFluteText::
-	text "<PLAYER> received"
-	line "a @"
+	text $52, $02,$C2,$0B,$64,$07,$8A,$0B,$65; RAW DATA : 	text $52, "는(은)"
+	line $50; RAW DATA : 	line "@"
 	TX_RAM wcf4b
-	text "!@@"
+	text $04,$36,$0B,$64,$07,$8B,$0B,$65,$7F,$06,$F2,$06,$FA,$02,$D9,$0B,$66,$50,$50; RAW DATA : 	text "를(을) 얻었다!@@"
 
 _FluteExplanationText::
 	db $0
-	para "Upon hearing #"
-	line "FLUTE, sleeping"
-	cont "#MON will"
-	cont "spring awake."
-
-	para "It works on all"
-	line "sleeping #MON."
+	para $0A,$27,$09,$2F,$04,$93,$0A,$67,$04,$3E,$04,$36,$7F,$05,$32,$04,$89; RAW DATA : 	para "포켓몬피리를 불면"
+	line $07,$AA,$01,$4D,$07,$A6,$02,$F8,$7F,$0A,$27,$09,$2F,$04,$93,$07,$9C,$7F,$07,$9F,$06,$EE,$02,$3D,$02,$DC,$02,$D9; RAW DATA : 	line "자고있던 포켓몬이 일어난단다"
+	
+	para $07,$AA,$01,$4D,$07,$A6,$02,$C2,$7F,$0A,$27,$09,$2F,$04,$93,$07,$01,$01,$34; RAW DATA : 	para "자고있는 포켓몬에게"
+	line $05,$32,$06,$EE,$05,$18,$03,$F5; RAW DATA : 	line "불어보렴"
 	done
 
 _FluteNoRoomText::
-	text "You must make"
-	line "room for this!"
+	text $07,$9C,$7F,$07,$9C,$05,$C3,$7F,$03,$49,$7F,$06,$26,$7F,$06,$F8,$06,$EE,$0B,$66; RAW DATA : 	text "이 이상 들 수 없어!"
 	done
 
 _MrFujiAfterFluteText::
-	text "MR.FUJI: Has my"
-	line "FLUTE helped you?"
+	text $03,$4E,$02,$3A,$04,$AB,$7F,$0A,$72,$06,$C6,$04,$F6,$08,$26,$0B,$62,$02,$4B,$7F,$0A,$67,$04,$3E,$01,$01; RAW DATA : 	text "등나무 할아버지『내 피리가"
+	line $03,$15,$07,$62,$07,$9C,$7F,$03,$27,$02,$F8,$0B,$67; RAW DATA : 	line "도움이 되던?"
 	done
 
 _LavenderHouse1Text6::
-	text "#MON Monthly"
-	line "Grand Prize"
-	cont "Drawing!"
+	text $0A,$27,$09,$2F,$04,$93,$07,$8B; RAW DATA : 	text "포켓몬을"
+	line $08,$06,$07,$D6,$03,$FE,$7F,$07,$9C,$04,$F8,$02,$DE; RAW DATA : 	line "주제로 이번달"
+	cont $08,$D6,$07,$4C,$06,$26,$07,$AB,$7F,$01,$A7,$04,$42,$0B,$66; RAW DATA : 	cont "최우수작 그림!"
 
-	para "The application"
-	line "form is..."
+	para $07,$9C,$7F,$06,$65,$08,$BB,$05,$DD,$7F,$06,$E7,$06,$64,$07,$8B; RAW DATA : 	para "이 신청서 양식을"
+	line $04,$46,$07,$CA,$0B,$6A,$0B,$6A; RAW DATA : 	line "마저……"
 
-	para "Gone! It's been"
-	line "clipped out!"
+	para $03,$26,$02,$D9,$0B,$66; RAW DATA : 	para "됐다!"
+	line $02,$D9,$7F,$07,$20,$03,$F8,$06,$EE,$0B,$66; RAW DATA : 	line "다 오렸어!"
 	done

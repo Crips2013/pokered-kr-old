@@ -52,8 +52,9 @@ _Route25EndBattleText4::
 IF DEF(_YELLOW)
 	text $06,$4D,$03,$E3,$0A,$61,$01,$01,$7F,$07,$34,$06,$EE,$0B,$66; RAW DATA : 	text "슬럼프가 왔어!"
 ELSE
-	text "I was in"
-	line "bad condition!"
+	; text "컨디션이 나쁘군!"
+	text $09, $21, $03, $60, $05, $F7, $07, $9C, " ", $02, $3A, $05, $AA, $01, $8A, $0B, $66
+
 ENDC
 	prompt
 

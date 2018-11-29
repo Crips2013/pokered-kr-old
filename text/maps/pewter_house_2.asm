@@ -1,19 +1,14 @@
 _PewterHouse2Text1::
-	text "#MON learn new"
-	line "techniques as"
-	cont "they grow!"
+	text $0A,$27,$09,$2F,$04,$93,$07,$8A,$7F,$05,$EA,$07,$B5,$0A,$6F,$04,$89,$05,$DD; RAW DATA : 	text "포켓몬은 성장하면서"
+	line $05,$C5,$03,$FE,$07,$4E,$7F,$01,$B2,$06,$2A,$07,$8B,$7F,$04,$E8,$07,$66,$0B,$66; RAW DATA : 	line "새로운 기술을 배워!"
 
-	para "But, some moves"
-	line "must be taught by"
-	cont "the trainer!"
+	para $0A,$6F,$08,$26,$04,$48,$7F,$04,$8E,$04,$8E,$7F,$01,$B2,$06,$2A,$03,$49,$07,$8A; RAW DATA : 	para "하지만 몇몇 기술들은"
+	line $09,$DE,$03,$E9,$07,$9C,$02,$6A,$01,$01,$7F,$01,$01,$04,$33,$08,$C4,$08,$10,$06,$DF,$0A,$78,$0B,$66; RAW DATA : 	line "트레이너가 가르쳐줘야해!"
 	done
 
 _PewterHouse2Text2::
-	text "#MON become"
-	line "easier to catch"
-	cont "when they are"
-	cont "hurt or asleep!"
+	text $0A,$27,$09,$2F,$04,$93,$07,$8A,$7F,$06,$E0,$0A,$78,$08,$26,$01,$25,$02,$3A,$7F,$07,$B1,$03,$49,$04,$89; RAW DATA : 	text "포켓몬은 약해지거나 잠들면"
+	line $06,$41,$01,$34,$7F,$07,$B2,$07,$8B,$7F,$06,$26,$7F,$07,$A6,$06,$EE,$0B,$66; RAW DATA : 	line "쉽게 잡을 수 있어!"
 
-	para "But, it's not a"
-	line "sure thing!"
+	para $04,$B0,$04,$00,$7F,$07,$B2,$0A,$F9,$02,$D9,$02,$C2,$7F,$05,$18,$07,$B5,$07,$8A,$7F,$06,$F8,$08,$26,$04,$48,$0B,$66; RAW DATA : 	para "물론 잡힌다는 보장은 없지만!"
 	done

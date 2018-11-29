@@ -1,26 +1,25 @@
 _FuchsiaMeetingRoomText1::
-	text "We nicknamed the"
-	line "WARDEN SLOWPOKE."
+	text $07,$4C,$04,$3E,$02,$C2,$7F,$07,$68,$07,$B5,$07,$01,$01,$34,$7F,$06,$DF,$03,$17,$07,$88,$03,$FE; RAW DATA : 	text "우리는 원장에게 야돈으로"
+	line $05,$10,$04,$8D,$07,$8B,$7F,$05,$39,$07,$14,$06,$EE; RAW DATA : 	line "별명을 붙였어"
 
-	para "He and SLOWPOKE"
-	line "both look vacant!"
+	para $07,$68,$07,$B5,$01,$6A,$7F,$06,$DF,$03,$17,$07,$8A; RAW DATA : 	para "원장과 야돈은"
+	line $03,$31,$02,$D9,$7F,$04,$7B,$0A,$71,$0A,$35,$07,$D4,$07,$9C,$01,$25,$03,$47,$0B,$66; RAW DATA : 	line "둘다 멍한표정이거든!"
 	done
 
 _FuchsiaMeetingRoomText2::
-	text "SLOWPOKE is very"
-	line "knowledgeable"
-	cont "about #MON!"
+	text $06,$DF,$03,$17,$06,$BE,$02,$C2,$7F,$0A,$27,$09,$2F,$04,$93,$07,$01,$7F,$02,$EB,$0A,$78,$05,$DD; RAW DATA : 	text "야돈씨는 포켓몬에 대해서"
+	line $04,$DA,$0A,$70,$02,$D9,$06,$64,$0A,$78,$0B,$66; RAW DATA : 	line "박학다식해!"
 
-	para "He even has some"
-	line "fossils of rare,"
-	cont "extinct #MON!"
+	para $01,$34,$02,$D9,$01,$01,$7F,$01,$01,$08,$26,$01,$4D,$7F,$07,$A6,$02,$C2; RAW DATA : 	para "게다가 가지고 있는"
+	line $0A,$F1,$01,$9D,$0A,$71,$7F,$0A,$AD,$05,$DE,$7F,$04,$8E,$01,$13,$01,$01; RAW DATA : 	line "희귀한 화석 몇개가"
+	cont $04,$8A,$07,$EE,$03,$28,$7F,$0A,$27,$09,$2F,$04,$93,$07,$9C,$06,$DF,$0B,$66; RAW DATA : 	cont "멸종된 포켓몬이야!"
 	done
 
 _FuchsiaMeetingRoomText3::
-	text "SLOWPOKE came in,"
-	line "but I couldn't"
-	cont "understand him."
+	text $06,$DF,$03,$17,$06,$BE,$01,$01,$7F,$07,$34,$06,$FA,$02,$C2,$03,$05; RAW DATA : 	text "야돈씨가 왔었는데"
+	line $04,$B9,$03,$C3,$01,$4D,$7F,$0A,$6F,$02,$C2,$08,$26; RAW DATA : 	line "뭐라고 하는지"
+	cont $07,$CC,$0A,$94,$7F,$06,$CB,$06,$C6,$03,$48,$07,$8B,$06,$26,$7F,$06,$F8,$06,$FA,$06,$EE; RAW DATA : 	cont "전혀 알아듣을수 없었어"
 
-	para "I think he's got"
-	line "a speech problem!"
+	para $06,$C6,$04,$AB,$03,$D1,$03,$15,$7F,$02,$4B,$7F,$05,$CD,$01,$02,$07,$01,$02,$C2; RAW DATA : 	para "아무래도 내 생각에는"
+	line $04,$DF,$07,$8D,$07,$01,$7F,$04,$AE,$07,$D6,$01,$01,$7F,$05,$CD,$01,$B4,$01,$2D,$01,$10,$06,$C6,$0B,$66; RAW DATA : 	line "발음에 문제가 생긴것같아!"
 	done

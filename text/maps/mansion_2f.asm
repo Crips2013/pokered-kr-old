@@ -1,47 +1,42 @@
 _Mansion2BattleText1::
-	text "I can't get out!"
-	line "This old place is"
-	cont "one big puzzle!"
+	text $07,$09,$01,$B2,$05,$DD,$7F,$02,$3A,$01,$05,$06,$26,$01,$01,$7F,$06,$F8,$06,$EE,$0B,$66; RAW DATA : 	text "여기서 나갈수가 없어!"
+	line $07,$9C,$01,$67,$7F,$07,$AA,$08,$BC,$01,$01,$7F,$01,$25,$02,$EB,$0A,$71,$7F,$04,$CC,$01,$93,$07,$9C,$06,$DF,$0B,$66; RAW DATA : 	line "이곳 자체가 거대한 미궁이야!"
 	done
 
 _Mansion2EndBattleText1::
-	text "Oh no!"
-	line "My bag of loot!"
+	text $06,$C6,$07,$9C,$01,$4D,$0B,$66; RAW DATA : 	text "아이고!"
+	line $01,$01,$04,$E6,$07,$8B,$7F,$03,$15,$03,$2F,$04,$62,$06,$D2,$06,$EE,$0B,$66; RAW DATA : 	line "가방을 도둑맞았어!"
 	prompt
 
 _Mansion2AfterBattleText1::
-	text "Switches open and"
-	line "close alternating"
-	cont "sets of doors!"
+	text $06,$4A,$07,$77,$09,$01,$04,$36,$7F,$02,$4B,$04,$3E,$07,$23,$04,$3E,$04,$89; RAW DATA : 	text "스위치를 내리올리면"
+	line $08,$97,$02,$DC,$04,$47,$7F,$04,$E8,$09,$01,$01,$01,$7F,$04,$D9,$02,$1E,$06,$EE,$0B,$66; RAW DATA : 	line "차단막 배치가 바뀌어!"
 	done
 
 _Mansion2Text3::
-	text "Diary: July 5"
-	line "Guyana,"
-	cont "South America"
+	text $02,$3F,$08,$35,$7F,$0B,$6A,$0B,$6A,$7F,$FD,$07,$69,$7F,$FB,$07,$9F; RAW DATA : 	text "날짜 …… 7월 5일"
+	line $07,$D6,$04,$91,$7F,$0B,$6A,$0B,$6A,$7F,$02,$42,$06,$C6,$04,$7E,$04,$3E,$09,$0B,$7F,$01,$B2,$06,$C6,$02,$3A; RAW DATA : 	line "제목 …… 남아메리카 기아나"
 
-	para "A new #MON was"
-	line "discovered deep"
-	cont "in the jungle."
+	para $01,$BD,$07,$8A,$7F,$07,$D4,$01,$AB,$07,$01,$05,$DD; RAW DATA : 	para "깊은 정글에서"
+	line $05,$C5,$03,$FE,$07,$4E,$7F,$0A,$27,$09,$2F,$04,$93,$07,$9C,$7F,$04,$DF,$01,$3F,$03,$26,$02,$D9; RAW DATA : 	line "새로운 포켓몬이 발견됐다"
 	done
 
 _Mansion2Text4::
-	text "Diary: July 10"
-	line "We christened the"
-	cont "newly discovered"
-	cont "#MON, MEW."
+	text $02,$3F,$08,$35,$7F,$0B,$6A,$0B,$6A,$7F,$FD,$07,$69,$7F,$F7,$F6,$07,$9F; RAW DATA : 	text "날짜 …… 7월 10일"
+	line $07,$D6,$04,$91,$7F,$0B,$6A,$0B,$6A,$7F,$04,$C2; RAW DATA : 	line "제목 …… 뮤"
+	
+	para $06,$65,$07,$EE,$0A,$27,$09,$2F,$04,$93,$07,$01,$01,$34,$7F,$07,$9C,$04,$37,$07,$8B,$7F,$05,$39,$07,$14,$02,$D9; RAW DATA : 	para "신종포켓몬에게 이름을 붙였다"
+	line $04,$C2; RAW DATA : 	line "뮤"
 	done
 
 _Mansion2Text_520c2::
-	text "A secret switch!"
-
-	para "Press it?"
+	text $05,$61,$04,$D0,$7F,$06,$4A,$07,$77,$09,$01,$07,$9C,$02,$D9,$0B,$66; RAW DATA : 	text "비밀 스위치이다!"
+	line $07,$AB,$03,$1F,$06,$63,$09,$83,$01,$BE,$0B,$67; RAW DATA : 	line "작동시킬까?"
 	done
-
 _Mansion2Text_520c7::
-	text "Who wouldn't?"
+	text $07,$F1,$06,$C6,$0B,$66,$7F,$07,$AB,$03,$1F,$06,$63,$09,$80,$07,$AA,$0B,$66; RAW DATA : 	text "좋아! 작동시키자!"
 	prompt
 
 _Mansion2Text_520cc::
-	text "Not quite yet!"
+	text $07,$AB,$03,$1F,$06,$63,$09,$80,$08,$26,$7F,$04,$4B,$07,$AA,$0B,$6A,$0B,$6A; RAW DATA : 	text "작동시키지 말자……"
 	done

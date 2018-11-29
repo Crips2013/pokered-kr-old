@@ -1,13 +1,11 @@
 _SaffronMartText2::
-	text "MAX REPEL lasts"
-	line "longer than SUPER"
-	cont "REPEL for keeping"
-	cont "weaker #MON"
-	cont "away!"
+	text $01,$61,$03,$45,$7F,$06,$4A,$0A,$61,$03,$E9,$07,$9C,$02,$C2,$7F,$06,$67,$04,$F6,$7F,$06,$4A,$0A,$61,$03,$E9,$07,$9C,$05,$18,$02,$D9; RAW DATA : 	text "골드 스프레이는 실버 스프레이보다"
+	line $02,$F5,$7F,$01,$B4,$7F,$08,$26,$06,$03,$06,$63,$01,$03,$07,$88,$03,$FE,$7F,$06,$E0,$0A,$71,$0A,$27,$09,$2F,$04,$93,$07,$9C; RAW DATA : 	line "더 긴 지속시간으로 약한포켓몬이"
+	cont $06,$DF,$05,$CD,$07,$01,$05,$DD,$7F,$06,$C8,$7F,$02,$3A,$07,$20,$01,$34,$7F,$0A,$6F,$08,$26,$0B,$66; RAW DATA : 	cont "야생에서 안 나오게 하지!"
 	done
 
 _SaffronMartText3::
-	text "REVIVE is costly,"
-	line "but it revives"
-	cont "fainted #MON!"
+	text $01,$B2,$03,$F2,$07,$97,$7F,$07,$E6,$01,$02,$07,$8A,$7F,$07,$EB,$7F,$05,$61,$06,$6E,$01,$B4,$7F,$0A,$78,$03,$15; RAW DATA : 	text "기력의 조각은 좀 비싸긴 해도"
+	line $07,$9C,$01,$29,$03,$FE,$7F,$01,$B2,$07,$CD,$0A,$71,$7F,$0A,$27,$09,$2F,$04,$93,$07,$8B; RAW DATA : 	line "이걸로 기절한 포켓몬을"
+	cont $0A,$B8,$05,$19,$06,$63,$09,$83,$7F,$06,$26,$7F,$07,$A6,$06,$EE,$0B,$66; RAW DATA : 	cont "회복시킬 수 있어!"
 	done

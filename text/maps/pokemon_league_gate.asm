@@ -1,19 +1,17 @@
 _Route22GateText_1e704::
-	text "Only truly skilled"
-	line "trainers are"
-	cont "allowed through."
+	text $06,$27,$03,$F3,$03,$28,$7F,$09,$DE,$03,$E9,$07,$9C,$02,$6A,$04,$48,$07,$9C; RAW DATA : 	text "숙련된 트레이너만이"
+	line $09,$BB,$01,$6A,$04,$36,$7F,$0A,$83,$03,$C4,$04,$DE,$07,$8A,$7F,$01,$B6,$07,$A4,$02,$CF,$02,$D9; RAW DATA : 	line "통과를 허락받은 길입니다"
 
-	para "You don't have the"
-	line "BOULDERBADGE yet!@@"
+	para $06,$C6,$08,$27,$7F,$01,$A7,$04,$40,$04,$E8,$08,$26,$04,$36; RAW DATA : 	para "아직 그린배지를"
+	line $01,$01,$08,$26,$08,$26,$7F,$04,$98,$0A,$7F,$01,$8A,$07,$44,$0B,$66,$50,$50; RAW DATA : 	line "가지지 못했군요!@@"
 
 _Route22GateText_1e715::
 	db $0
-	para "The rules are"
-	line "rules. I can't"
-	cont "let you pass."
-	done
+	para $07,$FB,$06,$0B,$0A,$75,$02,$CF,$02,$D9; RAW DATA : 	para "죄송합니다"
+	line $09,$BB,$01,$6A,$06,$63,$09,$31,$7F,$08,$09,$7F,$06,$26,$7F,$06,$F8,$06,$60,$02,$CF,$02,$D9; RAW DATA : 	line "통과시켜 줄 수 없습니다"
+	Done
 
 _Route22GateText_1e71a::
-	text "Oh! That is the"
-	line "BOULDERBADGE!"
-	cont "Go right ahead!@@"
+	text $07,$20,$0B,$66,$7F,$01,$A7,$01,$27,$7F,$01,$A7,$04,$40,$04,$E8,$08,$26,$01,$8A,$07,$44,$0B,$66; RAW DATA : 	text "오! 그건 그린배지군요!"
+	line $08,$26,$02,$3A,$01,$01,$05,$EC,$07,$44,$0B,$66,$50,$50; RAW DATA : 	line "지나가세요!@@"
+

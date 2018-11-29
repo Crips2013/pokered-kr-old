@@ -12,12 +12,12 @@ MansionMons1:
 		db 37,WEEZING
 		db 39,MUK
 	ENDC
-	IF DEF(_GREEN)
+	IF DEF(_GREEN);해외판블루
 		db 32,GRIMER
 		db 30,GRIMER
 		db 34,PONYTA
 		db 30,PONYTA
-		db 34,GROWLITHE
+		db 34,VULPIX
 		db 32,PONYTA
 		db 30,KOFFING
 		db 28,PONYTA
@@ -29,11 +29,12 @@ MansionMons1:
 		db 30,GRIMER
 		db 34,PONYTA
 		db 30,PONYTA
-		db 34,VULPIX
+		db 34,GROWLITHE
 		db 32,PONYTA
 		db 30,KOFFING
 		db 28,PONYTA
 		db 37,MUK
 		db 39,WEEZING
+
 	ENDC
 	db $00

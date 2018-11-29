@@ -13,4 +13,5 @@ _CopycatsHouse1FText2::
 	done 
 
 _CopycatsHouse1FText3::
-	text $03,$E0,$09,$80,$0B,$
+	text $03,$E0,$09,$80,$0B,$62,$03,$E0,$09,$80,$0B,$66,$50,$50; RAW DATA : 	text "럭키『럭키!@@"
+

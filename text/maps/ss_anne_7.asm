@@ -1,62 +1,61 @@
 _SSAnne7RubText::
-	text "CAPTAIN: Ooargh..."
-	line "I feel hideous..."
-	cont "Urrp! Seasick..."
+	text $05,$E1,$07,$B5,$0B,$62,$06,$EE,$07,$4C,$0B,$6A,$0B,$6A; RAW DATA : 	text "선장『어우……"
+	line $06,$03,$07,$9C,$7F,$03,$3A,$08,$2D,$0A,$94,$7F,$08,$2A,$01,$2D,$7F,$01,$10,$06,$C6,$0B,$6A,$0B,$6A; RAW DATA : 	line "속이 뒤집혀 질것 같아……"
+	cont $07,$4C,$07,$63,$0B,$66,$7F,$04,$EE,$04,$76,$04,$CC,$01,$01,$0B,$6A,$0B,$6A; RAW DATA : 	cont "우웁! 뱃멀미가……"
 
-	para "<PLAYER> rubbed"
-	line "the CAPTAIN's"
-	cont "back!"
+	para $52, $02,$C2,$0B,$64,$07,$8A,$0B,$65; RAW DATA : 	para $52, "는(은)"
+	line $05,$E1,$07,$B5,$07,$97,$7F,$03,$4E,$07,$8B,$7F,$04,$AE,$08,$2A,$03,$DF,$08,$11,$02,$D9,$0B,$66; RAW DATA : 	line "선장의 등을 문질러줬다!"
 
-	para "Rub-rub..."
-	line "Rub-rub...@@"
+	para $04,$AE,$08,$2A,$04,$AE,$08,$2A,$0B,$6A,$0B,$6A; RAW DATA : 	para "문질문질……"
+	line $04,$AE,$08,$2A,$04,$AE,$08,$2A,$0B,$6A,$0B,$6A,$50,$50; RAW DATA : 	line "문질문질……@@"
 
 _ReceivingHM01Text::
-	text "CAPTAIN: Whew!"
-	line "Thank you! I"
-	cont "feel much better!"
+	text $05,$E1,$07,$B5,$0B,$62,$0A,$DE,$0B,$66,$7F,$01,$4D,$04,$4F,$01,$88,$02,$3A,$0B,$66; RAW DATA : 	text "선장『휴! 고맙구나!"
+	line $01,$13,$07,$4E,$0A,$6F,$01,$8A,$0B,$66; RAW DATA : 	line "개운하군!"
 
-	para "You want to see"
-	line "my CUT technique?"
+	para $02,$4B,$7F,$0A,$3E,$05,$03,$01,$B2,$7F,$01,$B2,$06,$2A,$07,$8B; RAW DATA : 	para "내 풀베기 기술을"
+	line $05,$18,$01,$4D,$06,$6D,$02,$D9,$01,$4D,$0B,$67; RAW DATA : 	line "보고싶다고?"
 
-	para "I could show you"
-	line "if I wasn't ill..."
+	para $06,$C6,$0A,$61,$08,$26,$04,$48,$7F,$06,$CA,$06,$D2,$02,$F5,$03,$C3,$03,$15; RAW DATA : 	para "아프지만 않았더라도"
+	line $05,$18,$07,$09,$08,$11,$01,$3A,$02,$D9,$04,$48,$0B,$6A,$0B,$6A; RAW DATA : 	line "보여줬겠다만……"
 
-	para "I know! You can"
-	line "have this!"
+	para $06,$C6,$7F,$01,$A7,$03,$D1,$0B,$66; RAW DATA : 	para "아 그래!"
+	line $07,$9C,$01,$29,$7F,$01,$01,$08,$26,$03,$F5,$0B,$66; RAW DATA : 	line "이걸 가지렴!"
 
-	para "Teach it to your"
-	line "#MON and you"
-	cont "can see it CUT"
-	cont "any time!"
+ 
+
+	para $0A,$27,$09,$2F,$04,$93,$07,$01,$01,$34,$7F,$01,$01,$04,$33,$09,$01,$04,$89; RAW DATA : 	para "포켓몬에게 가르치면"
+	line $06,$F0,$07,$D6,$03,$47,$7F,$0A,$3E,$05,$03,$01,$B2,$04,$36,$7F,$05,$1C,$7F,$06,$26,$7F,$07,$A6,$02,$DC,$02,$D9,$0B,$66; RAW DATA : 	line "언제든 풀베기를 볼 수 있단다!"
 	prompt
 
 _ReceivedHM01Text::
-	text "<PLAYER> got"
-	line "@"
+	text $52, $02,$C2,$0B,$64,$07,$8A,$0B,$65; RAW DATA : 	text $52, "는(은)"
+	line $50; RAW DATA : 	line "@"
 	TX_RAM wcf4b
-	text "!@@"
+	text $04,$36,$0B,$64,$07,$8B,$0B,$65,$7F,$06,$F2,$06,$FA,$02,$D9,$0B,$66,$50,$50; RAW DATA : 	text "를(을) 얻었다!@@"
 
 _SSAnne7Text_61932::
-	text "CAPTAIN: Whew!"
+	text $05,$E1,$07,$B5,$0B,$62,$07,$20,$07,$4C,$0B,$66; RAW DATA : 	text "선장『오우!"
 
-	para "Now that I'm not"
-	line "sick any more, I"
-	cont "guess it's time."
-	done
+
+
+	para $07,$9C,$07,$D6,$7F,$04,$76,$04,$CC,$01,$01,$7F,$01,$01,$05,$FC,$01,$8A; RAW DATA : 	para "이제 멀미가 가셨군"
+	line $06,$4D,$06,$4D,$7F,$06,$63,$01,$03,$07,$9C,$7F,$03,$27,$02,$C2,$01,$88,$02,$3A; RAW DATA : 	line "슬슬 시간이 되는구나"
+	Done
 
 _HM01NoRoomText::
-	text "Oh no! You have"
-	line "no room for this!"
+	text $07,$9C,$03,$E1,$0B,$66; RAW DATA : 	text "이런!"
+	line $02,$F5,$07,$9C,$05,$C3,$7F,$03,$49,$7F,$06,$26,$7F,$06,$F8,$06,$EE,$0B,$66; RAW DATA : 	line "더이상 들 수 없어!"
 	done
 
 _SSAnne7Text2::
-	text "Yuck! Shouldn't"
-	line "have looked!"
+	text $07,$4C,$07,$71,$0B,$66; RAW DATA : 	text "우웩!"
+	line $05,$18,$02,$C2,$01,$34,$7F,$06,$C6,$02,$CF,$06,$FA,$02,$D9,$0B,$66; RAW DATA : 	line "보는게 아니었다!"
 	done
 
+ 
+
 _SSAnne7Text3::
-	text "How to Conquer"
-	line "Seasickness..."
-	cont "The CAPTAIN's"
-	cont "reading this!"
+	text $05,$E1,$07,$B5,$07,$9C,$7F,$07,$A0,$02,$F8,$7F,$08,$A5,$07,$9C,$02,$D9,$0B,$66; RAW DATA : 	text "선장이 읽던 책이다!"
+	line $04,$EE,$04,$76,$04,$CC,$04,$36,$7F,$01,$A8,$05,$19,$0A,$6F,$02,$C2,$7F,$04,$E6,$04,$FD,$0B,$6A,$0B,$6A; RAW DATA : 	line "뱃멀미를 극복하는 방법……"
 	done

@@ -1,26 +1,23 @@
 _KogaBeforeBattleText::
-	text "KOGA: Fwahahaha!"
+	text $03,$16,$06,$26,$0B,$62,$09,$79,$09,$79,$09,$79,$09,$7A,$0B,$66; RAW DATA : 	text "독수『크크크큭!"
 
-	para "A mere child like"
-	line "you dares to"
-	cont "challenge me?"
+	para $01,$3C,$07,$4C,$7F,$02,$6A,$01,$10,$07,$8A,$7F,$06,$D6,$06,$0B,$07,$9C,$01,$01; RAW DATA : 	para "겨우 너같은 애송이가"
+	line $01,$08,$0A,$F7,$7F,$02,$3A,$0A,$71,$09,$A7; RAW DATA : 	line "감히 나한테"
+	cont $03,$15,$07,$CC,$0A,$6F,$01,$3A,$02,$DC,$7F,$04,$4B,$07,$9C,$08,$26,$0B,$67; RAW DATA : 	cont "도전하겠단 말이지?"
 
-	para "Very well, I"
-	line "shall show you"
-	cont "true terror as a"
-	cont "ninja master!"
+	para $04,$46,$07,$8D,$07,$01,$7F,$03,$49,$06,$FA,$02,$D9; RAW DATA : 	para "마음에 들었다"
+	line $02,$D1,$07,$AA,$7F,$04,$46,$06,$4A,$09,$9D,$03,$FE,$06,$81; RAW DATA : 	line "닌자 마스터로써"
+	cont $08,$28,$08,$35,$7F,$03,$2E,$03,$F1,$07,$62,$07,$8B; RAW DATA : 	cont "진짜 두려움을"
+	cont $05,$18,$07,$09,$08,$06,$03,$15,$03,$FF,$7F,$0A,$6F,$04,$46,$0B,$66; RAW DATA : 	cont "보여주도록 하마!"
 
-	para "You shall feel"
-	line "the despair of"
-	cont "poison and sleep"
-	cont "techniques!"
+	para $03,$16,$01,$6A,$7F,$06,$26,$04,$89,$01,$B2,$03,$FE; RAW DATA : 	para "독과 수면기로"
+	line $07,$CD,$04,$61,$07,$8B,$7F,$02,$C0,$02,$32,$01,$34,$7F,$0A,$78,$08,$06,$01,$3A,$02,$D9,$0B,$66; RAW DATA : 	line "절망을 느끼게 해주겠다!"
 	done
 
 _KogaAfterBattleText::
-	text "Humph!"
-	line "You have proven"
-	cont "your worth!"
+	text $0A,$ED,$0B,$66; RAW DATA : 	text "흡!"
+	line $02,$77,$7F,$01,$01,$09,$01,$04,$36,$7F,$08,$25,$04,$8D,$0A,$7F,$01,$8A,$0B,$66; RAW DATA : 	line "네 가치를 증명했군!"
 
-	para "Here! Take the"
-	line "SOULBADGE!"
+	para $07,$09,$01,$B2; RAW DATA : 	para "여기"
+	line $0A,$6E,$09,$79,$04,$E8,$08,$26,$04,$36,$7F,$08,$06,$04,$46,$0B,$66; RAW DATA : 	line "핑크배지를 주마!"
 	prompt

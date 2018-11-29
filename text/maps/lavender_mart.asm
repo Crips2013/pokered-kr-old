@@ -1,30 +1,24 @@
 _LavenderMartText2::
-	text "I'm searching for"
-	line "items that raise"
-	cont "the abilities of"
-	cont "#MON during a"
-	cont "single battle."
+	text $02,$4B,$01,$01,$7F,$01,$88,$0A,$6F,$03,$F1,$01,$4D,$7F,$0A,$6F,$02,$C2,$7F,$03,$15,$01,$88,$02,$C2; RAW DATA : 	text "내가 구하려고 하는 도구는"
+	line $0A,$27,$09,$2F,$04,$93,$7F,$04,$E8,$09,$E2,$07,$01,$05,$DD,$04,$48; RAW DATA : 	line "포켓몬 배틀에서만"
+	cont $02,$C9,$03,$F2,$07,$8B,$7F,$07,$23,$03,$F1,$08,$06,$02,$C2,$7F,$03,$15,$01,$88,$03,$C5,$02,$D9; RAW DATA : 	cont "능력을 올려주는 도구란다"
 
-	para "X ATTACK, X"
-	line "DEFEND, X SPEED"
-	cont "and X SPECIAL are"
-	cont "what I'm after."
+	para $0A,$63,$03,$DF,$06,$4A,$09,$F4,$07,$66,$7F,$03,$60,$0A,$16,$03,$45,$06,$F7; RAW DATA : 	para "플러스파워 디펜드업"
+	line $06,$4A,$0A,$67,$03,$45,$06,$F7,$7F,$06,$4A,$0A,$14,$05,$F8,$06,$F7,$07,$9E,$03,$05,$0B,$6A,$0B,$6A; RAW DATA : 	line "스피드업 스페셜업인데……"
 
-	para "Do you know where"
-	line "I can get them?"
+	para $0A,$A4,$06,$63,$7F,$06,$EE,$03,$60,$05,$DD,$7F,$01,$88,$0A,$72,$06,$26,$7F,$07,$A6,$02,$C2; RAW DATA : 	para "혹시 어디서 구할수 있는"
+	line $06,$CB,$01,$4D,$07,$A6,$02,$CF,$0B,$67; RAW DATA : 	line "알고있니?"
 	done
 
 _LavenderMartReviveText::
-	text "You know REVIVE?"
-	line "It revives any"
-	cont "fainted #MON!"
+	text $01,$B2,$03,$F2,$07,$97,$7F,$07,$E6,$01,$02,$07,$9C,$03,$C3,$01,$4D,$7F,$06,$CB,$03,$F3,$01,$01,$0B,$67; RAW DATA : 	text "기력의 조각이라고 알련가?"
+	line $01,$B2,$07,$CD,$0A,$71,$7F,$06,$EE,$03,$82,$7F,$0A,$27,$09,$2F,$04,$93,$07,$9C,$03,$47,$7F,$0A,$B8,$05,$19,$06,$63,$09,$31,$0B,$66; RAW DATA : 	line "기절한 어떤 포켓몬이든 회복시켜!"
 	done
 
 _LavenderMartNuggetText::
-	text "I found a NUGGET"
-	line "in the mountains."
+	text $01,$AD,$01,$88,$06,$4D,$7F,$0A,$6F,$02,$3A,$04,$36; RAW DATA : 	text "금구슬 하나를"
+	line $05,$BA,$07,$01,$05,$DD,$7F,$04,$DF,$01,$3F,$0A,$7F,$06,$EE; RAW DATA : 	line "산에서 발견했어"
 
-	para "I thought it was"
-	line "useless, but it"
-	cont "sold for ¥5000!"
+	para $07,$9C,$01,$27,$7F,$06,$B5,$04,$90,$7F,$06,$F8,$07,$8B,$01,$2D,$7F,$01,$10,$07,$8A,$03,$05,$03,$15; RAW DATA : 	para "이건 쓸모 없을것 같은데도"
+	line $FB,$F6,$F6,$F6,$07,$68,$07,$01,$7F,$09,$F8,$04,$40,$02,$DC,$7F,$04,$4B,$07,$9C,$06,$DF,$0B,$66; RAW DATA : 	line "5000원에 팔린단 말이야!"
 	done

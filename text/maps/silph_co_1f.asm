@@ -1,7 +1,9 @@
 _SilphCo1Text1::
-	text "Welcome!"
+	text $06,$EE,$05,$DD,$07,$20,$05,$EC,$07,$44,$0B,$66; RAW DATA : 	text "어서오세요!"
 
-	para "The PRESIDENT is"
-	line "in the boardroom"
-	cont "on 11F!"
+	para $0A,$B8,$07,$B5,$02,$D4,$07,$8A,$7F,$F7,$F7,$08,$FE,$07,$01,$7F,$07,$77,$09,$01,$0A,$71; RAW DATA : 	para "회장님은 11층에 위치한"
+	line $07,$9C,$05,$B7,$0A,$B8,$06,$67,$07,$01,$7F,$01,$48,$06,$6A,$02,$CF,$02,$D9,$0B,$66; RAW DATA : 	line "이사회실에 계십니다!"
 	done
+
+ 
+

@@ -12,8 +12,8 @@ MansionMons2:
 		db 39,WEEZING
 		db 37,MUK
 	ENDC
-	IF DEF(_GREEN)
-		db 32,GROWLITHE
+	IF DEF(_GREEN);해외판블루
+		db 32,VULPIX
 		db 34,GRIMER
 		db 34,GRIMER
 		db 30,PONYTA
@@ -23,9 +23,10 @@ MansionMons2:
 		db 28,PONYTA
 		db 39,MUK
 		db 37,WEEZING
+
 	ENDC
 	IF DEF(_BLUE)
-		db 32,VULPIX
+		db 32,GROWLITHE
 		db 34,GRIMER
 		db 34,GRIMER
 		db 30,PONYTA

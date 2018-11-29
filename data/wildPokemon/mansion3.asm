@@ -12,12 +12,12 @@ MansionMons3:
 		db 36,PONYTA
 		db 42,MUK
 	ENDC
-	IF DEF(_GREEN)
+	IF DEF(_GREEN);해외판블루
 		db 31,GRIMER
-		db 33,GROWLITHE
+		db 33,VULPIX
 		db 35,GRIMER
 		db 32,PONYTA
-		db 34,PONYTA
+		db 34,MAGMAR
 		db 40,MUK
 		db 34,KOFFING
 		db 38,MUK
@@ -26,10 +26,10 @@ MansionMons3:
 	ENDC
 	IF DEF(_BLUE)
 		db 31,GRIMER
-		db 33,VULPIX
+		db 33,GROWLITHE
 		db 35,GRIMER
 		db 32,PONYTA
-		db 34,MAGMAR
+		db 34,PONYTA
 		db 40,MUK
 		db 34,KOFFING
 		db 38,MUK

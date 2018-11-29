@@ -12,9 +12,9 @@ IslandMons1:
 		db 28,SHELLDER
 		db 38,GOLDUCK
 	ENDC
-	IF DEF(_GREEN)
+	IF DEF(_GREEN);해외판블루
 		db 30,SEEL
-		db 30,HORSEA
+		db 30,PSYDUCK
 		db 30,STARYU
 		db 30,KRABBY
 		db 28,KRABBY
@@ -26,7 +26,7 @@ IslandMons1:
 	ENDC
 	IF DEF(_BLUE)
 		db 30,SEEL
-		db 30,PSYDUCK
+		db 30,HORSEA
 		db 30,STARYU
 		db 30,KRABBY
 		db 28,KRABBY

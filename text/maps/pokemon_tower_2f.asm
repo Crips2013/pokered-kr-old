@@ -1,57 +1,54 @@
 _PokemonTower2Text_6062d::
-	text "<RIVAL>: Hey,"
-	line "<PLAYER>! What"
-	cont "brings you here?"
-	cont "Your #MON"
-	cont "don't look dead!"
+	text $53, $0B,$62,$06,$EE,$07,$9C,$0B,$66; RAW DATA : 	text $53, "『어이!"
+	line $52, $0B,$66; RAW DATA : 	line $52, "!"
+	cont $07,$09,$01,$B4,$7F,$07,$38,$07,$9F,$07,$9C,$06,$DF,$0B,$67; RAW DATA : 	cont "여긴 왠일이야?"
+	cont $02,$77,$7F,$0A,$27,$09,$2F,$04,$93,$07,$9C,$7F,$08,$07,$06,$FA,$07,$8B,$7F,$04,$3E,$02,$C2,$7F,$06,$F8,$01,$4D,$0B,$67; RAW DATA : 	cont "네 포켓몬이 죽었을 리는 없고?"
 
-	para "I can at least"
-	line "make them faint!"
-	cont "Let's go, pal!"
+	para $01,$A7,$03,$E8,$02,$D9,$04,$89,$7F,$02,$4B,$01,$01,$7F,$08,$07,$07,$09,$08,$06,$08,$26,$0B,$66; RAW DATA : 	para "그렇다면 내가 죽여주지!"
+	line $03,$15,$04,$61,$01,$01,$08,$26,$7F,$04,$4B,$03,$C3,$01,$4D,$0B,$66; RAW DATA : 	line "도망가지 말라고!"
 	done
 
 _PokemonTower2Text_60632::
-	text "What?"
-	line "You stinker!"
+	text $04,$B9,$0B,$67; RAW DATA : 	text "뭐?"
+	line $07,$D8,$07,$B5,$0B,$66; RAW DATA : 	line "젠장!"
 
-	para "I took it easy on"
-	line "you too!"
+	para $05,$21,$08,$10,$01,$01,$04,$89,$05,$DD,$7F,$0A,$78,$05,$DD,$7F,$01,$A7,$03,$D1,$0B,$66; RAW DATA : 	para "봐줘가면서 해서 그래!"
 	prompt
 
 _PokemonTower2Text_60637::
-	text "<RIVAL>: Well,"
-	line "look at all your"
-	cont "wimpy #MON!"
+	text $53, $0B,$62,$0A,$EF; RAW DATA : 	text $53, "『흥"
+	line $02,$77,$7F,$01,$2C,$07,$BF,$07,$9C,$7F,$0A,$27,$09,$2F,$04,$93,$03,$49,$7F,$07,$EB,$7F,$05,$21,$0B,$66; RAW DATA : 	line "네 겁쟁이 포켓몬들 좀 봐!"
 
-	para "Toughen them up a"
-	line "bit more!"
+	para $07,$EB,$7F,$02,$F5,$7F,$01,$0D,$0A,$6F,$01,$34,$7F,$09,$80,$07,$4C,$03,$C3,$01,$4D,$0B,$66; RAW DATA : 	para "좀 더 강하게 키우라고!"
 	prompt
 
 _PokemonTower2Text_6063c::
-	text "How's your #DEX"
-	line "coming, pal?"
-	cont "I just caught a"
-	cont "CUBONE!"
+	text $0A,$27,$09,$2F,$04,$93,$7F,$03,$15,$01,$08,$07,$8A,$7F,$06,$28,$07,$E6,$03,$FE,$07,$66,$0B,$67; RAW DATA : 	text "포켓몬 도감은 순조로워?"
+	line $02,$3D,$7F,$04,$E6,$01,$AD,$7F,$09,$91,$01,$88,$04,$3E,$04,$36; RAW DATA : 	line "난 방금 탕구리를"
+	cont $07,$B2,$01,$4D,$07,$20,$02,$C2,$7F,$01,$B6,$07,$9C,$06,$DF,$0B,$66; RAW DATA : 	cont "잡고오는 길이야!"
 
-	para "I can't find the"
-	line "grown-up MAROWAK"
-	cont "yet!"
+	para $04,$B9,$7F,$06,$C6,$08,$27,$7F,$09,$A6,$01,$88,$04,$3E,$04,$36; RAW DATA : 	para "뭐 아직 텅구리를"
+	line $04,$DF,$01,$3F,$0A,$6F,$08,$28,$7F,$04,$98,$0A,$7F,$08,$26,$04,$48,$0B,$66; RAW DATA : 	line "발견하진 못했지만!"
 
-	para "I doubt there are"
-	line "any left! Well, I"
-	cont "better get going!"
-	cont "I've got a lot to"
-	cont "accomplish, pal!"
+ 
 
-	para "Smell ya later!"
+	para $04,$8E,$04,$46,$04,$3E,$7F,$02,$42,$06,$C6,$07,$A6,$02,$C2,$08,$26,$03,$15,$7F,$04,$90,$04,$33,$01,$3A,$02,$77,$0B,$66; RAW DATA : 	para "몇마리 남아있는지도 모르겠네!"
+	line $06,$C6,$7F,$07,$9C,$07,$D6,$7F,$01,$01,$06,$DF,$01,$3A,$02,$D9,$0B,$66; RAW DATA : 	line "아 이제 가야겠다!"
+	cont $02,$6A,$03,$15,$7F,$07,$0D,$06,$69,$0A,$F7,$7F,$0A,$6F,$03,$C3,$01,$4D,$0B,$66; RAW DATA : 	cont "너도 열심히 하라고!"
+
+	para $04,$D9,$07,$9C,$05,$61,$0B,$66; RAW DATA : 	para "바이비!"
 	done
+
+
 
 _PokemonTower2Text2::
-	text "Even we could not"
-	line "identify the"
-	cont "wayward GHOSTs!"
+	text $07,$4C,$04,$3E,$03,$15,$7F,$06,$C6,$08,$27,$7F,$07,$7F,$03,$F9,$07,$9C,$7F; RAW DATA : 	text "우리도 아직 유령이 "
+	line $04,$BA,$08,$26,$7F,$0A,$AE,$07,$9E,$0A,$6F,$08,$26,$7F,$04,$98,$0A,$7F,$06,$EE,$0B,$66; RAW DATA : 	line "뭔지 확인하지 못했어!"
 
-	para "A SILPH SCOPE"
-	line "might be able to"
-	cont "unmask them."
+
+
+	para $06,$67,$0A,$61,$7F,$06,$4A,$09,$3A,$0A,$61,$01,$01,$7F,$07,$A6,$02,$D9,$04,$89; RAW DATA : 	para "실프 스코프가 있다면"
+	line $07,$D4,$08,$BC,$04,$36,$7F,$04,$E0,$0A,$FA,$06,$26,$7F,$07,$A6,$07,$8B,$09,$A9,$03,$05; RAW DATA : 	line "정체를 밝힐수 있을텐데"
 	done
+
+ 

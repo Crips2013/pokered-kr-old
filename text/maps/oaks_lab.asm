@@ -13,12 +13,16 @@ IF DEF(_YELLOW)
 	text $53,$0B,$62,$0A,$EF,$0B,$66; RAW DATA : 	text $53,"『흥!"
 	line $02,$4B,$01,$01,$7F,$02,$F5,$07,$F1,$07,$8A,$7F,$0A,$27,$09,$2F,$04,$93,$07,$8B,$7F,$01,$01,$08,$2A,$01,$25,$06,$DF,$0B,$66; RAW DATA : 	line "내가 더좋은 포켓몬을 가질거야!"
 ELSE
-	text "<RIVAL>: Heh, I"
-	line "don't need to be"
-	cont "greedy like you!"
+	; text "<RIVAL>『흥! 나는 어른이니까"
+	text "<RIVAL>", $0B, $62, $0A, $EF, $0B, $66, " ", $02, $3A, $02, $C2, " ", $06, $EE, $04, $35, $07, $9C, $02, $CF, $01, $BE
+	; line "너처럼 치사하게 굴지 않아"
+	line $02, $6A, $08, $B3, $03, $E3, " ", $09, $01, $05, $B7, $0A, $6F, $01, $34, " ", $01, $8C, $08, $26, " ", $06, $CA, $06, $C6
 
-	para "Go ahead and"
-	line "choose, <PLAYER>!"
+	; para "<PLAYER> 먼저"
+	para "<PLAYER> ", $04, $75, $07, $CA
+	; line "선택하게 해주지!"
+	line $05, $E1, $09, $93, $0A, $6F, $01, $34, " ", $0A, $78, $08, $06, $08, $26, $0B, $66
+
 ENDC
 	done
 
@@ -38,9 +42,11 @@ IF DEF(_YELLOW)
 	text $0A,$27,$09,$2F,$04,$93,$07,$9C,$7F,$03,$49,$06,$EE,$07,$A6,$02,$C2; RAW DATA : 	text "포켓몬이 들어있는"
 	line $04,$93,$06,$4A,$09,$9D,$7F,$05,$1C,$07,$9C,$02,$D9,$0B,$66; RAW DATA : 	line "몬스터 볼이다!"
 ELSE
-	text "Those are #"
-	line "BALLs. They"
-	cont "contain #MON!"
+	; text "몬스터 볼이다!"
+	text $04, $93, $06, $4A, $09, $9D, " ", $05, $1C, $07, $9C, $02, $D9, $0B, $66
+	; line "안에 포켓몬이 들어있어!"
+	line $06, $C8, $07, $01, " ", $0A, $27, $09, $2F, $04, $93, $07, $9C, " ", $03, $49, $06, $EE, $07, $A6, $06, $EE, $0B, $66
+
 ENDC
 	done
 IF DEF(_YELLOW)
@@ -51,21 +57,25 @@ _OaksLabPikachuText::
 
 ELSE
 _OaksLabCharmanderText::
-	text "So! You want the"
-	line "fire #MON,"
-	cont "CHARMANDER?"
+	; text "그래! 불 포켓몬"
+	text $01, $A7, $03, $D1, $0B, $66, " ", $05, $32, " ", $0A, $27, $09, $2F, $04, $93
+	; line "파이리를 갖고싶니?"
+	line $09, $F4, $07, $9C, $04, $3E, $04, $36, " ", $01, $0E, $01, $4D, $06, $6D, $02, $CF, $0B, $67
 	done
 
 _OaksLabSquirtleText::
-	text "So! You want the"
-	line "water #MON,"
-	cont "SQUIRTLE?"
+	; text "그래! 물 포켓몬"
+	text $01, $A7, $03, $D1, $0B, $66, " ", $04, $B0, " ", $0A, $27, $09, $2F, $04, $93
+	; line "꼬부기를 갖고싶니?"
+	line $01, $EF, $05, $2E, $01, $B2, $04, $36, " ", $01, $0E, $01, $4D, $06, $6D, $02, $CF, $0B, $67
 	done
 
 _OaksLabBulbasaurText::
-	text "So! You want the"
-	line "plant #MON,"
-	cont "BULBASAUR?"
+	; text "그래! 풀 포켓몬"
+	text $01, $A7, $03, $D1, $0B, $66, " ", $0A, $3E, " ", $0A, $27, $09, $2F, $04, $93
+	; line "이상해씨를 갖고싶니?"
+	line $07, $9C, $05, $C3, $0A, $78, $06, $BE, $04, $36, " ", $01, $0E, $01, $4D, $06, $6D, $02, $CF, $0B, $67
+
 	done
 
 _OaksLabMonEnergeticText::

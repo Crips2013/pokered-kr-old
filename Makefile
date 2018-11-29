@@ -53,9 +53,9 @@ $(pokeblue_obj): %_blue.o: %.asm $$(dep)
 $(pokegreen_obj): %_green.o: %.asm $$(dep)
 	rgbasm -D _GREEN -h -o $@ $*.asm
 
-pokered_opt  = -jsv -k 01 -l 0x33 -m 0x13 -p 0 -r 03 -t "POKEMON RED"
-pokeblue_opt = -jsv -k 01 -l 0x33 -m 0x13 -p 0 -r 03 -t "POKEMON BLUE"
-pokegreen_opt = -jsv -k 01 -l 0x33 -m 0x13 -p 0 -r 03 -t "POKEMONGREEN"
+pokered_opt  = -jsv -k 01 -l 0x33 -m 0x13 -p 0 -r 03 -t "POKEMON REDAPSK"
+pokeblue_opt = -jsv -k 01 -l 0x33 -m 0x13 -p 0 -r 03 -t "POKEMON BLUAPSK"
+pokegreen_opt = -jsv -k 01 -l 0x33 -m 0x13 -p 0 -r 03 -t "POKEMONGREEAPSK"
 
 %.gbc: $$(%_obj)
 	rgblink -d -n $*.sym -l pokered.link -o $@ $^

@@ -1,7 +1,9 @@
 _SSAnne3Text1::
-	text "Our CAPTAIN is a"
-	line "sword master!"
+	text $07,$4C,$04,$3E,$7F,$05,$E1,$07,$B5,$02,$D4,$07,$8A; RAW DATA : 	text "우리 선장님은"
+	line $07,$AC,$03,$60,$01,$C0,$02,$C2,$01,$29,$7F,$07,$F1,$06,$C6,$0A,$78,$0B,$66; RAW DATA : 	line "잔디깎는걸 좋아해!"
 
-	para "He even teaches"
-	line "CUT to #MON!"
+
+
+	para $06,$69,$08,$26,$06,$EE,$7F,$0A,$27,$09,$2F,$04,$93,$7F,$0A,$71,$09,$A7,$03,$15; RAW DATA : 	para "심지어 포켓몬 한테도"
+	line $0A,$3E,$05,$03,$01,$B2,$04,$36,$7F,$01,$01,$04,$33,$09,$01,$06,$65,$02,$D9,$02,$CF,$01,$BE,$0B,$66; RAW DATA : 	line "풀베기를 가르치신다니까!"
 	done

@@ -1,23 +1,18 @@
 _VermilionMartText2::
-	text "There are evil"
-	line "people who will"
-	cont "use #MON for"
-	cont "criminal acts."
+	text $0A,$E4,$06,$C7,$0A,$71,$7F,$05,$B7,$03,$C7,$03,$49,$07,$9C,$7F,$04,$FC,$07,$FB,$0A,$B0,$03,$1F,$07,$01; RAW DATA : 	text "흉악한 사람들이 범죄활동에"
+	line $0A,$27,$09,$2F,$04,$93,$07,$8B,$7F,$05,$B7,$07,$4B,$0A,$6F,$03,$F1,$01,$4D,$7F,$0A,$78; RAW DATA : 	line "포켓몬을 사용하려고 해"
 
-	para "TEAM ROCKET"
-	line "traffics in rare"
-	cont "#MON."
+	para $03,$FE,$09,$2F,$02,$DC,$07,$9C,$7F,$0A,$F1,$01,$9D,$0A,$71,$7F,$0A,$27,$09,$2F,$04,$93,$07,$8B; RAW DATA : 	para "로켓단이 희귀한 포켓몬을"
+	line $04,$D0,$01,$25,$03,$D1,$7F,$0A,$6F,$01,$4D,$7F,$07,$A6,$08,$26; RAW DATA : 	line "밀거래 하고 있지"
 
-	para "They also abandon"
-	line "#MON that they"
-	cont "consider not to"
-	cont "be popular or"
-	cont "useful."
+	para $01,$34,$02,$D9,$01,$01,$7F,$01,$A7,$7F,$05,$B7,$03,$C7,$03,$49,$07,$8A; RAW DATA : 	para "게다가 그 사람들은"
+	line $01,$0A,$06,$EE,$09,$01,$7F,$06,$F8,$01,$25,$02,$3A; RAW DATA : 	line "값어치 없거나"
+	cont $06,$B5,$04,$90,$06,$F8,$02,$D9,$01,$4D,$7F,$09,$F7,$02,$DC,$0A,$71; RAW DATA : 	cont "쓸모없다고 판단한"
+	cont $0A,$27,$09,$2F,$04,$93,$07,$8B,$7F,$04,$F6,$04,$40,$02,$DC,$02,$D9; RAW DATA : 	cont "포켓몬을 버린단다"
 	done
 
 _VermilionMartText3::
-	text "I think #MON"
-	line "can be good or"
-	cont "evil. It depends"
-	cont "on the trainer."
+	text $02,$4B,$7F,$05,$CD,$01,$02,$07,$01,$7F,$0A,$27,$09,$2F,$04,$93,$07,$8A; RAW DATA : 	text "내 생각에 포켓몬은"
+	line $09,$DE,$03,$E9,$07,$9C,$02,$6A,$07,$01,$7F,$03,$6B,$03,$C3; RAW DATA : 	line "트레이너에 따라"
+	cont $08,$98,$0A,$78,$08,$26,$01,$25,$02,$3A,$7F,$06,$C7,$0A,$78,$08,$2A,$06,$26,$7F,$07,$A6,$02,$D9,$01,$4D,$7F,$05,$CD,$01,$02,$0A,$78; RAW DATA : 	cont "착해지거나 악해질수 있다고 생각해"
 	done

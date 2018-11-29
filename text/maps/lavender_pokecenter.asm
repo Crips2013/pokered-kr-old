@@ -1,12 +1,9 @@
 _LavenderPokecenterText2::
-	text "TEAM ROCKET will"
-	line "do anything for"
-	cont "the sake of gold!"
+	text $03,$FE,$09,$2F,$02,$DC,$7F,$02,$80,$05,$DE,$03,$49,$0B,$66; RAW DATA : 	text "로켓단 녀석들!"
+	line $03,$17,$07,$9C,$03,$C3,$04,$89,$7F,$04,$AB,$06,$4C,$08,$2E,$07,$9C,$01,$27,$7F,$0A,$72,$01,$25,$06,$DF,$0B,$66; RAW DATA : 	line "돈이라면 무슨짓이건 할거야!"
 	done
 
 _LavenderPokecenterText3::
-	text "I saw CUBONE's"
-	line "mother die trying"
-	cont "to escape from"
-	cont "TEAM ROCKET!"
+	text $09,$91,$01,$88,$04,$3E,$07,$97,$7F,$06,$EE,$04,$CC,$01,$01,$7F,$03,$FE,$09,$2F,$02,$DC,$07,$01,$01,$34,$05,$DD; RAW DATA : 	text "탕구리의 어미가 로켓단에게서"
+	line $03,$15,$04,$61,$09,$01,$03,$F1,$02,$D9,$01,$01,$7F,$08,$07,$07,$8A,$01,$29,$7F,$05,$23,$02,$D9,$01,$4D,$0B,$66; RAW DATA : 	line "도망치려다가 죽은걸 봤다고!"
 	done

@@ -1,26 +1,24 @@
 _SaffronHouse1Text1::
-	text "Thank you for"
-	line "writing. I hope"
-	cont "to see you soon!"
-
-	para "Hey! Don't look"
-	line "at my letter!"
+	text $0A,$1D,$08,$26,$7F,$05,$18,$02,$4B,$08,$10,$05,$DD,$7F,$01,$4D,$04,$46,$07,$66; RAW DATA : 	text "편지 보내줘서 고마워"
+	line $02,$6A,$07,$2D,$02,$C2,$7F,$07,$E6,$04,$48,$01,$03,$7F,$02,$D9,$06,$63,$7F,$04,$48,$02,$3A,$04,$89,$7F,$07,$F1,$01,$3A,$02,$D9,$0B,$66; RAW DATA : 	line "너와는 조만간 다시 만나면 좋겠다!"
+	para $06,$EE,$07,$9C,$0B,$66; RAW DATA : 	para "어이!"
+	line $02,$4B,$7F,$0A,$1D,$08,$26,$7F,$07,$A0,$08,$26,$7F,$04,$46,$0B,$66; RAW DATA : 	line "내 편지 읽지 마!"
 	done
 
 _SaffronHouse1Text2::
-	text "PIDGEY: Kurukkoo!@@"
+	text $01,$88,$01,$88,$0B,$62,$01,$88,$07,$4C,$07,$4D,$01,$88,$01,$88,$0B,$66,$50,$50; RAW DATA : 	text "구구『구우욱구구!@@"
 
 _SaffronHouse1Text3::
-	text "The COPYCAT is"
-	line "cute! I'm getting"
-	cont "her a # DOLL!"
+	text $0A,$E4,$02,$4B,$02,$4B,$01,$B2,$7F,$06,$C6,$01,$01,$06,$BE,$02,$C2,$7F,$01,$9D,$07,$09,$07,$66,$0B,$66; RAW DATA : 	text "흉내내기 아가씨는 귀여워!"
+	line $01,$A7,$02,$80,$07,$01,$01,$34,$7F,$08,$09,$7F,$05,$AF,$05,$AF,$7F,$07,$9E,$0A,$9C,$07,$9C,$06,$DF,$0B,$66; RAW DATA : 	line "그녀에게 줄 삐삐 인형이야!"
 	done
 
 _SaffronHouse1Text4::
-	text "I was given a PP"
-	line "UP as a gift."
+	text $0A,$27,$07,$9E,$09,$DE,$06,$F7,$07,$8B; RAW DATA : 	text "포인트업을"
+	line $05,$E1,$04,$B0,$03,$FE,$7F,$08,$08,$07,$CB,$07,$9C,$7F,$07,$A6,$08,$26,$0B,$6C; RAW DATA : 	line "선물로 준적이 있지."
 
-	para "It's used for"
-	line "increasing the PP"
-	cont "of techniques!"
+	para $01,$B2,$06,$2A,$07,$97,$7F,$8F,$8F,$04,$36; RAW DATA : 	para "기술의 PP를"
+	line $02,$C3,$04,$41,$7F,$06,$26,$7F,$07,$A6,$06,$EE,$0B,$66; RAW DATA : 	line "늘릴 수 있어!"
 	done
+
+;COPYCAT은 공식에서도 '흉내내기 아가씨'인 NPC라서 '아가씨'등으로 줄이면 안 됩니다.

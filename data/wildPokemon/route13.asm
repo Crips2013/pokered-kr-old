@@ -1,5 +1,5 @@
 Route13Mons:
-	IF DEF(_RED) || DEF(_GREEN)
+	IF DEF(_RED) || DEF(_BLUE)
 		db $14
 		db 24,ODDISH
 		db 25,PIDGEY
@@ -12,7 +12,7 @@ Route13Mons:
 		db 28,GLOOM
 		db 30,GLOOM
 	ENDC
-	IF DEF(_BLUE)
+	IF DEF(_GREEN);해외판블루
 		db $14
 		db 24,BELLSPROUT
 		db 25,PIDGEY

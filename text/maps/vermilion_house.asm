@@ -1,21 +1,18 @@
 _VermilionHouse1Text1::
-	text "I'm getting my"
-	line "PIDGEY to fly a"
-	cont "letter to SAFFRON"
-	cont "in the north!"
+	text $01,$88,$01,$88,$04,$36,$7F,$09,$BB,$0A,$78,$05,$DD; RAW DATA : 	text "구구를 통해서"
+	line $05,$2F,$08,$6A,$07,$01,$7F,$07,$A6,$02,$C2,$7F,$02,$8B,$03,$CB,$06,$63,$09,$EC,$07,$01; RAW DATA : 	line "북쪽에 있는 노랑시티에"
+	cont $0A,$1D,$08,$26,$04,$36,$7F,$05,$18,$02,$4E,$03,$F1,$01,$4D,$7F,$0A,$78,$0B,$66; RAW DATA : 	cont "편지를 보낼려고 해!"
 	done
 
 _VermilionHouse1Text2::
-	text "PIDGEY: Kurukkoo!@@"
+	text $01,$88,$01,$88,$0B,$62,$01,$92,$01,$88,$01,$88,$0B,$66,$50,$50; RAW DATA : 	text "구구『굿구구!@@"
 
 _VermilionHouse1Text3::
-	text "Dear PIPPI, I hope"
-	line "to see you soon."
+	text $07,$4E,$07,$AA,$07,$01,$01,$34; RAW DATA : 	text "운자에게"
+	line $01,$60,$7F,$02,$D9,$06,$63,$7F,$04,$48,$02,$45,$07,$88,$04,$89,$7F,$07,$F1,$01,$3A,$06,$EE; RAW DATA : 	line "곧 다시 만났으면 좋겠어"
 
-	para "I heard SAFFRON"
-	line "has problems with"
-	cont "TEAM ROCKET."
+	para $03,$FE,$09,$2F,$02,$DC,$03,$77,$04,$AE,$07,$01,$7F,$02,$8B,$03,$CB,$06,$63,$09,$EC,$07,$01; RAW DATA : 	para "로켓단때문에 노랑시티에"
+	line $04,$AE,$07,$D6,$01,$01,$7F,$05,$CD,$01,$B2,$01,$4D,$7F,$07,$A6,$02,$D9,$01,$4D,$7F,$03,$49,$06,$FA,$06,$EE; RAW DATA : 	line "문제가 생기고 있다고 들었어"
 
-	para "VERMILION appears"
-	line "to be safe."
+	para $01,$05,$05,$C6,$06,$63,$09,$EC,$08,$6A,$07,$8A,$7F,$06,$C8,$07,$CC,$0A,$78; RAW DATA : 	para "갈색시티쪽은 안전해"
 	done
