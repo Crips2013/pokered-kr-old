@@ -50,14 +50,13 @@ BikeShopText1:
 	ld hl, wd730
 	set 6, [hl]
 	coord hl, 0, 0
-	ld b, $4
-	ld c, $f
+	lb bc, 4, 15
 	call TextBoxBorder
 	call UpdateSprites
 	coord hl, 2, 2
 	ld de, BikeShopMenuText
 	call PlaceString
-	coord hl, 8, 3
+	coord hl, 8, 2
 	ld de, BikeShopMenuPrice
 	call PlaceString
 	ld hl, BikeShopText_1d815
@@ -79,8 +78,8 @@ BikeShopText1:
 	jp TextScriptEnd
 
 BikeShopMenuText:
-	db   "BICYCLE"
-	next "CANCEL@"
+	db   $07,$AA,$07,$CC,$01,$25; RAW DATA : 	db   "자전거"
+	next $03,$19,$06,$C6,$01,$01,$02,$D9,$50; RAW DATA : 	next "돌아가다@"
 
 BikeShopMenuPrice:
 	db "¥1000000@"

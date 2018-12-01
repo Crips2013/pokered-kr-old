@@ -17,10 +17,10 @@ SaffronGymScript:
 	jp LoadGymLeaderAndCityName
 
 Gym6CityName:
-	db "SAFFRON CITY@"
+	db $02,$8B,$03,$CB,$06,$63,$09,$EC,$50; RAW DATA : 	db "노랑시티@"
 
 Gym6LeaderName:
-	db "SABRINA@"
+	db $08,$CA,$03,$F3,$50; RAW DATA : 	db "초련@"
 
 SaffronGymText_5d048:
 	xor a

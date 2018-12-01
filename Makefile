@@ -53,24 +53,24 @@ $(pokeblue_obj): %_blue.o: %.asm $$(dep)
 $(pokegreen_obj): %_green.o: %.asm $$(dep)
 	rgbasm -D _GREEN -h -o $@ $*.asm
 
-pokered_opt  = -jsv -k 01 -l 0x33 -m 0x13 -p 0 -r 03 -t "POKEMON REDAPSK"
-pokeblue_opt = -jsv -k 01 -l 0x33 -m 0x13 -p 0 -r 03 -t "POKEMON BLUAPSK"
-pokegreen_opt = -jsv -k 01 -l 0x33 -m 0x13 -p 0 -r 03 -t "POKEMONGREEAPSK"
+pokered_opt  = -jsv -k 01 -l 0x33 -m 0x13 -p 0 -r 03 -t "POKEMON RED"
+pokeblue_opt = -jsv -k 01 -l 0x33 -m 0x13 -p 0 -r 03 -t "POKEMON BLUE"
+pokegreen_opt = -jsv -k 01 -l 0x33 -m 0x13 -p 0 -r 03 -t "POKEMONGREEN"
 
 %.gbc: $$(%_obj)
 	rgblink -d -n $*.sym -l pokered.link -o $@ $^
 	rgbfix $($*_opt) $@
-	#sort $*.sym -o $*.sym : Error!
+	#sort $*.sym -o $*.sym
 
 gfx/blue/intro_purin_1.2bpp: rgbgfx += -h
 gfx/blue/intro_purin_2.2bpp: rgbgfx += -h
 gfx/blue/intro_purin_3.2bpp: rgbgfx += -h
-gfx/red/intro_nido_1.6x6.2bpp: rgbgfx += -h
-gfx/red/intro_nido_2.6x6.2bpp: rgbgfx += -h
-gfx/red/intro_nido_3.6x6.2bpp: rgbgfx += -h
-gfx/green/intro_omstar_1.2bpp: rgbgfx += -h
-gfx/green/intro_omstar_2.2bpp: rgbgfx += -h
-gfx/green/intro_omstar_3.2bpp: rgbgfx += -h
+gfx/red/intro_nido_1.2bpp: rgbgfx += -h
+gfx/red/intro_nido_2.2bpp: rgbgfx += -h
+gfx/red/intro_nido_3.2bpp: rgbgfx += -h
+gfx/green/intro_omstar_1.6x6.2bpp: rgbgfx += -h
+gfx/green/intro_omstar_2.6x6.2bpp: rgbgfx += -h
+gfx/green/intro_omstar_3.6x6.2bpp: rgbgfx += -h
 
 gfx/game_boy.2bpp: tools/gfx += --remove-duplicates
 gfx/theend.2bpp: tools/gfx += --interleave --png=$<

@@ -1853,11 +1853,16 @@ INCLUDE "engine/hidden_object_functions18.asm"
 
 SECTION "bank19",ROMX,BANK[$19]
 
-Overworld_GFX:     INCBIN "gfx/tilesets/overworld.2bpp"
+Overworld_GFX:     
+IF DEF(_BLUE)
+INCBIN "gfx/tilesets/overworld.2bpp"
+ELSE
+INCBIN "gfx/tilesets/overworld_jp.2bpp"
+ENDC
 Overworld_Block:   INCBIN "gfx/blocksets/overworld.bst"
 
 RedsHouse1_GFX:
-RedsHouse2_GFX:    INCBIN "gfx/tilesets/reds_house.2bpp"
+RedsHouse2_GFX:    INCBIN "gfx/tilesets/reds_house.2bpp";적청동일
 	ds 16
 RedsHouse1_Block:
 RedsHouse2_Block:  INCBIN "gfx/blocksets/reds_house.bst"

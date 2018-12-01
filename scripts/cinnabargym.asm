@@ -23,9 +23,9 @@ CinnabarGymScript_75772:
 	jp LoadGymLeaderAndCityName
 
 Gym7CityName:
-	db "CINNABAR ISLAND@"
+	db $0A,$AB,$03,$F3,$04,$46,$07,$8B,$50; RAW DATA : 	db "홍련마을@"
 Gym7LeaderName:
-	db "BLAINE@"
+	db $01,$0D,$07,$0C,$50; RAW DATA : 	db "강연@"
 
 CinnabarGymScript_75792:
 	xor a

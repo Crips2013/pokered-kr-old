@@ -11,9 +11,9 @@ ViridianGymScript:
 	ret
 
 Gym8CityName:
-	db "VIRIDIAN CITY@"
+	db $05,$C3,$03,$FF,$06,$63,$09,$EC,$50; RAW DATA : 	db "상록시티@"
 Gym8LeaderName:
-	db "GIOVANNI@"
+	db $05,$61,$08,$06,$01,$B2,$50; RAW DATA : 	db "비주기@"
 
 ViridianGymScript_748d6:
 	xor a

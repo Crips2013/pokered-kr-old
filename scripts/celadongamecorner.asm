@@ -508,10 +508,10 @@ CeladonGameCornerScript_48f1e:
 	ret
 
 GameCornerMoneyText:
-	db "MONEY@"
+	db $07,$4B,$03,$17,$50; RAW DATA : 	db "용돈@" ;용돈
 
 GameCornerCoinText:
-	db "COIN@"
+	db $03,$1F,$07,$CC,$50; RAW DATA : 	db "동전@" ;동전
 
 GameCornerBlankText1:
 	db "       @"

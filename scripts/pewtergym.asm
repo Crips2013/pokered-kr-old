@@ -17,10 +17,10 @@ PewterGymScript_5c3a4:
 	jp LoadGymLeaderAndCityName
 
 Gym1CityName:
-	db "PEWTER CITY@"
+	db $0A,$B8,$05,$C6,$06,$63,$09,$EC,$50; RAW DATA : 	db "회색시티@"
 
 Gym1LeaderName:
-	db "BROCK@"
+	db $07,$65,$50; RAW DATA : 	db "웅@"
 
 PewterGymScript_5c3bf:
 	xor a

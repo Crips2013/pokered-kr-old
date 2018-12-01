@@ -17,10 +17,10 @@ CeruleanGymScript_5c6d0:
 	jp LoadGymLeaderAndCityName
 
 Gym2CityName:
-	db "CERULEAN CITY@"
+	db $05,$4D,$04,$17,$06,$63,$09,$EC,$50; RAW DATA : 	db "블루시티@"
 
 Gym2LeaderName:
-	db "MISTY@"
+	db $07,$9C,$06,$4D,$50; RAW DATA : 	db "이슬@"
 
 CeruleanGymScript_5c6ed:
 	xor a

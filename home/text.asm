@@ -281,7 +281,7 @@ Char55Text::
 
 Char5F::
 ; ends a Pokédex entry
-	ld [hl], "."
+	ld [hl], " "
 	pop hl
 	ret
 

@@ -521,7 +521,7 @@ ShowPokedexDataInternal:
 	coord hl, 15, 6
 	lb bc, LEADING_ZEROES | 1, 2
 	call PrintNumber ; print inches (height)
-	ld a, $61 ; inches symbol tile (two ticks)
+	ld a, $60 ; inches symbol tile (two ticks)
 	ld [hl], a
 	coord hl, 15, 6
 	ld a, "." ; feet symbol tile (one tick)

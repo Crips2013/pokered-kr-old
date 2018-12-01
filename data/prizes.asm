@@ -9,7 +9,7 @@ PrizeDifferentMenuPtrs:
 	dw PrizeMenuTMsCost
 
 NoThanksText:
-	db "NO THANKS@"
+	db $01,$A7,$04,$48,$03,$2E,$02,$D9,$50; RAW DATA : db "그만두다@"
 
 PrizeMenuMon1Entries:
 	db ABRA

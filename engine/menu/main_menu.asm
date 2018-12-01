@@ -347,9 +347,9 @@ NewGameText:
 	db $05,$C5,$03,$FE,$07,$4E,$7F,$04,$90,$0A,$88,$07,$8B,$7F,$06,$63,$07,$AB,$0A,$6F,$02,$D9
 	next $05,$E3,$07,$D4,$07,$8B,$7F,$04,$D9,$02,$09,$02,$D9,"@"
 CableClubOptionsText:
-	db   "TRADE CENTER"
-	next "COLOSSEUM"
-	next "CANCEL@"
+	db $09,$DE,$03,$E9,$07,$9C,$03,$45,$05,$EE,$09,$9D; RAW DATA : 	db "트레이드센터"
+	next $09,$3D,$03,$FE,$05,$EC,$07,$62; RAW DATA : 	next "콜로세움"
+	next $01,$A7,$04,$48,$03,$2E,$02,$D9,$50; RAW DATA : 	next "그만두다@"
 
 DisplayContinueGameInfo:
 	xor a

@@ -22,10 +22,10 @@ VermilionGymScript_5ca4c:
 	jp LoadGymLeaderAndCityName
 
 Gym3CityName:
-	db "VERMILION CITY@"
+	db $01,$05,$05,$C6,$06,$63,$09,$EC,$50; RAW DATA : 	db "갈색시티@"
 
 Gym3LeaderName:
-	db "LT.SURGE@"
+	db $04,$46,$09,$EC,$06,$4A,$50; RAW DATA : 	db "마티스@"
 
 VermilionGymScript_5ca6d:
 	CheckEvent EVENT_2ND_LOCK_OPENED

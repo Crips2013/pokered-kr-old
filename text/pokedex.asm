@@ -1,1510 +1,2130 @@
 _RhydonDexEntry::
-	text "Protected by an"
-	next "armor-like hide,"
-	next "it is capable of"
-
-	page "living in molten"
-	next "lava of 3,600"
-	next "degrees"
+IF DEF(_RED) || DEF(_GREEN)
+	text $08,$28,$0A,$AD,$0A,$6F,$07,$09,$7F,$03,$3E,$02,$D9,$04,$3E,$04,$48,$07,$88,$03,$FE,$7F,$05,$DD,$01,$34,$7F,$03,$27,$06,$FA,$02,$D9; RAW DATA : 	text "진화하여 뒷다리만으로 서게 되었다"
+	next $05,$A4,$07,$01,$7F,$08,$91,$04,$3E,$04,$89,$7F,$06,$CF,$05,$DE,$07,$01,$03,$15; RAW DATA : 	next "뿔에 찔리면 암석에도"
+	next $01,$88,$04,$7B,$07,$9C,$7F,$03,$A5,$04,$3E,$01,$4D,$7F,$04,$48,$02,$D9; RAW DATA : 	next "구멍이 뚫리고 만다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $07,$CC,$06,$65,$07,$8B,$7F,$01,$09,$07,$2A,$7F,$01,$10,$07,$8A,$7F,$0A,$67,$05,$2E,$03,$FE; RAW DATA : 	text "전신을 갑옷 같은 피부로"
+	next $05,$18,$0A,$A3,$0A,$6F,$01,$4D,$7F,$07,$A6,$02,$D9,$7F,$F8,$F6,$F6,$F6,$03,$15,$07,$97; RAW DATA : 	next "보호하고 있다 2000도의"
+	next $04,$46,$01,$A7,$04,$46,$7F,$06,$03,$07,$01,$05,$DD,$03,$15,$7F,$05,$BC,$7F,$06,$26,$7F,$07,$A6,$02,$D9; RAW DATA : 	next "마그마 속에서도 살 수 있다"
+	dex
+ENDC
 
 _KangaskhanDexEntry::
-	text "The infant rarely"
-	next "ventures out of"
-	next "its mother's"
-
-	page "protective pouch"
-	next "until it is 3"
-	next "years old"
+IF DEF(_RED) || DEF(_GREEN)
+	text $06,$CF,$09,$26,$07,$8A,$7F,$04,$E8,$07,$97,$7F,$08,$06,$04,$73,$02,$CF,$07,$01,$05,$DD; RAW DATA : 	text "암컷은 배의 주머니에서"
+	next $05,$C5,$02,$32,$04,$36,$7F,$02,$76,$06,$EE,$7F,$09,$80,$07,$4E,$02,$D9; RAW DATA : 	next "새끼를 넣어 키운다"
+	next $07,$0C,$06,$03,$0A,$0D,$09,$01,$7F,$01,$68,$01,$3D,$07,$9C,$7F,$09,$DF,$01,$B2; RAW DATA : 	next "연속펀치 공격이 특기"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $05,$C5,$02,$32,$02,$C2,$7F,$06,$EE,$04,$CC,$07,$97,$7F,$04,$E8,$07,$01,$7F,$07,$A6,$02,$C2; RAW DATA : 	text "새끼는 어미의 배에 있는"
+	next $08,$06,$04,$73,$02,$CF,$07,$01,$05,$DD,$7F,$01,$25,$07,$97,$7F,$02,$3A,$07,$20,$08,$26,$7F,$06,$CA,$02,$C2,$02,$D9; RAW DATA : 	next "주머니에서 거의 나오지 않는다"
+	next $06,$E0,$7F,$F9,$02,$82,$07,$9C,$7F,$08,$26,$02,$3A,$05,$DD,$7F,$07,$AA,$04,$43,$0A,$71,$02,$D9; RAW DATA : 	next "약 3년이 지나서 자립한다"
+	dex
+ENDC
 
 _NidoranMDexEntry::
-	text "Stiffens its ears"
-	next "to sense danger."
-	next "The larger its"
-
-	page "horns, the more"
-	next "powerful its"
-	next "secreted venom"
+IF DEF(_RED) || DEF(_GREEN)
+	text $01,$9D,$01,$01,$7F,$09,$1F,$05,$DD,$7F,$04,$75,$7F,$01,$67,$07,$97,$7F,$06,$02,$04,$3E,$04,$36; RAW DATA : 	text "귀가 커서 먼 곳의 소리를"
+	next $03,$49,$07,$8B,$7F,$03,$77,$7F,$02,$3F,$01,$13,$7F,$09,$01,$03,$4D,$7F,$07,$62,$08,$27,$07,$9E,$02,$D9,$7F; RAW DATA : 	next "들을 때 날개 치듯 움직인다 "
+	next $0A,$AD,$02,$3A,$04,$89,$7F,$03,$16,$09,$07,$07,$8B,$7F,$06,$90,$02,$D9; RAW DATA : 	next "화나면 독침을 쏜다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $01,$9D,$04,$36,$7F,$05,$EC,$07,$66,$05,$DD,$7F,$07,$77,$0A,$88,$07,$8B,$7F,$02,$C0,$02,$34,$02,$D9,$7F; RAW DATA : 	text "귀를 세워서 위험을 느낀다 "
+	next $04,$96,$07,$97,$7F,$01,$01,$06,$63,$01,$01,$7F,$09,$7C,$7F,$06,$26,$03,$FF,$7F; RAW DATA : 	next "몸의 가시가 클 수록 "
+	next $01,$0D,$0A,$71,$7F,$03,$16,$07,$8B,$7F,$02,$4D,$02,$D9; RAW DATA : 	next "강한 독을 낸다"
+	dex
+ENDC
 
 _ClefairyDexEntry::
-	text "Its magical and"
-	next "cute appeal has"
-	next "many admirers."
-
-	page "It is rare and"
-	next "found only in"
-	next "certain areas"
+IF DEF(_RED) || DEF(_GREEN)
+	text $05,$B7,$03,$CB,$06,$4A,$03,$DF,$07,$4E,$7F,$04,$90,$06,$60,$7F,$07,$9C,$06,$EE,$05,$DD; RAW DATA : 	text "사랑스러운 모습 이어서"
+	next $0A,$1A,$07,$88,$03,$FE,$05,$DD,$7F,$07,$9E,$01,$B2,$01,$01,$7F,$04,$49,$02,$D9; RAW DATA : 	next "펫으로서 인기가 많다"
+	next $02,$DC,$7F,$01,$FF,$7F,$04,$DF,$01,$3F,$0A,$6F,$01,$B2,$7F,$06,$EE,$03,$F6,$02,$D9; RAW DATA : 	next "단 꽤 발견하기 어렵다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $06,$65,$05,$61,$0A,$6F,$01,$4D,$7F,$01,$9D,$07,$09,$07,$66,$05,$DD,$7F,$04,$49,$07,$8A,$7F,$0A,$02,$07,$9C,$7F,$07,$A6,$02,$D9; RAW DATA : 	text "신비하고 귀여워서 많은 팬이 있다"
+	next $02,$DC,$7F,$05,$DD,$06,$64,$08,$26,$01,$01,$7F,$0A,$71,$07,$D4,$07,$9C,$7F,$07,$A6,$06,$EE; RAW DATA : 	next "단 서식지가 한정이 있어"
+	next $04,$DF,$01,$3F,$0A,$6F,$02,$C2,$7F,$01,$2D,$07,$9C,$7F,$09,$7B,$07,$9F; RAW DATA : 	next "발견하는 것이 큰일"
+	dex
+ENDC
 
 _SpearowDexEntry::
-	text "Eats bugs in"
-	next "grassy areas. It"
-	next "has to flap its"
-
-	page "short wings at"
-	next "high speed to"
-	next "stay airborne"
+IF DEF(_RED) || DEF(_GREEN)
+	text $06,$3F,$7F,$05,$C5,$7F,$06,$F8,$07,$9C,$7F,$07,$9C,$01,$67,$7F,$07,$CA,$01,$67,$07,$8B,$7F,$02,$3F,$06,$C6; RAW DATA : 	text "쉴 새 없이 이곳 저곳을 날아"
+	next $02,$D9,$02,$D1,$02,$D9,$7F,$08,$BC,$03,$F2,$07,$8A,$7F,$07,$CB,$07,$88,$02,$3A,$7F,$03,$6B,$03,$C3,$0A,$6F,$01,$B2,$04,$36; RAW DATA : 	next "다닌다 체력은 적으나 따라하기를"
+	next $05,$B7,$07,$4B,$0A,$6F,$04,$89,$7F,$04,$48,$04,$48,$09,$01,$7F,$06,$CA,$02,$D9; RAW DATA : 	next "사용하면 만만치 않다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $0A,$3E,$06,$33,$07,$97,$7F,$04,$FA,$03,$E9,$7F,$03,$6B,$07,$77,$04,$36,$7F,$04,$74,$02,$C2,$02,$D9; RAW DATA : 	text "풀숲의 벌레 따위를 먹는다"
+	next $02,$3F,$01,$13,$01,$01,$7F,$08,$3A,$01,$B2,$7F,$03,$77,$04,$AE,$07,$01,$7F,$0A,$77,$05,$C3,$7F,$06,$3F,$7F,$05,$C5; RAW DATA : 	next "날개가 짧기 때문에 항상 쉴 새"
+	next $06,$F8,$07,$9C,$7F,$02,$3F,$01,$13,$04,$36,$7F,$09,$01,$01,$4D,$7F,$07,$A6,$02,$D9; RAW DATA : 	next "없이 날개를 치고 있다"
+	dex
+ENDC
 
 _VoltorbDexEntry::
-	text "Usually found in"
-	next "power plants."
-	next "Easily mistaken"
-
-	page "for a # BALL,"
-	next "they have zapped"
-	next "many people"
+IF DEF(_RED) || DEF(_GREEN)
+	text $07,$D4,$08,$BC,$04,$36,$7F,$06,$CB,$7F,$06,$26,$7F,$06,$F8,$02,$C2,$7F,$05,$CD,$04,$B0; RAW DATA : 	text "정체를 알 수 없는 생물"
+	next $01,$B2,$05,$30,$7F,$02,$3A,$05,$AB,$7F,$06,$02,$04,$3E,$04,$36,$7F,$02,$4B,$04,$87; RAW DATA : 	next "기분 나쁜 소리를 내며"
+	next $01,$09,$07,$AA,$01,$B2,$7F,$07,$AA,$0A,$28,$07,$8B,$7F,$0A,$6F,$01,$B2,$03,$15,$7F,$0A,$71,$02,$D9; RAW DATA : 	next "갑자기 자폭을 하기도 한다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $04,$DF,$07,$CC,$06,$02,$7F,$03,$4E,$07,$01,$7F,$02,$3A,$09,$88,$02,$3D,$02,$D9; RAW DATA : 	text "발전소 등에 나타난다"
+	next $04,$93,$06,$4A,$09,$9D,$05,$1C,$03,$FE,$7F,$08,$98,$01,$02,$0A,$6F,$01,$4D,$7F,$04,$48,$07,$E3,$02,$D9,$01,$01; RAW DATA : 	next "몬스터볼로 착각하고 만졌다가"
+	next $01,$08,$07,$CC,$03,$27,$02,$C2,$7F,$05,$B7,$03,$C7,$07,$9C,$7F,$04,$49,$02,$D9; RAW DATA : 	next "감전되는 사람이 많다"
+	dex
+ENDC
+
 
 _NidokingDexEntry::
-	text "It uses its"
-	next "powerful tail in"
-	next "battle to smash,"
-
-	page "constrict, then"
-	next "break the prey's"
-	next "bones"
+IF DEF(_RED) || DEF(_GREEN)
+	text $03,$19,$08,$B3,$03,$E3,$7F,$03,$6C,$03,$6C,$0A,$71,$7F,$0A,$67,$05,$2E,$07,$2D,$7F; RAW DATA : 	text "돌처럼 딱딱한 피부와 "
+	next $01,$B6,$01,$34,$7F,$05,$88,$07,$8A,$7F,$05,$A4,$07,$9C,$7F,$09,$DF,$08,$31,$07,$9C,$02,$D9,$7F,$05,$A4,$07,$01,$02,$C2; RAW DATA : 	next "길게 뻗은 뿔이 특징이다 뿔에는"
+	next $03,$16,$07,$9C,$7F,$07,$A6,$07,$88,$02,$CF,$7F,$08,$06,$07,$97,$0A,$78,$06,$DF,$7F,$0A,$71,$02,$D9; RAW DATA : 	next "독이 있으니 주의해야 한다"
 	dex
-
+ENDC
+IF DEF(_BLUE)
+	text $01,$8D,$07,$8A,$7F,$01,$EF,$04,$3E,$04,$36,$7F,$0A,$D6,$03,$31,$03,$DF,$05,$DD; RAW DATA : 	text "굵은 꼬리를 휘둘러서"
+	next $05,$C3,$02,$EB,$04,$36,$7F,$02,$DC,$02,$DC,$0A,$F7,$7F,$07,$E6,$07,$9E,$02,$D9; RAW DATA : 	next "상대를 단단히 조인다"
+	next $01,$A7,$04,$3E,$01,$4D,$7F,$03,$4E,$05,$90,$04,$36,$7F,$01,$DA,$01,$4D,$7F,$04,$48,$02,$D9; RAW DATA : 	next "그리고 등뼈를 꺾고 만다"
+	dex
+ENDC
 _SlowbroDexEntry::
-	text "The SHELLDER that"
-	next "is latched onto"
-	next "SLOWPOKE's tail"
-
-	page "is said to feed"
-	next "on the host's left"
-	next "over scraps"
+IF DEF(_RED) || DEF(_GREEN)
+	text $06,$DF,$03,$17,$07,$9C,$7F,$04,$D9,$02,$D9,$03,$FE,$7F,$04,$74,$07,$9C,$04,$36,$7F,$07,$B2,$07,$88,$03,$DF; RAW DATA : 	text "야돈이 바다로 먹이를 잡으러"
+	next $01,$0C,$02,$D9,$01,$01,$7F,$05,$EF,$03,$DF,$07,$01,$01,$34,$7F,$01,$EF,$04,$3E,$04,$36,$7F,$04,$B0,$03,$F1; RAW DATA : 	next "갔다가 셀러에게 꼬리를 물려"
+	next $06,$DF,$03,$15,$03,$C5,$07,$9C,$7F,$03,$27,$06,$FA,$02,$D9; RAW DATA : 	next "야도란이 되었다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $03,$49,$03,$DF,$05,$39,$06,$EE,$7F,$07,$A6,$02,$C2,$7F,$05,$EF,$03,$DF,$02,$C2; RAW DATA : 	text "들러붙어 있는 셀러는"
+	next $06,$DF,$03,$17,$07,$9C,$7F,$04,$74,$01,$4D,$7F,$02,$42,$01,$B4,$7F,$01,$2D,$07,$8B; RAW DATA : 	next "야돈이 먹고 남긴 것을"
+	next $04,$74,$07,$88,$04,$87,$7F,$05,$BA,$02,$D9,$01,$4D,$7F,$0A,$71,$02,$D9; RAW DATA : 	next "먹으며 산다고 한다"
+	dex
+ENDC
+
 
 _IvysaurDexEntry::
-	text "When the bulb on"
-	next "its back grows"
-	next "large, it appears"
-
-	page "to lose the"
-	next "ability to stand"
-	next "on its hind legs"
+IF DEF(_RED) || DEF(_GREEN)
+	text $01,$F9,$05,$20,$07,$20,$04,$3E,$01,$01,$7F,$03,$4E,$07,$01,$7F,$05,$39,$06,$EE,$7F,$07,$A6,$07,$88,$04,$87,$7F; RAW DATA : 	text "꽃봉오리가 등에 붙어 있으며 "
+	next $06,$E7,$05,$30,$07,$8B,$7F,$0A,$ED,$06,$26,$0A,$78,$01,$01,$04,$89; RAW DATA : 	next "양분을 흡수해가면"
+	next $09,$1F,$02,$D9,$03,$C5,$7F,$01,$F9,$07,$9C,$7F,$0A,$69,$02,$D9,$01,$4D,$7F,$0A,$71,$02,$D9; RAW DATA : 	next "커다란 꽃이 핀다고 한다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $03,$4E,$07,$97,$7F,$01,$F9,$05,$20,$07,$20,$04,$3E,$01,$01,$7F,$09,$79,$01,$34; RAW DATA : 	text "등의 꽃봉오리가 크게"
+	next $07,$AA,$03,$C3,$02,$3A,$04,$89,$7F,$03,$2E,$04,$DF,$03,$FE,$7F,$05,$E3,$7F,$06,$26,$7F,$06,$F8,$01,$34; RAW DATA : 	next "자라나면 두발로 설 수 없게"
+	next $03,$27,$02,$C2,$7F,$03,$4D,$0A,$6F,$02,$D9; RAW DATA : 	next "되는 듯하다"
+	dex
+ENDC
+
 
 _ExeggutorDexEntry::
-	text "Legend has it that"
-	next "on rare occasions,"
-	next "one of its heads"
-
-	page "will drop off and"
-	next "continue on as an"
-	next "EXEGGCUTE"
+IF DEF(_RED) || DEF(_GREEN)
+	text $01,$29,$06,$EE,$02,$D9,$02,$CF,$02,$C2,$7F,$07,$0D,$02,$EB,$07,$4C,$04,$42,$07,$9C,$03,$C3,$7F,$05,$32,$04,$40,$02,$D9; RAW DATA : 	text "걸어다니는 열대우림이라 불린다"
+	next $07,$0D,$04,$65,$04,$46,$02,$D9,$7F,$06,$F3,$01,$8C,$07,$9C,$7F,$07,$A6,$07,$88,$04,$87; RAW DATA : 	next "열매마다 얼굴이 있으며"
+	next $01,$02,$07,$AA,$07,$97,$7F,$07,$97,$08,$26,$04,$36,$7F,$01,$0E,$01,$4D,$7F,$07,$A6,$02,$D9; RAW DATA : 	next "각자의 의지를 갖고 있다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $04,$65,$07,$4C,$7F,$03,$45,$04,$B0,$01,$34,$7F,$04,$73,$04,$3E,$7F,$08,$0F,$7F,$0A,$6F,$02,$3A,$01,$01; RAW DATA : 	text "매우 드물게 머리 중 하나가"
+	next $08,$26,$04,$89,$07,$01,$7F,$03,$83,$06,$EE,$08,$26,$04,$89,$7F,$06,$C6,$03,$C3,$04,$3E,$01,$01,$7F,$03,$27,$06,$EE; RAW DATA : 	next "지면에 떨어지면 아라리가 되어"
+	next $07,$62,$08,$27,$07,$9C,$01,$B2,$7F,$06,$63,$07,$AB,$0A,$71,$02,$D9,$01,$4D,$7F,$0A,$71,$02,$D9; RAW DATA : 	next "움직이기 시작한다고 한다"
+	dex
+ENDC
 
 _LickitungDexEntry::
-	text "Its tongue can be"
-	next "extended like a"
-	next "chameleon's. It"
-
-	page "leaves a tingling"
-	next "sensation when it"
-	next "licks enemies"
+IF DEF(_RED) || DEF(_GREEN)
+	text $0A,$94,$07,$97,$7F,$01,$B6,$07,$9C,$01,$01,$7F,$04,$96,$01,$B6,$07,$9C,$07,$97,$7F,$04,$E8,$07,$9C,$02,$D9; RAW DATA : 	text "혀의 길이가 몸길이의 배이다"
+	next $04,$74,$07,$A5,$01,$08,$07,$8B,$7F,$07,$B2,$01,$25,$02,$3A,$7F,$01,$68,$01,$3D,$07,$8B,$7F,$0A,$6F,$02,$C2,$7F,$03,$4E; RAW DATA : 	next "먹잇감을 잡거나 공격을 하는 등"
+	next $04,$46,$09,$01,$7F,$06,$05,$08,$B3,$03,$E3,$7F,$07,$AA,$07,$7F,$07,$AA,$07,$B7,$03,$FE,$7F,$07,$62,$08,$27,$07,$9E,$02,$D9; RAW DATA : 	next "마치 손처럼 자유자재로 움직인다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $0A,$94,$01,$01,$7F,$09,$0B,$04,$81,$03,$E9,$07,$22,$08,$B3,$03,$E3,$7F,$08,$7F,$08,$7F,$7F,$05,$88,$06,$EE,$02,$3A,$01,$05; RAW DATA : 	text "혀가 카멜레온처럼 쭉쭉 뻗어나갈"
+	next $07,$D4,$03,$15,$03,$FE,$7F,$01,$B6,$02,$D9,$7F,$0A,$94,$04,$36,$7F,$0A,$73,$07,$88,$04,$89; RAW DATA : 	next "정도로 길다 혀를 핥으면"
+	next $05,$AF,$04,$3E,$05,$AF,$04,$3E,$7F,$07,$CA,$03,$F1,$07,$22,$02,$D9; RAW DATA : 	next "삐리삐리 저려온다"
+	dex
+ENDC
 
 _ExeggcuteDexEntry::
-	text "Often mistaken"
-	next "for eggs."
-	next "When disturbed,"
-
-	page "they quickly"
-	next "gather and attack"
-	next "in swarms"
+IF DEF(_RED) || DEF(_GREEN)
+	text $04,$AB,$06,$F0,$01,$01,$07,$97,$7F,$06,$CB,$7F,$01,$10,$08,$26,$04,$48,$7F,$06,$67,$07,$8A; RAW DATA : 	text "무언가의 알 같지만 실은"
+	next $06,$64,$04,$B0,$07,$97,$7F,$06,$BE,$06,$D1,$07,$01,$7F,$01,$01,$01,$BE,$07,$4E,$7F,$05,$CD,$04,$B0,$07,$9C,$03,$C3,$02,$C2; RAW DATA : 	next "식물의 씨앗에 가까운 생물이라는"
+	next $05,$B7,$06,$67,$07,$9C,$7F,$03,$45,$03,$DF,$02,$45,$02,$D9; RAW DATA : 	next "사실이 드러났다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $06,$CB,$07,$9E,$7F,$08,$09,$7F,$06,$CB,$01,$4D,$7F,$01,$27,$03,$45,$04,$3E,$04,$89; RAW DATA : 	text "알인 줄 알고 건드리면"
+	next $03,$1F,$04,$11,$01,$01,$7F,$07,$D1,$07,$D1,$7F,$04,$90,$07,$09,$03,$49,$06,$EE; RAW DATA : 	next "동료가 점점 모여들어"
+	next $08,$2D,$02,$DC,$01,$68,$01,$3D,$07,$8B,$7F,$0A,$78,$07,$22,$02,$D9; RAW DATA : 	next "집단공격을 해온다"
+	dex
+ENDC
 
 _GrimerDexEntry::
-	text "Appears in filthy"
-	next "areas. Thrives by"
-	next "sucking up"
-
-	page "polluted sludge"
-	next "that is pumped"
-	next "out of factories"
+IF DEF(_RED) || DEF(_GREEN)
+	text $02,$DE,$03,$FE,$05,$2E,$09,$9D,$07,$97,$7F,$97,$05,$E1,$07,$8B,$7F,$08,$79,$7F,$07,$20,$04,$B0,$07,$9C; RAW DATA : 	text "달로부터의 X선을 쬔 오물이"
+	next $08,$2A,$0A,$0C,$07,$9C,$03,$FE,$7F,$05,$0F,$0A,$AD,$0A,$7F,$02,$D9,$7F,$02,$F5,$03,$DF,$07,$4E,$7F,$01,$2D,$07,$8B; RAW DATA : 	next "질퍽이로 변화했다 더러운 것을"
+	next $01,$82,$07,$B5,$0A,$F7,$7F,$07,$F1,$06,$C6,$0A,$71,$02,$D9; RAW DATA : 	next "굉장히 좋아한다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $02,$F5,$03,$DF,$07,$4E,$7F,$01,$67,$07,$01,$7F,$02,$3A,$09,$88,$02,$3D,$02,$D9; RAW DATA : 	text "더러운 곳에 나타난다"
+	next $01,$68,$07,$B5,$07,$01,$05,$DD,$7F,$0A,$EA,$03,$DF,$02,$3A,$07,$20,$02,$C2,$7F,$08,$28,$0A,$EB; RAW DATA : 	next "공장에서 흘러나오는 진흙"
+	next $0A,$23,$06,$26,$04,$36,$7F,$04,$46,$06,$63,$01,$4D,$7F,$05,$BA,$02,$D9; RAW DATA : 	next "폐수를 마시고 산다"
+	dex
+ENDC
 
 _GengarDexEntry::
-	text "Under a full moon,"
-	next "this #MON"
-	next "likes to mimic"
-
-	page "the shadows of"
-	next "people and laugh"
-	next "at their fright"
+IF DEF(_RED) || DEF(_GREEN)
+	text $05,$BA,$07,$01,$05,$DD,$7F,$07,$E6,$02,$3D,$02,$E7,$0A,$7F,$07,$8B,$7F,$03,$77,$7F,$04,$91,$06,$2B,$07,$8B; RAW DATA : 	text "산에서 조난당했을 때 목숨을"
+	next $05,$79,$06,$D1,$07,$88,$03,$F1,$7F,$06,$EE,$03,$32,$7F,$06,$03,$07,$01,$05,$DD; RAW DATA : 	next "빼앗으려 어둠 속에서"
+	next $02,$3A,$09,$88,$02,$3D,$02,$D9,$01,$4D,$7F,$0A,$71,$02,$D9; RAW DATA : 	next "나타난다고 한다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $05,$18,$04,$37,$02,$DE,$7F,$04,$E3,$07,$01,$7F,$01,$A7,$04,$42,$07,$AA,$01,$01,$7F,$07,$D6,$04,$7A,$02,$EB,$03,$FE; RAW DATA : 	text "보름달 밤에 그림자가 제멋대로"
+	next $07,$62,$08,$27,$07,$9C,$04,$87,$7F,$07,$64,$02,$C2,$02,$D9,$04,$89,$7F,$0A,$02,$09,$A2,$07,$97,$7F,$08,$2E,$07,$9C; RAW DATA : 	next "움직이며 웃는다면 팬텀의 짓이"
+	next $09,$E2,$04,$42,$06,$F8,$02,$D9; RAW DATA : 	next "틀림없다"
+	dex
+ENDC
 
 _NidoranFDexEntry::
-	text "Although small,"
-	next "its venomous"
-	next "barbs render this"
-
-	page "#MON dangerous."
-	next "The female has"
-	next "smaller horns"
+IF DEF(_RED) || DEF(_GREEN)
+	text $07,$AB,$06,$C6,$03,$15,$7F,$03,$16,$09,$07,$07,$97,$7F,$07,$77,$03,$F2,$07,$8A; RAW DATA : 	text "작아도 독침의 위력은"
+	next $01,$0D,$03,$F4,$0A,$78,$05,$DD,$7F,$08,$06,$07,$97,$01,$01,$7F,$0A,$6A,$07,$44; RAW DATA : 	next "강렬해서 주의가 필요"
+	next $06,$CF,$09,$26,$7F,$08,$6A,$07,$9C,$7F,$05,$A4,$07,$9C,$7F,$07,$AB,$02,$D9; RAW DATA : 	next "암컷 쪽이 뿔이 작다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $04,$96,$07,$9C,$7F,$07,$AB,$08,$26,$04,$48,$7F,$03,$16,$09,$07,$07,$8B,$7F,$08,$26,$02,$CF,$01,$4D; RAW DATA : 	text "몸이 작지만 독침을 지니고"
+	next $07,$A6,$01,$B2,$7F,$03,$77,$04,$AE,$07,$01,$7F,$08,$06,$07,$97,$01,$01,$7F,$0A,$6A,$07,$44,$0A,$6F,$02,$D9; RAW DATA : 	next "있기 때문에 주의가 필요하다"
+	next $06,$CF,$09,$26,$07,$97,$7F,$05,$A4,$07,$9C,$7F,$02,$F5,$7F,$07,$AB,$02,$D9; RAW DATA : 	next "암컷의 뿔이 더 작다"
+	dex
+ENDC
 
 _NidoqueenDexEntry::
-	text "Its hard scales"
-	next "provide strong"
-	next "protection. It"
-
-	page "uses its hefty"
-	next "bulk to execute"
-	next "powerful moves"
+IF DEF(_RED) || DEF(_GREEN)
+	text $02,$DC,$02,$DC,$0A,$6F,$01,$4D,$7F,$04,$D9,$02,$C3,$7F,$01,$10,$07,$8A,$7F,$05,$61,$02,$C3,$07,$9C,$7F; RAW DATA : 	text "단단하고 바늘 같은 비늘이 "
+	next $04,$96,$07,$8B,$7F,$03,$3A,$03,$04,$01,$4D,$7F,$07,$A6,$02,$D9,$7F; RAW DATA : 	next "몸을 뒤덮고 있다 "
+	next $0A,$EF,$05,$30,$0A,$6F,$04,$89,$7F,$04,$D9,$02,$C3,$07,$9C,$7F,$01,$4F,$03,$2E,$05,$E1,$02,$D9; RAW DATA : 	next "흥분하면 바늘이 곤두선다"
 	dex
-
+ENDC
+IF DEF(_BLUE)
+	text $03,$6C,$03,$6C,$0A,$71,$7F,$05,$61,$02,$C3,$03,$FE,$7F,$01,$68,$01,$3D,$07,$88,$03,$FE,$05,$2E,$09,$9D,$7F; RAW DATA : 	text "딱딱한 비늘로 공격으로부터 "
+	next $04,$96,$07,$8B,$7F,$08,$26,$09,$82,$02,$D9,$7F,$01,$6C,$03,$FF,$07,$9C,$7F,$07,$A6,$02,$C2,$7F; RAW DATA : 	next "몸을 지킨다 관록이 있는 "
+	next $04,$96,$07,$88,$03,$FE,$05,$2E,$09,$9D,$7F,$09,$7B,$7F,$01,$B2,$06,$2A,$07,$8B,$7F,$02,$4B,$05,$18,$02,$4D,$02,$D9; RAW DATA : 	next "몸으로부터 큰 기술을 내보낸다"
+	dex
+ENDC
 _CuboneDexEntry::
-	text "Because it never"
-	next "removes its skull"
-	next "helmet, no one"
-
-	page "has ever seen"
-	next "this #MON's"
-	next "real face"
+IF DEF(_RED) || DEF(_GREEN)
+	text $08,$07,$07,$8A,$7F,$06,$EE,$04,$CC,$07,$97,$7F,$0A,$78,$01,$61,$07,$8B,$7F,$04,$73,$04,$3E,$07,$01; RAW DATA : 	text "죽은 어미의 해골을 머리에"
+	next $06,$B2,$01,$4D,$07,$A6,$02,$D9,$7F,$07,$3C,$03,$FE,$07,$4F,$7F,$03,$77,$02,$C2; RAW DATA : 	next "쓰고있다 외로울 때는"
+	next $09,$7B,$7F,$06,$02,$04,$3E,$03,$FE,$7F,$07,$4E,$02,$D9,$01,$4D,$7F,$0A,$71,$02,$D9; RAW DATA : 	next "큰 소리로 운다고 한다"
 	dex
-
+ENDC
+IF DEF(_BLUE)
+	text $04,$73,$04,$3E,$07,$01,$7F,$05,$90,$7F,$0A,$8F,$04,$84,$07,$8B; RAW DATA : 	text "머리에 뼈 헬멧을"
+	next $06,$B2,$01,$4D,$7F,$07,$A6,$06,$EE,$05,$DD,$7F,$04,$67,$7F,$06,$F3,$01,$8C,$07,$8B; RAW DATA : 	next "쓰고 있어서 맨 얼굴을"
+	next $05,$1B,$7F,$05,$B7,$03,$C7,$07,$8A,$7F,$06,$F8,$02,$D9; RAW DATA : 	next "본 사람은 없다"
+	dex
+ENDC
 _RhyhornDexEntry::
-	text "Its massive bones"
-	next "are 1000 times"
-	next "harder than human"
-
-	page "bones. It can"
-	next "easily knock a"
-	next "trailer flying"
+IF DEF(_RED) || DEF(_GREEN)
+	text $04,$73,$04,$3E,$02,$C2,$7F,$02,$3A,$05,$AA,$08,$26,$04,$48,$7F,$0A,$FB,$07,$9C,$7F,$05,$EC,$05,$DD; RAW DATA : 	text "머리는 나쁘지만 힘이 세서"
+	next $01,$4D,$08,$FE,$7F,$05,$64,$03,$69,$03,$15,$7F,$04,$96,$09,$BB,$04,$DA,$09,$01,$01,$B2,$03,$FE; RAW DATA : 	next "고층 빌딩도 몸통박치기로"
+	next $05,$BA,$05,$BA,$07,$E6,$01,$02,$7F,$02,$4D,$02,$D9; RAW DATA : 	next "산산조각 낸다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $05,$90,$01,$01,$7F,$09,$E0,$09,$E0,$0A,$78,$05,$DD,$7F,$07,$9E,$01,$03,$07,$97; RAW DATA : 	text "뼈가 튼튼해서 인간의"
+	next $F7,$F6,$F6,$F6,$04,$E8,$02,$C2,$7F,$03,$6C,$03,$6C,$0A,$6F,$02,$D9; RAW DATA : 	next "1000배는 딱딱하다"
+	next $02,$EB,$0A,$9C,$7F,$09,$DE,$03,$E9,$07,$9F,$03,$DF,$03,$15,$7F,$02,$3F,$03,$F1,$04,$F6,$04,$40,$02,$D9; RAW DATA : 	next "대형 트레일러도 날려버린다"
+	dex
+ENDC
 
 _LaprasDexEntry::
-	text "A #MON that"
-	next "has been over-"
-	next "hunted almost to"
-
-	page "extinction. It"
-	next "can ferry people"
-	next "across the water"
+IF DEF(_RED) || DEF(_GREEN)
+	text $05,$B7,$03,$C7,$7F,$04,$4B,$07,$8B,$7F,$07,$9C,$0A,$78,$0A,$6F,$02,$C2,$7F,$02,$94,$07,$8A,$7F,$08,$26,$02,$C9,$07,$8B; RAW DATA : 	text "사람 말을 이해하는 높은 지능을"
+	next $01,$01,$08,$26,$01,$4D,$7F,$07,$A6,$02,$D9,$7F,$05,$B7,$03,$C7,$07,$8B,$7F,$09,$92,$07,$4C,$01,$4D,$7F,$04,$D9,$02,$D9; RAW DATA : 	next "가지고 있다 사람을 태우고 바다"
+	next $01,$27,$02,$6A,$02,$C2,$7F,$01,$2D,$07,$8B,$7F,$07,$F1,$06,$C6,$0A,$71,$02,$D9; RAW DATA : 	next "건너는 것을 좋아한다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $05,$B7,$03,$C7,$03,$49,$07,$01,$01,$34,$7F,$04,$49,$07,$9C,$7F,$07,$B2,$0A,$94,$04,$F6,$03,$F1,$7F; RAW DATA : 	text "사람들에게 많이 잡혀버려 "
+	next $04,$8A,$07,$EE,$7F,$08,$27,$07,$CC,$07,$01,$7F,$02,$95,$07,$9C,$01,$34,$7F,$03,$27,$06,$FA,$02,$D9; RAW DATA : 	next "멸종 직전에 놓이게 되었다"
+	next $05,$B7,$03,$C7,$07,$8B,$7F,$09,$92,$07,$4C,$01,$4D,$7F,$04,$D9,$02,$D9,$04,$36,$7F,$02,$3A,$06,$C6,$01,$03,$02,$D9; RAW DATA : 	next "사람을 태우고 바다를 나아간다"
+	dex
+ENDC
 
 _ArcanineDexEntry::
-	text "A #MON that"
-	next "has been admired"
-	next "since the past"
-
-	page "for its beauty."
-	next "It runs agilely"
-	next "as if on wings"
+IF DEF(_RED) || DEF(_GREEN)
+	text $08,$0F,$01,$89,$07,$97,$7F,$01,$88,$07,$CC,$7F,$05,$E3,$0A,$AD,$07,$01,$7F,$07,$A6,$02,$C2; RAW DATA : 	text "중국의 구전 설화에 있는"
+	next $07,$CC,$05,$E3,$07,$97,$7F,$0A,$27,$09,$2F,$04,$93,$7F,$01,$82,$07,$B5,$0A,$71,$7F,$06,$03,$03,$15,$03,$FE; RAW DATA : 	next "전설의 포켓몬 굉장한 속도로"
+	next $02,$DE,$04,$40,$02,$D9,$01,$4D,$7F,$0A,$71,$02,$D9; RAW DATA : 	next "달린다고 한다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $07,$1E,$02,$3F,$05,$2E,$09,$9D,$7F,$04,$49,$07,$8A,$7F,$05,$B7,$03,$C7,$07,$97,$7F,$04,$46,$07,$8D,$07,$8B; RAW DATA : 	text "옛날부터 많은 사람의 마음을"
+	next $05,$B7,$03,$FE,$07,$B2,$07,$8A,$7F,$06,$C6,$04,$37,$02,$D9,$07,$4E,$7F,$0A,$27,$09,$2F,$04,$93,$07,$9C,$02,$D9; RAW DATA : 	next "사로잡은 아름다운 포켓몬이다"
+	next $02,$3F,$03,$4D,$07,$9C,$7F,$01,$46,$09,$48,$0A,$6F,$01,$34,$7F,$02,$DE,$04,$40,$02,$D9; RAW DATA : 	next "날듯이 경쾌하게 달린다"
+	dex
+ENDC
 
 _MewDexEntry::
-	text "So rare that it"
-	next "is still said to"
-	next "be a mirage by"
-
-	page "many experts. Only"
-	next "a few people have"
-	next "seen it worldwide"
+IF DEF(_RED) || DEF(_GREEN)
+	text $02,$42,$06,$C6,$04,$7E,$04,$3E,$09,$0B,$07,$01,$7F,$05,$DD,$06,$64,$0A,$6F,$01,$4D,$7F,$07,$A6,$02,$C2; RAW DATA : 	text "남아메리카에 서식하고 있는"
+	next $07,$CD,$04,$8A,$03,$27,$06,$FA,$07,$8B,$7F,$0A,$27,$09,$2F,$04,$93,$7F,$08,$26,$02,$C9,$07,$9C,$7F,$02,$94,$06,$C6; RAW DATA : 	next "절멸되었을 포켓몬 지능이 높아"
+	next $06,$EE,$03,$82,$7F,$01,$2D,$07,$9C,$03,$C3,$03,$15,$7F,$06,$60,$03,$46,$0A,$71,$02,$D9; RAW DATA : 	next "어떤 것이라도 습득한다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $08,$26,$01,$AD,$03,$15,$7F,$0A,$AF,$05,$C3,$07,$97,$7F,$0A,$27,$09,$2F,$04,$93,$07,$9C,$03,$C3,$01,$4D; RAW DATA : 	text "지금도 환상의 포켓몬이라고"
+	next $07,$CC,$0A,$78,$08,$28,$02,$D9,$7F,$01,$A7,$7F,$04,$90,$06,$60,$07,$8B,$7F,$05,$1B,$7F,$07,$AA,$02,$C2; RAW DATA : 	next "전해진다 그 모습을 본 자는"
+	next $07,$CC,$01,$89,$07,$01,$05,$DD,$7F,$0A,$71,$7F,$04,$8D,$03,$15,$7F,$06,$F8,$02,$D9; RAW DATA : 	next "전국에서 한 명도 없다"
+	dex
+ENDC
 
 _GyaradosDexEntry::
-	text "Rarely seen in"
-	next "the wild. Huge"
-	next "and vicious, it"
-
-	page "is capable of"
-	next "destroying entire"
-	next "cities in a rage"
+IF DEF(_RED) || DEF(_GREEN)
+	text $02,$EB,$02,$DC,$0A,$F7,$7F,$0A,$E4,$0A,$27,$0A,$71,$7F,$05,$EA,$01,$3D,$7F,$07,$A4,$07,$01,$05,$DD; RAW DATA : 	text "대단히 흉포한 성격 입에서"
+	next $05,$A5,$06,$EE,$07,$DE,$7F,$02,$3A,$07,$20,$02,$C2,$7F,$09,$F4,$01,$7B,$01,$74,$05,$E1,$07,$8A; RAW DATA : 	next "뿜어져 나오는 파괴광선은"
+	next $04,$90,$03,$47,$7F,$01,$2D,$07,$8B,$7F,$05,$32,$09,$92,$07,$4E,$02,$D9; RAW DATA : 	next "모든 것을 불태운다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $01,$25,$07,$97,$7F,$04,$90,$06,$60,$07,$8B,$7F,$03,$45,$03,$DF,$02,$4B,$08,$26,$7F,$06,$CA,$08,$26,$04,$48; RAW DATA : 	text "거의 모습을 드러내지 않지만"
+	next $0A,$71,$04,$F8,$7F,$02,$3F,$03,$A9,$04,$89,$7F,$09,$1F,$02,$D9,$03,$C5,$7F,$03,$15,$06,$63,$01,$01; RAW DATA : 	next "한번 날뛰면 커다란 도시가"
+	next $01,$7B,$04,$8A,$0A,$6F,$02,$C2,$7F,$01,$46,$07,$4C,$03,$15,$7F,$07,$A6,$02,$D9; RAW DATA : 	next "괴멸하는 경우도 있다"
+	dex
+ENDC
 
 _ShellderDexEntry::
-	text "Its hard shell"
-	next "repels any kind"
-	next "of attack."
-
-	page "It is vulnerable"
-	next "only when its"
-	next "shell is open"
+IF DEF(_RED) || DEF(_GREEN)
+	text $02,$D9,$07,$9C,$06,$C6,$04,$93,$03,$45,$05,$18,$02,$D9,$03,$15,$7F,$02,$DC,$02,$DC,$0A,$71,$7F,$01,$DE,$08,$2A,$03,$FE; RAW DATA : 	text "다이아몬드보다도 단단한 껍질로"
+	next $06,$6E,$07,$09,$07,$A6,$02,$D9,$7F,$0A,$6F,$08,$26,$04,$48,$7F,$06,$03,$07,$8A; RAW DATA : 	next "싸여있다 하지만 속은"
+	next $07,$97,$07,$3C,$03,$FE,$7F,$05,$2E,$03,$45,$03,$E4,$02,$D9; RAW DATA : 	next "의외로 부드럽다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $02,$DC,$02,$DC,$0A,$71,$7F,$01,$DE,$03,$05,$01,$B2,$02,$C2,$7F,$06,$EE,$03,$82,$7F,$01,$68,$01,$3D,$03,$15,$7F,$09,$D8,$01,$3C; RAW DATA : 	text "단단한 껍데기는 어떤 공격도 튕겨"
+	next $02,$4D,$02,$D9,$7F,$01,$DE,$03,$05,$01,$B2,$04,$36,$7F,$04,$FA,$04,$3E,$01,$4D,$7F,$07,$A6,$07,$8B,$7F,$03,$77; RAW DATA : 	next "낸다 껍데기를 벌리고 있을 때"
+	next $06,$C8,$08,$6A,$07,$8B,$7F,$01,$68,$01,$3D,$02,$E7,$0A,$6F,$02,$C2,$7F,$01,$2D,$07,$01,$02,$C2,$7F,$06,$E0,$0A,$6F,$02,$D9; RAW DATA : 	next "안쪽을 공격당하는 것에는 약하다"
+	dex
+ENDC
 
 _TentacoolDexEntry::
-	text "Drifts in shallow"
-	next "seas. Anglers who"
-	next "hook them by"
-
-	page "accident are"
-	next "often punished by"
-	next "its stinging acid"
+IF DEF(_RED) || DEF(_GREEN)
+	text $06,$26,$07,$D4,$08,$B3,$03,$E3,$7F,$09,$C5,$04,$8D,$0A,$71,$7F,$02,$AB,$07,$01,$05,$DD; RAW DATA : 	text "수정처럼 투명한 눈에서"
+	next $06,$65,$05,$61,$0A,$71,$7F,$05,$6B,$07,$9C,$7F,$02,$3A,$02,$C2; RAW DATA : 	next "신비한 빛이 나는"
+	next $05,$66,$07,$8B,$7F,$04,$DF,$05,$B7,$0A,$71,$02,$D9; RAW DATA : 	next "빔을 발사한다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $04,$D9,$02,$D9,$7F,$06,$E8,$07,$8A,$7F,$01,$67,$07,$8B,$7F,$03,$80,$02,$D9,$02,$D1,$02,$D9; RAW DATA : 	text "바다 얕은 곳을 떠다닌다"
+	next $02,$3C,$06,$63,$02,$0B,$07,$9C,$7F,$06,$67,$06,$26,$03,$FE,$7F,$02,$3C,$06,$C6,$7F,$07,$23,$03,$F1; RAW DATA : 	next "낚시꾼이 실수로 낚아 올려"
+	next $08,$91,$04,$3E,$02,$C2,$7F,$07,$9F,$07,$9C,$7F,$04,$49,$02,$D9,$01,$4D,$7F,$0A,$71,$02,$D9; RAW DATA : 	next "찔리는 일이 많다고 한다"
+	dex
+ENDC
 
 _GastlyDexEntry::
-	text "Almost invisible,"
-	next "this gaseous"
-	next "#MON cloaks"
-
-	page "the target and"
-	next "puts it to sleep"
-	next "without notice"
+IF DEF(_RED) || DEF(_GREEN)
+	text $0A,$E5,$04,$44,$0A,$71,$7F,$01,$01,$06,$4A,$7F,$05,$C3,$09,$92,$07,$97,$7F,$05,$CD,$04,$8D,$08,$BC; RAW DATA : 	text "흐릿한 가스 상태의 생명체"
+	next $01,$01,$06,$4A,$07,$01,$7F,$0A,$D6,$01,$08,$01,$B2,$04,$89,$7F,$07,$9E,$03,$15,$09,$3A,$02,$32,$04,$3E,$07,$E6,$08,$97; RAW DATA : 	next "가스에 휘감기면 인도코끼리조차"
+	next $05,$14,$07,$88,$03,$FE,$7F,$06,$B2,$03,$DF,$08,$28,$02,$D9; RAW DATA : 	next "병으로 쓰러진다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $04,$90,$06,$60,$07,$9C,$7F,$01,$25,$07,$97,$7F,$06,$C8,$05,$18,$07,$9E,$02,$D9; RAW DATA : 	text "모습이 거의 안보인다"
+	next $04,$90,$04,$33,$02,$C2,$7F,$05,$B7,$07,$9C,$07,$01,$7F,$01,$01,$06,$4A,$07,$01; RAW DATA : 	next "모르는 사이에 가스에"
+	next $08,$0F,$03,$16,$03,$27,$06,$EE,$7F,$01,$B2,$07,$CD,$0A,$71,$02,$D9; RAW DATA : 	next "중독되어 기절한다"
+	dex
+ENDC
 
 _ScytherDexEntry::
-	text "With ninja-like"
-	next "agility and speed,"
-	next "it can create the"
-
-	page "illusion that"
-	next "there is more"
-	next "than one"
+IF DEF(_RED) || DEF(_GREEN)
+	text $02,$3F,$09,$0B,$03,$FE,$07,$4E,$7F,$02,$44,$07,$88,$03,$FE,$7F,$04,$74,$07,$9C,$04,$36,$7F,$05,$03,$01,$4D; RAW DATA : 	text "날카로운 낫으로 먹이를 베고"
+	next $06,$2B,$09,$BB,$07,$8B,$7F,$02,$27,$02,$C2,$02,$D9,$7F,$04,$65,$07,$4C,$7F,$03,$45,$04,$B0,$01,$34; RAW DATA : 	next "숨통을 끊는다 매우 드물게"
+	next $02,$3F,$01,$13,$04,$36,$7F,$05,$B7,$07,$4B,$0A,$78,$05,$DD,$7F,$02,$3D,$02,$D9; RAW DATA : 	next "날개를 사용해서 난다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $02,$D1,$07,$AA,$08,$B3,$03,$E3,$7F,$07,$B7,$05,$6C,$04,$33,$02,$D9,$7F,$02,$6A,$04,$AB,$7F,$05,$71,$04,$3E; RAW DATA : 	text "닌자처럼 재빠르다 너무 빨리"
+	next $07,$62,$08,$27,$07,$9F,$7F,$03,$77,$07,$01,$02,$C2,$7F,$04,$8E,$7F,$04,$46,$04,$3E,$02,$3A; RAW DATA : 	next "움직일 때에는 몇 마리나"
+	next $07,$A6,$02,$C2,$7F,$01,$2D,$08,$B3,$03,$E3,$7F,$05,$18,$07,$9E,$02,$D9; RAW DATA : 	next "있는 것처럼 보인다"
+	dex
+ENDC
 
 _StaryuDexEntry::
-	text "An enigmatic"
-	next "#MON that can"
-	next "effortlessly"
-
-	page "regenerate any"
-	next "appendage it"
-	next "loses in battle"
+IF DEF(_RED) || DEF(_GREEN)
+	text $04,$D9,$02,$E5,$01,$01,$07,$01,$7F,$04,$49,$07,$9C,$7F,$02,$3A,$09,$88,$02,$3A,$01,$4D; RAW DATA : 	text "바닷가에 많이 나타나고"
+	next $04,$E3,$07,$9C,$7F,$03,$27,$04,$89,$7F,$0A,$71,$01,$01,$07,$4E,$03,$05,$01,$01,$7F; RAW DATA : 	next "밤이 되면 한가운데가 "
+	next $0A,$71,$01,$01,$07,$4E,$03,$05,$01,$01,$7F,$05,$71,$01,$12,$01,$34,$7F,$01,$C4,$05,$6D,$01,$25,$04,$40,$02,$D9; RAW DATA : 	next "한가운데가 빨갛게 깜빡거린다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $04,$96,$07,$97,$7F,$07,$9F,$05,$2E,$01,$01,$7F,$07,$AF,$03,$F1,$03,$15; RAW DATA : 	text "몸의 일부가 잘려도"
+	next $07,$AA,$01,$B2,$07,$B7,$05,$CD,$0A,$78,$05,$DD,$7F,$07,$68,$03,$D1,$02,$EB,$03,$FE,$7F,$03,$19,$06,$C6,$01,$01,$02,$C2; RAW DATA : 	next "자기재생해서 원래대로 돌아가는"
+	next $06,$26,$06,$26,$01,$E2,$02,$32,$01,$01,$7F,$04,$49,$07,$8A,$7F,$05,$CD,$04,$B0,$07,$9C,$02,$D9; RAW DATA : 	next "수수께끼가 많은 생물이다"
+	dex
+ENDC
 
 _BlastoiseDexEntry::
-	text "A brutal #MON"
-	next "with pressurized"
-	next "water jets on its"
-
-	page "shell. They are"
-	next "used for high"
-	next "speed tackles"
+IF DEF(_RED) || DEF(_GREEN)
+	text $04,$AB,$01,$25,$07,$4E,$7F,$04,$96,$07,$88,$03,$FE,$7F,$05,$C3,$02,$EB,$04,$36,$7F,$03,$04,$08,$C4,$05,$DD; RAW DATA : 	text "무거운 몸으로 상대를 덮쳐서"
+	next $01,$B2,$07,$CD,$7F,$06,$63,$09,$82,$02,$D9,$7F,$07,$77,$01,$B2,$07,$01,$7F,$08,$B3,$0A,$6F,$04,$89; RAW DATA : 	next "기절 시킨다 위기에 처하면"
+	next $03,$4E,$01,$DE,$08,$2A,$07,$01,$7F,$06,$2B,$02,$C2,$02,$D9; RAW DATA : 	next "등껍질에 숨는다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $03,$4E,$01,$DE,$08,$2A,$07,$01,$7F,$05,$30,$05,$B7,$01,$88,$01,$01,$7F,$07,$A6,$06,$EE; RAW DATA : 	text "등껍질에 분사구가 있어"
+	next $03,$FE,$09,$2F,$7F,$01,$10,$07,$8A,$7F,$01,$B2,$05,$EC,$03,$FE,$7F,$02,$FD,$05,$0D,$03,$45,$02,$C2; RAW DATA : 	next "로켓 같은 기세로 덤벼드는"
+	next $01,$82,$07,$B5,$0A,$71,$7F,$02,$80,$05,$DE,$07,$9C,$02,$D9; RAW DATA : 	next "굉장한 녀석이다"
+	dex
+ENDC
+
 
 _PinsirDexEntry::
-	text "If it fails to"
-	next "crush the victim"
-	next "in its pincers,"
-
-	page "it will swing it"
-	next "around and toss"
-	next "it hard"
+IF DEF(_RED) || DEF(_GREEN)
+	text $F8,$01,$13,$07,$97,$7F,$01,$B2,$02,$D9,$03,$C5,$7F,$05,$A4,$07,$8A,$7F,$09,$F4,$07,$66,$0A,$3E; RAW DATA : 	text "2개의 기다란 뿔은 파워풀"
+	next $07,$9F,$02,$DC,$7F,$0A,$71,$04,$F8,$7F,$02,$32,$06,$EE,$04,$F6,$04,$3E,$04,$89; RAW DATA : 	next "일단 한번 끼어버리면"
+	next $07,$E6,$01,$02,$02,$3F,$7F,$03,$77,$01,$BE,$08,$26,$7F,$02,$95,$08,$26,$7F,$06,$CA,$02,$C2,$02,$D9; RAW DATA : 	next "조각날 때까지 놓지 않는다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $05,$A4,$7F,$05,$B7,$07,$9C,$07,$01,$7F,$02,$32,$07,$66,$03,$15,$7F,$07,$E6,$01,$02,$02,$3A,$08,$26,$7F,$06,$CA,$07,$8B; RAW DATA : 	text "뿔 사이에 끼워도 조각나지 않을"
+	next $03,$79,$7F,$05,$A4,$07,$01,$7F,$02,$32,$07,$4E,$7F,$08,$A4,$7F,$01,$A7,$02,$EB,$03,$FE,$7F,$05,$EC,$08,$97,$01,$34; RAW DATA : 	next "땐 뿔에 끼운 채 그대로 세차게"
+	next $02,$4B,$02,$F8,$08,$26,$02,$C2,$7F,$07,$CC,$04,$FD,$07,$8B,$7F,$08,$EB,$0A,$71,$02,$D9; RAW DATA : 	next "내던지는 전법을 취한다"
+	dex
+ENDC
 
 _TangelaDexEntry::
-	text "The whole body is"
-	next "swathed with wide"
-	next "vines that are"
-
-	page "similar to sea-"
-	next "weed. Its vines"
-	next "shake as it walks"
+IF DEF(_RED) || DEF(_GREEN)
+	text $09,$F4,$03,$C5,$7F,$03,$02,$01,$8C,$7F,$06,$64,$04,$B0,$07,$9C,$7F,$03,$3A,$06,$FB,$09,$31,$7F,$07,$A6,$06,$EE; RAW DATA : 	text "파란 덩굴 식물이 뒤엉켜 있어"
+	next $04,$90,$06,$60,$07,$8B,$7F,$05,$1C,$7F,$06,$26,$7F,$06,$F8,$02,$D9,$7F,$01,$01,$01,$BE,$07,$9C,$7F,$07,$20,$02,$C2; RAW DATA : 	next "모습을 볼 수 없다 가까이 오는"
+	next $07,$AA,$07,$01,$01,$34,$7F,$03,$02,$01,$8C,$07,$8B,$7F,$0A,$D6,$01,$08,$02,$C2,$02,$D9; RAW DATA : 	next "자에게 덩굴을 휘감는다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $07,$22,$04,$96,$07,$9C,$7F,$03,$02,$01,$8C,$03,$FE,$7F,$01,$42,$01,$42,$07,$9C; RAW DATA : 	text "온몸이 덩굴로 겹겹이"
+	next $03,$3A,$03,$04,$07,$09,$05,$DD,$7F,$01,$29,$07,$8B,$7F,$03,$77,$04,$46,$02,$D9; RAW DATA : 	next "뒤덮여서 걸을 때마다"
+	next $0A,$E7,$03,$49,$0A,$E7,$03,$49,$01,$25,$04,$40,$02,$D9; RAW DATA : 	next "흔들흔들거린다"
+	dex
+ENDC
 
 _GrowlitheDexEntry::
-	text "Very protective"
-	next "of its territory."
-	next "It will bark and"
-
-	page "bite to repel"
-	next "intruders from"
-	next "its space"
+IF DEF(_RED) || DEF(_GREEN)
+	text $05,$B7,$03,$C7,$07,$8B,$7F,$07,$AF,$7F,$03,$6B,$04,$33,$02,$C2,$7F,$08,$E6,$06,$67,$0A,$71,$7F,$05,$EA,$01,$3D,$07,$9C,$02,$D9; RAW DATA : 	text "사람을 잘 따르는 충실한 성격이다"
+	next $07,$CB,$07,$01,$01,$34,$02,$C2,$7F,$08,$32,$01,$25,$02,$3A,$7F,$04,$B0,$04,$87; RAW DATA : 	next "적에게는 짖거나 물며"
+	next $08,$71,$06,$C6,$02,$4B,$03,$F1,$01,$4D,$7F,$0A,$71,$02,$D9; RAW DATA : 	next "쫓아내려고 한다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $07,$15,$07,$0A,$7F,$05,$18,$0A,$A3,$01,$01,$7F,$01,$82,$07,$B5,$0A,$6F,$02,$D9; RAW DATA : 	text "영역 보호가 굉장하다"
+	next $09,$07,$07,$A4,$07,$AA,$01,$01,$7F,$03,$49,$06,$EE,$07,$20,$04,$89,$7F,$07,$15,$07,$0A,$07,$8B,$7F,$08,$26,$09,$80,$03,$F1; RAW DATA : 	next "침입자가 들어오면 영역을 지키려"
+	next $0A,$6A,$05,$B7,$07,$CB,$07,$88,$03,$FE,$7F,$08,$32,$06,$EE,$02,$EB,$01,$4D,$7F,$04,$B0,$06,$EE,$04,$F6,$04,$40,$02,$D9; RAW DATA : 	next "필사적으로 짖어대고 물어버린다"
+	dex
+ENDC
+
 
 _OnixDexEntry::
-	text "As it grows, the"
-	next "stone portions of"
-	next "its body harden"
-
-	page "to become similar"
-	next "to a diamond, but"
-	next "colored black"
+IF DEF(_RED) || DEF(_GREEN)
+	text $0A,$22,$05,$C3,$06,$63,$07,$01,$02,$C2,$7F,$03,$75,$06,$03,$07,$01,$7F,$05,$BC,$01,$4D,$7F,$07,$A6,$02,$D9; RAW DATA : 	text "평상시에는 땅속에 살고 있다"
+	next $03,$75,$06,$03,$07,$8B,$7F,$06,$63,$06,$03,$7F,$FE,$F6,$AA,$AC,$03,$FE,$7F,$09,$F4,$04,$89,$05,$DD; RAW DATA : 	next "땅속을 시속 80km로 파면서"
+	next $04,$74,$07,$9C,$04,$36,$7F,$08,$A3,$02,$C2,$02,$D9; RAW DATA : 	next "먹이를 찾는다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $05,$EA,$07,$B5,$0A,$6F,$04,$89,$7F,$04,$96,$07,$97,$7F; RAW DATA : 	text "성장하면 몸의 "
+	next $06,$CF,$05,$DE,$05,$EA,$05,$30,$07,$9C,$7F,$05,$0F,$0A,$AD,$0A,$78,$05,$DD; RAW DATA : 	next "암석성분이 변화해서"
+	next $01,$2B,$07,$8A,$7F,$02,$D9,$07,$9C,$06,$C6,$04,$93,$03,$45,$08,$B3,$03,$E3,$7F,$03,$28,$02,$D9; RAW DATA : 	next "검은 다이아몬드처럼 된다"
+	dex
+ENDC
 
 _FearowDexEntry::
-	text "With its huge and"
-	next "magnificent wings,"
-	next "it can keep aloft"
-
-	page "without ever"
-	next "having to land"
-	next "for rest"
+IF DEF(_RED) || DEF(_GREEN)
+	text $09,$1F,$02,$D9,$03,$C5,$7F,$02,$3F,$01,$13,$03,$FE,$7F,$02,$70,$07,$8A,$7F,$0A,$6F,$02,$C3,$07,$8B; RAW DATA : 	text "커다란 날개로 넓은 하늘을"
+	next $01,$48,$06,$03,$7F,$02,$3F,$7F,$06,$26,$7F,$07,$A6,$02,$D9,$7F,$0A,$6F,$04,$17,$03,$1F,$06,$C8; RAW DATA : 	next "계속 날 수 있다 하루동안"
+	next $02,$4B,$03,$F1,$07,$20,$08,$26,$7F,$06,$CA,$06,$C6,$03,$15,$7F,$01,$76,$08,$9A,$02,$D9; RAW DATA : 	next "내려오지 않아도 괜찮다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $09,$1F,$02,$D9,$03,$C5,$7F,$02,$3F,$01,$13,$03,$FE,$7F,$02,$70,$07,$8A,$7F,$0A,$6F,$02,$C3,$07,$8B,$7F; RAW DATA : 	text "커다란 날개로 넓은 하늘을 "
+	next $01,$48,$06,$03,$7F,$02,$3F,$7F,$06,$26,$7F,$07,$A6,$02,$D9,$7F,$0A,$71,$7F,$04,$F8,$03,$15; RAW DATA : 	next "계속 날 수 있다 한 번도"
+	next $02,$4B,$03,$F1,$07,$20,$08,$26,$7F,$06,$CA,$06,$C6,$03,$15,$7F,$09,$92,$07,$0C,$0A,$6F,$02,$D9; RAW DATA : 	next "내려오지 않아도 태연하다"
+	dex
+ENDC
+
 
 _PidgeyDexEntry::
-	text "A common sight in"
-	next "forests and woods."
-	next "It flaps its"
-
-	page "wings at ground"
-	next "level to kick up"
-	next "blinding sand"
+IF DEF(_RED) || DEF(_GREEN)
+	text $06,$6E,$07,$62,$07,$8B,$7F,$07,$F1,$06,$C6,$0A,$6F,$08,$26,$7F,$06,$CA,$02,$C2,$02,$D9; RAW DATA : 	text "싸움을 좋아하지 않는다"
+	next $0A,$3E,$7F,$06,$33,$7F,$06,$C8,$07,$01,$7F,$06,$2B,$06,$EE; RAW DATA : 	next "풀 숲 안에 숨어"
+	next $07,$AB,$07,$8A,$7F,$04,$FA,$03,$E9,$7F,$03,$4E,$07,$8B,$7F,$07,$B2,$02,$C2,$02,$D9; RAW DATA : 	next "작은 벌레 등을 잡는다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $06,$33,$07,$9C,$02,$3A,$7F,$06,$26,$0A,$3E,$07,$01,$7F,$04,$49,$07,$9C,$7F,$05,$30,$0A,$27,$0A,$78,$7F,$07,$A6,$02,$D9; RAW DATA : 	text "숲이나 수풀에 많이 분포해 있다"
+	next $03,$75,$07,$01,$05,$DD,$03,$15,$7F,$01,$3D,$03,$F4,$0A,$71,$7F,$02,$3F,$01,$19,$08,$2E,$07,$88,$03,$FE; RAW DATA : 	next "땅에서도 격렬한 날갯짓으로"
+	next $04,$90,$03,$D1,$04,$36,$7F,$05,$A1,$04,$3E,$01,$B2,$03,$15,$7F,$0A,$71,$02,$D9; RAW DATA : 	next "모래를 뿌리기도 한다"
+	dex
+ENDC
 
 _SlowpokeDexEntry::
-	text "Incredibly slow"
-	next "and dopey. It"
-	next "takes 5 seconds"
 
-	page "for it to feel"
-	next "pain when under"
-	next "attack"
+IF DEF(_RED) || DEF(_GREEN)
+	text $0A,$77,$05,$C3,$7F,$04,$7B,$0A,$6F,$02,$CF,$7F,$07,$A6,$07,$88,$04,$C7,$03,$FE,$7F,$04,$AB,$06,$4C,$7F,$05,$CD,$01,$02,$07,$8B; RAW DATA : 	text "항상 멍하니 있으므로 무슨 생각을"
+	next $0A,$6F,$01,$4D,$7F,$07,$A6,$02,$C2,$08,$26,$7F,$06,$CB,$7F,$06,$26,$7F,$06,$F8,$02,$D9; RAW DATA : 	next "하고 있는지 알 수 없다"
+	next $01,$EF,$04,$3E,$03,$FE,$7F,$04,$74,$07,$9C,$04,$36,$7F,$02,$3C,$02,$C2,$7F,$01,$2D,$07,$9C,$7F,$09,$DF,$01,$B2,$02,$D9; RAW DATA : 	next "꼬리로 먹이를 낚는 것이 특기다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $07,$62,$08,$27,$07,$A3,$07,$9C,$7F,$02,$C0,$03,$F1,$09,$9D,$08,$28,$7F,$06,$F3,$01,$03,$07,$9C; RAW DATA : 	text "움직임이 느려터진 얼간이"
+	next $04,$62,$06,$C6,$03,$15,$7F,$FB,$08,$CA,$7F,$08,$26,$02,$3D,$7F,$0A,$C4,$07,$01,$05,$DD,$06,$DF; RAW DATA : 	next "맞아도 5초 지난 후에서야"
+	next $06,$C6,$0A,$64,$07,$8B,$7F,$02,$C0,$02,$35,$7F,$07,$D4,$03,$15,$02,$D9; RAW DATA : 	next "아픔을 느낄 정도다"
+	dex
+ENDC
+
 
 _KadabraDexEntry::
-	text "It emits special"
-	next "alpha waves from"
-	next "its body that"
-
-	page "induce headaches"
-	next "just by being"
-	next "close by"
+IF DEF(_RED) || DEF(_GREEN)
+	text $06,$EE,$02,$C0,$7F,$02,$3F,$7F,$06,$C6,$09,$07,$7F,$08,$CA,$02,$C9,$03,$F2,$7F,$06,$02,$02,$82,$07,$9C; RAW DATA : 	text "어느 날 아침 초능력 소년이"
+	next $09,$07,$02,$EB,$07,$01,$05,$DD,$7F,$02,$AB,$07,$8B,$7F,$03,$AF,$02,$CF; RAW DATA : 	next "침대에서 눈을 뜨니"
+	next $07,$81,$01,$36,$03,$C3,$03,$FE,$7F,$05,$0F,$06,$65,$0A,$78,$07,$A6,$06,$FA,$02,$D9; RAW DATA : 	next "윤겔라로 변신해있었다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $04,$96,$07,$01,$05,$DD,$7F,$09,$DF,$06,$26,$0A,$71,$7F,$06,$CB,$09,$F4,$09,$F4,$01,$01,$7F,$02,$3A,$07,$2D,$05,$DD; RAW DATA : 	text "몸에서 특수한 알파파가 나와서"
+	next $01,$A9,$08,$B3,$07,$01,$7F,$02,$D9,$01,$01,$01,$01,$01,$B2,$04,$48,$7F,$0A,$78,$03,$15; RAW DATA : 	next "근처에 다가가기만 해도"
+	next $04,$73,$04,$3E,$01,$01,$7F,$06,$C6,$09,$F4,$07,$22,$02,$D9; RAW DATA : 	next "머리가 아파온다"
+	dex
+ENDC
 
 _GravelerDexEntry::
-	text "Rolls down slopes"
-	next "to move. It rolls"
-	next "over any obstacle"
-
-	page "without slowing"
-	next "or changing its"
-	next "direction"
+IF DEF(_RED) || DEF(_GREEN)
+	text $05,$BA,$7F,$06,$03,$7F,$05,$61,$09,$8B,$01,$B6,$07,$8B,$7F,$01,$28,$02,$D9,$7F,$05,$18,$04,$89,$7F; RAW DATA : 	text "산 속 비탈길을 걷다 보면 "
+	next $03,$05,$01,$88,$04,$3E,$01,$01,$7F,$01,$8C,$03,$DF,$07,$20,$02,$C2,$7F,$01,$46,$07,$4C,$01,$01; RAW DATA : 	next "데구리가 굴러오는 경우가"
+	next $07,$A6,$02,$D9; RAW DATA : 	next "있다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $06,$F0,$02,$F6,$07,$8B,$7F,$01,$8C,$03,$DF,$05,$DD,$7F,$07,$9C,$03,$1F,$0A,$71,$02,$D9,$7F; RAW DATA : 	text "언덕을 굴러서 이동한다 "
+	next $04,$E6,$0A,$78,$04,$B0,$07,$8A,$7F,$04,$46,$01,$88,$7F,$08,$2E,$02,$A9,$04,$33,$04,$87,$7F,$02,$3A,$06,$C6; RAW DATA : 	next "방해물은 마구 짓누르며 나아"
+	next $01,$03,$02,$D9; RAW DATA : 	next "간다"
+	dex
+ENDC
 
 _ChanseyDexEntry::
-	text "A rare and elusive"
-	next "#MON that is"
-	next "said to bring"
-
-	page "happiness to those"
-	next "who manage to get"
-	next "it"
+IF DEF(_RED) || DEF(_GREEN)
+	text $0A,$6F,$04,$17,$07,$01,$7F,$04,$8E,$7F,$01,$13,$06,$BF,$7F,$06,$CB,$07,$8B,$7F,$02,$4A,$02,$C2,$02,$D9,$7F,$01,$A7; RAW DATA : 	text "하루에 몇 개씩 알을 낳는다 그"
+	next $06,$CB,$07,$8A,$7F,$07,$15,$06,$E7,$7F,$04,$48,$07,$D1,$07,$88,$03,$FE,$7F,$06,$C6,$08,$06,$7F,$04,$60,$07,$A6,$02,$D9; RAW DATA : 	next "알은 영양 만점으로 아주 맛있다"
+	next $02,$C2,$7F,$03,$4D,$7F,$0A,$6F,$02,$D9; RAW DATA : 	next "는 듯 하다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $01,$13,$08,$BC,$7F,$06,$26,$01,$01,$7F,$04,$65,$07,$4C,$7F,$07,$CB,$02,$D9,$7F,$07,$B2,$07,$8A,$7F,$05,$B7,$03,$C7; RAW DATA : 	text "개체 수가 매우 적다 잡은 사람"
+	next $07,$01,$01,$34,$02,$C2,$7F,$0A,$80,$05,$19,$07,$8B,$7F,$01,$01,$07,$DE,$02,$D9,$08,$08,$02,$D9,$01,$4D,$7F,$07,$CC,$0A,$78,$08,$28; RAW DATA : 	next "에게는 행복을 가져다준다고 전해진"
+	next $02,$D9; RAW DATA : 	next "다"
+	dex
+ENDC
 
 _MachokeDexEntry::
-	text "Its muscular body"
-	next "is so powerful, it"
-	next "must wear a power"
-
-	page "save belt to be"
-	next "able to regulate"
-	next "its motions"
+IF DEF(_RED) || DEF(_GREEN)
+	text $08,$26,$09,$01,$08,$26,$7F,$06,$CA,$02,$C2,$7F,$01,$0D,$07,$9E,$0A,$71,$7F,$04,$96,$07,$8B,$7F,$01,$0E,$02,$C2,$02,$D9; RAW DATA : 	text "지치지 않는 강인한 몸을 갖는다"
+	next $04,$AB,$01,$25,$07,$4E,$7F,$04,$B0,$01,$27,$07,$8B,$7F,$07,$25,$01,$B2,$02,$C2,$7F,$03,$4E,$07,$97; RAW DATA : 	next "무거운 물건을 옮기는 등의"
+	next $07,$9F,$07,$8B,$7F,$0A,$71,$02,$D9; RAW DATA : 	next "일을 한다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $06,$F6,$08,$BB,$02,$3A,$01,$34,$7F,$01,$0D,$0A,$71,$7F,$07,$80,$08,$BC,$04,$36,$7F,$08,$26,$02,$86,$01,$B2; RAW DATA : 	text "엄청나게 강한 육체를 지녔기"
+	next $03,$77,$04,$AE,$07,$01,$7F,$09,$F4,$07,$66,$7F,$05,$EC,$07,$9C,$05,$4A,$7F,$05,$07,$09,$DE,$04,$36,$7F,$08,$97,$05,$DD; RAW DATA : 	next "때문에 파워 세이브 벨트를 차서"
+	next $0A,$FB,$07,$8B,$7F,$07,$D6,$06,$EE,$0A,$6F,$01,$4D,$7F,$07,$A6,$02,$D9; RAW DATA : 	next "힘을 제어하고 있다"
+	dex
+ENDC
 
 _MrMimeDexEntry::
-	text "If interrupted"
-	next "while it is"
-	next "miming, it will"
-
-	page "slap around the"
-	next "offender with its"
-	next "broad hands"
+IF DEF(_RED) || DEF(_GREEN)
+	text $05,$B7,$03,$C7,$7F,$06,$03,$07,$9C,$01,$B2,$04,$36,$7F,$07,$AF,$0A,$71,$02,$D9; RAW DATA : 	text "사람 속이기를 잘한다"
+	next $0A,$02,$09,$9D,$04,$46,$07,$A3,$07,$88,$03,$FE,$7F,$04,$48,$03,$47,$7F,$05,$0E,$07,$9C; RAW DATA : 	next "팬터마임으로 만든 벽이"
+	next $07,$D4,$04,$4B,$03,$FE,$7F,$02,$3A,$09,$88,$02,$3D,$02,$D9,$01,$4D,$7F,$0A,$71,$02,$D9; RAW DATA : 	next "정말로 나타난다고 한다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $09,$F7,$09,$B4,$04,$46,$07,$A3,$07,$8B,$7F,$04,$E6,$0A,$78,$0A,$6F,$04,$89; RAW DATA : 	text "판토마임을 방해하면"
+	next $01,$09,$07,$AA,$01,$B2,$7F,$09,$7B,$7F,$06,$05,$04,$D9,$02,$DA,$07,$88,$03,$FE; RAW DATA : 	next "갑자기 큰 손바닥으로"
+	next $07,$0C,$06,$03,$05,$84,$09,$01,$01,$B2,$04,$36,$7F,$02,$3F,$04,$40,$02,$D9,$01,$4D,$7F,$0A,$71,$02,$D9; RAW DATA : 	next "연속뺨치기를 날린다고 한다"
+	dex
+ENDC
+
 
 _HitmonleeDexEntry::
-	text "When in a hurry,"
-	next "its legs lengthen"
-	next "progressively."
-
-	page "It runs smoothly"
-	next "with extra long,"
-	next "loping strides"
+IF DEF(_RED) || DEF(_GREEN)
+	text $02,$D9,$04,$3E,$04,$36,$7F,$07,$AA,$07,$7F,$07,$AA,$07,$B7,$03,$FE,$7F,$02,$C3,$07,$14,$02,$D9,$7F,$08,$09,$07,$14,$02,$D9; RAW DATA : 	text "다리를 자유자재로 늘였다 줄였다"
+	next $0A,$71,$02,$D9,$7F,$04,$76,$04,$3E,$7F,$03,$83,$06,$EE,$07,$DE,$7F,$07,$A6,$07,$8B,$7F,$03,$77,$03,$15; RAW DATA : 	next "한다 멀리 떨어져 있을 때도"
+	next $05,$C3,$02,$EB,$04,$36,$7F,$08,$97,$07,$23,$04,$41,$7F,$06,$26,$7F,$07,$A6,$02,$D9; RAW DATA : 	next "상대를 차올릴 수 있다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $01,$AE,$0A,$6F,$01,$34,$7F,$02,$DE,$04,$41,$7F,$03,$77,$7F,$07,$D1,$07,$D1; RAW DATA : 	text "급하게 달릴 때 점점"
+	next $02,$D9,$04,$3E,$01,$01,$7F,$01,$B6,$06,$EE,$07,$DE,$7F,$06,$F6,$08,$BB,$02,$3D; RAW DATA : 	next "다리가 길어져 엄청난"
+	next $05,$18,$0A,$28,$07,$88,$03,$FE,$7F,$02,$3A,$06,$C6,$01,$03,$02,$D9; RAW DATA : 	next "보폭으로 나아간다"
+	dex
+ENDC
 
 _HitmonchanDexEntry::
-	text "While apparently"
-	next "doing nothing, it"
-	next "fires punches in"
-
-	page "lightning fast"
-	next "volleys that are"
-	next "impossible to see"
+IF DEF(_RED) || DEF(_GREEN)
+	text $0A,$61,$03,$FE,$7F,$05,$19,$05,$DD,$07,$97,$7F,$0A,$A5,$07,$9C,$7F,$02,$E3,$01,$3C,$07,$A6,$02,$D9; RAW DATA : 	text "프로 복서의 혼이 담겨있다"
+	next $0A,$0D,$09,$01,$7F,$06,$03,$03,$15,$02,$C2,$7F,$09,$29,$07,$9C,$09,$EC,$07,$02,$06,$4A,$05,$18,$02,$D9,$03,$15; RAW DATA : 	next "펀치 속도는 케이티엑스보다도"
+	next $05,$6C,$04,$33,$02,$D9; RAW DATA : 	next "빠르다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $06,$C6,$04,$AB,$01,$2D,$03,$15,$7F,$0A,$6F,$08,$26,$7F,$06,$CA,$02,$C2,$7F,$01,$2D,$7F,$01,$10,$06,$C6,$03,$15; RAW DATA : 	text "아무것도 하지 않는 것 같아도"
+	next $05,$18,$07,$9C,$08,$26,$7F,$06,$CA,$02,$C2,$7F,$06,$4A,$0A,$67,$03,$45,$03,$FE,$7F,$0A,$0D,$09,$01,$04,$36; RAW DATA : 	next "보이지 않는 스피드로 펀치를"
+	next $02,$3F,$03,$F1,$02,$ED,$0A,$C4,$7F,$07,$D4,$06,$65,$07,$8B,$7F,$01,$01,$02,$D9,$03,$4B,$02,$C2,$02,$D9; RAW DATA : 	next "날려댄후 정신을 가다듬는다"
+	dex
+ENDC
 
 _ArbokDexEntry::
-	text "It is rumored that"
-	next "the ferocious"
-	next "warning markings"
-
-	page "on its belly"
-	next "differ from area"
-	next "to area"
+IF DEF(_RED) || DEF(_GREEN)
+	text $04,$E8,$07,$97,$7F,$04,$AB,$02,$CC,$01,$01,$7F,$04,$AB,$05,$DD,$07,$4E,$7F,$06,$F3,$01,$8C,$03,$FE,$7F,$05,$18,$07,$9E,$02,$D9; RAW DATA : 	text "배의 무늬가 무서운 얼굴로 보인다"
+	next $06,$E0,$0A,$71,$7F,$07,$CB,$07,$8A,$7F,$01,$A7,$7F,$04,$AB,$02,$CC,$04,$48,$7F,$05,$18,$01,$4D,$03,$15; RAW DATA : 	next "약한 적은 그 무늬만 보고도"
+	next $03,$15,$04,$61,$09,$01,$01,$4D,$7F,$04,$48,$02,$D9; RAW DATA : 	next "도망치고 만다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $04,$E8,$07,$97,$7F,$04,$AB,$05,$DD,$07,$4E,$7F,$04,$AE,$06,$E7,$07,$8A,$7F,$08,$26,$07,$0A,$07,$01; RAW DATA : 	text "배의 무서운 문양은 지역에"
+	next $03,$6B,$03,$C3,$05,$DD,$7F,$04,$8E,$7F,$07,$EE,$04,$29,$07,$9E,$01,$01,$7F,$0A,$00,$09,$9F,$07,$9C; RAW DATA : 	next "따라서 몇 종류인가 패턴이"
+	next $07,$A6,$02,$D9,$01,$4D,$7F,$0A,$6F,$02,$C2,$7F,$06,$02,$04,$AE,$07,$9C,$02,$D9; RAW DATA : 	next "있다고 하는 소문이다"
+	dex
+ENDC
 
 _ParasectDexEntry::
-	text "A host-parasite"
-	next "pair in which the"
-	next "parasite mushroom"
-
-	page "has taken over the"
-	next "host bug. Prefers"
-	next "damp places"
+IF DEF(_RED) || DEF(_GREEN)
+	text $04,$FA,$03,$E9,$07,$97,$7F,$04,$96,$05,$18,$02,$D9,$7F,$09,$1F,$08,$28; RAW DATA : 	text "벌레의 몸보다 커진"
+	next $04,$F6,$05,$E8,$07,$97,$7F,$07,$97,$08,$26,$03,$FE,$7F,$0A,$B0,$03,$1F,$0A,$71,$02,$D9; RAW DATA : 	next "버섯의 의지로 활동한다"
+	next $08,$E0,$08,$E0,$0A,$71,$7F,$01,$67,$07,$8B,$7F,$07,$F1,$06,$C6,$0A,$71,$02,$D9,$01,$4D,$7F,$0A,$71,$02,$D9; RAW DATA : 	next "축축한 곳을 좋아한다고 한다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $04,$F6,$05,$E8,$01,$0B,$07,$01,$05,$DD,$7F,$03,$16,$0A,$27,$07,$AA,$04,$36,$7F,$02,$3F,$04,$40,$02,$D9; RAW DATA : 	text "버섯갓에서 독포자를 날린다"
+	next $0A,$6F,$08,$26,$04,$48,$7F,$08,$0F,$01,$89,$07,$01,$05,$DD,$02,$C2,$7F,$07,$9C,$7F,$0A,$27,$07,$AA,$04,$36; RAW DATA : 	next "하지만 중국에서는 이 포자를"
+	next $06,$E0,$07,$B7,$03,$FE,$7F,$07,$9C,$07,$4B,$0A,$71,$02,$D9; RAW DATA : 	next "약재로 이용한다"
+	dex
+ENDC
 
 _PsyduckDexEntry::
-	text "While lulling its"
-	next "enemies with its"
-	next "vacant look, this"
-
-	page "wily #MON will"
-	next "use psychokinetic"
-	next "powers"
+IF DEF(_RED) || DEF(_GREEN)
+	text $0A,$77,$05,$C3,$7F,$03,$2E,$09,$BB,$07,$01,$7F,$06,$63,$02,$DE,$04,$3E,$01,$4D,$7F,$07,$A6,$02,$D9,$7F; RAW DATA : 	text "항상 두통에 시달리고 있다 "
+	next $07,$9C,$7F,$03,$2E,$09,$BB,$07,$9C,$7F,$06,$69,$0A,$78,$08,$26,$04,$89; RAW DATA : 	next "이 두통이 심해지면"
+	next $07,$9C,$05,$C3,$0A,$71,$7F,$0A,$FB,$07,$8B,$7F,$06,$B2,$01,$B2,$7F,$06,$63,$07,$AB,$0A,$71,$02,$D9; RAW DATA : 	next "이상한 힘을 쓰기 시작한다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $04,$7B,$0A,$71,$7F,$06,$F3,$01,$8C,$07,$01,$7F,$04,$E6,$06,$69,$0A,$6F,$04,$89,$7F,$08,$1F,$06,$63; RAW DATA : 	text "멍한 얼굴에 방심하면 즉시"
+	next $07,$10,$03,$1F,$03,$F2,$07,$9C,$02,$3A,$7F,$05,$B7,$06,$4D,$04,$AD,$01,$B2,$04,$36,$7F,$06,$81,$05,$DD; RAW DATA : 	next "염동력이나 사슬묶기를 써서"
+	next $02,$FD,$05,$61,$02,$C2,$7F,$04,$AB,$06,$63,$04,$98,$0A,$72,$7F,$02,$80,$05,$DE,$07,$9C,$02,$D9; RAW DATA : 	next "덤비는 무시못할 녀석이다"
+	dex
+ENDC
 
 _DrowzeeDexEntry::
-	text "Puts enemies to"
-	next "sleep then eats"
-	next "their dreams."
-
-	page "Occasionally gets"
-	next "sick from eating"
-	next "bad dreams"
+IF DEF(_RED) || DEF(_GREEN)
+	text $02,$0E,$07,$8B,$7F,$04,$74,$02,$C2,$02,$D9,$01,$4D,$7F,$0A,$6F,$02,$C2,$7F; RAW DATA : 	text "꿈을 먹는다고 하는 "
+	next $07,$CC,$05,$E3,$07,$97,$7F,$03,$1F,$04,$B0,$7F,$04,$66,$07,$97,$7F,$0A,$C4,$06,$05; RAW DATA : 	next "전설의 동물 맥의 후손"
+	next $08,$D6,$04,$89,$06,$2A,$07,$9C,$7F,$09,$DF,$01,$B2,$02,$D9; RAW DATA : 	next "최면술이 특기다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $07,$B1,$03,$49,$01,$34,$7F,$0A,$71,$7F,$03,$3A,$7F,$02,$0E,$07,$8B,$7F,$04,$74,$08,$26,$04,$48; RAW DATA : 	text "잠들게 한 뒤 꿈을 먹지만"
+	next $02,$3A,$05,$AB,$7F,$02,$0E,$04,$48,$7F,$04,$74,$01,$4D,$7F,$07,$A6,$07,$88,$04,$89,$7F,$04,$E8,$09,$8B,$07,$9C; RAW DATA : 	next "나쁜 꿈만 먹고 있으면 배탈이"
+	next $02,$3F,$7F,$03,$77,$03,$15,$7F,$07,$A6,$02,$C2,$7F,$01,$2D,$7F,$01,$10,$02,$D9; RAW DATA : 	next "날 때도 있는 것 같다"
+	dex
+ENDC
 
 _GolemDexEntry::
-	text "Its boulder-like"
-	next "body is extremely"
-	next "hard. It can"
-
-	page "easily withstand"
-	next "dynamite blasts"
-	next "without damage"
+IF DEF(_RED) || DEF(_GREEN)
+	text $06,$CF,$04,$DD,$08,$B3,$03,$E3,$7F,$02,$DC,$02,$DC,$0A,$71,$7F,$01,$DE,$03,$05,$01,$B2,$03,$FE; RAW DATA : 	text "암반처럼 단단한 껍데기로"
+	next $03,$3A,$03,$04,$07,$09,$7F,$07,$A6,$02,$D9,$7F,$F7,$02,$82,$07,$01,$7F,$0A,$71,$7F,$04,$F8; RAW DATA : 	next "뒤덮여 있다 1년에 한 번"
+	next $0A,$83,$04,$B0,$07,$8B,$7F,$04,$FE,$06,$EE,$7F,$04,$96,$08,$2D,$07,$9C,$7F,$09,$1F,$08,$28,$02,$D9; RAW DATA : 	next "허물을 벗어 몸집이 커진다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $06,$CF,$05,$DE,$08,$B3,$03,$E3,$7F,$02,$DC,$02,$DC,$0A,$71,$7F,$04,$96,$07,$88,$03,$FE,$7F,$07,$9C,$04,$17,$06,$EE,$07,$E3,$02,$D9; RAW DATA : 	text "암석처럼 단단한 몸으로 이루어졌다"
+	next $02,$D9,$07,$9C,$02,$6A,$04,$46,$07,$9C,$09,$DE,$03,$FE,$7F,$0A,$28,$04,$DF,$06,$63,$09,$31,$03,$15; RAW DATA : 	next "다이너마이트로 폭발시켜도"
+	next $03,$05,$04,$CC,$08,$26,$04,$36,$7F,$04,$DE,$08,$26,$7F,$06,$CA,$02,$C2,$02,$D9; RAW DATA : 	next "데미지를 받지 않는다"
+	dex
+ENDC
 
 _MagmarDexEntry::
-	text "Its body always"
-	next "burns with an"
-	next "orange glow that"
-
-	page "enables it to"
-	next "hide perfectly"
-	next "among flames"
+IF DEF(_RED) || DEF(_GREEN)
+	text $0A,$AD,$05,$BA,$07,$97,$7F,$0A,$AD,$01,$88,$7F,$01,$A9,$08,$B3,$07,$01,$05,$DD,$7F,$04,$DF,$01,$3F,$0A,$7F,$02,$D9; RAW DATA : 	text "화산의 화구 근처에서 발견했다"
+	next $07,$A4,$07,$01,$05,$DD,$7F,$05,$32,$07,$8B,$7F,$05,$A5,$06,$EE,$02,$4B,$04,$87; RAW DATA : 	next "입에서 불을 뿜어내며"
+	next $08,$BC,$07,$22,$07,$8A,$7F,$F7,$F8,$F6,$F6,$03,$15,$02,$3A,$7F,$03,$28,$02,$D9; RAW DATA : 	next "체온은 1200도나 된다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $06,$4A,$06,$4A,$03,$FE,$7F,$07,$20,$03,$EB,$08,$26,$05,$C6,$01,$C2,$03,$FE,$7F,$05,$32,$09,$88,$01,$4D,$7F,$07,$A6,$06,$EE,$05,$DD; RAW DATA : 	text "스스로 오렌지색깔로 불타고 있어서"
+	next $05,$32,$01,$F9,$7F,$06,$03,$07,$01,$7F,$06,$2B,$07,$88,$04,$89; RAW DATA : 	next "불꽃 속에 숨으면"
+	next $07,$CC,$0A,$94,$7F,$01,$88,$05,$30,$07,$9C,$7F,$06,$C8,$7F,$03,$28,$02,$D9; RAW DATA : 	next "전혀 구분이 안 된다"
+	dex
+ENDC
 
 _ElectabuzzDexEntry::
-	text "Normally found"
-	next "near power plants,"
-	next "they can wander"
-
-	page "away and cause"
-	next "major blackouts"
-	next "in cities"
+IF DEF(_RED) || DEF(_GREEN)
+	text $01,$0D,$0A,$71,$7F,$07,$CC,$01,$B2,$04,$36,$7F,$01,$82,$07,$B5,$0A,$F7,$7F,$07,$F1,$06,$C6,$0A,$6F,$04,$87; RAW DATA : 	text "강한 전기를 굉장히 좋아하며"
+	next $09,$7B,$7F,$04,$DF,$07,$CC,$06,$02,$7F,$03,$4E,$07,$01,$05,$DD; RAW DATA : 	next "큰 발전소 등에서"
+	next $07,$EE,$07,$EE,$7F,$02,$3A,$09,$88,$02,$3D,$02,$D9; RAW DATA : 	next "종종 나타난다"
+	
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $04,$DF,$07,$CC,$06,$02,$7F,$05,$2E,$01,$A9,$07,$01,$05,$DD,$7F,$04,$90,$06,$60,$07,$8B; RAW DATA : 	text "발전소 부근에서 모습을"
+	next $01,$08,$08,$E8,$07,$8B,$7F,$03,$77,$7F,$04,$46,$07,$8B,$07,$01,$05,$DD,$7F,$09,$7B,$7F,$07,$D4,$07,$CC,$07,$9C; RAW DATA : 	next "감췄을 때 마을에서 큰 정전이"
+	next $07,$9F,$06,$EE,$02,$3D,$02,$D9,$01,$4D,$7F,$0A,$71,$02,$D9; RAW DATA : 	next "일어난다고 한다"
+	dex
+ENDC
 
 _MagnetonDexEntry::
-	text "Formed by several"
-	next "MAGNEMITEs linked"
-	next "together. They"
-
-	page "frequently appear"
-	next "when sunspots"
-	next "flare up"
+IF DEF(_RED) || DEF(_GREEN)
+	text $02,$D9,$06,$26,$07,$97,$7F,$09,$3A,$07,$9F,$07,$9C,$7F,$07,$0C,$01,$41,$03,$27,$06,$EE; RAW DATA : 	text "다수의 코일이 연결되어"
+	next $01,$0D,$03,$F2,$0A,$71,$7F,$07,$AA,$01,$B2,$07,$B5,$01,$6A; RAW DATA : 	next "강력한 자기장과"
+	next $02,$94,$07,$8A,$7F,$07,$CC,$06,$D0,$07,$8B,$7F,$04,$E6,$05,$B7,$0A,$71,$02,$D9; RAW DATA : 	next "높은 전압을 방사한다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $07,$0C,$01,$41,$03,$28,$7F,$09,$88,$07,$A4,$07,$97,$7F,$09,$3A,$07,$9F,$07,$8A; RAW DATA : 	text "연결된 타입의 코일은"
+	next $09,$92,$06,$E7,$07,$97,$7F,$0A,$E6,$07,$D1,$07,$9C,$7F,$04,$49,$07,$8B,$7F,$03,$77; RAW DATA : 	next "태양의 흑점이 많을 때"
+	next $04,$49,$07,$9C,$7F,$02,$3A,$09,$88,$02,$3D,$02,$D9,$01,$4D,$7F,$0A,$71,$02,$D9; RAW DATA : 	next "많이 나타난다고 한다"
+	dex
+ENDC
 
 _KoffingDexEntry::
-	text "Because it stores"
-	next "several kinds of"
-	next "toxic gases in"
-
-	page "its body, it is"
-	next "prone to exploding"
-	next "without warning"
+IF DEF(_RED) || DEF(_GREEN)
+	text $06,$E3,$01,$4D,$7F,$0A,$43,$05,$E1,$7F,$01,$10,$07,$8A,$7F,$04,$96,$07,$01,$7F,$04,$6D,$03,$16; RAW DATA : 	text "얇고 풍선 같은 몸에 맹독"
+	next $01,$01,$06,$4A,$01,$01,$7F,$08,$97,$07,$A6,$02,$D9,$7F,$01,$01,$01,$BE,$07,$9C,$7F,$07,$20,$04,$89,$7F; RAW DATA : 	next "가스가 차있다 가까이 오면 "
+	next $07,$0A,$01,$3C,$07,$4E,$7F,$02,$4F,$05,$C5,$01,$01,$7F,$02,$3D,$02,$D9; RAW DATA : 	next "역겨운 냄새가 난다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $08,$BC,$02,$4B,$07,$01,$7F,$01,$0E,$01,$01,$08,$26,$7F,$03,$16,$01,$01,$06,$4A,$01,$01; RAW DATA : 	text "체내에 갖가지 독가스가"
+	next $04,$90,$07,$14,$01,$B2,$7F,$03,$77,$04,$AE,$07,$01,$7F,$03,$77,$03,$77,$03,$FE; RAW DATA : 	next "모였기 때문에 때때로"
+	next $02,$EB,$0A,$28,$04,$DF,$07,$8B,$7F,$07,$9F,$07,$88,$09,$80,$01,$B2,$03,$15,$7F,$0A,$71,$02,$D9; RAW DATA : 	next "대폭발을 일으키기도 한다"
+	dex
+ENDC
+
 
 _MankeyDexEntry::
-	text "Extremely quick to"
-	next "anger. It could"
-	next "be docile one"
-
-	page "moment then"
-	next "thrashing away"
-	next "the next instant"
+IF DEF(_RED) || DEF(_GREEN)
+	text $04,$96,$02,$8E,$04,$42,$07,$9C,$7F,$01,$01,$05,$11,$01,$4D,$7F,$02,$3D,$0A,$28,$0A,$71,$7F,$05,$EA,$01,$3D; RAW DATA : 	text "몸놀림이 가볍고 난폭한 성격"
+	next $0A,$AD,$01,$01,$7F,$02,$3A,$05,$DD,$7F,$02,$3F,$03,$A9,$01,$B2,$7F,$06,$63,$07,$AB,$0A,$6F,$04,$89; RAW DATA : 	next "화가 나서 날뛰기 시작하면"
+	next $03,$15,$07,$CA,$0A,$F7,$7F,$06,$05,$07,$8B,$7F,$06,$B5,$7F,$06,$26,$7F,$06,$F8,$01,$34,$7F,$03,$28,$02,$D9; RAW DATA : 	next "도저히 손을 쓸 수 없게 된다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $0A,$22,$06,$02,$07,$01,$02,$C2,$7F,$01,$B2,$05,$30,$07,$9C,$7F,$07,$F1,$06,$C6,$03,$15; RAW DATA : 	text "평소에는 기분이 좋아도"
+	next $05,$B7,$06,$02,$0A,$71,$7F,$07,$9F,$03,$FE,$7F,$01,$09,$07,$AA,$01,$B2,$7F,$02,$3F,$03,$A9,$01,$B2; RAW DATA : 	next "사소한 일로 갑자기 날뛰기"
+	next $06,$63,$07,$AB,$0A,$6F,$04,$C7,$03,$FE,$7F,$04,$AB,$05,$E7,$02,$D9; RAW DATA : 	next "시작하므로 무섭다"
+	dex
+ENDC
 
 _SeelDexEntry::
-	text "The protruding"
-	next "horn on its head"
-	next "is very hard."
-
-	page "It is used for"
-	next "bashing through"
-	next "thick ice"
+IF DEF(_RED) || DEF(_GREEN)
+	text $0A,$6F,$02,$C3,$05,$C6,$07,$97,$7F,$09,$A0,$03,$FE,$7F,$03,$3A,$03,$04,$07,$9E,$7F,$0A,$67,$05,$2E,$02,$C2; RAW DATA : 	text "하늘색의 털로 뒤덮인 피부는"
+	next $03,$2E,$01,$DE,$01,$4D,$7F,$09,$E0,$09,$E0,$0A,$6F,$02,$D9,$7F,$07,$15,$0A,$6F,$7F,$FA,$F6,$03,$15,$03,$C3,$03,$15; RAW DATA : 	next "두껍고 튼튼하다 영하 40도라도"
+	next $0A,$B0,$03,$1F,$0A,$72,$7F,$06,$26,$7F,$07,$A6,$02,$D9; RAW DATA : 	next "활동할 수 있다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $04,$73,$04,$3E,$07,$01,$7F,$09,$D2,$06,$EE,$02,$3A,$07,$22,$7F,$05,$A4,$07,$8A,$7F,$04,$65,$07,$4C; RAW DATA : 	text "머리에 튀어나온 뿔은 매우"
+	next $02,$DC,$02,$DC,$0A,$6F,$02,$D9,$7F,$04,$DA,$09,$01,$01,$B2,$03,$FE,$7F,$05,$69,$05,$BA,$07,$8B,$7F,$01,$CA,$01,$4D; RAW DATA : 	next "단단하다 박치기로 빙산을 깨고"
+	next $06,$D5,$07,$88,$03,$FE,$7F,$02,$3A,$06,$C6,$01,$03,$02,$D9; RAW DATA : 	next "앞으로 나아간다"
+	dex
+ENDC
 
 _DiglettDexEntry::
-	text "Lives about one"
-	next "yard underground"
-	next "where it feeds on"
-
-	page "plant roots. It"
-	next "sometimes appears"
-	next "above ground"
+IF DEF(_RED) || DEF(_GREEN)
+	text $03,$75,$7F,$06,$03,$7F,$06,$E8,$07,$8A,$7F,$01,$67,$07,$8B,$7F,$07,$9C,$03,$1F,$0A,$71,$02,$D9; RAW DATA : 	text "땅 속 얕은 곳을 이동한다"
+	next $01,$8C,$07,$8B,$7F,$09,$F7,$7F,$0A,$C4,$07,$01,$02,$C2,$7F,$08,$26,$04,$89,$07,$9C,$7F,$09,$D2,$06,$EE,$02,$3A,$07,$2D; RAW DATA : 	next "굴을 판 후에는 지면이 튀어나와"
+	next $07,$A6,$01,$B2,$7F,$03,$77,$04,$AE,$07,$01,$7F,$04,$D9,$03,$FE,$7F,$06,$CB,$7F,$06,$26,$7F,$07,$A6,$02,$D9; RAW DATA : 	next "있기 때문에 바로 알 수 있다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $08,$26,$0A,$6F,$7F,$F7,$AC,$7F,$07,$D4,$03,$15,$04,$36,$7F,$09,$F4,$01,$4D,$03,$49,$06,$EE,$7F,$01,$01,$05,$DD; RAW DATA : 	text "지하 1m 정도를 파고들어 가서"
+	next $02,$3A,$04,$AB,$05,$A1,$04,$3E,$7F,$03,$4E,$07,$8B,$7F,$06,$C3,$06,$EE,$7F,$04,$74,$01,$4D,$7F,$05,$BA,$02,$D9; RAW DATA : 	next "나무뿌리 등을 씹어 먹고 산다"
+	next $01,$01,$02,$2B,$7F,$08,$26,$05,$C3,$07,$88,$03,$FE,$7F,$06,$F3,$01,$8C,$07,$8B,$7F,$02,$4B,$04,$CE,$02,$D9; RAW DATA : 	next "가끔 지상으로 얼굴을 내민다"
+	dex
+ENDC
 
 _TaurosDexEntry::
-	text "When it targets"
-	next "an enemy, it"
-	next "charges furiously"
-
-	page "while whipping its"
-	next "body with its"
-	next "long tails"
+IF DEF(_RED) || DEF(_GREEN)
+	text $04,$96,$09,$BB,$04,$DA,$09,$01,$01,$B2,$03,$FE,$7F,$01,$68,$01,$3D,$0A,$78,$7F,$07,$23,$7F,$03,$77; RAW DATA : 	text "몸통박치기로 공격해 올 때"
+	next $F9,$01,$13,$07,$97,$7F,$01,$EF,$04,$3E,$03,$FE,$7F,$07,$AA,$06,$65,$07,$97,$7F,$04,$96,$07,$8B; RAW DATA : 	next "3개의 꼬리로 자신의 몸을"
+	next $01,$01,$08,$97,$7F,$06,$F8,$07,$9C,$7F,$03,$77,$04,$40,$02,$D9; RAW DATA : 	next "가차 없이 때린다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $02,$8B,$04,$3E,$02,$C2,$7F,$04,$74,$07,$9C,$04,$36,$7F,$0A,$27,$08,$98,$0A,$6F,$04,$89; RAW DATA : 	text "노리는 먹이를 포착하면"
+	next $01,$EF,$04,$3E,$03,$FE,$7F,$04,$96,$07,$8B,$7F,$03,$77,$04,$3E,$04,$89,$05,$DD; RAW DATA : 	next "꼬리로 몸을 때리면서"
+	next $03,$98,$04,$D9,$03,$FE,$7F,$03,$19,$08,$28,$0A,$78,$07,$22,$02,$D9; RAW DATA : 	next "똑바로 돌진해온다"
+	
+	dex
+ENDC
 
 _FarfetchdDexEntry::
-	text "The sprig of"
-	next "green onions it"
-	next "holds is its"
-
-	page "weapon. It is"
-	next "used much like a"
-	next "metal sword"
+IF DEF(_RED) || DEF(_GREEN)
+	text $07,$AA,$06,$65,$07,$97,$7F,$03,$35,$08,$26,$04,$36,$7F,$04,$48,$03,$49,$01,$B2,$7F,$07,$77,$0A,$78,$05,$DD; RAW DATA : 	text "자신의 둥지를 만들기 위해서"
+	next $06,$64,$04,$B0,$07,$97,$7F,$08,$09,$01,$B2,$7F,$0A,$6F,$02,$3A,$04,$36; RAW DATA : 	next "식물의 줄기 하나를"
+	next $0A,$77,$05,$C3,$7F,$03,$49,$01,$4D,$7F,$01,$28,$02,$C2,$02,$D9; RAW DATA : 	next "항상 들고 걷는다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $01,$01,$08,$26,$01,$4D,$7F,$07,$A6,$02,$C2,$7F,$09,$F4,$7F,$08,$09,$01,$B2,$02,$C2; RAW DATA : 	text "가지고 있는 파 줄기는"
+	next $06,$02,$08,$0F,$0A,$71,$7F,$04,$AB,$01,$B2,$07,$9C,$01,$B2,$03,$15,$7F,$0A,$6F,$04,$87; RAW DATA : 	next "소중한 무기이기도 하며"
+	next $09,$0E,$07,$8B,$7F,$0A,$D6,$03,$2E,$04,$33,$03,$4D,$7F,$02,$D9,$06,$E7,$0A,$71,$7F,$01,$2D,$07,$8B,$7F,$07,$AA,$04,$36,$7F,$06,$26,$7F,$07,$A6,$02,$D9; RAW DATA : 	next "칼을 휘두르듯 다양한 것을 자를 수 있다"
+	dex
+ENDC
 
 _VenonatDexEntry::
-	text "Lives in the"
-	next "shadows of tall"
-	next "trees where it"
-
-	page "eats insects. It"
-	next "is attracted by"
-	next "light at night"
+IF DEF(_RED) || DEF(_GREEN)
+	text $02,$AB,$07,$9C,$7F,$03,$E9,$07,$9C,$02,$F5,$7F,$07,$0A,$0A,$72,$07,$8B,$7F,$0A,$78,$05,$DD; RAW DATA : 	text "눈이 레이더 역할을 해서"
+	next $06,$EE,$03,$32,$7F,$06,$03,$07,$01,$05,$DD,$03,$15,$7F,$0A,$B0,$03,$1F,$0A,$72,$7F,$06,$26,$7F,$07,$A6,$02,$D9; RAW DATA : 	next "어둠 속에서도 활동할 수 있다"
+	next $02,$AB,$07,$01,$05,$DD,$7F,$05,$66,$07,$8B,$7F,$04,$DF,$05,$B7,$0A,$71,$02,$D9; RAW DATA : 	next "눈에서 빔을 발사한다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $09,$7B,$7F,$02,$3A,$04,$AB,$7F,$04,$D8,$07,$01,$7F,$05,$BC,$04,$87,$7F,$04,$FA,$03,$E9,$7F,$03,$4E,$07,$8B; RAW DATA : 	text "큰 나무 밑에 살며 벌레 등을"
+	next $04,$74,$02,$C2,$7F,$03,$4D,$7F,$0A,$6F,$02,$D9,$7F,$04,$E3,$07,$01,$02,$C2; RAW DATA : 	next "먹는 듯 하다 밤에는"
+	next $05,$32,$05,$6B,$07,$8B,$7F,$0A,$82,$0A,$78,$7F,$08,$A3,$06,$C6,$07,$22,$02,$D9; RAW DATA : 	next "불빛을 향해 찾아온다"
+	dex
+ENDC
 
 _DragoniteDexEntry::
-	text "An extremely"
-	next "rarely seen"
-	next "marine #MON."
-
-	page "Its intelligence"
-	next "is said to match"
-	next "that of humans"
+IF DEF(_RED) || DEF(_GREEN)
+	text $09,$1F,$02,$D9,$03,$C5,$7F,$04,$96,$08,$2D,$07,$88,$03,$FE,$7F,$0A,$6F,$02,$C3,$07,$8B,$7F,$02,$3D,$02,$D9; RAW DATA : 	text "커다란 몸집으로 하늘을 난다"
+	next $08,$26,$01,$88,$04,$36,$7F,$06,$E0,$7F; RAW DATA : 	next "지구를 약 "
+	next $F7,$FC,$06,$63,$01,$03,$7F,$04,$48,$07,$01,$7F,$07,$9F,$08,$06,$0A,$71,$02,$D9; RAW DATA : 	next "16시간 만에 일주한다"
+	
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $04,$90,$06,$60,$07,$8B,$7F,$05,$1B,$7F,$05,$B7,$03,$C7,$07,$8A,$7F,$07,$CB,$08,$26,$04,$48,$7F,$06,$67,$07,$E8,$0A,$71,$02,$D9; RAW DATA : 	text "모습을 본 사람은 적지만 실존한다"
+	next $04,$D9,$02,$D9,$07,$97,$7F,$0A,$AD,$06,$65; RAW DATA : 	next "바다의 화신"
+	next $08,$26,$02,$C9,$03,$15,$7F,$07,$9E,$01,$03,$07,$8B,$7F,$0A,$6A,$07,$CB,$0A,$71,$02,$D9,$01,$4D,$7F,$0A,$71,$02,$D9; RAW DATA : 	next "지능도 인간을 필적한다고 한다"
+	dex
+ENDC
 
 _DoduoDexEntry::
-	text "A bird that makes"
-	next "up for its poor"
-	next "flying with its"
-
-	page "fast foot speed."
-	next "Leaves giant"
-	next "footprints"
+IF DEF(_RED) || DEF(_GREEN)
+	text $03,$19,$07,$0C,$05,$0F,$07,$9C,$03,$FE,$7F,$04,$DF,$01,$3F,$03,$28,$7F,$03,$2E,$7F,$01,$13,$07,$97,$7F,$04,$73,$04,$3E,$04,$36; RAW DATA : 	text "돌연변이로 발견된 두 개의 머리를"
+	next $08,$26,$02,$D1,$7F,$0A,$27,$09,$2F,$04,$93,$07,$9C,$02,$D9,$7F; RAW DATA : 	next "지닌 포켓몬이다 "
+	next $06,$63,$06,$03,$7F,$F7,$F6,$F6,$AA,$AC,$03,$FE,$7F,$02,$DE,$04,$40,$02,$D9; RAW DATA : 	next "시속 100km로 달린다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $02,$3A,$02,$C2,$7F,$01,$2D,$07,$8A,$7F,$05,$DD,$09,$C8,$08,$26,$04,$48,$7F,$02,$DE,$04,$3E,$02,$C2,$7F,$01,$2D,$07,$8A; RAW DATA : 	text "나는 것은 서툴지만 달리는 것은"
+	next $05,$6C,$04,$33,$02,$D9,$7F,$01,$25,$02,$EB,$0A,$71,$7F,$04,$DF,$07,$AA,$01,$89,$07,$8B,$7F,$02,$42,$01,$3C,$01,$01,$04,$87; RAW DATA : 	next "빠르다 거대한 발자국을 남겨가며"
+	next $02,$EB,$08,$26,$04,$36,$7F,$02,$DE,$04,$40,$02,$D9; RAW DATA : 	next "대지를 달린다"
+	dex
+ENDC
 
 _PoliwagDexEntry::
-	text "Its newly grown"
-	next "legs prevent it"
-	next "from running. It"
-
-	page "appears to prefer"
-	next "swimming than"
-	next "trying to stand"
+IF DEF(_RED) || DEF(_GREEN)
+	text $04,$65,$02,$24,$03,$E4,$01,$4D,$7F,$01,$2B,$07,$8A,$7F,$0A,$67,$05,$2E,$02,$C2,$7F,$06,$E3,$01,$4D; RAW DATA : 	text "매끄럽고 검은 피부는 얇고"
+	next $08,$E0,$08,$E0,$0A,$6F,$02,$D9,$02,$4B,$07,$B5,$7F,$07,$9F,$05,$2E,$01,$01,$7F,$05,$61,$08,$C4,$05,$DD; RAW DATA : 	next "축축하다내장 일부가 비쳐서"
+	next $06,$02,$07,$4B,$03,$19,$07,$9C,$7F,$04,$90,$06,$E7,$07,$88,$03,$FE,$7F,$05,$18,$07,$9E,$02,$D9; RAW DATA : 	next "소용돌이 모양으로 보인다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $06,$C6,$08,$27,$7F,$02,$D9,$04,$3E,$01,$01,$7F,$04,$47,$7F,$05,$CD,$01,$B4,$7F,$08,$9C,$07,$9C,$03,$C3,$05,$DD; RAW DATA : 	text "아직 다리가 막 생긴 참이라서"
+	next $07,$AF,$01,$28,$08,$26,$7F,$04,$98,$0A,$71,$02,$D9,$7F,$04,$B0,$06,$03,$07,$8B,$7F,$0A,$8C,$06,$F6,$09,$01,$02,$C2; RAW DATA : 	next "잘걷지 못한다 물속을 헤엄치는"
+	next $0A,$1D,$07,$9C,$7F,$02,$F5,$7F,$07,$F1,$07,$8A,$7F,$04,$90,$06,$E7,$07,$9C,$02,$D9; RAW DATA : 	next "편이 더 좋은 모양이다"
+	dex
+ENDC
 
 _JynxDexEntry::
-	text "It seductively"
-	next "wiggles its hips"
-	next "as it walks. It"
-
-	page "can cause people"
-	next "to dance in"
-	next "unison with it"
+IF DEF(_RED) || DEF(_GREEN)
+	text $07,$9E,$01,$03,$08,$B3,$03,$E3,$7F,$04,$4B,$07,$8B,$7F,$0A,$6F,$08,$26,$04,$48,$7F,$06,$C6,$08,$27; RAW DATA : 	text "인간처럼 말을 하지만 아직"
+	next $04,$AB,$06,$4C,$7F,$04,$4B,$07,$8B,$7F,$0A,$6F,$02,$C2,$08,$26,$7F,$06,$CB,$7F,$06,$26,$7F,$06,$F8,$06,$EE; RAW DATA : 	next "무슨 말을 하는지 알 수 없어"
+	next $0A,$96,$07,$B7,$7F,$07,$0C,$01,$88,$7F,$08,$0F,$07,$9C,$02,$D9; RAW DATA : 	next "현재 연구 중이다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $0A,$83,$04,$3E,$04,$36,$7F,$0A,$E7,$03,$45,$02,$C2,$7F,$03,$4D,$07,$9C,$7F,$01,$28,$01,$4D,$7F,$07,$A6,$02,$D9; RAW DATA : 	text "허리를 흔드는 듯이 걷고 있다"
+	next $04,$E6,$06,$69,$0A,$6F,$04,$89,$7F,$06,$FB,$01,$2C,$01,$41,$07,$01,$7F,$03,$6B,$03,$C3,$05,$DD; RAW DATA : 	next "방심하면 엉겁결에 따라서"
+	next $08,$E3,$08,$E7,$04,$F6,$04,$40,$02,$D9,$01,$4D,$7F,$0A,$71,$02,$D9; RAW DATA : 	next "춤춰버린다고 한다"
+	dex
+ENDC
 
 _MoltresDexEntry::
-	text "Known as the"
-	next "legendary bird of"
-	next "fire. Every flap"
-
-	page "of its wings"
-	next "creates a dazzling"
-	next "flash of flames"
+IF DEF(_RED) || DEF(_GREEN)
+	text $07,$CC,$05,$E3,$07,$97,$7F,$0A,$27,$09,$2F,$04,$93,$7F,$08,$0F,$7F,$0A,$6F,$02,$3A; RAW DATA : 	text "전설의 포켓몬 중 하나"
+	next $08,$06,$0A,$B2,$05,$C6,$07,$88,$03,$FE,$7F,$05,$32,$09,$88,$02,$C2,$7F,$03,$4D,$0A,$71,$7F,$02,$3F,$01,$13,$01,$01; RAW DATA : 	next "주황색으로 불타는 듯한 날개가"
+	next $01,$A7,$01,$2D,$07,$8B,$7F,$05,$18,$02,$C2,$7F,$07,$AA,$04,$36,$7F,$06,$D0,$03,$15,$0A,$71,$02,$D9; RAW DATA : 	next "그것을 보는 자를 압도한다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $07,$20,$03,$D1,$07,$CC,$05,$2E,$09,$9D,$7F,$05,$32,$05,$C5,$07,$97,$7F,$07,$CC,$05,$E3,$03,$FE,$7F,$06,$CB,$03,$F1,$07,$DE; RAW DATA : 	text "오래전부터 불새의 전설로 알려져"
+	next $07,$A6,$02,$D9,$7F,$02,$3F,$01,$19,$08,$2E,$7F,$0A,$72,$7F,$03,$77,$04,$46,$02,$D9,$7F,$02,$3F,$01,$13,$01,$01,$7F; RAW DATA : 	next "있다 날갯짓 할 때마다 날개가 "
+	next $02,$AB,$05,$2E,$06,$63,$01,$34,$7F,$05,$32,$09,$88,$07,$23,$03,$C3,$05,$DD,$7F,$06,$C6,$04,$37,$02,$E4,$02,$D9; RAW DATA : 	next "눈부시게 불타올라서 아름답다"
+	dex
+ENDC
 
 _ArticunoDexEntry::
-	text "A legendary bird"
-	next "#MON that is"
-	next "said to appear to"
-
-	page "doomed people who"
-	next "are lost in icy"
-	next "mountains"
+IF DEF(_RED) || DEF(_GREEN)
+	text $07,$CC,$05,$E3,$07,$97,$7F,$0A,$27,$09,$2F,$04,$93,$7F,$08,$0F,$7F,$0A,$6F,$02,$3A; RAW DATA : 	text "전설의 포켓몬 중 하나"
+	next $01,$B4,$7F,$01,$EF,$04,$3E,$01,$01,$7F,$01,$88,$04,$37,$01,$6A,$7F,$0A,$74,$01,$E2; RAW DATA : 	next "긴 꼬리가 구름과 함께"
+	next $0A,$D6,$02,$3F,$04,$3E,$02,$C2,$7F,$04,$90,$06,$60,$07,$9C,$7F,$07,$B5,$01,$6C,$07,$9C,$02,$D9; RAW DATA : 	next "휘날리는 모습이 장관이다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $02,$AB,$7F,$03,$04,$07,$9E,$7F,$05,$BA,$07,$01,$05,$DD,$7F,$08,$DF,$07,$66,$05,$DD,$7F,$06,$F3,$06,$EE,$08,$07,$01,$34,$7F; RAW DATA : 	text "눈 덮인 산에서 추워서 얼어죽게 "
+	next $03,$29,$7F,$05,$C3,$0A,$B2,$07,$01,$7F,$02,$3A,$09,$88,$02,$3A,$7F,$08,$08,$02,$D9,$01,$4D,$7F,$0A,$6F,$02,$C2; RAW DATA : 	next "될 상황에 나타나 준다고 하는"
+	next $07,$CC,$05,$E3,$07,$97,$7F,$02,$63,$03,$1F,$7F,$0A,$27,$09,$2F,$04,$93; RAW DATA : 	next "전설의 냉동 포켓몬"
+	dex
+ENDC
 
 _ZapdosDexEntry::
-	text "A legendary bird"
-	next "#MON that is"
-	next "said to appear"
-
-	page "from clouds while"
-	next "dropping enormous"
-	next "lightning bolts"
+IF DEF(_RED) || DEF(_GREEN)
+	text $07,$CC,$05,$E3,$07,$97,$7F,$0A,$27,$09,$2F,$04,$93,$7F,$08,$0F,$7F,$0A,$6F,$02,$3A; RAW DATA : 	text "전설의 포켓몬 중 하나"
+	next $02,$3F,$7F,$03,$77,$7F,$09,$89,$09,$89,$7F,$0A,$6F,$04,$87,$7F,$04,$BA,$01,$01,$7F,$09,$D2,$01,$B2,$02,$C2; RAW DATA : 	next "날 때 탁탁 하며 뭔가 튀기는"
+	next $03,$4D,$0A,$71,$7F,$06,$02,$04,$3E,$01,$01,$7F,$02,$3D,$02,$D9; RAW DATA : 	next "듯한 소리가 난다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $01,$88,$04,$37,$7F,$07,$77,$07,$01,$05,$DD,$7F,$01,$25,$02,$EB,$0A,$71; RAW DATA : 	text "구름 위에서 거대한"
+	next $04,$F8,$01,$13,$04,$36,$7F,$02,$4B,$04,$3E,$09,$01,$04,$87,$7F,$02,$3A,$09,$88,$02,$3D,$02,$D9; RAW DATA : 	next "번개를 내리치며 나타난다"
+	next $07,$CC,$05,$E3,$07,$97,$7F,$05,$C5,$7F,$0A,$27,$09,$2F,$04,$93,$07,$9C,$02,$D9; RAW DATA : 	next "전설의 새 포켓몬이다"
+	dex
+ENDC
 
 _DittoDexEntry::
-	text "Capable of copying"
-	next "an enemy's genetic"
-	next "code to instantly"
-
-	page "transform itself"
-	next "into a duplicate"
-	next "of the enemy"
+IF DEF(_RED) || DEF(_GREEN)
+	text $04,$96,$07,$97,$7F,$05,$EC,$0A,$27,$7F,$01,$88,$05,$EA,$07,$8B; RAW DATA : 	text "몸의 세포 구성을"
+	next $06,$4A,$06,$4A,$03,$FE,$7F,$04,$D9,$02,$13,$05,$DD; RAW DATA : 	next "스스로 바꿔서"
+	next $02,$D9,$04,$35,$7F,$05,$CD,$04,$8D,$08,$BC,$03,$FE,$7F,$05,$0F,$06,$65,$0A,$71,$02,$D9; RAW DATA : 	next "다른 생명체로 변신한다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $05,$EC,$0A,$27,$07,$E6,$08,$27,$07,$8B,$7F,$0A,$71,$06,$28,$01,$03,$07,$01; RAW DATA : 	text "세포조직을 한순간에"
+	next $05,$19,$05,$B7,$0A,$78,$05,$DD,$7F,$05,$C3,$02,$EB,$07,$2D,$7F,$03,$98,$01,$10,$07,$9C; RAW DATA : 	next "복사해서 상대와 똑같이"
+	next $05,$0F,$06,$65,$0A,$6F,$02,$C2,$7F,$02,$C9,$03,$F2,$07,$9C,$7F,$07,$A6,$02,$D9; RAW DATA : 	next "변신하는 능력이 있다"
+	dex
+ENDC
 
 _MeowthDexEntry::
-	text "Adores circular"
-	next "objects. Wanders"
-	next "the streets on a"
-
-	page "nightly basis to"
-	next "look for dropped"
-	next "loose change"
+IF DEF(_RED) || DEF(_GREEN)
+	text $02,$47,$07,$01,$02,$C2,$7F,$0A,$77,$05,$C3,$7F,$07,$AA,$01,$B2,$04,$48,$7F,$0A,$71,$02,$D9; RAW DATA : 	text "낮에는 항상 자기만 한다"
+	next $04,$E3,$07,$9C,$7F,$03,$27,$04,$89,$7F,$02,$AB,$07,$9C,$7F,$05,$6B,$02,$4B,$04,$87; RAW DATA : 	next "밤이 되면 눈이 빛내며"
+	next $08,$06,$05,$0F,$07,$8B,$7F,$03,$19,$06,$C6,$02,$D9,$02,$D1,$02,$D9; RAW DATA : 	next "주변을 돌아다닌다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $03,$35,$01,$A9,$7F,$01,$2D,$07,$8B,$7F,$04,$AB,$08,$B4,$7F,$07,$F1,$06,$C6,$0A,$71,$02,$D9,$7F,$04,$E3,$07,$9C,$04,$89; RAW DATA : 	text "둥근 것을 무척 좋아한다 밤이면"
+	next $04,$E3,$04,$46,$02,$D9,$7F,$04,$DB,$07,$88,$03,$FE,$7F,$02,$3A,$01,$01,$7F,$03,$83,$06,$EE,$07,$DE,$07,$A6,$02,$C2; RAW DATA : 	next "밤마다 밖으로 나가 떨어져있는"
+	next $03,$1F,$07,$CC,$07,$8B,$7F,$08,$06,$07,$66,$04,$90,$06,$C6,$05,$DD,$7F,$03,$19,$06,$C6,$07,$22,$02,$D9; RAW DATA : 	next "동전을 주워모아서 돌아온다"
+	dex
+ENDC
 
 _KrabbyDexEntry::
-	text "Its pincers are"
-	next "not only powerful"
-	next "weapons, they are"
-
-	page "used for balance"
-	next "when walking"
-	next "sideways"
+IF DEF(_RED) || DEF(_GREEN)
+	text $04,$D9,$02,$D9,$7F,$01,$A9,$08,$B3,$07,$01,$05,$DD,$7F,$05,$1C,$7F,$06,$26,$7F,$07,$A6,$02,$D9; RAW DATA : 	text "바다 근처에서 볼 수 있다"
+	next $09,$1F,$02,$D9,$03,$C5,$7F,$08,$2D,$01,$34,$04,$DF,$07,$8A,$7F,$05,$2E,$03,$DF,$07,$DE,$03,$15; RAW DATA : 	next "커다란 집게발은 부러져도"
+	next $02,$3A,$08,$0F,$07,$01,$7F,$02,$D9,$06,$63,$07,$AA,$03,$C5,$02,$D9; RAW DATA : 	next "나중에 다시자란다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $08,$2D,$01,$34,$02,$C2,$7F,$01,$0D,$03,$F2,$0A,$71,$7F,$04,$AB,$01,$B2,$07,$9C,$04,$87; RAW DATA : 	text "집게는 강력한 무기이며"
+	next $07,$17,$07,$88,$03,$FE,$7F,$01,$29,$07,$8B,$7F,$03,$77,$7F,$04,$96,$07,$97,$7F,$01,$A5,$0A,$9C,$07,$8B; RAW DATA : 	next "옆으로 걸을 때 몸의 균형을"
+	next $07,$B2,$02,$C2,$7F,$07,$0A,$0A,$72,$03,$15,$7F,$0A,$71,$02,$D9; RAW DATA : 	next "잡는 역할도 한다"
+	dex
+ENDC
 
 _VulpixDexEntry::
-	text "At the time of"
-	next "birth, it has"
-	next "just one tail."
-
-	page "The tail splits"
-	next "from its tip as"
-	next "it grows older"
+IF DEF(_RED) || DEF(_GREEN)
+	text $06,$EE,$04,$3E,$08,$26,$04,$48,$7F,$FC,$01,$13,$07,$97,$7F,$01,$EF,$04,$3E,$01,$01,$7F,$06,$C6,$04,$37,$02,$E4,$02,$D9; RAW DATA : 	text "어리지만 6개의 꼬리가 아름답다"
+	next $05,$EA,$07,$B5,$0A,$6F,$04,$89,$7F,$0A,$71,$08,$FE; RAW DATA : 	next "성장하면 한층"
+	next $01,$EF,$04,$3E,$7F,$06,$26,$01,$01,$7F,$02,$C3,$06,$EE,$02,$3D,$02,$D9; RAW DATA : 	next "꼬리 수가 늘어난다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $09,$92,$06,$EE,$02,$3F,$7F,$03,$77,$7F,$01,$EF,$04,$3E,$02,$C2,$7F,$05,$C5,$0A,$6F,$06,$E9,$01,$4D,$7F,$F7,$01,$13,$7F; RAW DATA : 	text "태어날 때 꼬리는 새하얗고 1개 "
+	next $04,$DB,$07,$01,$7F,$06,$F8,$02,$D9,$7F,$05,$EA,$07,$B5,$0A,$6F,$04,$89,$7F,$04,$73,$08,$26,$7F,$06,$CA,$06,$C6,$7F; RAW DATA : 	next "밖에 없다 성장하면 머지 않아 "
+	next $02,$31,$07,$9C,$7F,$01,$05,$03,$C3,$08,$26,$04,$87,$7F,$01,$EF,$04,$3E,$01,$01,$7F,$02,$C2,$02,$D9; RAW DATA : 	next "끝이 갈라지며 꼬리가 는다"
+	dex
+ENDC
 
 _NinetalesDexEntry::
-	text "Very smart and"
-	next "very vengeful."
-	next "Grabbing one of"
-
-	page "its many tails"
-	next "could result in a"
-	next "1000-year curse"
+IF DEF(_RED) || DEF(_GREEN)
+	text $0A,$B2,$01,$AD,$05,$6B,$07,$88,$03,$FE,$7F,$05,$6B,$02,$3A,$02,$C2,$7F,$08,$BC,$04,$90,$07,$2D,$7F,$FF,$01,$13,$07,$97; RAW DATA : 	text "황금빛으로 빛나는 체모와 9개의"
+	next $01,$B4,$7F,$01,$EF,$04,$3E,$04,$36,$7F,$08,$26,$02,$86,$02,$D9; RAW DATA : 	next "긴 꼬리를 지녔다"
+	next $F7,$F6,$F6,$F6,$02,$82,$07,$8A,$7F,$05,$BA,$02,$D9,$01,$4D,$7F,$04,$4B,$0A,$71,$02,$D9; RAW DATA : 	next "1000년은 산다고 말한다"
 	dex
-
+ENDC
+IF DEF(_BLUE)
+	text $04,$73,$04,$3E,$01,$01,$7F,$07,$F1,$06,$C6,$05,$DD,$7F,$08,$2D,$02,$84,$07,$9C,$7F,$01,$0D,$0A,$6F,$02,$D9; RAW DATA : 	text "머리가 좋아서 집념이 강하다"
+	next $07,$B5,$02,$3D,$09,$01,$04,$87,$7F,$01,$EF,$04,$3E,$04,$36,$7F,$07,$B2,$07,$88,$04,$89,$7F,$F7,$F6,$F6,$F6,$02,$82; RAW DATA : 	next "장난치며 꼬리를 잡으면 1000년"
+	next $03,$1F,$06,$C8,$7F,$0A,$AD,$04,$36,$7F,$02,$E7,$0A,$71,$02,$D9,$01,$4D,$7F,$0A,$71,$02,$D9; RAW DATA : 	next "동안 화를 당한다고 한다"
+	dex
+ENDC
 _PikachuDexEntry::
-	text "When several of"
-	next "these #MON"
-	next "gather, their"
-
-	page "electricity could"
-	next "build and cause"
-	next "lightning storms"
+IF DEF(_RED) || DEF(_GREEN)
+	text $05,$84,$07,$97,$7F,$06,$E7,$08,$6A,$07,$01,$7F,$07,$AB,$07,$8A,$7F,$07,$CC,$01,$B2; RAW DATA : 	text "뺨의 양쪽에 작은 전기"
+	next $08,$06,$04,$73,$02,$CF,$01,$01,$7F,$07,$A6,$02,$D9; RAW DATA : 	next "주머니가 있다"
+	next $07,$77,$01,$B2,$7F,$05,$C3,$0A,$B2,$07,$9F,$7F,$03,$77,$7F,$04,$E6,$07,$CC,$0A,$71,$02,$D9; RAW DATA : 	next "위기 상황일 때 방전한다"
 	dex
-
+ENDC
+IF DEF(_BLUE)
+	text $04,$8E,$7F,$04,$46,$04,$3E,$06,$BF,$7F,$04,$90,$07,$09,$7F,$07,$A6,$07,$88,$04,$89,$7F,$01,$A7,$01,$67,$07,$01; RAW DATA : 	text "몇 마리씩 모여 있으면 그곳에"
+	next $04,$6D,$03,$F4,$0A,$71,$7F,$07,$CC,$01,$B2,$01,$01,$7F,$04,$90,$07,$09,$7F,$04,$F8,$01,$13,$01,$01; RAW DATA : 	next "맹렬한 전기가 모여 번개가"
+	next $03,$83,$06,$EE,$08,$26,$02,$C2,$7F,$03,$77,$01,$01,$7F,$07,$A6,$02,$D9,$01,$4D,$7F,$0A,$71,$02,$D9; RAW DATA : 	next "떨어지는 때가 있다고 한다"
+	dex
+ENDC
 _RaichuDexEntry::
-	text "Its long tail"
-	next "serves as a"
-	next "ground to protect"
-
-	page "itself from its"
-	next "own high voltage"
-	next "power"
+IF DEF(_RED) || DEF(_GREEN)
+	text $07,$CC,$01,$B2,$02,$C2,$7F,$F7,$F6,$04,$48,$7F,$05,$1C,$09,$DE,$03,$FE,$7F,$03,$15,$02,$DE,$0A,$6F,$02,$C2; RAW DATA : 	text "전기는 10만 볼트로 도달하는"
+	next $03,$77,$03,$15,$7F,$07,$A6,$06,$EE,$7F,$04,$AB,$06,$69,$01,$41,$07,$01,$7F,$04,$48,$07,$E3,$02,$D9,$01,$01,$02,$C2; RAW DATA : 	next "때도 있어 무심결에 만졌다가는"
+	next $07,$9E,$03,$15,$7F,$09,$3A,$02,$32,$04,$3E,$03,$C3,$03,$15,$7F,$01,$B2,$07,$CD,$0A,$71,$02,$D9; RAW DATA : 	next "인도 코끼리라도 기절한다"
 	dex
-
+ENDC
+IF DEF(_BLUE)
+	text $01,$B4,$7F,$01,$EF,$04,$3E,$01,$01,$7F,$07,$D2,$08,$26,$05,$E1,$07,$9C,$7F,$03,$27,$06,$EE,$7F,$04,$96,$07,$8B; RAW DATA : 	text "긴 꼬리가 접지선이 되어 몸을"
+	next $08,$26,$09,$80,$01,$4D,$7F,$07,$A6,$06,$EE,$05,$DD,$7F,$07,$AA,$01,$B2,$7F,$07,$AA,$06,$65,$07,$8A; RAW DATA : 	next "지키고 있어서 자기 자신은"
+	next $01,$4D,$07,$CC,$06,$D0,$07,$01,$03,$15,$7F,$04,$46,$05,$61,$03,$27,$08,$26,$7F,$06,$CA,$02,$C2,$7F,$01,$25,$02,$D9; RAW DATA : 	next "고전압에도 마비되지 않는 거다"
+	dex
+ENDC
 _DratiniDexEntry::
-	text "Long considered a"
-	next "mythical #MON"
-	next "until recently"
-
-	page "when a small"
-	next "colony was found"
-	next "living underwater"
+IF DEF(_RED) || DEF(_GREEN)
+	text $05,$C5,$02,$32,$03,$15,$7F,$04,$96,$01,$B6,$07,$9C,$01,$01,$7F,$F8,$04,$CC,$09,$9D,$7F,$07,$9C,$05,$C3,$07,$9C,$02,$D9; RAW DATA : 	text "새끼도 몸길이가 2미터 이상이다"
+	next $09,$8B,$0A,$67,$04,$36,$7F,$01,$25,$03,$4C,$0A,$78,$05,$DD; RAW DATA : 	next "탈피를 거듭해서"
+	next $04,$96,$08,$2D,$07,$9C,$7F,$09,$1F,$08,$28,$02,$D9; RAW DATA : 	next "몸집이 커진다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $07,$20,$03,$D7,$03,$1F,$06,$C8,$7F,$0A,$AF,$05,$C3,$07,$97,$7F,$0A,$27,$09,$2F,$04,$93,$07,$9C,$03,$C3,$7F,$05,$32,$03,$F8,$02,$D9; RAW DATA : 	text "오랫동안 환상의 포켓몬이라 불렸다"
+	next $04,$B0,$06,$03,$07,$01,$7F,$05,$BA,$02,$D9,$02,$C2,$7F,$05,$B7,$06,$67,$07,$9C; RAW DATA : 	next "물속에 산다는 사실이"
+	next $01,$3C,$07,$4C,$7F,$04,$E0,$0A,$94,$07,$E3,$02,$D9; RAW DATA : 	next "겨우 밝혀졌다"
+	dex
+ENDC
+
 
 _DragonairDexEntry::
-	text "A mystical #MON"
-	next "that exudes a"
-	next "gentle aura."
-
-	page "Has the ability"
-	next "to change climate"
-	next "conditions"
+IF DEF(_RED) || DEF(_GREEN)
+	text $04,$D9,$02,$D9,$02,$3A,$7F,$0A,$A3,$06,$26,$7F,$03,$4E,$07,$01,$7F,$05,$BA,$02,$D9,$01,$4D,$7F,$0A,$71,$02,$D9; RAW DATA : 	text "바다나 호수 등에 산다고 한다"
+	next $02,$3F,$01,$13,$01,$01,$7F,$06,$F8,$07,$88,$02,$3A,$7F,$03,$77,$03,$77,$03,$FE,$7F,$0A,$6F,$02,$C3,$07,$8B; RAW DATA : 	next "날개가 없으나 때때로 하늘을"
+	next $02,$3A,$02,$C2,$7F,$04,$90,$06,$60,$07,$9C,$7F,$0A,$27,$08,$98,$03,$28,$02,$D9; RAW DATA : 	next "나는 모습이 포착된다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $07,$20,$03,$C3,$07,$01,$7F,$06,$6E,$07,$09,$07,$A6,$02,$C2,$7F,$06,$65,$05,$EA,$0A,$71,$7F,$05,$CD,$04,$8D,$08,$BC,$07,$9E; RAW DATA : 	text "오라에 싸여있는 신성한 생명체인"
+	next $03,$4D,$0A,$6F,$02,$D9,$7F,$02,$3F,$06,$BE,$04,$36,$7F,$04,$D9,$02,$09,$02,$C2,$7F,$0A,$FB,$07,$8B; RAW DATA : 	next "듯하다 날씨를 바꾸는 힘을"
+	next $01,$01,$07,$E3,$02,$D9,$01,$4D,$7F,$0A,$71,$02,$D9; RAW DATA : 	next "가졌다고 한다"
+	dex
+ENDC
+
 
 _KabutoDexEntry::
-	text "A #MON that"
-	next "was resurrected"
-	next "from a fossil"
-
-	page "found in what was"
-	next "once the ocean"
-	next "floor eons ago"
+IF DEF(_RED) || DEF(_GREEN)
+	text $01,$4D,$02,$EB,$7F,$05,$CD,$04,$B0,$07,$97,$7F,$0A,$AD,$05,$DE,$07,$01,$05,$DD,$7F,$07,$B7,$05,$CD,$03,$28; RAW DATA : 	text "고대 생물의 화석에서 재생된"
+	next $0A,$27,$09,$2F,$04,$93,$7F,$02,$DC,$02,$DC,$0A,$71,$7F,$01,$DE,$03,$05,$01,$B2,$03,$FE; RAW DATA : 	next "포켓몬 단단한 껍데기로"
+	next $04,$96,$07,$8B,$7F,$08,$26,$09,$80,$01,$4D,$07,$A6,$02,$D9; RAW DATA : 	next "몸을 지키고있다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $04,$75,$7F,$07,$1E,$02,$3F,$7F,$04,$D9,$02,$D9,$07,$14,$02,$F8; RAW DATA : 	text "먼 옛날 바다였던"
+	next $08,$26,$08,$FE,$07,$01,$05,$DD,$7F,$04,$DF,$01,$3F,$0A,$71; RAW DATA : 	next "지층에서 발견한"
+	next $0A,$AD,$05,$DE,$07,$8B,$7F,$05,$2E,$0A,$B0,$06,$63,$09,$82,$7F,$0A,$27,$09,$2F,$04,$93,$07,$9C,$02,$D9; RAW DATA : 	next "화석을 부활시킨 포켓몬이다"
+	dex
+ENDC
 
 _KabutopsDexEntry::
-	text "Its sleek shape is"
-	next "perfect for swim-"
-	next "ming. It slashes"
-
-	page "prey with its"
-	next "claws and drains"
-	next "the body fluids"
+IF DEF(_RED) || DEF(_GREEN)
+	text $04,$B0,$7F,$06,$03,$07,$8B,$7F,$07,$AA,$07,$7F,$03,$FE,$07,$9C,$7F,$0A,$8C,$06,$F6,$09,$01,$04,$87; RAW DATA : 	text "물 속을 자유로이 헤엄치며"
+	next $07,$19,$04,$3E,$0A,$71,$7F,$08,$2D,$01,$34,$03,$FE,$7F,$04,$74,$07,$A5,$01,$08,$07,$8B,$7F,$07,$B2,$06,$C6; RAW DATA : 	next "예리한 집게로 먹잇감을 잡아"
+	next $08,$BC,$06,$D7,$07,$8B,$7F,$05,$71,$06,$C6,$04,$74,$02,$C2,$02,$D9; RAW DATA : 	next "체액을 빨아먹는다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $07,$09,$07,$77,$06,$EE,$05,$DD,$7F,$0A,$8C,$06,$F6,$09,$01,$02,$C2,$7F,$01,$2D,$07,$9C,$7F,$05,$6C,$04,$33,$02,$D9; RAW DATA : 	text "여위어서 헤엄치는 것이 빠르다"
+	next $04,$74,$07,$A5,$01,$08,$07,$8B,$7F,$02,$44,$07,$88,$03,$FE,$7F,$07,$AA,$04,$33,$01,$4D,$7F,$08,$BC,$06,$D7,$07,$8B; RAW DATA : 	next "먹잇감을 낫으로 자르고 체액을"
+	next $02,$42,$01,$B8,$06,$F8,$07,$9C,$7F,$05,$71,$06,$C6,$04,$74,$02,$C2,$02,$D9; RAW DATA : 	next "남김없이 빨아먹는다"
+	dex
+ENDC
 
 _HorseaDexEntry::
-	text "Known to shoot"
-	next "down flying bugs"
-	next "with precision"
-
-	page "blasts of ink"
-	next "from the surface"
-	next "of the water"
+IF DEF(_RED) || DEF(_GREEN)
+	text $09,$92,$07,$11,$08,$B3,$03,$E3,$7F,$03,$1F,$01,$A7,$03,$CE,$01,$34,$7F,$04,$4B,$04,$40,$7F,$01,$EF,$04,$3E,$03,$FE; RAW DATA : 	text "태엽처럼 동그랗게 말린 꼬리로"
+	next $04,$96,$07,$97,$7F,$01,$A5,$0A,$9C,$07,$8B,$7F,$07,$B2,$02,$C2,$02,$D9,$7F,$08,$06,$03,$35,$07,$9C,$07,$01,$05,$DD; RAW DATA : 	next "몸의 균형을 잡는다 주둥이에서"
+	next $04,$74,$04,$B0,$07,$8B,$7F,$05,$A5,$01,$B2,$03,$15,$7F,$0A,$71,$02,$D9; RAW DATA : 	next "먹물을 뿜기도 한다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $06,$26,$04,$89,$07,$01,$05,$DD,$7F,$0A,$FB,$08,$97,$01,$34,$7F,$04,$74,$04,$B0,$07,$8B,$7F,$04,$DF,$05,$B7,$0A,$78,$05,$DD; RAW DATA : 	text "수면에서 힘차게 먹물을 발사해서"
+	next $02,$3F,$01,$4D,$7F,$07,$A6,$02,$C2,$7F,$04,$FA,$03,$E9,$04,$36,$7F,$04,$62,$08,$E7,$05,$DD; RAW DATA : 	next "날고 있는 벌레를 맞춰서"
+	next $03,$83,$06,$EE,$03,$AF,$04,$41,$7F,$03,$77,$01,$01,$7F,$07,$A6,$02,$D9,$01,$4D,$7F,$0A,$71,$02,$D9; RAW DATA : 	next "떨어뜨릴 때가 있다고 한다"
+	dex
+ENDC
+
 
 _SeadraDexEntry::
-	text "Capable of swim-"
-	next "ming backwards by"
-	next "rapidly flapping"
-
-	page "its wing-like"
-	next "pectoral fins and"
-	next "stout tail"
+IF DEF(_RED) || DEF(_GREEN)
+	text $05,$E2,$05,$32,$04,$3E,$7F,$04,$48,$08,$26,$03,$F1,$01,$4D,$7F,$0A,$6F,$04,$89; RAW DATA : 	text "섣불리 만지려고 하면"
+	next $04,$96,$7F,$07,$CC,$08,$BC,$07,$01,$05,$DD,$7F,$03,$18,$06,$C6,$02,$3A,$02,$C2,$7F,$01,$01,$06,$63,$07,$01,$7F,$08,$91,$03,$F1; RAW DATA : 	next "몸 전체에서 돋아나는 가시에 찔려"
+	next $01,$B2,$07,$CD,$0A,$72,$7F,$06,$26,$7F,$03,$15,$7F,$07,$A6,$02,$D9; RAW DATA : 	next "기절할 수 도 있다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $02,$3F,$01,$13,$07,$2D,$7F,$01,$EF,$04,$3E,$04,$36,$7F,$07,$B7,$05,$6C,$04,$33,$01,$34,$7F,$07,$62,$08,$27,$07,$09; RAW DATA : 	text "날개와 꼬리를 재빠르게 움직여"
+	next $06,$D5,$07,$8B,$7F,$0A,$82,$0A,$71,$7F,$08,$A4,$7F,$03,$3A,$03,$FE; RAW DATA : 	next "앞을 향한 채 뒤로"
+	next $0A,$8C,$06,$F6,$09,$05,$7F,$06,$26,$7F,$07,$A6,$02,$C2,$7F,$0A,$27,$09,$2F,$04,$93,$07,$9C,$02,$D9; RAW DATA : 	next "헤엄칠 수 있는 포켓몬이다"
+	dex
+ENDC
 
 _SandshrewDexEntry::
-	text "Burrows deep"
-	next "underground in"
-	next "arid locations"
-
-	page "far from water."
-	next "It only emerges"
-	next "to hunt for food"
+IF DEF(_RED) || DEF(_GREEN)
+	text $08,$26,$04,$89,$07,$01,$7F,$01,$88,$04,$7B,$07,$8B,$7F,$09,$F4,$01,$4D,$7F,$05,$BA,$02,$D9; RAW DATA : 	text "지면에 구멍을 파고 산다"
+	next $07,$AA,$06,$65,$07,$01,$01,$34,$7F,$07,$77,$0A,$88,$07,$9C,$7F,$02,$D9,$01,$01,$07,$20,$04,$89; RAW DATA : 	next "자신에게 위험이 다가오면"
+	next $03,$35,$01,$AB,$01,$34,$7F,$04,$4B,$06,$C6,$05,$DD,$7F,$04,$96,$07,$8B,$7F,$08,$26,$09,$82,$02,$D9; RAW DATA : 	next "둥글게 말아서 몸을 지킨다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $04,$B0,$01,$B2,$01,$01,$7F,$07,$CB,$07,$8A,$7F,$07,$B5,$06,$02,$07,$01,$7F,$01,$BD,$07,$8A; RAW DATA : 	text "물기가 적은 장소에 깊은"
+	next $01,$88,$04,$7B,$07,$8B,$7F,$09,$F4,$01,$4D,$7F,$06,$2B,$02,$C2,$02,$D9,$7F,$04,$74,$07,$A5,$01,$08,$07,$8B; RAW DATA : 	next "구멍을 파고 숨는다 먹잇감을"
+	next $02,$8B,$04,$41,$7F,$03,$77,$07,$01,$02,$C2,$7F,$02,$3A,$07,$22,$02,$D9; RAW DATA : 	next "노릴 때에는 나온다"
+	dex
+ENDC
 
 _SandslashDexEntry::
-	text "Curls up into a"
-	next "spiny ball when"
-	next "threatened. It"
-
-	page "can roll while"
-	next "curled up to"
-	next "attack or escape"
+IF DEF(_RED) || DEF(_GREEN)
+	text $06,$F6,$08,$BB,$7F,$05,$6C,$04,$33,$01,$34,$7F,$02,$DE,$04,$3E,$01,$4D,$7F,$03,$19,$04,$87; RAW DATA : 	text "엄청 빠르게 달리고 돌며"
+	next $03,$4E,$07,$97,$7F,$01,$01,$06,$63,$07,$2D,$7F,$02,$3F,$09,$0B,$03,$FE,$07,$4E; RAW DATA : 	next "등의 가시와 날카로운"
+	next $06,$05,$09,$B9,$07,$97,$7F,$01,$68,$01,$3D,$07,$9C,$7F,$09,$DF,$01,$B2; RAW DATA : 	next "손톱의 공격이 특기"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $03,$4E,$07,$8B,$7F,$03,$35,$01,$AB,$01,$34,$7F,$04,$4B,$04,$89,$7F,$05,$AF,$08,$07,$05,$AF,$08,$07,$0A,$71; RAW DATA : 	text "등을 둥글게 말면 삐죽삐죽한"
+	next $01,$68,$01,$6A,$7F,$01,$10,$02,$D9,$7F,$01,$A7,$02,$EB,$03,$FE,$7F,$01,$8C,$03,$DF,$01,$01,$04,$87; RAW DATA : 	next "공과 같다 그대로 굴러가며"
+	next $05,$2E,$03,$6A,$0A,$F7,$01,$25,$02,$3A,$7F,$03,$15,$04,$61,$01,$01,$01,$25,$02,$3A,$7F,$0A,$71,$02,$D9; RAW DATA : 	next "부딪히거나 도망가거나 한다"
+	dex
+ENDC
 
 _OmanyteDexEntry::
-	text "Although long"
-	next "extinct, in rare"
-	next "cases, it can be"
-
-	page "genetically"
-	next "resurrected from"
-	next "fossils"
+IF DEF(_RED) || DEF(_GREEN)
+	text $04,$75,$7F,$07,$1E,$02,$3F,$7F,$04,$D9,$02,$D9,$07,$01,$05,$DD,$7F,$05,$BC,$01,$4D,$7F,$07,$A6,$06,$FA,$02,$F8; RAW DATA : 	text "먼 옛날 바다에서 살고 있었던"
+	next $01,$4D,$02,$EB,$7F,$0A,$27,$09,$2F,$04,$93,$7F,$F7,$F6,$01,$13,$07,$97,$7F,$02,$D9,$04,$3E,$04,$36; RAW DATA : 	next "고대 포켓몬 10개의 다리를"
+	next $01,$88,$05,$2E,$03,$DF,$03,$AF,$04,$3E,$04,$87,$7F,$0A,$8C,$06,$F6,$09,$03,$02,$D9; RAW DATA : 	next "구부러뜨리며 헤엄친다"
 	dex
-
+ENDC
+IF DEF(_BLUE)
+	text $07,$CD,$04,$8A,$0A,$71,$7F,$0A,$27,$09,$2F,$04,$93,$07,$9C,$02,$3A,$7F,$07,$EB,$08,$B3,$03,$E3; RAW DATA : 	text "절멸한 포켓몬이나 좀처럼"
+	next $03,$45,$04,$B0,$08,$26,$7F,$06,$CA,$01,$34,$7F,$0A,$AD,$05,$DE,$07,$9C,$7F,$04,$DF,$01,$3F,$03,$27; RAW DATA : 	next "드물지 않게 화석이 발견되"
+	next $01,$25,$01,$B2,$07,$01,$05,$DD,$7F,$03,$27,$05,$BC,$06,$C6,$02,$3F,$7F,$06,$26,$7F,$07,$A6,$02,$D9; RAW DATA : 	next "거기에서 되살아날 수 있다"
+	dex
+ENDC
 _OmastarDexEntry::
-	text "A prehistoric"
-	next "#MON that died"
-	next "out when its"
-
-	page "heavy shell made"
-	next "it impossible to"
-	next "catch prey"
+IF DEF(_RED) || DEF(_GREEN)
+	text $08,$CB,$06,$26,$01,$01,$7F,$09,$F8,$02,$D9,$04,$3E,$08,$B3,$03,$E3,$7F,$04,$DF,$02,$DE,$7F,$03,$27,$06,$EE,$07,$A6,$02,$D9; RAW DATA : 	text "촉수가 팔다리처럼 발달 되어있다"
+	next $05,$39,$07,$B2,$07,$88,$04,$89; RAW DATA : 	next "붙잡으면"
+	next $03,$1F,$06,$63,$07,$01,$7F,$04,$AE,$02,$D9; RAW DATA : 	next "동시에 문다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $02,$3F,$09,$0B,$03,$FE,$07,$4E,$7F,$07,$9C,$05,$71,$01,$6A,$7F,$08,$CB,$06,$26,$04,$36,$7F,$08,$26,$02,$CF,$04,$89,$05,$DD; RAW DATA : 	text "날카로운 이빨과 촉수를 지니면서"
+	next $01,$DE,$08,$2A,$07,$9C,$7F,$02,$6A,$04,$AB,$7F,$09,$1F,$05,$DD,$7F,$04,$74,$07,$9C,$04,$36,$7F,$07,$B2,$08,$26; RAW DATA : 	next "껍질이 너무 커서 먹이를 잡지"
+	next $04,$98,$7F,$0A,$6F,$01,$4D,$7F,$07,$CD,$04,$8A,$7F,$0A,$71,$7F,$03,$4D,$7F,$06,$6D,$02,$D9; RAW DATA : 	next "못 하고 절멸 한 듯 싶다"
+	dex
+ENDC
 
 _JigglypuffDexEntry::
-	text "When its huge eyes"
-	next "light up, it sings"
-	next "a mysteriously"
-
-	page "soothing melody"
-	next "that lulls its"
-	next "enemies to sleep"
+IF DEF(_RED) || DEF(_GREEN)
+	text $03,$35,$01,$AB,$01,$4D,$7F,$09,$1F,$02,$D9,$03,$C5,$7F,$02,$AB,$07,$88,$03,$FE,$7F,$05,$C3,$02,$EB,$04,$36; RAW DATA : 	text "둥글고 커다란 눈으로 상대를"
+	next $07,$7F,$07,$9E,$0A,$78,$05,$DD,$7F,$01,$B2,$05,$30,$7F,$07,$F1,$07,$8A,$7F,$02,$8B,$03,$D1,$04,$36; RAW DATA : 	next "유인해서 기분 좋은 노래를"
+	next $03,$49,$03,$F1,$08,$06,$06,$EE,$7F,$07,$B1,$03,$49,$01,$34,$7F,$0A,$71,$02,$D9; RAW DATA : 	next "들려주어 잠들게 한다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $03,$1F,$01,$A7,$03,$CE,$01,$4D,$7F,$01,$9D,$07,$09,$07,$4E,$7F,$02,$AB,$03,$1F,$07,$AA,$01,$01,$7F,$07,$09,$03,$E3,$0A,$42,$07,$9C; RAW DATA : 	text "동그랗고 귀여운 눈동자가 여럼풋이"
+	next $0A,$E7,$03,$49,$04,$41,$7F,$03,$77,$7F,$05,$C3,$02,$EB,$04,$36,$7F,$07,$E9,$04,$43,$01,$34,$7F,$0A,$6F,$02,$C2; RAW DATA : 	next "흔들릴 때 상대를 졸립게 하는"
+	next $06,$65,$05,$61,$04,$03,$01,$4D,$7F,$01,$B2,$05,$30,$07,$F1,$07,$8A,$7F,$02,$8B,$03,$D1,$04,$36,$7F,$05,$2E,$04,$35,$02,$D9; RAW DATA : 	next "신비롭고 기분좋은 노래를 부른다"
+	dex
+ENDC
+
 
 _WigglytuffDexEntry::
-	text "The body is soft"
-	next "and rubbery. When"
-	next "angered, it will"
-
-	page "suck in air and"
-	next "inflate itself to"
-	next "an enormous size"
+IF DEF(_RED) || DEF(_GREEN)
+	text $01,$41,$07,$9C,$7F,$08,$CE,$08,$CE,$0A,$6F,$01,$4D,$7F,$05,$2E,$03,$45,$03,$DF,$07,$4E,$7F,$09,$A0,$07,$8A; RAW DATA : 	text "결이 촘촘하고 부드러운 털은"
+	next $02,$6C,$07,$8B,$7F,$07,$A2,$07,$8B,$7F,$07,$D4,$03,$15,$07,$9C,$02,$D9; RAW DATA : 	next "넋을 잃을 정도이다"
+	next $09,$A0,$01,$01,$08,$07,$07,$8A,$7F,$01,$4D,$01,$AE,$0A,$40,$07,$88,$03,$FE,$7F,$08,$EB,$01,$AE,$03,$28,$02,$D9; RAW DATA : 	next "털가죽은 고급품으로 취급된다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $04,$96,$07,$01,$7F,$09,$8A,$03,$F2,$05,$EA,$07,$9C,$7F,$07,$A6,$06,$EE,$05,$DD,$7F,$0A,$AD,$02,$3A,$01,$34; RAW DATA : 	text "몸에 탄력성이 있어서 화나게"
+	next $0A,$6F,$04,$89,$7F,$06,$2B,$07,$8B,$7F,$03,$49,$07,$9C,$04,$46,$05,$F5,$05,$DD,$7F; RAW DATA : 	next "하면 숨을 들이마셔서 "
+	next $07,$D1,$07,$D1,$7F,$09,$79,$01,$34,$7F,$05,$2E,$0A,$3E,$04,$40,$02,$D9; RAW DATA : 	next "점점 크게 부풀린다"
+	dex
+ENDC
 
 _EeveeDexEntry::
-	text "Its genetic code"
-	next "is irregular."
-	next "It may mutate if"
-
-	page "it is exposed to"
-	next "radiation from"
-	next "element STONEs"
+IF DEF(_RED) || DEF(_GREEN)
+	text $F9,$07,$EE,$04,$29,$07,$97,$7F,$0A,$27,$09,$2F,$04,$93,$07,$88,$03,$FE,$7F,$08,$28,$0A,$AD,$0A,$6F,$02,$C2; RAW DATA : 	text "3종류의 포켓몬으로 진화하는"
+	next $01,$01,$02,$C9,$05,$EA,$07,$8B,$7F,$08,$26,$02,$D1; RAW DATA : 	next "가능성을 지닌"
+	next $0A,$F1,$01,$9D,$0A,$71,$7F,$0A,$27,$09,$2F,$04,$93,$07,$9C,$02,$D9; RAW DATA : 	next "희귀한 포켓몬이다"
 	dex
-
+ENDC
+IF DEF(_BLUE)
+	text $05,$32,$01,$A4,$09,$02,$0A,$71,$7F,$07,$7F,$07,$CC,$07,$AA,$04,$36,$7F,$01,$01,$07,$E3,$02,$D9; RAW DATA : 	text "불규칙한 유전자를 가졌다"
+	next $03,$19,$07,$01,$05,$DD,$7F,$02,$3A,$07,$20,$02,$C2,$7F,$04,$E6,$05,$B7,$05,$E1,$07,$01,$7F,$07,$97,$0A,$78,$7F,$04,$96,$07,$9C; RAW DATA : 	next "돌에서 나오는 방사선에 의해 몸이"
+	next $01,$09,$07,$AA,$01,$B2,$7F,$05,$0F,$07,$9C,$04,$36,$7F,$07,$9F,$07,$88,$09,$82,$02,$D9; RAW DATA : 	next "갑자기 변이를 일으킨다"
+	dex
+ENDC
 _FlareonDexEntry::
-	text "When storing"
-	next "thermal energy in"
-	next "its body, its"
-
-	page "temperature could"
-	next "soar to over 1600"
-	next "degrees"
+IF DEF(_RED) || DEF(_GREEN)
+	text $08,$BC,$02,$4B,$07,$01,$7F,$05,$32,$01,$F9,$7F,$08,$06,$04,$73,$02,$CF,$01,$01,$7F,$07,$A6,$06,$EE; RAW DATA : 	text "체내에 불꽃 주머니가 있어"
+	next $01,$BD,$07,$9C,$7F,$06,$2B,$07,$8B,$7F,$03,$49,$07,$9C,$09,$82,$7F,$0A,$C4; RAW DATA : 	next "깊이 숨을 들이킨 후"
+	next $F7,$FD,$F6,$F6,$03,$15,$07,$97,$7F,$05,$32,$07,$8B,$7F,$02,$4B,$05,$A5,$02,$C2,$02,$D9; RAW DATA : 	next "1700도의 불을 내뿜는다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $04,$96,$07,$01,$7F,$05,$32,$01,$F9,$07,$8B,$7F,$04,$90,$07,$8B,$7F,$03,$77,$7F,$08,$BC,$07,$22,$07,$9C; RAW DATA : 	text "몸에 불꽃을 모을 때 체온이"
+	next $FF,$F6,$F6,$03,$15,$7F,$07,$9C,$05,$C3,$07,$88,$03,$FE,$7F,$07,$23,$03,$C3,$01,$01,$05,$DD; RAW DATA : 	next "900도 이상으로 올라가서"
+	next $04,$65,$07,$4C,$7F,$07,$77,$0A,$88,$0A,$6F,$02,$D9; RAW DATA : 	next "매우 위험하다"
+	dex
+ENDC
+
 
 _JolteonDexEntry::
-	text "It accumulates"
-	next "negative ions in"
-	next "the atmosphere to"
-
-	page "blast out 10000-"
-	next "volt lightning"
-	next "bolts"
+IF DEF(_RED) || DEF(_GREEN)
+	text $0A,$AD,$01,$01,$7F,$02,$3A,$01,$25,$02,$3A,$7F,$02,$8E,$03,$C3,$04,$89; RAW DATA : 	text "화가 나거나 놀라면"
+	next $07,$22,$04,$96,$07,$97,$7F,$09,$A0,$07,$9C,$7F,$04,$D9,$02,$C3,$08,$B3,$03,$E3; RAW DATA : 	next "온몸의 털이 바늘처럼"
+	next $01,$F6,$01,$F6,$07,$9C,$7F,$05,$DD,$7F,$05,$C3,$02,$EB,$04,$36,$7F,$08,$8E,$04,$35,$02,$D9; RAW DATA : 	next "꼿꼿이 서 상대를 찌른다"
 	dex
-
+ENDC
+IF DEF(_BLUE)
+	text $01,$68,$01,$B2,$7F,$08,$0F,$07,$97,$7F,$04,$46,$07,$9C,$02,$6A,$06,$4A,$7F,$07,$9C,$07,$22,$07,$8B; RAW DATA : 	text "공기 중의 마이너스 이온을"
+	next $05,$71,$06,$C6,$03,$49,$07,$09,$7F,$06,$E0,$7F,$F7,$04,$48,$7F,$05,$1C,$09,$DE,$07,$97; RAW DATA : 	next "빨아들여 약 1만 볼트의"
+	next $07,$CC,$01,$B2,$04,$36,$7F,$05,$A5,$07,$8B,$7F,$06,$26,$7F,$07,$A6,$02,$D9; RAW DATA : 	next "전기를 뿜을 수 있다"
+	dex
+ENDC
 _VaporeonDexEntry::
-	text "Lives close to"
-	next "water. Its long"
-	next "tail is ridged"
-
-	page "with a fin which"
-	next "is often mistaken"
-	next "for a mermaid's"
+IF DEF(_RED) || DEF(_GREEN)
+	text $04,$96,$07,$97,$7F,$05,$EC,$0A,$27,$7F,$01,$88,$07,$E6,$01,$01,$7F,$04,$B0,$07,$97,$7F,$05,$30,$07,$AA,$07,$2D; RAW DATA : 	text "몸의 세포 구조가 물의 분자와"
+	next $0A,$ED,$05,$B7,$0A,$6F,$02,$D9,$7F,$04,$B0,$07,$01,$7F,$02,$8C,$07,$88,$04,$89; RAW DATA : 	next "흡사하다 물에 녹으면"
+	next $04,$90,$06,$60,$07,$9C,$7F,$05,$18,$07,$9C,$08,$26,$7F,$06,$CA,$02,$C2,$02,$D9; RAW DATA : 	next "모습이 보이지 않는다"
 	dex
-
+ENDC
+IF DEF(_BLUE)
+	text $04,$B0,$01,$01,$07,$01,$7F,$05,$BC,$08,$26,$04,$48,$7F,$01,$EF,$04,$3E,$07,$01,$02,$C2,$7F,$04,$B0,$01,$4D,$01,$B2; RAW DATA : 	text "물가에 살지만 꼬리에는 물고기"
+	next $01,$10,$07,$8A,$7F,$08,$26,$02,$C0,$03,$DF,$04,$CC,$01,$01,$7F,$02,$42,$06,$C6,$7F,$07,$A6,$06,$EE; RAW DATA : 	next "같은 지느러미가 남아 있어"
+	next $07,$9E,$06,$EE,$03,$FE,$7F,$08,$98,$01,$02,$0A,$6F,$02,$C2,$7F,$05,$B7,$03,$C7,$03,$15,$7F,$07,$A6,$02,$D9; RAW DATA : 	next "인어로 착각하는 사람도 있다"
+	dex
+ENDC
 _MachopDexEntry::
-	text "Loves to build"
-	next "its muscles."
-	next "It trains in all"
-
-	page "styles of martial"
-	next "arts to become"
-	next "even stronger"
+IF DEF(_RED) || DEF(_GREEN)
+	text $07,$22,$04,$96,$07,$9C,$7F,$01,$A9,$07,$80,$07,$88,$03,$FE,$7F,$03,$27,$06,$EE,$07,$A6,$07,$88,$04,$87; RAW DATA : 	text "온몸이 근육으로 되어있으며"
+	next $09,$79,$01,$B2,$02,$C2,$7F,$06,$EE,$04,$40,$06,$C6,$07,$9C,$04,$48,$0A,$6F,$08,$26,$04,$48; RAW DATA : 	next "크기는 어린아이만하지만"
+	next $06,$EE,$04,$35,$7F,$F7,$F6,$F6,$04,$8D,$07,$8B,$7F,$08,$2D,$06,$EE,$02,$F8,$08,$2A,$7F,$06,$26,$7F,$07,$A6,$02,$D9; RAW DATA : 	next "어른 100명을 집어던질 수 있다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $01,$A9,$07,$80,$07,$8B,$7F,$02,$DC,$03,$F3,$0A,$6F,$02,$C2,$7F,$01,$2D,$07,$8B,$7F,$04,$65,$07,$4C; RAW DATA : 	text "근육을 단련하는 것을 매우"
+	next $07,$F1,$06,$C6,$0A,$78,$05,$DD,$7F,$02,$D9,$06,$E7,$0A,$71,$7F,$01,$3D,$09,$C5,$01,$B2,$07,$01,$7F,$03,$15,$07,$CC,$0A,$6F,$01,$4D; RAW DATA : 	next "좋아해서 다양한 격투기에 도전하고"
+	next $07,$D1,$07,$D1,$7F,$01,$0D,$0A,$6F,$01,$34,$7F,$05,$EA,$07,$B5,$0A,$71,$02,$D9; RAW DATA : 	next "점점 강하게 성장한다"
+	dex
+ENDC
 
 _ZubatDexEntry::
-	text "Forms colonies in"
-	next "perpetually dark"
-	next "places. Uses"
-
-	page "ultrasonic waves"
-	next "to identify and"
-	next "approach targets"
+IF DEF(_RED) || DEF(_GREEN)
+	text $06,$E7,$08,$6A,$7F,$02,$AB,$07,$9C,$7F,$07,$E8,$07,$B7,$0A,$6F,$08,$26,$7F,$06,$CA,$02,$C2,$02,$D9; RAW DATA : 	text "양쪽 눈이 존재하지 않는다"
+	next $07,$A4,$07,$01,$05,$DD,$7F,$08,$CA,$07,$8D,$09,$F4,$04,$36,$7F,$02,$4B,$06,$EE; RAW DATA : 	next "입에서 초음파를 내어"
+	next $06,$EE,$03,$32,$7F,$06,$03,$07,$8B,$7F,$02,$3F,$06,$C6,$02,$D9,$02,$D1,$02,$D9; RAW DATA : 	next "어둠 속을 날아다닌다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $06,$EE,$03,$2E,$07,$4E,$7F,$01,$67,$07,$01,$7F,$08,$2D,$02,$DC,$07,$88,$03,$FE,$7F,$06,$02,$04,$3E,$04,$36,$7F,$02,$4D,$02,$D9; RAW DATA : 	text "어두운 곳에 집단으로 소리를 낸다"
+	next $08,$CA,$07,$8D,$09,$F4,$04,$36,$7F,$02,$4B,$05,$A5,$06,$EE; RAW DATA : 	next "초음파를 내뿜어"
+	next $09,$88,$01,$39,$07,$01,$7F,$02,$D9,$01,$01,$01,$03,$02,$D9; RAW DATA : 	next "타겟에 다가간다"
+	dex
+ENDC
 
 _EkansDexEntry::
-	text "Moves silently"
-	next "and stealthily."
-	next "Eats the eggs of"
-
-	page "birds, such as"
-	next "PIDGEY and"
-	next "SPEAROW, whole"
+IF DEF(_RED) || DEF(_GREEN)
+	text $0A,$3E,$04,$E7,$7F,$03,$6B,$07,$77,$07,$01,$7F,$04,$49,$07,$9C,$7F,$05,$DD,$06,$64,$0A,$71,$02,$D9,$7F; RAW DATA : 	text "풀밭 따위에 많이 서식한다 "
+	next $0A,$94,$04,$36,$7F,$02,$4E,$04,$37,$7F,$01,$25,$03,$F1,$05,$DD; RAW DATA : 	next "혀를 낼름 거려서"
+	next $08,$06,$05,$0F,$07,$97,$7F,$07,$77,$0A,$88,$07,$8B,$7F,$02,$C0,$02,$34,$02,$D9; RAW DATA : 	next "주변의 위험을 느낀다"
 	dex
-
+ENDC
+IF DEF(_BLUE)
+	text $07,$CC,$0A,$94,$7F,$01,$B2,$08,$B4,$07,$8B,$7F,$02,$C0,$02,$32,$08,$26,$7F,$04,$98,$0A,$6F,$01,$34; RAW DATA : 	text "전혀 기척을 느끼지 못하게"
+	next $07,$9C,$03,$1F,$0A,$71,$02,$D9,$7F,$01,$88,$01,$88,$02,$3A,$7F,$01,$CA,$05,$61,$08,$9C,$07,$97,$7F,$06,$CB,$07,$8B; RAW DATA : 	next "이동한다 구구나 깨비참의 알을"
+	next $0A,$71,$7F,$07,$A4,$07,$01,$7F,$05,$BF,$09,$31,$7F,$04,$F6,$04,$3E,$01,$4D,$7F,$04,$48,$02,$D9; RAW DATA : 	next "한 입에 삼켜 버리고 만다"
+	dex
+ENDC
 _ParasDexEntry::
-	text "Burrows to suck"
-	next "tree roots. The"
-	next "mushrooms on its"
-
-	page "back grow by draw-"
-	next "ing nutrients from"
-	next "the bug host"
+IF DEF(_RED) || DEF(_GREEN)
+	text $01,$88,$04,$7B,$07,$8B,$7F,$09,$F4,$05,$DD,$7F,$02,$3A,$04,$AB,$05,$A1,$04,$3E,$03,$FE,$05,$2E,$09,$9D; RAW DATA : 	text "구멍을 파서 나무뿌리로부터"
+	next $07,$15,$06,$E7,$07,$8B,$7F,$05,$E7,$08,$EB,$0A,$6F,$08,$26,$04,$48,$7F,$02,$EB,$05,$2E,$05,$30,$07,$8A; RAW DATA : 	next "영양을 섭취하지만 대부분은"
+	next $03,$4E,$07,$01,$7F,$07,$A6,$02,$C2,$7F,$04,$F6,$05,$E8,$07,$01,$01,$34,$7F,$05,$79,$06,$D1,$01,$B4,$02,$D9; RAW DATA : 	next "등에 있는 버섯에게 빼앗긴다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $04,$FA,$03,$E9,$07,$97,$7F,$03,$4E,$07,$01,$7F,$02,$3D,$7F,$01,$2D,$07,$8A; RAW DATA : 	text "벌레의 등에 난 것은"
+	next $03,$1F,$08,$E6,$0A,$6F,$08,$CA,$03,$C3,$02,$C2,$7F,$04,$F6,$05,$E8,$07,$9C,$02,$D9,$7F,$05,$EA,$07,$B5,$0A,$6F,$04,$89; RAW DATA : 	next "동충하초라는 버섯이다 성장하면"
+	next $04,$F6,$05,$E8,$03,$15,$7F,$09,$1F,$08,$28,$02,$D9; RAW DATA : 	next "버섯도 커진다"
+	dex
+ENDC
+
 
 _PoliwhirlDexEntry::
-	text "Capable of living"
-	next "in or out of"
-	next "water. When out"
-
-	page "of water, it"
-	next "sweats to keep"
-	next "its body slimy"
+IF DEF(_RED) || DEF(_GREEN)
+	text $03,$2E,$7F,$02,$D9,$04,$3E,$01,$01,$7F,$04,$DF,$02,$DE,$0A,$6F,$07,$09,$7F,$08,$26,$05,$C3,$07,$01,$05,$DD; RAW DATA : 	text "두 다리가 발달하여 지상에서"
+	next $05,$BC,$7F,$06,$26,$7F,$07,$A6,$02,$C2,$03,$05,$03,$15,$7F,$06,$EE,$08,$40,$05,$DD,$07,$9E,$08,$26; RAW DATA : 	next "살 수 있는데도 어째서인지"
+	next $06,$26,$08,$0F,$7F,$05,$CD,$0A,$B0,$07,$8B,$7F,$07,$F1,$06,$C6,$0A,$71,$02,$D9; RAW DATA : 	next "수중 생활을 좋아한다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $07,$80,$08,$26,$07,$01,$05,$DD,$03,$15,$7F,$06,$26,$08,$0F,$07,$01,$05,$DD,$03,$15,$7F,$05,$BC,$7F,$06,$26,$7F,$07,$A6,$02,$D9; RAW DATA : 	text "육지에서도 수중에서도 살 수 있다"
+	next $08,$26,$05,$C3,$07,$01,$05,$DD,$02,$C2,$7F,$0A,$77,$05,$C3,$7F,$03,$71,$07,$88,$03,$FE,$7F,$0A,$67,$05,$2E,$04,$36; RAW DATA : 	next "지상에서는 항상 땀으로 피부를"
+	next $04,$CC,$02,$26,$04,$CC,$02,$26,$0A,$6F,$01,$34,$7F,$0A,$71,$02,$D9; RAW DATA : 	next "미끈미끈하게 한다"
+	dex
+ENDC
 
 _PoliwrathDexEntry::
-	text "An adept swimmer"
-	next "at both the front"
-	next "crawl and breast"
-
-	page "stroke. Easily"
-	next "overtakes the best"
-	next "human swimmers"
+IF DEF(_RED) || DEF(_GREEN)
+	text $06,$26,$07,$15,$07,$9C,$7F,$09,$DF,$01,$B2,$03,$FE,$0B,$6B,$7F,$07,$AA,$07,$7F,$0A,$9C,$01,$6A,$7F,$07,$D2,$07,$15,$07,$9C; RAW DATA : 	text "수영이 특기로, 자유형과 접영이"
+	next $01,$01,$02,$C9,$0A,$6F,$02,$D9,$7F,$07,$23,$04,$42,$0A,$68,$7F,$05,$E1,$06,$26,$07,$E6,$08,$97; RAW DATA : 	next "가능하다 올림픽 선수조차"
+	next $04,$98,$7F,$02,$E7,$0A,$78,$02,$4E,$7F,$07,$D4,$03,$15,$03,$FE,$7F,$05,$6C,$04,$33,$02,$D9; RAW DATA : 	next "못 당해낼 정도로 빠르다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $07,$AA,$07,$7F,$0A,$9C,$07,$9C,$02,$3A,$7F,$07,$D2,$07,$15,$07,$8B,$7F,$07,$AF,$0A,$6F,$07,$09,$7F; RAW DATA : 	text "자유형이나 접영을 잘하여 "
+	next $07,$23,$04,$42,$0A,$68,$7F,$05,$E1,$06,$26,$03,$15,$7F,$07,$D6,$09,$01,$01,$4D,$7F,$06,$A6,$06,$A6; RAW DATA : 	next "올림픽 선수도 제치고 쑥쑥"
+	next $06,$D5,$08,$2A,$03,$DF,$7F,$02,$3A,$06,$C6,$01,$03,$02,$D9; RAW DATA : 	next "앞질러 나아간다"
+	dex
+ENDC
 
 _WeedleDexEntry::
-	text "Often found in"
-	next "forests, eating"
-	next "leaves."
-
-	page "It has a sharp"
-	next "venomous stinger"
-	next "on its head"
+IF DEF(_RED) || DEF(_GREEN)
+	text $06,$33,$07,$9C,$02,$3A,$7F,$0A,$3E,$04,$E7,$07,$01,$7F,$04,$49,$07,$9C,$7F,$05,$DD,$06,$64,$0A,$71,$02,$D9; RAW DATA : 	text "숲이나 풀밭에 많이 서식한다"
+	next $04,$73,$04,$3E,$02,$31,$07,$01,$7F,$FB,$A2,$AC,$7F,$07,$D4,$03,$15,$07,$97,$7F,$07,$AB,$01,$4D; RAW DATA : 	next "머리끝에 5cm 정도의 작고"
+	next $02,$3F,$09,$0B,$03,$FE,$07,$4E,$7F,$03,$16,$09,$07,$07,$8B,$7F,$08,$26,$02,$CF,$01,$4D,$7F,$07,$A6,$02,$D9; RAW DATA : 	next "날카로운 독침을 지니고 있다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $06,$33,$07,$01,$05,$DD,$7F,$04,$49,$07,$8A,$7F,$02,$3A,$04,$B5,$07,$A9,$07,$8B,$7F,$04,$74,$02,$C2,$02,$D9; RAW DATA : 	text "숲에서 많은 나뭇잎을 먹는다"
+	next $04,$73,$04,$3E,$07,$01,$7F,$02,$3F,$09,$0B,$03,$FE,$07,$4E,$7F,$04,$D9,$02,$C3,$07,$8B,$7F,$01,$01,$07,$DE,$7F; RAW DATA : 	next "머리에 날카로운 바늘을 가져 "
+	next $04,$DA,$0A,$F7,$04,$89,$03,$16,$07,$01,$7F,$01,$29,$03,$F1,$04,$F6,$04,$40,$02,$D9; RAW DATA : 	next "박히면독에 걸려버린다"
+	dex
+ENDC
 
 _KakunaDexEntry::
-	text "Almost incapable"
-	next "of moving, this"
-	next "#MON can only"
-
-	page "harden its shell"
-	next "to protect itself"
-	next "from predators"
+IF DEF(_RED) || DEF(_GREEN)
+	text $05,$EA,$08,$BC,$07,$97,$7F,$04,$96,$07,$8B,$7F,$04,$48,$03,$49,$01,$B2,$7F,$07,$77,$0A,$78,$05,$DD; RAW DATA : 	text "성체의 몸을 만들기 위해서"
+	next $07,$9F,$06,$63,$07,$CB,$07,$9E,$7F,$05,$C3,$09,$92,$7F,$06,$4A,$06,$4A,$03,$FE,$03,$FE,$03,$15; RAW DATA : 	next "일시적인 상태 스스로로도"
+	next $01,$25,$07,$97,$7F,$07,$62,$08,$27,$07,$9C,$08,$26,$7F,$06,$CA,$02,$C2,$02,$D9; RAW DATA : 	next "거의 움직이지 않는다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $06,$4A,$06,$4A,$03,$FE,$02,$C2,$7F,$01,$25,$07,$97,$7F,$07,$62,$08,$27,$07,$9F,$7F,$06,$26,$7F,$06,$F8,$08,$26,$04,$48; RAW DATA : 	text "스스로는 거의 움직일 수 없지만"
+	next $07,$77,$0A,$88,$0A,$72,$7F,$03,$77,$02,$C2,$7F,$02,$DC,$02,$DC,$0A,$78,$07,$DE,$05,$DD; RAW DATA : 	next "위험할 때는 단단해져서"
+	next $04,$96,$07,$8B,$7F,$05,$18,$0A,$A3,$0A,$6F,$01,$4D,$7F,$07,$A6,$02,$C2,$7F,$01,$2D,$7F,$01,$10,$02,$D9; RAW DATA : 	next "몸을 보호하고 있는 것 같다"
+	dex
+ENDC
 
 _BeedrillDexEntry::
-	text "Flies at high"
-	next "speed and attacks"
-	next "using its large"
-
-	page "venomous stingers"
-	next "on its forelegs"
-	next "and tail"
+IF DEF(_RED) || DEF(_GREEN)
+	text $08,$2D,$02,$DC,$07,$88,$03,$FE,$7F,$02,$3A,$09,$88,$02,$3A,$01,$B2,$03,$15,$7F,$0A,$71,$02,$D9; RAW DATA : 	text "집단으로 나타나기도 한다"
+	next $04,$6D,$03,$F4,$0A,$71,$7F,$06,$4A,$0A,$67,$03,$45,$03,$FE,$7F,$02,$3F,$06,$C6,$7F,$06,$FB,$03,$02,$07,$9C,$07,$97; RAW DATA : 	next "맹렬한 스피드로 날아 엉덩이의"
+	next $03,$16,$09,$07,$07,$88,$03,$FE,$7F,$04,$46,$01,$88,$7F,$08,$8E,$04,$35,$02,$D9; RAW DATA : 	next "독침으로 마구 찌른다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $01,$4D,$06,$03,$07,$88,$03,$FE,$7F,$02,$3F,$06,$C6,$02,$D9,$02,$80,$7F,$06,$E7,$09,$F8,$01,$6A,$7F,$06,$FB,$03,$02,$07,$9C,$07,$01; RAW DATA : 	text "고속으로 날아다녀 양팔과 엉덩이에"
+	next $07,$A6,$02,$C2,$7F,$09,$1F,$02,$D9,$03,$C5,$7F,$03,$16,$04,$D9,$02,$C3,$07,$8B,$7F,$05,$B7,$07,$4B,$0A,$78; RAW DATA : 	next "있는 커다란 독바늘을 사용해"
+	next $05,$C3,$02,$EB,$04,$36,$7F,$01,$68,$01,$3D,$0A,$71,$02,$D9; RAW DATA : 	next "상대를 공격한다"
+	dex
+ENDC
 
 _DodrioDexEntry::
-	text "Uses its three"
-	next "brains to execute"
-	next "complex plans."
-
-	page "While two heads"
-	next "sleep, one head"
-	next "stays awake"
+IF DEF(_RED) || DEF(_GREEN)
+	text $07,$EB,$08,$B3,$03,$E3,$7F,$04,$DF,$01,$3F,$0A,$6F,$01,$B2,$7F,$0A,$FB,$03,$47,$7F,$08,$28,$01,$9D,$0A,$71; RAW DATA : 	text "좀처럼 발견하기 힘든 진귀한"
+	next $07,$EE,$07,$9C,$02,$D9,$7F,$F9,$01,$13,$07,$97,$7F,$04,$73,$04,$3E,$02,$C2,$7F,$01,$B2,$05,$AD; RAW DATA : 	next "종이다 3개의 머리는 기쁨"
+	next $06,$4D,$0A,$64,$7F,$05,$30,$02,$8B,$07,$97,$7F,$01,$08,$07,$D4,$07,$8B,$7F,$02,$3A,$09,$88,$02,$4D,$02,$D9; RAW DATA : 	next "슬픔 분노의 감정을 나타낸다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $F9,$01,$13,$07,$97,$7F,$04,$73,$04,$3E,$03,$FE,$7F,$01,$4D,$03,$15,$07,$97,$7F,$07,$AB,$07,$CC,$07,$8B,$7F,$08,$35,$05,$DD; RAW DATA : 	text "3개의 머리로 고도의 작전을 짜서"
+	next $07,$62,$08,$27,$07,$9E,$02,$D9,$7F,$07,$AF,$7F,$03,$77,$07,$01,$03,$15,$7F,$04,$73,$04,$3E; RAW DATA : 	next "움직인다 잘 때에도 머리"
+	next $0A,$6F,$02,$3A,$7F,$07,$D4,$03,$15,$02,$C2,$7F,$01,$CA,$7F,$07,$A6,$02,$D9,$01,$4D,$7F,$0A,$71,$02,$D9; RAW DATA : 	next "하나 정도는 깨 있다고 한다"
+	dex
+ENDC
 
 _PrimeapeDexEntry::
-	text "Always furious"
-	next "and tenacious to"
-	next "boot. It will not"
-
-	page "abandon chasing"
-	next "its quarry until"
-	next "it is caught"
+IF DEF(_RED) || DEF(_GREEN)
+	text $06,$F0,$07,$D6,$02,$3A,$7F,$01,$82,$07,$B5,$0A,$F7,$7F,$0A,$AD,$01,$01,$7F,$02,$3A,$7F,$07,$A6,$07,$88,$04,$87; RAW DATA : 	text "언제나 굉장히 화가 나 있으며"
+	next $06,$C6,$04,$AB,$04,$3E,$7F,$03,$15,$04,$61,$08,$C4,$03,$15; RAW DATA : 	next "아무리 도망쳐도"
+	next $01,$48,$06,$03,$7F,$08,$71,$06,$C6,$07,$22,$02,$D9; RAW DATA : 	next "계속 쫓아온다"
 	dex
-
+ENDC
+IF DEF(_BLUE)
+	text $07,$36,$07,$9E,$08,$26,$7F,$04,$6D,$03,$F4,$0A,$6F,$01,$34,$7F,$0A,$AD,$02,$4B,$01,$4D; RAW DATA : 	text "왜인지 맹렬하게 화내고"
+	next $06,$C6,$04,$AB,$04,$3E,$7F,$03,$15,$04,$61,$08,$C4,$03,$15,$7F; RAW DATA : 	next "아무리 도망쳐도 "
+	next $02,$31,$01,$BE,$08,$26,$7F,$08,$71,$06,$C6,$07,$20,$02,$C2,$7F,$05,$EA,$01,$3D,$07,$9C,$02,$D9; RAW DATA : 	next "끝까지 쫓아오는 성격이다"
+	dex
+ENDC
 _DugtrioDexEntry::
-	text "A team of DIGLETT"
-	next "triplets."
-	next "It triggers huge"
-
-	page "earthquakes by"
-	next "burrowing 60 miles"
-	next "underground"
+IF DEF(_RED) || DEF(_GREEN)
+	text $03,$75,$06,$03,$07,$8B,$7F,$09,$F4,$01,$4D,$03,$49,$06,$EE,$7F,$01,$01; RAW DATA : 	text "땅속을 파고들어 가"
+	next $05,$C3,$02,$EB,$01,$01,$7F,$04,$E6,$06,$69,$0A,$6F,$01,$4D,$7F,$07,$A6,$07,$8B,$7F,$03,$77; RAW DATA : 	next "상대가 방심하고 있을 때"
+	next $02,$D9,$04,$35,$7F,$01,$67,$07,$01,$05,$DD,$7F,$01,$68,$01,$3D,$0A,$71,$02,$D9; RAW DATA : 	next "다른 곳에서 공격한다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $03,$60,$01,$A7,$02,$D9,$7F,$05,$EC,$7F,$04,$46,$04,$3E,$01,$01,$7F,$09,$F0,$07,$8B,$7F,$07,$9C,$04,$17,$06,$FA,$02,$D9; RAW DATA : 	text "디그다 세 마리가 팀을 이루었다"
+	next $08,$26,$0A,$6F,$07,$01,$7F,$F7,$F6,$F6,$AA,$AC,$07,$97,$7F,$03,$75,$01,$8C,$07,$8B,$7F,$09,$F4; RAW DATA : 	next "지하에 100km의 땅굴을 파"
+	next $09,$7B,$7F,$08,$26,$08,$28,$07,$97,$7F,$07,$68,$07,$9E,$07,$9C,$7F,$03,$27,$01,$B2,$03,$15,$7F,$0A,$71,$02,$D9; RAW DATA : 	next "큰 지진의 원인이 되기도 한다"
+	dex
+ENDC
 
 _VenomothDexEntry::
-	text "The dust-like"
-	next "scales covering"
-	next "its wings are"
-
-	page "color coded to"
-	next "indicate the kinds"
-	next "of poison it has"
+IF DEF(_RED) || DEF(_GREEN)
+	text $02,$3F,$01,$13,$07,$01,$7F,$07,$9E,$05,$30,$07,$9C,$7F,$05,$39,$06,$EE,$07,$A6,$06,$EE; RAW DATA : 	text "날개에 인분이 붙어있어"
+	next $02,$3F,$01,$13,$04,$36,$7F,$09,$F8,$03,$CB,$01,$25,$04,$41,$7F,$03,$77,$04,$46,$02,$D9; RAW DATA : 	next "날개를 팔랑거릴 때마다"
+	next $04,$6D,$03,$16,$7F,$01,$01,$04,$17,$04,$36,$7F,$05,$A1,$04,$40,$02,$D9; RAW DATA : 	next "맹독 가루를 뿌린다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $02,$3F,$01,$13,$04,$36,$7F,$03,$04,$07,$8A,$7F,$02,$3F,$01,$13,$01,$01,$04,$17,$02,$C2; RAW DATA : 	text "날개를 덮은 날개가루는"
+	next $05,$C6,$01,$C2,$07,$01,$7F,$03,$6B,$03,$C3,$7F,$02,$D9,$06,$E7,$0A,$71,$7F,$03,$16,$07,$8B; RAW DATA : 	next "색깔에 따라 다양한 독을"
+	next $01,$0E,$01,$4D,$7F,$07,$A6,$02,$C2,$7F,$03,$4D,$7F,$0A,$6F,$02,$D9; RAW DATA : 	next "갖고 있는 듯 하다"
+	dex
+ENDC
 
 _DewgongDexEntry::
-	text "Stores thermal"
-	next "energy in its"
-	next "body. Swims at a"
-
-	page "steady 8 knots"
-	next "even in intensely"
-	next "cold waters"
+IF DEF(_RED) || DEF(_GREEN)
+	text $07,$22,$04,$96,$07,$9C,$7F,$05,$C5,$0A,$6F,$06,$E1,$7F,$09,$A0,$03,$FE,$7F,$03,$3A,$03,$04,$0A,$94,$7F,$07,$A6,$02,$D9; RAW DATA : 	text "온몸이 새하얀 털로 뒤덮혀 있다"
+	next $08,$DF,$07,$77,$07,$01,$7F,$01,$0D,$0A,$6F,$04,$87,$7F,$07,$20,$0A,$F7,$03,$F1; RAW DATA : 	next "추위에 강하며 오히려"
+	next $08,$DF,$07,$4F,$7F,$06,$26,$03,$FF,$7F,$0A,$B0,$01,$B2,$04,$36,$7F,$08,$A3,$02,$C2,$02,$D9; RAW DATA : 	next "추울 수록 활기를 찾는다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $08,$DF,$07,$77,$04,$36,$7F,$04,$F6,$09,$EC,$01,$B2,$7F,$07,$77,$0A,$78,$7F,$04,$96,$7F,$06,$03,$07,$01; RAW DATA : 	text "추위를 버티기 위해 몸 속에"
+	next $07,$0D,$7F,$07,$01,$02,$6A,$08,$26,$04,$36,$7F,$07,$CA,$07,$B5,$0A,$71,$02,$D9,$7F,$08,$97,$01,$01,$07,$4E; RAW DATA : 	next "열 에너지를 저장한다 차가운"
+	next $04,$D9,$02,$D9,$07,$01,$05,$DD,$03,$15,$7F,$FE,$02,$8B,$09,$DE,$03,$FE,$7F,$0A,$8C,$06,$F6,$09,$03,$02,$D9; RAW DATA : 	next "바다에서도 8노트로 헤엄친다"
+	dex
+ENDC
 
 _CaterpieDexEntry::
-	text "Its short feet"
-	next "are tipped with"
-	next "suction pads that"
-
-	page "enable it to"
-	next "tirelessly climb"
-	next "slopes and walls"
+IF DEF(_RED) || DEF(_GREEN)
+	text $04,$DF,$07,$8A,$7F,$08,$3A,$08,$26,$04,$48,$7F,$0A,$ED,$09,$F7,$08,$B3,$03,$E3,$7F,$03,$27,$06,$EE,$07,$A6,$06,$EE,$05,$DD; RAW DATA : 	text "발은 짧지만 흡판처럼 되어있어서"
+	next $05,$61,$09,$8B,$07,$9C,$03,$C3,$03,$15,$7F,$05,$0E,$07,$9C,$03,$C3,$03,$15; RAW DATA : 	next "비탈이라도 벽이라도"
+	next $08,$26,$09,$01,$08,$26,$7F,$06,$CA,$01,$4D,$7F,$02,$3A,$06,$C6,$01,$03,$02,$D9; RAW DATA : 	next "지치지 않고 나아간다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $0A,$3A,$04,$35,$7F,$0A,$67,$05,$2E,$03,$FE,$7F,$01,$08,$06,$6E,$07,$DE,$7F,$07,$A6,$02,$D9; RAW DATA : 	text "푸른 피부로 감싸져 있다"
+	next $09,$8B,$0A,$67,$0A,$6F,$07,$09,$7F,$05,$EA,$07,$B5,$0A,$6F,$04,$89,$7F,$06,$67,$07,$8B; RAW DATA : 	next "탈피하여 성장하면 실을"
+	next $02,$C3,$06,$EE,$03,$AF,$03,$F1,$7F,$04,$F8,$03,$05,$01,$B2,$03,$FE,$7F,$04,$D9,$02,$0B,$02,$D9; RAW DATA : 	next "늘어뜨려 번데기로 바꾼다"
+	dex
+ENDC
+
 
 _MetapodDexEntry::
-	text "This #MON is"
-	next "vulnerable to"
-	next "attack while its"
-
-	page "shell is soft,"
-	next "exposing its weak"
-	next "and tender body"
+IF DEF(_RED) || DEF(_GREEN)
+	text $02,$DC,$02,$DC,$0A,$71,$7F,$01,$DE,$08,$2A,$07,$01,$7F,$03,$31,$03,$DF,$06,$6E,$07,$09,$7F,$07,$A6,$07,$88,$02,$3A; RAW DATA : 	text "단단한 껍질에 둘러싸여 있으나"
+	next $06,$C8,$07,$8A,$7F,$05,$2E,$03,$45,$03,$DF,$07,$66,$05,$DD,$7F,$01,$0D,$0A,$71,$7F,$01,$68,$01,$3D,$07,$01,$02,$C2; RAW DATA : 	next "안은 부드러워서 강한 공격에는"
+	next $01,$3F,$03,$60,$08,$26,$7F,$04,$98,$0A,$71,$02,$D9; RAW DATA : 	next "견디지 못한다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $01,$DE,$08,$2A,$07,$9C,$7F,$02,$DC,$02,$DC,$0A,$78,$08,$26,$01,$B2,$7F,$07,$CC,$07,$01,$7F; RAW DATA : 	text "껍질이 단단해지기 전에 "
+	next $01,$0D,$0A,$71,$7F,$08,$E6,$01,$3D,$07,$8B,$7F,$04,$DE,$07,$88,$04,$89; RAW DATA : 	next "강한 충격을 받으면"
+	next $06,$03,$07,$9C,$7F,$02,$3A,$07,$2D,$04,$F6,$04,$3E,$02,$CF,$7F,$08,$06,$07,$97; RAW DATA : 	next "속이 나와버리니 주의"
+	dex
+ENDC
+
 
 _ButterfreeDexEntry::
-	text "In battle, it"
-	next "flaps its wings"
-	next "at high speed to"
-
-	page "release highly"
-	next "toxic dust into"
-	next "the air"
+IF DEF(_RED) || DEF(_GREEN)
+	text $04,$B0,$07,$8B,$7F,$09,$D8,$01,$3C,$02,$4B,$02,$C2,$7F,$01,$01,$04,$17,$01,$01,$7F,$02,$3F,$01,$13,$04,$36; RAW DATA : 	text "물을 튕겨내는 가루가 날개를"
+	next $05,$18,$0A,$A3,$0A,$6F,$01,$4D,$7F,$07,$A6,$02,$D9,$7F,$05,$61,$01,$01,$7F,$07,$20,$02,$C2,$7F,$02,$3F,$07,$01,$03,$15; RAW DATA : 	next "보호하고 있다 비가 오는 날에도"
+	next $0A,$6F,$02,$C3,$07,$8B,$7F,$02,$3F,$7F,$06,$26,$7F,$07,$A6,$02,$D9; RAW DATA : 	next "하늘을 날 수 있다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $07,$AB,$01,$4D,$7F,$05,$6C,$04,$35,$7F,$0A,$0B,$02,$F6,$07,$A3,$07,$9C,$03,$C3,$04,$89,$7F; RAW DATA : 	text "작고 빠른 퍼덕임이라면 "
+	next $04,$6D,$03,$16,$07,$97,$7F,$07,$9E,$05,$30,$07,$9C,$7F,$04,$D9,$03,$C7,$07,$01; RAW DATA : 	next "맹독의 인분이 바람에"
+	next $06,$67,$03,$F1,$7F,$02,$3F,$06,$C6,$01,$03,$02,$D9,$01,$4D; RAW DATA : 	next "실려 날아간다고"
+	dex
+ENDC
+
 
 _MachampDexEntry::
-	text "Using its heavy"
-	next "muscles, it throws"
-	next "powerful punches"
-
-	page "that can send the"
-	next "victim clear over"
-	next "the horizon"
+IF DEF(_RED) || DEF(_GREEN)
+	text $04,$DF,$02,$DE,$0A,$71,$7F,$FA,$01,$13,$07,$97,$7F,$09,$F8,$07,$8A,$7F,$F8,$08,$CA,$7F,$03,$1F,$06,$C8; RAW DATA : 	text "발달한 4개의 팔은 2초 동안"
+	next $F7,$F6,$F6,$F6,$04,$F8,$07,$97,$7F,$0A,$0D,$09,$01,$04,$36; RAW DATA : 	next "1000번의 펀치를"
+	next $02,$3F,$04,$41,$7F,$06,$26,$7F,$07,$A6,$02,$D9; RAW DATA : 	next "날릴 수 있다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $06,$44,$0A,$0B,$7F,$09,$F4,$07,$66,$7F,$0A,$0D,$09,$01,$04,$36,$7F,$01,$01,$07,$E3,$02,$D9,$02,$C2,$7F,$01,$2D,$07,$8A; RAW DATA : 	text "슈퍼 파워 펀치를 가졌다는 것은"
+	next $06,$26,$0A,$22,$05,$E1,$01,$BE,$08,$26,$03,$15,$7F,$02,$3F,$03,$F1,$04,$F6,$04,$41; RAW DATA : 	next "수평선까지도 날려버릴"
+	next $06,$26,$7F,$07,$A6,$02,$D9,$02,$C2,$7F,$01,$2D,$07,$8B,$7F,$03,$B6,$0A,$71,$02,$D9; RAW DATA : 	next "수 있다는 것을 뜻한다"
+	dex
+ENDC
+
 
 _GolduckDexEntry::
-	text "Often seen swim-"
-	next "ming elegantly by"
-	next "lake shores. It"
-
-	page "is often mistaken"
-	next "for the Japanese"
-	next "monster, Kappa"
+IF DEF(_RED) || DEF(_GREEN)
+	text $06,$05,$04,$D9,$02,$DA,$07,$9C,$7F,$04,$B0,$01,$05,$09,$6B,$03,$FE,$7F,$03,$27,$06,$EE,$7F,$07,$A6,$06,$EE; RAW DATA : 	text "손바닥이 물갈퀴로 되어 있어"
+	next $0A,$8C,$06,$F6,$07,$8B,$7F,$07,$AF,$7F,$09,$03,$02,$D9,$7F,$0A,$A3,$06,$26,$7F,$03,$4E,$07,$01,$05,$DD; RAW DATA : 	next "헤엄을 잘 친다 호수 등에서"
+	next $07,$4C,$06,$C6,$0A,$71,$7F,$04,$90,$06,$60,$07,$8B,$7F,$05,$1C,$7F,$06,$26,$7F,$07,$A6,$02,$D9; RAW DATA : 	next "우아한 모습을 볼 수 있다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $07,$4C,$06,$C6,$0A,$71,$7F,$0A,$A3,$06,$26,$7F,$08,$06,$07,$77,$04,$36,$7F,$06,$C6,$04,$37,$02,$E4,$01,$34; RAW DATA : 	text "우아한 호수 주위를 아름답게"
+	next $0A,$8C,$06,$F6,$09,$01,$02,$C2,$7F,$04,$90,$06,$60,$07,$8B,$7F,$07,$44,$01,$7B,$03,$C3,$01,$4D; RAW DATA : 	next "헤엄치는 모습을 요괴라고"
+	next $07,$20,$0A,$78,$0A,$6F,$02,$C2,$7F,$05,$B7,$03,$C7,$07,$9C,$7F,$07,$A6,$02,$D9; RAW DATA : 	next "오해하는 사람이 있다"
+	dex
+ENDC
 
 _HypnoDexEntry::
-	text "When it locks eyes"
-	next "with an enemy, it"
-	next "will use a mix of"
-
-	page "PSI moves such as"
-	next "HYPNOSIS and"
-	next "CONFUSION"
+IF DEF(_RED) || DEF(_GREEN)
+	text $08,$DF,$7F,$01,$10,$07,$8A,$7F,$01,$2D,$07,$8B,$7F,$01,$01,$08,$26,$01,$4D,$7F,$02,$D9,$02,$D1,$02,$D9; RAW DATA : 	text "추 같은 것을 가지고 다닌다"
+	next $06,$C6,$07,$9C,$07,$01,$01,$34,$7F,$08,$D6,$04,$89,$06,$2A,$07,$8B,$7F,$01,$29,$06,$EE,$05,$DD; RAW DATA : 	next "아이에게 최면술을 걸어서"
+	next $06,$EE,$03,$62,$01,$01,$03,$FE,$7F,$03,$05,$03,$F1,$01,$03,$7F,$05,$B7,$01,$27,$07,$9C,$7F,$07,$A6,$06,$FA,$02,$D9; RAW DATA : 	next "어딘가로 데려간 사건이 있었다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $05,$C3,$02,$EB,$07,$2D,$7F,$02,$AB,$07,$9C,$7F,$04,$46,$08,$06,$08,$C6,$07,$8B,$7F,$03,$77; RAW DATA : 	text "상대와 눈이 마주쳤을 때"
+	next $08,$D6,$04,$89,$06,$2A,$7F,$03,$4E,$7F,$01,$0E,$01,$01,$08,$26; RAW DATA : 	next "최면술 등 갖가지"
+	next $08,$CA,$02,$C9,$03,$F2,$07,$8B,$7F,$06,$B4,$02,$D9,$01,$4D,$7F,$0A,$71,$02,$D9; RAW DATA : 	next "초능력을 쓴다고 한다"
+	dex
+ENDC
 
 _GolbatDexEntry::
-	text "Once it strikes,"
-	next "it will not stop"
-	next "draining energy"
-
-	page "from the victim"
-	next "even if it gets"
-	next "too heavy to fly"
+IF DEF(_RED) || DEF(_GREEN)
+	text $07,$19,$04,$3E,$0A,$71,$7F,$07,$9C,$05,$71,$03,$FE,$7F,$04,$B0,$06,$EE,$03,$B2,$06,$EE,$7F; RAW DATA : 	text "예리한 이빨로 물어뜯어 "
+	next $0A,$71,$7F,$04,$F8,$07,$01,$7F,$F9,$F6,$F6,$A2,$A2,$07,$97,$7F,$0A,$67,$04,$36; RAW DATA : 	next "한 번에 300cc의 피를"
+	next $05,$71,$06,$C6,$04,$74,$02,$C2,$02,$D9; RAW DATA : 	next "빨아먹는다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $04,$B0,$04,$3E,$04,$89,$7F,$02,$31,$07,$9C,$02,$D9,$7F,$08,$07,$07,$8B,$7F,$07,$D4,$03,$15,$03,$FE,$7F,$0A,$67,$04,$36; RAW DATA : 	text "물리면 끝이다 죽을 정도로 피를"
+	next $05,$71,$06,$C6,$03,$49,$07,$9C,$01,$B2,$7F,$03,$77,$04,$AE,$07,$01,$7F,$04,$AB,$01,$25,$07,$66,$07,$DE,$05,$DD; RAW DATA : 	next "빨아들이기 때문에 무거워져서"
+	next $02,$3F,$06,$26,$7F,$06,$F8,$01,$34,$7F,$03,$29,$7F,$03,$77,$03,$15,$7F,$07,$A6,$02,$D9; RAW DATA : 	next "날수 없게 될 때도 있다"
+	dex
+ENDC
+
 
 _MewtwoDexEntry::
-	text "It was created by"
-	next "a scientist after"
-	next "years of horrific"
-
-	page "gene splicing and"
-	next "DNA engineering"
-	next "experiments"
+IF DEF(_RED) || DEF(_GREEN)
+	text $07,$0C,$01,$88,$04,$36,$7F,$07,$77,$0A,$78,$7F,$07,$9C,$03,$E1,$07,$CA,$03,$E1,$7F,$07,$7F,$07,$CC,$07,$AA,$04,$36; RAW DATA : 	text "연구를 위해 이런저런 유전자를"
+	next $07,$9C,$01,$2D,$07,$CA,$01,$2D,$7F,$07,$E6,$0A,$75,$0A,$71,$7F,$01,$41,$01,$6A; RAW DATA : 	next "이것저것 조합한 결과"
+	next $0A,$E4,$0A,$27,$0A,$71,$7F,$0A,$27,$09,$2F,$04,$93,$07,$9C,$7F,$03,$27,$06,$EE,$04,$F6,$03,$F8,$02,$D9; RAW DATA : 	next "흉포한 포켓몬이 되어버렸다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $0A,$71,$7F,$01,$6A,$0A,$70,$07,$AA,$01,$01,$7F,$04,$8E,$7F,$02,$82,$07,$01,$7F,$01,$29,$08,$C4; RAW DATA : 	text "한 과학자가 몇 년에 걸쳐"
+	next $04,$AB,$05,$DD,$07,$4E,$07,$7F,$07,$CC,$07,$AA,$07,$97,$7F,$07,$0C,$01,$88,$04,$36,$7F,$01,$48,$06,$03,$0A,$71,$7F,$01,$41,$01,$6A; RAW DATA : 	next "무서운유전자의 연구를 계속한 결과"
+	next $09,$8A,$05,$CD,$0A,$7F,$02,$D9; RAW DATA : 	next "탄생했다"
+	dex
+ENDC
 
 _SnorlaxDexEntry::
-	text "Very lazy. Just"
-	next "eats and sleeps."
-	next "As its rotund"
-
-	page "bulk builds, it"
-	next "becomes steadily"
-	next "more slothful"
+IF DEF(_RED) || DEF(_GREEN)
+	text $0A,$6F,$04,$17,$07,$01,$7F,$04,$74,$07,$8B,$7F,$01,$2D,$07,$8B,$7F,$FA,$F6,$F6,$AA,$A6; RAW DATA : 	text "하루에 먹을 것을 400kg"
+	next $04,$74,$08,$26,$7F,$06,$CA,$07,$88,$04,$89,$7F,$05,$EA,$07,$01,$7F,$08,$97,$08,$26,$7F,$06,$CA,$02,$C2,$02,$D9; RAW DATA : 	next "먹지 않으면 성에 차지 않는다"
+	next $02,$D9,$7F,$04,$74,$07,$88,$04,$89,$7F,$07,$B1,$07,$9C,$7F,$03,$49,$06,$EE,$7F,$04,$F6,$04,$40,$02,$D9; RAW DATA : 	next "다 먹으면 잠이 들어 버린다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $01,$34,$07,$88,$04,$33,$01,$4D,$7F,$04,$74,$01,$4D,$02,$3A,$04,$89,$7F,$07,$AF,$7F,$05,$A3,$07,$9C,$02,$D9; RAW DATA : 	text "게으르고 먹고나면 잘 뿐이다"
+	next $01,$A7,$03,$D1,$05,$DD,$7F,$07,$D1,$07,$D1,$7F,$05,$BC,$07,$9C,$7F,$08,$67,$01,$01,$7F,$07,$D1,$07,$D1; RAW DATA : 	next "그래서 점점 살이 쪄가 점점"
+	next $01,$34,$07,$8B,$03,$DF,$08,$26,$01,$4D,$7F,$04,$46,$02,$C2,$7F,$01,$2D,$7F,$01,$10,$02,$D9; RAW DATA : 	next "게을러지고 마는 것 같다"
+	dex
+ENDC
 
 _MagikarpDexEntry::
-	text "In the distant"
-	next "past, it was"
-	next "somewhat stronger"
-
-	page "than the horribly"
-	next "weak descendants"
-	next "that exist today"
+IF DEF(_RED) || DEF(_GREEN)
+	text $0A,$FB,$03,$15,$7F,$06,$4A,$0A,$67,$03,$45,$03,$15,$7F,$01,$25,$07,$97,$7F,$06,$F8,$02,$D9,$7F; RAW DATA : 	text "힘도 스피드도 거의 없다 "
+	next $05,$EC,$05,$C3,$07,$01,$05,$DD,$7F,$01,$01,$07,$B5,$7F,$06,$E0,$0A,$6F,$01,$4D; RAW DATA : 	next "세상에서 가장 약하고"
+	next $0A,$71,$06,$69,$0A,$71,$7F,$0A,$27,$09,$2F,$04,$93,$07,$9C,$02,$D9; RAW DATA : 	next "한심한 포켓몬이다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $06,$C6,$08,$06,$7F,$04,$75,$7F,$07,$1E,$02,$3F,$07,$01,$02,$C2,$7F,$07,$EB,$7F,$02,$F5; RAW DATA : 	text "아주 먼 옛날에는 좀 더"
+	next $01,$0D,$0A,$7F,$02,$F8,$7F,$01,$2D,$7F,$01,$10,$02,$D9,$7F,$01,$A7,$03,$DF,$02,$3A,$7F,$08,$26,$01,$AD,$07,$8A; RAW DATA : 	next "강했던 것 같다 그러나 지금은"
+	next $06,$C8,$06,$B2,$03,$DF,$07,$4F,$7F,$07,$D4,$03,$15,$03,$FE,$7F,$06,$E0,$0A,$6F,$02,$D9; RAW DATA : 	next "안쓰러울 정도로 약하다"
+	dex
+ENDC
 
 _MukDexEntry::
-	text "Thickly covered"
-	next "with a filthy,"
-	next "vile sludge. It"
-
-	page "is so toxic, even"
-	next "its footprints"
-	next "contain poison"
+IF DEF(_RED) || DEF(_GREEN)
+	text $05,$18,$09,$BB,$07,$8A,$7F,$08,$26,$04,$89,$07,$01,$7F,$05,$DF,$07,$09,$07,$A6,$06,$EE; RAW DATA : 	text "보통은 지면에 섞여있어"
+	next $06,$CB,$7F,$06,$26,$7F,$06,$F8,$02,$D9,$7F,$04,$96,$07,$01,$7F,$02,$EA,$07,$88,$04,$89; RAW DATA : 	next "알 수 없다 몸에 닿으면"
+	next $04,$6D,$03,$16,$07,$9C,$7F,$0A,$0B,$08,$26,$01,$34,$7F,$03,$28,$02,$D9; RAW DATA : 	next "맹독이 퍼지게 된다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $02,$F5,$03,$DF,$07,$4E,$7F,$08,$28,$0A,$EB,$07,$9C,$7F,$07,$22,$04,$96,$07,$01,$7F,$06,$FB,$01,$3C,$05,$39,$06,$FA,$02,$D9; RAW DATA : 	text "더러운 진흙이 온몸에 엉겨붙었다"
+	next $08,$26,$02,$3A,$01,$03,$7F,$07,$AA,$04,$3E,$07,$01,$7F,$02,$EA,$01,$B2,$04,$48,$0A,$78,$03,$15; RAW DATA : 	next "지나간 자리에 닿기만해도"
+	next $03,$16,$07,$01,$7F,$01,$29,$04,$40,$02,$D9; RAW DATA : 	next "독에 걸린다"
+	dex
+ENDC
+
 
 _KinglerDexEntry::
-	text "The large pincer"
-	next "has 10000 hp of"
-	next "crushing power."
-
-	page "However, its huge"
-	next "size makes it"
-	next "unwieldy to use"
+IF DEF(_RED) || DEF(_GREEN)
+	text $02,$DC,$02,$DC,$0A,$71,$7F,$08,$2D,$01,$34,$02,$C2,$7F,$F7,$04,$48,$7F,$04,$46,$03,$F2,$07,$97; RAW DATA : 	text "단단한 집게는 1만 마력의"
+	next $07,$77,$03,$F2,$07,$8B,$7F,$08,$26,$02,$86,$08,$26,$04,$48,$7F,$02,$6A,$04,$AB,$7F,$09,$1F,$05,$DD; RAW DATA : 	next "위력을 지녔지만 너무 커서"
+	next $07,$62,$08,$27,$07,$9C,$01,$B2,$01,$01,$7F,$0A,$FB,$03,$49,$02,$D9; RAW DATA : 	next "움직이기가 힘들다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $08,$2D,$01,$34,$02,$C2,$7F,$F7,$04,$48,$7F,$04,$46,$03,$F2,$07,$97,$7F,$06,$44,$0A,$0B,$09,$F4,$07,$66,$04,$36; RAW DATA : 	text "집게는 1만 마력의 슈퍼파워를"
+	next $0A,$40,$06,$FA,$08,$26,$04,$48,$7F,$02,$6A,$04,$AB,$7F,$09,$1F,$05,$DD; RAW DATA : 	next "품었지만 너무 커서"
+	next $07,$AF,$7F,$07,$62,$08,$27,$07,$9C,$08,$26,$7F,$06,$CA,$02,$C2,$02,$D9; RAW DATA : 	next "잘 움직이지 않는다"
+	dex
+ENDC
 
 _CloysterDexEntry::
-	text "When attacked, it"
-	next "launches its"
-	next "horns in quick"
-
-	page "volleys. Its"
-	next "innards have"
-	next "never been seen"
+IF DEF(_RED) || DEF(_GREEN)
+	text $01,$DE,$03,$05,$01,$B2,$01,$01,$7F,$05,$C3,$02,$E7,$0A,$F7,$7F,$02,$DC,$02,$DC,$0A,$6F,$07,$09; RAW DATA : 	text "껍데기가 상당히 단단하여"
+	next $02,$77,$07,$9C,$09,$FA,$09,$8A,$07,$88,$03,$FE,$03,$15,$7F,$05,$2E,$06,$2A,$7F,$06,$26,$7F,$06,$F8,$02,$D9,$7F; RAW DATA : 	next "네이팜탄으로도 부술 수 없다 "
+	next $01,$68,$01,$3D,$0A,$72,$7F,$03,$77,$04,$48,$7F,$07,$0C,$02,$D9; RAW DATA : 	next "공격할 때만 연다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $01,$68,$01,$3D,$04,$DE,$07,$88,$04,$89,$7F,$0A,$35,$04,$89,$07,$97,$7F,$01,$01,$06,$63,$01,$01; RAW DATA : 	text "공격받으면 표면의 가시가"
+	next $02,$27,$07,$A3,$06,$F8,$07,$9C,$7F,$02,$3F,$06,$C6,$07,$22,$02,$D9; RAW DATA : 	next "끊임없이 날아온다"
+	next $02,$4B,$05,$2E,$07,$97,$7F,$07,$D4,$08,$BC,$02,$C2,$7F,$05,$32,$04,$8D; RAW DATA : 	next "내부의 정체는 불명"
+	dex
+ENDC
 
 _ElectrodeDexEntry::
-	text "It stores electric"
-	next "energy under very"
-	next "high pressure."
-
-	page "It often explodes"
-	next "with little or no"
-	next "provocation"
+IF DEF(_RED) || DEF(_GREEN)
+	text $06,$E0,$01,$03,$07,$01,$7F,$07,$AA,$01,$A8,$07,$01,$03,$15,$7F,$04,$DD,$07,$90,$0A,$6F,$07,$09,$7F,$0A,$28,$04,$DF,$0A,$71,$02,$D9; RAW DATA : 	text "약간에 자극에도 반응하여 폭발한다"
+	next $0A,$28,$09,$8A,$01,$68,$07,$9C,$03,$C3,$02,$C2,$7F,$05,$10,$04,$8D,$07,$9C,$7F,$07,$A6,$07,$8B; RAW DATA : 	next "폭탄공이라는 별명이 있을"
+	next $07,$D4,$03,$15,$03,$FE,$7F,$03,$2E,$03,$F1,$07,$62,$07,$97,$7F,$02,$EB,$05,$C3,$07,$9C,$02,$D9; RAW DATA : 	next "정도로 두려움의 대상이다"
 	dex
-
+ENDC
+IF DEF(_BLUE)
+	text $04,$E6,$02,$EB,$0A,$71,$7F,$07,$CC,$01,$B2,$07,$01,$02,$6A,$08,$26,$04,$36,$7F,$04,$90,$06,$C6,$03,$37,$07,$88,$04,$87; RAW DATA : 	text "방대한 전기에너지를 모아뒀으며"
+	next $07,$AA,$01,$A7,$04,$48,$7F,$08,$E6,$01,$3D,$07,$88,$03,$FE; RAW DATA : 	next "자그만 충격으로"
+	next $02,$EB,$0A,$28,$04,$DF,$07,$8B,$7F,$07,$9F,$07,$88,$09,$82,$02,$D9; RAW DATA : 	next "대폭발을 일으킨다"
+	dex
+ENDC
 _ClefableDexEntry::
-	text "A timid fairy"
-	next "#MON that is"
-	next "rarely seen. It"
-
-	page "will run and hide"
-	next "the moment it"
-	next "senses people"
+IF DEF(_RED) || DEF(_GREEN)
+	text $01,$9D,$01,$01,$7F,$07,$F1,$06,$C6,$05,$DD,$7F,$F7,$AA,$AC,$7F,$03,$83,$06,$EE,$7F,$08,$28; RAW DATA : 	text "귀가 좋아서 1km 떨어 진"
+	next $01,$67,$07,$01,$05,$DD,$7F,$03,$83,$06,$EE,$08,$28,$7F,$04,$D9,$02,$C3,$06,$02,$04,$3E,$04,$36; RAW DATA : 	next "곳에서 떨어진 바늘소리를"
+	next $0A,$C7,$04,$32,$0A,$6F,$01,$34,$7F,$03,$48,$02,$C2,$02,$D9,$01,$4D,$7F,$0A,$71,$02,$D9; RAW DATA : 	next "훌륭하게 듣는다고 한다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $07,$44,$07,$D4,$07,$97,$7F,$03,$1F,$04,$11,$03,$FE,$7F,$07,$EB,$7F,$08,$B3,$03,$E3,$7F,$05,$B7,$03,$C7,$7F,$06,$D5,$07,$01; RAW DATA : 	text "요정의 동료로 좀 처럼 사람 앞에"
+	next $02,$3A,$09,$88,$02,$3A,$08,$26,$7F,$06,$CA,$02,$C2,$02,$D9,$7F,$01,$B2,$08,$B4,$07,$8B,$7F,$02,$C0,$02,$32,$01,$4D; RAW DATA : 	next "나타나지 않는다 기척을 느끼고"
+	next $01,$60,$04,$D9,$03,$FE,$7F,$03,$15,$04,$61,$01,$01,$7F,$04,$F6,$04,$3E,$02,$C2,$7F,$03,$4D,$7F,$06,$6D,$02,$D9; RAW DATA : 	next "곧바로 도망가 버리는 듯 싶다"
+	dex
+ENDC
+
 
 _WeezingDexEntry::
-	text "Where two kinds"
-	next "of poison gases"
-	next "meet, 2 KOFFINGs"
-
-	page "can fuse into a"
-	next "WEEZING over many"
-	next "years"
+IF DEF(_RED) || DEF(_GREEN)
+	text $01,$A8,$0A,$F7,$7F,$03,$45,$04,$B0,$01,$34,$7F,$03,$19,$07,$0C,$05,$0F,$07,$9C,$03,$FE; RAW DATA : 	text "극히 드물게 돌연변이로"
+	next $06,$76,$03,$35,$07,$9C,$07,$97,$7F,$07,$AB,$07,$8A,$7F,$03,$97,$01,$01,$06,$4A,$01,$01,$7F,$07,$0C,$01,$41,$03,$28,$7F,$08,$A4; RAW DATA : 	next "쌍둥이의 작은 또가스가 연결된 채"
+	next $02,$3A,$07,$23,$7F,$03,$77,$7F,$01,$01,$7F,$07,$A6,$02,$D9; RAW DATA : 	next "나올 때 가 있다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $F8,$01,$13,$07,$97,$7F,$03,$16,$01,$01,$06,$4A,$7F,$05,$EA,$05,$30,$07,$9C,$7F,$07,$20,$03,$D7,$03,$1F,$06,$C8; RAW DATA : 	text "2개의 독가스 성분이 오랫동안"
+	next $01,$7B,$07,$9E,$7F,$01,$67,$07,$01,$05,$DD,$7F,$06,$76,$03,$35,$07,$9C,$7F,$03,$97,$01,$01,$06,$4A,$01,$01; RAW DATA : 	next "괴인 곳에서 쌍둥이 또가스가"
+	next $02,$3A,$07,$22,$02,$D9,$02,$C2,$7F,$01,$2D,$7F,$01,$10,$02,$D9; RAW DATA : 	next "나온다는 것 같다"
+	dex
+ENDC
 
 _PersianDexEntry::
-	text "Although its fur"
-	next "has many admirers,"
-	next "it is tough to"
-
-	page "raise as a pet"
-	next "because of its"
-	next "fickle meanness"
+IF DEF(_RED) || DEF(_GREEN)
+	text $05,$EA,$08,$2A,$07,$9C,$7F,$01,$25,$09,$05,$04,$87,$7F,$01,$EF,$04,$3E,$04,$36,$7F,$03,$98,$04,$D9,$03,$FE; RAW DATA : 	text "성질이 거칠며 꼬리를 똑바로"
+	next $05,$EC,$07,$4E,$02,$D9,$04,$89,$7F,$08,$06,$07,$97,$01,$01,$7F,$0A,$6A,$07,$44; RAW DATA : 	next "세운다면 주의가 필요"
+	next $03,$04,$09,$01,$04,$89,$05,$DD,$7F,$04,$B0,$01,$3A,$02,$D9,$02,$C2,$7F,$07,$19,$01,$4D,$07,$9C,$02,$D9; RAW DATA : 	next "덮치면서 물겠다는 예고이다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $09,$A0,$07,$97,$7F,$01,$41,$07,$9C,$7F,$06,$C6,$04,$37,$02,$D9,$07,$66,$7F,$06,$D6,$07,$2F,$07,$4B,$03,$FE; RAW DATA : 	text "털의 결이 아름다워 애완용로"
+	next $01,$B2,$04,$33,$02,$C2,$7F,$05,$B7,$03,$C7,$03,$15,$7F,$04,$49,$07,$88,$02,$3A,$7F,$04,$D9,$03,$FE; RAW DATA : 	next "기르는 사람도 많으나 바로"
+	next $0A,$72,$09,$6B,$01,$25,$02,$3A,$0A,$6F,$01,$B2,$7F,$03,$77,$04,$AE,$07,$01,$7F,$01,$B2,$04,$33,$01,$B2,$7F,$06,$EE,$03,$F6,$02,$D9; RAW DATA : 	next "할퀴거나하기 때문에 기르기 어렵다"
+	dex
+ENDC
 
 _MarowakDexEntry::
-	text "The bone it holds"
-	next "is its key weapon."
-	next "It throws the"
-
-	page "bone skillfully"
-	next "like a boomerang"
-	next "to KO targets"
+IF DEF(_RED) || DEF(_GREEN)
+	text $04,$96,$08,$2D,$03,$15,$7F,$07,$AB,$07,$88,$04,$87,$7F,$07,$68,$03,$D1,$02,$C2,$7F,$06,$E0,$0A,$7F,$02,$D9; RAW DATA : 	text "몸집도 작으며 원래는 약했다"
+	next $05,$90,$04,$36,$7F,$06,$B2,$01,$B2,$7F,$06,$63,$07,$AB,$0A,$6F,$04,$89,$05,$DD; RAW DATA : 	next "뼈를 쓰기 시작하면서"
+	next $05,$EA,$01,$3D,$07,$9C,$7F,$0A,$E4,$0A,$27,$0A,$78,$07,$E3,$02,$D9; RAW DATA : 	next "성격이 흉포해졌다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $05,$90,$02,$C2,$7F,$08,$0F,$07,$44,$0A,$71,$7F,$04,$AB,$01,$B2,$07,$9C,$02,$D9; RAW DATA : 	text "뼈는 중요한 무기이다"
+	next $05,$2E,$04,$7E,$03,$CB,$08,$B3,$03,$E3,$7F,$02,$F8,$07,$DE,$05,$DD; RAW DATA : 	next "부메랑처럼 던져서"
+	next $05,$B7,$02,$69,$01,$08,$07,$8B,$7F,$04,$62,$08,$E7,$7F,$01,$B2,$07,$CD,$06,$63,$09,$82,$02,$D9; RAW DATA : 	next "사냥감을 맞춰 기절시킨다"
+	dex
+ENDC
 
 _HaunterDexEntry::
-	text "Because of its"
-	next "ability to slip"
-	next "through block"
-
-	page "walls, it is said"
-	next "to be from an-"
-	next "other dimension"
+IF DEF(_RED) || DEF(_GREEN)
+	text $06,$EE,$03,$32,$7F,$06,$03,$07,$01,$05,$DD,$7F,$06,$C6,$04,$AB,$03,$15,$7F,$06,$F8,$02,$C2,$03,$05; RAW DATA : 	text "어둠 속에서 아무도 없는데"
+	next $02,$A9,$01,$8A,$01,$01,$7F,$05,$18,$01,$4D,$7F,$07,$A6,$02,$D9,$02,$C2,$7F,$02,$C0,$02,$36,$07,$9C,$7F,$03,$49,$04,$89; RAW DATA : 	next "누군가 보고 있다는 느낌이 들면"
+	next $01,$A7,$01,$67,$07,$01,$7F,$01,$4D,$07,$4C,$06,$4A,$09,$DE,$01,$01,$7F,$07,$A6,$02,$C2,$7F,$01,$2D,$07,$9C,$02,$D9; RAW DATA : 	next "그곳에 고우스트가 있는 것이다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $05,$0E,$03,$19,$03,$FE,$7F,$03,$28,$7F,$05,$0E,$03,$15,$7F,$09,$BB,$01,$6A,$0A,$6F,$02,$C2,$7F,$01,$BE,$02,$DF,$07,$01; RAW DATA : 	text "벽돌로 된 벽도 통과하는 까닭에"
+	next $07,$9C,$08,$97,$07,$68,$7F,$01,$68,$01,$03,$07,$97,$7F,$05,$CD,$04,$B0,$07,$9C,$7F,$06,$C6,$02,$CF,$02,$64,$02,$C2; RAW DATA : 	next "이차원 공간의 생물이 아니냐는"
+	next $06,$02,$04,$AE,$07,$9C,$7F,$03,$19,$01,$4D,$7F,$07,$A6,$02,$D9; RAW DATA : 	next "소문이 돌고 있다"
+	dex
+ENDC
 
 _AbraDexEntry::
-	text "Using its ability"
-	next "to read minds, it"
-	next "will identify"
-
-	page "impending danger"
-	next "and TELEPORT to"
-	next "safety"
+IF DEF(_RED) || DEF(_GREEN)
+	text $0A,$6F,$04,$17,$07,$01,$7F,$F7,$FE,$06,$63,$01,$03,$07,$8A,$7F,$07,$AA,$01,$4D,$7F,$07,$A6,$02,$D9; RAW DATA : 	text "하루에 18시간은 자고 있다"
+	next $07,$AA,$02,$C2,$7F,$03,$1F,$06,$C8,$07,$01,$03,$15,$7F,$02,$D9,$06,$E7,$0A,$71; RAW DATA : 	next "자는 동안에도 다양한"
+	next $08,$CA,$02,$C9,$03,$F2,$07,$8B,$7F,$05,$B7,$07,$4B,$0A,$71,$02,$D9; RAW DATA : 	next "초능력을 사용한다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $05,$C3,$02,$EB,$07,$97,$7F,$05,$CD,$01,$02,$07,$8B,$7F,$07,$A0,$06,$EE,$02,$4B,$05,$DD; RAW DATA : 	text "상대의 생각을 읽어내서"
+	next $07,$77,$01,$B2,$07,$01,$7F,$04,$94,$04,$3E,$01,$B2,$7F,$07,$CC,$07,$01,$7F; RAW DATA : 	next "위기에 몰리기 전에 "
+	next $06,$28,$01,$03,$07,$9C,$03,$1F,$03,$FE,$7F,$03,$15,$04,$61,$08,$C4,$04,$F6,$04,$40,$02,$D9; RAW DATA : 	next "순간이동로 도망쳐버린다"
+	dex
+ENDC
 
 _AlakazamDexEntry::
-	text "Its brain can out-"
-	next "perform a super-"
-	next "computer."
-
-	page "Its intelligence"
-	next "quotient is said"
-	next "to be 5,000"
+IF DEF(_RED) || DEF(_GREEN)
+	text $0A,$FB,$06,$B2,$02,$C2,$7F,$01,$2D,$07,$8B,$7F,$05,$10,$03,$FE,$7F,$07,$F1,$06,$C6,$0A,$6F,$08,$26,$7F,$06,$CA,$07,$88,$04,$87; RAW DATA : 	text "힘쓰는 것을 별로 좋아하지 않으며"
+	next $08,$CA,$02,$C9,$03,$F2,$07,$8B,$7F,$07,$AA,$07,$7F,$07,$AA,$07,$B7,$03,$FE,$7F,$02,$D9,$04,$17,$06,$EE; RAW DATA : 	next "초능력을 자유자재로 다루어"
+	next $05,$C3,$02,$EB,$04,$E6,$07,$8B,$7F,$06,$B2,$03,$DF,$03,$AF,$04,$40,$02,$D9; RAW DATA : 	next "상대방을 쓰러뜨린다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $06,$44,$0A,$0B,$09,$24,$0A,$4B,$09,$9D,$05,$18,$02,$D9,$7F,$05,$6C,$04,$33,$01,$34; RAW DATA : 	text "슈퍼컴퓨터보다 빠르게"
+	next $01,$48,$05,$BA,$0A,$6F,$02,$C2,$7F,$03,$2E,$02,$9A,$04,$36,$7F,$01,$01,$07,$E3,$02,$D9; RAW DATA : 	next "계산하는 두뇌를 가졌다"
+	next $08,$26,$02,$C9,$08,$26,$06,$26,$02,$C2,$7F,$06,$E0,$7F,$FB,$F6,$F6,$F6,$07,$9C,$02,$D9; RAW DATA : 	next "지능지수는 약 5000이다"
+	dex
+ENDC
 
 _PidgeottoDexEntry::
-	text "Very protective"
-	next "of its sprawling"
-	next "territorial area,"
-
-	page "this #MON will"
-	next "fiercely peck at"
-	next "any intruder"
+IF DEF(_RED) || DEF(_GREEN)
+	text $04,$DF,$09,$B9,$07,$9C,$7F,$04,$DF,$02,$DE,$0A,$78,$7F,$07,$A6,$02,$D9; RAW DATA : 	text "발톱이 발달해 있다"
+	next $04,$74,$07,$9C,$07,$9E,$7F,$06,$C6,$03,$C3,$04,$3E,$04,$36,$7F,$07,$B2,$06,$C6,$7F,$F7,$F6,$F6,$AA,$AC,$7F; RAW DATA : 	next "먹이인 아라리를 잡아 100km "
+	next $03,$83,$06,$EE,$07,$DE,$7F,$07,$A6,$02,$C2,$7F,$03,$35,$08,$26,$01,$BE,$08,$26,$7F,$02,$3A,$04,$35,$02,$D9; RAW DATA : 	next "떨어져 있는 둥지까지 나른다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $02,$70,$07,$8A,$7F,$07,$15,$07,$0A,$07,$8B,$7F,$01,$01,$08,$26,$01,$4D,$7F,$07,$A6,$06,$EE,$7F; RAW DATA : 	text "넓은 영역을 가지고 있어 "
+	next $09,$07,$07,$A4,$0A,$71,$7F,$04,$E6,$0A,$78,$07,$AA,$02,$C2; RAW DATA : 	next "침입한 방해자는"
+	next $08,$B6,$07,$CA,$0A,$6F,$01,$34,$7F,$08,$69,$06,$C6,$04,$F6,$04,$40,$02,$D9; RAW DATA : 	next "철저하게 쪼아버린다"
+	dex
+ENDC
 
 _PidgeotDexEntry::
-	text "When hunting, it"
-	next "skims the surface"
-	next "of water at high"
-
-	page "speed to pick off"
-	next "unwary prey such"
-	next "as MAGIKARP"
+IF DEF(_RED) || DEF(_GREEN)
+	text $06,$C6,$04,$37,$02,$D9,$07,$4E,$7F,$02,$3F,$01,$13,$04,$36,$7F,$0A,$1E,$08,$C4,$7F; RAW DATA : 	text "아름다운 날개를 펼쳐 "
+	next $05,$C3,$02,$EB,$04,$36,$7F,$07,$77,$0A,$99,$0A,$71,$02,$D9,$7F; RAW DATA : 	next "상대를 위협한다 "
+	next $04,$46,$0A,$6F,$F8,$03,$FE,$7F,$0A,$6F,$02,$C3,$07,$8B,$7F,$02,$3F,$06,$C6,$02,$D9,$02,$D1,$02,$D9; RAW DATA : 	next "마하2로 하늘을 날아다닌다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $04,$74,$07,$9C,$04,$36,$7F,$08,$A3,$06,$C6,$02,$D9,$02,$D2,$7F,$03,$77,$7F,$06,$26,$04,$89; RAW DATA : 	text "먹이를 찾아다닐 때 수면"
+	next $01,$01,$01,$BE,$07,$9C,$04,$36,$7F,$04,$CC,$02,$24,$03,$DF,$08,$26,$03,$4D,$7F,$02,$3F,$06,$C6; RAW DATA : 	next "가까이를 미끄러지듯 날아"
+	next $07,$A7,$06,$EE,$09,$87,$03,$4E,$07,$8B,$7F,$07,$62,$09,$31,$08,$15,$02,$D9; RAW DATA : 	next "잉어킹등을 움켜쥔다"
+	dex
+ENDC
 
 _StarmieDexEntry::
-	text "Its central core"
-	next "glows with the"
-	next "seven colors of"
-
-	page "the rainbow. Some"
-	next "people value the"
-	next "core as a gem"
+IF DEF(_RED) || DEF(_GREEN)
+	text $05,$61,$01,$6A,$0A,$70,$07,$CB,$07,$9E,$7F,$04,$96,$7F,$03,$77,$04,$AE,$07,$01; RAW DATA : 	text "비과학적인 몸 때문에"
+	next $07,$4C,$08,$06,$05,$CD,$04,$B0,$07,$9C,$7F,$06,$C6,$02,$D1,$01,$01,$7F,$0A,$6F,$01,$4D; RAW DATA : 	next "우주생물이 아닌가 하고"
+	next $07,$9F,$05,$2E,$07,$01,$05,$DD,$7F,$07,$0C,$01,$88,$03,$27,$01,$4D,$7F,$07,$A6,$02,$D9; RAW DATA : 	next "일부에서 연구되고 있다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $09,$3A,$06,$EE,$03,$C3,$7F,$05,$32,$04,$3E,$02,$C2,$7F,$08,$0F,$06,$69,$07,$8A,$7F,$07,$9F,$01,$66,$7F,$05,$6B,$01,$C2,$03,$FE; RAW DATA : 	text "코어라 불리는 중심은 일곱 빛깔로"
+	next $05,$6B,$02,$3D,$02,$D9,$7F,$07,$9C,$01,$2D,$07,$8B,$7F,$05,$18,$05,$DE,$07,$88,$03,$FE; RAW DATA : 	next "빛난다 이것을 보석으로"
+	next $05,$BF,$02,$C2,$7F,$05,$B7,$03,$C7,$03,$15,$7F,$07,$A6,$02,$D9,$01,$4D,$7F,$0A,$71,$02,$D9; RAW DATA : 	next "삼는 사람도 있다고 한다"
+	dex
+ENDC
 
 _BulbasaurDexEntry::
-	text "A strange seed was"
-	next "planted on its"
-	next "back at birth."
-
-	page "The plant sprouts"
-	next "and grows with"
-	next "this #MON"
+IF DEF(_RED) || DEF(_GREEN)
+	text $09,$92,$06,$EE,$02,$3F,$7F,$03,$77,$05,$2E,$09,$9D,$7F,$03,$4E,$07,$01; RAW DATA : 	text "태어날 때부터 등에"
+	next $06,$64,$04,$B0,$07,$97,$7F,$06,$BE,$06,$D1,$07,$9C,$7F,$07,$A6,$06,$EE; RAW DATA : 	next "식물의 씨앗이 있어"
+	next $07,$E6,$01,$AD,$06,$BF,$7F,$09,$79,$01,$34,$7F,$07,$AA,$03,$C5,$02,$D9; RAW DATA : 	next "조금씩 크게 자란다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $09,$92,$06,$EE,$02,$45,$07,$8B,$7F,$03,$77,$05,$2E,$09,$9D,$7F,$03,$4E,$07,$01,$7F; RAW DATA : 	text "태어났을 때부터 등에 "
+	next $07,$9C,$05,$C3,$0A,$71,$7F,$06,$BE,$06,$D1,$7F,$07,$9C,$7F,$06,$69,$06,$EE,$07,$DE,$7F,$07,$A6,$07,$88,$04,$87; RAW DATA : 	next "이상한 씨앗 이 심어져 있으며"
+	next $04,$96,$01,$6A,$7F,$0A,$74,$01,$E2,$7F,$07,$AA,$03,$C5,$02,$D9,$01,$4D,$7F,$0A,$71,$02,$D9; RAW DATA : 	next "몸과 함께 자란다고 한다"
+	dex
+ENDC
 
 _VenusaurDexEntry::
-	text "The plant blooms"
-	next "when it is"
-	next "absorbing solar"
-
-	page "energy. It stays"
-	next "on the move to"
-	next "seek sunlight"
+IF DEF(_RED) || DEF(_GREEN)
+	text $01,$F9,$07,$01,$05,$DD,$7F,$0A,$B2,$0A,$A6,$0A,$71,$7F,$0A,$82,$01,$B2,$01,$01,$7F,$0A,$0B,$07,$DE,$02,$3A,$01,$01; RAW DATA : 	text "꽃에서 황홀한 향기가 퍼져나가"
+	next $06,$6E,$07,$4C,$02,$C2,$7F,$07,$AA,$07,$97,$7F,$01,$B2,$05,$30,$07,$8B; RAW DATA : 	next "싸우는 자의 기분을"
+	next $02,$DE,$03,$D1,$01,$34,$7F,$0A,$71,$02,$D9; RAW DATA : 	next "달래게 한다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $09,$92,$06,$E7,$7F,$07,$01,$02,$6A,$08,$26,$04,$36,$7F,$07,$15,$06,$E7,$07,$88,$03,$FE,$7F,$0A,$78,$05,$DD; RAW DATA : 	text "태양 에너지를 영양으로 해서"
+	next $09,$7B,$7F,$01,$F9,$07,$9C,$7F,$0A,$69,$02,$D9,$7F,$06,$E7,$02,$DE,$07,$01,$7F,$07,$7F,$0A,$A4,$03,$28; RAW DATA : 	next "큰 꽃이 핀다 양달에 유혹된"
+	next $03,$4D,$07,$9C,$7F,$07,$9C,$03,$1F,$0A,$71,$02,$D9; RAW DATA : 	next "듯이 이동한다"
+	dex
+ENDC
 
 _TentacruelDexEntry::
-	text "The tentacles are"
-	next "normally kept"
-	next "short. On hunts,"
-
-	page "they are extended"
-	next "to ensnare and"
-	next "immobilize prey"
+IF DEF(_RED) || DEF(_GREEN)
+	text $FE,$F6,$01,$13,$07,$97,$7F,$08,$CB,$06,$26,$04,$36,$7F,$07,$AA,$07,$7F,$03,$FE,$07,$9C,$7F,$07,$62,$08,$27,$07,$9E,$02,$D9; RAW DATA : 	text "80개의 촉수를 자유로이 움직인다"
+	next $06,$8E,$07,$9C,$04,$89,$7F,$03,$16,$07,$9C,$7F,$09,$07,$09,$C5,$0A,$6F,$07,$09; RAW DATA : 	next "쏘이면 독이 침투하여"
+	next $06,$F6,$08,$BB,$02,$3D,$7F,$01,$4D,$09,$BB,$07,$9C,$7F,$04,$D0,$03,$F1,$07,$22,$02,$D9; RAW DATA : 	next "엄청난 고통이 밀려온다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $08,$CB,$06,$26,$02,$C2,$7F,$0A,$22,$06,$02,$07,$01,$02,$C2,$7F,$08,$3A,$01,$4D; RAW DATA : 	text "촉수는 평소에는 짧고"
+	next $04,$74,$07,$9C,$04,$36,$7F,$08,$8E,$04,$36,$7F,$03,$77,$7F; RAW DATA : 	next "먹이를 찌를 때 "
+	next $01,$B6,$01,$34,$7F,$02,$C3,$06,$EE,$02,$3A,$7F,$0A,$D6,$01,$08,$02,$C2,$02,$D9; RAW DATA : 	next "길게 늘어나 휘감는다"
+	dex
+ENDC
 
 _GoldeenDexEntry::
-	text "Its tail fin"
-	next "billows like an"
-	next "elegant ballroom"
-
-	page "dress, giving it"
-	next "the nickname of"
-	next "the Water Queen"
+IF DEF(_RED) || DEF(_GREEN)
+	text $03,$4E,$08,$26,$02,$C0,$03,$DF,$04,$CC,$07,$2D,$7F,$01,$01,$06,$4F,$08,$26,$02,$C0,$03,$DF,$04,$CC,$01,$01,$7F,$01,$A9,$07,$80,$08,$B3; RAW DATA : 	text "등지느러미와 가슴지느러미가 근육처"
+	next $03,$E3,$7F,$04,$DF,$02,$DE,$0A,$78,$07,$A6,$07,$88,$04,$87,$0B,$6B,$7F,$04,$B0,$06,$03,$07,$8B,$7F,$FB,$02,$8B,$09,$DE,$07,$97; RAW DATA : 	next "럼 발달해있으며, 물속을 5노트의"
+	next $06,$03,$03,$15,$03,$FE,$7F,$0A,$8C,$06,$F6,$09,$03,$02,$D9; RAW DATA : 	next "속도로 헤엄친다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $0A,$8C,$06,$F6,$09,$05,$7F,$03,$77,$7F,$01,$EF,$04,$3E,$08,$26,$02,$C0,$03,$DF,$04,$CC,$01,$01,$7F,$03,$45,$03,$E9,$06,$4A,$08,$B3; RAW DATA : 	text "헤엄칠 때 꼬리지느러미가 드레스처"
+	next $03,$E3,$7F,$05,$BC,$03,$CB,$05,$BC,$03,$CB,$7F,$0A,$E7,$03,$49,$03,$F1,$05,$DD,$7F,$06,$26,$08,$0F,$07,$97,$7F,$07,$09,$07,$35; RAW DATA : 	next "럼 살랑살랑 흔들려서 수중의 여왕"
+	next $07,$9C,$03,$C3,$01,$4D,$7F,$05,$32,$04,$40,$02,$D9; RAW DATA : 	next "이라고 불린다"
+	dex
+ENDC
 
 _SeakingDexEntry::
-	text "In the autumn"
-	next "spawning season,"
-	next "they can be seen"
-
-	page "swimming power-"
-	next "fully up rivers"
-	next "and creeks"
+IF DEF(_RED) || DEF(_GREEN)
+	text $03,$45,$04,$41,$08,$B3,$03,$E3,$7F,$05,$9F,$07,$E7,$0A,$71,$7F,$05,$A4,$03,$FE; RAW DATA : 	text "드릴처럼 뾰족한 뿔로"
+	next $04,$D9,$07,$77,$04,$36,$7F,$01,$BF,$06,$C6; RAW DATA : 	next "바위를 깍아"
+	next $07,$AA,$06,$65,$07,$97,$7F,$01,$25,$08,$B3,$04,$36,$7F,$04,$48,$03,$47,$02,$D9; RAW DATA : 	next "자신의 거처를 만든다"
+	
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $01,$01,$07,$8B,$07,$9C,$7F,$07,$20,$04,$89,$7F,$05,$BA,$03,$C5,$07,$8B,$7F,$07,$77,$0A,$78; RAW DATA : 	text "가을이 오면 산란을 위해"
+	next $0A,$FB,$08,$97,$01,$34,$7F,$01,$0D,$04,$B0,$07,$8B,$7F,$01,$25,$06,$4D,$03,$DF,$7F,$07,$23,$03,$C3,$01,$01,$04,$87; RAW DATA : 	next "힘차게 강물을 거슬러 올라가며"
+	next $0A,$8C,$06,$F6,$09,$01,$02,$C2,$7F,$04,$90,$06,$60,$07,$8B,$7F,$05,$1C,$7F,$06,$26,$7F,$07,$A6,$02,$D9; RAW DATA : 	next "헤엄치는 모습을 볼 수 있다"
+	dex
+ENDC
 
 _PonytaDexEntry::
-	text "Its hooves are 10"
-	next "times harder than"
-	next "diamonds. It can"
-
-	page "trample anything"
-	next "completely flat"
-	next "in little time"
+IF DEF(_RED) || DEF(_GREEN)
+	text $04,$96,$07,$9C,$7F,$01,$01,$05,$11,$01,$4D,$7F,$02,$D9,$04,$3E,$07,$97,$7F,$0A,$FB,$07,$9C,$7F,$01,$82,$07,$B5,$0A,$6F,$02,$D9; RAW DATA : 	text "몸이 가볍고 다리의 힘이 굉장하다"
+	next $0A,$71,$7F,$04,$F8,$7F,$07,$D1,$0A,$61,$0A,$6F,$04,$89,$7F,$02,$42,$05,$BA,$09,$88,$07,$66,$03,$15; RAW DATA : 	next "한 번 점프하면 남산타워도"
+	next $02,$71,$07,$8B,$7F,$06,$26,$7F,$07,$A6,$02,$D9; RAW DATA : 	next "넘을 수 있다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $02,$D9,$04,$3E,$07,$97,$7F,$04,$DF,$01,$91,$07,$8A,$7F,$02,$D9,$07,$9C,$06,$C6,$04,$93,$03,$45,$05,$18,$02,$D9; RAW DATA : 	text "다리의 발굽은 다이아몬드보다"
+	next $F7,$F6,$04,$E8,$7F,$02,$DC,$02,$DC,$0A,$6F,$02,$D9,$7F,$06,$EE,$03,$82,$7F,$01,$2D,$07,$9C,$03,$C3,$03,$15; RAW DATA : 	next "10배 단단하다 어떤 것이라도"
+	next $02,$43,$07,$AB,$0A,$6F,$01,$34,$7F,$04,$E2,$06,$C6,$7F,$05,$2E,$05,$DD,$04,$F6,$04,$40,$02,$D9; RAW DATA : 	next "납작하게 밟아 부서버린다"
+	dex
+ENDC
 
 _RapidashDexEntry::
-	text "Very competitive,"
-	next "this #MON will"
-	next "chase anything"
-
-	page "that moves fast"
-	next "in the hopes of"
-	next "racing it"
+IF DEF(_RED) || DEF(_GREEN)
+	text $08,$D6,$01,$4D,$7F,$06,$63,$06,$03,$7F,$F8,$FA,$F6,$8A,$AC,$7F,$0A,$B0,$0A,$B0; RAW DATA : 	text "최고 시속 240Km 활활"
+	next $09,$88,$07,$20,$04,$33,$04,$89,$05,$DD,$7F,$09,$29,$07,$9C,$09,$EC,$07,$02,$06,$4A,$07,$2D; RAW DATA : 	next "타오르면서 케이티엑스와"
+	next $01,$10,$07,$8A,$7F,$06,$03,$03,$15,$03,$FE,$7F,$02,$DE,$04,$40,$02,$D9; RAW DATA : 	next "같은 속도로 달린다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $05,$6C,$04,$33,$01,$34,$7F,$07,$62,$08,$27,$07,$9C,$02,$C2,$7F,$04,$B0,$08,$BC,$04,$36,$7F,$05,$18,$04,$89; RAW DATA : 	text "빠르게 움직이는 물체를 보면"
+	next $01,$46,$08,$06,$04,$36,$7F,$0A,$6F,$01,$4D,$7F,$06,$6D,$06,$EE,$07,$DE,$05,$DD,$7F,$04,$8D,$03,$F4,$0A,$71; RAW DATA : 	next "경주를 하고 싶어져서 명렬한"
+	next $06,$4A,$0A,$67,$03,$45,$03,$FE,$7F,$08,$71,$06,$C6,$01,$01,$01,$B2,$7F,$06,$63,$07,$AB,$0A,$71,$02,$D9; RAW DATA : 	next "스피드로 쫓아가기 시작한다"
+	dex
+ENDC
 
 _RattataDexEntry::
-	text "Bites anything"
-	next "when it attacks."
-	next "Small and very"
-
-	page "quick, it is a"
-	next "common sight in"
-	next "many places"
+IF DEF(_RED) || DEF(_GREEN)
+	text $06,$0B,$01,$67,$02,$CF,$02,$C2,$7F,$01,$B6,$01,$4D,$7F,$02,$3F,$09,$0B,$04,$03,$02,$D9,$7F; RAW DATA : 	text "송곳니는 길고 날카롭다 "
+	next $0A,$22,$05,$CD,$7F,$01,$48,$06,$03,$7F,$05,$88,$06,$EE,$02,$3A,$01,$01,$05,$DD,$7F; RAW DATA : 	next "평생 계속 뻗어나가서 "
+	next $02,$DC,$02,$DC,$0A,$71,$7F,$01,$2D,$07,$8B,$7F,$01,$C0,$02,$C2,$02,$D9; RAW DATA : 	next "단단한 것을 깎는다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $04,$AB,$06,$F9,$07,$9C,$03,$C3,$03,$15,$7F,$01,$C0,$02,$C2,$7F,$01,$68,$01,$3D,$7F,$07,$AB,$07,$8A,$7F,$07,$3C,$01,$6C; RAW DATA : 	text "무엇이라도 깎는 공격 작은 외관"
+	next $07,$01,$7F,$07,$62,$08,$27,$07,$A3,$07,$9C,$7F,$05,$71,$03,$C3,$7F,$07,$9C,$03,$E1,$07,$CA,$03,$E1,$7F,$01,$67,$07,$01,$7F; RAW DATA : 	next "에 움직임이 빨라 이런저런 곳에 "
+	next $08,$E2,$04,$94,$0A,$71,$02,$D9; RAW DATA : 	next "출몰한다"
+	dex
+ENDC
 
 _RaticateDexEntry::
-	text "It uses its whis-"
-	next "kers to maintain"
-	next "its balance."
-
-	page "It apparently"
-	next "slows down if"
-	next "they are cut off"
+IF DEF(_RED) || DEF(_GREEN)
+	text $06,$26,$07,$10,$07,$88,$03,$FE,$7F,$04,$96,$07,$97,$7F,$04,$EB,$03,$E1,$06,$4A,$04,$36,$7F,$07,$E6,$07,$D4,$0A,$6F,$01,$B2,$07,$01; RAW DATA : 	text "수염으로 몸의 밸런스를 조정하기에"
+	next $0A,$E5,$09,$DE,$03,$DF,$08,$26,$04,$89,$7F,$07,$62,$08,$27,$07,$A3,$07,$9C,$7F; RAW DATA : 	next "흐트러지면 움직임이 "
+	next $02,$C0,$03,$F1,$08,$26,$02,$C2,$7F,$03,$4D,$0A,$6F,$02,$D9; RAW DATA : 	next "느려지는 듯하다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $03,$3E,$04,$DF,$07,$01,$7F,$07,$A6,$02,$C2,$7F,$07,$AB,$07,$8A,$7F,$04,$B0,$01,$05,$09,$6B,$03,$FE,$7F; RAW DATA : 	text "뒷발에 있는 작은 물갈퀴로 "
+	next $01,$0D,$07,$8B,$7F,$0A,$8C,$06,$F6,$09,$01,$02,$C2,$7F,$01,$2D,$07,$8A,$7F,$04,$B0,$7F,$06,$C8,$07,$97; RAW DATA : 	next "강을 헤엄치는 것은 물 안의"
+	next $04,$74,$07,$9C,$04,$36,$7F,$07,$B2,$01,$B2,$07,$77,$0A,$78,$05,$DD,$07,$9C,$02,$D9; RAW DATA : 	next "먹이를 잡기위해서이다"
+	dex
+ENDC
 
 _NidorinoDexEntry::
-	text "An aggressive"
-	next "#MON that is"
-	next "quick to attack."
-
-	page "The horn on its"
-	next "head secretes a"
-	next "powerful venom"
+IF DEF(_RED) || DEF(_GREEN)
+	text $0A,$AD,$04,$36,$7F,$07,$AF,$02,$4B,$02,$C2,$7F,$05,$EA,$01,$3D; RAW DATA : 	text "화를 잘내는 성격"
+	next $04,$DF,$02,$DE,$0A,$71,$7F,$05,$A4,$07,$8B,$7F,$0A,$D6,$03,$31,$03,$DF,$05,$DD; RAW DATA : 	next "발달한 뿔을 휘둘러서"
+	next $02,$D9,$07,$9C,$06,$C6,$04,$93,$03,$45,$03,$15,$7F,$02,$17,$03,$A5,$06,$EE,$7F,$04,$F6,$04,$40,$02,$D9; RAW DATA : 	next "다이아몬드도 꿰뚫어 버린다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $01,$AD,$04,$E6,$7F,$0A,$AD,$04,$36,$7F,$02,$4B,$04,$87,$7F,$06,$6E,$07,$4C,$03,$F1,$7F,$03,$47,$02,$D9; RAW DATA : 	text "금방 화를 내며 싸우려 든다"
+	next $01,$34,$02,$D9,$01,$01,$7F,$04,$73,$04,$3E,$07,$97,$7F,$05,$A4,$07,$8A,$7F,$08,$91,$04,$3E,$04,$89; RAW DATA : 	next "게다가 머리의 뿔은 찔리면"
+	next $01,$0D,$03,$F4,$0A,$71,$7F,$03,$16,$06,$02,$04,$36,$7F,$02,$4B,$02,$C2,$7F,$01,$88,$07,$E6,$07,$9C,$02,$D9; RAW DATA : 	next "강렬한 독소를 내는 구조이다"
+	dex
+ENDC
+
 
 _NidorinaDexEntry::
-	text "The female's horn"
-	next "develops slowly."
-	next "Prefers physical"
-
-	page "attacks such as"
-	next "clawing and"
-	next "biting"
+IF DEF(_RED) || DEF(_GREEN)
+	text $06,$CF,$09,$26,$07,$88,$03,$FE,$7F,$05,$EA,$01,$3D,$07,$8A,$7F,$07,$22,$0A,$AD,$0A,$6F,$02,$D9; RAW DATA : 	text "암컷으로 성격은 온화하다"
+	next $07,$A4,$07,$01,$05,$DD,$7F,$02,$4B,$05,$18,$02,$4B,$02,$C2,$7F,$08,$CA,$07,$8D,$09,$F4,$02,$C2,$7F; RAW DATA : 	next "입에서 내보내는 초음파는 "
+	next $05,$C3,$02,$EB,$04,$36,$7F,$0A,$A5,$03,$C5,$06,$63,$09,$80,$02,$C2,$7F,$0A,$FB,$07,$9C,$7F,$07,$A6,$02,$D9; RAW DATA : 	next "상대를 혼란시키는 힘이 있다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $06,$CF,$09,$26,$07,$9C,$03,$C3,$05,$DD,$7F,$05,$A4,$07,$97,$7F,$05,$EA,$07,$B5,$07,$9C,$7F,$02,$CA,$02,$D9; RAW DATA : 	text "암컷이라서 뿔의 성장이 늦다"
+	next $0A,$72,$09,$6B,$01,$25,$02,$3A,$7F,$04,$B0,$01,$25,$02,$3A,$7F,$0A,$6F,$02,$C2,$7F; RAW DATA : 	next "할퀴거나 물거나 하는 "
+	next $07,$80,$09,$8A,$07,$CC,$07,$8B,$7F,$07,$F1,$06,$C6,$0A,$71,$02,$D9; RAW DATA : 	next "육탄전을 좋아한다"
+	dex
+ENDC
 
 _GeodudeDexEntry::
-	text "Found in fields"
-	next "and mountains."
-	next "Mistaking them"
-
-	page "for boulders,"
-	next "people often step"
-	next "or trip on them"
+IF DEF(_RED) || DEF(_GREEN)
+	text $03,$35,$01,$AB,$01,$4D,$7F,$08,$13,$01,$B2,$7F,$06,$3C,$07,$66,$7F,$05,$C3,$02,$EB,$04,$E6,$07,$01,$01,$34; RAW DATA : 	text "둥글고 쥐기 쉬워 상대방에게"
+	next $02,$F8,$07,$DE,$7F,$05,$2E,$03,$6A,$0A,$FA,$7F,$06,$26,$7F,$07,$A6,$02,$D9,$7F; RAW DATA : 	next "던져 부딪힐 수 있다 "
+	next $01,$EF,$04,$46,$03,$19,$7F,$03,$19,$06,$6E,$07,$62,$07,$9C,$7F,$01,$01,$02,$C9,$0A,$6F,$02,$D9; RAW DATA : 	next "꼬마돌 돌싸움이 가능하다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $08,$CA,$07,$68,$07,$9C,$02,$3A,$7F,$05,$BA,$07,$01,$7F,$05,$DD,$06,$64,$0A,$71,$02,$D9,$7F,$03,$19,$04,$86,$07,$9C,$07,$2D; RAW DATA : 	text "초원이나 산에 서식한다 돌멩이와"
+	next $02,$E0,$07,$8A,$7F,$09,$8F,$07,$01,$7F,$06,$CB,$06,$C6,$08,$A4,$08,$26,$7F,$04,$98,$0A,$6F,$01,$4D,$7F,$04,$E2,$01,$25; RAW DATA : 	next "닮은 탓에 알아채지 못하고 밟거"
+	next $02,$3A,$7F,$04,$DF,$07,$9C,$7F,$01,$29,$03,$F1,$7F,$02,$71,$06,$EE,$08,$26,$01,$B2,$03,$15,$7F,$0A,$71,$02,$D9; RAW DATA : 	next "나 발이 걸려 넘어지기도 한다"
+	dex
+ENDC
 
 _PorygonDexEntry::
-	text "A #MON that"
-	next "consists entirely"
-	next "of programming"
-
-	page "code. Capable of"
-	next "moving freely in"
-	next "cyberspace"
+IF DEF(_RED) || DEF(_GREEN)
+	text $08,$D6,$01,$0D,$07,$97,$7F,$01,$6A,$0A,$70,$7F,$01,$B2,$06,$2A,$07,$8B,$7F,$07,$9C,$07,$4B,$0A,$6F,$07,$09; RAW DATA : 	text "최강의 과학 기술을 이용하여"
+	next $01,$41,$01,$89,$7F,$07,$9E,$01,$68,$7F,$0A,$27,$09,$2F,$04,$93,$07,$8B,$7F,$04,$48,$03,$45,$02,$C2; RAW DATA : 	next "결국 인공 포켓몬을 만드는"
+	next $03,$05,$7F,$05,$EA,$01,$68,$0A,$6F,$07,$14,$02,$D9; RAW DATA : 	next "데 성공하였다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $04,$96,$07,$9C,$7F,$0A,$61,$03,$FE,$01,$A7,$03,$D5,$07,$88,$03,$FE,$7F,$07,$9C,$04,$17,$06,$EE,$07,$DE,$7F,$07,$A6,$02,$D9; RAW DATA : 	text "몸이 프로그램으로 이루어져 있다"
+	next $07,$CC,$07,$AA,$01,$68,$01,$03,$07,$8B,$7F,$07,$AA,$07,$7F,$07,$AA,$07,$B7,$03,$FE,$7F,$07,$9C,$03,$1F,$0A,$72,$7F,$06,$26; RAW DATA : 	next "전자공간을 자유자재로 이동할 수"
+	next $07,$A6,$02,$C2,$7F,$02,$C9,$03,$F2,$07,$8B,$7F,$08,$26,$02,$86,$02,$D9; RAW DATA : 	next "있는 능력을 지녔다"
+	dex
+ENDC
 
 _AerodactylDexEntry::
-	text "A ferocious, pre-"
-	next "historic #MON"
-	next "that goes for the"
-
-	page "enemy's throat"
-	next "with its serrated"
-	next "saw-like fangs"
+IF DEF(_RED) || DEF(_GREEN)
+	text $0A,$A3,$04,$DA,$07,$01,$7F,$02,$42,$06,$C6,$7F,$07,$A6,$02,$F8,$7F,$01,$68,$04,$16,$07,$97; RAW DATA : 	text "호박에 남아 있던 공룡의"
+	next $07,$7F,$07,$CC,$07,$AA,$07,$01,$05,$DD,$7F,$05,$2E,$0A,$B0,$06,$63,$09,$37,$02,$D9; RAW DATA : 	next "유전자에서 부활시켰다"
+	next $02,$94,$07,$8A,$7F,$06,$02,$04,$3E,$03,$FE,$7F,$07,$4F,$04,$87,$02,$3D,$02,$D9; RAW DATA : 	next "높은 소리로 울며난다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $09,$B9,$7F,$01,$10,$07,$8A,$7F,$07,$9C,$05,$71,$03,$FE,$7F,$05,$C3,$02,$EB,$07,$97,$7F,$04,$91,$02,$FA,$04,$CC,$04,$36; RAW DATA : 	text "톱 같은 이빨로 상대의 목덜미를"
+	next $04,$B0,$06,$EE,$03,$B2,$06,$EE,$04,$F6,$04,$40,$02,$D9; RAW DATA : 	next "물어뜯어버린다"
+	next $0A,$27,$06,$C7,$0A,$71,$7F,$01,$4D,$02,$EB,$07,$97,$7F,$0A,$27,$09,$2F,$04,$93,$07,$9C,$02,$D9; RAW DATA : 	next "포악한 고대의 포켓몬이다"
+	dex
+ENDC
+
 
 _MagnemiteDexEntry::
-	text "Uses anti-gravity"
-	next "to stay suspended."
-	next "Appears without"
-
-	page "warning and uses"
-	next "THUNDER WAVE and"
-	next "similar moves"
+IF DEF(_RED) || DEF(_GREEN)
+	text $01,$68,$08,$0F,$07,$01,$7F,$03,$B1,$7F,$08,$A4,$03,$FE,$7F,$07,$9C,$03,$1F,$0A,$6F,$07,$09; RAW DATA : 	text "공중에 뜬 채로 이동하여"
+	next $07,$F2,$07,$4C,$07,$97,$7F,$07,$7F,$02,$D6,$07,$01,$05,$DD; RAW DATA : 	next "좌우의 유닛에서"
+	next $07,$CC,$01,$B2,$07,$AA,$05,$DE,$09,$F4,$04,$36,$7F,$04,$E6,$05,$B7,$0A,$71,$02,$D9; RAW DATA : 	next "전기자석파를 방사한다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $04,$DD,$08,$0F,$03,$F2,$07,$88,$03,$FE,$7F,$03,$AF,$02,$C2,$7F,$01,$2D,$7F,$01,$10,$02,$D9; RAW DATA : 	text "반중력으로 뜨는 것 같다"
+	next $02,$3D,$03,$05,$06,$F8,$07,$9C,$7F,$02,$3A,$09,$88,$02,$3A,$05,$DD; RAW DATA : 	next "난데없이 나타나서"
+	next $07,$CC,$07,$AA,$09,$F4,$7F,$03,$4E,$07,$8B,$7F,$04,$E6,$08,$E2,$0A,$71,$02,$D9; RAW DATA : 	next "전자파 등을 방출한다"
+	dex
+ENDC
 
 _CharmanderDexEntry::
-	text "Obviously prefers"
-	next "hot places. When"
-	next "it rains, steam"
-
-	page "is said to spout"
-	next "from the tip of"
-	next "its tail"
+IF DEF(_RED) || DEF(_GREEN)
+	text $09,$92,$06,$EE,$02,$3F,$7F,$03,$77,$05,$2E,$09,$9D,$7F,$01,$EF,$04,$3E,$07,$97,$7F,$05,$32,$01,$F9,$07,$9C,$7F; RAW DATA : 	text "태어날 때부터 꼬리의 불꽃이 "
+	next $09,$88,$07,$20,$04,$33,$01,$4D,$7F,$07,$A6,$02,$D9,$7F,$05,$32,$01,$F9,$07,$9C,$7F,$01,$D8,$08,$26,$04,$89,$7F; RAW DATA : 	next "타오르고 있다 불꽃이 꺼지면 "
+	next $01,$A7,$7F,$05,$CD,$04,$8D,$07,$9C,$7F,$02,$D9,$0A,$6F,$01,$4D,$7F,$04,$48,$02,$D9; RAW DATA : 	next "그 생명이 다하고 만다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $03,$AF,$01,$25,$07,$4E,$7F,$01,$2D,$07,$8B,$7F,$07,$F1,$06,$C6,$0A,$6F,$02,$C2,$7F,$05,$EA,$01,$3D; RAW DATA : 	text "뜨거운 것을 좋아하는 성격"
+	next $05,$61,$07,$01,$07,$D5,$07,$88,$04,$89,$7F,$01,$EF,$04,$3E,$7F,$02,$31,$07,$01,$05,$DD; RAW DATA : 	next "비에젖으면 꼬리 끝에서"
+	next $07,$0C,$01,$B2,$01,$01,$7F,$02,$3A,$07,$20,$02,$C2,$7F,$03,$4D,$0A,$6F,$02,$D9; RAW DATA : 	next "연기가 나오는 듯하다"
+	dex
+ENDC
 
 _SquirtleDexEntry::
-	text "After birth, its"
-	next "back swells and"
-	next "hardens into a"
-
-	page "shell. Powerfully"
-	next "sprays foam from"
-	next "its mouth"
+IF DEF(_RED) || DEF(_GREEN)
+	text $09,$92,$06,$EE,$02,$3D,$7F,$0A,$C4,$7F,$03,$4E,$07,$9C,$7F,$05,$2E,$0A,$3E,$06,$EE; RAW DATA : 	text "태어난 후 등이 부풀어"
+	next $02,$DC,$02,$DC,$0A,$71,$7F,$03,$4E,$01,$DE,$08,$2A,$07,$9C,$7F,$03,$28,$02,$D9; RAW DATA : 	next "단단한 등껍질이 된다"
+	next $07,$A4,$07,$01,$05,$DD,$7F,$01,$0D,$03,$F2,$0A,$71,$7F,$01,$25,$0A,$40,$07,$8B,$7F,$02,$4D,$02,$D9; RAW DATA : 	next "입에서 강력한 거품을 낸다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $01,$B4,$7F,$04,$91,$07,$8B,$7F,$03,$4E,$01,$DE,$08,$2A,$7F,$06,$C8,$07,$01; RAW DATA : 	text "긴 목을 등껍질 안에"
+	next $07,$62,$08,$DF,$04,$41,$7F,$03,$77,$7F,$01,$0D,$0A,$71; RAW DATA : 	next "움추릴 때 강한"
+	next $04,$B0,$02,$EB,$0A,$27,$04,$36,$7F,$04,$DF,$05,$B7,$0A,$71,$02,$D9; RAW DATA : 	next "물대포를 발사한다"
+	dex
+ENDC
 
 _CharmeleonDexEntry::
-	text "When it swings"
-	next "its burning tail,"
-	next "it elevates the"
-
-	page "temperature to"
-	next "unbearably high"
-	next "levels"
+IF DEF(_RED) || DEF(_GREEN)
+	text $01,$EF,$04,$3E,$04,$36,$7F,$0A,$D6,$03,$31,$03,$DF,$7F,$05,$C3,$02,$EB,$04,$36,$7F; RAW DATA : 	text "꼬리를 휘둘러 상대를 "
+	next $06,$B2,$03,$DF,$09,$DE,$04,$3E,$01,$4D,$7F,$02,$3F,$09,$0B,$03,$FE,$07,$4E,$7F,$04,$DF,$09,$B9,$07,$88,$03,$FE; RAW DATA : 	next "쓰러트리고 날카로운 발톱으로"
+	next $01,$05,$01,$B2,$01,$05,$01,$B2,$7F,$08,$95,$06,$EE,$04,$F6,$04,$40,$02,$D9; RAW DATA : 	next "갈기갈기 찢어버린다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $05,$32,$09,$88,$02,$C2,$7F,$01,$EF,$04,$3E,$04,$36,$7F,$0A,$D6,$03,$2E,$04,$33,$04,$89; RAW DATA : 	text "불타는 꼬리를 휘두르면"
+	next $08,$06,$07,$77,$07,$97,$7F,$07,$22,$03,$15,$01,$01,$7F,$07,$D1,$07,$D1,$7F,$07,$23,$03,$C3,$01,$01; RAW DATA : 	next "주위의 온도가 점점 올라가"
+	next $05,$C3,$02,$EB,$04,$36,$7F,$01,$7B,$04,$03,$01,$34,$7F,$0A,$71,$02,$D9; RAW DATA : 	next "상대를 괴롭게 한다"
+	dex
+ENDC
 
 _WartortleDexEntry::
-	text "Often hides in"
-	next "water to stalk"
-	next "unwary prey. For"
-
-	page "swimming fast, it"
-	next "moves its ears to"
-	next "maintain balance"
+IF DEF(_RED) || DEF(_GREEN)
+	text $07,$AA,$08,$06,$7F,$06,$26,$08,$0F,$07,$01,$7F,$06,$2B,$06,$EE,$7F,$04,$74,$07,$9C,$04,$36,$7F,$02,$8B,$04,$40,$02,$D9; RAW DATA : 	text "자주 수중에 숨어 먹이를 노린다"
+	next $05,$6C,$04,$33,$01,$34,$7F,$0A,$8C,$06,$F6,$09,$05,$7F,$03,$77,$7F,$01,$9D,$04,$36,$7F,$07,$62,$08,$27,$07,$09; RAW DATA : 	next "빠르게 헤엄칠 때 귀를 움직여"
+	next $01,$A5,$0A,$9C,$07,$8B,$7F,$04,$62,$08,$E1,$02,$D9; RAW DATA : 	next "균형을 맞춘다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $06,$D6,$07,$2F,$03,$1F,$04,$B0,$07,$88,$03,$FE,$05,$DD,$7F,$07,$9E,$01,$B2,$01,$01,$7F,$02,$94,$02,$D9,$7F; RAW DATA : 	text "애완동물으로서 인기가 높다 "
+	next $03,$97,$7F,$09,$A0,$03,$FE,$7F,$01,$08,$06,$6E,$08,$28,$7F,$01,$EF,$04,$3E,$02,$C2; RAW DATA : 	next "또 털로 감싸진 꼬리는"
+	next $07,$B5,$06,$26,$07,$97,$7F,$05,$C3,$08,$31,$07,$9C,$02,$D9; RAW DATA : 	next "장수의 상징이다"
+	dex
+ENDC
 
 _CharizardDexEntry::
-	text "Spits fire that"
-	next "is hot enough to"
-	next "melt boulders."
-
-	page "Known to cause"
-	next "forest fires"
-	next "unintentionally"
+IF DEF(_RED) || DEF(_GREEN)
+	text $08,$26,$05,$C3,$7F,$F7,$FA,$F6,$F6,$04,$CC,$09,$9D,$01,$BE,$08,$26,$7F,$02,$3F,$01,$13,$04,$36; RAW DATA : 	text "지상 1400미터까지 날개를"
+	next $05,$B7,$07,$4B,$0A,$78,$7F,$02,$3A,$02,$C2,$7F,$01,$2D,$07,$9C,$7F,$01,$01,$02,$C9,$0A,$6F,$02,$D9; RAW DATA : 	next "사용해 나는 것이 가능하다"
+	next $01,$4D,$07,$0D,$07,$97,$7F,$05,$32,$01,$F9,$07,$8B,$7F,$02,$4B,$05,$A5,$02,$C2,$02,$D9; RAW DATA : 	next "고열의 불꽃을 내뿜는다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $06,$CF,$05,$DE,$03,$15,$7F,$09,$92,$07,$4F,$7F,$07,$D4,$03,$15,$07,$9E; RAW DATA : 	text "암석도 태울 정도인"
+	next $07,$AB,$07,$0D,$07,$97,$7F,$05,$32,$01,$F9,$07,$8B,$7F,$02,$4B,$05,$DD; RAW DATA : 	next "작열의 불꽃을 내서"
+	next $05,$BA,$05,$32,$07,$8B,$7F,$07,$9F,$07,$88,$09,$80,$02,$C2,$7F,$07,$9F,$07,$9C,$7F,$07,$A6,$02,$D9; RAW DATA : 	next "산불을 일으키는 일이 있다"
+	dex
+ENDC
 
 _OddishDexEntry::
-	text "During the day,"
-	next "it keeps its face"
-	next "buried in the"
-
-	page "ground. At night,"
-	next "it wanders around"
-	next "sowing its seeds"
+IF DEF(_RED) || DEF(_GREEN)
+	text $05,$10,$04,$8D,$7F,$01,$29,$06,$EE,$7F,$02,$D9,$02,$CF,$02,$C2,$7F,$03,$16,$08,$CA; RAW DATA : 	text "별명 걸어 다니는 독초"
+	next $04,$E3,$07,$9C,$7F,$03,$27,$04,$89,$7F,$F8,$01,$13,$07,$97,$7F,$05,$A1,$04,$3E,$03,$FE,$7F; RAW DATA : 	next "밤이 되면 2개의 뿌리로 "
+	next $F9,$F6,$F6,$AC,$02,$3A,$7F,$01,$28,$02,$C2,$02,$D9,$01,$4D,$7F,$0A,$71,$02,$D9; RAW DATA : 	next "300m나 걷는다고 한다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $02,$47,$07,$01,$02,$C2,$7F,$06,$F3,$01,$8C,$07,$8B,$7F,$03,$75,$07,$01,$7F,$09,$F4,$04,$AF,$01,$4D,$7F; RAW DATA : 	text "낮에는 얼굴을 땅에 파묻고 "
+	next $05,$10,$03,$FE,$7F,$07,$62,$08,$27,$07,$9C,$08,$26,$7F,$06,$CA,$02,$C2,$02,$D9,$7F,$04,$E3,$07,$9C,$7F,$03,$27,$04,$89; RAW DATA : 	next "별로 움직이지 않는다 밤이 되면"
+	next $06,$BE,$04,$36,$7F,$05,$A1,$03,$F1,$02,$EB,$04,$89,$05,$DD,$7F,$01,$29,$06,$EE,$02,$D9,$02,$D1,$02,$D9; RAW DATA : 	next "씨를 뿌려대면서 걸어다닌다"
+	dex
+ENDC
 
 _GloomDexEntry::
-	text "The fluid that"
-	next "oozes from its"
-	next "mouth isn't drool."
-
-	page "It is a nectar"
-	next "that is used to"
-	next "attract prey"
+IF DEF(_RED) || DEF(_GREEN)
+	text $06,$CF,$01,$F9,$06,$2A,$07,$9C,$7F,$02,$4B,$05,$A5,$02,$C2,$7F,$09,$9D,$04,$AB,$02,$CF,$06,$F8,$07,$9C; RAW DATA : 	text "암꽃술이 내뿜는 터무니없이"
+	next $01,$4D,$06,$E0,$0A,$71,$7F,$02,$4F,$05,$C5,$02,$C2,$7F,$F8,$AA,$AC,$06,$D5,$01,$BE,$08,$26; RAW DATA : 	next "고약한 냄새는 2km앞까지"
+	next $02,$EA,$06,$C6,$7F,$01,$BE,$04,$AB,$03,$DF,$09,$01,$01,$34,$7F,$0A,$71,$02,$D9; RAW DATA : 	next "닿아 까무러치게 한다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $07,$A4,$07,$01,$05,$DD,$7F,$02,$3A,$07,$20,$02,$C2,$7F,$06,$D7,$08,$BC,$02,$C2,$7F,$09,$07,$07,$9C; RAW DATA : 	text "입에서 나오는 액체는 침이"
+	next $06,$C6,$02,$CF,$03,$C3,$7F,$05,$B7,$06,$67,$07,$8A,$7F,$04,$74,$07,$9C,$04,$36; RAW DATA : 	next "아니라 사실은 먹이를"
+	next $07,$7F,$07,$9E,$0A,$6F,$01,$B2,$7F,$07,$77,$0A,$71,$7F,$02,$0C,$07,$9C,$02,$D9; RAW DATA : 	next "유인하기 위한 꿀이다"
+	dex
+ENDC
 
 _VileplumeDexEntry::
-	text "The larger its"
-	next "petals, the more"
-	next "toxic pollen it"
-
-	page "contains. Its big"
-	next "head is heavy and"
-	next "hard to hold up"
+IF DEF(_RED) || DEF(_GREEN)
+	text $05,$EC,$05,$C3,$07,$01,$05,$DD,$7F,$01,$01,$07,$B5,$7F,$09,$7B,$7F,$01,$F9,$07,$A9,$07,$01,$05,$DD; RAW DATA : 	text "세상에서 가장 큰 꽃잎에서"
+	next $06,$CB,$03,$E9,$04,$33,$01,$B2,$04,$36,$7F,$07,$9F,$07,$88,$09,$80,$02,$C2; RAW DATA : 	next "알레르기를 일으키는"
+	next $01,$F9,$01,$01,$04,$17,$04,$36,$7F,$0A,$F0,$05,$A1,$04,$40,$02,$D9; RAW DATA : 	next "꽃가루를 흩뿌린다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $01,$F9,$07,$A9,$07,$9C,$7F,$09,$7C,$06,$26,$03,$FF,$7F,$04,$49,$07,$8A,$7F,$01,$F9,$01,$01,$04,$17,$04,$36; RAW DATA : 	text "꽃잎이 클수록 많은 꽃가루를"
+	next $04,$48,$03,$49,$06,$EE,$7F,$02,$4B,$08,$26,$04,$48,$7F,$04,$73,$04,$3E,$01,$01,$7F,$04,$AB,$01,$25,$07,$66,$05,$DD; RAW DATA : 	next "만들어 내지만 머리가 무거워서"
+	next $08,$26,$08,$C4,$04,$F6,$04,$40,$02,$D9,$01,$4D,$7F,$0A,$71,$02,$D9; RAW DATA : 	next "지쳐버린다고 한다"
+	dex
+ENDC
 
 _BellsproutDexEntry::
-	text "A carnivorous"
-	next "#MON that traps"
-	next "and eats bugs."
-
-	page "It uses its root"
-	next "feet to soak up"
-	next "needed moisture"
+IF DEF(_RED) || DEF(_GREEN)
+	text $05,$B7,$03,$C7,$7F,$06,$F3,$01,$8C,$7F,$01,$10,$07,$8A,$7F,$05,$20,$07,$20,$04,$3E,$7F,$03,$77,$04,$AE,$07,$01; RAW DATA : 	text "사람 얼굴 같은 봉오리 때문에"
+	next $07,$CC,$05,$E3,$07,$97,$7F,$01,$F9,$7F,$04,$48,$03,$45,$03,$C3,$01,$4D,$03,$C3,$07,$97,$7F,$07,$9F,$07,$EE,$07,$9C; RAW DATA : 	next "전설의 꽃 만드라고라의 일종이"
+	next $06,$C6,$02,$D2,$01,$BE,$7F,$0A,$6F,$02,$C2,$7F,$06,$02,$04,$AE,$07,$9C,$7F,$03,$19,$01,$4D,$7F,$07,$A6,$02,$D9; RAW DATA : 	next "아닐까 하는 소문이 돌고 있다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $07,$AB,$07,$8A,$7F,$04,$FA,$03,$E9,$04,$36,$7F,$07,$B2,$06,$C6,$7F,$04,$74,$02,$C2,$02,$D9; RAW DATA : 	text "작은 벌레를 잡아 먹는다"
+	next $02,$D9,$04,$3E,$07,$97,$7F,$05,$A1,$04,$3E,$04,$36,$7F,$06,$81,$05,$DD,$7F,$06,$26,$05,$30,$07,$8B; RAW DATA : 	next "다리의 뿌리를 써서 수분을"
+	next $05,$18,$01,$AE,$0A,$6F,$01,$B2,$03,$15,$7F,$0A,$6F,$02,$C2,$7F,$04,$90,$06,$E7,$07,$9C,$02,$D9; RAW DATA : 	next "보급하기도 하는 모양이다"
+	dex
+ENDC
 
 _WeepinbellDexEntry::
-	text "It spits out"
-	next "POISONPOWDER to"
-	next "immobilize the"
-
-	page "enemy and then"
-	next "finishes it with"
-	next "a spray of ACID"
+IF DEF(_RED) || DEF(_GREEN)
+	text $07,$A9,$05,$B7,$01,$9D,$7F,$05,$2E,$05,$30,$07,$8A,$7F,$09,$0E,$02,$3F,$07,$9C,$7F,$03,$27,$06,$EE,$7F,$05,$C3,$02,$EB,$04,$36; RAW DATA : 	text "잎사귀 부분은 칼날이 되어 상대를"
+	next $05,$03,$06,$EE,$04,$F6,$04,$40,$02,$D9,$7F,$07,$A4,$07,$01,$05,$DD,$02,$C2,$7F,$04,$AB,$06,$F9,$07,$9C,$03,$47; RAW DATA : 	next "베어버린다 입에서는 무엇이든"
+	next $02,$8C,$07,$9C,$02,$C2,$7F,$06,$D7,$08,$BC,$04,$36,$7F,$05,$A5,$06,$EE,$02,$4D,$02,$D9; RAW DATA : 	next "녹이는 액체를 뿜어낸다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $07,$4C,$05,$E1,$7F,$03,$16,$01,$01,$04,$17,$04,$36,$7F,$05,$A1,$03,$F1,$7F,$05,$C3,$02,$EB,$07,$97; RAW DATA : 	text "우선 독가루를 뿌려 상대의"
+	next $07,$62,$08,$27,$07,$A3,$07,$8B,$7F,$04,$78,$08,$DF,$01,$34,$7F,$0A,$6F,$01,$4D,$7F,$02,$3A,$05,$DD; RAW DATA : 	next "움직임을 멈추게 하고 나서"
+	next $07,$4B,$0A,$78,$06,$D7,$07,$88,$03,$FE,$7F,$06,$2B,$09,$BB,$07,$8B,$7F,$02,$27,$02,$C2,$02,$D9; RAW DATA : 	next "용해액으로 숨통을 끊는다"
+	dex
+ENDC
 
 _VictreebelDexEntry::
-	text "Said to live in"
-	next "huge colonies"
-	next "deep in jungles,"
-
-	page "although no one"
-	next "has ever returned"
-	next "from there"
+IF DEF(_RED) || DEF(_GREEN)
+	text $02,$0C,$08,$B3,$03,$E3,$7F,$02,$DE,$09,$3E,$0A,$71,$7F,$0A,$82,$01,$B2,$03,$FE; RAW DATA : 	text "꿀처럼 달콤한 향기로"
+	next $08,$06,$03,$35,$07,$9C,$7F,$06,$03,$01,$BE,$08,$26,$7F,$07,$7F,$07,$9E,$0A,$6F,$07,$AA,$04,$46,$07,$AA; RAW DATA : 	next "주둥이 속까지 유인하자마자"
+	next $07,$4B,$0A,$78,$06,$D7,$07,$88,$03,$FE,$7F,$02,$8C,$07,$9E,$02,$D9; RAW DATA : 	next "용해액으로 녹인다"
 	dex
+ENDC
+IF DEF(_BLUE)
+	text $07,$D4,$01,$AB,$07,$97,$7F,$06,$C8,$08,$6A,$07,$01,$7F,$07,$4C,$08,$F7,$05,$18,$09,$DE,$04,$48; RAW DATA : 	text "정글의 안쪽에 우츠보트만"
+	next $07,$A6,$02,$C2,$7F,$08,$26,$02,$EB,$01,$01,$7F,$07,$A6,$06,$EE,$05,$DD,$7F,$0A,$71,$7F,$04,$F8,$7F,$01,$01,$04,$89; RAW DATA : 	next "있는 지대가 있어서 한 번 가면"
+	next $03,$2E,$7F,$04,$F8,$7F,$02,$D9,$06,$63,$7F,$03,$19,$06,$C6,$07,$23,$7F,$06,$26,$7F,$06,$F8,$02,$D9; RAW DATA : 	next "두 번 다시 돌아올 수 없다"
+	dex
+ENDC
 

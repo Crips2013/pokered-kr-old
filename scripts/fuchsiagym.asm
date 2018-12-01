@@ -19,9 +19,9 @@ FuchsiaGymScript_75453:
 	ret
 
 Gym5CityName:
-	db "FUCHSIA CITY@"
+	db $07,$0C,$05,$30,$0A,$AB,$06,$63,$09,$EC,$50; RAW DATA : 	db "연분홍시티@"
 Gym5LeaderName:
-	db "KOGA@"
+	db $03,$16,$06,$26,$50; RAW DATA : 	db "독수@"
 
 FuchsiaGymScript_75477:
 	xor a

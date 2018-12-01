@@ -171,7 +171,10 @@ SaveSAV:
 	jp DelayFrames
 
 NowSavingString:
-	db "Now saving...@"
+	db $0A,$27,$09,$2F,$04,$93,$7F,$03,$E9,$0A,$27,$09,$DE,$07,$01,$7F,$01,$B2,$03,$FF,$0A,$6F,$01,$4D,$7F,$07,$A6,$06,$60,$02,$CF,$02,$D9
+	next $07,$CC,$07,$68,$07,$8B,$7F,$02,$24,$08,$26,$7F,$04,$4B,$06,$C6,$08,$06,$05,$EC,$07,$44
+	done
+
 
 SaveSAVConfirm:
 	call PrintText

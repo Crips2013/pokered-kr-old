@@ -92,25 +92,25 @@ BadgeTextPointers:
 	dw EarthBadgeText
 
 EarthBadgeText:
-	db "EARTHBADGE@"
+	db $0A,$B8,$05,$C6,$7F,$04,$E8,$08,$26,$50; RAW DATA : 	db "회색 배지@"
 
 VolcanoBadgeText:
-	db "VOLCANOBADGE@"
+	db $05,$4D,$04,$17,$7F,$04,$E8,$08,$26,$50; RAW DATA : 	db "블루 배지@"
 
 MarshBadgeText:
-	db "MARSHBADGE@"
+	db $07,$20,$03,$EB,$08,$26,$7F,$04,$E8,$08,$26,$50; RAW DATA : 	db "오렌지 배지@"
 
 SoulBadgeText:
-	db "SOULBADGE@"
+	db $04,$AB,$08,$26,$01,$13,$7F,$04,$E8,$08,$26,$50; RAW DATA : 	db "무지개 배지@"
 
 RainbowBadgeText:
-	db "RAINBOWBADGE@"
+	db $0A,$6E,$09,$79,$7F,$04,$E8,$08,$26,$50; RAW DATA : 	db "핑크 배지@"
 
 ThunderBadgeText:
-	db "THUNDERBADGE@"
+	db $01,$61,$03,$45,$7F,$04,$E8,$08,$26,$50; RAW DATA : 	db "골드 배지@"
 
 CascadeBadgeText:
-	db "CASCADEBADGE@"
+	db $08,$28,$0A,$AB,$05,$C6,$7F,$04,$E8,$08,$26,$50; RAW DATA : 	db "진홍색 배지@"
 
 Route23Script_512d8:
 	ld a, $1
