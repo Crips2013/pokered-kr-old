@@ -27,6 +27,11 @@ MainMenu:
 	call RunDefaultPaletteCommand
 	call LoadTextBoxTilePatterns
 	call LoadFontTilePatterns
+	
+	coord hl, 1, 10
+	ld de,BetatestText
+	call PlaceString
+	
 	ld hl, wd730
 	set 6, [hl]
 	ld a, [wSaveFileStatus]
@@ -340,6 +345,12 @@ SpecialEnterMap:
 	and a
 	ret nz
 	jp EnterMap
+BetatestText:
+	db $50
+		; db "저는 드디어 케이네 코스프레를" next"할수 있게 되었습니다"
+	db $07, $CA, $02, $C2, " ", $03, $45, $03, $60, $06, $EE, " ", $09, $29, $07, $9C, $02, $77, " ", $09, $3A, $06, $4A, $0A, $61, $03, $E9, $04, $36, "" 
+	next"", $0A, $72, $06, $26, " ", $07, $A6, $01, $34, " ", $03, $27, $06, $FA, $06, $60, $02, $CF, $02, $D9, $50
+
 
 ContinueText:
 	db $04,$90,$0A,$88,$07,$8B,$7F,$01,$48,$06,$03,$0A,$6F,$02,$D9,$4e

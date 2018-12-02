@@ -31,14 +31,19 @@ _ViridianMartText3::
 
 ELSE
 _ViridianMartText2::
-	text "This shop sells"
-	line "many ANTIDOTEs."
+	; text "이 프렌들리 숍에서는"
+	text $07, $9C, " ", $0A, $61, $03, $EB, $03, $49, $04, $3E, " ", $06, $23, $07, $01, $05, $DD, $02, $C2
+	; line "많은 해독제들을 팔고 있어"
+	line $04, $49, $07, $8A, " ", $0A, $78, $03, $16, $07, $D6, $03, $49, $07, $8B, " ", $09, $F8, $01, $4D, " ", $07, $A6, $06, $EE
 	done
 
 _ViridianMartText3::
-	text "No! POTIONs are"
-	line "all sold out."
+	; text "안 되! 상처약은"
+	text $06, $C8, " ", $03, $27, $0B, $66, " ", $05, $C3, $08, $B3, $06, $E0, $07, $8A
+	; line "매진되었어!"
+	line $04, $65, $08, $28, $03, $27, $06, $FA, $06, $EE, $0B, $66
 	done
+
 
 ENDC
 

@@ -79,25 +79,36 @@ _OaksLabBulbasaurText::
 	done
 
 _OaksLabMonEnergeticText::
-	text "This #MON is"
-	line "really energetic!"
-	prompt
+	; text "이 포켓몬은"
+	text $07, $9C, " ", $0A, $27, $09, $2F, $04, $93, $07, $8A
+	; line "매우 건강해 보인다!"
+	line $04, $65, $07, $4C, " ", $01, $27, $01, $0D, $0A, $78, " ", $05, $18, $07, $9E, $02, $D9, $0B, $66
+
+
 
 _OaksLabReceivedMonText::
-	text "<PLAYER> received"
-	line "a @"
+	; text "<PLAYER>는(은)"
+	text "<PLAYER>", $02, $C2, $0B, $64, $07, $8A, $0B, $65
+	; line "@"
+	line "@"
 	TX_RAM wcd6d
-	text "!@@"
+	; text "를(을) 받았다!@@"
+	text $04, $36, $0B, $64, $07, $8B, $0B, $65, " ", $04, $DE, $06, $D2, $02, $D9, $0B, $66, "@@"
 
 _OaksLabLastMonText::
-	text "That's PROF.OAK's"
-	line "last #MON!"
+	; text "오박사의 하나남은"
+	text $07, $20, $04, $DA, $05, $B7, $07, $97, " ", $0A, $6F, $02, $3A, $02, $42, $07, $8A
+	; line "포켓몬이다!"
+	line $0A, $27, $09, $2F, $04, $93, $07, $9C, $02, $D9, $0B, $66
+
 	done
 
 _OaksLabText_1d2f0::
-	text "OAK: Now, <PLAYER>,"
-	line "which #MON do"
-	cont "you want?"
+	; text "오박사『그래 <PLAYER>"
+	text $07, $20, $04, $DA, $05, $B7, $0B, $62, $01, $A7, $03, $D1, " <PLAYER>"
+	; line "어떤 포켓몬을 원하느냐?"
+	line $06, $EE, $03, $82, " ", $0A, $27, $09, $2F, $04, $93, $07, $8B, " ", $07, $68, $0A, $6F, $02, $C0, $02, $64, $0B, $67
+
 	done
 ENDC
 _OaksLabText_1d2f5::
@@ -114,10 +125,11 @@ IF DEF(_YELLOW)
 	text $07,$20,$04,$DA,$05,$B7,$0B,$62,$0A,$71,$04,$F8,$7F,$04,$4B,$07,$8B,$7F,$01,$29,$06,$EE,$05,$21,$05,$DD; RAW DATA : 	text "오박사『한번 말을 걸어봐서"
 	line $01,$B2,$05,$30,$07,$9C,$7F,$06,$EE,$03,$82,$08,$26,$7F,$0A,$AE,$07,$9E,$0A,$78,$05,$18,$03,$F5; RAW DATA : 	line "기분이 어떤지 확인해보렴"
 ELSE
-	text "OAK: <PLAYER>,"
-	line "raise your young"
-	cont "#MON by making"
-	cont "it fight!"
+	; text "오박사『<PLAYER> 싸움을 통해"
+	text $07, $20, $04, $DA, $05, $B7, $0B, $62, "<PLAYER> ", $06, $6E, $07, $62, $07, $8B, " ", $09, $BB, $0A, $78
+	; line "어린 포켓몬을 육성하려무나!"
+	line $06, $EE, $04, $40, " ", $0A, $27, $09, $2F, $04, $93, $07, $8B, " ", $07, $80, $05, $EA, $0A, $6F, $03, $F1, $04, $AB, $02, $3A, $0B, $66
+
 
 ENDC
 	done
@@ -227,9 +239,11 @@ _OaksLabText_1d340::
 	done
 
 _OaksLabRivalWaitingText::
-	text "<RIVAL>: Gramps!"
-	line "I'm fed up with"
-	cont "waiting!"
+	; text "<RIVAL>『으악!"
+	text "<RIVAL>", $0B, $62, $07, $88, $06, $C7, $0B, $66
+	; line "기다리는거 지겨워!"
+	line $01, $B2, $02, $D9, $04, $3E, $02, $C2, $01, $25, " ", $08, $26, $01, $3C, $07, $66, $0B, $66
+
 	done
 
 _OaksLabChooseMonText::
@@ -253,31 +267,48 @@ IF DEF(_YELLOW)
 	para $07,$9C,$07,$D6,$7F,$07,$CA,$01,$27,$7F,$02,$77,$7F,$01,$2D,$07,$9C,$03,$C5,$02,$D9,$0B,$66; RAW DATA : 	para "이제 저건 네 것이란다!"
 	line $05,$B7,$06,$E7,$0A,$6F,$08,$26,$04,$4B,$01,$4D,$7F,$01,$01,$08,$26,$03,$F5,$0B,$66; RAW DATA : 	line "사양하지말고 가지렴!"
 ELSE
-	text "OAK: <RIVAL>?"
-	line "Let me think..."
+	; text "오박사『<RIVAL>?"
+	text $07, $20, $04, $DA, $05, $B7, $0B, $62, "<RIVAL>", $0B, $67
+	; line "…… …… ……"
+	line $0B, $6A, $0B, $6A, " ", $0B, $6A, $0B, $6A, " ", $0B, $6A, $0B, $6A
 
-	para "Oh, that's right,"
-	line "I told you to"
-	cont "come! Just wait!"
+	; para "오오 그렇구나"
+	para $07, $20, $07, $20, " ", $01, $A7, $03, $E8, $01, $88, $02, $3A
+	; line "내가 불렀었지!"
+	line $02, $4B, $01, $01, " ", $05, $32, $03, $E6, $06, $FA, $08, $26, $0B, $66
+	; cont "잠시 기다려라!"
+	cont $07, $B1, $06, $63, " ", $01, $B2, $02, $D9, $03, $F1, $03, $C3, $0B, $66
+	
+	; para "자 <PLAYER>!"
+	para $07, $AA, " <PLAYER>", $0B, $66
 
-	para "Here, <PLAYER>!"
+	; para "여기에 3마리"
+	para $07, $09, $01, $B2, $07, $01, " 3", $04, $46, $04, $3E
+	; line "포켓몬이 있단다!"
+	line $0A, $27, $09, $2F, $04, $93, $07, $9C, " ", $07, $A6, $02, $DC, $02, $D9, $0B, $66
 
-	para "There are 3"
-	line "#MON here!"
+	; para "하하!"
+	para $0A, $6F, $0A, $6F, $0B, $66
 
-	para "Haha!"
+	; para "몬스터 볼 안에"
+	para $04, $93, $06, $4A, $09, $9D, " ", $05, $1C, " ", $06, $C8, $07, $01
+	; line "포켓몬이 들어있지"
+	line $0A, $27, $09, $2F, $04, $93, $07, $9C, " ", $03, $49, $06, $EE, $07, $A6, $08, $26
 
-	para "They are inside"
-	line "the # BALLs."
+	; para "옛날에는 나도 만만치 않은"
+	para $07, $1E, $02, $3F, $07, $01, $02, $C2, " ", $02, $3A, $03, $15, " ", $04, $48, $04, $48, $09, $01, " ", $06, $CA, $07, $8A
+	; line "포켓몬 트레이너로서 활약했단다"
+	line $0A, $27, $09, $2F, $04, $93, " ", $09, $DE, $03, $E9, $07, $9C, $02, $6A, $03, $FE, $05, $DD, " ", $0A, $B0, $06, $E0, $0A, $7F, $02, $DC, $02, $D9
+	
+	; para "늙어서 지금은 포켓몬도"
+	para $02, $C4, $06, $EE, $05, $DD, " ", $08, $26, $01, $AD, $07, $8A, " ", $0A, $27, $09, $2F, $04, $93, $03, $15
+	; line "3마리 밖에 남지 않았구나"
+	line "3", $04, $46, $04, $3E, " ", $04, $DB, $07, $01, " ", $02, $42, $08, $26, " ", $06, $CA, $06, $D2, $01, $88, $02, $3A
+	; cont "너에게 1마리를 주마"
+	cont $02, $6A, $07, $01, $01, $34, " 1", $04, $46, $04, $3E, $04, $36, " ", $08, $06, $04, $46
+	; cont "…자 고르거라!"
+	cont $0B, $6A, $07, $AA, " ", $01, $4D, $04, $33, $01, $25, $03, $C3, $0B, $66
 
-	para "When I was young,"
-	line "I was a serious"
-	cont "#MON trainer!"
-
-	para "In my old age, I"
-	line "have only 3 left,"
-	cont "but you can have"
-	cont "one! Choose!"
 ENDC
 	done
 _OaksLabRivalInterjectionText::
@@ -290,9 +321,11 @@ IF DEF(_YELLOW)
 	text $07,$20,$04,$DA,$05,$B7,$0B,$62,$07,$EB,$7F,$01,$B2,$02,$D9,$04,$3E,$03,$F5; RAW DATA : 	text "오박사『좀 기다리렴"
 	line $53, $7F,$02,$77,$7F,$01,$2D,$03,$15,$7F,$07,$A6,$02,$DC,$02,$D9; RAW DATA : 	line $53, " 네 것도 있단다"
 ELSE
-	text "OAK: Be patient!"
-	line "<RIVAL>, you can"
-	cont "have one too!"
+	; text "오박사『그렇게 서두르지 마렴"
+	text $07, $20, $04, $DA, $05, $B7, $0B, $62, $01, $A7, $03, $E8, $01, $34, " ", $05, $DD, $03, $2E, $04, $33, $08, $26, " ", $04, $46, $03, $F5
+	; line "<RIVAL> 네 것도 있단다"
+	line "<RIVAL> ", $02, $77, " ", $01, $2D, $03, $15, " ", $07, $A6, $02, $DC, $02, $D9
+
 ENDC
 	done
 IF DEF(_YELLOW)
@@ -350,15 +383,16 @@ ELSE
 
 
 _OaksLabRivalPickingMonText::
-	text "<RIVAL>: I'll take"
-	line "this one, then!"
+	; text "<RIVAL>『그럼 난 이거!"
+	text "<RIVAL>", $0B, $62, $01, $A7, $03, $E3, " ", $02, $3D, " ", $07, $9C, $01, $25, $0B, $66
+
 	done
 
 _OaksLabRivalReceivedMonText::
-	text "<RIVAL> received"
-	line "a @"
+	text "<RIVAL>",$02,$C2,$0B,$64,$07,$8A,$0B,$65; RAW DATA : 	text "<RIVAL>는(은)"
+	line "@"
 	TX_RAM wcd6d
-	text "!@@"
+	text $04,$36,$0B,$64,$07,$8B,$0B,$65,$7F,$04,$DE,$06,$D2,$02,$D9,$0B,$66,$50,$50; RAW DATA : 	text "를(을) 받았다!@@"
 ENDC
 _OaksLabLeavingText::
 	text $07,$20,$04,$DA,$05,$B7,$0B,$62,$07,$B1,$01,$C1,$0B,$66; RAW DATA : 	text "오박사『잠깐!"
@@ -429,8 +463,11 @@ IF DEF(_YELLOW)
 	line $02,$4B,$7F,$0A,$27,$09,$2F,$04,$93,$07,$EB,$7F,$05,$21,$05,$21,$0B,$66; RAW DATA : 	line "내 포켓몬좀 봐봐!"
 	cont $0A,$CE,$06,$C0,$7F,$02,$F5,$7F,$01,$0D,$0A,$78,$07,$E3,$06,$EE,$0B,$66; RAW DATA : 	cont "훨씬 더 강해졌어!"
 ELSE
-	text "<RIVAL>: What did"
-	line "you call me for?"
+	; text "<RIVAL>『완전히 잊고있었어!"
+	text "<RIVAL>", $0B, $62, $07, $2F, $07, $CC, $0A, $F7, " ", $07, $A8, $01, $4D, $07, $A6, $06, $FA, $06, $EE, $0B, $66
+	; line "무슨 일이야?"
+	line $04, $AB, $06, $4C, " ", $07, $9F, $07, $9C, $06, $DF, $0B, $67
+
 ENDC
 	done
 
@@ -444,9 +481,11 @@ IF DEF(_YELLOW)
 	para $02,$6A,$0A,$F1,$7F,$03,$31,$07,$01,$01,$34,$7F,$05,$2E,$09,$89,$0A,$6F,$01,$4D; RAW DATA : 	para "너희 둘에게 부탁하고"
 	line $06,$6D,$07,$8A,$01,$34,$7F,$07,$A6,$06,$FA,$01,$25,$03,$47,$0B,$66; RAW DATA : 	line "싶은게 있었거든!"
 ELSE
-	text "OAK: Oh right! I"
-	line "have a request"
-	cont "of you two."
+	; text "오박사『오오 그렇지"
+	text $07, $20, $04, $DA, $05, $B7, $0B, $62, $07, $20, $07, $20, " ", $01, $A7, $03, $E8, $08, $26
+	; line "너희들에게 부탁이 있단다"
+	line $02, $6A, $0A, $F1, $03, $49, $07, $01, $01, $34, " ", $05, $2E, $09, $89, $07, $9C, " ", $07, $A6, $02, $DC, $02, $D9
+
 ENDC
 	done
 
@@ -518,121 +557,105 @@ ELSE
 	done
 
 _OaksLabText_441cc::
-	text "#DEX comp-"
-	line "letion is:"
+text $0A,$27,$09,$2F,$04,$93,$7F,$03,$15,$01,$08,$07,$97; RAW DATA : 	text "포켓몬 도감의"
+	line $0A,$96,$07,$B7,$7F,$07,$2F,$05,$EA,$03,$15,$0B,$6A,$0B,$6A; RAW DATA : 	line "현재 완성도……"
 
-	para "@"
+	para $04,$DF,$01,$3F,$0A,$71,$7F,$0A,$27,$09,$2F,$04,$93,$50; RAW DATA : 	para "발견한 포켓몬@"
 	TX_NUM hDexRatingNumMonsSeen, 1, 3
-	text " #MON seen"
-	line "@"
+	text $7F; RAW DATA : 	text " "
+	line $07,$B2,$07,$8A,$7F,$0A,$27,$09,$2F,$04,$93,$7F,$50; RAW DATA : 	line "잡은 포켓몬 @"
 	TX_NUM hDexRatingNumMonsOwned, 1, 3
-	text " #MON owned"
+	text $0B,$66; RAW DATA : 	text "!"
 
-	para "PROF.OAK's"
-	line "Rating:"
+	para $07,$20,$04,$DA,$05,$B7,$07,$97,$7F,$0A,$22,$01,$01,$0B,$6A,$0B,$6A; RAW DATA : 	para "오박사의 평가……"
+	line $0B,$6A,$0B,$6A,$7F,$0B,$6A,$0B,$6A,$7F,$0B,$6A,$0B,$6A; RAW DATA : 	line "…… …… ……"
 	prompt
 
 _OaksLabText_44201::
-	text "You still have"
-	line "lots to do."
-	cont "Look for #MON"
-	cont "in grassy areas!"
+	text $07,$09,$01,$B2,$07,$CA,$01,$B2,$07,$97,$7F,$0A,$3E,$06,$33,$07,$01,$7F,$03,$49,$06,$EE,$01,$01; RAW DATA : 	text "여기저기의 풀숲에 들어가"
+	line $0A,$27,$09,$2F,$04,$93,$07,$8B,$7F,$07,$B2,$02,$C2,$7F,$01,$2D,$07,$9C,$02,$D9,$0B,$66; RAW DATA : 	line "포켓몬을 잡는 것이다!"
 	done
 
+
 _OaksLabText_44206::
-	text "You're on the"
-	line "right track! "
-	cont "Get a FLASH HM"
-	cont "from my AIDE!"
+	text $0A,$C4,$07,$62,$0B,$6B,$7F,$07,$0D,$06,$69,$0A,$F7,$7F,$0A,$6F,$01,$4D,$7F,$07,$A6,$01,$8A; RAW DATA : 	text "후움, 열심히 하고 있군"
+	line $02,$4B,$7F,$07,$E6,$06,$26,$0A,$71,$09,$A7,$7F,$0A,$63,$03,$D1,$06,$63,$04,$36,$7F,$01,$01,$07,$DE,$01,$01,$03,$C3,$0B,$66; RAW DATA : 	line "내 조수한테 플래시를 가져가라!"
 	done
 
 _OaksLabText_4420b::
-	text "You still need"
-	line "more #MON!"
-	cont "Try to catch"
-	cont "other species!"
+	text $0A,$27,$09,$2F,$04,$93,$7F,$03,$15,$01,$08,$07,$88,$03,$FE,$02,$C2,$7F,$06,$C6,$08,$27; RAW DATA : 	text "포켓몬 도감으로는 아직"
+	line $06,$E7,$07,$9C,$7F,$05,$2E,$07,$E7,$0A,$78,$0B,$66,$7F,$07,$09,$03,$DF; RAW DATA : 	line "양이 부족해! 여러"
+	cont $07,$EE,$04,$29,$07,$97,$7F,$0A,$27,$09,$2F,$04,$93,$07,$8B,$7F,$07,$B2,$03,$15,$03,$FF,$7F,$0A,$6F,$01,$25,$03,$C3,$0B,$66; RAW DATA : 	cont "종류의 포켓몬을 잡도록 하거라!"
 	done
 
 _OaksLabText_44210::
-	text "Good, you're"
-	line "trying hard!"
-	cont "Get an ITEMFINDER"
-	cont "from my AIDE!"
+	text $0A,$C4,$07,$62,$0B,$6B,$7F,$07,$0D,$06,$69,$0A,$F7,$7F,$0A,$6F,$01,$4D,$7F,$07,$A6,$01,$8A; RAW DATA : 	text "후움, 열심히 하고 있군"
+	line $02,$4B,$7F,$07,$E6,$06,$26,$0A,$71,$09,$A7,$7F,$09,$8D,$08,$26,$01,$B2,$04,$36,$7F,$01,$01,$07,$DE,$01,$01,$03,$C3,$0B,$66; RAW DATA : 	line "내 조수한테 탐지기를 가져가라!"
 	done
 
 _OaksLabText_44215::
-	text "Looking good!"
-	line "Go find my AIDE"
-	cont "when you get 50!"
+	text $01,$82,$07,$B5,$0A,$6F,$01,$8A,$0B,$66; RAW DATA : 	text "굉장하군!"
+	line $FB,$F6,$07,$EE,$04,$29,$04,$36,$7F,$04,$90,$06,$D2,$07,$8B,$03,$77; RAW DATA : 	line "50종류를 모았을때"
+	cont $07,$E6,$06,$26,$0A,$71,$09,$A7,$7F,$01,$01,$05,$21,$03,$C3,$0B,$66; RAW DATA : 	cont "조수한테 가봐라!"
 	done
 
 _OaksLabText_4421a::
-	text "You finally got at"
-	line "least 50 species!"
-	cont "Be sure to get"
-	cont "EXP.ALL from my"
-	cont "AIDE!"
+	text $0A,$C4,$07,$62,$0B,$6B,$7F,$07,$0D,$06,$69,$0A,$F7,$7F,$0A,$6F,$01,$4D,$7F,$07,$A6,$01,$8A; RAW DATA : 	text "후움, 열심히 하고 있군"
+	line $02,$4B,$7F,$07,$E6,$06,$26,$0A,$71,$09,$A7,$7F,$0A,$70,$06,$60,$07,$B5,$09,$01,$04,$36,$7F,$01,$01,$07,$DE,$01,$01,$03,$C3,$0B,$66; RAW DATA : 	line "내 조수한테 학습장치를 가져가라!"
 	done
 
 _OaksLabText_4421f::
-	text "Ho! This is geting"
-	line "even better!"
+	text $0A,$14,$07,$9C,$08,$26,$03,$15,$7F,$02,$C3,$06,$EE,$02,$3D,$7F,$01,$2D,$7F,$01,$10,$01,$88,$02,$3A,$0B,$66; RAW DATA : 	text "페이지도 늘어난 것 같구나!"
+	line $01,$A7,$7F,$05,$C3,$09,$92,$03,$FE,$7F,$02,$F5,$07,$4D,$7F,$07,$0D,$06,$69,$0A,$F7,$7F,$0A,$6F,$01,$25,$03,$C3,$0B,$66; RAW DATA : 	line "그 상태로 더욱 열심히 하거라!"
 	done
 
 _OaksLabText_44224::
-	text "Very good!"
-	line "Go fish for some"
-	cont "marine #MON!"
+	text $02,$3C,$06,$6B,$02,$EB,$02,$C2,$7F,$06,$05,$07,$01,$7F,$02,$76,$06,$FA,$02,$C2,$01,$01,$0B,$67; RAW DATA : 	text "낚싯대는 손에 넣었는가?"
+	line $07,$09,$01,$B2,$07,$CA,$01,$B2,$05,$DD,$7F,$02,$3C,$06,$63,$04,$36,$7F,$0A,$71,$02,$D9,$04,$89; RAW DATA : 	line "여기저기서 낚시를 한다면"
+	cont $02,$F5,$07,$4D,$7F,$04,$49,$07,$9C,$7F,$04,$90,$07,$8B,$7F,$06,$26,$7F,$07,$A6,$02,$DC,$02,$D9,$0B,$66; RAW DATA : 	cont "더욱 많이 모을 수 있단다!"
 	done
 
 _OaksLabText_44229::
-	text "Wonderful!"
-	line "Do you like to"
-	cont "collect things?"
+	text $01,$82,$07,$B5,$0A,$6F,$01,$8A,$0B,$66; RAW DATA : 	text "굉장하군!"
+	line $02,$6A,$02,$C2,$7F,$04,$B0,$01,$27,$07,$8B,$7F,$06,$26,$08,$2D,$0A,$6F,$02,$C2,$7F,$01,$2D,$07,$8B; RAW DATA : 	line "너는 물건을 수집하는 것을"
+	cont $07,$F1,$06,$C6,$0A,$6F,$08,$26,$0B,$67; RAW DATA : 	cont "좋아하지?"
 	done
 
 _OaksLabText_4422e::
-	text "I'm impressed!"
-	line "It must have been"
-	cont "difficult to do!"
+	text $07,$2A,$0B,$66,$7F,$05,$CD,$01,$02,$0A,$78,$05,$18,$04,$89,$7F,$07,$CA,$04,$F8,$07,$01; RAW DATA : 	text "옷! 생각해보면 저번에"
+	line $07,$E6,$05,$B7,$0A,$7F,$07,$8B,$7F,$03,$77,$05,$18,$02,$D9,$03,$15; RAW DATA : 	line "조사했을 때보다도"
+	cont $04,$49,$07,$8A,$7F,$0A,$27,$09,$2F,$04,$93,$07,$9C,$7F,$04,$DF,$01,$3F,$03,$27,$06,$FA,$06,$FA,$08,$26; RAW DATA : 	cont "많은 포켓몬이 발견되었었지"
 	done
 
 _OaksLabText_44233::
-	text "You finally got at"
-	line "least 100 species!"
-	cont "I can't believe"
-	cont "how good you are!"
+	text $04,$B9,$03,$C9,$0B,$66; RAW DATA : 	text "뭐랏!"
+	line $F7,$F6,$F6,$07,$EE,$04,$29,$04,$36,$7F,$02,$71,$06,$FA,$02,$D9,$01,$4D,$0B,$66; RAW DATA : 	line "100종류를 넘었다고!"
+	cont $07,$9C,$01,$2D,$07,$8A,$7F,$02,$EB,$02,$DC,$0A,$F7,$7F,$07,$F1,$07,$8A,$7F,$03,$15,$01,$08,$07,$9C; RAW DATA : 	cont "이것은 대단히 좋은 도감이"
+	cont $03,$29,$7F,$01,$2D,$7F,$01,$10,$01,$88,$02,$3A,$0B,$66,$7F,$01,$B2,$02,$EB,$0A,$6F,$01,$3A,$02,$D9,$0B,$66; RAW DATA : 	cont "될 것 같구나! 기대하겠다!"
 	done
-
 _OaksLabText_44238::
-	text "You even have the"
-	line "evolved forms of"
-	cont "#MON! Super!"
+	text $0A,$A3,$07,$20,$0B,$66,$7F,$0A,$EF,$04,$CC,$01,$01,$7F,$05,$CD,$01,$B2,$02,$C2,$01,$88,$02,$3A,$0B,$66; RAW DATA : 	text "호오! 흥미가 생기는구나!"
+	line $07,$B2,$02,$C2,$7F,$01,$2D,$05,$A3,$04,$48,$7F,$06,$C6,$02,$CF,$03,$C3; RAW DATA : 	line "잡는 것뿐만 아니라"
+	cont $08,$28,$0A,$AD,$03,$15,$7F,$06,$63,$09,$31,$02,$95,$01,$25,$03,$C3,$0B,$66; RAW DATA : 	cont "진화도 시켜놓거라!"
 	done
 
 _OaksLabText_4423d::
-	text "Excellent! Trade"
-	line "with friends to"
-	cont "get some more!"
+	text $09,$03,$01,$88,$03,$49,$01,$6A,$7F,$01,$83,$0A,$AF,$0A,$6F,$01,$4D,$7F,$07,$A6,$02,$C2,$01,$01,$0B,$67; RAW DATA : 	text "친구들과 교환하고 있는가?"
+	line $0A,$A5,$07,$AA,$05,$DD,$02,$C2,$7F,$04,$65,$07,$4C,$7F,$0A,$FB,$03,$49,$09,$A7,$02,$CF,$01,$BE; RAW DATA : 	line "혼자서는 매우 힘들테니까"
 	done
-
 _OaksLabText_44242::
-	text "Outstanding!"
-	line "You've become a"
-	cont "real pro at this!"
+	text $07,$09,$01,$B2,$01,$BE,$08,$26,$7F,$03,$15,$01,$08,$07,$9C,$7F,$04,$48,$03,$49,$06,$EE,$07,$E3,$02,$D9,$04,$89; RAW DATA : 	text "여기까지 도감이 만들어졌다면"
+	line $07,$9C,$04,$CC,$7F,$0A,$61,$03,$FE,$07,$97,$7F,$01,$46,$08,$26,$02,$D9,$0B,$66; RAW DATA : 	line "이미 프로의 경지다!"
 	done
-
 _OaksLabText_44247::
-	text "I have nothing"
-	line "left to say!"
-	cont "You're the"
-	cont "authority now!"
+	text $02,$EB,$02,$DC,$0A,$78,$0B,$66,$7F,$04,$4B,$0A,$72,$7F,$01,$2D,$03,$15,$7F,$06,$F8,$02,$D9,$0B,$66; RAW DATA : 	text "대단해! 말할 것도 없다!"
+	line $02,$6A,$02,$C2,$7F,$0A,$27,$09,$2F,$04,$93,$7F,$04,$DA,$05,$B7,$01,$01,$7F,$03,$29,$01,$D8,$06,$DF,$0B,$66; RAW DATA : 	line "너는 포켓몬 박사가 될꺼야!"
 	done
 
 _OaksLabText_4424c::
-	text "Your #DEX is"
-	line "entirely complete!"
-	cont "Congratulations!"
+	text $07,$20,$07,$2A,$7F,$02,$0E,$07,$01,$05,$DD,$03,$15,$7F,$01,$A7,$04,$3E,$02,$F8; RAW DATA : 	text "오옷 꿈에서도 그리던"
+	line $0A,$0B,$0A,$15,$09,$DE,$0A,$71,$7F,$03,$15,$01,$08,$07,$97; RAW DATA : 	line "퍼펙트한 도감의"
+	cont $07,$2F,$05,$EA,$07,$9C,$01,$88,$02,$3A,$0B,$66,$0B,$6A,$0B,$6A,$7F,$08,$E0,$0A,$6F,$0A,$71,$02,$D9,$0B,$66; RAW DATA : 	cont "완성이구나!…… 축하한다!"
 	done
 
 ENDC

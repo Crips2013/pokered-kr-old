@@ -5,14 +5,26 @@ IF DEF(_YELLOW)
 	para $02,$6A,$02,$C2,$7F,$0A,$27,$09,$2F,$04,$93,$7F,$07,$CC,$03,$DB,$07,$8B; RAW DATA : 	para "너는 포켓몬 전략을"
 	line $06,$EE,$03,$81,$01,$34,$7F,$08,$3E,$02,$CF,$0B,$67; RAW DATA : 	line "어떡게 짰니?"	
 ELSE
-	para "Trainers who want"
-	line "to turn pro have"
-	cont "to have a policy"
-	cont "about #MON!"
+	; para "Trainers who want"
+	; line "to turn pro have"
+	; cont "to have a policy"
+	; cont "about #MON!"
 
-	para "What is your"
-	line "approach when you"
-	cont "catch #MON?"
+	; para "What is your"
+	; line "approach when you"
+	; cont "catch #MON?"
+	
+	
+	; para "프로가 되고 싶어하는 트레이너라면"
+	para $0A, $61, $03, $FE, $01, $01, " ", $03, $27, $01, $4D, " ", $06, $6D, $06, $EE, $0A, $6F, $02, $C2, " ", $09, $DE, $03, $E9, $07, $9C, $02, $6A, $03, $C3, $04, $89
+	; line "포켓몬 전략을 잘 짜야지!"
+	line $0A, $27, $09, $2F, $04, $93, " ", $07, $CC, $03, $DB, $07, $8B, " ", $07, $AF, " ", $08, $35, $06, $DF, $08, $26, $0B, $66
+
+	; para "너가 포켓몬을 잡을땐"
+	para $02, $6A, $01, $01, " ", $0A, $27, $09, $2F, $04, $93, $07, $8B, " ", $07, $B2, $07, $8B, $03, $79
+	; line "어떻게 대우해 주니?"
+	line $06, $EE, $03, $8B, $01, $34, " ", $02, $EB, $07, $4C, $0A, $78, " ", $08, $06, $02, $CF, $0B, $67
+
 ENDC
 	para $02,$4B,$7F,$04,$E6,$09,$07,$07,$8A; RAW DATA : 	para "내 방침은"
 	line $04,$B0,$09,$88,$07,$A4,$7F,$0A,$27,$09,$2F,$04,$93,$01,$6A,$7F,$0A,$74,$01,$E2,$0A,$6F,$02,$C2; RAW DATA : 	line "물타입 포켓몬과 함께하는"
@@ -62,8 +74,11 @@ IF DEF(_YELLOW)
 	text $04,$4B,$03,$15,$7F,$06,$C8,$03,$25,$0B,$66; RAW DATA : 	text "말도 안돼!"
 	line $02,$4B,$01,$01,$7F,$07,$E3,$02,$DC,$04,$4B,$07,$9C,$06,$DF,$0B,$67; RAW DATA : 	line "내가 졌단말이야?"
 ELSE
-	text "Wow!"
-	line "You're too much!"
+	; text "우와!"
+	text $07, $4C, $07, $2D, $0B, $66
+	; line "너는 너무 강해!"
+	line $02, $6A, $02, $C2, " ", $02, $6A, $04, $AB, " ", $01, $0D, $0A, $78, $0B, $66
+
 ENDC
 	para $07,$F1,$06,$C6,$0B,$66; RAW DATA : 	para "좋아!"
 

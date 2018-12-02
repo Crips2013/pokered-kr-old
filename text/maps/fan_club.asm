@@ -1,22 +1,29 @@
 PikachuFanText::
-	text "Won't you admire"
 IF DEF(_YELLOW)
-	line "my CLEFAIRY's"
+	text $02,$4B,$7F,$05,$AF,$05,$AF,$07,$97,$7F,$05,$B7,$03,$CB,$06,$4A,$03,$E1,$7F,$01,$EF,$04,$3E,$07,$EB,$05,$21; RAW DATA : 	text "내 삐삐의 사랑스런 꼬리좀봐"
+	line $07,$D4,$04,$4B,$7F,$01,$9D,$07,$11,$08,$26,$7F,$06,$CA,$06,$C6,$0B,$67; RAW DATA : 	line "정말 귀엽지 않아?"
 ELSE
-	line "my PIKACHU's"
+	; text "내 피카츄의 사랑스런 꼬리좀봐"
+	text $02, $4B, " ", $0A, $67, $09, $0B, $08, $F2, $07, $97, " ", $05, $B7, $03, $CB, $06, $4A, $03, $E1, " ", $01, $EF, $04, $3E, $07, $EB, $05, $21
+	; line "정말 귀엽지 않아?"
+	line $07, $D4, $04, $4B, " ", $01, $9D, $07, $11, $08, $26, " ", $06, $CA, $06, $C6, $0B, $67
+
+
 ENDC
-	cont "adorable tail?"
 	done
 
 PikachuFanBetterText::
 IF DEF(_YELLOW)
-	text "Humph! My CLEFAIRY"
-ELSE
-	text "Humph! My PIKACHU"
-ENDC
-	line "is twice as cute"
-	cont "as that one!"
+		text $0A,$EF,$0B,$66; RAW DATA : 	text "흥!"
+	line $02,$4B,$7F,$05,$AF,$05,$AF,$01,$01,$7F,$03,$2E,$04,$E8,$02,$C2,$7F,$02,$F5,$7F,$01,$9D,$07,$11,$02,$D9,$01,$88,$0B,$66; RAW DATA : 	line "내 삐삐가 두배는 더 귀엽다구!"
 	done
+ELSE
+	; text "흥!"
+	text $0A, $EF, $0B, $66
+	; line "내 피카츄가 두배는 더 귀엽다구!"
+	line $02, $4B, " ", $0A, $67, $09, $0B, $08, $F2, $01, $01, " ", $03, $2E, $04, $E8, $02, $C2, " ", $02, $F5, " ", $01, $9D, $07, $11, $02, $D9, $01, $88, $0B, $66
+
+ENDC
 
 
 IF DEF(_YELLOW)
@@ -47,7 +54,7 @@ SeelFanBetterText::
 	done
 
 IF DEF(_YELLOW)
-	SeelFanPrintText::
+SeelFanPrintText::
 	text "I'm going to hook"
 	line "up the cable to"
 	cont "get a photo PRINT"

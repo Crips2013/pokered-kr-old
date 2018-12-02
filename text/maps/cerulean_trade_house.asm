@@ -37,13 +37,16 @@ MelanieSandshrewText::
 ELSE
 
 _CeruleanHouse1Text1::
-	text "My husband likes"
-	line "trading #MON."
+		; text "내 남편은 포켓몬을"
+	text $02, $4B, " ", $02, $42, $0A, $1D, $07, $8A, " ", $0A, $27, $09, $2F, $04, $93, $07, $8B
+	; line "교환하는 것을 좋아해"
+	line $01, $83, $0A, $AF, $0A, $6F, $02, $C2, " ", $01, $2D, $07, $8B, " ", $07, $F1, $06, $C6, $0A, $78
 
-	para "If you are a"
-	line "collector, would"
-	cont "you please trade"
-	cont "with him?"
-	done
+	; para "만약 수집하는걸 좋아하면"
+	para $04, $48, $06, $E0, " ", $06, $26, $08, $2D, $0A, $6F, $02, $C2, $01, $29, " ", $07, $F1, $06, $C6, $0A, $6F, $04, $89
+	; line "우리 남편과 교한하지 않을래?"
+	line $07, $4C, $04, $3E, " ", $02, $42, $0A, $1D, $01, $6A, " ", $01, $83, $0A, $71, $0A, $6F, $08, $26, " ", $06, $CA, $07, $8B, $03, $D1, $0B, $67
+	
+done
 
 ENDC

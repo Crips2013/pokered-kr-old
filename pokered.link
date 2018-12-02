@@ -41,23 +41,22 @@ ROMX $8
 
 ROMX $9
   "Pics 1" ; PICS_1
-  "Battle (bank 9)"
 
 ROMX $A
   "Pics 2" ; PICS_2
-  "Battle (bank A)"
+  
 
 ROMX $B
   "Pics 3" ; PICS_3
-  "Battle (bank B)"
+  
 
 ROMX $C
   "Pics 4" ; PICS_4
-  "Battle (bank C)"
+  
 
 ROMX $D
   "Pics 5" ; PICS_5
-  "Battle (bank D)"
+  
 
 ROMX $E
   "bankE"
@@ -155,7 +154,12 @@ ROMX $2B
 
 ROMX $2C
   "Move Names" ; MOVE_NAMES
-
+ROMX $35
+   "Battle (bank 9)";용량 문제로 35번 뱅크로 이동
+   "Battle (bank A)";문제시 재수정 바람
+   "Battle (bank B)"
+   "Battle (bank C)"
+   "Battle (bank D)"
 WRAM0
   "WRAM Bank 0"
 

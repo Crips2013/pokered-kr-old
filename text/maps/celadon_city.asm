@@ -6,12 +6,16 @@ IF DEF(_YELLOW)
 	para $07,$4C,$04,$40,$7F,$08,$26,$01,$AD,$05,$2E,$09,$9D,$7F,$0A,$74,$01,$E2,$0A,$72,$01,$25,$06,$DF; RAW DATA : 	para "우린 지금부터 함께할거야"
 	line $07,$36,$02,$64,$04,$89,$7F,$02,$4B,$01,$35,$7F,$02,$0E,$07,$9C,$06,$FA,$01,$25,$03,$47,$0B,$66; RAW DATA : 	line "왜냐면 내겐 꿈이었거든!"
 ELSE
-	text "I got my KOFFING"
-	line "in CINNABAR!"
+	; text "홍련마을에서"
+	text $0A, $AB, $03, $F3, $04, $46, $07, $8B, $07, $01, $05, $DD
+	; line "또가스 잡았어!"
+	line $03, $97, $01, $01, $06, $4A, " ", $07, $B2, $06, $D2, $06, $EE, $0B, $66
 
-	para "It's nice, but it"
-	line "breathes poison"
-	cont "when it's angry!"
+	; para "멋지지만 화날때마다"
+	para $04, $7A, $08, $26, $08, $26, $04, $48, " ", $0A, $AD, $02, $3F, $03, $77, $04, $46, $02, $D9
+	; line "독을 뿜어내!"
+	line $03, $16, $07, $8B, " ", $05, $A5, $06, $EE, $02, $4B, $0B, $66
+
 
 ENDC
 	done

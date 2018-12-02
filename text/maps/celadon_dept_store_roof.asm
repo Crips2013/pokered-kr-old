@@ -56,8 +56,11 @@ _CeladonMartRoofText_4850f::
 IF DEF(_YELLOW)
 	db"@@"	
 ELSE
-	para "It can spook the"
-	line "target sometimes!@@"
+	; para "이건 때때로 대상을"
+	para $07, $9C, $01, $27, " ", $03, $77, $03, $77, $03, $FE, " ", $02, $EB, $05, $C3, $07, $8B
+	; line "겁먹게 할 수 있어!@@"
+	line $01, $2C, $04, $74, $01, $34, " ", $0A, $72, " ", $06, $26, " ", $07, $A6, $06, $EE, $0B, $66, "@@"
+
 ENDC
 
 	

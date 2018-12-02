@@ -22,8 +22,8 @@ IF DEF(_YELLOW)
 	done
 	
 ELSE
-	para "Are you in a"
-	line "hurry?"
+	; para "혹시 지금 바쁘니?"
+	para $0A, $A4, $06, $63, " ", $08, $26, $01, $AD, " ", $04, $D9, $05, $AA, $02, $CF, $0B, $67	
 	done
 ENDC
 
@@ -31,18 +31,23 @@ _ViridianCityText_1920f::
 	text $02,$77,$01,$01,$7F,$0A,$27,$09,$2F,$04,$93,$7F,$03,$15,$01,$08,$07,$8B; RAW DATA : 	para "네가 포켓몬 도감을"
 	line $05,$B7,$07,$4B,$0A,$6F,$02,$C2,$01,$29,$7F,$05,$23,$02,$DC,$02,$D9; RAW DATA : 	line "사용하는걸 봤단다"
 
-	para "When you catch a"
-	line "#MON, #DEX"
-	cont "is automatically"
-	cont "updated."
+	; para "포켓몬을 잡으면"
+	para $0A, $27, $09, $2F, $04, $93, $07, $8B, " ", $07, $B2, $07, $88, $04, $89
+	; line "도감에 자동으로 등록돼지"
+	line $03, $15, $01, $08, $07, $01, " ", $07, $AA, $03, $1F, $07, $88, $03, $FE, " ", $03, $4E, $03, $FF, $03, $25, $08, $26
 
-	para "What? Don't you"
-	line "know how to catch"
-	cont "#MON?"
+	; para "뭐라고? 포켓몬을 어떡게"
+	para $04, $B9, $03, $C3, $01, $4D, $0B, $67, " ", $0A, $27, $09, $2F, $04, $93, $07, $8B, " ", $06, $EE, $03, $81, $01, $34
+	; line "잡는지 모른다고?"
+	line $07, $B2, $02, $C2, $08, $26, " ", $04, $90, $04, $35, $02, $D9, $01, $4D, $0B, $67
 
-	para "I'll show you"
-	line "how to then."
+	; para "그럼 내가 포켓몬을 어떡게"
+	para $01, $A7, $03, $E3, " ", $02, $4B, $01, $01, " ", $0A, $27, $09, $2F, $04, $93, $07, $8B, " ", $06, $EE, $03, $81, $01, $34
+	; line "잡는지를 보여주마"
+	line $07, $B2, $02, $C2, $08, $26, $04, $36, " ", $05, $18, $07, $09, $08, $06, $04, $46
 	done
+
+
 IF DEF(_YELLOW)
 _OldManTextAfterBattle::
 	text $07,$15,$7F,$07,$F1,$08,$26,$7F,$06,$CA,$01,$88,$04,$48,$0B,$66; RAW DATA : 	text "영 좋지 않구만!"
@@ -166,8 +171,11 @@ _OldManAgainText3::
 
 ELSE
 _ViridianCityText_19214::
-	text "Time is money..."
-	line "Go along then."
+	; text "시간은 금이란다…"
+	text $06, $63, $01, $03, $07, $8A, " ", $01, $AD, $07, $9C, $03, $C5, $02, $D9, $0B, $6A
+	; line "지나가려무나"
+	line $08, $26, $02, $3A, $01, $01, $03, $F1, $04, $AB, $02, $3A
+
 	done
 
 ENDC

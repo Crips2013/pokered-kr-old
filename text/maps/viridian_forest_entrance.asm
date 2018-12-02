@@ -14,10 +14,11 @@ IF DEF(_YELLOW)
 	done
 	
 ELSE
-	text "RATTATA may be"
-	line "small, but its"
-	cont "bite is wicked!"
-	cont "Did you get one?"
+	; text "꼬렛은 작지만 엄청 세게 물어!"
+	text $01, $EF, $03, $EF, $07, $8A, " ", $07, $AB, $08, $26, $04, $48, " ", $06, $F6, $08, $BB, " ", $05, $EC, $01, $34, " ", $04, $B0, $06, $EE, $0B, $66
+	; line "혹시 꼬렛 갖고 있어?"
+	line $0A, $A4, $06, $63, " ", $01, $EF, $03, $EF, " ", $01, $0E, $01, $4D, " ", $07, $A6, $06, $EE, $0B, $67
+
 	done
 
 ENDC
