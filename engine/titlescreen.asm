@@ -93,9 +93,11 @@ DisplayTitleScreen:
 	call DrawPlayerCharacter
 
 ; put a pokeball in the player's hand
+IF DEF (_BLUE)
 	ld hl, wOAMBuffer + $28
 	ld a, $74
 	ld [hl], a
+ENDC
 
 ; place tiles for title screen copyright
 	coord hl, 2, 17
@@ -129,6 +131,7 @@ ENDC
 
 	ld [wTitleMonSpecies], a
 	call LoadTitleMonSprite
+	; ld a, (vBGMap0 + $300) / $100
 	ld a, (vBGMap0 + $300) / $100
 	call TitleScreenCopyTileMapToVRAM
 	call SaveScreenTilesToBuffer1
@@ -320,7 +323,11 @@ DrawPlayerCharacter:
 	xor a
 	ld [wPlayerCharacterOAMTile], a
 	ld hl, wOAMBuffer
+IF DEF (_BLUE)
 	ld de, $605a
+ELSE
+	ld de, $6030
+ENDC
 	ld b, 7
 .loop
 	push de
@@ -356,7 +363,11 @@ ClearBothBGMaps:
 LoadTitleMonSprite:
 	ld [wcf91], a
 	ld [wd0b5], a
+IF DEF(_BLUE)
 	coord hl, 5, 10
+ELSE
+	coord hl, 9, 10
+ENDC
 	call GetMonHeader
 	jp LoadFrontSpriteByMonIndex
 

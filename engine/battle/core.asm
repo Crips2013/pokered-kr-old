@@ -2261,14 +2261,18 @@ DisplayBattleMenu:
 	jr nz, .notItemMenu
 ; item menu was selected
 	ld a,$01
+	jr .hangul_partymenu
 	inc a ; increment a to 2
+.hangul_itemmenu
 	jr .handleMenuSelection
-.notItemMenu
+.notItemMenu	
 	cp $2 ; was the party menu selected?
 	jr nz, .handleMenuSelection
 ; party menu selected
 	ld a,$02
+	jr .hangul_itemmenu
 	dec a ; decrement a to 1
+.hangul_partymenu
 .handleMenuSelection
 	and a
 	jr nz, .upperLeftMenuItemWasNotSelected

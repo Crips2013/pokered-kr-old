@@ -192,7 +192,11 @@ PokedexTileGraphics:            INCBIN "gfx/pokedex.2bpp"
 PokedexTileGraphicsEnd:
 WorldMapTileGraphics:           INCBIN "gfx/town_map.2bpp"
 WorldMapTileGraphicsEnd:
+IF DEF (_BLUE)
 PlayerCharacterTitleGraphics:   INCBIN "gfx/player_title.2bpp"
+ELSE
+PlayerCharacterTitleGraphics:   INCBIN "gfx/player_title_jp.2bpp"
+ENDC
 PlayerCharacterTitleGraphicsEnd:
 
 
@@ -1367,12 +1371,20 @@ INCLUDE "data/mapObjects/safarizoneresthouse4.asm"
 INCLUDE "data/mapHeaders/unknowndungeon2.asm"
 INCLUDE "scripts/unknowndungeon2.asm"
 INCLUDE "data/mapObjects/unknowndungeon2.asm"
+IF DEF(_BLUE)
 UnknownDungeon2Blocks: INCBIN "maps/unknowndungeon2.blk"
+ELSE
+UnknownDungeon2Blocks: INCBIN "maps/unknowndungeon2_jp.blk"
+ENDC
 
 INCLUDE "data/mapHeaders/unknowndungeon3.asm"
 INCLUDE "scripts/unknowndungeon3.asm"
 INCLUDE "data/mapObjects/unknowndungeon3.asm"
+IF DEF(_BLUE)
 UnknownDungeon3Blocks: INCBIN "maps/unknowndungeon3.blk"
+ELSE
+UnknownDungeon3Blocks: INCBIN "maps/unknowndungeon3_jp.blk"
+ENDC
 
 INCLUDE "data/mapHeaders/rocktunnel2.asm"
 INCLUDE "scripts/rocktunnel2.asm"
@@ -2313,7 +2325,11 @@ INCLUDE "data/mapObjects/pewtermart.asm"
 INCLUDE "data/mapHeaders/unknowndungeon1.asm"
 INCLUDE "scripts/unknowndungeon1.asm"
 INCLUDE "data/mapObjects/unknowndungeon1.asm"
+IF DEF(_BLUE)
 UnknownDungeon1Blocks: INCBIN "maps/unknowndungeon1.blk"
+ELSE
+UnknownDungeon1Blocks: INCBIN "maps/unknowndungeon1_jp.blk"
+ENDC
 
 INCLUDE "data/mapHeaders/ceruleanhouse2.asm"
 INCLUDE "scripts/ceruleanhouse2.asm"

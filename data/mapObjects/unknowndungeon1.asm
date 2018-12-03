@@ -18,7 +18,6 @@ UnknownDungeon1Object:
 	object SPRITE_BALL, 7, 13, STAY, NONE, 1, FULL_RESTORE
 	object SPRITE_BALL, 19, 3, STAY, NONE, 2, MAX_ELIXER
 	object SPRITE_BALL, 5, 0, STAY, NONE, 3, NUGGET
-
 	; warp-to
 	warp_to 24, 17, UNKNOWN_DUNGEON_1_WIDTH
 	warp_to 25, 17, UNKNOWN_DUNGEON_1_WIDTH

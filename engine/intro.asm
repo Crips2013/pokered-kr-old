@@ -434,7 +434,7 @@ GameFreakIntro:
 	INCBIN "gfx/gamefreak_intro.2bpp"
 	INCBIN "gfx/gamefreak_logo.2bpp"
 	ds $10 ; blank tile
-GameFreakIntroEnd:
+GameFreakIntroEnd:	
 
 FightIntroBackMon:
 	INCBIN "gfx/intro_fight.2bpp"
@@ -449,9 +449,9 @@ IF DEF(_RED)
 ENDC
 
 IF DEF(_GREEN)
-	INCBIN "gfx/green/intro_omstar_1.6x6.2bpp"
-	INCBIN "gfx/green/intro_omstar_2.6x6.2bpp"
-	INCBIN "gfx/green/intro_omstar_3.6x6.2bpp"
+	INCBIN "gfx/red/intro_nido_1.2bpp"
+	INCBIN "gfx/red/intro_nido_2.2bpp"
+	INCBIN "gfx/red/intro_nido_3.2bpp"
 ENDC
 IF DEF(_BLUE)
 	INCBIN "gfx/blue/intro_purin_1.2bpp"
